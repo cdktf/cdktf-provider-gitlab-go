@@ -4595,6 +4595,1472 @@ type BranchProtectionConfig struct {
 	UnprotectAccessLevel *string `field:"optional" json:"unprotectAccessLevel" yaml:"unprotectAccessLevel"`
 }
 
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent gitlab_cluster_agent}.
+type ClusterAgent interface {
+	cdktf.TerraformResource
+	AgentId() *float64
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedAt() *string
+	CreatedByUserId() *float64
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ClusterAgent
+type jsiiProxy_ClusterAgent struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ClusterAgent) AgentId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) CreatedByUserId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdByUserId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgent) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent gitlab_cluster_agent} Resource.
+func NewClusterAgent(scope constructs.Construct, id *string, config *ClusterAgentConfig) ClusterAgent {
+	_init_.Initialize()
+
+	j := jsiiProxy_ClusterAgent{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ClusterAgent",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent gitlab_cluster_agent} Resource.
+func NewClusterAgent_Override(c ClusterAgent, scope constructs.Construct, id *string, config *ClusterAgentConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ClusterAgent",
+		[]interface{}{scope, id, config},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgent) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ClusterAgent_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.ClusterAgent",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ClusterAgent_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.ClusterAgent",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_ClusterAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ClusterAgent) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAgent) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAgent) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgent) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ClusterAgentConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The Name of the agent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#name ClusterAgent#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// ID or full path of the project maintained by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#project ClusterAgent#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#id ClusterAgent#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token}.
+type ClusterAgentToken interface {
+	cdktf.TerraformResource
+	AgentId() *float64
+	SetAgentId(val *float64)
+	AgentIdInput() *float64
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedAt() *string
+	CreatedByUserId() *float64
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	LastUsedAt() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	Status() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Token() *string
+	TokenId() *float64
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ClusterAgentToken
+type jsiiProxy_ClusterAgentToken struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ClusterAgentToken) AgentId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) AgentIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) CreatedByUserId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdByUserId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) LastUsedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUsedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) Token() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"token",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAgentToken) TokenId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenId",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token} Resource.
+func NewClusterAgentToken(scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) ClusterAgentToken {
+	_init_.Initialize()
+
+	j := jsiiProxy_ClusterAgentToken{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ClusterAgentToken",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token} Resource.
+func NewClusterAgentToken_Override(c ClusterAgentToken, scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ClusterAgentToken",
+		[]interface{}{scope, id, config},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetAgentId(val *float64) {
+	_jsii_.Set(
+		j,
+		"agentId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetDescription(val *string) {
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAgentToken) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ClusterAgentToken_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.ClusterAgentToken",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ClusterAgentToken_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.ClusterAgentToken",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ResetDescription() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAgentToken) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ClusterAgentToken) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ClusterAgentTokenConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID of the agent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+	AgentId *float64 `field:"required" json:"agentId" yaml:"agentId"`
+	// The Name of the agent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#name ClusterAgentToken#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// ID or full path of the project maintained by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#project ClusterAgentToken#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// The Description for the agent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#description ClusterAgentToken#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/branch gitlab_branch}.
 type DataGitlabBranch interface {
 	cdktf.TerraformDataSource
@@ -6021,6 +7487,2561 @@ type DataGitlabBranchConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent gitlab_cluster_agent}.
+type DataGitlabClusterAgent interface {
+	cdktf.TerraformDataSource
+	AgentId() *float64
+	SetAgentId(val *float64)
+	AgentIdInput() *float64
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedAt() *string
+	CreatedByUserId() *float64
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabClusterAgent
+type jsiiProxy_DataGitlabClusterAgent struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) AgentId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) AgentIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) CreatedByUserId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdByUserId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent gitlab_cluster_agent} Data Source.
+func NewDataGitlabClusterAgent(scope constructs.Construct, id *string, config *DataGitlabClusterAgentConfig) DataGitlabClusterAgent {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabClusterAgent{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgent",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent gitlab_cluster_agent} Data Source.
+func NewDataGitlabClusterAgent_Override(d DataGitlabClusterAgent, scope constructs.Construct, id *string, config *DataGitlabClusterAgentConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgent",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetAgentId(val *float64) {
+	_jsii_.Set(
+		j,
+		"agentId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgent) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabClusterAgent_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgent",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabClusterAgent_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgent",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgent) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabClusterAgentConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID of the agent.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
+	AgentId *float64 `field:"required" json:"agentId" yaml:"agentId"`
+	// ID or full path of the project maintained by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#project DataGitlabClusterAgent#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#id DataGitlabClusterAgent#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents gitlab_cluster_agents}.
+type DataGitlabClusterAgents interface {
+	cdktf.TerraformDataSource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClusterAgents() DataGitlabClusterAgentsClusterAgentsList
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabClusterAgents
+type jsiiProxy_DataGitlabClusterAgents struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) ClusterAgents() DataGitlabClusterAgentsClusterAgentsList {
+	var returns DataGitlabClusterAgentsClusterAgentsList
+	_jsii_.Get(
+		j,
+		"clusterAgents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents gitlab_cluster_agents} Data Source.
+func NewDataGitlabClusterAgents(scope constructs.Construct, id *string, config *DataGitlabClusterAgentsConfig) DataGitlabClusterAgents {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabClusterAgents{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgents",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents gitlab_cluster_agents} Data Source.
+func NewDataGitlabClusterAgents_Override(d DataGitlabClusterAgents, scope constructs.Construct, id *string, config *DataGitlabClusterAgentsConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgents",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgents) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabClusterAgents_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgents",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabClusterAgents_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgents",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgents) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabClusterAgentsClusterAgents struct {
+}
+
+type DataGitlabClusterAgentsClusterAgentsList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataGitlabClusterAgentsClusterAgentsOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabClusterAgentsClusterAgentsList
+type jsiiProxy_DataGitlabClusterAgentsClusterAgentsList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabClusterAgentsClusterAgentsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabClusterAgentsClusterAgentsList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabClusterAgentsClusterAgentsList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabClusterAgentsClusterAgentsList_Override(d DataGitlabClusterAgentsClusterAgentsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) Get(index *float64) DataGitlabClusterAgentsClusterAgentsOutputReference {
+	var returns DataGitlabClusterAgentsClusterAgentsOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabClusterAgentsClusterAgentsOutputReference interface {
+	cdktf.ComplexObject
+	AgentId() *float64
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	CreatedAt() *string
+	CreatedByUserId() *float64
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DataGitlabClusterAgentsClusterAgents
+	SetInternalValue(val *DataGitlabClusterAgentsClusterAgents)
+	Name() *string
+	Project() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabClusterAgentsClusterAgentsOutputReference
+type jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) AgentId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"agentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) CreatedByUserId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createdByUserId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) InternalValue() *DataGitlabClusterAgentsClusterAgents {
+	var returns *DataGitlabClusterAgentsClusterAgents
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabClusterAgentsClusterAgentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabClusterAgentsClusterAgentsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabClusterAgentsClusterAgentsOutputReference_Override(d DataGitlabClusterAgentsClusterAgentsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) SetInternalValue(val *DataGitlabClusterAgentsClusterAgents) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabClusterAgentsClusterAgentsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabClusterAgentsConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID or full path of the project owned by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#project DataGitlabClusterAgents#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#id DataGitlabClusterAgents#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user}.
+type DataGitlabCurrentUser interface {
+	cdktf.TerraformDataSource
+	Bot() cdktf.IResolvable
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GlobalId() *string
+	GlobalNamespaceId() *string
+	GroupCount() *float64
+	Id() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	NamespaceId() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	PublicEmail() *string
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Username() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabCurrentUser
+type jsiiProxy_DataGitlabCurrentUser struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Bot() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"bot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) GlobalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) GlobalNamespaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globalNamespaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) GroupCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) NamespaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) PublicEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) Username() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"username",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user} Data Source.
+func NewDataGitlabCurrentUser(scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) DataGitlabCurrentUser {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabCurrentUser{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabCurrentUser",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user} Data Source.
+func NewDataGitlabCurrentUser_Override(d DataGitlabCurrentUser, scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabCurrentUser",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabCurrentUser) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabCurrentUser_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabCurrentUser",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabCurrentUser_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabCurrentUser",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabCurrentUser) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabCurrentUserConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group gitlab_group}.
@@ -14051,6 +18072,9 @@ type DataGitlabProject interface {
 	BuildTimeout() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CiDefaultGitDepth() *float64
+	SetCiDefaultGitDepth(val *float64)
+	CiDefaultGitDepthInput() *float64
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerExpirationPolicy() DataGitlabProjectContainerExpirationPolicyList
@@ -14157,6 +18181,7 @@ type DataGitlabProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCiDefaultGitDepth()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -14273,6 +18298,26 @@ func (j *jsiiProxy_DataGitlabProject) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiDefaultGitDepth() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDefaultGitDepth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiDefaultGitDepthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDefaultGitDepthInput",
 		&returns,
 	)
 	return returns
@@ -14885,6 +18930,14 @@ func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Constru
 	)
 }
 
+func (j *jsiiProxy_DataGitlabProject) SetCiDefaultGitDepth(val *float64) {
+	_jsii_.Set(
+		j,
+		"ciDefaultGitDepth",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataGitlabProject) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -15130,6 +19183,14 @@ func (d *jsiiProxy_DataGitlabProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataGitlabProject) ResetCiDefaultGitDepth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCiDefaultGitDepth",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGitlabProject) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -15223,6 +19284,10 @@ type DataGitlabProjectConfig struct {
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Default number of revisions for shallow cloning.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+	CiDefaultGitDepth *float64 `field:"optional" json:"ciDefaultGitDepth" yaml:"ciDefaultGitDepth"`
 	// The integer or path with namespace that uniquely identifies the project within the gitlab install.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#id DataGitlabProject#id}
@@ -17614,9 +21679,9 @@ type DataGitlabProjectIssues interface {
 	NotLabels() *[]*string
 	SetNotLabels(val *[]*string)
 	NotLabelsInput() *[]*string
-	NotMilestone() *[]*string
-	SetNotMilestone(val *[]*string)
-	NotMilestoneInput() *[]*string
+	NotMilestone() *string
+	SetNotMilestone(val *string)
+	NotMilestoneInput() *string
 	NotMyReactionEmoji() *[]*string
 	SetNotMyReactionEmoji(val *[]*string)
 	NotMyReactionEmojiInput() *[]*string
@@ -18138,8 +22203,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotLabelsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestone() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestone() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"notMilestone",
@@ -18148,8 +22213,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestone() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestoneInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestoneInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"notMilestoneInput",
@@ -18587,7 +22652,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMilestone(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMilestone(val *string) {
 	_jsii_.Set(
 		j,
 		"notMilestone",
@@ -19231,7 +23296,7 @@ type DataGitlabProjectIssuesConfig struct {
 	// Return issues that do not match the milestone.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
-	NotMilestone *[]*string `field:"optional" json:"notMilestone" yaml:"notMilestone"`
+	NotMilestone *string `field:"optional" json:"notMilestone" yaml:"notMilestone"`
 	// Return issues not reacted by the authenticated user by the given emoji.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
@@ -20863,6 +24928,2329 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusOutputRefere
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone gitlab_project_milestone}.
+type DataGitlabProjectMilestone interface {
+	cdktf.TerraformDataSource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedAt() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	DueDate() *string
+	Expired() cdktf.IResolvable
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Iid() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MilestoneId() *float64
+	SetMilestoneId(val *float64)
+	MilestoneIdInput() *float64
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectId() *float64
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	StartDate() *string
+	State() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Title() *string
+	UpdatedAt() *string
+	WebUrl() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabProjectMilestone
+type jsiiProxy_DataGitlabProjectMilestone struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) DueDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dueDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Expired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"expired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Iid() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"iid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) MilestoneId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"milestoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) MilestoneIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"milestoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) ProjectId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) StartDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) WebUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webUrl",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone gitlab_project_milestone} Data Source.
+func NewDataGitlabProjectMilestone(scope constructs.Construct, id *string, config *DataGitlabProjectMilestoneConfig) DataGitlabProjectMilestone {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabProjectMilestone{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestone",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone gitlab_project_milestone} Data Source.
+func NewDataGitlabProjectMilestone_Override(d DataGitlabProjectMilestone, scope constructs.Construct, id *string, config *DataGitlabProjectMilestoneConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestone",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetMilestoneId(val *float64) {
+	_jsii_.Set(
+		j,
+		"milestoneId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestone) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabProjectMilestone_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestone",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabProjectMilestone_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestone",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestone) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabProjectMilestoneConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The instance-wide ID of the project’s milestone.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
+	MilestoneId *float64 `field:"required" json:"milestoneId" yaml:"milestoneId"`
+	// The ID or URL-encoded path of the project owned by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#project DataGitlabProjectMilestone#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#id DataGitlabProjectMilestone#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones gitlab_project_milestones}.
+type DataGitlabProjectMilestones interface {
+	cdktf.TerraformDataSource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Iids() *[]*float64
+	SetIids(val *[]*float64)
+	IidsInput() *[]*float64
+	IncludeParentMilestones() interface{}
+	SetIncludeParentMilestones(val interface{})
+	IncludeParentMilestonesInput() interface{}
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Milestones() DataGitlabProjectMilestonesMilestonesList
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	Search() *string
+	SetSearch(val *string)
+	SearchInput() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	ResetIids()
+	ResetIncludeParentMilestones()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetSearch()
+	ResetState()
+	ResetTitle()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabProjectMilestones
+type jsiiProxy_DataGitlabProjectMilestones struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Iids() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"iids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) IidsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"iidsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) IncludeParentMilestones() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeParentMilestones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) IncludeParentMilestonesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeParentMilestonesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Milestones() DataGitlabProjectMilestonesMilestonesList {
+	var returns DataGitlabProjectMilestonesMilestonesList
+	_jsii_.Get(
+		j,
+		"milestones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Search() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"search",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SearchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"searchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones gitlab_project_milestones} Data Source.
+func NewDataGitlabProjectMilestones(scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) DataGitlabProjectMilestones {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabProjectMilestones{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestones",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones gitlab_project_milestones} Data Source.
+func NewDataGitlabProjectMilestones_Override(d DataGitlabProjectMilestones, scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestones",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetIids(val *[]*float64) {
+	_jsii_.Set(
+		j,
+		"iids",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetIncludeParentMilestones(val interface{}) {
+	_jsii_.Set(
+		j,
+		"includeParentMilestones",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetSearch(val *string) {
+	_jsii_.Set(
+		j,
+		"search",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetState(val *string) {
+	_jsii_.Set(
+		j,
+		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestones) SetTitle(val *string) {
+	_jsii_.Set(
+		j,
+		"title",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabProjectMilestones_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestones",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabProjectMilestones_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestones",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetIids() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIids",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetIncludeParentMilestones() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeParentMilestones",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetSearch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ResetTitle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTitle",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestones) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabProjectMilestonesConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID or URL-encoded path of the project owned by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#project DataGitlabProjectMilestones#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#id DataGitlabProjectMilestones#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#iids DataGitlabProjectMilestones#iids}
+	Iids *[]*float64 `field:"optional" json:"iids" yaml:"iids"`
+	// Include group milestones from parent group and its ancestors. Introduced in GitLab 13.4.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
+	IncludeParentMilestones interface{} `field:"optional" json:"includeParentMilestones" yaml:"includeParentMilestones"`
+	// Return only milestones with a title or description matching the provided string.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#search DataGitlabProjectMilestones#search}
+	Search *string `field:"optional" json:"search" yaml:"search"`
+	// Return only `active` or `closed` milestones.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#state DataGitlabProjectMilestones#state}
+	State *string `field:"optional" json:"state" yaml:"state"`
+	// Return only the milestones having the given `title`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#title DataGitlabProjectMilestones#title}
+	Title *string `field:"optional" json:"title" yaml:"title"`
+}
+
+type DataGitlabProjectMilestonesMilestones struct {
+}
+
+type DataGitlabProjectMilestonesMilestonesList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataGitlabProjectMilestonesMilestonesOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabProjectMilestonesMilestonesList
+type jsiiProxy_DataGitlabProjectMilestonesMilestonesList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabProjectMilestonesMilestonesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMilestonesMilestonesList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabProjectMilestonesMilestonesList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabProjectMilestonesMilestonesList_Override(d DataGitlabProjectMilestonesMilestonesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Get(index *float64) DataGitlabProjectMilestonesMilestonesOutputReference {
+	var returns DataGitlabProjectMilestonesMilestonesOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabProjectMilestonesMilestonesOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	CreatedAt() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Description() *string
+	DueDate() *string
+	Expired() cdktf.IResolvable
+	// Experimental.
+	Fqn() *string
+	Iid() *float64
+	InternalValue() *DataGitlabProjectMilestonesMilestones
+	SetInternalValue(val *DataGitlabProjectMilestonesMilestones)
+	MilestoneId() *float64
+	Project() *string
+	ProjectId() *float64
+	StartDate() *string
+	State() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	UpdatedAt() *string
+	WebUrl() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabProjectMilestonesMilestonesOutputReference
+type jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) DueDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dueDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Expired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"expired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Iid() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"iid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) InternalValue() *DataGitlabProjectMilestonesMilestones {
+	var returns *DataGitlabProjectMilestonesMilestones
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) MilestoneId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"milestoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) ProjectId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) StartDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) WebUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webUrl",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabProjectMilestonesMilestonesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabProjectMilestonesMilestonesOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabProjectMilestonesMilestonesOutputReference_Override(d DataGitlabProjectMilestonesMilestonesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) SetInternalValue(val *DataGitlabProjectMilestonesMilestones) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -36345,6 +42733,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	BuildsAccessLevel() *string
 	BuildTimeout() *float64
 	CiConfigPath() *string
+	CiDefaultGitDepth() *float64
 	CiForwardDeploymentEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
@@ -36617,6 +43006,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiConfigPath() *st
 	_jsii_.Get(
 		j,
 		"ciConfigPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiDefaultGitDepth() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDefaultGitDepth",
 		&returns,
 	)
 	return returns
@@ -39483,6 +45882,2080 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsSharedWithGroupsOutputReference) Re
 }
 
 func (d *jsiiProxy_DataGitlabProjectsProjectsSharedWithGroupsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/release_link gitlab_release_link}.
+type DataGitlabReleaseLink interface {
+	cdktf.TerraformDataSource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DirectAssetUrl() *string
+	External() cdktf.IResolvable
+	Filepath() *string
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkId() *float64
+	SetLinkId(val *float64)
+	LinkIdInput() *float64
+	LinkType() *string
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	TagName() *string
+	SetTagName(val *string)
+	TagNameInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Url() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabReleaseLink
+type jsiiProxy_DataGitlabReleaseLink struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) DirectAssetUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directAssetUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) External() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"external",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Filepath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filepath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) LinkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"linkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) LinkIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"linkIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) LinkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"linkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) TagName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) TagNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/release_link gitlab_release_link} Data Source.
+func NewDataGitlabReleaseLink(scope constructs.Construct, id *string, config *DataGitlabReleaseLinkConfig) DataGitlabReleaseLink {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabReleaseLink{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLink",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/release_link gitlab_release_link} Data Source.
+func NewDataGitlabReleaseLink_Override(d DataGitlabReleaseLink, scope constructs.Construct, id *string, config *DataGitlabReleaseLinkConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLink",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetLinkId(val *float64) {
+	_jsii_.Set(
+		j,
+		"linkId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLink) SetTagName(val *string) {
+	_jsii_.Set(
+		j,
+		"tagName",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabReleaseLink_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLink",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabReleaseLink_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLink",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLink) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabReleaseLinkConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID of the link.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#link_id DataGitlabReleaseLink#link_id}
+	LinkId *float64 `field:"required" json:"linkId" yaml:"linkId"`
+	// The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#project DataGitlabReleaseLink#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// The tag associated with the Release.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#tag_name DataGitlabReleaseLink#tag_name}
+	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#id DataGitlabReleaseLink#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links}.
+type DataGitlabReleaseLinks interface {
+	cdktf.TerraformDataSource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	ReleaseLinks() DataGitlabReleaseLinksReleaseLinksList
+	TagName() *string
+	SetTagName(val *string)
+	TagNameInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataGitlabReleaseLinks
+type jsiiProxy_DataGitlabReleaseLinks struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) ReleaseLinks() DataGitlabReleaseLinksReleaseLinksList {
+	var returns DataGitlabReleaseLinksReleaseLinksList
+	_jsii_.Get(
+		j,
+		"releaseLinks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) TagName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) TagNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links} Data Source.
+func NewDataGitlabReleaseLinks(scope constructs.Construct, id *string, config *DataGitlabReleaseLinksConfig) DataGitlabReleaseLinks {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabReleaseLinks{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinks",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links} Data Source.
+func NewDataGitlabReleaseLinks_Override(d DataGitlabReleaseLinks, scope constructs.Construct, id *string, config *DataGitlabReleaseLinksConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinks",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinks) SetTagName(val *string) {
+	_jsii_.Set(
+		j,
+		"tagName",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataGitlabReleaseLinks_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinks",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataGitlabReleaseLinks_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinks",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinks) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabReleaseLinksConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID or full path to the project.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#project DataGitlabReleaseLinks#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// The tag associated with the Release.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#tag_name DataGitlabReleaseLinks#tag_name}
+	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#id DataGitlabReleaseLinks#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+type DataGitlabReleaseLinksReleaseLinks struct {
+}
+
+type DataGitlabReleaseLinksReleaseLinksList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataGitlabReleaseLinksReleaseLinksOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabReleaseLinksReleaseLinksList
+type jsiiProxy_DataGitlabReleaseLinksReleaseLinksList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabReleaseLinksReleaseLinksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabReleaseLinksReleaseLinksList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabReleaseLinksReleaseLinksList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabReleaseLinksReleaseLinksList_Override(d DataGitlabReleaseLinksReleaseLinksList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) Get(index *float64) DataGitlabReleaseLinksReleaseLinksOutputReference {
+	var returns DataGitlabReleaseLinksReleaseLinksOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataGitlabReleaseLinksReleaseLinksOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	DirectAssetUrl() *string
+	External() cdktf.IResolvable
+	Filepath() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DataGitlabReleaseLinksReleaseLinks
+	SetInternalValue(val *DataGitlabReleaseLinksReleaseLinks)
+	LinkId() *float64
+	LinkType() *string
+	Name() *string
+	Project() *string
+	TagName() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Url() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataGitlabReleaseLinksReleaseLinksOutputReference
+type jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) DirectAssetUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directAssetUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) External() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"external",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Filepath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filepath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) InternalValue() *DataGitlabReleaseLinksReleaseLinks {
+	var returns *DataGitlabReleaseLinksReleaseLinks
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) LinkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"linkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) LinkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"linkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) TagName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataGitlabReleaseLinksReleaseLinksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabReleaseLinksReleaseLinksOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataGitlabReleaseLinksReleaseLinksOutputReference_Override(d DataGitlabReleaseLinksReleaseLinksOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) SetInternalValue(val *DataGitlabReleaseLinksReleaseLinks) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -54357,11 +62830,11 @@ type GroupShareGroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#group_access GroupShareGroup#group_access}
 	GroupAccess *string `field:"required" json:"groupAccess" yaml:"groupAccess"`
-	// The id of the main group.
+	// The id of the main group to be shared.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#group_id GroupShareGroup#group_id}
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
-	// The id of an additional group which will be shared with the main group.
+	// The id of the additional group with which the main group will be shared.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#share_group_id GroupShareGroup#share_group_id}
 	ShareGroupId *float64 `field:"required" json:"shareGroupId" yaml:"shareGroupId"`
@@ -61487,6 +69960,9 @@ type Project interface {
 	CiConfigPath() *string
 	SetCiConfigPath(val *string)
 	CiConfigPathInput() *string
+	CiDefaultGitDepth() *float64
+	SetCiDefaultGitDepth(val *float64)
+	CiDefaultGitDepthInput() *float64
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
@@ -61658,6 +70134,9 @@ type Project interface {
 	SharedRunnersEnabled() interface{}
 	SetSharedRunnersEnabled(val interface{})
 	SharedRunnersEnabledInput() interface{}
+	SkipWaitForDefaultBranchProtection() interface{}
+	SetSkipWaitForDefaultBranchProtection(val interface{})
+	SkipWaitForDefaultBranchProtectionInput() interface{}
 	SnippetsAccessLevel() *string
 	SetSnippetsAccessLevel(val *string)
 	SnippetsAccessLevelInput() *string
@@ -61743,6 +70222,7 @@ type Project interface {
 	ResetBuildsAccessLevel()
 	ResetBuildTimeout()
 	ResetCiConfigPath()
+	ResetCiDefaultGitDepth()
 	ResetCiForwardDeploymentEnabled()
 	ResetContainerExpirationPolicy()
 	ResetContainerRegistryAccessLevel()
@@ -61793,6 +70273,7 @@ type Project interface {
 	ResetResolveOutdatedDiffDiscussions()
 	ResetSecurityAndComplianceAccessLevel()
 	ResetSharedRunnersEnabled()
+	ResetSkipWaitForDefaultBranchProtection()
 	ResetSnippetsAccessLevel()
 	ResetSnippetsEnabled()
 	ResetSquashCommitTemplate()
@@ -62105,6 +70586,26 @@ func (j *jsiiProxy_Project) CiConfigPathInput() *string {
 	_jsii_.Get(
 		j,
 		"ciConfigPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiDefaultGitDepth() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDefaultGitDepth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiDefaultGitDepthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDefaultGitDepthInput",
 		&returns,
 	)
 	return returns
@@ -63190,6 +71691,26 @@ func (j *jsiiProxy_Project) SharedRunnersEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) SkipWaitForDefaultBranchProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWaitForDefaultBranchProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) SkipWaitForDefaultBranchProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWaitForDefaultBranchProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) SnippetsAccessLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -63619,6 +72140,14 @@ func (j *jsiiProxy_Project) SetCiConfigPath(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Project) SetCiDefaultGitDepth(val *float64) {
+	_jsii_.Set(
+		j,
+		"ciDefaultGitDepth",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project) SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -64015,6 +72544,14 @@ func (j *jsiiProxy_Project) SetSharedRunnersEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"sharedRunnersEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project) SetSkipWaitForDefaultBranchProtection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"skipWaitForDefaultBranchProtection",
 		val,
 	)
 }
@@ -64432,6 +72969,14 @@ func (p *jsiiProxy_Project) ResetCiConfigPath() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetCiDefaultGitDepth() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiDefaultGitDepth",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	_jsii_.InvokeVoid(
 		p,
@@ -64812,6 +73357,14 @@ func (p *jsiiProxy_Project) ResetSharedRunnersEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSharedRunnersEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetSkipWaitForDefaultBranchProtection() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSkipWaitForDefaultBranchProtection",
 		nil, // no parameters
 	)
 }
@@ -65773,7 +74326,7 @@ type ProjectAccessTokenConfig struct {
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The access level for the project access token.
 	//
-	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`. Default is `maintainer`.
+	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. Default is `maintainer`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#access_level ProjectAccessToken#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
@@ -66677,6 +75230,9 @@ type ProjectBadge interface {
 	LinkUrl() *string
 	SetLinkUrl(val *string)
 	LinkUrlInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -66722,6 +75278,7 @@ type ProjectBadge interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -66865,6 +75422,26 @@ func (j *jsiiProxy_ProjectBadge) LinkUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"linkUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectBadge) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectBadge) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -67041,6 +75618,14 @@ func (j *jsiiProxy_ProjectBadge) SetLinkUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"linkUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectBadge) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -67258,6 +75843,14 @@ func (p *jsiiProxy_ProjectBadge) ResetId() {
 	)
 }
 
+func (p *jsiiProxy_ProjectBadge) ResetName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectBadge) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -67344,6 +75937,10 @@ type ProjectBadgeConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The name of the badge.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster gitlab_project_cluster}.
@@ -68477,7 +77074,13 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#analytics_access_level Project#analytics_access_level}
 	AnalyticsAccessLevel *string `field:"optional" json:"analyticsAccessLevel" yaml:"analyticsAccessLevel"`
-	// Number of merge request approvals required for merging. Default is 0.
+	// Number of merge request approvals required for merging.
+	//
+	// Default is 0.
+	// This field **does not** work well in combination with the `gitlab_project_approval_rule` resource
+	// and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
+	// In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
+	//
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#approvals_before_merge Project#approvals_before_merge}
 	ApprovalsBeforeMerge *float64 `field:"optional" json:"approvalsBeforeMerge" yaml:"approvalsBeforeMerge"`
@@ -68527,6 +77130,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_config_path Project#ci_config_path}
 	CiConfigPath *string `field:"optional" json:"ciConfigPath" yaml:"ciConfigPath"`
+	// Default number of revisions for shallow cloning.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_default_git_depth Project#ci_default_git_depth}
+	CiDefaultGitDepth *float64 `field:"optional" json:"ciDefaultGitDepth" yaml:"ciDefaultGitDepth"`
 	// When a new deployment job starts, skip older deployment jobs that are still pending.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
@@ -68718,6 +77325,15 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#shared_runners_enabled Project#shared_runners_enabled}
 	SharedRunnersEnabled interface{} `field:"optional" json:"sharedRunnersEnabled" yaml:"sharedRunnersEnabled"`
+	// If `true`, the default behavior to wait for the default branch protection to be created is skipped.
+	//
+	// This is necessary if the current user is not an admin and the default branch protection is disabled on an instance-level.
+	// There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
+	// This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
+	//
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
+	SkipWaitForDefaultBranchProtection interface{} `field:"optional" json:"skipWaitForDefaultBranchProtection" yaml:"skipWaitForDefaultBranchProtection"`
 	// Set the snippets access level. Valid values are `disabled`, `private`, `enabled`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#snippets_access_level Project#snippets_access_level}
@@ -72933,11 +81549,7 @@ type ProjectIssue interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClosedAt() *string
-	SetClosedAt(val *string)
-	ClosedAtInput() *string
 	ClosedByUserId() *float64
-	SetClosedByUserId(val *float64)
-	ClosedByUserIdInput() *float64
 	Confidential() interface{}
 	SetConfidential(val interface{})
 	ConfidentialInput() interface{}
@@ -72980,11 +81592,7 @@ type ProjectIssue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HumanTimeEstimate() *string
-	SetHumanTimeEstimate(val *string)
-	HumanTimeEstimateInput() *string
 	HumanTotalTimeSpent() *string
-	SetHumanTotalTimeSpent(val *string)
-	HumanTotalTimeSpentInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -73003,9 +81611,7 @@ type ProjectIssue interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Links() *map[string]*string
-	SetLinks(val *map[string]*string)
-	LinksInput() *map[string]*string
+	Links() cdktf.StringMap
 	MergeRequestsCount() *float64
 	MergeRequestToResolveDiscussionsOf() *float64
 	SetMergeRequestToResolveDiscussionsOf(val *float64)
@@ -73025,15 +81631,12 @@ type ProjectIssue interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	References() *map[string]*string
-	SetReferences(val *map[string]*string)
-	ReferencesInput() *map[string]*string
+	References() cdktf.StringMap
 	State() *string
 	SetState(val *string)
 	StateInput() *string
 	Subscribed() cdktf.IResolvable
-	TaskCompletionStatus() ProjectIssueTaskCompletionStatusOutputReference
-	TaskCompletionStatusInput() *ProjectIssueTaskCompletionStatus
+	TaskCompletionStatus() ProjectIssueTaskCompletionStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -73041,14 +81644,10 @@ type ProjectIssue interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TimeEstimate() *float64
-	SetTimeEstimate(val *float64)
-	TimeEstimateInput() *float64
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
 	TotalTimeSpent() *float64
-	SetTotalTimeSpent(val *float64)
-	TotalTimeSpentInput() *float64
 	UpdatedAt() *string
 	SetUpdatedAt(val *string)
 	UpdatedAtInput() *string
@@ -73083,10 +81682,7 @@ type ProjectIssue interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTaskCompletionStatus(value *ProjectIssueTaskCompletionStatus)
 	ResetAssigneeIds()
-	ResetClosedAt()
-	ResetClosedByUserId()
 	ResetConfidential()
 	ResetCreatedAt()
 	ResetDeleteOnDestroy()
@@ -73095,23 +81691,16 @@ type ProjectIssue interface {
 	ResetDiscussionToResolve()
 	ResetDueDate()
 	ResetEpicIssueId()
-	ResetHumanTimeEstimate()
-	ResetHumanTotalTimeSpent()
 	ResetId()
 	ResetIid()
 	ResetIssueType()
 	ResetLabels()
-	ResetLinks()
 	ResetMergeRequestToResolveDiscussionsOf()
 	ResetMilestoneId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetReferences()
 	ResetState()
-	ResetTaskCompletionStatus()
-	ResetTimeEstimate()
-	ResetTotalTimeSpent()
 	ResetUpdatedAt()
 	ResetWeight()
 	SynthesizeAttributes() *map[string]interface{}
@@ -73179,31 +81768,11 @@ func (j *jsiiProxy_ProjectIssue) ClosedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) ClosedAtInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"closedAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectIssue) ClosedByUserId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"closedByUserId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) ClosedByUserIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"closedByUserIdInput",
 		&returns,
 	)
 	return returns
@@ -73459,31 +82028,11 @@ func (j *jsiiProxy_ProjectIssue) HumanTimeEstimate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) HumanTimeEstimateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"humanTimeEstimateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectIssue) HumanTotalTimeSpent() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"humanTotalTimeSpent",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) HumanTotalTimeSpentInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"humanTotalTimeSpentInput",
 		&returns,
 	)
 	return returns
@@ -73599,21 +82148,11 @@ func (j *jsiiProxy_ProjectIssue) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) Links() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ProjectIssue) Links() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"links",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) LinksInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"linksInput",
 		&returns,
 	)
 	return returns
@@ -73729,21 +82268,11 @@ func (j *jsiiProxy_ProjectIssue) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) References() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ProjectIssue) References() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"references",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) ReferencesInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"referencesInput",
 		&returns,
 	)
 	return returns
@@ -73779,21 +82308,11 @@ func (j *jsiiProxy_ProjectIssue) Subscribed() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) TaskCompletionStatus() ProjectIssueTaskCompletionStatusOutputReference {
-	var returns ProjectIssueTaskCompletionStatusOutputReference
+func (j *jsiiProxy_ProjectIssue) TaskCompletionStatus() ProjectIssueTaskCompletionStatusList {
+	var returns ProjectIssueTaskCompletionStatusList
 	_jsii_.Get(
 		j,
 		"taskCompletionStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) TaskCompletionStatusInput() *ProjectIssueTaskCompletionStatus {
-	var returns *ProjectIssueTaskCompletionStatus
-	_jsii_.Get(
-		j,
-		"taskCompletionStatusInput",
 		&returns,
 	)
 	return returns
@@ -73839,16 +82358,6 @@ func (j *jsiiProxy_ProjectIssue) TimeEstimate() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssue) TimeEstimateInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"timeEstimateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectIssue) Title() *string {
 	var returns *string
 	_jsii_.Get(
@@ -73874,16 +82383,6 @@ func (j *jsiiProxy_ProjectIssue) TotalTimeSpent() *float64 {
 	_jsii_.Get(
 		j,
 		"totalTimeSpent",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssue) TotalTimeSpentInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"totalTimeSpentInput",
 		&returns,
 	)
 	return returns
@@ -73994,22 +82493,6 @@ func (j *jsiiProxy_ProjectIssue) SetAssigneeIds(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIssue) SetClosedAt(val *string) {
-	_jsii_.Set(
-		j,
-		"closedAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectIssue) SetClosedByUserId(val *float64) {
-	_jsii_.Set(
-		j,
-		"closedByUserId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ProjectIssue) SetConfidential(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -74090,22 +82573,6 @@ func (j *jsiiProxy_ProjectIssue) SetEpicIssueId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIssue) SetHumanTimeEstimate(val *string) {
-	_jsii_.Set(
-		j,
-		"humanTimeEstimate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectIssue) SetHumanTotalTimeSpent(val *string) {
-	_jsii_.Set(
-		j,
-		"humanTotalTimeSpent",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ProjectIssue) SetId(val *string) {
 	_jsii_.Set(
 		j,
@@ -74146,14 +82613,6 @@ func (j *jsiiProxy_ProjectIssue) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ProjectIssue) SetLinks(val *map[string]*string) {
-	_jsii_.Set(
-		j,
-		"links",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ProjectIssue) SetMergeRequestToResolveDiscussionsOf(val *float64) {
 	_jsii_.Set(
 		j,
@@ -74186,14 +82645,6 @@ func (j *jsiiProxy_ProjectIssue) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIssue) SetReferences(val *map[string]*string) {
-	_jsii_.Set(
-		j,
-		"references",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ProjectIssue) SetState(val *string) {
 	_jsii_.Set(
 		j,
@@ -74202,26 +82653,10 @@ func (j *jsiiProxy_ProjectIssue) SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIssue) SetTimeEstimate(val *float64) {
-	_jsii_.Set(
-		j,
-		"timeEstimate",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ProjectIssue) SetTitle(val *string) {
 	_jsii_.Set(
 		j,
 		"title",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectIssue) SetTotalTimeSpent(val *float64) {
-	_jsii_.Set(
-		j,
-		"totalTimeSpent",
 		val,
 	)
 }
@@ -74431,34 +82866,10 @@ func (p *jsiiProxy_ProjectIssue) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_ProjectIssue) PutTaskCompletionStatus(value *ProjectIssueTaskCompletionStatus) {
-	_jsii_.InvokeVoid(
-		p,
-		"putTaskCompletionStatus",
-		[]interface{}{value},
-	)
-}
-
 func (p *jsiiProxy_ProjectIssue) ResetAssigneeIds() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAssigneeIds",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetClosedAt() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetClosedAt",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetClosedByUserId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetClosedByUserId",
 		nil, // no parameters
 	)
 }
@@ -74527,22 +82938,6 @@ func (p *jsiiProxy_ProjectIssue) ResetEpicIssueId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectIssue) ResetHumanTimeEstimate() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetHumanTimeEstimate",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetHumanTotalTimeSpent() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetHumanTotalTimeSpent",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_ProjectIssue) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -74575,14 +82970,6 @@ func (p *jsiiProxy_ProjectIssue) ResetLabels() {
 	)
 }
 
-func (p *jsiiProxy_ProjectIssue) ResetLinks() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetLinks",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_ProjectIssue) ResetMergeRequestToResolveDiscussionsOf() {
 	_jsii_.InvokeVoid(
 		p,
@@ -74607,42 +82994,10 @@ func (p *jsiiProxy_ProjectIssue) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectIssue) ResetReferences() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetReferences",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_ProjectIssue) ResetState() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetState",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetTaskCompletionStatus() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetTaskCompletionStatus",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetTimeEstimate() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetTimeEstimate",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssue) ResetTotalTimeSpent() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetTotalTimeSpent",
 		nil, // no parameters
 	)
 }
@@ -74736,16 +83091,6 @@ type ProjectIssueConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#assignee_ids ProjectIssue#assignee_ids}
 	AssigneeIds *[]*float64 `field:"optional" json:"assigneeIds" yaml:"assigneeIds"`
-	// When the issue was closed. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_at ProjectIssue#closed_at}
-	ClosedAt *string `field:"optional" json:"closedAt" yaml:"closedAt"`
-	// The ID of the user that closed the issue.
-	//
-	// Use `gitlab_user` data source to get more information about the user.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_by_user_id ProjectIssue#closed_by_user_id}
-	ClosedByUserId *float64 `field:"optional" json:"closedByUserId" yaml:"closedByUserId"`
 	// Set an issue to be confidential.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#confidential ProjectIssue#confidential}
@@ -74786,14 +83131,6 @@ type ProjectIssueConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#epic_issue_id ProjectIssue#epic_issue_id}
 	EpicIssueId *float64 `field:"optional" json:"epicIssueId" yaml:"epicIssueId"`
-	// The human-readable time estimate of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_time_estimate ProjectIssue#human_time_estimate}
-	HumanTimeEstimate *string `field:"optional" json:"humanTimeEstimate" yaml:"humanTimeEstimate"`
-	// The human-readable total time spent of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_total_time_spent ProjectIssue#human_total_time_spent}
-	HumanTotalTimeSpent *string `field:"optional" json:"humanTotalTimeSpent" yaml:"humanTotalTimeSpent"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -74811,10 +83148,6 @@ type ProjectIssueConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#labels ProjectIssue#labels}
 	Labels *[]*string `field:"optional" json:"labels" yaml:"labels"`
-	// The links of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#links ProjectIssue#links}
-	Links *map[string]*string `field:"optional" json:"links" yaml:"links"`
 	// The IID of a merge request in which to resolve all issues.
 	//
 	// This fills out the issue with a default description and mark all discussions as resolved. When passing a description or title, these values take precedence over the default values.
@@ -74827,26 +83160,10 @@ type ProjectIssueConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#milestone_id ProjectIssue#milestone_id}
 	MilestoneId *float64 `field:"optional" json:"milestoneId" yaml:"milestoneId"`
-	// The references of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#references ProjectIssue#references}
-	References *map[string]*string `field:"optional" json:"references" yaml:"references"`
 	// The state of the issue. Valid values are: `opened`, `closed`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#state ProjectIssue#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
-	// task_completion_status block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#task_completion_status ProjectIssue#task_completion_status}
-	TaskCompletionStatus *ProjectIssueTaskCompletionStatus `field:"optional" json:"taskCompletionStatus" yaml:"taskCompletionStatus"`
-	// The time estimate of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#time_estimate ProjectIssue#time_estimate}
-	TimeEstimate *float64 `field:"optional" json:"timeEstimate" yaml:"timeEstimate"`
-	// The total time spent of the issue.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#total_time_spent ProjectIssue#total_time_spent}
-	TotalTimeSpent *float64 `field:"optional" json:"totalTimeSpent" yaml:"totalTimeSpent"`
 	// When the issue was updated. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#updated_at ProjectIssue#updated_at}
@@ -74858,21 +83175,198 @@ type ProjectIssueConfig struct {
 }
 
 type ProjectIssueTaskCompletionStatus struct {
-	// The number of tasks that are completed.
+}
+
+type ProjectIssueTaskCompletionStatusList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#completed_count ProjectIssue#completed_count}
-	CompletedCount *float64 `field:"optional" json:"completedCount" yaml:"completedCount"`
-	// The number of tasks.
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) ProjectIssueTaskCompletionStatusOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#count ProjectIssue#count}
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ProjectIssueTaskCompletionStatusList
+type jsiiProxy_ProjectIssueTaskCompletionStatusList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewProjectIssueTaskCompletionStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIssueTaskCompletionStatusList {
+	_init_.Initialize()
+
+	j := jsiiProxy_ProjectIssueTaskCompletionStatusList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewProjectIssueTaskCompletionStatusList_Override(p ProjectIssueTaskCompletionStatusList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) Get(index *float64) ProjectIssueTaskCompletionStatusOutputReference {
+	var returns ProjectIssueTaskCompletionStatusOutputReference
+
+	_jsii_.Invoke(
+		p,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
 }
 
 type ProjectIssueTaskCompletionStatusOutputReference interface {
 	cdktf.ComplexObject
 	CompletedCount() *float64
-	SetCompletedCount(val *float64)
-	CompletedCountInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74884,8 +83378,6 @@ type ProjectIssueTaskCompletionStatusOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Count() *float64
-	SetCount(val *float64)
-	CountInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -74927,8 +83419,6 @@ type ProjectIssueTaskCompletionStatusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCompletedCount()
-	ResetCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -74949,16 +83439,6 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) CompletedCou
 	_jsii_.Get(
 		j,
 		"completedCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) CompletedCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"completedCountInput",
 		&returns,
 	)
 	return returns
@@ -74989,16 +83469,6 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) Count() *flo
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) CountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"countInput",
 		&returns,
 	)
 	return returns
@@ -75055,35 +83525,27 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) TerraformRes
 }
 
 
-func NewProjectIssueTaskCompletionStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectIssueTaskCompletionStatusOutputReference {
+func NewProjectIssueTaskCompletionStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProjectIssueTaskCompletionStatusOutputReference {
 	_init_.Initialize()
 
 	j := jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewProjectIssueTaskCompletionStatusOutputReference_Override(p ProjectIssueTaskCompletionStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewProjectIssueTaskCompletionStatusOutputReference_Override(p ProjectIssueTaskCompletionStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
-	)
-}
-
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) SetCompletedCount(val *float64) {
-	_jsii_.Set(
-		j,
-		"completedCount",
-		val,
 	)
 }
 
@@ -75099,14 +83561,6 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) SetCount(val *float64) {
-	_jsii_.Set(
-		j,
-		"count",
 		val,
 	)
 }
@@ -75289,22 +83743,6 @@ func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) Interpolatio
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) ResetCompletedCount() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetCompletedCount",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) ResetCount() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetCount",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
@@ -76182,6 +84620,9 @@ type ProjectMembership interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresAt() *string
+	SetExpiresAt(val *string)
+	ExpiresAtInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -76238,6 +84679,7 @@ type ProjectMembership interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetExpiresAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -76312,6 +84754,26 @@ func (j *jsiiProxy_ProjectMembership) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMembership) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMembership) ExpiresAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAtInput",
 		&returns,
 	)
 	return returns
@@ -76514,6 +84976,14 @@ func (j *jsiiProxy_ProjectMembership) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMembership) SetExpiresAt(val *string) {
+	_jsii_.Set(
+		j,
+		"expiresAt",
 		val,
 	)
 }
@@ -76747,6 +85217,14 @@ func (p *jsiiProxy_ProjectMembership) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProjectMembership) ResetExpiresAt() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExpiresAt",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectMembership) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -76824,7 +85302,7 @@ type ProjectMembershipConfig struct {
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
-	// The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`.
+	// The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#access_level ProjectMembership#access_level}
 	AccessLevel *string `field:"required" json:"accessLevel" yaml:"accessLevel"`
@@ -76836,11 +85314,912 @@ type ProjectMembershipConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#user_id ProjectMembership#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`
+	// Expiration date for the project membership. Format: `YYYY-MM-DD`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#expires_at ProjectMembership#expires_at}
+	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone gitlab_project_milestone}.
+type ProjectMilestone interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	CreatedAt() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DueDate() *string
+	SetDueDate(val *string)
+	DueDateInput() *string
+	Expired() cdktf.IResolvable
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	Iid() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MilestoneId() *float64
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectId() *float64
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	StartDate() *string
+	SetStartDate(val *string)
+	StartDateInput() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	UpdatedAt() *string
+	WebUrl() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
+	ResetDueDate()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetStartDate()
+	ResetState()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ProjectMilestone
+type jsiiProxy_ProjectMilestone struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ProjectMilestone) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) DueDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dueDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) DueDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dueDateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Expired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"expired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Iid() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"iid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) MilestoneId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"milestoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) ProjectId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) StartDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) StartDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startDateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMilestone) WebUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webUrl",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone gitlab_project_milestone} Resource.
+func NewProjectMilestone(scope constructs.Construct, id *string, config *ProjectMilestoneConfig) ProjectMilestone {
+	_init_.Initialize()
+
+	j := jsiiProxy_ProjectMilestone{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ProjectMilestone",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone gitlab_project_milestone} Resource.
+func NewProjectMilestone_Override(p ProjectMilestone, scope constructs.Construct, id *string, config *ProjectMilestoneConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ProjectMilestone",
+		[]interface{}{scope, id, config},
+		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetDescription(val *string) {
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetDueDate(val *string) {
+	_jsii_.Set(
+		j,
+		"dueDate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetStartDate(val *string) {
+	_jsii_.Set(
+		j,
+		"startDate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetState(val *string) {
+	_jsii_.Set(
+		j,
+		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMilestone) SetTitle(val *string) {
+	_jsii_.Set(
+		j,
+		"title",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ProjectMilestone_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.ProjectMilestone",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ProjectMilestone_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.ProjectMilestone",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		p,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		p,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		p,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		p,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetDueDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDueDate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetStartDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetStartDate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) ResetState() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMilestone) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectMilestone) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ProjectMilestoneConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The ID or URL-encoded path of the project owned by the authenticated user.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#project ProjectMilestone#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// The title of a milestone.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#title ProjectMilestone#title}
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// The description of the milestone.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#description ProjectMilestone#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
+	// The due date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#due_date ProjectMilestone#due_date}
+	DueDate *string `field:"optional" json:"dueDate" yaml:"dueDate"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#id ProjectMilestone#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#start_date ProjectMilestone#start_date}
+	StartDate *string `field:"optional" json:"startDate" yaml:"startDate"`
+	// The state of the milestone. Valid values are: `active`, `closed`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#state ProjectMilestone#state}
+	State *string `field:"optional" json:"state" yaml:"state"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror gitlab_project_mirror}.
@@ -77672,6 +87051,9 @@ type ProjectProtectedEnvironment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RequiredApprovalCount() *float64
+	SetRequiredApprovalCount(val *float64)
+	RequiredApprovalCountInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -77708,6 +87090,7 @@ type ProjectProtectedEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRequiredApprovalCount()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -77903,6 +87286,26 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectProtectedEnvironment) RequiredApprovalCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requiredApprovalCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) RequiredApprovalCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requiredApprovalCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -78012,6 +87415,14 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) SetRequiredApprovalCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"requiredApprovalCount",
 		val,
 	)
 }
@@ -78229,6 +87640,14 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) ResetOverrideLogicalId() {
 	)
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) ResetRequiredApprovalCount() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRequiredApprovalCount",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -78307,6 +87726,10 @@ type ProjectProtectedEnvironmentConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The number of approvals required to deploy to this environment.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+	RequiredApprovalCount *float64 `field:"optional" json:"requiredApprovalCount" yaml:"requiredApprovalCount"`
 }
 
 type ProjectProtectedEnvironmentDeployAccessLevels struct {
@@ -81286,13 +90709,13 @@ type ProjectShareGroupConfig struct {
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The access level to grant the group for the project.
 	//
-	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`
+	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group#access_level ProjectShareGroup#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
 	// The access level to grant the group for the project.
 	//
-	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`
+	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group#group_access ProjectShareGroup#group_access}
 	GroupAccess *string `field:"optional" json:"groupAccess" yaml:"groupAccess"`
@@ -84224,6 +93647,841 @@ type ProjectVariableConfig struct {
 	VariableType *string `field:"optional" json:"variableType" yaml:"variableType"`
 }
 
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link}.
+type ReleaseLink interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DirectAssetUrl() *string
+	External() cdktf.IResolvable
+	Filepath() *string
+	SetFilepath(val *string)
+	FilepathInput() *string
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkId() *float64
+	LinkType() *string
+	SetLinkType(val *string)
+	LinkTypeInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	TagName() *string
+	SetTagName(val *string)
+	TagNameInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetFilepath()
+	ResetId()
+	ResetLinkType()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ReleaseLink
+type jsiiProxy_ReleaseLink struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ReleaseLink) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) DirectAssetUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directAssetUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) External() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"external",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Filepath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filepath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) FilepathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filepathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) LinkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"linkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) LinkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"linkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) LinkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"linkTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) TagName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) TagNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReleaseLink) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link} Resource.
+func NewReleaseLink(scope constructs.Construct, id *string, config *ReleaseLinkConfig) ReleaseLink {
+	_init_.Initialize()
+
+	j := jsiiProxy_ReleaseLink{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ReleaseLink",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link} Resource.
+func NewReleaseLink_Override(r ReleaseLink, scope constructs.Construct, id *string, config *ReleaseLinkConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.ReleaseLink",
+		[]interface{}{scope, id, config},
+		r,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetFilepath(val *string) {
+	_jsii_.Set(
+		j,
+		"filepath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetLinkType(val *string) {
+	_jsii_.Set(
+		j,
+		"linkType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetProject(val *string) {
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetTagName(val *string) {
+	_jsii_.Set(
+		j,
+		"tagName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReleaseLink) SetUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"url",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ReleaseLink_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.ReleaseLink",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ReleaseLink_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.ReleaseLink",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		r,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		r,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		r,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		r,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) ResetFilepath() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFilepath",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) ResetId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) ResetLinkType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLinkType",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReleaseLink) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ReleaseLink) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ReleaseLinkConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The name of the link. Link names must be unique within the release.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#name ReleaseLink#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#project ReleaseLink#project}
+	Project *string `field:"required" json:"project" yaml:"project"`
+	// The tag associated with the Release.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#tag_name ReleaseLink#tag_name}
+	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
+	// The URL of the link. Link URLs must be unique within the release.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#url ReleaseLink#url}
+	Url *string `field:"required" json:"url" yaml:"url"`
+	// Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#filepath ReleaseLink#filepath}
+	Filepath *string `field:"optional" json:"filepath" yaml:"filepath"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#link_type ReleaseLink#link_type}
+	LinkType *string `field:"optional" json:"linkType" yaml:"linkType"`
+}
+
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file gitlab_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
@@ -85797,6 +96055,945 @@ func (r *jsiiProxy_RepositoryFileTimeoutsOutputReference) ToString() *string {
 	)
 
 	return returns
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner}.
+type Runner interface {
+	cdktf.TerraformResource
+	AccessLevel() *string
+	SetAccessLevel(val *string)
+	AccessLevelInput() *string
+	AuthenticationToken() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Locked() interface{}
+	SetLocked(val interface{})
+	LockedInput() interface{}
+	MaximumTimeout() *float64
+	SetMaximumTimeout(val *float64)
+	MaximumTimeoutInput() *float64
+	// The tree node.
+	Node() constructs.Node
+	Paused() interface{}
+	SetPaused(val interface{})
+	PausedInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	RegistrationToken() *string
+	SetRegistrationToken(val *string)
+	RegistrationTokenInput() *string
+	RunUntagged() interface{}
+	SetRunUntagged(val interface{})
+	RunUntaggedInput() interface{}
+	Status() *string
+	TagList() *[]*string
+	SetTagList(val *[]*string)
+	TagListInput() *[]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetAccessLevel()
+	ResetDescription()
+	ResetId()
+	ResetLocked()
+	ResetMaximumTimeout()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPaused()
+	ResetRunUntagged()
+	ResetTagList()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for Runner
+type jsiiProxy_Runner struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Runner) AccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) AccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) AuthenticationToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Locked() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) LockedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) MaximumTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) MaximumTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Paused() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) PausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pausedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) RegistrationToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registrationToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) RegistrationTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registrationTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) RunUntagged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runUntagged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) RunUntaggedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runUntaggedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) TagList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) TagListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Runner) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner} Resource.
+func NewRunner(scope constructs.Construct, id *string, config *RunnerConfig) Runner {
+	_init_.Initialize()
+
+	j := jsiiProxy_Runner{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.Runner",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner} Resource.
+func NewRunner_Override(r Runner, scope constructs.Construct, id *string, config *RunnerConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.Runner",
+		[]interface{}{scope, id, config},
+		r,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetAccessLevel(val *string) {
+	_jsii_.Set(
+		j,
+		"accessLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetDescription(val *string) {
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetLocked(val interface{}) {
+	_jsii_.Set(
+		j,
+		"locked",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetMaximumTimeout(val *float64) {
+	_jsii_.Set(
+		j,
+		"maximumTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetPaused(val interface{}) {
+	_jsii_.Set(
+		j,
+		"paused",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetRegistrationToken(val *string) {
+	_jsii_.Set(
+		j,
+		"registrationToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetRunUntagged(val interface{}) {
+	_jsii_.Set(
+		j,
+		"runUntagged",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Runner) SetTagList(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"tagList",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func Runner_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.Runner",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func Runner_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.Runner",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (r *jsiiProxy_Runner) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		r,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (r *jsiiProxy_Runner) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		r,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		r,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		r,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetAccessLevel() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAccessLevel",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetDescription() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetLocked() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLocked",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetMaximumTimeout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaximumTimeout",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetPaused() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetRunUntagged() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRunUntagged",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) ResetTagList() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagList",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Runner) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_Runner) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type RunnerConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// The registration token used to register the runner.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#registration_token Runner#registration_token}
+	RegistrationToken *string `field:"required" json:"registrationToken" yaml:"registrationToken"`
+	// The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#access_level Runner#access_level}
+	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
+	// The runner's description.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#description Runner#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Whether the runner should be locked for current project.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#locked Runner#locked}
+	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
+	// Maximum timeout set when this runner handles the job.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#maximum_timeout Runner#maximum_timeout}
+	MaximumTimeout *float64 `field:"optional" json:"maximumTimeout" yaml:"maximumTimeout"`
+	// Whether the runner should ignore new jobs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#paused Runner#paused}
+	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	// Whether the runner should handle untagged jobs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#run_untagged Runner#run_untagged}
+	RunUntagged interface{} `field:"optional" json:"runUntagged" yaml:"runUntagged"`
+	// List of runner’s tags.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#tag_list Runner#tag_list}
+	TagList *[]*string `field:"optional" json:"tagList" yaml:"tagList"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki gitlab_service_external_wiki}.
@@ -88521,7 +99718,7 @@ type ServiceJiraConfig struct {
 	IssuesEvents interface{} `field:"optional" json:"issuesEvents" yaml:"issuesEvents"`
 	// The ID of a transition that moves issues to a closed state.
 	//
-	// You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2.
+	// You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. **Note**: importing this field is currently not supported.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 	JiraIssueTransitionId *string `field:"optional" json:"jiraIssueTransitionId" yaml:"jiraIssueTransitionId"`
@@ -93648,6 +104845,9 @@ type Topic interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93681,6 +104881,7 @@ type Topic interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSoftDestroy()
+	ResetTitle()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -93956,6 +105157,26 @@ func (j *jsiiProxy_Topic) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Topic) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Topic) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/topic gitlab_topic} Resource.
 func NewTopic(scope constructs.Construct, id *string, config *TopicConfig) Topic {
@@ -94059,6 +105280,14 @@ func (j *jsiiProxy_Topic) SetSoftDestroy(val interface{}) {
 	_jsii_.Set(
 		j,
 		"softDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Topic) SetTitle(val *string) {
+	_jsii_.Set(
+		j,
+		"title",
 		val,
 	)
 }
@@ -94300,6 +105529,14 @@ func (t *jsiiProxy_Topic) ResetSoftDestroy() {
 	)
 }
 
+func (t *jsiiProxy_Topic) ResetTitle() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTitle",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Topic) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -94388,6 +105625,10 @@ type TopicConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#soft_destroy Topic#soft_destroy}
 	SoftDestroy interface{} `field:"optional" json:"softDestroy" yaml:"softDestroy"`
+	// The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#title Topic#title}
+	Title *string `field:"optional" json:"title" yaml:"title"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user gitlab_user}.

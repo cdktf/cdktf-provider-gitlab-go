@@ -41,5 +41,17 @@ type GroupMembershipConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped.
+	//
+	// Only used during a destroy.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+	SkipSubresourcesOnDestroy interface{} `field:"optional" json:"skipSubresourcesOnDestroy" yaml:"skipSubresourcesOnDestroy"`
+	// Whether the removed member should be unassigned from any issues or merge requests inside a given group or project.
+	//
+	// Only used during a destroy.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+	UnassignIssuablesOnDestroy interface{} `field:"optional" json:"unassignIssuablesOnDestroy" yaml:"unassignIssuablesOnDestroy"`
 }
 

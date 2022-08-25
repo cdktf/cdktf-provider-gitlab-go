@@ -1,0 +1,23 @@
+// Prebuilt gitlab Provider for Terraform CDK (cdktf)
+package gitlab
+
+
+type ProjectIssueBoardLists struct {
+	// The ID of the assignee the list should be scoped to. Requires a GitLab EE license.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+	AssigneeId *float64 `field:"optional" json:"assigneeId" yaml:"assigneeId"`
+	// The ID of the iteration the list should be scoped to. Requires a GitLab EE license.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
+	IterationId *float64 `field:"optional" json:"iterationId" yaml:"iterationId"`
+	// The ID of the label the list should be scoped to. Requires a GitLab EE license.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#label_id ProjectIssueBoard#label_id}
+	LabelId *float64 `field:"optional" json:"labelId" yaml:"labelId"`
+	// The ID of the milestone the list should be scoped to. Requires a GitLab EE license.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+	MilestoneId *float64 `field:"optional" json:"milestoneId" yaml:"milestoneId"`
+}
+

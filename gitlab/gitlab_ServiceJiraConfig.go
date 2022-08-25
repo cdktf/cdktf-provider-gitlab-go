@@ -59,7 +59,7 @@ type ServiceJiraConfig struct {
 	IssuesEvents interface{} `field:"optional" json:"issuesEvents" yaml:"issuesEvents"`
 	// The ID of a transition that moves issues to a closed state.
 	//
-	// You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. **Note**: importing this field is currently not supported.
+	// You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 	JiraIssueTransitionId *string `field:"optional" json:"jiraIssueTransitionId" yaml:"jiraIssueTransitionId"`

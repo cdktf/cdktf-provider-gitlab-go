@@ -324,7 +324,7 @@ type ProjectConfig struct {
 	TemplateName *string `field:"optional" json:"templateName" yaml:"templateName"`
 	// When used with use_custom_template, project ID of a custom project template.
 	//
-	// This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`.
+	// This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`. See `gitlab_group_project_file_template` to set a project as a template project. If a project has not been set as a template, using it here will result in an error.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#template_project_id Project#template_project_id}
 	TemplateProjectId *float64 `field:"optional" json:"templateProjectId" yaml:"templateProjectId"`

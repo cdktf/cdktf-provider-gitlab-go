@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook gitlab_project_hook}.
-type ProjectHook interface {
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook gitlab_group_hook}.
+type GroupHook interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -49,6 +49,10 @@ type ProjectHook interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Group() *string
+	SetGroup(val *string)
+	GroupId() *float64
+	GroupInput() *string
 	HookId() *float64
 	Id() *string
 	SetId(val *string)
@@ -74,10 +78,6 @@ type ProjectHook interface {
 	PipelineEvents() interface{}
 	SetPipelineEvents(val interface{})
 	PipelineEventsInput() interface{}
-	Project() *string
-	SetProject(val *string)
-	ProjectId() *float64
-	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -97,6 +97,9 @@ type ProjectHook interface {
 	ReleasesEvents() interface{}
 	SetReleasesEvents(val interface{})
 	ReleasesEventsInput() interface{}
+	SubgroupEvents() interface{}
+	SetSubgroupEvents(val interface{})
+	SubgroupEventsInput() interface{}
 	TagPushEvents() interface{}
 	SetTagPushEvents(val interface{})
 	TagPushEventsInput() interface{}
@@ -156,6 +159,7 @@ type ProjectHook interface {
 	ResetPushEvents()
 	ResetPushEventsBranchFilter()
 	ResetReleasesEvents()
+	ResetSubgroupEvents()
 	ResetTagPushEvents()
 	ResetToken()
 	ResetWikiPageEvents()
@@ -169,12 +173,12 @@ type ProjectHook interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for ProjectHook
-type jsiiProxy_ProjectHook struct {
+// The jsii proxy struct for GroupHook
+type jsiiProxy_GroupHook struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ProjectHook) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_GroupHook) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -184,7 +188,7 @@ func (j *jsiiProxy_ProjectHook) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ConfidentialIssuesEvents() interface{} {
+func (j *jsiiProxy_GroupHook) ConfidentialIssuesEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -194,7 +198,7 @@ func (j *jsiiProxy_ProjectHook) ConfidentialIssuesEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ConfidentialIssuesEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) ConfidentialIssuesEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -204,7 +208,7 @@ func (j *jsiiProxy_ProjectHook) ConfidentialIssuesEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ConfidentialNoteEvents() interface{} {
+func (j *jsiiProxy_GroupHook) ConfidentialNoteEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -214,7 +218,7 @@ func (j *jsiiProxy_ProjectHook) ConfidentialNoteEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ConfidentialNoteEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) ConfidentialNoteEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -224,7 +228,7 @@ func (j *jsiiProxy_ProjectHook) ConfidentialNoteEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Connection() interface{} {
+func (j *jsiiProxy_GroupHook) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -234,7 +238,7 @@ func (j *jsiiProxy_ProjectHook) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_GroupHook) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -244,7 +248,7 @@ func (j *jsiiProxy_ProjectHook) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Count() *float64 {
+func (j *jsiiProxy_GroupHook) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -254,7 +258,7 @@ func (j *jsiiProxy_ProjectHook) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) DependsOn() *[]*string {
+func (j *jsiiProxy_GroupHook) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -264,7 +268,7 @@ func (j *jsiiProxy_ProjectHook) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) DeploymentEvents() interface{} {
+func (j *jsiiProxy_GroupHook) DeploymentEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -274,7 +278,7 @@ func (j *jsiiProxy_ProjectHook) DeploymentEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) DeploymentEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) DeploymentEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -284,7 +288,7 @@ func (j *jsiiProxy_ProjectHook) DeploymentEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) EnableSslVerification() interface{} {
+func (j *jsiiProxy_GroupHook) EnableSslVerification() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -294,7 +298,7 @@ func (j *jsiiProxy_ProjectHook) EnableSslVerification() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) EnableSslVerificationInput() interface{} {
+func (j *jsiiProxy_GroupHook) EnableSslVerificationInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -304,7 +308,7 @@ func (j *jsiiProxy_ProjectHook) EnableSslVerificationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_GroupHook) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -314,7 +318,7 @@ func (j *jsiiProxy_ProjectHook) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Fqn() *string {
+func (j *jsiiProxy_GroupHook) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -324,7 +328,7 @@ func (j *jsiiProxy_ProjectHook) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) FriendlyUniqueId() *string {
+func (j *jsiiProxy_GroupHook) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -334,7 +338,37 @@ func (j *jsiiProxy_ProjectHook) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) HookId() *float64 {
+func (j *jsiiProxy_GroupHook) Group() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"group",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) GroupId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) GroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) HookId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -344,7 +378,7 @@ func (j *jsiiProxy_ProjectHook) HookId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Id() *string {
+func (j *jsiiProxy_GroupHook) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -354,7 +388,7 @@ func (j *jsiiProxy_ProjectHook) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) IdInput() *string {
+func (j *jsiiProxy_GroupHook) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -364,7 +398,7 @@ func (j *jsiiProxy_ProjectHook) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) IssuesEvents() interface{} {
+func (j *jsiiProxy_GroupHook) IssuesEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -374,7 +408,7 @@ func (j *jsiiProxy_ProjectHook) IssuesEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) IssuesEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) IssuesEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -384,7 +418,7 @@ func (j *jsiiProxy_ProjectHook) IssuesEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) JobEvents() interface{} {
+func (j *jsiiProxy_GroupHook) JobEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -394,7 +428,7 @@ func (j *jsiiProxy_ProjectHook) JobEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) JobEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) JobEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -404,7 +438,7 @@ func (j *jsiiProxy_ProjectHook) JobEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_GroupHook) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -414,7 +448,7 @@ func (j *jsiiProxy_ProjectHook) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) MergeRequestsEvents() interface{} {
+func (j *jsiiProxy_GroupHook) MergeRequestsEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -424,7 +458,7 @@ func (j *jsiiProxy_ProjectHook) MergeRequestsEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) MergeRequestsEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) MergeRequestsEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -434,7 +468,7 @@ func (j *jsiiProxy_ProjectHook) MergeRequestsEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Node() constructs.Node {
+func (j *jsiiProxy_GroupHook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -444,7 +478,7 @@ func (j *jsiiProxy_ProjectHook) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) NoteEvents() interface{} {
+func (j *jsiiProxy_GroupHook) NoteEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -454,7 +488,7 @@ func (j *jsiiProxy_ProjectHook) NoteEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) NoteEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) NoteEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -464,7 +498,7 @@ func (j *jsiiProxy_ProjectHook) NoteEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PipelineEvents() interface{} {
+func (j *jsiiProxy_GroupHook) PipelineEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -474,7 +508,7 @@ func (j *jsiiProxy_ProjectHook) PipelineEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PipelineEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) PipelineEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -484,37 +518,7 @@ func (j *jsiiProxy_ProjectHook) PipelineEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Project() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"project",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectHook) ProjectId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"projectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectHook) ProjectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectHook) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_GroupHook) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -524,7 +528,7 @@ func (j *jsiiProxy_ProjectHook) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Provisioners() *[]interface{} {
+func (j *jsiiProxy_GroupHook) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -534,7 +538,7 @@ func (j *jsiiProxy_ProjectHook) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PushEvents() interface{} {
+func (j *jsiiProxy_GroupHook) PushEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -544,7 +548,7 @@ func (j *jsiiProxy_ProjectHook) PushEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PushEventsBranchFilter() *string {
+func (j *jsiiProxy_GroupHook) PushEventsBranchFilter() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -554,7 +558,7 @@ func (j *jsiiProxy_ProjectHook) PushEventsBranchFilter() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PushEventsBranchFilterInput() *string {
+func (j *jsiiProxy_GroupHook) PushEventsBranchFilterInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -564,7 +568,7 @@ func (j *jsiiProxy_ProjectHook) PushEventsBranchFilterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) PushEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) PushEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -574,7 +578,7 @@ func (j *jsiiProxy_ProjectHook) PushEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) RawOverrides() interface{} {
+func (j *jsiiProxy_GroupHook) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -584,7 +588,7 @@ func (j *jsiiProxy_ProjectHook) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ReleasesEvents() interface{} {
+func (j *jsiiProxy_GroupHook) ReleasesEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -594,7 +598,7 @@ func (j *jsiiProxy_ProjectHook) ReleasesEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) ReleasesEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) ReleasesEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -604,7 +608,27 @@ func (j *jsiiProxy_ProjectHook) ReleasesEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TagPushEvents() interface{} {
+func (j *jsiiProxy_GroupHook) SubgroupEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subgroupEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) SubgroupEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subgroupEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) TagPushEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -614,7 +638,7 @@ func (j *jsiiProxy_ProjectHook) TagPushEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TagPushEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) TagPushEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -624,7 +648,7 @@ func (j *jsiiProxy_ProjectHook) TagPushEventsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_GroupHook) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -634,7 +658,7 @@ func (j *jsiiProxy_ProjectHook) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_GroupHook) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -644,7 +668,7 @@ func (j *jsiiProxy_ProjectHook) TerraformMetaArguments() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TerraformResourceType() *string {
+func (j *jsiiProxy_GroupHook) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -654,7 +678,7 @@ func (j *jsiiProxy_ProjectHook) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Token() *string {
+func (j *jsiiProxy_GroupHook) Token() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -664,7 +688,7 @@ func (j *jsiiProxy_ProjectHook) Token() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) TokenInput() *string {
+func (j *jsiiProxy_GroupHook) TokenInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -674,7 +698,7 @@ func (j *jsiiProxy_ProjectHook) TokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) Url() *string {
+func (j *jsiiProxy_GroupHook) Url() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -684,7 +708,7 @@ func (j *jsiiProxy_ProjectHook) Url() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) UrlInput() *string {
+func (j *jsiiProxy_GroupHook) UrlInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -694,7 +718,7 @@ func (j *jsiiProxy_ProjectHook) UrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) WikiPageEvents() interface{} {
+func (j *jsiiProxy_GroupHook) WikiPageEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -704,7 +728,7 @@ func (j *jsiiProxy_ProjectHook) WikiPageEvents() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
+func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -715,14 +739,14 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook gitlab_project_hook} Resource.
-func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook gitlab_group_hook} Resource.
+func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
-	j := jsiiProxy_ProjectHook{}
+	j := jsiiProxy_GroupHook{}
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.ProjectHook",
+		"@cdktf/provider-gitlab.GroupHook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -730,18 +754,18 @@ func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook gitlab_project_hook} Resource.
-func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *string, config *ProjectHookConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook gitlab_group_hook} Resource.
+func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, config *GroupHookConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.ProjectHook",
+		"@cdktf/provider-gitlab.GroupHook",
 		[]interface{}{scope, id, config},
-		p,
+		g,
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConfidentialIssuesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetConfidentialIssuesEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
@@ -749,7 +773,7 @@ func (j *jsiiProxy_ProjectHook) SetConfidentialIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConfidentialNoteEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetConfidentialNoteEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"confidentialNoteEvents",
@@ -757,7 +781,7 @@ func (j *jsiiProxy_ProjectHook) SetConfidentialNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
@@ -765,7 +789,7 @@ func (j *jsiiProxy_ProjectHook) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetCount(val *float64) {
+func (j *jsiiProxy_GroupHook) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -773,7 +797,7 @@ func (j *jsiiProxy_ProjectHook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupHook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -781,7 +805,7 @@ func (j *jsiiProxy_ProjectHook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetDeploymentEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetDeploymentEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"deploymentEvents",
@@ -789,7 +813,7 @@ func (j *jsiiProxy_ProjectHook) SetDeploymentEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetEnableSslVerification(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetEnableSslVerification(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableSslVerification",
@@ -797,7 +821,7 @@ func (j *jsiiProxy_ProjectHook) SetEnableSslVerification(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupHook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -805,7 +829,15 @@ func (j *jsiiProxy_ProjectHook) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetId(val *string) {
+func (j *jsiiProxy_GroupHook) SetGroup(val *string) {
+	_jsii_.Set(
+		j,
+		"group",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -813,7 +845,7 @@ func (j *jsiiProxy_ProjectHook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetIssuesEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -821,7 +853,7 @@ func (j *jsiiProxy_ProjectHook) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetJobEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetJobEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"jobEvents",
@@ -829,7 +861,7 @@ func (j *jsiiProxy_ProjectHook) SetJobEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -837,7 +869,7 @@ func (j *jsiiProxy_ProjectHook) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetMergeRequestsEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -845,7 +877,7 @@ func (j *jsiiProxy_ProjectHook) SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetNoteEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -853,7 +885,7 @@ func (j *jsiiProxy_ProjectHook) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetPipelineEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -861,15 +893,7 @@ func (j *jsiiProxy_ProjectHook) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetProject(val *string) {
-	_jsii_.Set(
-		j,
-		"project",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectHook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupHook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -877,7 +901,7 @@ func (j *jsiiProxy_ProjectHook) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupHook) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -885,7 +909,7 @@ func (j *jsiiProxy_ProjectHook) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetPushEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -893,7 +917,7 @@ func (j *jsiiProxy_ProjectHook) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPushEventsBranchFilter(val *string) {
+func (j *jsiiProxy_GroupHook) SetPushEventsBranchFilter(val *string) {
 	_jsii_.Set(
 		j,
 		"pushEventsBranchFilter",
@@ -901,7 +925,7 @@ func (j *jsiiProxy_ProjectHook) SetPushEventsBranchFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetReleasesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetReleasesEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"releasesEvents",
@@ -909,7 +933,15 @@ func (j *jsiiProxy_ProjectHook) SetReleasesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetSubgroupEvents(val interface{}) {
+	_jsii_.Set(
+		j,
+		"subgroupEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook) SetTagPushEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -917,7 +949,7 @@ func (j *jsiiProxy_ProjectHook) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetToken(val *string) {
+func (j *jsiiProxy_GroupHook) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -925,7 +957,7 @@ func (j *jsiiProxy_ProjectHook) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetUrl(val *string) {
+func (j *jsiiProxy_GroupHook) SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
@@ -933,7 +965,7 @@ func (j *jsiiProxy_ProjectHook) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetWikiPageEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook) SetWikiPageEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"wikiPageEvents",
@@ -958,13 +990,13 @@ func (j *jsiiProxy_ProjectHook) SetWikiPageEvents(val interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectHook_IsConstruct(x interface{}) *bool {
+func GroupHook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.ProjectHook",
+		"@cdktf/provider-gitlab.GroupHook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -973,30 +1005,30 @@ func ProjectHook_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func ProjectHook_TfResourceType() *string {
+func GroupHook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-gitlab.ProjectHook",
+		"@cdktf/provider-gitlab.GroupHook",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GroupHook) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GroupHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1005,11 +1037,11 @@ func (p *jsiiProxy_ProjectHook) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GroupHook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1018,11 +1050,11 @@ func (p *jsiiProxy_ProjectHook) GetBooleanAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (g *jsiiProxy_GroupHook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1031,11 +1063,11 @@ func (p *jsiiProxy_ProjectHook) GetBooleanMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetListAttribute(terraformAttribute *string) *[]*string {
+func (g *jsiiProxy_GroupHook) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1044,11 +1076,11 @@ func (p *jsiiProxy_ProjectHook) GetListAttribute(terraformAttribute *string) *[]
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (g *jsiiProxy_GroupHook) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1057,11 +1089,11 @@ func (p *jsiiProxy_ProjectHook) GetNumberAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (g *jsiiProxy_GroupHook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1070,11 +1102,11 @@ func (p *jsiiProxy_ProjectHook) GetNumberListAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (g *jsiiProxy_GroupHook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1083,11 +1115,11 @@ func (p *jsiiProxy_ProjectHook) GetNumberMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetStringAttribute(terraformAttribute *string) *string {
+func (g *jsiiProxy_GroupHook) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1096,11 +1128,11 @@ func (p *jsiiProxy_ProjectHook) GetStringAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (g *jsiiProxy_GroupHook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1109,11 +1141,11 @@ func (p *jsiiProxy_ProjectHook) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GroupHook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -1122,155 +1154,163 @@ func (p *jsiiProxy_ProjectHook) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) OverrideLogicalId(newLogicalId *string) {
+func (g *jsiiProxy_GroupHook) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetConfidentialIssuesEvents() {
+func (g *jsiiProxy_GroupHook) ResetConfidentialIssuesEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetConfidentialIssuesEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetConfidentialNoteEvents() {
+func (g *jsiiProxy_GroupHook) ResetConfidentialNoteEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetConfidentialNoteEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetDeploymentEvents() {
+func (g *jsiiProxy_GroupHook) ResetDeploymentEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetDeploymentEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetEnableSslVerification() {
+func (g *jsiiProxy_GroupHook) ResetEnableSslVerification() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetEnableSslVerification",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetId() {
+func (g *jsiiProxy_GroupHook) ResetId() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetIssuesEvents() {
+func (g *jsiiProxy_GroupHook) ResetIssuesEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetIssuesEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetJobEvents() {
+func (g *jsiiProxy_GroupHook) ResetJobEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetJobEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetMergeRequestsEvents() {
+func (g *jsiiProxy_GroupHook) ResetMergeRequestsEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetMergeRequestsEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetNoteEvents() {
+func (g *jsiiProxy_GroupHook) ResetNoteEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetNoteEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetOverrideLogicalId() {
+func (g *jsiiProxy_GroupHook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetPipelineEvents() {
+func (g *jsiiProxy_GroupHook) ResetPipelineEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetPipelineEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetPushEvents() {
+func (g *jsiiProxy_GroupHook) ResetPushEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetPushEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetPushEventsBranchFilter() {
+func (g *jsiiProxy_GroupHook) ResetPushEventsBranchFilter() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetPushEventsBranchFilter",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetReleasesEvents() {
+func (g *jsiiProxy_GroupHook) ResetReleasesEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetReleasesEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetTagPushEvents() {
+func (g *jsiiProxy_GroupHook) ResetSubgroupEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
+		"resetSubgroupEvents",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetTagPushEvents() {
+	_jsii_.InvokeVoid(
+		g,
 		"resetTagPushEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetToken() {
+func (g *jsiiProxy_GroupHook) ResetToken() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetToken",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) ResetWikiPageEvents() {
+func (g *jsiiProxy_GroupHook) ResetWikiPageEvents() {
 	_jsii_.InvokeVoid(
-		p,
+		g,
 		"resetWikiPageEvents",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_ProjectHook) SynthesizeAttributes() *map[string]interface{} {
+func (g *jsiiProxy_GroupHook) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -1279,11 +1319,11 @@ func (p *jsiiProxy_ProjectHook) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) ToMetadata() interface{} {
+func (g *jsiiProxy_GroupHook) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -1292,11 +1332,11 @@ func (p *jsiiProxy_ProjectHook) ToMetadata() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) ToString() *string {
+func (g *jsiiProxy_GroupHook) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -1305,11 +1345,11 @@ func (p *jsiiProxy_ProjectHook) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectHook) ToTerraform() interface{} {
+func (g *jsiiProxy_GroupHook) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		p,
+		g,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

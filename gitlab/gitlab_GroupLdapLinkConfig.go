@@ -30,6 +30,8 @@ type GroupLdapLinkConfig struct {
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
 	// The name of the LDAP provider as stored in the GitLab database.
 	//
+	// Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
 	LdapProvider *string `field:"required" json:"ldapProvider" yaml:"ldapProvider"`
 	// Minimum access level for members of the LDAP group.

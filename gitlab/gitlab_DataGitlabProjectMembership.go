@@ -10,18 +10,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership gitlab_group_membership}.
-type GroupMembership interface {
-	cdktf.TerraformResource
-	AccessLevel() *string
-	SetAccessLevel(val *string)
-	AccessLevelInput() *string
+// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership}.
+type DataGitlabProjectMembership interface {
+	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	// Experimental.
-	Connection() interface{}
-	// Experimental.
-	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -32,9 +25,6 @@ type GroupMembership interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ExpiresAt() *string
-	SetExpiresAt(val *string)
-	ExpiresAtInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,43 +33,40 @@ type GroupMembership interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GroupId() *string
-	SetGroupId(val *string)
-	GroupIdInput() *string
+	FullPath() *string
+	SetFullPath(val *string)
+	FullPathInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Inherited() interface{}
+	SetInherited(val interface{})
+	InheritedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Members() DataGitlabProjectMembershipMembersList
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *float64
+	SetProjectId(val *float64)
+	ProjectIdInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
-	// Experimental.
-	Provisioners() *[]interface{}
-	// Experimental.
-	SetProvisioners(val *[]interface{})
+	Query() *string
+	SetQuery(val *string)
+	QueryInput() *string
 	// Experimental.
 	RawOverrides() interface{}
-	SkipSubresourcesOnDestroy() interface{}
-	SetSkipSubresourcesOnDestroy(val interface{})
-	SkipSubresourcesOnDestroyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UnassignIssuablesOnDestroy() interface{}
-	SetUnassignIssuablesOnDestroy(val interface{})
-	UnassignIssuablesOnDestroyInput() interface{}
-	UserId() *float64
-	SetUserId(val *float64)
-	UserIdInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,13 +92,14 @@ type GroupMembership interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetExpiresAt()
+	ResetFullPath()
 	ResetId()
+	ResetInherited()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipSubresourcesOnDestroy()
-	ResetUnassignIssuablesOnDestroy()
+	ResetProjectId()
+	ResetQuery()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -122,32 +110,12 @@ type GroupMembership interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for GroupMembership
-type jsiiProxy_GroupMembership struct {
-	internal.Type__cdktfTerraformResource
+// The jsii proxy struct for DataGitlabProjectMembership
+type jsiiProxy_DataGitlabProjectMembership struct {
+	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_GroupMembership) AccessLevel() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessLevel",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) AccessLevelInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessLevelInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataGitlabProjectMembership) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -157,17 +125,7 @@ func (j *jsiiProxy_GroupMembership) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Connection() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataGitlabProjectMembership) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -177,7 +135,7 @@ func (j *jsiiProxy_GroupMembership) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Count() *float64 {
+func (j *jsiiProxy_DataGitlabProjectMembership) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -187,7 +145,7 @@ func (j *jsiiProxy_GroupMembership) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) DependsOn() *[]*string {
+func (j *jsiiProxy_DataGitlabProjectMembership) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -197,27 +155,7 @@ func (j *jsiiProxy_GroupMembership) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) ExpiresAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"expiresAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) ExpiresAtInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"expiresAtInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataGitlabProjectMembership) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -227,7 +165,7 @@ func (j *jsiiProxy_GroupMembership) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Fqn() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -237,7 +175,7 @@ func (j *jsiiProxy_GroupMembership) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -247,27 +185,27 @@ func (j *jsiiProxy_GroupMembership) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) GroupId() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) FullPath() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"groupId",
+		"fullPath",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) GroupIdInput() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) FullPathInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"groupIdInput",
+		"fullPathInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Id() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -277,7 +215,7 @@ func (j *jsiiProxy_GroupMembership) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) IdInput() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -287,7 +225,27 @@ func (j *jsiiProxy_GroupMembership) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataGitlabProjectMembership) Inherited() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) InheritedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -297,7 +255,17 @@ func (j *jsiiProxy_GroupMembership) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Node() constructs.Node {
+func (j *jsiiProxy_DataGitlabProjectMembership) Members() DataGitlabProjectMembershipMembersList {
+	var returns DataGitlabProjectMembershipMembersList
+	_jsii_.Get(
+		j,
+		"members",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -307,7 +275,27 @@ func (j *jsiiProxy_GroupMembership) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataGitlabProjectMembership) ProjectId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) ProjectIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -317,17 +305,27 @@ func (j *jsiiProxy_GroupMembership) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataGitlabProjectMembership) Query() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"provisioners",
+		"query",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) RawOverrides() interface{} {
+func (j *jsiiProxy_DataGitlabProjectMembership) QueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -337,27 +335,7 @@ func (j *jsiiProxy_GroupMembership) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) SkipSubresourcesOnDestroy() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipSubresourcesOnDestroy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) SkipSubresourcesOnDestroyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipSubresourcesOnDestroyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataGitlabProjectMembership) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -367,7 +345,7 @@ func (j *jsiiProxy_GroupMembership) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataGitlabProjectMembership) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -377,7 +355,7 @@ func (j *jsiiProxy_GroupMembership) TerraformMetaArguments() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) TerraformResourceType() *string {
+func (j *jsiiProxy_DataGitlabProjectMembership) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -387,55 +365,15 @@ func (j *jsiiProxy_GroupMembership) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) UnassignIssuablesOnDestroy() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"unassignIssuablesOnDestroy",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_GroupMembership) UnassignIssuablesOnDestroyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"unassignIssuablesOnDestroyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) UserId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"userId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) UserIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"userIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership gitlab_group_membership} Resource.
-func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMembershipConfig) GroupMembership {
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership} Data Source.
+func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) DataGitlabProjectMembership {
 	_init_.Initialize()
 
-	j := jsiiProxy_GroupMembership{}
+	j := jsiiProxy_DataGitlabProjectMembership{}
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.GroupMembership",
+		"@cdktf/provider-gitlab.DataGitlabProjectMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -443,34 +381,18 @@ func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMem
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership gitlab_group_membership} Resource.
-func NewGroupMembership_Override(g GroupMembership, scope constructs.Construct, id *string, config *GroupMembershipConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership} Data Source.
+func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.GroupMembership",
+		"@cdktf/provider-gitlab.DataGitlabProjectMembership",
 		[]interface{}{scope, id, config},
-		g,
+		d,
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetAccessLevel(val *string) {
-	_jsii_.Set(
-		j,
-		"accessLevel",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetConnection(val interface{}) {
-	_jsii_.Set(
-		j,
-		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -478,7 +400,7 @@ func (j *jsiiProxy_GroupMembership) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -486,15 +408,7 @@ func (j *jsiiProxy_GroupMembership) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetExpiresAt(val *string) {
-	_jsii_.Set(
-		j,
-		"expiresAt",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,15 +416,15 @@ func (j *jsiiProxy_GroupMembership) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetGroupId(val *string) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetFullPath(val *string) {
 	_jsii_.Set(
 		j,
-		"groupId",
+		"fullPath",
 		val,
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -518,7 +432,15 @@ func (j *jsiiProxy_GroupMembership) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetInherited(val interface{}) {
+	_jsii_.Set(
+		j,
+		"inherited",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -526,7 +448,15 @@ func (j *jsiiProxy_GroupMembership) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetProjectId(val *float64) {
+	_jsii_.Set(
+		j,
+		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -534,34 +464,10 @@ func (j *jsiiProxy_GroupMembership) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataGitlabProjectMembership) SetQuery(val *string) {
 	_jsii_.Set(
 		j,
-		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetSkipSubresourcesOnDestroy(val interface{}) {
-	_jsii_.Set(
-		j,
-		"skipSubresourcesOnDestroy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetUnassignIssuablesOnDestroy(val interface{}) {
-	_jsii_.Set(
-		j,
-		"unassignIssuablesOnDestroy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership) SetUserId(val *float64) {
-	_jsii_.Set(
-		j,
-		"userId",
+		"query",
 		val,
 	)
 }
@@ -583,13 +489,13 @@ func (j *jsiiProxy_GroupMembership) SetUserId(val *float64) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GroupMembership_IsConstruct(x interface{}) *bool {
+func DataGitlabProjectMembership_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.GroupMembership",
+		"@cdktf/provider-gitlab.DataGitlabProjectMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,30 +504,30 @@ func GroupMembership_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func GroupMembership_TfResourceType() *string {
+func DataGitlabProjectMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-gitlab.GroupMembership",
+		"@cdktf/provider-gitlab.DataGitlabProjectMembership",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGitlabProjectMembership) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		g,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -630,11 +536,11 @@ func (g *jsiiProxy_GroupMembership) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -643,11 +549,11 @@ func (g *jsiiProxy_GroupMembership) GetBooleanAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -656,11 +562,11 @@ func (g *jsiiProxy_GroupMembership) GetBooleanMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -669,11 +575,11 @@ func (g *jsiiProxy_GroupMembership) GetListAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -682,11 +588,11 @@ func (g *jsiiProxy_GroupMembership) GetNumberAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -695,11 +601,11 @@ func (g *jsiiProxy_GroupMembership) GetNumberListAttribute(terraformAttribute *s
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -708,11 +614,11 @@ func (g *jsiiProxy_GroupMembership) GetNumberMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -721,11 +627,11 @@ func (g *jsiiProxy_GroupMembership) GetStringAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataGitlabProjectMembership) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -734,11 +640,11 @@ func (g *jsiiProxy_GroupMembership) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGitlabProjectMembership) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -747,59 +653,67 @@ func (g *jsiiProxy_GroupMembership) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataGitlabProjectMembership) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		g,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) ResetExpiresAt() {
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetFullPath() {
 	_jsii_.InvokeVoid(
-		g,
-		"resetExpiresAt",
+		d,
+		"resetFullPath",
 		nil, // no parameters
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) ResetId() {
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetId() {
 	_jsii_.InvokeVoid(
-		g,
+		d,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetInherited() {
 	_jsii_.InvokeVoid(
-		g,
+		d,
+		"resetInherited",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) ResetSkipSubresourcesOnDestroy() {
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetProjectId() {
 	_jsii_.InvokeVoid(
-		g,
-		"resetSkipSubresourcesOnDestroy",
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) ResetUnassignIssuablesOnDestroy() {
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetQuery() {
 	_jsii_.InvokeVoid(
-		g,
-		"resetUnassignIssuablesOnDestroy",
+		d,
+		"resetQuery",
 		nil, // no parameters
 	)
 }
 
-func (g *jsiiProxy_GroupMembership) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataGitlabProjectMembership) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -808,11 +722,11 @@ func (g *jsiiProxy_GroupMembership) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) ToMetadata() interface{} {
+func (d *jsiiProxy_DataGitlabProjectMembership) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -821,11 +735,11 @@ func (g *jsiiProxy_GroupMembership) ToMetadata() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) ToString() *string {
+func (d *jsiiProxy_DataGitlabProjectMembership) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -834,11 +748,11 @@ func (g *jsiiProxy_GroupMembership) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GroupMembership) ToTerraform() interface{} {
+func (d *jsiiProxy_DataGitlabProjectMembership) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		g,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

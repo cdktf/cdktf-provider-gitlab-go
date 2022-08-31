@@ -634,6 +634,9 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) WikiPageEventsInput() interface{} {
 func NewServiceMicrosoftTeams(scope constructs.Construct, id *string, config *ServiceMicrosoftTeamsConfig) ServiceMicrosoftTeams {
 	_init_.Initialize()
 
+	if err := validateNewServiceMicrosoftTeamsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceMicrosoftTeams{}
 
 	_jsii_.Create(
@@ -656,7 +659,10 @@ func NewServiceMicrosoftTeams_Override(s ServiceMicrosoftTeams, scope constructs
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetBranchesToBeNotified(val *string) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetBranchesToBeNotified(val *string) {
+	if err := j.validateSetBranchesToBeNotifiedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branchesToBeNotified",
@@ -664,7 +670,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetBranchesToBeNotified(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetConfidentialIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetConfidentialIssuesEvents(val interface{}) {
+	if err := j.validateSetConfidentialIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
@@ -672,7 +681,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetConfidentialIssuesEvents(val interf
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetConfidentialNoteEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetConfidentialNoteEvents(val interface{}) {
+	if err := j.validateSetConfidentialNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialNoteEvents",
@@ -680,7 +692,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetConfidentialNoteEvents(val interfac
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -688,7 +703,7 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetCount(val *float64) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -696,7 +711,7 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -704,7 +719,7 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +727,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetId(val *string) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -720,7 +738,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetIssuesEvents(val interface{}) {
+	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -728,7 +749,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -736,7 +760,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetMergeRequestsEvents(val interface{}) {
+	if err := j.validateSetMergeRequestsEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -744,7 +771,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetMergeRequestsEvents(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetNoteEvents(val interface{}) {
+	if err := j.validateSetNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -752,7 +782,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetNotifyOnlyBrokenPipelines(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetNotifyOnlyBrokenPipelines(val interface{}) {
+	if err := j.validateSetNotifyOnlyBrokenPipelinesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notifyOnlyBrokenPipelines",
@@ -760,7 +793,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetNotifyOnlyBrokenPipelines(val inter
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetPipelineEvents(val interface{}) {
+	if err := j.validateSetPipelineEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -768,7 +804,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetProject(val *string) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -776,7 +815,7 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -784,7 +823,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -792,7 +834,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -800,7 +845,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -808,7 +856,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetWebhook(val *string) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetWebhook(val *string) {
+	if err := j.validateSetWebhookParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webhook",
@@ -816,7 +867,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetWebhook(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceMicrosoftTeams) SetWikiPageEvents(val interface{}) {
+func (j *jsiiProxy_ServiceMicrosoftTeams)SetWikiPageEvents(val interface{}) {
+	if err := j.validateSetWikiPageEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageEvents",
@@ -844,6 +898,9 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) SetWikiPageEvents(val interface{}) {
 func ServiceMicrosoftTeams_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServiceMicrosoftTeams_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -868,6 +925,9 @@ func ServiceMicrosoftTeams_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -876,6 +936,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) AddOverride(path *string, value interf
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -889,6 +952,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -902,6 +968,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetBooleanAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -915,6 +984,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -928,6 +1000,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetListAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -941,6 +1016,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -954,6 +1032,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberListAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -967,6 +1048,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetNumberMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -980,6 +1064,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetStringAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -993,6 +1080,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) GetStringMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1006,6 +1096,9 @@ func (s *jsiiProxy_ServiceMicrosoftTeams) InterpolationForAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_ServiceMicrosoftTeams) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

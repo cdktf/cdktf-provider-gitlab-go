@@ -2145,6 +2145,9 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
+	if err := validateNewProjectParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Project{}
 
 	_jsii_.Create(
@@ -2167,7 +2170,10 @@ func NewProject_Override(p Project, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_Project) SetAllowMergeOnSkippedPipeline(val interface{}) {
+func (j *jsiiProxy_Project)SetAllowMergeOnSkippedPipeline(val interface{}) {
+	if err := j.validateSetAllowMergeOnSkippedPipelineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowMergeOnSkippedPipeline",
@@ -2175,7 +2181,10 @@ func (j *jsiiProxy_Project) SetAllowMergeOnSkippedPipeline(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetAnalyticsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetAnalyticsAccessLevel(val *string) {
+	if err := j.validateSetAnalyticsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"analyticsAccessLevel",
@@ -2183,7 +2192,10 @@ func (j *jsiiProxy_Project) SetAnalyticsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetApprovalsBeforeMerge(val *float64) {
+func (j *jsiiProxy_Project)SetApprovalsBeforeMerge(val *float64) {
+	if err := j.validateSetApprovalsBeforeMergeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"approvalsBeforeMerge",
@@ -2191,7 +2203,10 @@ func (j *jsiiProxy_Project) SetApprovalsBeforeMerge(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetArchived(val interface{}) {
+func (j *jsiiProxy_Project)SetArchived(val interface{}) {
+	if err := j.validateSetArchivedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"archived",
@@ -2199,7 +2214,10 @@ func (j *jsiiProxy_Project) SetArchived(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetArchiveOnDestroy(val interface{}) {
+func (j *jsiiProxy_Project)SetArchiveOnDestroy(val interface{}) {
+	if err := j.validateSetArchiveOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"archiveOnDestroy",
@@ -2207,7 +2225,10 @@ func (j *jsiiProxy_Project) SetArchiveOnDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetAutoCancelPendingPipelines(val *string) {
+func (j *jsiiProxy_Project)SetAutoCancelPendingPipelines(val *string) {
+	if err := j.validateSetAutoCancelPendingPipelinesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoCancelPendingPipelines",
@@ -2215,7 +2236,10 @@ func (j *jsiiProxy_Project) SetAutoCancelPendingPipelines(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetAutocloseReferencedIssues(val interface{}) {
+func (j *jsiiProxy_Project)SetAutocloseReferencedIssues(val interface{}) {
+	if err := j.validateSetAutocloseReferencedIssuesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autocloseReferencedIssues",
@@ -2223,7 +2247,10 @@ func (j *jsiiProxy_Project) SetAutocloseReferencedIssues(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetAutoDevopsDeployStrategy(val *string) {
+func (j *jsiiProxy_Project)SetAutoDevopsDeployStrategy(val *string) {
+	if err := j.validateSetAutoDevopsDeployStrategyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoDevopsDeployStrategy",
@@ -2231,7 +2258,10 @@ func (j *jsiiProxy_Project) SetAutoDevopsDeployStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetAutoDevopsEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetAutoDevopsEnabled(val interface{}) {
+	if err := j.validateSetAutoDevopsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoDevopsEnabled",
@@ -2239,7 +2269,10 @@ func (j *jsiiProxy_Project) SetAutoDevopsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetBuildCoverageRegex(val *string) {
+func (j *jsiiProxy_Project)SetBuildCoverageRegex(val *string) {
+	if err := j.validateSetBuildCoverageRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildCoverageRegex",
@@ -2247,7 +2280,10 @@ func (j *jsiiProxy_Project) SetBuildCoverageRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetBuildGitStrategy(val *string) {
+func (j *jsiiProxy_Project)SetBuildGitStrategy(val *string) {
+	if err := j.validateSetBuildGitStrategyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildGitStrategy",
@@ -2255,7 +2291,10 @@ func (j *jsiiProxy_Project) SetBuildGitStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetBuildsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetBuildsAccessLevel(val *string) {
+	if err := j.validateSetBuildsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildsAccessLevel",
@@ -2263,7 +2302,10 @@ func (j *jsiiProxy_Project) SetBuildsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetBuildTimeout(val *float64) {
+func (j *jsiiProxy_Project)SetBuildTimeout(val *float64) {
+	if err := j.validateSetBuildTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buildTimeout",
@@ -2271,7 +2313,10 @@ func (j *jsiiProxy_Project) SetBuildTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetCiConfigPath(val *string) {
+func (j *jsiiProxy_Project)SetCiConfigPath(val *string) {
+	if err := j.validateSetCiConfigPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ciConfigPath",
@@ -2279,7 +2324,10 @@ func (j *jsiiProxy_Project) SetCiConfigPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetCiDefaultGitDepth(val *float64) {
+func (j *jsiiProxy_Project)SetCiDefaultGitDepth(val *float64) {
+	if err := j.validateSetCiDefaultGitDepthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ciDefaultGitDepth",
@@ -2287,7 +2335,10 @@ func (j *jsiiProxy_Project) SetCiDefaultGitDepth(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetCiForwardDeploymentEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
+	if err := j.validateSetCiForwardDeploymentEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
@@ -2295,7 +2346,10 @@ func (j *jsiiProxy_Project) SetCiForwardDeploymentEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetConnection(val interface{}) {
+func (j *jsiiProxy_Project)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -2303,7 +2357,10 @@ func (j *jsiiProxy_Project) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetContainerRegistryAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetContainerRegistryAccessLevel(val *string) {
+	if err := j.validateSetContainerRegistryAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryAccessLevel",
@@ -2311,7 +2368,10 @@ func (j *jsiiProxy_Project) SetContainerRegistryAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetContainerRegistryEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetContainerRegistryEnabled(val interface{}) {
+	if err := j.validateSetContainerRegistryEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryEnabled",
@@ -2319,7 +2379,7 @@ func (j *jsiiProxy_Project) SetContainerRegistryEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetCount(val *float64) {
+func (j *jsiiProxy_Project)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -2327,7 +2387,10 @@ func (j *jsiiProxy_Project) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetDefaultBranch(val *string) {
+func (j *jsiiProxy_Project)SetDefaultBranch(val *string) {
+	if err := j.validateSetDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultBranch",
@@ -2335,7 +2398,7 @@ func (j *jsiiProxy_Project) SetDefaultBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Project)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -2343,7 +2406,10 @@ func (j *jsiiProxy_Project) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetDescription(val *string) {
+func (j *jsiiProxy_Project)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -2351,7 +2417,10 @@ func (j *jsiiProxy_Project) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetEmailsDisabled(val interface{}) {
+func (j *jsiiProxy_Project)SetEmailsDisabled(val interface{}) {
+	if err := j.validateSetEmailsDisabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailsDisabled",
@@ -2359,7 +2428,10 @@ func (j *jsiiProxy_Project) SetEmailsDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetExternalAuthorizationClassificationLabel(val *string) {
+func (j *jsiiProxy_Project)SetExternalAuthorizationClassificationLabel(val *string) {
+	if err := j.validateSetExternalAuthorizationClassificationLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthorizationClassificationLabel",
@@ -2367,7 +2439,7 @@ func (j *jsiiProxy_Project) SetExternalAuthorizationClassificationLabel(val *str
 	)
 }
 
-func (j *jsiiProxy_Project) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2375,7 +2447,10 @@ func (j *jsiiProxy_Project) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetForkingAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetForkingAccessLevel(val *string) {
+	if err := j.validateSetForkingAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"forkingAccessLevel",
@@ -2383,7 +2458,10 @@ func (j *jsiiProxy_Project) SetForkingAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetGroupWithProjectTemplatesId(val *float64) {
+func (j *jsiiProxy_Project)SetGroupWithProjectTemplatesId(val *float64) {
+	if err := j.validateSetGroupWithProjectTemplatesIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupWithProjectTemplatesId",
@@ -2391,7 +2469,10 @@ func (j *jsiiProxy_Project) SetGroupWithProjectTemplatesId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetId(val *string) {
+func (j *jsiiProxy_Project)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -2399,7 +2480,10 @@ func (j *jsiiProxy_Project) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetImportUrl(val *string) {
+func (j *jsiiProxy_Project)SetImportUrl(val *string) {
+	if err := j.validateSetImportUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"importUrl",
@@ -2407,7 +2491,10 @@ func (j *jsiiProxy_Project) SetImportUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetInitializeWithReadme(val interface{}) {
+func (j *jsiiProxy_Project)SetInitializeWithReadme(val interface{}) {
+	if err := j.validateSetInitializeWithReadmeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"initializeWithReadme",
@@ -2415,7 +2502,10 @@ func (j *jsiiProxy_Project) SetInitializeWithReadme(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetIssuesAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetIssuesAccessLevel(val *string) {
+	if err := j.validateSetIssuesAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesAccessLevel",
@@ -2423,7 +2513,10 @@ func (j *jsiiProxy_Project) SetIssuesAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetIssuesEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetIssuesEnabled(val interface{}) {
+	if err := j.validateSetIssuesEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEnabled",
@@ -2431,7 +2524,10 @@ func (j *jsiiProxy_Project) SetIssuesEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetIssuesTemplate(val *string) {
+func (j *jsiiProxy_Project)SetIssuesTemplate(val *string) {
+	if err := j.validateSetIssuesTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesTemplate",
@@ -2439,7 +2535,10 @@ func (j *jsiiProxy_Project) SetIssuesTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetLfsEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetLfsEnabled(val interface{}) {
+	if err := j.validateSetLfsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lfsEnabled",
@@ -2447,7 +2546,10 @@ func (j *jsiiProxy_Project) SetLfsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Project)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -2455,7 +2557,10 @@ func (j *jsiiProxy_Project) SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeCommitTemplate(val *string) {
+func (j *jsiiProxy_Project)SetMergeCommitTemplate(val *string) {
+	if err := j.validateSetMergeCommitTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeCommitTemplate",
@@ -2463,7 +2568,10 @@ func (j *jsiiProxy_Project) SetMergeCommitTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeMethod(val *string) {
+func (j *jsiiProxy_Project)SetMergeMethod(val *string) {
+	if err := j.validateSetMergeMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeMethod",
@@ -2471,7 +2579,10 @@ func (j *jsiiProxy_Project) SetMergeMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergePipelinesEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetMergePipelinesEnabled(val interface{}) {
+	if err := j.validateSetMergePipelinesEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergePipelinesEnabled",
@@ -2479,7 +2590,10 @@ func (j *jsiiProxy_Project) SetMergePipelinesEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeRequestsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetMergeRequestsAccessLevel(val *string) {
+	if err := j.validateSetMergeRequestsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsAccessLevel",
@@ -2487,7 +2601,10 @@ func (j *jsiiProxy_Project) SetMergeRequestsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeRequestsEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetMergeRequestsEnabled(val interface{}) {
+	if err := j.validateSetMergeRequestsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEnabled",
@@ -2495,7 +2612,10 @@ func (j *jsiiProxy_Project) SetMergeRequestsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeRequestsTemplate(val *string) {
+func (j *jsiiProxy_Project)SetMergeRequestsTemplate(val *string) {
+	if err := j.validateSetMergeRequestsTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsTemplate",
@@ -2503,7 +2623,10 @@ func (j *jsiiProxy_Project) SetMergeRequestsTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMergeTrainsEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetMergeTrainsEnabled(val interface{}) {
+	if err := j.validateSetMergeTrainsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeTrainsEnabled",
@@ -2511,7 +2634,10 @@ func (j *jsiiProxy_Project) SetMergeTrainsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMirror(val interface{}) {
+func (j *jsiiProxy_Project)SetMirror(val interface{}) {
+	if err := j.validateSetMirrorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirror",
@@ -2519,7 +2645,10 @@ func (j *jsiiProxy_Project) SetMirror(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetMirrorOverwritesDivergedBranches(val interface{}) {
+func (j *jsiiProxy_Project)SetMirrorOverwritesDivergedBranches(val interface{}) {
+	if err := j.validateSetMirrorOverwritesDivergedBranchesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorOverwritesDivergedBranches",
@@ -2527,7 +2656,10 @@ func (j *jsiiProxy_Project) SetMirrorOverwritesDivergedBranches(val interface{})
 	)
 }
 
-func (j *jsiiProxy_Project) SetMirrorTriggerBuilds(val interface{}) {
+func (j *jsiiProxy_Project)SetMirrorTriggerBuilds(val interface{}) {
+	if err := j.validateSetMirrorTriggerBuildsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorTriggerBuilds",
@@ -2535,7 +2667,10 @@ func (j *jsiiProxy_Project) SetMirrorTriggerBuilds(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetName(val *string) {
+func (j *jsiiProxy_Project)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -2543,7 +2678,10 @@ func (j *jsiiProxy_Project) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetNamespaceId(val *float64) {
+func (j *jsiiProxy_Project)SetNamespaceId(val *float64) {
+	if err := j.validateSetNamespaceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespaceId",
@@ -2551,7 +2689,10 @@ func (j *jsiiProxy_Project) SetNamespaceId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetOnlyAllowMergeIfAllDiscussionsAreResolved(val interface{}) {
+func (j *jsiiProxy_Project)SetOnlyAllowMergeIfAllDiscussionsAreResolved(val interface{}) {
+	if err := j.validateSetOnlyAllowMergeIfAllDiscussionsAreResolvedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onlyAllowMergeIfAllDiscussionsAreResolved",
@@ -2559,7 +2700,10 @@ func (j *jsiiProxy_Project) SetOnlyAllowMergeIfAllDiscussionsAreResolved(val int
 	)
 }
 
-func (j *jsiiProxy_Project) SetOnlyAllowMergeIfPipelineSucceeds(val interface{}) {
+func (j *jsiiProxy_Project)SetOnlyAllowMergeIfPipelineSucceeds(val interface{}) {
+	if err := j.validateSetOnlyAllowMergeIfPipelineSucceedsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onlyAllowMergeIfPipelineSucceeds",
@@ -2567,7 +2711,10 @@ func (j *jsiiProxy_Project) SetOnlyAllowMergeIfPipelineSucceeds(val interface{})
 	)
 }
 
-func (j *jsiiProxy_Project) SetOnlyMirrorProtectedBranches(val interface{}) {
+func (j *jsiiProxy_Project)SetOnlyMirrorProtectedBranches(val interface{}) {
+	if err := j.validateSetOnlyMirrorProtectedBranchesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onlyMirrorProtectedBranches",
@@ -2575,7 +2722,10 @@ func (j *jsiiProxy_Project) SetOnlyMirrorProtectedBranches(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetOperationsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetOperationsAccessLevel(val *string) {
+	if err := j.validateSetOperationsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationsAccessLevel",
@@ -2583,7 +2733,10 @@ func (j *jsiiProxy_Project) SetOperationsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPackagesEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetPackagesEnabled(val interface{}) {
+	if err := j.validateSetPackagesEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"packagesEnabled",
@@ -2591,7 +2744,10 @@ func (j *jsiiProxy_Project) SetPackagesEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPagesAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetPagesAccessLevel(val *string) {
+	if err := j.validateSetPagesAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pagesAccessLevel",
@@ -2599,7 +2755,10 @@ func (j *jsiiProxy_Project) SetPagesAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPath(val *string) {
+func (j *jsiiProxy_Project)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -2607,7 +2766,10 @@ func (j *jsiiProxy_Project) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPipelinesEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetPipelinesEnabled(val interface{}) {
+	if err := j.validateSetPipelinesEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelinesEnabled",
@@ -2615,7 +2777,10 @@ func (j *jsiiProxy_Project) SetPipelinesEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPrintingMergeRequestLinkEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetPrintingMergeRequestLinkEnabled(val interface{}) {
+	if err := j.validateSetPrintingMergeRequestLinkEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"printingMergeRequestLinkEnabled",
@@ -2623,7 +2788,7 @@ func (j *jsiiProxy_Project) SetPrintingMergeRequestLinkEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_Project) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Project)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2631,7 +2796,10 @@ func (j *jsiiProxy_Project) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Project)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -2639,7 +2807,10 @@ func (j *jsiiProxy_Project) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetPublicBuilds(val interface{}) {
+func (j *jsiiProxy_Project)SetPublicBuilds(val interface{}) {
+	if err := j.validateSetPublicBuildsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicBuilds",
@@ -2647,7 +2818,10 @@ func (j *jsiiProxy_Project) SetPublicBuilds(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetRemoveSourceBranchAfterMerge(val interface{}) {
+func (j *jsiiProxy_Project)SetRemoveSourceBranchAfterMerge(val interface{}) {
+	if err := j.validateSetRemoveSourceBranchAfterMergeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"removeSourceBranchAfterMerge",
@@ -2655,7 +2829,10 @@ func (j *jsiiProxy_Project) SetRemoveSourceBranchAfterMerge(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetRepositoryAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetRepositoryAccessLevel(val *string) {
+	if err := j.validateSetRepositoryAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositoryAccessLevel",
@@ -2663,7 +2840,10 @@ func (j *jsiiProxy_Project) SetRepositoryAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetRepositoryStorage(val *string) {
+func (j *jsiiProxy_Project)SetRepositoryStorage(val *string) {
+	if err := j.validateSetRepositoryStorageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositoryStorage",
@@ -2671,7 +2851,10 @@ func (j *jsiiProxy_Project) SetRepositoryStorage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetRequestAccessEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetRequestAccessEnabled(val interface{}) {
+	if err := j.validateSetRequestAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestAccessEnabled",
@@ -2679,7 +2862,10 @@ func (j *jsiiProxy_Project) SetRequestAccessEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetRequirementsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetRequirementsAccessLevel(val *string) {
+	if err := j.validateSetRequirementsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requirementsAccessLevel",
@@ -2687,7 +2873,10 @@ func (j *jsiiProxy_Project) SetRequirementsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetResolveOutdatedDiffDiscussions(val interface{}) {
+func (j *jsiiProxy_Project)SetResolveOutdatedDiffDiscussions(val interface{}) {
+	if err := j.validateSetResolveOutdatedDiffDiscussionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resolveOutdatedDiffDiscussions",
@@ -2695,7 +2884,10 @@ func (j *jsiiProxy_Project) SetResolveOutdatedDiffDiscussions(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSecurityAndComplianceAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetSecurityAndComplianceAccessLevel(val *string) {
+	if err := j.validateSetSecurityAndComplianceAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityAndComplianceAccessLevel",
@@ -2703,7 +2895,10 @@ func (j *jsiiProxy_Project) SetSecurityAndComplianceAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSharedRunnersEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetSharedRunnersEnabled(val interface{}) {
+	if err := j.validateSetSharedRunnersEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedRunnersEnabled",
@@ -2711,7 +2906,10 @@ func (j *jsiiProxy_Project) SetSharedRunnersEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSkipWaitForDefaultBranchProtection(val interface{}) {
+func (j *jsiiProxy_Project)SetSkipWaitForDefaultBranchProtection(val interface{}) {
+	if err := j.validateSetSkipWaitForDefaultBranchProtectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipWaitForDefaultBranchProtection",
@@ -2719,7 +2917,10 @@ func (j *jsiiProxy_Project) SetSkipWaitForDefaultBranchProtection(val interface{
 	)
 }
 
-func (j *jsiiProxy_Project) SetSnippetsAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetSnippetsAccessLevel(val *string) {
+	if err := j.validateSetSnippetsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snippetsAccessLevel",
@@ -2727,7 +2928,10 @@ func (j *jsiiProxy_Project) SetSnippetsAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSnippetsEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetSnippetsEnabled(val interface{}) {
+	if err := j.validateSetSnippetsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snippetsEnabled",
@@ -2735,7 +2939,10 @@ func (j *jsiiProxy_Project) SetSnippetsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSquashCommitTemplate(val *string) {
+func (j *jsiiProxy_Project)SetSquashCommitTemplate(val *string) {
+	if err := j.validateSetSquashCommitTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"squashCommitTemplate",
@@ -2743,7 +2950,10 @@ func (j *jsiiProxy_Project) SetSquashCommitTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetSquashOption(val *string) {
+func (j *jsiiProxy_Project)SetSquashOption(val *string) {
+	if err := j.validateSetSquashOptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"squashOption",
@@ -2751,7 +2961,10 @@ func (j *jsiiProxy_Project) SetSquashOption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetTags(val *[]*string) {
+func (j *jsiiProxy_Project)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -2759,7 +2972,10 @@ func (j *jsiiProxy_Project) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetTemplateName(val *string) {
+func (j *jsiiProxy_Project)SetTemplateName(val *string) {
+	if err := j.validateSetTemplateNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templateName",
@@ -2767,7 +2983,10 @@ func (j *jsiiProxy_Project) SetTemplateName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetTemplateProjectId(val *float64) {
+func (j *jsiiProxy_Project)SetTemplateProjectId(val *float64) {
+	if err := j.validateSetTemplateProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templateProjectId",
@@ -2775,7 +2994,10 @@ func (j *jsiiProxy_Project) SetTemplateProjectId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetTopics(val *[]*string) {
+func (j *jsiiProxy_Project)SetTopics(val *[]*string) {
+	if err := j.validateSetTopicsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"topics",
@@ -2783,7 +3005,10 @@ func (j *jsiiProxy_Project) SetTopics(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetUseCustomTemplate(val interface{}) {
+func (j *jsiiProxy_Project)SetUseCustomTemplate(val interface{}) {
+	if err := j.validateSetUseCustomTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useCustomTemplate",
@@ -2791,7 +3016,10 @@ func (j *jsiiProxy_Project) SetUseCustomTemplate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetVisibilityLevel(val *string) {
+func (j *jsiiProxy_Project)SetVisibilityLevel(val *string) {
+	if err := j.validateSetVisibilityLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visibilityLevel",
@@ -2799,7 +3027,10 @@ func (j *jsiiProxy_Project) SetVisibilityLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetWikiAccessLevel(val *string) {
+func (j *jsiiProxy_Project)SetWikiAccessLevel(val *string) {
+	if err := j.validateSetWikiAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiAccessLevel",
@@ -2807,7 +3038,10 @@ func (j *jsiiProxy_Project) SetWikiAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project) SetWikiEnabled(val interface{}) {
+func (j *jsiiProxy_Project)SetWikiEnabled(val interface{}) {
+	if err := j.validateSetWikiEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiEnabled",
@@ -2835,6 +3069,9 @@ func (j *jsiiProxy_Project) SetWikiEnabled(val interface{}) {
 func Project_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProject_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2859,6 +3096,9 @@ func Project_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_Project) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -2867,6 +3107,9 @@ func (p *jsiiProxy_Project) AddOverride(path *string, value interface{}) {
 }
 
 func (p *jsiiProxy_Project) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -2880,6 +3123,9 @@ func (p *jsiiProxy_Project) GetAnyMapAttribute(terraformAttribute *string) *map[
 }
 
 func (p *jsiiProxy_Project) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2893,6 +3139,9 @@ func (p *jsiiProxy_Project) GetBooleanAttribute(terraformAttribute *string) cdkt
 }
 
 func (p *jsiiProxy_Project) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -2906,6 +3155,9 @@ func (p *jsiiProxy_Project) GetBooleanMapAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_Project) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -2919,6 +3171,9 @@ func (p *jsiiProxy_Project) GetListAttribute(terraformAttribute *string) *[]*str
 }
 
 func (p *jsiiProxy_Project) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -2932,6 +3187,9 @@ func (p *jsiiProxy_Project) GetNumberAttribute(terraformAttribute *string) *floa
 }
 
 func (p *jsiiProxy_Project) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -2945,6 +3203,9 @@ func (p *jsiiProxy_Project) GetNumberListAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_Project) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -2958,6 +3219,9 @@ func (p *jsiiProxy_Project) GetNumberMapAttribute(terraformAttribute *string) *m
 }
 
 func (p *jsiiProxy_Project) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -2971,6 +3235,9 @@ func (p *jsiiProxy_Project) GetStringAttribute(terraformAttribute *string) *stri
 }
 
 func (p *jsiiProxy_Project) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -2984,6 +3251,9 @@ func (p *jsiiProxy_Project) GetStringMapAttribute(terraformAttribute *string) *m
 }
 
 func (p *jsiiProxy_Project) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2997,6 +3267,9 @@ func (p *jsiiProxy_Project) InterpolationForAttribute(terraformAttribute *string
 }
 
 func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
@@ -3005,6 +3278,9 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (p *jsiiProxy_Project) PutContainerExpirationPolicy(value *ProjectContainerExpirationPolicy) {
+	if err := p.validatePutContainerExpirationPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putContainerExpirationPolicy",
@@ -3013,6 +3289,9 @@ func (p *jsiiProxy_Project) PutContainerExpirationPolicy(value *ProjectContainer
 }
 
 func (p *jsiiProxy_Project) PutPushRules(value *ProjectPushRules) {
+	if err := p.validatePutPushRulesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPushRules",

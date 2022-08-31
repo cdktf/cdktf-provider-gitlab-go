@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) WrapsS
 func NewDataGitlabProjectProtectedBranchMergeAccessLevelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedBranchMergeAccessLevelsList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectProtectedBranchMergeAccessLevelsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectProtectedBranchMergeAccessLevelsList_Override(d DataGit
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) Comput
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) Get(index *float64) DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) Get(in
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -540,6 +540,9 @@ func (j *jsiiProxy_BranchProtection) UnprotectAccessLevelInput() *string {
 func NewBranchProtection(scope constructs.Construct, id *string, config *BranchProtectionConfig) BranchProtection {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtection{}
 
 	_jsii_.Create(
@@ -562,7 +565,10 @@ func NewBranchProtection_Override(b BranchProtection, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetAllowForcePush(val interface{}) {
+func (j *jsiiProxy_BranchProtection)SetAllowForcePush(val interface{}) {
+	if err := j.validateSetAllowForcePushParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowForcePush",
@@ -570,7 +576,10 @@ func (j *jsiiProxy_BranchProtection) SetAllowForcePush(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetBranch(val *string) {
+func (j *jsiiProxy_BranchProtection)SetBranch(val *string) {
+	if err := j.validateSetBranchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branch",
@@ -578,7 +587,10 @@ func (j *jsiiProxy_BranchProtection) SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetCodeOwnerApprovalRequired(val interface{}) {
+func (j *jsiiProxy_BranchProtection)SetCodeOwnerApprovalRequired(val interface{}) {
+	if err := j.validateSetCodeOwnerApprovalRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"codeOwnerApprovalRequired",
@@ -586,7 +598,10 @@ func (j *jsiiProxy_BranchProtection) SetCodeOwnerApprovalRequired(val interface{
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetConnection(val interface{}) {
+func (j *jsiiProxy_BranchProtection)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -594,7 +609,7 @@ func (j *jsiiProxy_BranchProtection) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetCount(val *float64) {
+func (j *jsiiProxy_BranchProtection)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -602,7 +617,7 @@ func (j *jsiiProxy_BranchProtection) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BranchProtection)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +625,7 @@ func (j *jsiiProxy_BranchProtection) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BranchProtection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +633,10 @@ func (j *jsiiProxy_BranchProtection) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetId(val *string) {
+func (j *jsiiProxy_BranchProtection)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -626,7 +644,10 @@ func (j *jsiiProxy_BranchProtection) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BranchProtection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -634,7 +655,10 @@ func (j *jsiiProxy_BranchProtection) SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetMergeAccessLevel(val *string) {
+func (j *jsiiProxy_BranchProtection)SetMergeAccessLevel(val *string) {
+	if err := j.validateSetMergeAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeAccessLevel",
@@ -642,7 +666,10 @@ func (j *jsiiProxy_BranchProtection) SetMergeAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetProject(val *string) {
+func (j *jsiiProxy_BranchProtection)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -650,7 +677,7 @@ func (j *jsiiProxy_BranchProtection) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BranchProtection)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -658,7 +685,10 @@ func (j *jsiiProxy_BranchProtection) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BranchProtection)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -666,7 +696,10 @@ func (j *jsiiProxy_BranchProtection) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetPushAccessLevel(val *string) {
+func (j *jsiiProxy_BranchProtection)SetPushAccessLevel(val *string) {
+	if err := j.validateSetPushAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushAccessLevel",
@@ -674,7 +707,10 @@ func (j *jsiiProxy_BranchProtection) SetPushAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtection) SetUnprotectAccessLevel(val *string) {
+func (j *jsiiProxy_BranchProtection)SetUnprotectAccessLevel(val *string) {
+	if err := j.validateSetUnprotectAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unprotectAccessLevel",
@@ -702,6 +738,9 @@ func (j *jsiiProxy_BranchProtection) SetUnprotectAccessLevel(val *string) {
 func BranchProtection_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateBranchProtection_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -726,6 +765,9 @@ func BranchProtection_TfResourceType() *string {
 }
 
 func (b *jsiiProxy_BranchProtection) AddOverride(path *string, value interface{}) {
+	if err := b.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
@@ -734,6 +776,9 @@ func (b *jsiiProxy_BranchProtection) AddOverride(path *string, value interface{}
 }
 
 func (b *jsiiProxy_BranchProtection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -747,6 +792,9 @@ func (b *jsiiProxy_BranchProtection) GetAnyMapAttribute(terraformAttribute *stri
 }
 
 func (b *jsiiProxy_BranchProtection) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -760,6 +808,9 @@ func (b *jsiiProxy_BranchProtection) GetBooleanAttribute(terraformAttribute *str
 }
 
 func (b *jsiiProxy_BranchProtection) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -773,6 +824,9 @@ func (b *jsiiProxy_BranchProtection) GetBooleanMapAttribute(terraformAttribute *
 }
 
 func (b *jsiiProxy_BranchProtection) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -786,6 +840,9 @@ func (b *jsiiProxy_BranchProtection) GetListAttribute(terraformAttribute *string
 }
 
 func (b *jsiiProxy_BranchProtection) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -799,6 +856,9 @@ func (b *jsiiProxy_BranchProtection) GetNumberAttribute(terraformAttribute *stri
 }
 
 func (b *jsiiProxy_BranchProtection) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -812,6 +872,9 @@ func (b *jsiiProxy_BranchProtection) GetNumberListAttribute(terraformAttribute *
 }
 
 func (b *jsiiProxy_BranchProtection) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -825,6 +888,9 @@ func (b *jsiiProxy_BranchProtection) GetNumberMapAttribute(terraformAttribute *s
 }
 
 func (b *jsiiProxy_BranchProtection) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -838,6 +904,9 @@ func (b *jsiiProxy_BranchProtection) GetStringAttribute(terraformAttribute *stri
 }
 
 func (b *jsiiProxy_BranchProtection) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -851,6 +920,9 @@ func (b *jsiiProxy_BranchProtection) GetStringMapAttribute(terraformAttribute *s
 }
 
 func (b *jsiiProxy_BranchProtection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -864,6 +936,9 @@ func (b *jsiiProxy_BranchProtection) InterpolationForAttribute(terraformAttribut
 }
 
 func (b *jsiiProxy_BranchProtection) OverrideLogicalId(newLogicalId *string) {
+	if err := b.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
@@ -872,6 +947,9 @@ func (b *jsiiProxy_BranchProtection) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (b *jsiiProxy_BranchProtection) PutAllowedToMerge(value interface{}) {
+	if err := b.validatePutAllowedToMergeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"putAllowedToMerge",
@@ -880,6 +958,9 @@ func (b *jsiiProxy_BranchProtection) PutAllowedToMerge(value interface{}) {
 }
 
 func (b *jsiiProxy_BranchProtection) PutAllowedToPush(value interface{}) {
+	if err := b.validatePutAllowedToPushParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"putAllowedToPush",
@@ -888,6 +969,9 @@ func (b *jsiiProxy_BranchProtection) PutAllowedToPush(value interface{}) {
 }
 
 func (b *jsiiProxy_BranchProtection) PutAllowedToUnprotect(value interface{}) {
+	if err := b.validatePutAllowedToUnprotectParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
 		"putAllowedToUnprotect",

@@ -6051,6 +6051,9 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
+	if err := validateNewApplicationSettingsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationSettings{}
 
 	_jsii_.Create(
@@ -6073,7 +6076,10 @@ func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAbuseNotificationEmail(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAbuseNotificationEmail(val *string) {
+	if err := j.validateSetAbuseNotificationEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"abuseNotificationEmail",
@@ -6081,7 +6087,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAbuseNotificationEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAdminMode(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAdminMode(val interface{}) {
+	if err := j.validateSetAdminModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminMode",
@@ -6089,7 +6098,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAdminMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAfterSignOutPath(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAfterSignOutPath(val *string) {
+	if err := j.validateSetAfterSignOutPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"afterSignOutPath",
@@ -6097,7 +6109,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAfterSignOutPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAfterSignUpText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAfterSignUpText(val *string) {
+	if err := j.validateSetAfterSignUpTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"afterSignUpText",
@@ -6105,7 +6120,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAfterSignUpText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAkismetApiKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAkismetApiKey(val *string) {
+	if err := j.validateSetAkismetApiKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"akismetApiKey",
@@ -6113,7 +6131,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAkismetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAkismetEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAkismetEnabled(val interface{}) {
+	if err := j.validateSetAkismetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"akismetEnabled",
@@ -6121,7 +6142,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAkismetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAllowGroupOwnersToManageLdap(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAllowGroupOwnersToManageLdap(val interface{}) {
+	if err := j.validateSetAllowGroupOwnersToManageLdapParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowGroupOwnersToManageLdap",
@@ -6129,7 +6153,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAllowGroupOwnersToManageLdap(val inte
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAllowLocalRequestsFromSystemHooks(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAllowLocalRequestsFromSystemHooks(val interface{}) {
+	if err := j.validateSetAllowLocalRequestsFromSystemHooksParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowLocalRequestsFromSystemHooks",
@@ -6137,7 +6164,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAllowLocalRequestsFromSystemHooks(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAllowLocalRequestsFromWebHooksAndServices(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAllowLocalRequestsFromWebHooksAndServices(val interface{}) {
+	if err := j.validateSetAllowLocalRequestsFromWebHooksAndServicesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowLocalRequestsFromWebHooksAndServices",
@@ -6145,7 +6175,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAllowLocalRequestsFromWebHooksAndServ
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetArchiveBuildsInHumanReadable(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetArchiveBuildsInHumanReadable(val *string) {
+	if err := j.validateSetArchiveBuildsInHumanReadableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"archiveBuildsInHumanReadable",
@@ -6153,7 +6186,10 @@ func (j *jsiiProxy_ApplicationSettings) SetArchiveBuildsInHumanReadable(val *str
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAssetProxyAllowlist(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetAssetProxyAllowlist(val *[]*string) {
+	if err := j.validateSetAssetProxyAllowlistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assetProxyAllowlist",
@@ -6161,7 +6197,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAssetProxyAllowlist(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAssetProxyEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAssetProxyEnabled(val interface{}) {
+	if err := j.validateSetAssetProxyEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assetProxyEnabled",
@@ -6169,7 +6208,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAssetProxyEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAssetProxySecretKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAssetProxySecretKey(val *string) {
+	if err := j.validateSetAssetProxySecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assetProxySecretKey",
@@ -6177,7 +6219,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAssetProxySecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAssetProxyUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAssetProxyUrl(val *string) {
+	if err := j.validateSetAssetProxyUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assetProxyUrl",
@@ -6185,7 +6230,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAssetProxyUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAuthorizedKeysEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAuthorizedKeysEnabled(val interface{}) {
+	if err := j.validateSetAuthorizedKeysEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authorizedKeysEnabled",
@@ -6193,7 +6241,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAuthorizedKeysEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAutoDevopsDomain(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetAutoDevopsDomain(val *string) {
+	if err := j.validateSetAutoDevopsDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoDevopsDomain",
@@ -6201,7 +6252,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAutoDevopsDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAutoDevopsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAutoDevopsEnabled(val interface{}) {
+	if err := j.validateSetAutoDevopsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoDevopsEnabled",
@@ -6209,7 +6263,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAutoDevopsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetAutomaticPurchasedStorageAllocation(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetAutomaticPurchasedStorageAllocation(val interface{}) {
+	if err := j.validateSetAutomaticPurchasedStorageAllocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"automaticPurchasedStorageAllocation",
@@ -6217,7 +6274,10 @@ func (j *jsiiProxy_ApplicationSettings) SetAutomaticPurchasedStorageAllocation(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetCheckNamespacePlan(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetCheckNamespacePlan(val interface{}) {
+	if err := j.validateSetCheckNamespacePlanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"checkNamespacePlan",
@@ -6225,7 +6285,10 @@ func (j *jsiiProxy_ApplicationSettings) SetCheckNamespacePlan(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetCommitEmailHostname(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetCommitEmailHostname(val *string) {
+	if err := j.validateSetCommitEmailHostnameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commitEmailHostname",
@@ -6233,7 +6296,10 @@ func (j *jsiiProxy_ApplicationSettings) SetCommitEmailHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetConnection(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -6241,7 +6307,10 @@ func (j *jsiiProxy_ApplicationSettings) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerExpirationPoliciesEnableHistoricEntries(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerExpirationPoliciesEnableHistoricEntries(val interface{}) {
+	if err := j.validateSetContainerExpirationPoliciesEnableHistoricEntriesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerExpirationPoliciesEnableHistoricEntries",
@@ -6249,7 +6318,10 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerExpirationPoliciesEnableHist
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryCleanupTagsServiceMaxListSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryCleanupTagsServiceMaxListSize(val *float64) {
+	if err := j.validateSetContainerRegistryCleanupTagsServiceMaxListSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryCleanupTagsServiceMaxListSize",
@@ -6257,7 +6329,10 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryCleanupTagsServiceMa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryDeleteTagsServiceTimeout(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryDeleteTagsServiceTimeout(val *float64) {
+	if err := j.validateSetContainerRegistryDeleteTagsServiceTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryDeleteTagsServiceTimeout",
@@ -6265,7 +6340,10 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryDeleteTagsServiceTim
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryExpirationPoliciesCaching(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryExpirationPoliciesCaching(val interface{}) {
+	if err := j.validateSetContainerRegistryExpirationPoliciesCachingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryExpirationPoliciesCaching",
@@ -6273,7 +6351,10 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryExpirationPoliciesCa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryExpirationPoliciesWorkerCapacity(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryExpirationPoliciesWorkerCapacity(val *float64) {
+	if err := j.validateSetContainerRegistryExpirationPoliciesWorkerCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryExpirationPoliciesWorkerCapacity",
@@ -6281,7 +6362,10 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryExpirationPoliciesWo
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryTokenExpireDelay(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryTokenExpireDelay(val *float64) {
+	if err := j.validateSetContainerRegistryTokenExpireDelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containerRegistryTokenExpireDelay",
@@ -6289,7 +6373,7 @@ func (j *jsiiProxy_ApplicationSettings) SetContainerRegistryTokenExpireDelay(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -6297,7 +6381,10 @@ func (j *jsiiProxy_ApplicationSettings) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDeactivateDormantUsers(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDeactivateDormantUsers(val interface{}) {
+	if err := j.validateSetDeactivateDormantUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deactivateDormantUsers",
@@ -6305,7 +6392,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDeactivateDormantUsers(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultArtifactsExpireIn(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultArtifactsExpireIn(val *string) {
+	if err := j.validateSetDefaultArtifactsExpireInParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultArtifactsExpireIn",
@@ -6313,7 +6403,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultArtifactsExpireIn(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultBranchName(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultBranchName(val *string) {
+	if err := j.validateSetDefaultBranchNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultBranchName",
@@ -6321,7 +6414,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultBranchName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultBranchProtection(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultBranchProtection(val *float64) {
+	if err := j.validateSetDefaultBranchProtectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultBranchProtection",
@@ -6329,7 +6425,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultBranchProtection(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultCiConfigPath(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultCiConfigPath(val *string) {
+	if err := j.validateSetDefaultCiConfigPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultCiConfigPath",
@@ -6337,7 +6436,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultCiConfigPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultGroupVisibility(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultGroupVisibility(val *string) {
+	if err := j.validateSetDefaultGroupVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultGroupVisibility",
@@ -6345,7 +6447,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultGroupVisibility(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectCreation(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultProjectCreation(val *float64) {
+	if err := j.validateSetDefaultProjectCreationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultProjectCreation",
@@ -6353,7 +6458,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectCreation(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectsLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultProjectsLimit(val *float64) {
+	if err := j.validateSetDefaultProjectsLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultProjectsLimit",
@@ -6361,7 +6469,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectsLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectVisibility(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultProjectVisibility(val *string) {
+	if err := j.validateSetDefaultProjectVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultProjectVisibility",
@@ -6369,7 +6480,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultProjectVisibility(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDefaultSnippetVisibility(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetDefaultSnippetVisibility(val *string) {
+	if err := j.validateSetDefaultSnippetVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultSnippetVisibility",
@@ -6377,7 +6491,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDefaultSnippetVisibility(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDelayedGroupDeletion(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDelayedGroupDeletion(val interface{}) {
+	if err := j.validateSetDelayedGroupDeletionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delayedGroupDeletion",
@@ -6385,7 +6502,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDelayedGroupDeletion(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDelayedProjectDeletion(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDelayedProjectDeletion(val interface{}) {
+	if err := j.validateSetDelayedProjectDeletionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delayedProjectDeletion",
@@ -6393,7 +6513,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDelayedProjectDeletion(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDeleteInactiveProjects(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDeleteInactiveProjects(val interface{}) {
+	if err := j.validateSetDeleteInactiveProjectsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deleteInactiveProjects",
@@ -6401,7 +6524,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDeleteInactiveProjects(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDeletionAdjournedPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDeletionAdjournedPeriod(val *float64) {
+	if err := j.validateSetDeletionAdjournedPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deletionAdjournedPeriod",
@@ -6409,7 +6535,7 @@ func (j *jsiiProxy_ApplicationSettings) SetDeletionAdjournedPeriod(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -6417,7 +6543,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDiffMaxFiles(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDiffMaxFiles(val *float64) {
+	if err := j.validateSetDiffMaxFilesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diffMaxFiles",
@@ -6425,7 +6554,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDiffMaxFiles(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDiffMaxLines(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDiffMaxLines(val *float64) {
+	if err := j.validateSetDiffMaxLinesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diffMaxLines",
@@ -6433,7 +6565,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDiffMaxLines(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDiffMaxPatchBytes(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDiffMaxPatchBytes(val *float64) {
+	if err := j.validateSetDiffMaxPatchBytesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diffMaxPatchBytes",
@@ -6441,7 +6576,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDiffMaxPatchBytes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDisabledOauthSignInSources(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetDisabledOauthSignInSources(val *[]*string) {
+	if err := j.validateSetDisabledOauthSignInSourcesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disabledOauthSignInSources",
@@ -6449,7 +6587,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDisabledOauthSignInSources(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDisableFeedToken(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDisableFeedToken(val interface{}) {
+	if err := j.validateSetDisableFeedTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableFeedToken",
@@ -6457,7 +6598,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDisableFeedToken(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDnsRebindingProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDnsRebindingProtectionEnabled(val interface{}) {
+	if err := j.validateSetDnsRebindingProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dnsRebindingProtectionEnabled",
@@ -6465,7 +6609,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDnsRebindingProtectionEnabled(val int
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDomainAllowlist(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetDomainAllowlist(val *[]*string) {
+	if err := j.validateSetDomainAllowlistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainAllowlist",
@@ -6473,7 +6620,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDomainAllowlist(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDomainDenylist(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetDomainDenylist(val *[]*string) {
+	if err := j.validateSetDomainDenylistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainDenylist",
@@ -6481,7 +6631,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDomainDenylist(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDomainDenylistEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetDomainDenylistEnabled(val interface{}) {
+	if err := j.validateSetDomainDenylistEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainDenylistEnabled",
@@ -6489,7 +6642,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDomainDenylistEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetDsaKeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetDsaKeyRestriction(val *float64) {
+	if err := j.validateSetDsaKeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dsaKeyRestriction",
@@ -6497,7 +6653,10 @@ func (j *jsiiProxy_ApplicationSettings) SetDsaKeyRestriction(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEcdsaKeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetEcdsaKeyRestriction(val *float64) {
+	if err := j.validateSetEcdsaKeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ecdsaKeyRestriction",
@@ -6505,7 +6664,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEcdsaKeyRestriction(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEcdsaSkKeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetEcdsaSkKeyRestriction(val *float64) {
+	if err := j.validateSetEcdsaSkKeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ecdsaSkKeyRestriction",
@@ -6513,7 +6675,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEcdsaSkKeyRestriction(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEd25519KeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetEd25519KeyRestriction(val *float64) {
+	if err := j.validateSetEd25519KeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ed25519KeyRestriction",
@@ -6521,7 +6686,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEd25519KeyRestriction(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEd25519SkKeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetEd25519SkKeyRestriction(val *float64) {
+	if err := j.validateSetEd25519SkKeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ed25519SkKeyRestriction",
@@ -6529,7 +6697,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEd25519SkKeyRestriction(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEksAccessKeyId(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetEksAccessKeyId(val *string) {
+	if err := j.validateSetEksAccessKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eksAccessKeyId",
@@ -6537,7 +6708,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEksAccessKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEksAccountId(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetEksAccountId(val *string) {
+	if err := j.validateSetEksAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eksAccountId",
@@ -6545,7 +6719,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEksAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEksIntegrationEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetEksIntegrationEnabled(val interface{}) {
+	if err := j.validateSetEksIntegrationEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eksIntegrationEnabled",
@@ -6553,7 +6730,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEksIntegrationEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEksSecretAccessKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetEksSecretAccessKey(val *string) {
+	if err := j.validateSetEksSecretAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"eksSecretAccessKey",
@@ -6561,7 +6741,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEksSecretAccessKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAws(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchAws(val interface{}) {
+	if err := j.validateSetElasticsearchAwsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchAws",
@@ -6569,7 +6752,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAws(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsAccessKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchAwsAccessKey(val *string) {
+	if err := j.validateSetElasticsearchAwsAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchAwsAccessKey",
@@ -6577,7 +6763,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsAccessKey(val *string
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsRegion(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchAwsRegion(val *string) {
+	if err := j.validateSetElasticsearchAwsRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchAwsRegion",
@@ -6585,7 +6774,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsSecretAccessKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchAwsSecretAccessKey(val *string) {
+	if err := j.validateSetElasticsearchAwsSecretAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchAwsSecretAccessKey",
@@ -6593,7 +6785,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchAwsSecretAccessKey(val *
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexedFieldLengthLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchIndexedFieldLengthLimit(val *float64) {
+	if err := j.validateSetElasticsearchIndexedFieldLengthLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchIndexedFieldLengthLimit",
@@ -6601,7 +6796,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexedFieldLengthLimit(
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexedFileSizeLimitKb(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchIndexedFileSizeLimitKb(val *float64) {
+	if err := j.validateSetElasticsearchIndexedFileSizeLimitKbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchIndexedFileSizeLimitKb",
@@ -6609,7 +6807,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexedFileSizeLimitKb(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexing(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchIndexing(val interface{}) {
+	if err := j.validateSetElasticsearchIndexingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchIndexing",
@@ -6617,7 +6818,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchIndexing(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchLimitIndexing(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchLimitIndexing(val interface{}) {
+	if err := j.validateSetElasticsearchLimitIndexingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchLimitIndexing",
@@ -6625,7 +6829,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchLimitIndexing(val interf
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchMaxBulkConcurrency(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchMaxBulkConcurrency(val *float64) {
+	if err := j.validateSetElasticsearchMaxBulkConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchMaxBulkConcurrency",
@@ -6633,7 +6840,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchMaxBulkConcurrency(val *
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchMaxBulkSizeMb(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchMaxBulkSizeMb(val *float64) {
+	if err := j.validateSetElasticsearchMaxBulkSizeMbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchMaxBulkSizeMb",
@@ -6641,7 +6851,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchMaxBulkSizeMb(val *float
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchNamespaceIds(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchNamespaceIds(val *[]*string) {
+	if err := j.validateSetElasticsearchNamespaceIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchNamespaceIds",
@@ -6649,7 +6862,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchNamespaceIds(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchPassword(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchPassword(val *string) {
+	if err := j.validateSetElasticsearchPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchPassword",
@@ -6657,7 +6873,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchProjectIds(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchProjectIds(val *[]*string) {
+	if err := j.validateSetElasticsearchProjectIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchProjectIds",
@@ -6665,7 +6884,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchProjectIds(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchSearch(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchSearch(val interface{}) {
+	if err := j.validateSetElasticsearchSearchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchSearch",
@@ -6673,7 +6895,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchSearch(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchUrl(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchUrl(val *[]*string) {
+	if err := j.validateSetElasticsearchUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchUrl",
@@ -6681,7 +6906,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchUrl(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetElasticsearchUsername(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchUsername(val *string) {
+	if err := j.validateSetElasticsearchUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticsearchUsername",
@@ -6689,7 +6917,10 @@ func (j *jsiiProxy_ApplicationSettings) SetElasticsearchUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEmailAdditionalText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetEmailAdditionalText(val *string) {
+	if err := j.validateSetEmailAdditionalTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailAdditionalText",
@@ -6697,7 +6928,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEmailAdditionalText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEmailAuthorInBody(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetEmailAuthorInBody(val interface{}) {
+	if err := j.validateSetEmailAuthorInBodyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailAuthorInBody",
@@ -6705,7 +6939,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEmailAuthorInBody(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEnabledGitAccessProtocol(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetEnabledGitAccessProtocol(val *string) {
+	if err := j.validateSetEnabledGitAccessProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabledGitAccessProtocol",
@@ -6713,7 +6950,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEnabledGitAccessProtocol(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEnforceNamespaceStorageLimit(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetEnforceNamespaceStorageLimit(val interface{}) {
+	if err := j.validateSetEnforceNamespaceStorageLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforceNamespaceStorageLimit",
@@ -6721,7 +6961,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEnforceNamespaceStorageLimit(val inte
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetEnforceTerms(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetEnforceTerms(val interface{}) {
+	if err := j.validateSetEnforceTermsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforceTerms",
@@ -6729,7 +6972,10 @@ func (j *jsiiProxy_ApplicationSettings) SetEnforceTerms(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientCert(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthClientCert(val *string) {
+	if err := j.validateSetExternalAuthClientCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthClientCert",
@@ -6737,7 +6983,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthClientKey(val *string) {
+	if err := j.validateSetExternalAuthClientKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthClientKey",
@@ -6745,7 +6994,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientKeyPass(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthClientKeyPass(val *string) {
+	if err := j.validateSetExternalAuthClientKeyPassParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthClientKeyPass",
@@ -6753,7 +7005,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthClientKeyPass(val *string
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceDefaultLabel(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthorizationServiceDefaultLabel(val *string) {
+	if err := j.validateSetExternalAuthorizationServiceDefaultLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthorizationServiceDefaultLabel",
@@ -6761,7 +7016,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceDefaultLa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthorizationServiceEnabled(val interface{}) {
+	if err := j.validateSetExternalAuthorizationServiceEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthorizationServiceEnabled",
@@ -6769,7 +7027,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceTimeout(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthorizationServiceTimeout(val *float64) {
+	if err := j.validateSetExternalAuthorizationServiceTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthorizationServiceTimeout",
@@ -6777,7 +7038,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceTimeout(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalAuthorizationServiceUrl(val *string) {
+	if err := j.validateSetExternalAuthorizationServiceUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalAuthorizationServiceUrl",
@@ -6785,7 +7049,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalAuthorizationServiceUrl(val *
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceTimeout(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalPipelineValidationServiceTimeout(val *float64) {
+	if err := j.validateSetExternalPipelineValidationServiceTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalPipelineValidationServiceTimeout",
@@ -6793,7 +7060,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceTime
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceToken(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalPipelineValidationServiceToken(val *string) {
+	if err := j.validateSetExternalPipelineValidationServiceTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalPipelineValidationServiceToken",
@@ -6801,7 +7071,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceToke
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetExternalPipelineValidationServiceUrl(val *string) {
+	if err := j.validateSetExternalPipelineValidationServiceUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalPipelineValidationServiceUrl",
@@ -6809,7 +7082,10 @@ func (j *jsiiProxy_ApplicationSettings) SetExternalPipelineValidationServiceUrl(
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetFileTemplateProjectId(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetFileTemplateProjectId(val *float64) {
+	if err := j.validateSetFileTemplateProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fileTemplateProjectId",
@@ -6817,7 +7093,10 @@ func (j *jsiiProxy_ApplicationSettings) SetFileTemplateProjectId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetFirstDayOfWeek(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetFirstDayOfWeek(val *float64) {
+	if err := j.validateSetFirstDayOfWeekParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firstDayOfWeek",
@@ -6825,7 +7104,7 @@ func (j *jsiiProxy_ApplicationSettings) SetFirstDayOfWeek(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApplicationSettings)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -6833,7 +7112,10 @@ func (j *jsiiProxy_ApplicationSettings) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGeoNodeAllowedIps(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetGeoNodeAllowedIps(val *string) {
+	if err := j.validateSetGeoNodeAllowedIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"geoNodeAllowedIps",
@@ -6841,7 +7123,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGeoNodeAllowedIps(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGeoStatusTimeout(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetGeoStatusTimeout(val *float64) {
+	if err := j.validateSetGeoStatusTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"geoStatusTimeout",
@@ -6849,7 +7134,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGeoStatusTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutDefault(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetGitalyTimeoutDefault(val *float64) {
+	if err := j.validateSetGitalyTimeoutDefaultParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gitalyTimeoutDefault",
@@ -6857,7 +7145,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutDefault(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutFast(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetGitalyTimeoutFast(val *float64) {
+	if err := j.validateSetGitalyTimeoutFastParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gitalyTimeoutFast",
@@ -6865,7 +7156,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutFast(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutMedium(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetGitalyTimeoutMedium(val *float64) {
+	if err := j.validateSetGitalyTimeoutMediumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gitalyTimeoutMedium",
@@ -6873,7 +7167,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGitalyTimeoutMedium(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGitRateLimitUsersAllowlist(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetGitRateLimitUsersAllowlist(val *[]*string) {
+	if err := j.validateSetGitRateLimitUsersAllowlistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gitRateLimitUsersAllowlist",
@@ -6881,7 +7178,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGitRateLimitUsersAllowlist(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGitTwoFactorSessionExpiry(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetGitTwoFactorSessionExpiry(val *float64) {
+	if err := j.validateSetGitTwoFactorSessionExpiryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gitTwoFactorSessionExpiry",
@@ -6889,7 +7189,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGitTwoFactorSessionExpiry(val *float6
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGrafanaEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetGrafanaEnabled(val interface{}) {
+	if err := j.validateSetGrafanaEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"grafanaEnabled",
@@ -6897,7 +7200,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGrafanaEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGrafanaUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetGrafanaUrl(val *string) {
+	if err := j.validateSetGrafanaUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"grafanaUrl",
@@ -6905,7 +7211,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGrafanaUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetGravatarEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetGravatarEnabled(val interface{}) {
+	if err := j.validateSetGravatarEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gravatarEnabled",
@@ -6913,7 +7222,10 @@ func (j *jsiiProxy_ApplicationSettings) SetGravatarEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHashedStorageEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetHashedStorageEnabled(val interface{}) {
+	if err := j.validateSetHashedStorageEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hashedStorageEnabled",
@@ -6921,7 +7233,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHashedStorageEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHelpPageHideCommercialContent(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetHelpPageHideCommercialContent(val interface{}) {
+	if err := j.validateSetHelpPageHideCommercialContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"helpPageHideCommercialContent",
@@ -6929,7 +7244,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHelpPageHideCommercialContent(val int
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHelpPageSupportUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetHelpPageSupportUrl(val *string) {
+	if err := j.validateSetHelpPageSupportUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"helpPageSupportUrl",
@@ -6937,7 +7255,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHelpPageSupportUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHelpPageText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetHelpPageText(val *string) {
+	if err := j.validateSetHelpPageTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"helpPageText",
@@ -6945,7 +7266,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHelpPageText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHelpText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetHelpText(val *string) {
+	if err := j.validateSetHelpTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"helpText",
@@ -6953,7 +7277,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHelpText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHideThirdPartyOffers(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetHideThirdPartyOffers(val interface{}) {
+	if err := j.validateSetHideThirdPartyOffersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideThirdPartyOffers",
@@ -6961,7 +7288,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHideThirdPartyOffers(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHomePageUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetHomePageUrl(val *string) {
+	if err := j.validateSetHomePageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"homePageUrl",
@@ -6969,7 +7299,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHomePageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHousekeepingEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetHousekeepingEnabled(val interface{}) {
+	if err := j.validateSetHousekeepingEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"housekeepingEnabled",
@@ -6977,7 +7310,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHousekeepingEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHousekeepingFullRepackPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetHousekeepingFullRepackPeriod(val *float64) {
+	if err := j.validateSetHousekeepingFullRepackPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"housekeepingFullRepackPeriod",
@@ -6985,7 +7321,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHousekeepingFullRepackPeriod(val *flo
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHousekeepingGcPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetHousekeepingGcPeriod(val *float64) {
+	if err := j.validateSetHousekeepingGcPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"housekeepingGcPeriod",
@@ -6993,7 +7332,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHousekeepingGcPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHousekeepingIncrementalRepackPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetHousekeepingIncrementalRepackPeriod(val *float64) {
+	if err := j.validateSetHousekeepingIncrementalRepackPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"housekeepingIncrementalRepackPeriod",
@@ -7001,7 +7343,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHousekeepingIncrementalRepackPeriod(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetHtmlEmailsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetHtmlEmailsEnabled(val interface{}) {
+	if err := j.validateSetHtmlEmailsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"htmlEmailsEnabled",
@@ -7009,7 +7354,10 @@ func (j *jsiiProxy_ApplicationSettings) SetHtmlEmailsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetId(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -7017,7 +7365,10 @@ func (j *jsiiProxy_ApplicationSettings) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetImportSources(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetImportSources(val *[]*string) {
+	if err := j.validateSetImportSourcesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"importSources",
@@ -7025,7 +7376,10 @@ func (j *jsiiProxy_ApplicationSettings) SetImportSources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsDeleteAfterMonths(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetInactiveProjectsDeleteAfterMonths(val *float64) {
+	if err := j.validateSetInactiveProjectsDeleteAfterMonthsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"inactiveProjectsDeleteAfterMonths",
@@ -7033,7 +7387,10 @@ func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsDeleteAfterMonths(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsMinSizeMb(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetInactiveProjectsMinSizeMb(val *float64) {
+	if err := j.validateSetInactiveProjectsMinSizeMbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"inactiveProjectsMinSizeMb",
@@ -7041,7 +7398,10 @@ func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsMinSizeMb(val *float6
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsSendWarningEmailAfterMonths(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetInactiveProjectsSendWarningEmailAfterMonths(val *float64) {
+	if err := j.validateSetInactiveProjectsSendWarningEmailAfterMonthsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"inactiveProjectsSendWarningEmailAfterMonths",
@@ -7049,7 +7409,10 @@ func (j *jsiiProxy_ApplicationSettings) SetInactiveProjectsSendWarningEmailAfter
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetInProductMarketingEmailsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetInProductMarketingEmailsEnabled(val interface{}) {
+	if err := j.validateSetInProductMarketingEmailsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"inProductMarketingEmailsEnabled",
@@ -7057,7 +7420,10 @@ func (j *jsiiProxy_ApplicationSettings) SetInProductMarketingEmailsEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetInvisibleCaptchaEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetInvisibleCaptchaEnabled(val interface{}) {
+	if err := j.validateSetInvisibleCaptchaEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"invisibleCaptchaEnabled",
@@ -7065,7 +7431,10 @@ func (j *jsiiProxy_ApplicationSettings) SetInvisibleCaptchaEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetIssuesCreateLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetIssuesCreateLimit(val *float64) {
+	if err := j.validateSetIssuesCreateLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesCreateLimit",
@@ -7073,7 +7442,10 @@ func (j *jsiiProxy_ApplicationSettings) SetIssuesCreateLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetKeepLatestArtifact(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetKeepLatestArtifact(val interface{}) {
+	if err := j.validateSetKeepLatestArtifactParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keepLatestArtifact",
@@ -7081,7 +7453,10 @@ func (j *jsiiProxy_ApplicationSettings) SetKeepLatestArtifact(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApplicationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -7089,7 +7464,10 @@ func (j *jsiiProxy_ApplicationSettings) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetLocalMarkdownVersion(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetLocalMarkdownVersion(val *float64) {
+	if err := j.validateSetLocalMarkdownVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"localMarkdownVersion",
@@ -7097,7 +7475,10 @@ func (j *jsiiProxy_ApplicationSettings) SetLocalMarkdownVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMailgunEventsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetMailgunEventsEnabled(val interface{}) {
+	if err := j.validateSetMailgunEventsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mailgunEventsEnabled",
@@ -7105,7 +7486,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMailgunEventsEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMailgunSigningKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetMailgunSigningKey(val *string) {
+	if err := j.validateSetMailgunSigningKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mailgunSigningKey",
@@ -7113,7 +7497,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMailgunSigningKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaintenanceMode(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetMaintenanceMode(val interface{}) {
+	if err := j.validateSetMaintenanceModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maintenanceMode",
@@ -7121,7 +7508,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaintenanceMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaintenanceModeMessage(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetMaintenanceModeMessage(val *string) {
+	if err := j.validateSetMaintenanceModeMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maintenanceModeMessage",
@@ -7129,7 +7519,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaintenanceModeMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxArtifactsSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxArtifactsSize(val *float64) {
+	if err := j.validateSetMaxArtifactsSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxArtifactsSize",
@@ -7137,7 +7530,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxArtifactsSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxAttachmentSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxAttachmentSize(val *float64) {
+	if err := j.validateSetMaxAttachmentSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxAttachmentSize",
@@ -7145,7 +7541,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxAttachmentSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxExportSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxExportSize(val *float64) {
+	if err := j.validateSetMaxExportSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxExportSize",
@@ -7153,7 +7552,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxExportSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxImportSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxImportSize(val *float64) {
+	if err := j.validateSetMaxImportSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxImportSize",
@@ -7161,7 +7563,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxImportSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxNumberOfRepositoryDownloads(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxNumberOfRepositoryDownloads(val *float64) {
+	if err := j.validateSetMaxNumberOfRepositoryDownloadsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxNumberOfRepositoryDownloads",
@@ -7169,7 +7574,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxNumberOfRepositoryDownloads(val *f
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxNumberOfRepositoryDownloadsWithinTimePeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxNumberOfRepositoryDownloadsWithinTimePeriod(val *float64) {
+	if err := j.validateSetMaxNumberOfRepositoryDownloadsWithinTimePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxNumberOfRepositoryDownloadsWithinTimePeriod",
@@ -7177,7 +7585,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxNumberOfRepositoryDownloadsWithinT
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxPagesSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxPagesSize(val *float64) {
+	if err := j.validateSetMaxPagesSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxPagesSize",
@@ -7185,7 +7596,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxPagesSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxPersonalAccessTokenLifetime(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxPersonalAccessTokenLifetime(val *float64) {
+	if err := j.validateSetMaxPersonalAccessTokenLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxPersonalAccessTokenLifetime",
@@ -7193,7 +7607,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxPersonalAccessTokenLifetime(val *f
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMaxSshKeyLifetime(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMaxSshKeyLifetime(val *float64) {
+	if err := j.validateSetMaxSshKeyLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxSshKeyLifetime",
@@ -7201,7 +7618,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMaxSshKeyLifetime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMetricsMethodCallThreshold(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMetricsMethodCallThreshold(val *float64) {
+	if err := j.validateSetMetricsMethodCallThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsMethodCallThreshold",
@@ -7209,7 +7629,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMetricsMethodCallThreshold(val *float
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMirrorAvailable(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetMirrorAvailable(val interface{}) {
+	if err := j.validateSetMirrorAvailableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorAvailable",
@@ -7217,7 +7640,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMirrorAvailable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMirrorCapacityThreshold(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMirrorCapacityThreshold(val *float64) {
+	if err := j.validateSetMirrorCapacityThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorCapacityThreshold",
@@ -7225,7 +7651,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMirrorCapacityThreshold(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMirrorMaxCapacity(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMirrorMaxCapacity(val *float64) {
+	if err := j.validateSetMirrorMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorMaxCapacity",
@@ -7233,7 +7662,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMirrorMaxCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetMirrorMaxDelay(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetMirrorMaxDelay(val *float64) {
+	if err := j.validateSetMirrorMaxDelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirrorMaxDelay",
@@ -7241,7 +7673,10 @@ func (j *jsiiProxy_ApplicationSettings) SetMirrorMaxDelay(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetNpmPackageRequestsForwarding(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetNpmPackageRequestsForwarding(val interface{}) {
+	if err := j.validateSetNpmPackageRequestsForwardingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"npmPackageRequestsForwarding",
@@ -7249,7 +7684,10 @@ func (j *jsiiProxy_ApplicationSettings) SetNpmPackageRequestsForwarding(val inte
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetOutboundLocalRequestsWhitelist(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetOutboundLocalRequestsWhitelist(val *[]*string) {
+	if err := j.validateSetOutboundLocalRequestsWhitelistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"outboundLocalRequestsWhitelist",
@@ -7257,7 +7695,10 @@ func (j *jsiiProxy_ApplicationSettings) SetOutboundLocalRequestsWhitelist(val *[
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPackageRegistryCleanupPoliciesWorkerCapacity(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetPackageRegistryCleanupPoliciesWorkerCapacity(val *float64) {
+	if err := j.validateSetPackageRegistryCleanupPoliciesWorkerCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"packageRegistryCleanupPoliciesWorkerCapacity",
@@ -7265,7 +7706,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPackageRegistryCleanupPoliciesWorkerC
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPagesDomainVerificationEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPagesDomainVerificationEnabled(val interface{}) {
+	if err := j.validateSetPagesDomainVerificationEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pagesDomainVerificationEnabled",
@@ -7273,7 +7717,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPagesDomainVerificationEnabled(val in
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordAuthenticationEnabledForGit(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordAuthenticationEnabledForGit(val interface{}) {
+	if err := j.validateSetPasswordAuthenticationEnabledForGitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordAuthenticationEnabledForGit",
@@ -7281,7 +7728,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordAuthenticationEnabledForGit(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordAuthenticationEnabledForWeb(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordAuthenticationEnabledForWeb(val interface{}) {
+	if err := j.validateSetPasswordAuthenticationEnabledForWebParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordAuthenticationEnabledForWeb",
@@ -7289,7 +7739,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordAuthenticationEnabledForWeb(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordLowercaseRequired(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordLowercaseRequired(val interface{}) {
+	if err := j.validateSetPasswordLowercaseRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordLowercaseRequired",
@@ -7297,7 +7750,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordLowercaseRequired(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordNumberRequired(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordNumberRequired(val interface{}) {
+	if err := j.validateSetPasswordNumberRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordNumberRequired",
@@ -7305,7 +7761,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordNumberRequired(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordSymbolRequired(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordSymbolRequired(val interface{}) {
+	if err := j.validateSetPasswordSymbolRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordSymbolRequired",
@@ -7313,7 +7772,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordSymbolRequired(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPasswordUppercaseRequired(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPasswordUppercaseRequired(val interface{}) {
+	if err := j.validateSetPasswordUppercaseRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordUppercaseRequired",
@@ -7321,7 +7783,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPasswordUppercaseRequired(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPerformanceBarAllowedGroupPath(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetPerformanceBarAllowedGroupPath(val *string) {
+	if err := j.validateSetPerformanceBarAllowedGroupPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"performanceBarAllowedGroupPath",
@@ -7329,7 +7794,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPerformanceBarAllowedGroupPath(val *s
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPersonalAccessTokenPrefix(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetPersonalAccessTokenPrefix(val *string) {
+	if err := j.validateSetPersonalAccessTokenPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"personalAccessTokenPrefix",
@@ -7337,7 +7805,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPersonalAccessTokenPrefix(val *string
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPipelineLimitPerProjectUserSha(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetPipelineLimitPerProjectUserSha(val *float64) {
+	if err := j.validateSetPipelineLimitPerProjectUserShaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineLimitPerProjectUserSha",
@@ -7345,7 +7816,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPipelineLimitPerProjectUserSha(val *f
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPlantumlEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPlantumlEnabled(val interface{}) {
+	if err := j.validateSetPlantumlEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"plantumlEnabled",
@@ -7353,7 +7827,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPlantumlEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPlantumlUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetPlantumlUrl(val *string) {
+	if err := j.validateSetPlantumlUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"plantumlUrl",
@@ -7361,7 +7838,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPlantumlUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPollingIntervalMultiplier(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetPollingIntervalMultiplier(val *float64) {
+	if err := j.validateSetPollingIntervalMultiplierParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pollingIntervalMultiplier",
@@ -7369,7 +7849,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPollingIntervalMultiplier(val *float6
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetProjectExportEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetProjectExportEnabled(val interface{}) {
+	if err := j.validateSetProjectExportEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectExportEnabled",
@@ -7377,7 +7860,10 @@ func (j *jsiiProxy_ApplicationSettings) SetProjectExportEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPrometheusMetricsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPrometheusMetricsEnabled(val interface{}) {
+	if err := j.validateSetPrometheusMetricsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prometheusMetricsEnabled",
@@ -7385,7 +7871,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPrometheusMetricsEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetProtectedCiVariables(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetProtectedCiVariables(val interface{}) {
+	if err := j.validateSetProtectedCiVariablesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protectedCiVariables",
@@ -7393,7 +7882,7 @@ func (j *jsiiProxy_ApplicationSettings) SetProtectedCiVariables(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApplicationSettings)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -7401,7 +7890,10 @@ func (j *jsiiProxy_ApplicationSettings) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -7409,7 +7901,10 @@ func (j *jsiiProxy_ApplicationSettings) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPushEventActivitiesLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetPushEventActivitiesLimit(val *float64) {
+	if err := j.validateSetPushEventActivitiesLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEventActivitiesLimit",
@@ -7417,7 +7912,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPushEventActivitiesLimit(val *float64
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPushEventHooksLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetPushEventHooksLimit(val *float64) {
+	if err := j.validateSetPushEventHooksLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEventHooksLimit",
@@ -7425,7 +7923,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPushEventHooksLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetPypiPackageRequestsForwarding(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetPypiPackageRequestsForwarding(val interface{}) {
+	if err := j.validateSetPypiPackageRequestsForwardingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pypiPackageRequestsForwarding",
@@ -7433,7 +7934,10 @@ func (j *jsiiProxy_ApplicationSettings) SetPypiPackageRequestsForwarding(val int
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRateLimitingResponseText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetRateLimitingResponseText(val *string) {
+	if err := j.validateSetRateLimitingResponseTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rateLimitingResponseText",
@@ -7441,7 +7945,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRateLimitingResponseText(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRawBlobRequestLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetRawBlobRequestLimit(val *float64) {
+	if err := j.validateSetRawBlobRequestLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rawBlobRequestLimit",
@@ -7449,7 +7956,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRawBlobRequestLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRecaptchaEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetRecaptchaEnabled(val interface{}) {
+	if err := j.validateSetRecaptchaEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recaptchaEnabled",
@@ -7457,7 +7967,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRecaptchaEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRecaptchaPrivateKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetRecaptchaPrivateKey(val *string) {
+	if err := j.validateSetRecaptchaPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recaptchaPrivateKey",
@@ -7465,7 +7978,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRecaptchaPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRecaptchaSiteKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetRecaptchaSiteKey(val *string) {
+	if err := j.validateSetRecaptchaSiteKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recaptchaSiteKey",
@@ -7473,7 +7989,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRecaptchaSiteKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetReceiveMaxInputSize(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetReceiveMaxInputSize(val *float64) {
+	if err := j.validateSetReceiveMaxInputSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"receiveMaxInputSize",
@@ -7481,7 +8000,10 @@ func (j *jsiiProxy_ApplicationSettings) SetReceiveMaxInputSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRepositoryChecksEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetRepositoryChecksEnabled(val interface{}) {
+	if err := j.validateSetRepositoryChecksEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositoryChecksEnabled",
@@ -7489,7 +8011,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRepositoryChecksEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRepositorySizeLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetRepositorySizeLimit(val *float64) {
+	if err := j.validateSetRepositorySizeLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositorySizeLimit",
@@ -7497,7 +8022,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRepositorySizeLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRepositoryStorages(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetRepositoryStorages(val *[]*string) {
+	if err := j.validateSetRepositoryStoragesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositoryStorages",
@@ -7505,7 +8033,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRepositoryStorages(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRepositoryStoragesWeighted(val *map[string]*float64) {
+func (j *jsiiProxy_ApplicationSettings)SetRepositoryStoragesWeighted(val *map[string]*float64) {
+	if err := j.validateSetRepositoryStoragesWeightedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repositoryStoragesWeighted",
@@ -7513,7 +8044,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRepositoryStoragesWeighted(val *map[s
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRequireAdminApprovalAfterUserSignup(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetRequireAdminApprovalAfterUserSignup(val interface{}) {
+	if err := j.validateSetRequireAdminApprovalAfterUserSignupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requireAdminApprovalAfterUserSignup",
@@ -7521,7 +8055,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRequireAdminApprovalAfterUserSignup(v
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRequireTwoFactorAuthentication(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetRequireTwoFactorAuthentication(val interface{}) {
+	if err := j.validateSetRequireTwoFactorAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requireTwoFactorAuthentication",
@@ -7529,7 +8066,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRequireTwoFactorAuthentication(val in
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRestrictedVisibilityLevels(val *[]*string) {
+func (j *jsiiProxy_ApplicationSettings)SetRestrictedVisibilityLevels(val *[]*string) {
+	if err := j.validateSetRestrictedVisibilityLevelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restrictedVisibilityLevels",
@@ -7537,7 +8077,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRestrictedVisibilityLevels(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetRsaKeyRestriction(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetRsaKeyRestriction(val *float64) {
+	if err := j.validateSetRsaKeyRestrictionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rsaKeyRestriction",
@@ -7545,7 +8088,10 @@ func (j *jsiiProxy_ApplicationSettings) SetRsaKeyRestriction(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSearchRateLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSearchRateLimit(val *float64) {
+	if err := j.validateSetSearchRateLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"searchRateLimit",
@@ -7553,7 +8099,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSearchRateLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSearchRateLimitUnauthenticated(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSearchRateLimitUnauthenticated(val *float64) {
+	if err := j.validateSetSearchRateLimitUnauthenticatedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"searchRateLimitUnauthenticated",
@@ -7561,7 +8110,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSearchRateLimitUnauthenticated(val *f
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSendUserConfirmationEmail(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSendUserConfirmationEmail(val interface{}) {
+	if err := j.validateSetSendUserConfirmationEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendUserConfirmationEmail",
@@ -7569,7 +8121,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSendUserConfirmationEmail(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSessionExpireDelay(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSessionExpireDelay(val *float64) {
+	if err := j.validateSetSessionExpireDelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sessionExpireDelay",
@@ -7577,7 +8132,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSessionExpireDelay(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSharedRunnersEnabled(val interface{}) {
+	if err := j.validateSetSharedRunnersEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedRunnersEnabled",
@@ -7585,7 +8143,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersEnabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersMinutes(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSharedRunnersMinutes(val *float64) {
+	if err := j.validateSetSharedRunnersMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedRunnersMinutes",
@@ -7593,7 +8154,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSharedRunnersText(val *string) {
+	if err := j.validateSetSharedRunnersTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedRunnersText",
@@ -7601,7 +8165,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSharedRunnersText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterCompressionThresholdBytes(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSidekiqJobLimiterCompressionThresholdBytes(val *float64) {
+	if err := j.validateSetSidekiqJobLimiterCompressionThresholdBytesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sidekiqJobLimiterCompressionThresholdBytes",
@@ -7609,7 +8176,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterCompressionThreshold
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterLimitBytes(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSidekiqJobLimiterLimitBytes(val *float64) {
+	if err := j.validateSetSidekiqJobLimiterLimitBytesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sidekiqJobLimiterLimitBytes",
@@ -7617,7 +8187,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterLimitBytes(val *floa
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterMode(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSidekiqJobLimiterMode(val *string) {
+	if err := j.validateSetSidekiqJobLimiterModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sidekiqJobLimiterMode",
@@ -7625,7 +8198,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSidekiqJobLimiterMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSignInText(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSignInText(val *string) {
+	if err := j.validateSetSignInTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"signInText",
@@ -7633,7 +8209,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSignInText(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSignupEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSignupEnabled(val interface{}) {
+	if err := j.validateSetSignupEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"signupEnabled",
@@ -7641,7 +8220,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSignupEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSlackAppEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSlackAppEnabled(val interface{}) {
+	if err := j.validateSetSlackAppEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slackAppEnabled",
@@ -7649,7 +8231,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSlackAppEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSlackAppId(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSlackAppId(val *string) {
+	if err := j.validateSetSlackAppIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slackAppId",
@@ -7657,7 +8242,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSlackAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSlackAppSecret(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSlackAppSecret(val *string) {
+	if err := j.validateSetSlackAppSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slackAppSecret",
@@ -7665,7 +8253,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSlackAppSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSlackAppSigningSecret(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSlackAppSigningSecret(val *string) {
+	if err := j.validateSetSlackAppSigningSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slackAppSigningSecret",
@@ -7673,7 +8264,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSlackAppSigningSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSlackAppVerificationToken(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSlackAppVerificationToken(val *string) {
+	if err := j.validateSetSlackAppVerificationTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slackAppVerificationToken",
@@ -7681,7 +8275,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSlackAppVerificationToken(val *string
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSnippetSizeLimit(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetSnippetSizeLimit(val *float64) {
+	if err := j.validateSetSnippetSizeLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snippetSizeLimit",
@@ -7689,7 +8286,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSnippetSizeLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSnowplowAppId(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSnowplowAppId(val *string) {
+	if err := j.validateSetSnowplowAppIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowplowAppId",
@@ -7697,7 +8297,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSnowplowAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSnowplowCollectorHostname(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSnowplowCollectorHostname(val *string) {
+	if err := j.validateSetSnowplowCollectorHostnameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowplowCollectorHostname",
@@ -7705,7 +8308,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSnowplowCollectorHostname(val *string
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSnowplowCookieDomain(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSnowplowCookieDomain(val *string) {
+	if err := j.validateSetSnowplowCookieDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowplowCookieDomain",
@@ -7713,7 +8319,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSnowplowCookieDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSnowplowEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSnowplowEnabled(val interface{}) {
+	if err := j.validateSetSnowplowEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snowplowEnabled",
@@ -7721,7 +8330,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSnowplowEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSourcegraphEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSourcegraphEnabled(val interface{}) {
+	if err := j.validateSetSourcegraphEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourcegraphEnabled",
@@ -7729,7 +8341,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSourcegraphEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSourcegraphPublicOnly(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSourcegraphPublicOnly(val interface{}) {
+	if err := j.validateSetSourcegraphPublicOnlyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourcegraphPublicOnly",
@@ -7737,7 +8352,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSourcegraphPublicOnly(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSourcegraphUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSourcegraphUrl(val *string) {
+	if err := j.validateSetSourcegraphUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourcegraphUrl",
@@ -7745,7 +8363,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSourcegraphUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSpamCheckApiKey(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSpamCheckApiKey(val *string) {
+	if err := j.validateSetSpamCheckApiKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spamCheckApiKey",
@@ -7753,7 +8374,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSpamCheckApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSpamCheckEndpointEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSpamCheckEndpointEnabled(val interface{}) {
+	if err := j.validateSetSpamCheckEndpointEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spamCheckEndpointEnabled",
@@ -7761,7 +8385,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSpamCheckEndpointEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSpamCheckEndpointUrl(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetSpamCheckEndpointUrl(val *string) {
+	if err := j.validateSetSpamCheckEndpointUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spamCheckEndpointUrl",
@@ -7769,7 +8396,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSpamCheckEndpointUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetSuggestPipelineEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetSuggestPipelineEnabled(val interface{}) {
+	if err := j.validateSetSuggestPipelineEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suggestPipelineEnabled",
@@ -7777,7 +8407,10 @@ func (j *jsiiProxy_ApplicationSettings) SetSuggestPipelineEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetTerminalMaxSessionTime(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetTerminalMaxSessionTime(val *float64) {
+	if err := j.validateSetTerminalMaxSessionTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terminalMaxSessionTime",
@@ -7785,7 +8418,10 @@ func (j *jsiiProxy_ApplicationSettings) SetTerminalMaxSessionTime(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetTerms(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetTerms(val *string) {
+	if err := j.validateSetTermsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terms",
@@ -7793,7 +8429,10 @@ func (j *jsiiProxy_ApplicationSettings) SetTerms(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedApiEnabled(val interface{}) {
+	if err := j.validateSetThrottleAuthenticatedApiEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedApiEnabled",
@@ -7801,7 +8440,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedApiPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedApiPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedApiPeriodInSeconds",
@@ -7809,7 +8451,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiPeriodInSecon
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedApiRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedApiRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedApiRequestsPerPeriod",
@@ -7817,7 +8462,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedApiRequestsPerPe
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedPackagesApiEnabled(val interface{}) {
+	if err := j.validateSetThrottleAuthenticatedPackagesApiEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedPackagesApiEnabled",
@@ -7825,7 +8473,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiEnabl
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedPackagesApiPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedPackagesApiPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedPackagesApiPeriodInSeconds",
@@ -7833,7 +8484,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiPerio
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedPackagesApiRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedPackagesApiRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedPackagesApiRequestsPerPeriod",
@@ -7841,7 +8495,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedPackagesApiReque
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedWebEnabled(val interface{}) {
+	if err := j.validateSetThrottleAuthenticatedWebEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedWebEnabled",
@@ -7849,7 +8506,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedWebPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedWebPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedWebPeriodInSeconds",
@@ -7857,7 +8517,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebPeriodInSecon
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleAuthenticatedWebRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleAuthenticatedWebRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleAuthenticatedWebRequestsPerPeriod",
@@ -7865,7 +8528,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleAuthenticatedWebRequestsPerPe
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedApiEnabled(val interface{}) {
+	if err := j.validateSetThrottleUnauthenticatedApiEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedApiEnabled",
@@ -7873,7 +8539,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiEnabled(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedApiPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedApiPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedApiPeriodInSeconds",
@@ -7881,7 +8550,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiPeriodInSec
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedApiRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedApiRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedApiRequestsPerPeriod",
@@ -7889,7 +8561,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedApiRequestsPer
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedPackagesApiEnabled(val interface{}) {
+	if err := j.validateSetThrottleUnauthenticatedPackagesApiEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedPackagesApiEnabled",
@@ -7897,7 +8572,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiEna
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedPackagesApiPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedPackagesApiPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedPackagesApiPeriodInSeconds",
@@ -7905,7 +8583,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiPer
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedPackagesApiRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedPackagesApiRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedPackagesApiRequestsPerPeriod",
@@ -7913,7 +8594,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedPackagesApiReq
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedWebEnabled(val interface{}) {
+	if err := j.validateSetThrottleUnauthenticatedWebEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedWebEnabled",
@@ -7921,7 +8605,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebEnabled(val
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebPeriodInSeconds(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedWebPeriodInSeconds(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedWebPeriodInSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedWebPeriodInSeconds",
@@ -7929,7 +8616,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebPeriodInSec
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetThrottleUnauthenticatedWebRequestsPerPeriod(val *float64) {
+	if err := j.validateSetThrottleUnauthenticatedWebRequestsPerPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throttleUnauthenticatedWebRequestsPerPeriod",
@@ -7937,7 +8627,10 @@ func (j *jsiiProxy_ApplicationSettings) SetThrottleUnauthenticatedWebRequestsPer
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetTimeTrackingLimitToHours(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetTimeTrackingLimitToHours(val interface{}) {
+	if err := j.validateSetTimeTrackingLimitToHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeTrackingLimitToHours",
@@ -7945,7 +8638,10 @@ func (j *jsiiProxy_ApplicationSettings) SetTimeTrackingLimitToHours(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetTwoFactorGracePeriod(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetTwoFactorGracePeriod(val *float64) {
+	if err := j.validateSetTwoFactorGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"twoFactorGracePeriod",
@@ -7953,7 +8649,10 @@ func (j *jsiiProxy_ApplicationSettings) SetTwoFactorGracePeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUniqueIpsLimitEnabled(val interface{}) {
+	if err := j.validateSetUniqueIpsLimitEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"uniqueIpsLimitEnabled",
@@ -7961,7 +8660,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitPerUser(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetUniqueIpsLimitPerUser(val *float64) {
+	if err := j.validateSetUniqueIpsLimitPerUserParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"uniqueIpsLimitPerUser",
@@ -7969,7 +8671,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitPerUser(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitTimeWindow(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetUniqueIpsLimitTimeWindow(val *float64) {
+	if err := j.validateSetUniqueIpsLimitTimeWindowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"uniqueIpsLimitTimeWindow",
@@ -7977,7 +8682,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUniqueIpsLimitTimeWindow(val *float64
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUsagePingEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUsagePingEnabled(val interface{}) {
+	if err := j.validateSetUsagePingEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usagePingEnabled",
@@ -7985,7 +8693,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUsagePingEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUserDeactivationEmailsEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUserDeactivationEmailsEnabled(val interface{}) {
+	if err := j.validateSetUserDeactivationEmailsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userDeactivationEmailsEnabled",
@@ -7993,7 +8704,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUserDeactivationEmailsEnabled(val int
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUserDefaultExternal(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUserDefaultExternal(val interface{}) {
+	if err := j.validateSetUserDefaultExternalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userDefaultExternal",
@@ -8001,7 +8715,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUserDefaultExternal(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUserDefaultInternalRegex(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetUserDefaultInternalRegex(val *string) {
+	if err := j.validateSetUserDefaultInternalRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userDefaultInternalRegex",
@@ -8009,7 +8726,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUserDefaultInternalRegex(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUserOauthApplications(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUserOauthApplications(val interface{}) {
+	if err := j.validateSetUserOauthApplicationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userOauthApplications",
@@ -8017,7 +8737,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUserOauthApplications(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetUserShowAddSshKeyMessage(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetUserShowAddSshKeyMessage(val interface{}) {
+	if err := j.validateSetUserShowAddSshKeyMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userShowAddSshKeyMessage",
@@ -8025,7 +8748,10 @@ func (j *jsiiProxy_ApplicationSettings) SetUserShowAddSshKeyMessage(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetVersionCheckEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetVersionCheckEnabled(val interface{}) {
+	if err := j.validateSetVersionCheckEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"versionCheckEnabled",
@@ -8033,7 +8759,10 @@ func (j *jsiiProxy_ApplicationSettings) SetVersionCheckEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetWebIdeClientsidePreviewEnabled(val interface{}) {
+func (j *jsiiProxy_ApplicationSettings)SetWebIdeClientsidePreviewEnabled(val interface{}) {
+	if err := j.validateSetWebIdeClientsidePreviewEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webIdeClientsidePreviewEnabled",
@@ -8041,7 +8770,10 @@ func (j *jsiiProxy_ApplicationSettings) SetWebIdeClientsidePreviewEnabled(val in
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetWhatsNewVariant(val *string) {
+func (j *jsiiProxy_ApplicationSettings)SetWhatsNewVariant(val *string) {
+	if err := j.validateSetWhatsNewVariantParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"whatsNewVariant",
@@ -8049,7 +8781,10 @@ func (j *jsiiProxy_ApplicationSettings) SetWhatsNewVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings) SetWikiPageMaxContentBytes(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetWikiPageMaxContentBytes(val *float64) {
+	if err := j.validateSetWikiPageMaxContentBytesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageMaxContentBytes",
@@ -8077,6 +8812,9 @@ func (j *jsiiProxy_ApplicationSettings) SetWikiPageMaxContentBytes(val *float64)
 func ApplicationSettings_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateApplicationSettings_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -8101,6 +8839,9 @@ func ApplicationSettings_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_ApplicationSettings) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -8109,6 +8850,9 @@ func (a *jsiiProxy_ApplicationSettings) AddOverride(path *string, value interfac
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -8122,6 +8866,9 @@ func (a *jsiiProxy_ApplicationSettings) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -8135,6 +8882,9 @@ func (a *jsiiProxy_ApplicationSettings) GetBooleanAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -8148,6 +8898,9 @@ func (a *jsiiProxy_ApplicationSettings) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -8161,6 +8914,9 @@ func (a *jsiiProxy_ApplicationSettings) GetListAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -8174,6 +8930,9 @@ func (a *jsiiProxy_ApplicationSettings) GetNumberAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -8187,6 +8946,9 @@ func (a *jsiiProxy_ApplicationSettings) GetNumberListAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -8200,6 +8962,9 @@ func (a *jsiiProxy_ApplicationSettings) GetNumberMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -8213,6 +8978,9 @@ func (a *jsiiProxy_ApplicationSettings) GetStringAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_ApplicationSettings) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -8226,6 +8994,9 @@ func (a *jsiiProxy_ApplicationSettings) GetStringMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_ApplicationSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -8239,6 +9010,9 @@ func (a *jsiiProxy_ApplicationSettings) InterpolationForAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_ApplicationSettings) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

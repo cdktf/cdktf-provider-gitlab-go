@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabUsersUsersList) WrapsSet() *bool {
 func NewDataGitlabUsersUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabUsersUsersList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabUsersUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabUsersUsersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabUsersUsersList_Override(d DataGitlabUsersUsersList, terraformR
 	)
 }
 
-func (j *jsiiProxy_DataGitlabUsersUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabUsersUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabUsersUsersList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGitlabUsersUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabUsersUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabUsersUsersList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_DataGitlabUsersUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabUsersUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabUsersUsersList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGitlabUsersUsersList) Get(index *float64) DataGitlabUsersUsersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabUsersUsersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabUsersUsersList) Get(index *float64) DataGitlabUsers
 }
 
 func (d *jsiiProxy_DataGitlabUsersUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

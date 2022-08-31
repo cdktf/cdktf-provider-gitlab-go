@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) WrapsSet() *bool {
 func NewDataGitlabProjectMilestonesMilestonesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMilestonesMilestonesList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectMilestonesMilestonesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectMilestonesMilestonesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectMilestonesMilestonesList_Override(d DataGitlabProjectMi
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectMilestonesMilestonesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Get(index *float64) DataGitlabProjectMilestonesMilestonesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectMilestonesMilestonesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

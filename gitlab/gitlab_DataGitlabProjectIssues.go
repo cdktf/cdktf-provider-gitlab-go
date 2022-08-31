@@ -897,6 +897,9 @@ func (j *jsiiProxy_DataGitlabProjectIssues) WithLabelsDetailsInput() interface{}
 func NewDataGitlabProjectIssues(scope constructs.Construct, id *string, config *DataGitlabProjectIssuesConfig) DataGitlabProjectIssues {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectIssuesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectIssues{}
 
 	_jsii_.Create(
@@ -919,7 +922,10 @@ func NewDataGitlabProjectIssues_Override(d DataGitlabProjectIssues, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetAssigneeId(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetAssigneeId(val *float64) {
+	if err := j.validateSetAssigneeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assigneeId",
@@ -927,7 +933,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetAssigneeId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetAssigneeUsername(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetAssigneeUsername(val *string) {
+	if err := j.validateSetAssigneeUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assigneeUsername",
@@ -935,7 +944,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetAssigneeUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetAuthorId(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetAuthorId(val *float64) {
+	if err := j.validateSetAuthorIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authorId",
@@ -943,7 +955,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetAuthorId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetConfidential(val interface{}) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetConfidential(val interface{}) {
+	if err := j.validateSetConfidentialParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidential",
@@ -951,7 +966,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetConfidential(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -959,7 +974,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetCreatedAfter(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetCreatedAfter(val *string) {
+	if err := j.validateSetCreatedAfterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"createdAfter",
@@ -967,7 +985,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetCreatedAfter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetCreatedBefore(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetCreatedBefore(val *string) {
+	if err := j.validateSetCreatedBeforeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"createdBefore",
@@ -975,7 +996,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetCreatedBefore(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -983,7 +1004,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetDueDate(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetDueDate(val *string) {
+	if err := j.validateSetDueDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dueDate",
@@ -991,7 +1015,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetDueDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -999,7 +1023,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1007,7 +1034,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetIids(val *[]*float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetIids(val *[]*float64) {
+	if err := j.validateSetIidsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iids",
@@ -1015,7 +1045,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetIids(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetIssueType(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetIssueType(val *string) {
+	if err := j.validateSetIssueTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issueType",
@@ -1023,7 +1056,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetIssueType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetLabels(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetLabels(val *[]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"labels",
@@ -1031,7 +1067,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1039,7 +1078,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetMilestone(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetMilestone(val *string) {
+	if err := j.validateSetMilestoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"milestone",
@@ -1047,7 +1089,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetMilestone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetMyReactionEmoji(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetMyReactionEmoji(val *string) {
+	if err := j.validateSetMyReactionEmojiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"myReactionEmoji",
@@ -1055,7 +1100,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetMyReactionEmoji(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotAssigneeId(val *[]*float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAssigneeId(val *[]*float64) {
+	if err := j.validateSetNotAssigneeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notAssigneeId",
@@ -1063,7 +1111,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotAssigneeId(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotAuthorId(val *[]*float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAuthorId(val *[]*float64) {
+	if err := j.validateSetNotAuthorIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notAuthorId",
@@ -1071,7 +1122,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotAuthorId(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotLabels(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotLabels(val *[]*string) {
+	if err := j.validateSetNotLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notLabels",
@@ -1079,7 +1133,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMilestone(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotMilestone(val *string) {
+	if err := j.validateSetNotMilestoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notMilestone",
@@ -1087,7 +1144,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMilestone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMyReactionEmoji(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotMyReactionEmoji(val *[]*string) {
+	if err := j.validateSetNotMyReactionEmojiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notMyReactionEmoji",
@@ -1095,7 +1155,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetNotMyReactionEmoji(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetOrderBy(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"orderBy",
@@ -1103,7 +1166,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetOrderBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetProject(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -1111,7 +1177,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1119,7 +1185,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetScope(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetScope(val *string) {
+	if err := j.validateSetScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scope",
@@ -1127,7 +1196,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetSearch(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetSearch(val *string) {
+	if err := j.validateSetSearchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"search",
@@ -1135,7 +1207,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetSearch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetSort(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetSort(val *string) {
+	if err := j.validateSetSortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sort",
@@ -1143,7 +1218,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetSort(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetUpdatedAfter(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetUpdatedAfter(val *string) {
+	if err := j.validateSetUpdatedAfterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"updatedAfter",
@@ -1151,7 +1229,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetUpdatedAfter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetUpdatedBefore(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetUpdatedBefore(val *string) {
+	if err := j.validateSetUpdatedBeforeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"updatedBefore",
@@ -1159,7 +1240,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetUpdatedBefore(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetWeight(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetWeight(val *float64) {
+	if err := j.validateSetWeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weight",
@@ -1167,7 +1251,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetWeight(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) SetWithLabelsDetails(val interface{}) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetWithLabelsDetails(val interface{}) {
+	if err := j.validateSetWithLabelsDetailsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"withLabelsDetails",
@@ -1195,6 +1282,9 @@ func (j *jsiiProxy_DataGitlabProjectIssues) SetWithLabelsDetails(val interface{}
 func DataGitlabProjectIssues_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGitlabProjectIssues_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1219,6 +1309,9 @@ func DataGitlabProjectIssues_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -1227,6 +1320,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) AddOverride(path *string, value inte
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1240,6 +1336,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetAnyMapAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1253,6 +1352,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetBooleanAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1266,6 +1368,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetBooleanMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1279,6 +1384,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1292,6 +1400,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1305,6 +1416,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberListAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1318,6 +1432,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetNumberMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1331,6 +1448,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetStringAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1344,6 +1464,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) GetStringMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1357,6 +1480,9 @@ func (d *jsiiProxy_DataGitlabProjectIssues) InterpolationForAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssues) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

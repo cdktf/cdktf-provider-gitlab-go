@@ -352,6 +352,9 @@ func (j *jsiiProxy_GitlabProvider) TokenInput() *string {
 func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabProviderConfig) GitlabProvider {
 	_init_.Initialize()
 
+	if err := validateNewGitlabProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GitlabProvider{}
 
 	_jsii_.Create(
@@ -374,7 +377,7 @@ func NewGitlabProvider_Override(g GitlabProvider, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetAlias(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -382,7 +385,7 @@ func (j *jsiiProxy_GitlabProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetBaseUrl(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -390,7 +393,7 @@ func (j *jsiiProxy_GitlabProvider) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetCacertFile(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetCacertFile(val *string) {
 	_jsii_.Set(
 		j,
 		"cacertFile",
@@ -398,7 +401,7 @@ func (j *jsiiProxy_GitlabProvider) SetCacertFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetClientCert(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetClientCert(val *string) {
 	_jsii_.Set(
 		j,
 		"clientCert",
@@ -406,7 +409,7 @@ func (j *jsiiProxy_GitlabProvider) SetClientCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetClientKey(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetClientKey(val *string) {
 	_jsii_.Set(
 		j,
 		"clientKey",
@@ -414,7 +417,10 @@ func (j *jsiiProxy_GitlabProvider) SetClientKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetEarlyAuthCheck(val interface{}) {
+func (j *jsiiProxy_GitlabProvider)SetEarlyAuthCheck(val interface{}) {
+	if err := j.validateSetEarlyAuthCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"earlyAuthCheck",
@@ -422,7 +428,10 @@ func (j *jsiiProxy_GitlabProvider) SetEarlyAuthCheck(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetInsecure(val interface{}) {
+func (j *jsiiProxy_GitlabProvider)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecure",
@@ -430,7 +439,7 @@ func (j *jsiiProxy_GitlabProvider) SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GitlabProvider) SetToken(val *string) {
+func (j *jsiiProxy_GitlabProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -458,6 +467,9 @@ func (j *jsiiProxy_GitlabProvider) SetToken(val *string) {
 func GitlabProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGitlabProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -482,6 +494,9 @@ func GitlabProvider_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GitlabProvider) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -490,6 +505,9 @@ func (g *jsiiProxy_GitlabProvider) AddOverride(path *string, value interface{}) 
 }
 
 func (g *jsiiProxy_GitlabProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

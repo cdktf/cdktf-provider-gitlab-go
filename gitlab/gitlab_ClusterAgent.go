@@ -370,6 +370,9 @@ func (j *jsiiProxy_ClusterAgent) TerraformResourceType() *string {
 func NewClusterAgent(scope constructs.Construct, id *string, config *ClusterAgentConfig) ClusterAgent {
 	_init_.Initialize()
 
+	if err := validateNewClusterAgentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ClusterAgent{}
 
 	_jsii_.Create(
@@ -392,7 +395,10 @@ func NewClusterAgent_Override(c ClusterAgent, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetConnection(val interface{}) {
+func (j *jsiiProxy_ClusterAgent)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -400,7 +406,7 @@ func (j *jsiiProxy_ClusterAgent) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetCount(val *float64) {
+func (j *jsiiProxy_ClusterAgent)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -408,7 +414,7 @@ func (j *jsiiProxy_ClusterAgent) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ClusterAgent)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -416,7 +422,7 @@ func (j *jsiiProxy_ClusterAgent) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ClusterAgent)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -424,7 +430,10 @@ func (j *jsiiProxy_ClusterAgent) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetId(val *string) {
+func (j *jsiiProxy_ClusterAgent)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -432,7 +441,10 @@ func (j *jsiiProxy_ClusterAgent) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ClusterAgent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -440,7 +452,10 @@ func (j *jsiiProxy_ClusterAgent) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetName(val *string) {
+func (j *jsiiProxy_ClusterAgent)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -448,7 +463,10 @@ func (j *jsiiProxy_ClusterAgent) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetProject(val *string) {
+func (j *jsiiProxy_ClusterAgent)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -456,7 +474,7 @@ func (j *jsiiProxy_ClusterAgent) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ClusterAgent)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -464,7 +482,10 @@ func (j *jsiiProxy_ClusterAgent) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgent) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ClusterAgent)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -492,6 +513,9 @@ func (j *jsiiProxy_ClusterAgent) SetProvisioners(val *[]interface{}) {
 func ClusterAgent_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateClusterAgent_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -516,6 +540,9 @@ func ClusterAgent_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_ClusterAgent) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -524,6 +551,9 @@ func (c *jsiiProxy_ClusterAgent) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_ClusterAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -537,6 +567,9 @@ func (c *jsiiProxy_ClusterAgent) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_ClusterAgent) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -550,6 +583,9 @@ func (c *jsiiProxy_ClusterAgent) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_ClusterAgent) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -563,6 +599,9 @@ func (c *jsiiProxy_ClusterAgent) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_ClusterAgent) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -576,6 +615,9 @@ func (c *jsiiProxy_ClusterAgent) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (c *jsiiProxy_ClusterAgent) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -589,6 +631,9 @@ func (c *jsiiProxy_ClusterAgent) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_ClusterAgent) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -602,6 +647,9 @@ func (c *jsiiProxy_ClusterAgent) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_ClusterAgent) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -615,6 +663,9 @@ func (c *jsiiProxy_ClusterAgent) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_ClusterAgent) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -628,6 +679,9 @@ func (c *jsiiProxy_ClusterAgent) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_ClusterAgent) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -641,6 +695,9 @@ func (c *jsiiProxy_ClusterAgent) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_ClusterAgent) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -654,6 +711,9 @@ func (c *jsiiProxy_ClusterAgent) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_ClusterAgent) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

@@ -385,6 +385,9 @@ func (j *jsiiProxy_ServicePipelinesEmail) TerraformResourceType() *string {
 func NewServicePipelinesEmail(scope constructs.Construct, id *string, config *ServicePipelinesEmailConfig) ServicePipelinesEmail {
 	_init_.Initialize()
 
+	if err := validateNewServicePipelinesEmailParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServicePipelinesEmail{}
 
 	_jsii_.Create(
@@ -407,7 +410,10 @@ func NewServicePipelinesEmail_Override(s ServicePipelinesEmail, scope constructs
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetBranchesToBeNotified(val *string) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetBranchesToBeNotified(val *string) {
+	if err := j.validateSetBranchesToBeNotifiedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branchesToBeNotified",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetBranchesToBeNotified(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -423,7 +432,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetCount(val *float64) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -431,7 +440,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -439,7 +448,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +456,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetId(val *string) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -455,7 +467,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -463,7 +478,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetNotifyOnlyBrokenPipelines(val interface{}) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetNotifyOnlyBrokenPipelines(val interface{}) {
+	if err := j.validateSetNotifyOnlyBrokenPipelinesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notifyOnlyBrokenPipelines",
@@ -471,7 +489,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetNotifyOnlyBrokenPipelines(val inter
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetProject(val *string) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -479,7 +500,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -487,7 +508,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -495,7 +519,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicePipelinesEmail) SetRecipients(val *[]*string) {
+func (j *jsiiProxy_ServicePipelinesEmail)SetRecipients(val *[]*string) {
+	if err := j.validateSetRecipientsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recipients",
@@ -523,6 +550,9 @@ func (j *jsiiProxy_ServicePipelinesEmail) SetRecipients(val *[]*string) {
 func ServicePipelinesEmail_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServicePipelinesEmail_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -547,6 +577,9 @@ func ServicePipelinesEmail_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -555,6 +588,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) AddOverride(path *string, value interf
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -568,6 +604,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -581,6 +620,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetBooleanAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -594,6 +636,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -607,6 +652,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetListAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -620,6 +668,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetNumberAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -633,6 +684,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetNumberListAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -646,6 +700,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetNumberMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -659,6 +716,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetStringAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -672,6 +732,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetStringMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -685,6 +748,9 @@ func (s *jsiiProxy_ServicePipelinesEmail) InterpolationForAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_ServicePipelinesEmail) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

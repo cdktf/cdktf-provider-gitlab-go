@@ -272,6 +272,9 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) Title() *string {
 func NewDataGitlabProjectTagCommitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabProjectTagCommitOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectTagCommitOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectTagCommitOutputReference{}
 
 	_jsii_.Create(
@@ -293,7 +296,10 @@ func NewDataGitlabProjectTagCommitOutputReference_Override(d DataGitlabProjectTa
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -301,7 +307,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -309,7 +318,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetInternalValue(val *DataGitlabProjectTagCommit) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference)SetInternalValue(val *DataGitlabProjectTagCommit) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -317,7 +329,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -325,7 +340,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -347,6 +365,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -360,6 +381,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetAnyMapAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -373,6 +397,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetBooleanAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -386,6 +413,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetBooleanMapAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -399,6 +429,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetListAttribute(t
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -412,6 +445,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -425,6 +461,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberListAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -438,6 +477,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetNumberMapAttrib
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -451,6 +493,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetStringAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -477,6 +522,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) InterpolationAsLis
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -490,6 +538,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) InterpolationForAt
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

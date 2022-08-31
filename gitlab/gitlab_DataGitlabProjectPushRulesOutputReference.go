@@ -272,6 +272,9 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) TerraformResource(
 func NewDataGitlabProjectPushRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabProjectPushRulesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectPushRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectPushRulesOutputReference{}
 
 	_jsii_.Create(
@@ -293,7 +296,10 @@ func NewDataGitlabProjectPushRulesOutputReference_Override(d DataGitlabProjectPu
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -301,7 +307,10 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -309,7 +318,10 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetInternalValue(val *DataGitlabProjectPushRules) {
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference)SetInternalValue(val *DataGitlabProjectPushRules) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -317,7 +329,10 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -325,7 +340,10 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -347,6 +365,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -360,6 +381,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetAnyMapAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -373,6 +397,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetBooleanAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -386,6 +413,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetBooleanMapAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -399,6 +429,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetListAttribute(t
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -412,6 +445,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -425,6 +461,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberListAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -438,6 +477,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetNumberMapAttrib
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -451,6 +493,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetStringAttribute
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -477,6 +522,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) InterpolationAsLis
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -490,6 +538,9 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) InterpolationForAt
 }
 
 func (d *jsiiProxy_DataGitlabProjectPushRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

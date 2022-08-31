@@ -111,6 +111,9 @@ func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) WrapsSet() *bool {
 func NewBranchProtectionAllowedToUnprotectList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToUnprotectList {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionAllowedToUnprotectListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtectionAllowedToUnprotectList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewBranchProtectionAllowedToUnprotectList_Override(b BranchProtectionAllowe
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BranchProtectionAllowedToUnprotectList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToUnprotectList) ComputeFqn() *string 
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToUnprotectList) Get(index *float64) BranchProtectionAllowedToUnprotectOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BranchProtectionAllowedToUnprotectOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToUnprotectList) Get(index *float64) B
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToUnprotectList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

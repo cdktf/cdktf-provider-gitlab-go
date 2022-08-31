@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) Wrap
 func NewDataGitlabProjectsProjectsContainerExpirationPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsContainerExpirationPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectsProjectsContainerExpirationPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectsProjectsContainerExpirationPolicyList_Override(d DataG
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) SetT
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) SetT
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) Comp
 }
 
 func (d *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) Get(index *float64) DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) Get(
 }
 
 func (d *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

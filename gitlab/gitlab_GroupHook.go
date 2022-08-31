@@ -743,6 +743,9 @@ func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
+	if err := validateNewGroupHookParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupHook{}
 
 	_jsii_.Create(
@@ -765,7 +768,10 @@ func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetConfidentialIssuesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetConfidentialIssuesEvents(val interface{}) {
+	if err := j.validateSetConfidentialIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
@@ -773,7 +779,10 @@ func (j *jsiiProxy_GroupHook) SetConfidentialIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetConfidentialNoteEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetConfidentialNoteEvents(val interface{}) {
+	if err := j.validateSetConfidentialNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialNoteEvents",
@@ -781,7 +790,10 @@ func (j *jsiiProxy_GroupHook) SetConfidentialNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -789,7 +801,7 @@ func (j *jsiiProxy_GroupHook) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetCount(val *float64) {
+func (j *jsiiProxy_GroupHook)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -797,7 +809,7 @@ func (j *jsiiProxy_GroupHook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupHook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -805,7 +817,10 @@ func (j *jsiiProxy_GroupHook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetDeploymentEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetDeploymentEvents(val interface{}) {
+	if err := j.validateSetDeploymentEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deploymentEvents",
@@ -813,7 +828,10 @@ func (j *jsiiProxy_GroupHook) SetDeploymentEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetEnableSslVerification(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetEnableSslVerification(val interface{}) {
+	if err := j.validateSetEnableSslVerificationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableSslVerification",
@@ -821,7 +839,7 @@ func (j *jsiiProxy_GroupHook) SetEnableSslVerification(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupHook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -829,7 +847,10 @@ func (j *jsiiProxy_GroupHook) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetGroup(val *string) {
+func (j *jsiiProxy_GroupHook)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -837,7 +858,10 @@ func (j *jsiiProxy_GroupHook) SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetId(val *string) {
+func (j *jsiiProxy_GroupHook)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -845,7 +869,10 @@ func (j *jsiiProxy_GroupHook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetIssuesEvents(val interface{}) {
+	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -853,7 +880,10 @@ func (j *jsiiProxy_GroupHook) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetJobEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetJobEvents(val interface{}) {
+	if err := j.validateSetJobEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobEvents",
@@ -861,7 +891,10 @@ func (j *jsiiProxy_GroupHook) SetJobEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -869,7 +902,10 @@ func (j *jsiiProxy_GroupHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetMergeRequestsEvents(val interface{}) {
+	if err := j.validateSetMergeRequestsEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -877,7 +913,10 @@ func (j *jsiiProxy_GroupHook) SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetNoteEvents(val interface{}) {
+	if err := j.validateSetNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -885,7 +924,10 @@ func (j *jsiiProxy_GroupHook) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetPipelineEvents(val interface{}) {
+	if err := j.validateSetPipelineEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -893,7 +935,7 @@ func (j *jsiiProxy_GroupHook) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupHook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -901,7 +943,10 @@ func (j *jsiiProxy_GroupHook) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupHook)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -909,7 +954,10 @@ func (j *jsiiProxy_GroupHook) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -917,7 +965,10 @@ func (j *jsiiProxy_GroupHook) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetPushEventsBranchFilter(val *string) {
+func (j *jsiiProxy_GroupHook)SetPushEventsBranchFilter(val *string) {
+	if err := j.validateSetPushEventsBranchFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEventsBranchFilter",
@@ -925,7 +976,10 @@ func (j *jsiiProxy_GroupHook) SetPushEventsBranchFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetReleasesEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetReleasesEvents(val interface{}) {
+	if err := j.validateSetReleasesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"releasesEvents",
@@ -933,7 +987,10 @@ func (j *jsiiProxy_GroupHook) SetReleasesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetSubgroupEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetSubgroupEvents(val interface{}) {
+	if err := j.validateSetSubgroupEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subgroupEvents",
@@ -941,7 +998,10 @@ func (j *jsiiProxy_GroupHook) SetSubgroupEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -949,7 +1009,10 @@ func (j *jsiiProxy_GroupHook) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetToken(val *string) {
+func (j *jsiiProxy_GroupHook)SetToken(val *string) {
+	if err := j.validateSetTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"token",
@@ -957,7 +1020,10 @@ func (j *jsiiProxy_GroupHook) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetUrl(val *string) {
+func (j *jsiiProxy_GroupHook)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -965,7 +1031,10 @@ func (j *jsiiProxy_GroupHook) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupHook) SetWikiPageEvents(val interface{}) {
+func (j *jsiiProxy_GroupHook)SetWikiPageEvents(val interface{}) {
+	if err := j.validateSetWikiPageEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageEvents",
@@ -993,6 +1062,9 @@ func (j *jsiiProxy_GroupHook) SetWikiPageEvents(val interface{}) {
 func GroupHook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGroupHook_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1017,6 +1089,9 @@ func GroupHook_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GroupHook) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -1025,6 +1100,9 @@ func (g *jsiiProxy_GroupHook) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GroupHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1038,6 +1116,9 @@ func (g *jsiiProxy_GroupHook) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (g *jsiiProxy_GroupHook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1051,6 +1132,9 @@ func (g *jsiiProxy_GroupHook) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (g *jsiiProxy_GroupHook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1064,6 +1148,9 @@ func (g *jsiiProxy_GroupHook) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GroupHook) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1077,6 +1164,9 @@ func (g *jsiiProxy_GroupHook) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (g *jsiiProxy_GroupHook) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1090,6 +1180,9 @@ func (g *jsiiProxy_GroupHook) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (g *jsiiProxy_GroupHook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1103,6 +1196,9 @@ func (g *jsiiProxy_GroupHook) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GroupHook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1116,6 +1212,9 @@ func (g *jsiiProxy_GroupHook) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupHook) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1129,6 +1228,9 @@ func (g *jsiiProxy_GroupHook) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (g *jsiiProxy_GroupHook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1142,6 +1244,9 @@ func (g *jsiiProxy_GroupHook) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupHook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1155,6 +1260,9 @@ func (g *jsiiProxy_GroupHook) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GroupHook) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

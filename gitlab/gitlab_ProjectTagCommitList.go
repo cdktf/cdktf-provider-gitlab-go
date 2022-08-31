@@ -99,6 +99,9 @@ func (j *jsiiProxy_ProjectTagCommitList) WrapsSet() *bool {
 func NewProjectTagCommitList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTagCommitList {
 	_init_.Initialize()
 
+	if err := validateNewProjectTagCommitListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectTagCommitList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewProjectTagCommitList_Override(p ProjectTagCommitList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_ProjectTagCommitList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectTagCommitList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ProjectTagCommitList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectTagCommitList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectTagCommitList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ProjectTagCommitList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_ProjectTagCommitList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProjectTagCommitList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (p *jsiiProxy_ProjectTagCommitList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectTagCommitList) Get(index *float64) ProjectTagCommitOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ProjectTagCommitOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (p *jsiiProxy_ProjectTagCommitList) Get(index *float64) ProjectTagCommitOut
 }
 
 func (p *jsiiProxy_ProjectTagCommitList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

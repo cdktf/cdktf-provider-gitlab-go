@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitList) WrapsSet() *bool {
 func NewDataGitlabProjectTagCommitList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectTagCommitList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectTagCommitListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectTagCommitList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectTagCommitList_Override(d DataGitlabProjectTagCommitList
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectTagCommitList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagCommitList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectTagCommitList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitList) Get(index *float64) DataGitlabProjectTagCommitOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectTagCommitOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitList) Get(index *float64) DataGitla
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagCommitList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

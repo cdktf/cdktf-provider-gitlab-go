@@ -377,6 +377,9 @@ func (j *jsiiProxy_DataGitlabProjectVariable) VariableType() *string {
 func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) DataGitlabProjectVariable {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectVariableParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectVariable{}
 
 	_jsii_.Create(
@@ -399,7 +402,7 @@ func NewDataGitlabProjectVariable_Override(d DataGitlabProjectVariable, scope co
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -407,7 +410,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -415,7 +418,10 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetEnvironmentScope(val *string) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetEnvironmentScope(val *string) {
+	if err := j.validateSetEnvironmentScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environmentScope",
@@ -423,7 +429,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetEnvironmentScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +437,10 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -439,7 +448,10 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetKey(val *string) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -447,7 +459,10 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -455,7 +470,10 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetProject(val *string) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -463,7 +481,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabProjectVariable)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -491,6 +509,9 @@ func (j *jsiiProxy_DataGitlabProjectVariable) SetProvider(val cdktf.TerraformPro
 func DataGitlabProjectVariable_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGitlabProjectVariable_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -515,6 +536,9 @@ func DataGitlabProjectVariable_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -523,6 +547,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) AddOverride(path *string, value in
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -536,6 +563,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetAnyMapAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -549,6 +579,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetBooleanAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -562,6 +595,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetBooleanMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -575,6 +611,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetListAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -588,6 +627,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -601,6 +643,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -614,6 +659,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetNumberMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -627,6 +675,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetStringAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -640,6 +691,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) GetStringMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -653,6 +707,9 @@ func (d *jsiiProxy_DataGitlabProjectVariable) InterpolationForAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGitlabProjectVariable) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

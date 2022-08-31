@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) WrapsSet() *bool {
 func NewDataGitlabProjectTagsTagsReleaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectTagsTagsReleaseList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectTagsTagsReleaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectTagsTagsReleaseList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectTagsTagsReleaseList_Override(d DataGitlabProjectTagsTag
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectTagsTagsReleaseList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) Get(index *float64) DataGitlabProjectTagsTagsReleaseOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectTagsTagsReleaseOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) Get(index *float64) Dat
 }
 
 func (d *jsiiProxy_DataGitlabProjectTagsTagsReleaseList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

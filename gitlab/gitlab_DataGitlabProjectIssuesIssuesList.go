@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) WrapsSet() *bool {
 func NewDataGitlabProjectIssuesIssuesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectIssuesIssuesList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectIssuesIssuesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectIssuesIssuesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectIssuesIssuesList_Override(d DataGitlabProjectIssuesIssu
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) Get(index *float64) DataGitlabProjectIssuesIssuesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectIssuesIssuesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) Get(index *float64) DataGi
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

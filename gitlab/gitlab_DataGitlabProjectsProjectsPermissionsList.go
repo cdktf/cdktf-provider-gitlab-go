@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) WrapsSet() *bool {
 func NewDataGitlabProjectsProjectsPermissionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsPermissionsList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectsProjectsPermissionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectsProjectsPermissionsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectsProjectsPermissionsList_Override(d DataGitlabProjectsP
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectsProjectsPermissionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) Get(index *float64) DataGitlabProjectsProjectsPermissionsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectsProjectsPermissionsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataGitlabProjectsProjectsPermissionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

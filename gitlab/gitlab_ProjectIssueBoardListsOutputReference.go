@@ -269,6 +269,9 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) TerraformResource() cd
 func NewProjectIssueBoardListsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProjectIssueBoardListsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewProjectIssueBoardListsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectIssueBoardListsOutputReference{}
 
 	_jsii_.Create(
@@ -290,7 +293,10 @@ func NewProjectIssueBoardListsOutputReference_Override(p ProjectIssueBoardListsO
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetAssigneeId(val *float64) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetAssigneeId(val *float64) {
+	if err := j.validateSetAssigneeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assigneeId",
@@ -298,7 +304,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetAssigneeId(val *flo
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -306,7 +315,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -314,7 +326,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -322,7 +337,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetIterationId(val *float64) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetIterationId(val *float64) {
+	if err := j.validateSetIterationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iterationId",
@@ -330,7 +348,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetIterationId(val *fl
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetLabelId(val *float64) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetLabelId(val *float64) {
+	if err := j.validateSetLabelIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"labelId",
@@ -338,7 +359,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetLabelId(val *float6
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetMilestoneId(val *float64) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetMilestoneId(val *float64) {
+	if err := j.validateSetMilestoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"milestoneId",
@@ -346,7 +370,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetMilestoneId(val *fl
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -354,7 +381,10 @@ func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoardListsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectIssueBoardListsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -376,6 +406,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -389,6 +422,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetAnyMapAttribute(ter
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -402,6 +438,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetBooleanAttribute(te
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -415,6 +454,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetBooleanMapAttribute
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -428,6 +470,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetListAttribute(terra
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -441,6 +486,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberAttribute(ter
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -454,6 +502,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberListAttribute
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -467,6 +518,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetNumberMapAttribute(
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -480,6 +534,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetStringAttribute(ter
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -506,6 +563,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) InterpolationAsList() 
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -551,6 +611,9 @@ func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) ResetMilestoneId() {
 }
 
 func (p *jsiiProxy_ProjectIssueBoardListsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

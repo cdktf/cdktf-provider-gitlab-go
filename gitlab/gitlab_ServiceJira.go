@@ -715,6 +715,9 @@ func (j *jsiiProxy_ServiceJira) UsernameInput() *string {
 func NewServiceJira(scope constructs.Construct, id *string, config *ServiceJiraConfig) ServiceJira {
 	_init_.Initialize()
 
+	if err := validateNewServiceJiraParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceJira{}
 
 	_jsii_.Create(
@@ -737,7 +740,10 @@ func NewServiceJira_Override(s ServiceJira, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetApiUrl(val *string) {
+func (j *jsiiProxy_ServiceJira)SetApiUrl(val *string) {
+	if err := j.validateSetApiUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiUrl",
@@ -745,7 +751,10 @@ func (j *jsiiProxy_ServiceJira) SetApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetCommentOnEventEnabled(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetCommentOnEventEnabled(val interface{}) {
+	if err := j.validateSetCommentOnEventEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commentOnEventEnabled",
@@ -753,7 +762,10 @@ func (j *jsiiProxy_ServiceJira) SetCommentOnEventEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetCommitEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetCommitEvents(val interface{}) {
+	if err := j.validateSetCommitEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commitEvents",
@@ -761,7 +773,10 @@ func (j *jsiiProxy_ServiceJira) SetCommitEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -769,7 +784,7 @@ func (j *jsiiProxy_ServiceJira) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetCount(val *float64) {
+func (j *jsiiProxy_ServiceJira)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -777,7 +792,7 @@ func (j *jsiiProxy_ServiceJira) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceJira)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -785,7 +800,7 @@ func (j *jsiiProxy_ServiceJira) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceJira)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -793,7 +808,10 @@ func (j *jsiiProxy_ServiceJira) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetId(val *string) {
+func (j *jsiiProxy_ServiceJira)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -801,7 +819,10 @@ func (j *jsiiProxy_ServiceJira) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetIssuesEvents(val interface{}) {
+	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -809,7 +830,10 @@ func (j *jsiiProxy_ServiceJira) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetJiraIssueTransitionId(val *string) {
+func (j *jsiiProxy_ServiceJira)SetJiraIssueTransitionId(val *string) {
+	if err := j.validateSetJiraIssueTransitionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jiraIssueTransitionId",
@@ -817,7 +841,10 @@ func (j *jsiiProxy_ServiceJira) SetJiraIssueTransitionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetJobEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetJobEvents(val interface{}) {
+	if err := j.validateSetJobEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobEvents",
@@ -825,7 +852,10 @@ func (j *jsiiProxy_ServiceJira) SetJobEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceJira)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -833,7 +863,10 @@ func (j *jsiiProxy_ServiceJira) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetMergeRequestsEvents(val interface{}) {
+	if err := j.validateSetMergeRequestsEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -841,7 +874,10 @@ func (j *jsiiProxy_ServiceJira) SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetNoteEvents(val interface{}) {
+	if err := j.validateSetNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -849,7 +885,10 @@ func (j *jsiiProxy_ServiceJira) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetPassword(val *string) {
+func (j *jsiiProxy_ServiceJira)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -857,7 +896,10 @@ func (j *jsiiProxy_ServiceJira) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetPipelineEvents(val interface{}) {
+	if err := j.validateSetPipelineEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -865,7 +907,10 @@ func (j *jsiiProxy_ServiceJira) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetProject(val *string) {
+func (j *jsiiProxy_ServiceJira)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -873,7 +918,10 @@ func (j *jsiiProxy_ServiceJira) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetProjectKey(val *string) {
+func (j *jsiiProxy_ServiceJira)SetProjectKey(val *string) {
+	if err := j.validateSetProjectKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectKey",
@@ -881,7 +929,7 @@ func (j *jsiiProxy_ServiceJira) SetProjectKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceJira)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -889,7 +937,10 @@ func (j *jsiiProxy_ServiceJira) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceJira)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -897,7 +948,10 @@ func (j *jsiiProxy_ServiceJira) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -905,7 +959,10 @@ func (j *jsiiProxy_ServiceJira) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceJira)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -913,7 +970,10 @@ func (j *jsiiProxy_ServiceJira) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetUrl(val *string) {
+func (j *jsiiProxy_ServiceJira)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -921,7 +981,10 @@ func (j *jsiiProxy_ServiceJira) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira) SetUsername(val *string) {
+func (j *jsiiProxy_ServiceJira)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -949,6 +1012,9 @@ func (j *jsiiProxy_ServiceJira) SetUsername(val *string) {
 func ServiceJira_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServiceJira_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -973,6 +1039,9 @@ func ServiceJira_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServiceJira) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -981,6 +1050,9 @@ func (s *jsiiProxy_ServiceJira) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_ServiceJira) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -994,6 +1066,9 @@ func (s *jsiiProxy_ServiceJira) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_ServiceJira) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1007,6 +1082,9 @@ func (s *jsiiProxy_ServiceJira) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_ServiceJira) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1020,6 +1098,9 @@ func (s *jsiiProxy_ServiceJira) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_ServiceJira) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1033,6 +1114,9 @@ func (s *jsiiProxy_ServiceJira) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (s *jsiiProxy_ServiceJira) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1046,6 +1130,9 @@ func (s *jsiiProxy_ServiceJira) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_ServiceJira) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1059,6 +1146,9 @@ func (s *jsiiProxy_ServiceJira) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_ServiceJira) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1072,6 +1162,9 @@ func (s *jsiiProxy_ServiceJira) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_ServiceJira) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1085,6 +1178,9 @@ func (s *jsiiProxy_ServiceJira) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_ServiceJira) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1098,6 +1194,9 @@ func (s *jsiiProxy_ServiceJira) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_ServiceJira) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1111,6 +1210,9 @@ func (s *jsiiProxy_ServiceJira) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_ServiceJira) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

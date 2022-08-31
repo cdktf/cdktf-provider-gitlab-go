@@ -719,6 +719,9 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
 	_init_.Initialize()
 
+	if err := validateNewProjectHookParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectHook{}
 
 	_jsii_.Create(
@@ -741,7 +744,10 @@ func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConfidentialIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetConfidentialIssuesEvents(val interface{}) {
+	if err := j.validateSetConfidentialIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
@@ -749,7 +755,10 @@ func (j *jsiiProxy_ProjectHook) SetConfidentialIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConfidentialNoteEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetConfidentialNoteEvents(val interface{}) {
+	if err := j.validateSetConfidentialNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialNoteEvents",
@@ -757,7 +766,10 @@ func (j *jsiiProxy_ProjectHook) SetConfidentialNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -765,7 +777,7 @@ func (j *jsiiProxy_ProjectHook) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectHook)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -773,7 +785,7 @@ func (j *jsiiProxy_ProjectHook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectHook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -781,7 +793,10 @@ func (j *jsiiProxy_ProjectHook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetDeploymentEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetDeploymentEvents(val interface{}) {
+	if err := j.validateSetDeploymentEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deploymentEvents",
@@ -789,7 +804,10 @@ func (j *jsiiProxy_ProjectHook) SetDeploymentEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetEnableSslVerification(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetEnableSslVerification(val interface{}) {
+	if err := j.validateSetEnableSslVerificationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableSslVerification",
@@ -797,7 +815,7 @@ func (j *jsiiProxy_ProjectHook) SetEnableSslVerification(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectHook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -805,7 +823,10 @@ func (j *jsiiProxy_ProjectHook) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetId(val *string) {
+func (j *jsiiProxy_ProjectHook)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -813,7 +834,10 @@ func (j *jsiiProxy_ProjectHook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetIssuesEvents(val interface{}) {
+	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -821,7 +845,10 @@ func (j *jsiiProxy_ProjectHook) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetJobEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetJobEvents(val interface{}) {
+	if err := j.validateSetJobEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobEvents",
@@ -829,7 +856,10 @@ func (j *jsiiProxy_ProjectHook) SetJobEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -837,7 +867,10 @@ func (j *jsiiProxy_ProjectHook) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetMergeRequestsEvents(val interface{}) {
+	if err := j.validateSetMergeRequestsEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -845,7 +878,10 @@ func (j *jsiiProxy_ProjectHook) SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetNoteEvents(val interface{}) {
+	if err := j.validateSetNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -853,7 +889,10 @@ func (j *jsiiProxy_ProjectHook) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetPipelineEvents(val interface{}) {
+	if err := j.validateSetPipelineEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -861,7 +900,10 @@ func (j *jsiiProxy_ProjectHook) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetProject(val *string) {
+func (j *jsiiProxy_ProjectHook)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -869,7 +911,7 @@ func (j *jsiiProxy_ProjectHook) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectHook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -877,7 +919,10 @@ func (j *jsiiProxy_ProjectHook) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectHook)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -885,7 +930,10 @@ func (j *jsiiProxy_ProjectHook) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -893,7 +941,10 @@ func (j *jsiiProxy_ProjectHook) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetPushEventsBranchFilter(val *string) {
+func (j *jsiiProxy_ProjectHook)SetPushEventsBranchFilter(val *string) {
+	if err := j.validateSetPushEventsBranchFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEventsBranchFilter",
@@ -901,7 +952,10 @@ func (j *jsiiProxy_ProjectHook) SetPushEventsBranchFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetReleasesEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetReleasesEvents(val interface{}) {
+	if err := j.validateSetReleasesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"releasesEvents",
@@ -909,7 +963,10 @@ func (j *jsiiProxy_ProjectHook) SetReleasesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -917,7 +974,10 @@ func (j *jsiiProxy_ProjectHook) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetToken(val *string) {
+func (j *jsiiProxy_ProjectHook)SetToken(val *string) {
+	if err := j.validateSetTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"token",
@@ -925,7 +985,10 @@ func (j *jsiiProxy_ProjectHook) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetUrl(val *string) {
+func (j *jsiiProxy_ProjectHook)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -933,7 +996,10 @@ func (j *jsiiProxy_ProjectHook) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectHook) SetWikiPageEvents(val interface{}) {
+func (j *jsiiProxy_ProjectHook)SetWikiPageEvents(val interface{}) {
+	if err := j.validateSetWikiPageEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageEvents",
@@ -961,6 +1027,9 @@ func (j *jsiiProxy_ProjectHook) SetWikiPageEvents(val interface{}) {
 func ProjectHook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectHook_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -985,6 +1054,9 @@ func ProjectHook_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectHook) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -993,6 +1065,9 @@ func (p *jsiiProxy_ProjectHook) AddOverride(path *string, value interface{}) {
 }
 
 func (p *jsiiProxy_ProjectHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1006,6 +1081,9 @@ func (p *jsiiProxy_ProjectHook) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_ProjectHook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1019,6 +1097,9 @@ func (p *jsiiProxy_ProjectHook) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_ProjectHook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1032,6 +1113,9 @@ func (p *jsiiProxy_ProjectHook) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (p *jsiiProxy_ProjectHook) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1045,6 +1129,9 @@ func (p *jsiiProxy_ProjectHook) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (p *jsiiProxy_ProjectHook) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1058,6 +1145,9 @@ func (p *jsiiProxy_ProjectHook) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_ProjectHook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1071,6 +1161,9 @@ func (p *jsiiProxy_ProjectHook) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (p *jsiiProxy_ProjectHook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1084,6 +1177,9 @@ func (p *jsiiProxy_ProjectHook) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (p *jsiiProxy_ProjectHook) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1097,6 +1193,9 @@ func (p *jsiiProxy_ProjectHook) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_ProjectHook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1110,6 +1209,9 @@ func (p *jsiiProxy_ProjectHook) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (p *jsiiProxy_ProjectHook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1123,6 +1225,9 @@ func (p *jsiiProxy_ProjectHook) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (p *jsiiProxy_ProjectHook) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

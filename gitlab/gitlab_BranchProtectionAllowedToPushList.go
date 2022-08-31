@@ -111,6 +111,9 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushList) WrapsSet() *bool {
 func NewBranchProtectionAllowedToPushList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToPushList {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionAllowedToPushListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtectionAllowedToPushList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewBranchProtectionAllowedToPushList_Override(b BranchProtectionAllowedToPu
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushList) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushList) Get(index *float64) BranchProtectionAllowedToPushOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BranchProtectionAllowedToPushOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushList) Get(index *float64) Branch
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

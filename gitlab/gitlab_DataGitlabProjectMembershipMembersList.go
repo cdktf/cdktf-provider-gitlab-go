@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) WrapsSet() *bool {
 func NewDataGitlabProjectMembershipMembersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMembershipMembersList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectMembershipMembersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectMembershipMembersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectMembershipMembersList_Override(d DataGitlabProjectMembe
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectMembershipMembersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectMembershipMembersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembershipMembersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectMembershipMembersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectMembershipMembersList) ComputeFqn() *string 
 }
 
 func (d *jsiiProxy_DataGitlabProjectMembershipMembersList) Get(index *float64) DataGitlabProjectMembershipMembersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectMembershipMembersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectMembershipMembersList) Get(index *float64) D
 }
 
 func (d *jsiiProxy_DataGitlabProjectMembershipMembersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

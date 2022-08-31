@@ -111,6 +111,9 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) WrapsSet()
 func NewProjectProtectedEnvironmentDeployAccessLevelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProtectedEnvironmentDeployAccessLevelsList {
 	_init_.Initialize()
 
+	if err := validateNewProjectProtectedEnvironmentDeployAccessLevelsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewProjectProtectedEnvironmentDeployAccessLevelsList_Override(p ProjectProt
 	)
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetInterna
 	)
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) ComputeFqn
 }
 
 func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) Get(index *float64) ProjectProtectedEnvironmentDeployAccessLevelsOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ProjectProtectedEnvironmentDeployAccessLevelsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) Get(index 
 }
 
 func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

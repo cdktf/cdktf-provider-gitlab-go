@@ -456,6 +456,9 @@ func (j *jsiiProxy_ProjectApprovalRule) UserIdsInput() *[]*float64 {
 func NewProjectApprovalRule(scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) ProjectApprovalRule {
 	_init_.Initialize()
 
+	if err := validateNewProjectApprovalRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectApprovalRule{}
 
 	_jsii_.Create(
@@ -478,7 +481,10 @@ func NewProjectApprovalRule_Override(p ProjectApprovalRule, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetApprovalsRequired(val *float64) {
+func (j *jsiiProxy_ProjectApprovalRule)SetApprovalsRequired(val *float64) {
+	if err := j.validateSetApprovalsRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"approvalsRequired",
@@ -486,7 +492,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetApprovalsRequired(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectApprovalRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -494,7 +503,7 @@ func (j *jsiiProxy_ProjectApprovalRule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectApprovalRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -502,7 +511,7 @@ func (j *jsiiProxy_ProjectApprovalRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectApprovalRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -510,7 +519,7 @@ func (j *jsiiProxy_ProjectApprovalRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectApprovalRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -518,7 +527,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetGroupIds(val *[]*float64) {
+func (j *jsiiProxy_ProjectApprovalRule)SetGroupIds(val *[]*float64) {
+	if err := j.validateSetGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupIds",
@@ -526,7 +538,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetGroupIds(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetId(val *string) {
+func (j *jsiiProxy_ProjectApprovalRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -534,7 +549,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectApprovalRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -542,7 +560,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetName(val *string) {
+func (j *jsiiProxy_ProjectApprovalRule)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -550,7 +571,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetProject(val *string) {
+func (j *jsiiProxy_ProjectApprovalRule)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -558,7 +582,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetProtectedBranchIds(val *[]*float64) {
+func (j *jsiiProxy_ProjectApprovalRule)SetProtectedBranchIds(val *[]*float64) {
+	if err := j.validateSetProtectedBranchIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protectedBranchIds",
@@ -566,7 +593,7 @@ func (j *jsiiProxy_ProjectApprovalRule) SetProtectedBranchIds(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectApprovalRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -574,7 +601,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectApprovalRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -582,7 +612,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetRuleType(val *string) {
+func (j *jsiiProxy_ProjectApprovalRule)SetRuleType(val *string) {
+	if err := j.validateSetRuleTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ruleType",
@@ -590,7 +623,10 @@ func (j *jsiiProxy_ProjectApprovalRule) SetRuleType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectApprovalRule) SetUserIds(val *[]*float64) {
+func (j *jsiiProxy_ProjectApprovalRule)SetUserIds(val *[]*float64) {
+	if err := j.validateSetUserIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userIds",
@@ -618,6 +654,9 @@ func (j *jsiiProxy_ProjectApprovalRule) SetUserIds(val *[]*float64) {
 func ProjectApprovalRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectApprovalRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -642,6 +681,9 @@ func ProjectApprovalRule_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -650,6 +692,9 @@ func (p *jsiiProxy_ProjectApprovalRule) AddOverride(path *string, value interfac
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -663,6 +708,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -676,6 +724,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetBooleanAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -689,6 +740,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -702,6 +756,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetListAttribute(terraformAttribute *str
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -715,6 +772,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetNumberAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -728,6 +788,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetNumberListAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -741,6 +804,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetNumberMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -754,6 +820,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetStringAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -767,6 +836,9 @@ func (p *jsiiProxy_ProjectApprovalRule) GetStringMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -780,6 +852,9 @@ func (p *jsiiProxy_ProjectApprovalRule) InterpolationForAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_ProjectApprovalRule) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

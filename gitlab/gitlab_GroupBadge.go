@@ -382,6 +382,9 @@ func (j *jsiiProxy_GroupBadge) TerraformResourceType() *string {
 func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeConfig) GroupBadge {
 	_init_.Initialize()
 
+	if err := validateNewGroupBadgeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupBadge{}
 
 	_jsii_.Create(
@@ -404,7 +407,10 @@ func NewGroupBadge_Override(g GroupBadge, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupBadge)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -412,7 +418,7 @@ func (j *jsiiProxy_GroupBadge) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetCount(val *float64) {
+func (j *jsiiProxy_GroupBadge)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -420,7 +426,7 @@ func (j *jsiiProxy_GroupBadge) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupBadge)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -428,7 +434,7 @@ func (j *jsiiProxy_GroupBadge) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupBadge)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -436,7 +442,10 @@ func (j *jsiiProxy_GroupBadge) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetGroup(val *string) {
+func (j *jsiiProxy_GroupBadge)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -444,7 +453,10 @@ func (j *jsiiProxy_GroupBadge) SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetId(val *string) {
+func (j *jsiiProxy_GroupBadge)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -452,7 +464,10 @@ func (j *jsiiProxy_GroupBadge) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetImageUrl(val *string) {
+func (j *jsiiProxy_GroupBadge)SetImageUrl(val *string) {
+	if err := j.validateSetImageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageUrl",
@@ -460,7 +475,10 @@ func (j *jsiiProxy_GroupBadge) SetImageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupBadge)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -468,7 +486,10 @@ func (j *jsiiProxy_GroupBadge) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetLinkUrl(val *string) {
+func (j *jsiiProxy_GroupBadge)SetLinkUrl(val *string) {
+	if err := j.validateSetLinkUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkUrl",
@@ -476,7 +497,7 @@ func (j *jsiiProxy_GroupBadge) SetLinkUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupBadge)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -484,7 +505,10 @@ func (j *jsiiProxy_GroupBadge) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupBadge)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -512,6 +536,9 @@ func (j *jsiiProxy_GroupBadge) SetProvisioners(val *[]interface{}) {
 func GroupBadge_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGroupBadge_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -536,6 +563,9 @@ func GroupBadge_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GroupBadge) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -544,6 +574,9 @@ func (g *jsiiProxy_GroupBadge) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GroupBadge) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -557,6 +590,9 @@ func (g *jsiiProxy_GroupBadge) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (g *jsiiProxy_GroupBadge) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -570,6 +606,9 @@ func (g *jsiiProxy_GroupBadge) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (g *jsiiProxy_GroupBadge) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -583,6 +622,9 @@ func (g *jsiiProxy_GroupBadge) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GroupBadge) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -596,6 +638,9 @@ func (g *jsiiProxy_GroupBadge) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (g *jsiiProxy_GroupBadge) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -609,6 +654,9 @@ func (g *jsiiProxy_GroupBadge) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (g *jsiiProxy_GroupBadge) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -622,6 +670,9 @@ func (g *jsiiProxy_GroupBadge) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GroupBadge) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -635,6 +686,9 @@ func (g *jsiiProxy_GroupBadge) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GroupBadge) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -648,6 +702,9 @@ func (g *jsiiProxy_GroupBadge) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (g *jsiiProxy_GroupBadge) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -661,6 +718,9 @@ func (g *jsiiProxy_GroupBadge) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GroupBadge) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -674,6 +734,9 @@ func (g *jsiiProxy_GroupBadge) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GroupBadge) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

@@ -173,6 +173,9 @@ func (j *jsiiProxy_ProjectTagReleaseOutputReference) TerraformResource() cdktf.I
 func NewProjectTagReleaseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ProjectTagReleaseOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewProjectTagReleaseOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectTagReleaseOutputReference{}
 
 	_jsii_.Create(
@@ -194,7 +197,10 @@ func NewProjectTagReleaseOutputReference_Override(p ProjectTagReleaseOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectTagReleaseOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -202,7 +208,10 @@ func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectTagReleaseOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -210,7 +219,10 @@ func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetInternalValue(val *ProjectTagRelease) {
+func (j *jsiiProxy_ProjectTagReleaseOutputReference)SetInternalValue(val *ProjectTagRelease) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -218,7 +230,10 @@ func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetInternalValue(val *Proje
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectTagReleaseOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -226,7 +241,10 @@ func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectTagReleaseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -248,6 +266,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -261,6 +282,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -274,6 +298,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -287,6 +314,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -300,6 +330,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetListAttribute(terraformA
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -313,6 +346,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberAttribute(terrafor
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -326,6 +362,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberListAttribute(terr
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -339,6 +378,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetNumberMapAttribute(terra
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -352,6 +394,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetStringAttribute(terrafor
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -378,6 +423,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) InterpolationAsList() cdktf
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -391,6 +439,9 @@ func (p *jsiiProxy_ProjectTagReleaseOutputReference) InterpolationForAttribute(p
 }
 
 func (p *jsiiProxy_ProjectTagReleaseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

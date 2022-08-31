@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) WrapsSet() *bool {
 func NewDataGitlabInstanceVariablesVariablesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceVariablesVariablesList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabInstanceVariablesVariablesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabInstanceVariablesVariablesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabInstanceVariablesVariablesList_Override(d DataGitlabInstanceVa
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesList) ComputeFqn() *strin
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesList) Get(index *float64) DataGitlabInstanceVariablesVariablesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabInstanceVariablesVariablesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesList) Get(index *float64)
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

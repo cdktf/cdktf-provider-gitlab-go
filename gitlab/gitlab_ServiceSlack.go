@@ -852,6 +852,9 @@ func (j *jsiiProxy_ServiceSlack) WikiPageEventsInput() interface{} {
 func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlackConfig) ServiceSlack {
 	_init_.Initialize()
 
+	if err := validateNewServiceSlackParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceSlack{}
 
 	_jsii_.Create(
@@ -874,7 +877,10 @@ func NewServiceSlack_Override(s ServiceSlack, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetBranchesToBeNotified(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetBranchesToBeNotified(val *string) {
+	if err := j.validateSetBranchesToBeNotifiedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branchesToBeNotified",
@@ -882,7 +888,10 @@ func (j *jsiiProxy_ServiceSlack) SetBranchesToBeNotified(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetConfidentialIssueChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetConfidentialIssueChannel(val *string) {
+	if err := j.validateSetConfidentialIssueChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialIssueChannel",
@@ -890,7 +899,10 @@ func (j *jsiiProxy_ServiceSlack) SetConfidentialIssueChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetConfidentialIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetConfidentialIssuesEvents(val interface{}) {
+	if err := j.validateSetConfidentialIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
@@ -898,7 +910,10 @@ func (j *jsiiProxy_ServiceSlack) SetConfidentialIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetConfidentialNoteEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetConfidentialNoteEvents(val interface{}) {
+	if err := j.validateSetConfidentialNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"confidentialNoteEvents",
@@ -906,7 +921,10 @@ func (j *jsiiProxy_ServiceSlack) SetConfidentialNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -914,7 +932,7 @@ func (j *jsiiProxy_ServiceSlack) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetCount(val *float64) {
+func (j *jsiiProxy_ServiceSlack)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -922,7 +940,7 @@ func (j *jsiiProxy_ServiceSlack) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceSlack)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -930,7 +948,7 @@ func (j *jsiiProxy_ServiceSlack) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceSlack)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -938,7 +956,10 @@ func (j *jsiiProxy_ServiceSlack) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetId(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -946,7 +967,10 @@ func (j *jsiiProxy_ServiceSlack) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetIssueChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetIssueChannel(val *string) {
+	if err := j.validateSetIssueChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issueChannel",
@@ -954,7 +978,10 @@ func (j *jsiiProxy_ServiceSlack) SetIssueChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetIssuesEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetIssuesEvents(val interface{}) {
+	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuesEvents",
@@ -962,7 +989,10 @@ func (j *jsiiProxy_ServiceSlack) SetIssuesEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceSlack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -970,7 +1000,10 @@ func (j *jsiiProxy_ServiceSlack) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetMergeRequestChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetMergeRequestChannel(val *string) {
+	if err := j.validateSetMergeRequestChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestChannel",
@@ -978,7 +1011,10 @@ func (j *jsiiProxy_ServiceSlack) SetMergeRequestChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetMergeRequestsEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetMergeRequestsEvents(val interface{}) {
+	if err := j.validateSetMergeRequestsEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
@@ -986,7 +1022,10 @@ func (j *jsiiProxy_ServiceSlack) SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetNoteChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetNoteChannel(val *string) {
+	if err := j.validateSetNoteChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteChannel",
@@ -994,7 +1033,10 @@ func (j *jsiiProxy_ServiceSlack) SetNoteChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetNoteEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetNoteEvents(val interface{}) {
+	if err := j.validateSetNoteEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noteEvents",
@@ -1002,7 +1044,10 @@ func (j *jsiiProxy_ServiceSlack) SetNoteEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetNotifyOnlyBrokenPipelines(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetNotifyOnlyBrokenPipelines(val interface{}) {
+	if err := j.validateSetNotifyOnlyBrokenPipelinesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notifyOnlyBrokenPipelines",
@@ -1010,7 +1055,10 @@ func (j *jsiiProxy_ServiceSlack) SetNotifyOnlyBrokenPipelines(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetNotifyOnlyDefaultBranch(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetNotifyOnlyDefaultBranch(val interface{}) {
+	if err := j.validateSetNotifyOnlyDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notifyOnlyDefaultBranch",
@@ -1018,7 +1066,10 @@ func (j *jsiiProxy_ServiceSlack) SetNotifyOnlyDefaultBranch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetPipelineChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetPipelineChannel(val *string) {
+	if err := j.validateSetPipelineChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineChannel",
@@ -1026,7 +1077,10 @@ func (j *jsiiProxy_ServiceSlack) SetPipelineChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetPipelineEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetPipelineEvents(val interface{}) {
+	if err := j.validateSetPipelineEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pipelineEvents",
@@ -1034,7 +1088,10 @@ func (j *jsiiProxy_ServiceSlack) SetPipelineEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetProject(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -1042,7 +1099,7 @@ func (j *jsiiProxy_ServiceSlack) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceSlack)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1050,7 +1107,10 @@ func (j *jsiiProxy_ServiceSlack) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1058,7 +1118,10 @@ func (j *jsiiProxy_ServiceSlack) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetPushChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetPushChannel(val *string) {
+	if err := j.validateSetPushChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushChannel",
@@ -1066,7 +1129,10 @@ func (j *jsiiProxy_ServiceSlack) SetPushChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushEvents",
@@ -1074,7 +1140,10 @@ func (j *jsiiProxy_ServiceSlack) SetPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetTagPushChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetTagPushChannel(val *string) {
+	if err := j.validateSetTagPushChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushChannel",
@@ -1082,7 +1151,10 @@ func (j *jsiiProxy_ServiceSlack) SetTagPushChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetTagPushEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagPushEvents",
@@ -1090,7 +1162,10 @@ func (j *jsiiProxy_ServiceSlack) SetTagPushEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetUsername(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -1098,7 +1173,10 @@ func (j *jsiiProxy_ServiceSlack) SetUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetWebhook(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetWebhook(val *string) {
+	if err := j.validateSetWebhookParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webhook",
@@ -1106,7 +1184,10 @@ func (j *jsiiProxy_ServiceSlack) SetWebhook(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetWikiPageChannel(val *string) {
+func (j *jsiiProxy_ServiceSlack)SetWikiPageChannel(val *string) {
+	if err := j.validateSetWikiPageChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageChannel",
@@ -1114,7 +1195,10 @@ func (j *jsiiProxy_ServiceSlack) SetWikiPageChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceSlack) SetWikiPageEvents(val interface{}) {
+func (j *jsiiProxy_ServiceSlack)SetWikiPageEvents(val interface{}) {
+	if err := j.validateSetWikiPageEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wikiPageEvents",
@@ -1142,6 +1226,9 @@ func (j *jsiiProxy_ServiceSlack) SetWikiPageEvents(val interface{}) {
 func ServiceSlack_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateServiceSlack_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1166,6 +1253,9 @@ func ServiceSlack_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_ServiceSlack) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1174,6 +1264,9 @@ func (s *jsiiProxy_ServiceSlack) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_ServiceSlack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1187,6 +1280,9 @@ func (s *jsiiProxy_ServiceSlack) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_ServiceSlack) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1200,6 +1296,9 @@ func (s *jsiiProxy_ServiceSlack) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_ServiceSlack) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1213,6 +1312,9 @@ func (s *jsiiProxy_ServiceSlack) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_ServiceSlack) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1226,6 +1328,9 @@ func (s *jsiiProxy_ServiceSlack) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (s *jsiiProxy_ServiceSlack) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1239,6 +1344,9 @@ func (s *jsiiProxy_ServiceSlack) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_ServiceSlack) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1252,6 +1360,9 @@ func (s *jsiiProxy_ServiceSlack) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_ServiceSlack) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1265,6 +1376,9 @@ func (s *jsiiProxy_ServiceSlack) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_ServiceSlack) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1278,6 +1392,9 @@ func (s *jsiiProxy_ServiceSlack) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_ServiceSlack) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1291,6 +1408,9 @@ func (s *jsiiProxy_ServiceSlack) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_ServiceSlack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1304,6 +1424,9 @@ func (s *jsiiProxy_ServiceSlack) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_ServiceSlack) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

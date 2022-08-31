@@ -420,6 +420,9 @@ func (j *jsiiProxy_ProjectMirror) UrlInput() *string {
 func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMirrorConfig) ProjectMirror {
 	_init_.Initialize()
 
+	if err := validateNewProjectMirrorParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectMirror{}
 
 	_jsii_.Create(
@@ -442,7 +445,10 @@ func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectMirror)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -450,7 +456,7 @@ func (j *jsiiProxy_ProjectMirror) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectMirror)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -458,7 +464,7 @@ func (j *jsiiProxy_ProjectMirror) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectMirror)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -466,7 +472,10 @@ func (j *jsiiProxy_ProjectMirror) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetEnabled(val interface{}) {
+func (j *jsiiProxy_ProjectMirror)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -474,7 +483,7 @@ func (j *jsiiProxy_ProjectMirror) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectMirror)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -482,7 +491,10 @@ func (j *jsiiProxy_ProjectMirror) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetId(val *string) {
+func (j *jsiiProxy_ProjectMirror)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -490,7 +502,10 @@ func (j *jsiiProxy_ProjectMirror) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetKeepDivergentRefs(val interface{}) {
+func (j *jsiiProxy_ProjectMirror)SetKeepDivergentRefs(val interface{}) {
+	if err := j.validateSetKeepDivergentRefsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keepDivergentRefs",
@@ -498,7 +513,10 @@ func (j *jsiiProxy_ProjectMirror) SetKeepDivergentRefs(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectMirror)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -506,7 +524,10 @@ func (j *jsiiProxy_ProjectMirror) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetOnlyProtectedBranches(val interface{}) {
+func (j *jsiiProxy_ProjectMirror)SetOnlyProtectedBranches(val interface{}) {
+	if err := j.validateSetOnlyProtectedBranchesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onlyProtectedBranches",
@@ -514,7 +535,10 @@ func (j *jsiiProxy_ProjectMirror) SetOnlyProtectedBranches(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetProject(val *string) {
+func (j *jsiiProxy_ProjectMirror)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -522,7 +546,7 @@ func (j *jsiiProxy_ProjectMirror) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectMirror)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +554,10 @@ func (j *jsiiProxy_ProjectMirror) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectMirror)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -538,7 +565,10 @@ func (j *jsiiProxy_ProjectMirror) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror) SetUrl(val *string) {
+func (j *jsiiProxy_ProjectMirror)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -566,6 +596,9 @@ func (j *jsiiProxy_ProjectMirror) SetUrl(val *string) {
 func ProjectMirror_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectMirror_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -590,6 +623,9 @@ func ProjectMirror_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectMirror) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -598,6 +634,9 @@ func (p *jsiiProxy_ProjectMirror) AddOverride(path *string, value interface{}) {
 }
 
 func (p *jsiiProxy_ProjectMirror) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -611,6 +650,9 @@ func (p *jsiiProxy_ProjectMirror) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_ProjectMirror) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -624,6 +666,9 @@ func (p *jsiiProxy_ProjectMirror) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (p *jsiiProxy_ProjectMirror) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -637,6 +682,9 @@ func (p *jsiiProxy_ProjectMirror) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (p *jsiiProxy_ProjectMirror) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -650,6 +698,9 @@ func (p *jsiiProxy_ProjectMirror) GetListAttribute(terraformAttribute *string) *
 }
 
 func (p *jsiiProxy_ProjectMirror) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -663,6 +714,9 @@ func (p *jsiiProxy_ProjectMirror) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_ProjectMirror) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -676,6 +730,9 @@ func (p *jsiiProxy_ProjectMirror) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (p *jsiiProxy_ProjectMirror) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -689,6 +746,9 @@ func (p *jsiiProxy_ProjectMirror) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_ProjectMirror) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -702,6 +762,9 @@ func (p *jsiiProxy_ProjectMirror) GetStringAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_ProjectMirror) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -715,6 +778,9 @@ func (p *jsiiProxy_ProjectMirror) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_ProjectMirror) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -728,6 +794,9 @@ func (p *jsiiProxy_ProjectMirror) InterpolationForAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_ProjectMirror) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

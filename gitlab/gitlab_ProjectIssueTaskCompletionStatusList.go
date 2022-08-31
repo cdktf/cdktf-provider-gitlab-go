@@ -99,6 +99,9 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) WrapsSet() *bool {
 func NewProjectIssueTaskCompletionStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIssueTaskCompletionStatusList {
 	_init_.Initialize()
 
+	if err := validateNewProjectIssueTaskCompletionStatusListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectIssueTaskCompletionStatusList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewProjectIssueTaskCompletionStatusList_Override(p ProjectIssueTaskCompleti
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProjectIssueTaskCompletionStatusList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) Get(index *float64) ProjectIssueTaskCompletionStatusOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ProjectIssueTaskCompletionStatusOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) Get(index *float64) Pro
 }
 
 func (p *jsiiProxy_ProjectIssueTaskCompletionStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

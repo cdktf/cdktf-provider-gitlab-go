@@ -595,6 +595,9 @@ func (j *jsiiProxy_GroupCluster) TerraformResourceType() *string {
 func NewGroupCluster(scope constructs.Construct, id *string, config *GroupClusterConfig) GroupCluster {
 	_init_.Initialize()
 
+	if err := validateNewGroupClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupCluster{}
 
 	_jsii_.Create(
@@ -617,7 +620,10 @@ func NewGroupCluster_Override(g GroupCluster, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -625,7 +631,7 @@ func (j *jsiiProxy_GroupCluster) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetCount(val *float64) {
+func (j *jsiiProxy_GroupCluster)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -633,7 +639,7 @@ func (j *jsiiProxy_GroupCluster) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -641,7 +647,10 @@ func (j *jsiiProxy_GroupCluster) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetDomain(val *string) {
+func (j *jsiiProxy_GroupCluster)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domain",
@@ -649,7 +658,10 @@ func (j *jsiiProxy_GroupCluster) SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetEnabled(val interface{}) {
+func (j *jsiiProxy_GroupCluster)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -657,7 +669,10 @@ func (j *jsiiProxy_GroupCluster) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetEnvironmentScope(val *string) {
+func (j *jsiiProxy_GroupCluster)SetEnvironmentScope(val *string) {
+	if err := j.validateSetEnvironmentScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environmentScope",
@@ -665,7 +680,7 @@ func (j *jsiiProxy_GroupCluster) SetEnvironmentScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -673,7 +688,10 @@ func (j *jsiiProxy_GroupCluster) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetGroup(val *string) {
+func (j *jsiiProxy_GroupCluster)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -681,7 +699,10 @@ func (j *jsiiProxy_GroupCluster) SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetId(val *string) {
+func (j *jsiiProxy_GroupCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -689,7 +710,10 @@ func (j *jsiiProxy_GroupCluster) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetKubernetesApiUrl(val *string) {
+func (j *jsiiProxy_GroupCluster)SetKubernetesApiUrl(val *string) {
+	if err := j.validateSetKubernetesApiUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kubernetesApiUrl",
@@ -697,7 +721,10 @@ func (j *jsiiProxy_GroupCluster) SetKubernetesApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetKubernetesAuthorizationType(val *string) {
+func (j *jsiiProxy_GroupCluster)SetKubernetesAuthorizationType(val *string) {
+	if err := j.validateSetKubernetesAuthorizationTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kubernetesAuthorizationType",
@@ -705,7 +732,10 @@ func (j *jsiiProxy_GroupCluster) SetKubernetesAuthorizationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetKubernetesCaCert(val *string) {
+func (j *jsiiProxy_GroupCluster)SetKubernetesCaCert(val *string) {
+	if err := j.validateSetKubernetesCaCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kubernetesCaCert",
@@ -713,7 +743,10 @@ func (j *jsiiProxy_GroupCluster) SetKubernetesCaCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetKubernetesToken(val *string) {
+func (j *jsiiProxy_GroupCluster)SetKubernetesToken(val *string) {
+	if err := j.validateSetKubernetesTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kubernetesToken",
@@ -721,7 +754,10 @@ func (j *jsiiProxy_GroupCluster) SetKubernetesToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -729,7 +765,10 @@ func (j *jsiiProxy_GroupCluster) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetManaged(val interface{}) {
+func (j *jsiiProxy_GroupCluster)SetManaged(val interface{}) {
+	if err := j.validateSetManagedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"managed",
@@ -737,7 +776,10 @@ func (j *jsiiProxy_GroupCluster) SetManaged(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetManagementProjectId(val *string) {
+func (j *jsiiProxy_GroupCluster)SetManagementProjectId(val *string) {
+	if err := j.validateSetManagementProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"managementProjectId",
@@ -745,7 +787,10 @@ func (j *jsiiProxy_GroupCluster) SetManagementProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetName(val *string) {
+func (j *jsiiProxy_GroupCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -753,7 +798,7 @@ func (j *jsiiProxy_GroupCluster) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupCluster)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -761,7 +806,10 @@ func (j *jsiiProxy_GroupCluster) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GroupCluster) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -789,6 +837,9 @@ func (j *jsiiProxy_GroupCluster) SetProvisioners(val *[]interface{}) {
 func GroupCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGroupCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -813,6 +864,9 @@ func GroupCluster_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GroupCluster) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -821,6 +875,9 @@ func (g *jsiiProxy_GroupCluster) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GroupCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -834,6 +891,9 @@ func (g *jsiiProxy_GroupCluster) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -847,6 +907,9 @@ func (g *jsiiProxy_GroupCluster) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GroupCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -860,6 +923,9 @@ func (g *jsiiProxy_GroupCluster) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GroupCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -873,6 +939,9 @@ func (g *jsiiProxy_GroupCluster) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (g *jsiiProxy_GroupCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -886,6 +955,9 @@ func (g *jsiiProxy_GroupCluster) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -899,6 +971,9 @@ func (g *jsiiProxy_GroupCluster) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GroupCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -912,6 +987,9 @@ func (g *jsiiProxy_GroupCluster) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (g *jsiiProxy_GroupCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -925,6 +1003,9 @@ func (g *jsiiProxy_GroupCluster) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GroupCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -938,6 +1019,9 @@ func (g *jsiiProxy_GroupCluster) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (g *jsiiProxy_GroupCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -951,6 +1035,9 @@ func (g *jsiiProxy_GroupCluster) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (g *jsiiProxy_GroupCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

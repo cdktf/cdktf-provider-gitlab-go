@@ -306,6 +306,9 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) TerraformRes
 func NewProjectContainerExpirationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectContainerExpirationPolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewProjectContainerExpirationPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectContainerExpirationPolicyOutputReference{}
 
 	_jsii_.Create(
@@ -327,7 +330,10 @@ func NewProjectContainerExpirationPolicyOutputReference_Override(p ProjectContai
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetCadence(val *string) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetCadence(val *string) {
+	if err := j.validateSetCadenceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cadence",
@@ -335,7 +341,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetCadence(v
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -343,7 +352,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -351,7 +363,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -359,7 +374,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetInternalValue(val *ProjectContainerExpirationPolicy) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetInternalValue(val *ProjectContainerExpirationPolicy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -367,7 +385,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetKeepN(val *float64) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetKeepN(val *float64) {
+	if err := j.validateSetKeepNParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keepN",
@@ -375,7 +396,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetKeepN(val
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetNameRegexDelete(val *string) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetNameRegexDelete(val *string) {
+	if err := j.validateSetNameRegexDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameRegexDelete",
@@ -383,7 +407,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetNameRegex
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetNameRegexKeep(val *string) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetNameRegexKeep(val *string) {
+	if err := j.validateSetNameRegexKeepParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameRegexKeep",
@@ -391,7 +418,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetNameRegex
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetOlderThan(val *string) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetOlderThan(val *string) {
+	if err := j.validateSetOlderThanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"olderThan",
@@ -399,7 +429,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetOlderThan
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -407,7 +440,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -429,6 +465,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) ComputeFqn()
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -442,6 +481,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetAnyMapAtt
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -455,6 +497,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetBooleanAt
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -468,6 +513,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetBooleanMa
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -481,6 +529,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetListAttri
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -494,6 +545,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberAtt
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -507,6 +561,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberLis
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -520,6 +577,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetNumberMap
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -533,6 +593,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetStringAtt
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -559,6 +622,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) Interpolatio
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -620,6 +686,9 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) ResetOlderTh
 }
 
 func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

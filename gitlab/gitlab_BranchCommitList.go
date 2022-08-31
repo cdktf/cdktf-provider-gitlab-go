@@ -99,6 +99,9 @@ func (j *jsiiProxy_BranchCommitList) WrapsSet() *bool {
 func NewBranchCommitList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchCommitList {
 	_init_.Initialize()
 
+	if err := validateNewBranchCommitListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchCommitList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewBranchCommitList_Override(b BranchCommitList, terraformResource cdktf.II
 	)
 }
 
-func (j *jsiiProxy_BranchCommitList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchCommitList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_BranchCommitList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BranchCommitList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchCommitList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_BranchCommitList) SetTerraformResource(val cdktf.IInterpolati
 	)
 }
 
-func (j *jsiiProxy_BranchCommitList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BranchCommitList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (b *jsiiProxy_BranchCommitList) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BranchCommitList) Get(index *float64) BranchCommitOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BranchCommitOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (b *jsiiProxy_BranchCommitList) Get(index *float64) BranchCommitOutputRefer
 }
 
 func (b *jsiiProxy_BranchCommitList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

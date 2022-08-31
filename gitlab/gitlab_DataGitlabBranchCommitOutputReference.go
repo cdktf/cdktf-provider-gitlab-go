@@ -272,6 +272,9 @@ func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) Title() *string {
 func NewDataGitlabBranchCommitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabBranchCommitOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabBranchCommitOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabBranchCommitOutputReference{}
 
 	_jsii_.Create(
@@ -293,7 +296,10 @@ func NewDataGitlabBranchCommitOutputReference_Override(d DataGitlabBranchCommitO
 	)
 }
 
-func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGitlabBranchCommitOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -301,7 +307,10 @@ func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGitlabBranchCommitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -309,7 +318,10 @@ func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetInternalValue(val *DataGitlabBranchCommit) {
+func (j *jsiiProxy_DataGitlabBranchCommitOutputReference)SetInternalValue(val *DataGitlabBranchCommit) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -317,7 +329,10 @@ func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabBranchCommitOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -325,7 +340,10 @@ func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataGitlabBranchCommitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabBranchCommitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -347,6 +365,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -360,6 +381,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetAnyMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -373,6 +397,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetBooleanAttribute(te
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -386,6 +413,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetBooleanMapAttribute
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -399,6 +429,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetListAttribute(terra
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -412,6 +445,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberAttribute(ter
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -425,6 +461,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberListAttribute
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -438,6 +477,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetNumberMapAttribute(
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -451,6 +493,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetStringAttribute(ter
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -477,6 +522,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) InterpolationAsList() 
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -490,6 +538,9 @@ func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) InterpolationForAttrib
 }
 
 func (d *jsiiProxy_DataGitlabBranchCommitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -384,6 +384,9 @@ func (j *jsiiProxy_ProjectFreezePeriod) TerraformResourceType() *string {
 func NewProjectFreezePeriod(scope constructs.Construct, id *string, config *ProjectFreezePeriodConfig) ProjectFreezePeriod {
 	_init_.Initialize()
 
+	if err := validateNewProjectFreezePeriodParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectFreezePeriod{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewProjectFreezePeriod_Override(p ProjectFreezePeriod, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -414,7 +420,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -422,7 +428,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetCronTimezone(val *string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetCronTimezone(val *string) {
+	if err := j.validateSetCronTimezoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronTimezone",
@@ -430,7 +439,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetCronTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -438,7 +447,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetFreezeEnd(val *string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetFreezeEnd(val *string) {
+	if err := j.validateSetFreezeEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"freezeEnd",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetFreezeEnd(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetFreezeStart(val *string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetFreezeStart(val *string) {
+	if err := j.validateSetFreezeStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"freezeStart",
@@ -462,7 +477,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetFreezeStart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetId(val *string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -470,7 +488,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -478,7 +499,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetProjectId(val *string) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectId",
@@ -486,7 +510,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -494,7 +518,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectFreezePeriod)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -522,6 +549,9 @@ func (j *jsiiProxy_ProjectFreezePeriod) SetProvisioners(val *[]interface{}) {
 func ProjectFreezePeriod_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectFreezePeriod_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -546,6 +576,9 @@ func ProjectFreezePeriod_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -554,6 +587,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) AddOverride(path *string, value interfac
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -567,6 +603,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -580,6 +619,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetBooleanAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -593,6 +635,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -606,6 +651,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetListAttribute(terraformAttribute *str
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -619,6 +667,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetNumberAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -632,6 +683,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetNumberListAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -645,6 +699,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetNumberMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -658,6 +715,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetStringAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -671,6 +731,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) GetStringMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -684,6 +747,9 @@ func (p *jsiiProxy_ProjectFreezePeriod) InterpolationForAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_ProjectFreezePeriod) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

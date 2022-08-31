@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) WrapsS
 func NewDataGitlabProjectIssuesIssuesTaskCompletionStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectIssuesIssuesTaskCompletionStatusList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectIssuesIssuesTaskCompletionStatusListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectIssuesIssuesTaskCompletionStatusList_Override(d DataGit
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) Comput
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) Get(index *float64) DataGitlabProjectIssuesIssuesTaskCompletionStatusOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectIssuesIssuesTaskCompletionStatusOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) Get(in
 }
 
 func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

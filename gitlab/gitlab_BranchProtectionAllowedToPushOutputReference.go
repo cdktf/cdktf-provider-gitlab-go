@@ -221,6 +221,9 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) UserIdInput() *
 func NewBranchProtectionAllowedToPushOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BranchProtectionAllowedToPushOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionAllowedToPushOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtectionAllowedToPushOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewBranchProtectionAllowedToPushOutputReference_Override(b BranchProtection
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetGroupId(val *float64) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetGroupId(val *float64) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupId",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetGroupId(val 
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) SetUserId(val *float64) {
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetUserId(val *float64) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -312,6 +336,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) ComputeFqn() *s
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -325,6 +352,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetAnyMapAttrib
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -338,6 +368,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetBooleanAttri
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -351,6 +384,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetBooleanMapAt
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -364,6 +400,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetListAttribut
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -377,6 +416,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberAttrib
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -390,6 +432,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberListAt
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -403,6 +448,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetNumberMapAtt
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -416,6 +464,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetStringAttrib
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) InterpolationAs
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +525,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) ResetUserId() {
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -206,6 +206,9 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Variable
 func NewDataGitlabInstanceVariablesVariablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGitlabInstanceVariablesVariablesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabInstanceVariablesVariablesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference{}
 
 	_jsii_.Create(
@@ -227,7 +230,10 @@ func NewDataGitlabInstanceVariablesVariablesOutputReference_Override(d DataGitla
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -235,7 +241,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -243,7 +252,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetInternalValue(val *DataGitlabInstanceVariablesVariables) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference)SetInternalValue(val *DataGitlabInstanceVariablesVariables) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +263,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +274,10 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -281,6 +299,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -294,6 +315,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -307,6 +331,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -320,6 +347,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -411,6 +456,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,6 +472,9 @@ func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

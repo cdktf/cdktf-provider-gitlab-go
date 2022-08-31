@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) WrapsSet() *bool 
 func NewDataGitlabInstanceDeployKeysDeployKeysList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceDeployKeysDeployKeysList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabInstanceDeployKeysDeployKeysListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabInstanceDeployKeysDeployKeysList_Override(d DataGitlabInstance
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) Get(index *float64) DataGitlabInstanceDeployKeysDeployKeysOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabInstanceDeployKeysDeployKeysOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) Get(index *float6
 }
 
 func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -431,6 +431,9 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) TerraformResourceType() *string {
 func NewDataGitlabRepositoryFile(scope constructs.Construct, id *string, config *DataGitlabRepositoryFileConfig) DataGitlabRepositoryFile {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabRepositoryFileParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabRepositoryFile{}
 
 	_jsii_.Create(
@@ -453,7 +456,7 @@ func NewDataGitlabRepositoryFile_Override(d DataGitlabRepositoryFile, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -461,7 +464,7 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +472,10 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetFilePath(val *string) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetFilePath(val *string) {
+	if err := j.validateSetFilePathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filePath",
@@ -477,7 +483,7 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetFilePath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +491,10 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -493,7 +502,10 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -501,7 +513,10 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetProject(val *string) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -509,7 +524,7 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -517,7 +532,10 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) SetRef(val *string) {
+func (j *jsiiProxy_DataGitlabRepositoryFile)SetRef(val *string) {
+	if err := j.validateSetRefParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ref",
@@ -545,6 +563,9 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) SetRef(val *string) {
 func DataGitlabRepositoryFile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGitlabRepositoryFile_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -569,6 +590,9 @@ func DataGitlabRepositoryFile_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -577,6 +601,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -590,6 +617,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -603,6 +633,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -616,6 +649,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -629,6 +665,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -642,6 +681,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -655,6 +697,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -668,6 +713,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -681,6 +729,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -694,6 +745,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -707,6 +761,9 @@ func (d *jsiiProxy_DataGitlabRepositoryFile) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DataGitlabRepositoryFile) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

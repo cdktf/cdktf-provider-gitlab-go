@@ -463,6 +463,9 @@ func (j *jsiiProxy_ProjectAccessToken) UserId() *float64 {
 func NewProjectAccessToken(scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) ProjectAccessToken {
 	_init_.Initialize()
 
+	if err := validateNewProjectAccessTokenParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectAccessToken{}
 
 	_jsii_.Create(
@@ -485,7 +488,10 @@ func NewProjectAccessToken_Override(p ProjectAccessToken, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetAccessLevel(val *string) {
+func (j *jsiiProxy_ProjectAccessToken)SetAccessLevel(val *string) {
+	if err := j.validateSetAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessLevel",
@@ -493,7 +499,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectAccessToken)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -501,7 +510,7 @@ func (j *jsiiProxy_ProjectAccessToken) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectAccessToken)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -509,7 +518,7 @@ func (j *jsiiProxy_ProjectAccessToken) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectAccessToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +526,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetExpiresAt(val *string) {
+func (j *jsiiProxy_ProjectAccessToken)SetExpiresAt(val *string) {
+	if err := j.validateSetExpiresAtParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expiresAt",
@@ -525,7 +537,7 @@ func (j *jsiiProxy_ProjectAccessToken) SetExpiresAt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectAccessToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -533,7 +545,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetId(val *string) {
+func (j *jsiiProxy_ProjectAccessToken)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -541,7 +556,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectAccessToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -549,7 +567,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetName(val *string) {
+func (j *jsiiProxy_ProjectAccessToken)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -557,7 +578,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetProject(val *string) {
+func (j *jsiiProxy_ProjectAccessToken)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -565,7 +589,7 @@ func (j *jsiiProxy_ProjectAccessToken) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectAccessToken)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -573,7 +597,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectAccessToken)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -581,7 +608,10 @@ func (j *jsiiProxy_ProjectAccessToken) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken) SetScopes(val *[]*string) {
+func (j *jsiiProxy_ProjectAccessToken)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scopes",
@@ -609,6 +639,9 @@ func (j *jsiiProxy_ProjectAccessToken) SetScopes(val *[]*string) {
 func ProjectAccessToken_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectAccessToken_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -633,6 +666,9 @@ func ProjectAccessToken_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectAccessToken) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -641,6 +677,9 @@ func (p *jsiiProxy_ProjectAccessToken) AddOverride(path *string, value interface
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -654,6 +693,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -667,6 +709,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -680,6 +725,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -693,6 +741,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetListAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -706,6 +757,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetNumberAttribute(terraformAttribute *st
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -719,6 +773,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetNumberListAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -732,6 +789,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -745,6 +805,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetStringAttribute(terraformAttribute *st
 }
 
 func (p *jsiiProxy_ProjectAccessToken) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -758,6 +821,9 @@ func (p *jsiiProxy_ProjectAccessToken) GetStringMapAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_ProjectAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -771,6 +837,9 @@ func (p *jsiiProxy_ProjectAccessToken) InterpolationForAttribute(terraformAttrib
 }
 
 func (p *jsiiProxy_ProjectAccessToken) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

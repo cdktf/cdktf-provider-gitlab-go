@@ -111,6 +111,9 @@ func (j *jsiiProxy_BranchProtectionAllowedToMergeList) WrapsSet() *bool {
 func NewBranchProtectionAllowedToMergeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToMergeList {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionAllowedToMergeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtectionAllowedToMergeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewBranchProtectionAllowedToMergeList_Override(b BranchProtectionAllowedToM
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BranchProtectionAllowedToMergeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchProtectionAllowedToMergeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchProtectionAllowedToMergeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionAllowedToMergeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BranchProtectionAllowedToMergeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToMergeList) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToMergeList) Get(index *float64) BranchProtectionAllowedToMergeOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BranchProtectionAllowedToMergeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (b *jsiiProxy_BranchProtectionAllowedToMergeList) Get(index *float64) Branc
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToMergeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

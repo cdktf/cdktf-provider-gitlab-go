@@ -406,6 +406,9 @@ func (j *jsiiProxy_ProjectBadge) TerraformResourceType() *string {
 func NewProjectBadge(scope constructs.Construct, id *string, config *ProjectBadgeConfig) ProjectBadge {
 	_init_.Initialize()
 
+	if err := validateNewProjectBadgeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectBadge{}
 
 	_jsii_.Create(
@@ -428,7 +431,10 @@ func NewProjectBadge_Override(p ProjectBadge, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectBadge)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -436,7 +442,7 @@ func (j *jsiiProxy_ProjectBadge) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetCount(val *float64) {
+func (j *jsiiProxy_ProjectBadge)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -444,7 +450,7 @@ func (j *jsiiProxy_ProjectBadge) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectBadge)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -452,7 +458,7 @@ func (j *jsiiProxy_ProjectBadge) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectBadge)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -460,7 +466,10 @@ func (j *jsiiProxy_ProjectBadge) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetId(val *string) {
+func (j *jsiiProxy_ProjectBadge)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -468,7 +477,10 @@ func (j *jsiiProxy_ProjectBadge) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetImageUrl(val *string) {
+func (j *jsiiProxy_ProjectBadge)SetImageUrl(val *string) {
+	if err := j.validateSetImageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageUrl",
@@ -476,7 +488,10 @@ func (j *jsiiProxy_ProjectBadge) SetImageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectBadge)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -484,7 +499,10 @@ func (j *jsiiProxy_ProjectBadge) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetLinkUrl(val *string) {
+func (j *jsiiProxy_ProjectBadge)SetLinkUrl(val *string) {
+	if err := j.validateSetLinkUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkUrl",
@@ -492,7 +510,10 @@ func (j *jsiiProxy_ProjectBadge) SetLinkUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetName(val *string) {
+func (j *jsiiProxy_ProjectBadge)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -500,7 +521,10 @@ func (j *jsiiProxy_ProjectBadge) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetProject(val *string) {
+func (j *jsiiProxy_ProjectBadge)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"project",
@@ -508,7 +532,7 @@ func (j *jsiiProxy_ProjectBadge) SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectBadge)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -516,7 +540,10 @@ func (j *jsiiProxy_ProjectBadge) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectBadge) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectBadge)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -544,6 +571,9 @@ func (j *jsiiProxy_ProjectBadge) SetProvisioners(val *[]interface{}) {
 func ProjectBadge_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProjectBadge_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -568,6 +598,9 @@ func ProjectBadge_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_ProjectBadge) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -576,6 +609,9 @@ func (p *jsiiProxy_ProjectBadge) AddOverride(path *string, value interface{}) {
 }
 
 func (p *jsiiProxy_ProjectBadge) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -589,6 +625,9 @@ func (p *jsiiProxy_ProjectBadge) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_ProjectBadge) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -602,6 +641,9 @@ func (p *jsiiProxy_ProjectBadge) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_ProjectBadge) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -615,6 +657,9 @@ func (p *jsiiProxy_ProjectBadge) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_ProjectBadge) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -628,6 +673,9 @@ func (p *jsiiProxy_ProjectBadge) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (p *jsiiProxy_ProjectBadge) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -641,6 +689,9 @@ func (p *jsiiProxy_ProjectBadge) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_ProjectBadge) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -654,6 +705,9 @@ func (p *jsiiProxy_ProjectBadge) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_ProjectBadge) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -667,6 +721,9 @@ func (p *jsiiProxy_ProjectBadge) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (p *jsiiProxy_ProjectBadge) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -680,6 +737,9 @@ func (p *jsiiProxy_ProjectBadge) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_ProjectBadge) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -693,6 +753,9 @@ func (p *jsiiProxy_ProjectBadge) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (p *jsiiProxy_ProjectBadge) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -706,6 +769,9 @@ func (p *jsiiProxy_ProjectBadge) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_ProjectBadge) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

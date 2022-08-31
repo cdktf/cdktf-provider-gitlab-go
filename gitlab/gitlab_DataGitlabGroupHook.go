@@ -507,6 +507,9 @@ func (j *jsiiProxy_DataGitlabGroupHook) WikiPageEvents() cdktf.IResolvable {
 func NewDataGitlabGroupHook(scope constructs.Construct, id *string, config *DataGitlabGroupHookConfig) DataGitlabGroupHook {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabGroupHookParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabGroupHook{}
 
 	_jsii_.Create(
@@ -529,7 +532,7 @@ func NewDataGitlabGroupHook_Override(d DataGitlabGroupHook, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -537,7 +540,7 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -545,7 +548,7 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -553,7 +556,10 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetGroup(val *string) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -561,7 +567,10 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetHookId(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetHookId(val *float64) {
+	if err := j.validateSetHookIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hookId",
@@ -569,7 +578,10 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetHookId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -577,7 +589,10 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -585,7 +600,7 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabGroupHook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -613,6 +628,9 @@ func (j *jsiiProxy_DataGitlabGroupHook) SetProvider(val cdktf.TerraformProvider)
 func DataGitlabGroupHook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGitlabGroupHook_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -637,6 +655,9 @@ func DataGitlabGroupHook_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -645,6 +666,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) AddOverride(path *string, value interfac
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -658,6 +682,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -671,6 +698,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetBooleanAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -684,6 +714,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -697,6 +730,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetListAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -710,6 +746,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetNumberAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -723,6 +762,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetNumberListAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -736,6 +778,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetNumberMapAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -749,6 +794,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetStringAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -762,6 +810,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) GetStringMapAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -775,6 +826,9 @@ func (d *jsiiProxy_DataGitlabGroupHook) InterpolationForAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGitlabGroupHook) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

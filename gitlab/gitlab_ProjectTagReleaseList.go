@@ -99,6 +99,9 @@ func (j *jsiiProxy_ProjectTagReleaseList) WrapsSet() *bool {
 func NewProjectTagReleaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTagReleaseList {
 	_init_.Initialize()
 
+	if err := validateNewProjectTagReleaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectTagReleaseList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewProjectTagReleaseList_Override(p ProjectTagReleaseList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectTagReleaseList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ProjectTagReleaseList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectTagReleaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ProjectTagReleaseList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_ProjectTagReleaseList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProjectTagReleaseList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (p *jsiiProxy_ProjectTagReleaseList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectTagReleaseList) Get(index *float64) ProjectTagReleaseOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ProjectTagReleaseOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (p *jsiiProxy_ProjectTagReleaseList) Get(index *float64) ProjectTagReleaseO
 }
 
 func (p *jsiiProxy_ProjectTagReleaseList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) WrapsSe
 func NewDataGitlabProjectProtectedBranchPushAccessLevelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedBranchPushAccessLevelsList {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabProjectProtectedBranchPushAccessLevelsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGitlabProjectProtectedBranchPushAccessLevelsList_Override(d DataGitl
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) Compute
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) Get(index *float64) DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) Get(ind
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

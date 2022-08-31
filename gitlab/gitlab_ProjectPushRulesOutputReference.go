@@ -415,6 +415,9 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) TerraformResource() cdktf.II
 func NewProjectPushRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectPushRulesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewProjectPushRulesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProjectPushRulesOutputReference{}
 
 	_jsii_.Create(
@@ -436,7 +439,10 @@ func NewProjectPushRulesOutputReference_Override(p ProjectPushRulesOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetAuthorEmailRegex(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetAuthorEmailRegex(val *string) {
+	if err := j.validateSetAuthorEmailRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authorEmailRegex",
@@ -444,7 +450,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetAuthorEmailRegex(val *str
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetBranchNameRegex(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetBranchNameRegex(val *string) {
+	if err := j.validateSetBranchNameRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"branchNameRegex",
@@ -452,7 +461,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetBranchNameRegex(val *stri
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitCommitterCheck(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetCommitCommitterCheck(val interface{}) {
+	if err := j.validateSetCommitCommitterCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commitCommitterCheck",
@@ -460,7 +472,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitCommitterCheck(val 
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitMessageNegativeRegex(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetCommitMessageNegativeRegex(val *string) {
+	if err := j.validateSetCommitMessageNegativeRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commitMessageNegativeRegex",
@@ -468,7 +483,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitMessageNegativeRege
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitMessageRegex(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetCommitMessageRegex(val *string) {
+	if err := j.validateSetCommitMessageRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commitMessageRegex",
@@ -476,7 +494,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetCommitMessageRegex(val *s
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -484,7 +505,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -492,7 +516,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetDenyDeleteTag(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetDenyDeleteTag(val interface{}) {
+	if err := j.validateSetDenyDeleteTagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"denyDeleteTag",
@@ -500,7 +527,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetDenyDeleteTag(val interfa
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetFileNameRegex(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetFileNameRegex(val *string) {
+	if err := j.validateSetFileNameRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fileNameRegex",
@@ -508,7 +538,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetFileNameRegex(val *string
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetInternalValue(val *ProjectPushRules) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetInternalValue(val *ProjectPushRules) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -516,7 +549,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetInternalValue(val *Projec
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetMaxFileSize(val *float64) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetMaxFileSize(val *float64) {
+	if err := j.validateSetMaxFileSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxFileSize",
@@ -524,7 +560,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetMaxFileSize(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetMemberCheck(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetMemberCheck(val interface{}) {
+	if err := j.validateSetMemberCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"memberCheck",
@@ -532,7 +571,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetMemberCheck(val interface
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetPreventSecrets(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetPreventSecrets(val interface{}) {
+	if err := j.validateSetPreventSecretsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preventSecrets",
@@ -540,7 +582,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetPreventSecrets(val interf
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetRejectUnsignedCommits(val interface{}) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetRejectUnsignedCommits(val interface{}) {
+	if err := j.validateSetRejectUnsignedCommitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rejectUnsignedCommits",
@@ -548,7 +593,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetRejectUnsignedCommits(val
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -556,7 +604,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ProjectPushRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -578,6 +629,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -591,6 +645,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetAnyMapAttribute(terraform
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -604,6 +661,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetBooleanAttribute(terrafor
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -617,6 +677,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetBooleanMapAttribute(terra
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -630,6 +693,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetListAttribute(terraformAt
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -643,6 +709,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberAttribute(terraform
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -656,6 +725,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberListAttribute(terra
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -669,6 +741,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetNumberMapAttribute(terraf
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -682,6 +757,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) GetStringAttribute(terraform
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -708,6 +786,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) InterpolationAsList() cdktf.
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -809,6 +890,9 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) ResetRejectUnsignedCommits()
 }
 
 func (p *jsiiProxy_ProjectPushRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

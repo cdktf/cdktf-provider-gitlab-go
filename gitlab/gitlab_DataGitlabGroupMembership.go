@@ -346,6 +346,9 @@ func (j *jsiiProxy_DataGitlabGroupMembership) TerraformResourceType() *string {
 func NewDataGitlabGroupMembership(scope constructs.Construct, id *string, config *DataGitlabGroupMembershipConfig) DataGitlabGroupMembership {
 	_init_.Initialize()
 
+	if err := validateNewDataGitlabGroupMembershipParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGitlabGroupMembership{}
 
 	_jsii_.Create(
@@ -368,7 +371,10 @@ func NewDataGitlabGroupMembership_Override(d DataGitlabGroupMembership, scope co
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetAccessLevel(val *string) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetAccessLevel(val *string) {
+	if err := j.validateSetAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessLevel",
@@ -376,7 +382,7 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetAccessLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -384,7 +390,7 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -392,7 +398,7 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -400,7 +406,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetFullPath(val *string) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetFullPath(val *string) {
+	if err := j.validateSetFullPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fullPath",
@@ -408,7 +417,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetFullPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetGroupId(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetGroupId(val *float64) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupId",
@@ -416,7 +428,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetGroupId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetId(val *string) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -424,7 +439,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -432,7 +450,7 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGitlabGroupMembership)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -460,6 +478,9 @@ func (j *jsiiProxy_DataGitlabGroupMembership) SetProvider(val cdktf.TerraformPro
 func DataGitlabGroupMembership_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGitlabGroupMembership_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -484,6 +505,9 @@ func DataGitlabGroupMembership_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -492,6 +516,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) AddOverride(path *string, value in
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -505,6 +532,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetAnyMapAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -518,6 +548,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetBooleanAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -531,6 +564,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetBooleanMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -544,6 +580,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetListAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -557,6 +596,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -570,6 +612,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -583,6 +628,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetNumberMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -596,6 +644,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetStringAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -609,6 +660,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) GetStringMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +676,9 @@ func (d *jsiiProxy_DataGitlabGroupMembership) InterpolationForAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGitlabGroupMembership) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

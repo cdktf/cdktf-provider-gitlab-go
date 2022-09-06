@@ -24,6 +24,7 @@ type DataGitlabProject interface {
 	BuildTimeout() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CiConfigPath() *string
 	CiDefaultGitDepth() *float64
 	SetCiDefaultGitDepth(val *float64)
 	CiDefaultGitDepthInput() *float64
@@ -254,6 +255,16 @@ func (j *jsiiProxy_DataGitlabProject) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiConfigPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciConfigPath",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package datagitlabprojectprotectedbranches
+
+
+type DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels struct {
+}
+

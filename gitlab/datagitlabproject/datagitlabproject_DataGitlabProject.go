@@ -101,6 +101,7 @@ type DataGitlabProject interface {
 	SnippetsEnabled() cdktf.IResolvable
 	SquashCommitTemplate() *string
 	SshUrlToRepo() *string
+	SuggestionCommitMessage() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -794,6 +795,16 @@ func (j *jsiiProxy_DataGitlabProject) SshUrlToRepo() *string {
 	_jsii_.Get(
 		j,
 		"sshUrlToRepo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) SuggestionCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suggestionCommitMessage",
 		&returns,
 	)
 	return returns

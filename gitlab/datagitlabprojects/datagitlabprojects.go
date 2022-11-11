@@ -433,6 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sshUrlToRepo", GoGetter: "SshUrlToRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "starCount", GoGetter: "StarCount"},
 			_jsii_.MemberProperty{JsiiProperty: "statistics", GoGetter: "Statistics"},
+			_jsii_.MemberProperty{JsiiProperty: "suggestionCommitMessage", GoGetter: "SuggestionCommitMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "tagList", GoGetter: "TagList"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

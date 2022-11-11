@@ -309,6 +309,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#squash_option Project#squash_option}
 	SquashOption *string `field:"optional" json:"squashOption" yaml:"squashOption"`
+	// The commit message used to apply merge request suggestions.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#suggestion_commit_message Project#suggestion_commit_message}
+	SuggestionCommitMessage *string `field:"optional" json:"suggestionCommitMessage" yaml:"suggestionCommitMessage"`
 	// The list of tags for a project;
 	//
 	// put array of tags, that should be finally assigned to a project. Use topics instead.

@@ -92,6 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "snippetsEnabled", GoGetter: "SnippetsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "squashCommitTemplate", GoGetter: "SquashCommitTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "sshUrlToRepo", GoGetter: "SshUrlToRepo"},
+			_jsii_.MemberProperty{JsiiProperty: "suggestionCommitMessage", GoGetter: "SuggestionCommitMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package project
 
@@ -338,6 +337,10 @@ func (j *jsiiProxy_Project) validateSetSquashCommitTemplateParameters(val *strin
 }
 
 func (j *jsiiProxy_Project) validateSetSquashOptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetSuggestionCommitMessageParameters(val *string) error {
 	return nil
 }
 

@@ -60,7 +60,7 @@ type BranchProtectionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#push_access_level BranchProtection#push_access_level}
 	PushAccessLevel *string `field:"optional" json:"pushAccessLevel" yaml:"pushAccessLevel"`
-	// Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`.
+	// Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 	UnprotectAccessLevel *string `field:"optional" json:"unprotectAccessLevel" yaml:"unprotectAccessLevel"`

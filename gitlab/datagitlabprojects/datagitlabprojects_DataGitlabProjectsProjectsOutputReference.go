@@ -109,6 +109,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	SshUrlToRepo() *string
 	StarCount() *float64
 	Statistics() cdktf.NumberMap
+	SuggestionCommitMessage() *string
 	TagList() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -1007,6 +1008,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Statistics() cdktf
 	_jsii_.Get(
 		j,
 		"statistics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) SuggestionCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suggestionCommitMessage",
 		&returns,
 	)
 	return returns

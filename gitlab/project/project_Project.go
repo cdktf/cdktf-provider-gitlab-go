@@ -258,6 +258,9 @@ type Project interface {
 	SetSquashOption(val *string)
 	SquashOptionInput() *string
 	SshUrlToRepo() *string
+	SuggestionCommitMessage() *string
+	SetSuggestionCommitMessage(val *string)
+	SuggestionCommitMessageInput() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -386,6 +389,7 @@ type Project interface {
 	ResetSnippetsEnabled()
 	ResetSquashCommitTemplate()
 	ResetSquashOption()
+	ResetSuggestionCommitMessage()
 	ResetTags()
 	ResetTemplateName()
 	ResetTemplateProjectId()
@@ -1939,6 +1943,26 @@ func (j *jsiiProxy_Project) SshUrlToRepo() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) SuggestionCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suggestionCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) SuggestionCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suggestionCommitMessageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -2960,6 +2984,17 @@ func (j *jsiiProxy_Project)SetSquashOption(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetSuggestionCommitMessage(val *string) {
+	if err := j.validateSetSuggestionCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suggestionCommitMessage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -3838,6 +3873,14 @@ func (p *jsiiProxy_Project) ResetSquashOption() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSquashOption",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetSuggestionCommitMessage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSuggestionCommitMessage",
 		nil, // no parameters
 	)
 }

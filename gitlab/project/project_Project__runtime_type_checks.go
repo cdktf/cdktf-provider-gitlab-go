@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package project
 
@@ -1110,6 +1109,14 @@ func (j *jsiiProxy_Project) validateSetSquashCommitTemplateParameters(val *strin
 }
 
 func (j *jsiiProxy_Project) validateSetSquashOptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetSuggestionCommitMessageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

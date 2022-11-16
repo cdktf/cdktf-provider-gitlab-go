@@ -56,6 +56,14 @@ func validateServicePipelinesEmail_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicePipelinesEmail_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePipelinesEmail_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePipelinesEmail) validateSetBranchesToBeNotifiedParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGitlabProjectMilestones_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataGitlabProjectMilestones_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabProjectMilestones_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectMilestones) validateSetIdParameters(val *string) error {
 	return nil
 }

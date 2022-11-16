@@ -56,6 +56,14 @@ func validateProjectCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package datagitlabclusteragents
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/datagitlabclusteragents/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/datagitlabclusteragents/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -414,6 +414,44 @@ func DataGitlabClusterAgents_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabClusterAgents_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabClusterAgents_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabClusterAgents_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabClusterAgents_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateProjectCustomAttribute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectCustomAttribute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectCustomAttribute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectCustomAttribute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSystemHook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSystemHook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSystemHook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SystemHook) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDeployToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDeployToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDeployToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeployToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

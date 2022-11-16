@@ -2,10 +2,10 @@ package projectmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/projectmembership/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/projectmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -556,6 +556,44 @@ func ProjectMembership_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.projectMembership.ProjectMembership",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectMembership_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectMembership_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.projectMembership.ProjectMembership",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectMembership_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectMembership_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.projectMembership.ProjectMembership",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

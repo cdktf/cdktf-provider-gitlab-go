@@ -56,6 +56,14 @@ func validateInstanceCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInstanceCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInstanceCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

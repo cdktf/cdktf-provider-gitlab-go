@@ -2,10 +2,10 @@ package pipelineschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/pipelineschedule/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/pipelineschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -625,6 +625,44 @@ func PipelineSchedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PipelineSchedule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePipelineSchedule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PipelineSchedule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePipelineSchedule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

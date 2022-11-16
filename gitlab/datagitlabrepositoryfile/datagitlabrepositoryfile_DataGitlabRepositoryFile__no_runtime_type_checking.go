@@ -56,6 +56,14 @@ func validateDataGitlabRepositoryFile_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataGitlabRepositoryFile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabRepositoryFile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetFilePathParameters(val *string) error {
 	return nil
 }

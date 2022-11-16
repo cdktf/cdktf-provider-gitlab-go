@@ -56,6 +56,14 @@ func validateGroupLabel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupLabel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupLabel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupLabel) validateSetColorParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGroupCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

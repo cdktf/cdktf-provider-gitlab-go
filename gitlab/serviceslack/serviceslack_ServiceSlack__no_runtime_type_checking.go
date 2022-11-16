@@ -56,6 +56,14 @@ func validateServiceSlack_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceSlack_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceSlack_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceSlack) validateSetBranchesToBeNotifiedParameters(val *string) error {
 	return nil
 }

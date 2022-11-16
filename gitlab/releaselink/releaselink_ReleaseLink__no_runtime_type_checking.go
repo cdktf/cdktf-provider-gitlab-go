@@ -56,6 +56,14 @@ func validateReleaseLink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateReleaseLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateReleaseLink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReleaseLink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

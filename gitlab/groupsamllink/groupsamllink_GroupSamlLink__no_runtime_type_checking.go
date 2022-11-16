@@ -56,6 +56,14 @@ func validateGroupSamlLink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupSamlLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupSamlLink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupSamlLink) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

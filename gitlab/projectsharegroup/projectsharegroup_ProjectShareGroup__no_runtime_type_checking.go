@@ -56,6 +56,14 @@ func validateProjectShareGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectShareGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectShareGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectShareGroup) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

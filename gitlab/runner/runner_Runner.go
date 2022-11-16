@@ -2,10 +2,10 @@ package runner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/runner/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/runner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -720,6 +720,44 @@ func Runner_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.runner.Runner",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Runner_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRunner_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.runner.Runner",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Runner_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRunner_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.runner.Runner",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

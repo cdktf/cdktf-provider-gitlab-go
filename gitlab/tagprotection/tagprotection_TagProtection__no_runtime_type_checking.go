@@ -56,6 +56,14 @@ func validateTagProtection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTagProtection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTagProtection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagProtection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package deploykeyenable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/deploykeyenable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/deploykeyenable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -592,6 +592,44 @@ func DeployKeyEnable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DeployKeyEnable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDeployKeyEnable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DeployKeyEnable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDeployKeyEnable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

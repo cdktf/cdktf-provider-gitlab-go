@@ -16,6 +16,14 @@ func validateGitlabProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGitlabProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGitlabProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitlabProvider) validateSetEarlyAuthCheckParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateProjectProtectedEnvironment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateProjectProtectedEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectProtectedEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

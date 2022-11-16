@@ -56,6 +56,14 @@ func validateProjectAccessToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectAccessToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectAccessToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectAccessToken) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

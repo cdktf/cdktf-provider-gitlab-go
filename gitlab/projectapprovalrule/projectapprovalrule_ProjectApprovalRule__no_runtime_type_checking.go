@@ -56,6 +56,14 @@ func validateProjectApprovalRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectApprovalRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectApprovalRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectApprovalRule) validateSetApprovalsRequiredParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGroupVariable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupVariable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupVariable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupVariable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

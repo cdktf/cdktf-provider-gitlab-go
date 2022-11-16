@@ -56,6 +56,14 @@ func validateProjectVariable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectVariable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectVariable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectVariable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package personalaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/personalaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/personalaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -600,6 +600,44 @@ func PersonalAccessToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PersonalAccessToken_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePersonalAccessToken_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PersonalAccessToken_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePersonalAccessToken_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

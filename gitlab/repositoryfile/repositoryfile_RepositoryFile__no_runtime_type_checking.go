@@ -60,6 +60,14 @@ func validateRepositoryFile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRepositoryFile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepositoryFile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetAuthorEmailParameters(val *string) error {
 	return nil
 }

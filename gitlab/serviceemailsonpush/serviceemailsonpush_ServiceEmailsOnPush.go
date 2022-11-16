@@ -2,10 +2,10 @@ package serviceemailsonpush
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/serviceemailsonpush/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/serviceemailsonpush/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -717,6 +717,44 @@ func ServiceEmailsOnPush_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceEmailsOnPush_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceEmailsOnPush_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServiceEmailsOnPush_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServiceEmailsOnPush_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

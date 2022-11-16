@@ -56,6 +56,14 @@ func validateProjectHook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectHook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectHook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetConfidentialIssuesEventsParameters(val interface{}) error {
 	return nil
 }

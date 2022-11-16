@@ -2,10 +2,10 @@ package datagitlabinstancevariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/datagitlabinstancevariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/datagitlabinstancevariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -380,6 +380,44 @@ func DataGitlabInstanceVariables_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.dataGitlabInstanceVariables.DataGitlabInstanceVariables",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabInstanceVariables_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabInstanceVariables_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabInstanceVariables.DataGitlabInstanceVariables",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabInstanceVariables_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabInstanceVariables_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabInstanceVariables.DataGitlabInstanceVariables",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

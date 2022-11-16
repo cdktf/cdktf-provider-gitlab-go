@@ -56,6 +56,14 @@ func validateGroupCustomAttribute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupCustomAttribute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupCustomAttribute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupCustomAttribute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

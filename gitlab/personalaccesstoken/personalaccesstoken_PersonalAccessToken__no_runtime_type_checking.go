@@ -56,6 +56,14 @@ func validatePersonalAccessToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePersonalAccessToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePersonalAccessToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PersonalAccessToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

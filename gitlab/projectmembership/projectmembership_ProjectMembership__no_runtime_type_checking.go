@@ -56,6 +56,14 @@ func validateProjectMembership_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMembership) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

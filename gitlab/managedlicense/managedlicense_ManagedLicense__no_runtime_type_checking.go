@@ -56,6 +56,14 @@ func validateManagedLicense_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedLicense_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedLicense_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedLicense) validateSetApprovalStatusParameters(val *string) error {
 	return nil
 }

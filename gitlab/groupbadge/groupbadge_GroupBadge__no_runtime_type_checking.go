@@ -56,6 +56,14 @@ func validateGroupBadge_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupBadge_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupBadge_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupBadge) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

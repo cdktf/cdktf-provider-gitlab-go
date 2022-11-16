@@ -56,6 +56,14 @@ func validateServiceMicrosoftTeams_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceMicrosoftTeams_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceMicrosoftTeams_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceMicrosoftTeams) validateSetBranchesToBeNotifiedParameters(val *string) error {
 	return nil
 }

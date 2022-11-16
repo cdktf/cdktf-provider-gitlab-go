@@ -2,10 +2,10 @@ package datagitlabrepositoryfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/datagitlabrepositoryfile/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/datagitlabrepositoryfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -570,6 +570,44 @@ func DataGitlabRepositoryFile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabRepositoryFile_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabRepositoryFile_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabRepositoryFile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabRepositoryFile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataGitlabClusterAgent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGitlabClusterAgent_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabClusterAgent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabClusterAgent) validateSetAgentIdParameters(val *float64) error {
 	return nil
 }

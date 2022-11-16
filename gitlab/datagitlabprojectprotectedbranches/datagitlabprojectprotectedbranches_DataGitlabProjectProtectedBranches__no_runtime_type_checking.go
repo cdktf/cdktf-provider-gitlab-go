@@ -56,6 +56,14 @@ func validateDataGitlabProjectProtectedBranches_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataGitlabProjectProtectedBranches_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabProjectProtectedBranches_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetIdParameters(val *string) error {
 	return nil
 }

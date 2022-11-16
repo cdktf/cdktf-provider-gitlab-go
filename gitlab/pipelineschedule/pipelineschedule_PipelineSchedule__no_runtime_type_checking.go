@@ -56,6 +56,14 @@ func validatePipelineSchedule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePipelineSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePipelineSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipelineSchedule) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

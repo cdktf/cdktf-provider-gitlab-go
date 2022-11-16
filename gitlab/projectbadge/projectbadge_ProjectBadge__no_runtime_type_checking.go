@@ -56,6 +56,14 @@ func validateProjectBadge_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectBadge_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectBadge_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectBadge) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

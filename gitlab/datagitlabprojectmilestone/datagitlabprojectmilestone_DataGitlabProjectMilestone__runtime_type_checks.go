@@ -119,6 +119,22 @@ func validateDataGitlabProjectMilestone_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataGitlabProjectMilestone_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataGitlabProjectMilestone_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

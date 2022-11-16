@@ -2,10 +2,10 @@ package clusteragenttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/clusteragenttoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/clusteragenttoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -622,6 +622,44 @@ func ClusterAgentToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ClusterAgentToken_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateClusterAgentToken_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ClusterAgentToken_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateClusterAgentToken_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

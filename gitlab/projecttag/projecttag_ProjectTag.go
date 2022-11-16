@@ -2,10 +2,10 @@ package projecttag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/projecttag/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/projecttag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -600,6 +600,44 @@ func ProjectTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.projectTag.ProjectTag",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectTag_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectTag_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.projectTag.ProjectTag",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectTag_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectTag_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.projectTag.ProjectTag",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

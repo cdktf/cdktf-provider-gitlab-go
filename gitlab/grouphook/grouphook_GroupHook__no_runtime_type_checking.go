@@ -56,6 +56,14 @@ func validateGroupHook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupHook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupHook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetConfidentialIssuesEventsParameters(val interface{}) error {
 	return nil
 }

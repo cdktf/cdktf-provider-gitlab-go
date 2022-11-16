@@ -56,6 +56,14 @@ func validateGroupAccessToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupAccessToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupAccessToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupAccessToken) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

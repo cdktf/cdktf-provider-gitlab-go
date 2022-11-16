@@ -68,6 +68,14 @@ func validateBranchProtection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBranchProtection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBranchProtection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtection) validateSetAllowForcePushParameters(val interface{}) error {
 	return nil
 }

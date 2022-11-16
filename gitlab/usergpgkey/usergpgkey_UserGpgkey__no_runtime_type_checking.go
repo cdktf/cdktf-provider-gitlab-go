@@ -56,6 +56,14 @@ func validateUserGpgkey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserGpgkey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserGpgkey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserGpgkey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

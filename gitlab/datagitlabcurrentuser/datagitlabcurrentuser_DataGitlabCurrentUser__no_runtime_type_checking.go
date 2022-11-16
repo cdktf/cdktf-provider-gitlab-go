@@ -56,6 +56,14 @@ func validateDataGitlabCurrentUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGitlabCurrentUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabCurrentUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabCurrentUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGitlabProjectMembership_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataGitlabProjectMembership_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabProjectMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectMembership) validateSetFullPathParameters(val *string) error {
 	return nil
 }

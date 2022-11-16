@@ -56,6 +56,14 @@ func validateServiceExternalWiki_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceExternalWiki_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceExternalWiki_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceExternalWiki) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

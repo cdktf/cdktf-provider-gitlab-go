@@ -2,10 +2,10 @@ package datagitlabgrouphook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v3/datagitlabgrouphook/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/datagitlabgrouphook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -635,6 +635,44 @@ func DataGitlabGroupHook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabGroupHook_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabGroupHook_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGitlabGroupHook_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGitlabGroupHook_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

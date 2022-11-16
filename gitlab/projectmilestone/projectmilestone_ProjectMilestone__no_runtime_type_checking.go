@@ -56,6 +56,14 @@ func validateProjectMilestone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectMilestone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectMilestone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMilestone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateRunner_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRunner_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRunner_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Runner) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

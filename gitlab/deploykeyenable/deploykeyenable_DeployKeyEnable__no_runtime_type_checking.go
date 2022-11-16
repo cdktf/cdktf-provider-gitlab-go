@@ -56,6 +56,14 @@ func validateDeployKeyEnable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDeployKeyEnable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDeployKeyEnable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeployKeyEnable) validateSetCanPushParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateServiceJira_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceJira_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceJira_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceJira) validateSetApiUrlParameters(val *string) error {
 	return nil
 }

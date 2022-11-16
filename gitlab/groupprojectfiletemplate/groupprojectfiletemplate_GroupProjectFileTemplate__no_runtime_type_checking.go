@@ -56,6 +56,14 @@ func validateGroupProjectFileTemplate_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGroupProjectFileTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupProjectFileTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupProjectFileTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

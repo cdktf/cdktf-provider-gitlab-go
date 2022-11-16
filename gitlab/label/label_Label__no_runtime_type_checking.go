@@ -56,6 +56,14 @@ func validateLabel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLabel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLabel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Label) validateSetColorParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateProjectFreezePeriod_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectFreezePeriod_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectFreezePeriod_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectFreezePeriod) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateProjectLevelMrApprovals_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateProjectLevelMrApprovals_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectLevelMrApprovals_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

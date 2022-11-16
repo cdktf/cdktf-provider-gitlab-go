@@ -56,6 +56,14 @@ func validateProjectIssue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectIssue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectIssue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectIssue) validateSetAssigneeIdsParameters(val *[]*float64) error {
 	return nil
 }

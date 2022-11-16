@@ -56,6 +56,14 @@ func validateClusterAgent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateClusterAgent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateClusterAgent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterAgent) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGitlabUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGitlabUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabUser) validateSetEmailParameters(val *string) error {
 	return nil
 }

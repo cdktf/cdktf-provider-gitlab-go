@@ -56,6 +56,14 @@ func validateGroupLdapLink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupLdapLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupLdapLink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupLdapLink) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

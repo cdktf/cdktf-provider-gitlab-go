@@ -56,6 +56,14 @@ func validateDataGitlabGroupHooks_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGitlabGroupHooks_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGitlabGroupHooks_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupHooks) validateSetGroupParameters(val *string) error {
 	return nil
 }

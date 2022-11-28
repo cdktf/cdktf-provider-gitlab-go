@@ -26,6 +26,7 @@ type DataGitlabGroup interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	ExtraSharedRunnersMinutesLimit() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,6 +50,7 @@ type DataGitlabGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MembershipLock() cdktf.IResolvable
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -63,6 +65,7 @@ type DataGitlabGroup interface {
 	RawOverrides() interface{}
 	RequestAccessEnabled() cdktf.IResolvable
 	RunnersToken() *string
+	SharedRunnersMinutesLimit() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -172,6 +175,16 @@ func (j *jsiiProxy_DataGitlabGroup) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroup) ExtraSharedRunnersMinutesLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"extraSharedRunnersMinutesLimit",
 		&returns,
 	)
 	return returns
@@ -297,6 +310,16 @@ func (j *jsiiProxy_DataGitlabGroup) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabGroup) MembershipLock() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membershipLock",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabGroup) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -382,6 +405,16 @@ func (j *jsiiProxy_DataGitlabGroup) RunnersToken() *string {
 	_jsii_.Get(
 		j,
 		"runnersToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroup) SharedRunnersMinutesLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sharedRunnersMinutesLimit",
 		&returns,
 	)
 	return returns

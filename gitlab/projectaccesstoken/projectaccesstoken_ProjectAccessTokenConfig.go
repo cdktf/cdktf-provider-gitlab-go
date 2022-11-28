@@ -27,7 +27,7 @@ type ProjectAccessTokenConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#project ProjectAccessToken#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Valid values: `api`, `read_api`, `read_repository`, `write_repository`.
+	// Valid values: `api`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#scopes ProjectAccessToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`

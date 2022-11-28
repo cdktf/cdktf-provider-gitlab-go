@@ -465,6 +465,10 @@ type ApplicationSettingsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
 	GravatarEnabled interface{} `field:"optional" json:"gravatarEnabled" yaml:"gravatarEnabled"`
+	// Prevent overrides of default branch protection.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+	GroupOwnersCanManageDefaultBranchProtection interface{} `field:"optional" json:"groupOwnersCanManageDefaultBranchProtection" yaml:"groupOwnersCanManageDefaultBranchProtection"`
 	// Create new projects using hashed storage paths: Enable immutable, hash-based paths and repository names to store repositories on disk.
 	//
 	// This prevents repositories from having to be moved or renamed when the Project URL changes and may improve disk I/O performance. (Always enabled in GitLab versions 13.0 and later, configuration is scheduled for removal in 14.0).

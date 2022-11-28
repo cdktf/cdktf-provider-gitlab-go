@@ -29,7 +29,7 @@ type UserSshkeyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#title UserSshkey#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// The ID of the user to add the ssh key to.
+	// The ID or username of the user.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#user_id UserSshkey#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`

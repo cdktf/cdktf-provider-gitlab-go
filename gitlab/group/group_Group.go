@@ -40,6 +40,9 @@ type Group interface {
 	EmailsDisabled() interface{}
 	SetEmailsDisabled(val interface{})
 	EmailsDisabledInput() interface{}
+	ExtraSharedRunnersMinutesLimit() *float64
+	SetExtraSharedRunnersMinutesLimit(val *float64)
+	ExtraSharedRunnersMinutesLimitInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,6 +63,9 @@ type Group interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MembershipLock() interface{}
+	SetMembershipLock(val interface{})
+	MembershipLockInput() interface{}
 	MentionsDisabled() interface{}
 	SetMentionsDisabled(val interface{})
 	MentionsDisabledInput() interface{}
@@ -97,6 +103,9 @@ type Group interface {
 	SetRequireTwoFactorAuthentication(val interface{})
 	RequireTwoFactorAuthenticationInput() interface{}
 	RunnersToken() *string
+	SharedRunnersMinutesLimit() *float64
+	SetSharedRunnersMinutesLimit(val *float64)
+	SharedRunnersMinutesLimitInput() *float64
 	ShareWithGroupLock() interface{}
 	SetShareWithGroupLock(val interface{})
 	ShareWithGroupLockInput() interface{}
@@ -145,8 +154,10 @@ type Group interface {
 	ResetDefaultBranchProtection()
 	ResetDescription()
 	ResetEmailsDisabled()
+	ResetExtraSharedRunnersMinutesLimit()
 	ResetId()
 	ResetLfsEnabled()
+	ResetMembershipLock()
 	ResetMentionsDisabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -156,6 +167,7 @@ type Group interface {
 	ResetProjectCreationLevel()
 	ResetRequestAccessEnabled()
 	ResetRequireTwoFactorAuthentication()
+	ResetSharedRunnersMinutesLimit()
 	ResetShareWithGroupLock()
 	ResetSubgroupCreationLevel()
 	ResetTwoFactorGracePeriod()
@@ -305,6 +317,26 @@ func (j *jsiiProxy_Group) EmailsDisabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) ExtraSharedRunnersMinutesLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"extraSharedRunnersMinutesLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ExtraSharedRunnersMinutesLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"extraSharedRunnersMinutesLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -400,6 +432,26 @@ func (j *jsiiProxy_Group) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) MembershipLock() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"membershipLock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) MembershipLockInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"membershipLockInput",
 		&returns,
 	)
 	return returns
@@ -610,6 +662,26 @@ func (j *jsiiProxy_Group) RunnersToken() *string {
 	_jsii_.Get(
 		j,
 		"runnersToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) SharedRunnersMinutesLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sharedRunnersMinutesLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) SharedRunnersMinutesLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sharedRunnersMinutesLimitInput",
 		&returns,
 	)
 	return returns
@@ -836,6 +908,17 @@ func (j *jsiiProxy_Group)SetEmailsDisabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetExtraSharedRunnersMinutesLimit(val *float64) {
+	if err := j.validateSetExtraSharedRunnersMinutesLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extraSharedRunnersMinutesLimit",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -873,6 +956,17 @@ func (j *jsiiProxy_Group)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetMembershipLock(val interface{}) {
+	if err := j.validateSetMembershipLockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"membershipLock",
 		val,
 	)
 }
@@ -980,6 +1074,17 @@ func (j *jsiiProxy_Group)SetRequireTwoFactorAuthentication(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requireTwoFactorAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetSharedRunnersMinutesLimit(val *float64) {
+	if err := j.validateSetSharedRunnersMinutesLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedRunnersMinutesLimit",
 		val,
 	)
 }
@@ -1326,6 +1431,14 @@ func (g *jsiiProxy_Group) ResetEmailsDisabled() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetExtraSharedRunnersMinutesLimit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExtraSharedRunnersMinutesLimit",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1338,6 +1451,14 @@ func (g *jsiiProxy_Group) ResetLfsEnabled() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLfsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetMembershipLock() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMembershipLock",
 		nil, // no parameters
 	)
 }
@@ -1394,6 +1515,14 @@ func (g *jsiiProxy_Group) ResetRequireTwoFactorAuthentication() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequireTwoFactorAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetSharedRunnersMinutesLimit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharedRunnersMinutesLimit",
 		nil, // no parameters
 	)
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_Group) validateSetEmailsDisabledParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetExtraSharedRunnersMinutesLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_Group) validateSetLfsEnabledParameters(val interface{}) error
 }
 
 func (j *jsiiProxy_Group) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetMembershipLockParameters(val interface{}) error {
 	return nil
 }
 
@@ -129,6 +137,10 @@ func (j *jsiiProxy_Group) validateSetRequestAccessEnabledParameters(val interfac
 }
 
 func (j *jsiiProxy_Group) validateSetRequireTwoFactorAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetSharedRunnersMinutesLimitParameters(val *float64) error {
 	return nil
 }
 

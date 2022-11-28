@@ -166,7 +166,7 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#merge_commit_template Project#merge_commit_template}
 	MergeCommitTemplate *string `field:"optional" json:"mergeCommitTemplate" yaml:"mergeCommitTemplate"`
-	// Set to `ff` to create fast-forward merges.
+	// Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#merge_method Project#merge_method}
 	MergeMethod *string `field:"optional" json:"mergeMethod" yaml:"mergeMethod"`
@@ -234,7 +234,7 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#path Project#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
-	// Enable pipelines for the project.
+	// Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#pipelines_enabled Project#pipelines_enabled}
 	PipelinesEnabled interface{} `field:"optional" json:"pipelinesEnabled" yaml:"pipelinesEnabled"`

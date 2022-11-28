@@ -472,6 +472,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetGravatarEnabledParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetGroupOwnersCanManageDefaultBranchProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetHashedStorageEnabledParameters(val interface{}) error {
 	return nil
 }

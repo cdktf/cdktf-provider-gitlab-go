@@ -43,7 +43,7 @@ type BranchProtectionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allow_force_push BranchProtection#allow_force_push}
 	AllowForcePush interface{} `field:"optional" json:"allowForcePush" yaml:"allowForcePush"`
-	// Can be set to true to require code owner approval before merging.
+	// Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 	CodeOwnerApprovalRequired interface{} `field:"optional" json:"codeOwnerApprovalRequired" yaml:"codeOwnerApprovalRequired"`

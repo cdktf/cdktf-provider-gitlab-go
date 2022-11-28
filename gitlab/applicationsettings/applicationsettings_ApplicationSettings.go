@@ -339,6 +339,9 @@ type ApplicationSettings interface {
 	GravatarEnabled() interface{}
 	SetGravatarEnabled(val interface{})
 	GravatarEnabledInput() interface{}
+	GroupOwnersCanManageDefaultBranchProtection() interface{}
+	SetGroupOwnersCanManageDefaultBranchProtection(val interface{})
+	GroupOwnersCanManageDefaultBranchProtectionInput() interface{}
 	HashedStorageEnabled() interface{}
 	SetHashedStorageEnabled(val interface{})
 	HashedStorageEnabledInput() interface{}
@@ -907,6 +910,7 @@ type ApplicationSettings interface {
 	ResetGrafanaEnabled()
 	ResetGrafanaUrl()
 	ResetGravatarEnabled()
+	ResetGroupOwnersCanManageDefaultBranchProtection()
 	ResetHashedStorageEnabled()
 	ResetHelpPageHideCommercialContent()
 	ResetHelpPageSupportUrl()
@@ -3160,6 +3164,26 @@ func (j *jsiiProxy_ApplicationSettings) GravatarEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"gravatarEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GroupOwnersCanManageDefaultBranchProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"groupOwnersCanManageDefaultBranchProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GroupOwnersCanManageDefaultBranchProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"groupOwnersCanManageDefaultBranchProtectionInput",
 		&returns,
 	)
 	return returns
@@ -7221,6 +7245,17 @@ func (j *jsiiProxy_ApplicationSettings)SetGravatarEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetGroupOwnersCanManageDefaultBranchProtection(val interface{}) {
+	if err := j.validateSetGroupOwnersCanManageDefaultBranchProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupOwnersCanManageDefaultBranchProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetHashedStorageEnabled(val interface{}) {
 	if err := j.validateSetHashedStorageEnabledParameters(val); err != nil {
 		panic(err)
@@ -9861,6 +9896,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetGravatarEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGravatarEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGroupOwnersCanManageDefaultBranchProtection() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGroupOwnersCanManageDefaultBranchProtection",
 		nil, // no parameters
 	)
 }

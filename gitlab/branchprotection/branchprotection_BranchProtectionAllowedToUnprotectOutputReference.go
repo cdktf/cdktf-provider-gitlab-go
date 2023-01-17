@@ -2,9 +2,9 @@ package branchprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v4/branchprotection/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/branchprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

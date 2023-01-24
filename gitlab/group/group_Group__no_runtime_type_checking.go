@@ -68,6 +68,14 @@ func (j *jsiiProxy_Group) validateSetAutoDevopsEnabledParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAvatarParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAvatarHashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -89,6 +97,10 @@ func (j *jsiiProxy_Group) validateSetExtraSharedRunnersMinutesLimitParameters(va
 }
 
 func (j *jsiiProxy_Group) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetIpRestrictionRangesParameters(val *[]*string) error {
 	return nil
 }
 

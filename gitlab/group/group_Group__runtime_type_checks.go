@@ -155,6 +155,22 @@ func (j *jsiiProxy_Group) validateSetAutoDevopsEnabledParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAvatarParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAvatarHashParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -233,6 +249,14 @@ func (j *jsiiProxy_Group) validateSetExtraSharedRunnersMinutesLimitParameters(va
 }
 
 func (j *jsiiProxy_Group) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetIpRestrictionRangesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

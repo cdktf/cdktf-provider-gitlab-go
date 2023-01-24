@@ -60,6 +60,12 @@ type RepositoryFileConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Enable overwriting existing files, defaults to `false`.
+	//
+	// This attribute is only used during `create` and must be use carefully. We suggest to use `imports` whenever possible and limit the use of this attribute for when the project was imported on the same `apply`. This attribute is not supported during a resource import.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+	OverwriteOnCreate interface{} `field:"optional" json:"overwriteOnCreate" yaml:"overwriteOnCreate"`
 	// Name of the branch to start the new commit from.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#start_branch RepositoryFile#start_branch}

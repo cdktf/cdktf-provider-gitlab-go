@@ -31,6 +31,10 @@ type ProjectApprovalRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule#project ProjectApprovalRule#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
+	// When this flag is set, the default `any_approver` rule will not be imported if present.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
+	DisableImportingDefaultAnyApproverRuleOnCreate interface{} `field:"optional" json:"disableImportingDefaultAnyApproverRuleOnCreate" yaml:"disableImportingDefaultAnyApproverRuleOnCreate"`
 	// A list of group IDs whose members can approve of the merge request.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule#group_ids ProjectApprovalRule#group_ids}

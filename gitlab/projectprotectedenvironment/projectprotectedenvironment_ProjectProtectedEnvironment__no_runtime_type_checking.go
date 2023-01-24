@@ -76,10 +76,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetEnvironmentParameters
 	return nil
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

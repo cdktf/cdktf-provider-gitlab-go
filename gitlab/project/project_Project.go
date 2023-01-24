@@ -2,10 +2,10 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/project/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -39,6 +39,13 @@ type Project interface {
 	AutoDevopsEnabled() interface{}
 	SetAutoDevopsEnabled(val interface{})
 	AutoDevopsEnabledInput() interface{}
+	Avatar() *string
+	SetAvatar(val *string)
+	AvatarHash() *string
+	SetAvatarHash(val *string)
+	AvatarHashInput() *string
+	AvatarInput() *string
+	AvatarUrl() *string
 	BuildCoverageRegex() *string
 	SetBuildCoverageRegex(val *string)
 	BuildCoverageRegexInput() *string
@@ -62,6 +69,9 @@ type Project interface {
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
+	CiSeparatedCaches() interface{}
+	SetCiSeparatedCaches(val interface{})
+	CiSeparatedCachesInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -100,6 +110,9 @@ type Project interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForkedFromProjectId() *float64
+	SetForkedFromProjectId(val *float64)
+	ForkedFromProjectIdInput() *float64
 	ForkingAccessLevel() *string
 	SetForkingAccessLevel(val *string)
 	ForkingAccessLevelInput() *string
@@ -166,6 +179,9 @@ type Project interface {
 	MirrorTriggerBuilds() interface{}
 	SetMirrorTriggerBuilds(val interface{})
 	MirrorTriggerBuildsInput() interface{}
+	MrDefaultTargetSelf() interface{}
+	SetMrDefaultTargetSelf(val interface{})
+	MrDefaultTargetSelfInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -235,6 +251,9 @@ type Project interface {
 	ResolveOutdatedDiffDiscussions() interface{}
 	SetResolveOutdatedDiffDiscussions(val interface{})
 	ResolveOutdatedDiffDiscussionsInput() interface{}
+	RestrictUserDefinedVariables() interface{}
+	SetRestrictUserDefinedVariables(val interface{})
+	RestrictUserDefinedVariablesInput() interface{}
 	RunnersToken() *string
 	SecurityAndComplianceAccessLevel() *string
 	SetSecurityAndComplianceAccessLevel(val *string)
@@ -328,6 +347,8 @@ type Project interface {
 	ResetAutocloseReferencedIssues()
 	ResetAutoDevopsDeployStrategy()
 	ResetAutoDevopsEnabled()
+	ResetAvatar()
+	ResetAvatarHash()
 	ResetBuildCoverageRegex()
 	ResetBuildGitStrategy()
 	ResetBuildsAccessLevel()
@@ -335,6 +356,7 @@ type Project interface {
 	ResetCiConfigPath()
 	ResetCiDefaultGitDepth()
 	ResetCiForwardDeploymentEnabled()
+	ResetCiSeparatedCaches()
 	ResetContainerExpirationPolicy()
 	ResetContainerRegistryAccessLevel()
 	ResetContainerRegistryEnabled()
@@ -342,6 +364,7 @@ type Project interface {
 	ResetDescription()
 	ResetEmailsDisabled()
 	ResetExternalAuthorizationClassificationLabel()
+	ResetForkedFromProjectId()
 	ResetForkingAccessLevel()
 	ResetGroupWithProjectTemplatesId()
 	ResetId()
@@ -361,6 +384,7 @@ type Project interface {
 	ResetMirror()
 	ResetMirrorOverwritesDivergedBranches()
 	ResetMirrorTriggerBuilds()
+	ResetMrDefaultTargetSelf()
 	ResetNamespaceId()
 	ResetOnlyAllowMergeIfAllDiscussionsAreResolved()
 	ResetOnlyAllowMergeIfPipelineSucceeds()
@@ -382,6 +406,7 @@ type Project interface {
 	ResetRequestAccessEnabled()
 	ResetRequirementsAccessLevel()
 	ResetResolveOutdatedDiffDiscussions()
+	ResetRestrictUserDefinedVariables()
 	ResetSecurityAndComplianceAccessLevel()
 	ResetSharedRunnersEnabled()
 	ResetSkipWaitForDefaultBranchProtection()
@@ -593,6 +618,56 @@ func (j *jsiiProxy_Project) AutoDevopsEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) Avatar() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatar",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AvatarHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarHash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AvatarHashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarHashInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AvatarInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AvatarUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) BuildCoverageRegex() *string {
 	var returns *string
 	_jsii_.Get(
@@ -738,6 +813,26 @@ func (j *jsiiProxy_Project) CiForwardDeploymentEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiSeparatedCaches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciSeparatedCaches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiSeparatedCachesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciSeparatedCachesInput",
 		&returns,
 	)
 	return returns
@@ -928,6 +1023,26 @@ func (j *jsiiProxy_Project) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ForkedFromProjectId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forkedFromProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ForkedFromProjectIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forkedFromProjectIdInput",
 		&returns,
 	)
 	return returns
@@ -1348,6 +1463,26 @@ func (j *jsiiProxy_Project) MirrorTriggerBuildsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"mirrorTriggerBuildsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) MrDefaultTargetSelf() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mrDefaultTargetSelf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) MrDefaultTargetSelfInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mrDefaultTargetSelfInput",
 		&returns,
 	)
 	return returns
@@ -1778,6 +1913,26 @@ func (j *jsiiProxy_Project) ResolveOutdatedDiffDiscussionsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"resolveOutdatedDiffDiscussionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) RestrictUserDefinedVariables() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictUserDefinedVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) RestrictUserDefinedVariablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictUserDefinedVariablesInput",
 		&returns,
 	)
 	return returns
@@ -2292,6 +2447,28 @@ func (j *jsiiProxy_Project)SetAutoDevopsEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetAvatar(val *string) {
+	if err := j.validateSetAvatarParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"avatar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetAvatarHash(val *string) {
+	if err := j.validateSetAvatarHashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"avatarHash",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetBuildCoverageRegex(val *string) {
 	if err := j.validateSetBuildCoverageRegexParameters(val); err != nil {
 		panic(err)
@@ -2365,6 +2542,17 @@ func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiSeparatedCaches(val interface{}) {
+	if err := j.validateSetCiSeparatedCachesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciSeparatedCaches",
 		val,
 	)
 }
@@ -2466,6 +2654,17 @@ func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetForkedFromProjectId(val *float64) {
+	if err := j.validateSetForkedFromProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forkedFromProjectId",
 		val,
 	)
 }
@@ -2690,6 +2889,17 @@ func (j *jsiiProxy_Project)SetMirrorTriggerBuilds(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetMrDefaultTargetSelf(val interface{}) {
+	if err := j.validateSetMrDefaultTargetSelfParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mrDefaultTargetSelf",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -2903,6 +3113,17 @@ func (j *jsiiProxy_Project)SetResolveOutdatedDiffDiscussions(val interface{}) {
 	_jsii_.Set(
 		j,
 		"resolveOutdatedDiffDiscussions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetRestrictUserDefinedVariables(val interface{}) {
+	if err := j.validateSetRestrictUserDefinedVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restrictUserDefinedVariables",
 		val,
 	)
 }
@@ -3443,6 +3664,22 @@ func (p *jsiiProxy_Project) ResetAutoDevopsEnabled() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetAvatar() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvatar",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetAvatarHash() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAvatarHash",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetBuildCoverageRegex() {
 	_jsii_.InvokeVoid(
 		p,
@@ -3499,6 +3736,14 @@ func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetCiSeparatedCaches() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiSeparatedCaches",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetContainerExpirationPolicy() {
 	_jsii_.InvokeVoid(
 		p,
@@ -3551,6 +3796,14 @@ func (p *jsiiProxy_Project) ResetExternalAuthorizationClassificationLabel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExternalAuthorizationClassificationLabel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetForkedFromProjectId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetForkedFromProjectId",
 		nil, // no parameters
 	)
 }
@@ -3707,6 +3960,14 @@ func (p *jsiiProxy_Project) ResetMirrorTriggerBuilds() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetMrDefaultTargetSelf() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMrDefaultTargetSelf",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetNamespaceId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -3855,6 +4116,14 @@ func (p *jsiiProxy_Project) ResetResolveOutdatedDiffDiscussions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetResolveOutdatedDiffDiscussions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetRestrictUserDefinedVariables() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRestrictUserDefinedVariables",
 		nil, // no parameters
 	)
 }

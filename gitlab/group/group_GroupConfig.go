@@ -31,6 +31,16 @@ type GroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#auto_devops_enabled Group#auto_devops_enabled}
 	AutoDevopsEnabled interface{} `field:"optional" json:"autoDevopsEnabled" yaml:"autoDevopsEnabled"`
+	// A local path to the avatar image to upload. **Note**: not available for imported resources.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#avatar Group#avatar}
+	Avatar *string `field:"optional" json:"avatar" yaml:"avatar"`
+	// The hash of the avatar image.
+	//
+	// Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#avatar_hash Group#avatar_hash}
+	AvatarHash *string `field:"optional" json:"avatarHash" yaml:"avatarHash"`
 	// Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#default_branch_protection Group#default_branch_protection}
@@ -52,6 +62,12 @@ type GroupConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// A list of IP addresses or subnet masks to restrict group access.
+	//
+	// Will be concatenated together into a comma separated string. Only allowed on top level groups.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#ip_restriction_ranges Group#ip_restriction_ranges}
+	IpRestrictionRanges *[]*string `field:"optional" json:"ipRestrictionRanges" yaml:"ipRestrictionRanges"`
 	// Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#lfs_enabled Group#lfs_enabled}

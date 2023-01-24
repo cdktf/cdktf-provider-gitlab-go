@@ -108,6 +108,14 @@ func (j *jsiiProxy_Project) validateSetAutoDevopsEnabledParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetAvatarParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetAvatarHashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetBuildCoverageRegexParameters(val *string) error {
 	return nil
 }
@@ -136,6 +144,10 @@ func (j *jsiiProxy_Project) validateSetCiForwardDeploymentEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetCiSeparatedCachesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -161,6 +173,10 @@ func (j *jsiiProxy_Project) validateSetEmailsDisabledParameters(val interface{})
 }
 
 func (j *jsiiProxy_Project) validateSetExternalAuthorizationClassificationLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetForkedFromProjectIdParameters(val *float64) error {
 	return nil
 }
 
@@ -244,6 +260,10 @@ func (j *jsiiProxy_Project) validateSetMirrorTriggerBuildsParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetMrDefaultTargetSelfParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -317,6 +337,10 @@ func (j *jsiiProxy_Project) validateSetRequirementsAccessLevelParameters(val *st
 }
 
 func (j *jsiiProxy_Project) validateSetResolveOutdatedDiffDiscussionsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetRestrictUserDefinedVariablesParameters(val interface{}) error {
 	return nil
 }
 

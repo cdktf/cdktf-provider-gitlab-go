@@ -2,9 +2,9 @@ package datagitlabprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/datagitlabprojects/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

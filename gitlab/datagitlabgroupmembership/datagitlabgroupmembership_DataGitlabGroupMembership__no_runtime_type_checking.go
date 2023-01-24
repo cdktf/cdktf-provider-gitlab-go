@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroupMembership) validateSetInheritedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupMembership) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

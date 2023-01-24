@@ -2,10 +2,10 @@ package repositoryfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/repositoryfile/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/repositoryfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,9 @@ type RepositoryFile interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OverwriteOnCreate() interface{}
+	SetOverwriteOnCreate(val interface{})
+	OverwriteOnCreateInput() interface{}
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -131,6 +134,7 @@ type RepositoryFile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverwriteOnCreate()
 	ResetStartBranch()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -468,6 +472,26 @@ func (j *jsiiProxy_RepositoryFile) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RepositoryFile) OverwriteOnCreate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overwriteOnCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) OverwriteOnCreateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overwriteOnCreateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RepositoryFile) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -768,6 +792,17 @@ func (j *jsiiProxy_RepositoryFile)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetOverwriteOnCreate(val interface{}) {
+	if err := j.validateSetOverwriteOnCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overwriteOnCreate",
 		val,
 	)
 }
@@ -1126,6 +1161,14 @@ func (r *jsiiProxy_RepositoryFile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetOverwriteOnCreate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverwriteOnCreate",
 		nil, // no parameters
 	)
 }

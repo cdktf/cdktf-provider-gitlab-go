@@ -2,10 +2,10 @@ package datagitlabgroupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/datagitlabgroupmembership/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -44,6 +44,9 @@ type DataGitlabGroupMembership interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Inherited() interface{}
+	SetInherited(val interface{})
+	InheritedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,6 +95,7 @@ type DataGitlabGroupMembership interface {
 	ResetFullPath()
 	ResetGroupId()
 	ResetId()
+	ResetInherited()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_DataGitlabGroupMembership) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupMembership) Inherited() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupMembership) InheritedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritedInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +458,17 @@ func (j *jsiiProxy_DataGitlabGroupMembership)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabGroupMembership)SetInherited(val interface{}) {
+	if err := j.validateSetInheritedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inherited",
 		val,
 	)
 }
@@ -751,6 +786,14 @@ func (d *jsiiProxy_DataGitlabGroupMembership) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabGroupMembership) ResetInherited() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInherited",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_RepositoryFile) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryFile) validateSetOverwriteOnCreateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetProjectParameters(val *string) error {
 	return nil
 }

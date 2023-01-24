@@ -72,6 +72,10 @@ func (j *jsiiProxy_ProjectApprovalRule) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ProjectApprovalRule) validateSetDisableImportingDefaultAnyApproverRuleOnCreateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectApprovalRule) validateSetGroupIdsParameters(val *[]*float64) error {
 	return nil
 }

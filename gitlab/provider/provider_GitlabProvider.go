@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -71,6 +71,7 @@ type GitlabProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -612,6 +613,14 @@ func (g *jsiiProxy_GitlabProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitlabProvider) ResetToken() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetToken",
 		nil, // no parameters
 	)
 }

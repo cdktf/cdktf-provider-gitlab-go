@@ -52,7 +52,9 @@ type DataGitlabProjectsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#min_access_level DataGitlabProjects#min_access_level}
 	MinAccessLevel *float64 `field:"optional" json:"minAccessLevel" yaml:"minAccessLevel"`
-	// Return projects ordered by `id`, `name`, `path`, `created_at`, `updated_at`, or `last_activity_at` fields. Default is `created_at`.
+	// Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated_at`, `last_activity_at`, `similarity`, `repository_size`, `storage_size`, `packages_size`, `wiki_size`.
+	//
+	// Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#order_by DataGitlabProjects#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`

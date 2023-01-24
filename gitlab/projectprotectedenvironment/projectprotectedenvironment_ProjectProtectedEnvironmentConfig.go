@@ -19,10 +19,6 @@ type ProjectProtectedEnvironmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// deploy_access_levels block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
-	DeployAccessLevels interface{} `field:"required" json:"deployAccessLevels" yaml:"deployAccessLevels"`
 	// The name of the environment.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#environment ProjectProtectedEnvironment#environment}
@@ -31,11 +27,10 @@ type ProjectProtectedEnvironmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#project ProjectProtectedEnvironment#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#id ProjectProtectedEnvironment#id}.
+	// deploy_access_levels block.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+	DeployAccessLevels interface{} `field:"optional" json:"deployAccessLevels" yaml:"deployAccessLevels"`
 	// The number of approvals required to deploy to this environment.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}

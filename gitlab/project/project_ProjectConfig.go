@@ -67,6 +67,16 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#auto_devops_enabled Project#auto_devops_enabled}
 	AutoDevopsEnabled interface{} `field:"optional" json:"autoDevopsEnabled" yaml:"autoDevopsEnabled"`
+	// A local path to the avatar image to upload. **Note**: not available for imported resources.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#avatar Project#avatar}
+	Avatar *string `field:"optional" json:"avatar" yaml:"avatar"`
+	// The hash of the avatar image.
+	//
+	// Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#avatar_hash Project#avatar_hash}
+	AvatarHash *string `field:"optional" json:"avatarHash" yaml:"avatarHash"`
 	// Test coverage parsing for the project. This is deprecated feature in GitLab 15.0.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#build_coverage_regex Project#build_coverage_regex}
@@ -95,6 +105,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
 	CiForwardDeploymentEnabled interface{} `field:"optional" json:"ciForwardDeploymentEnabled" yaml:"ciForwardDeploymentEnabled"`
+	// Use separate caches for protected branches.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_separated_caches Project#ci_separated_caches}
+	CiSeparatedCaches interface{} `field:"optional" json:"ciSeparatedCaches" yaml:"ciSeparatedCaches"`
 	// container_expiration_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#container_expiration_policy Project#container_expiration_policy}
@@ -123,6 +137,12 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
 	ExternalAuthorizationClassificationLabel *string `field:"optional" json:"externalAuthorizationClassificationLabel" yaml:"externalAuthorizationClassificationLabel"`
+	// The id of the project to fork.
+	//
+	// During create the project is forked and during an update the fork relation is changed.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#forked_from_project_id Project#forked_from_project_id}
+	ForkedFromProjectId *float64 `field:"optional" json:"forkedFromProjectId" yaml:"forkedFromProjectId"`
 	// Set the forking access level. Valid values are `disabled`, `private`, `enabled`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#forking_access_level Project#forking_access_level}
@@ -139,6 +159,8 @@ type ProjectConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Git URL to a repository to be imported.
+	//
+	// Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
 	ImportUrl *string `field:"optional" json:"importUrl" yaml:"importUrl"`
@@ -202,6 +224,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#mirror_trigger_builds Project#mirror_trigger_builds}
 	MirrorTriggerBuilds interface{} `field:"optional" json:"mirrorTriggerBuilds" yaml:"mirrorTriggerBuilds"`
+	// For forked projects, target merge requests to this project. If false, the target will be the upstream project.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#mr_default_target_self Project#mr_default_target_self}
+	MrDefaultTargetSelf interface{} `field:"optional" json:"mrDefaultTargetSelf" yaml:"mrDefaultTargetSelf"`
 	// The namespace (group or user) of the project. Defaults to your user.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#namespace_id Project#namespace_id}
@@ -274,6 +300,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
 	ResolveOutdatedDiffDiscussions interface{} `field:"optional" json:"resolveOutdatedDiffDiscussions" yaml:"resolveOutdatedDiffDiscussions"`
+	// Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
+	RestrictUserDefinedVariables interface{} `field:"optional" json:"restrictUserDefinedVariables" yaml:"restrictUserDefinedVariables"`
 	// Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#security_and_compliance_access_level Project#security_and_compliance_access_level}

@@ -2,10 +2,10 @@ package datagitlabproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/datagitlabproject/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,6 +27,7 @@ type DataGitlabProject interface {
 	CiDefaultGitDepth() *float64
 	SetCiDefaultGitDepth(val *float64)
 	CiDefaultGitDepthInput() *float64
+	CiSeparatedCaches() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerExpirationPolicy() DataGitlabProjectContainerExpirationPolicyList
@@ -95,6 +96,7 @@ type DataGitlabProject interface {
 	RequestAccessEnabled() cdktf.IResolvable
 	RequirementsAccessLevel() *string
 	ResolveOutdatedDiffDiscussions() cdktf.IResolvable
+	RestrictUserDefinedVariables() cdktf.IResolvable
 	RunnersToken() *string
 	SecurityAndComplianceAccessLevel() *string
 	SnippetsAccessLevel() *string
@@ -285,6 +287,16 @@ func (j *jsiiProxy_DataGitlabProject) CiDefaultGitDepthInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ciDefaultGitDepthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiSeparatedCaches() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ciSeparatedCaches",
 		&returns,
 	)
 	return returns
@@ -735,6 +747,16 @@ func (j *jsiiProxy_DataGitlabProject) ResolveOutdatedDiffDiscussions() cdktf.IRe
 	_jsii_.Get(
 		j,
 		"resolveOutdatedDiffDiscussions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) RestrictUserDefinedVariables() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictUserDefinedVariables",
 		&returns,
 	)
 	return returns

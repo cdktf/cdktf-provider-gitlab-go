@@ -2,10 +2,10 @@ package projectapprovalrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/projectapprovalrule/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,9 @@ type ProjectApprovalRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableImportingDefaultAnyApproverRuleOnCreate() interface{}
+	SetDisableImportingDefaultAnyApproverRuleOnCreate(val interface{})
+	DisableImportingDefaultAnyApproverRuleOnCreateInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -107,6 +110,7 @@ type ProjectApprovalRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDisableImportingDefaultAnyApproverRuleOnCreate()
 	ResetGroupIds()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -195,6 +199,26 @@ func (j *jsiiProxy_ProjectApprovalRule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectApprovalRule) DisableImportingDefaultAnyApproverRuleOnCreate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableImportingDefaultAnyApproverRuleOnCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectApprovalRule) DisableImportingDefaultAnyApproverRuleOnCreateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableImportingDefaultAnyApproverRuleOnCreateInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +538,17 @@ func (j *jsiiProxy_ProjectApprovalRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectApprovalRule)SetDisableImportingDefaultAnyApproverRuleOnCreate(val interface{}) {
+	if err := j.validateSetDisableImportingDefaultAnyApproverRuleOnCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableImportingDefaultAnyApproverRuleOnCreate",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (p *jsiiProxy_ProjectApprovalRule) OverrideLogicalId(newLogicalId *string) 
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_ProjectApprovalRule) ResetDisableImportingDefaultAnyApproverRuleOnCreate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisableImportingDefaultAnyApproverRuleOnCreate",
+		nil, // no parameters
 	)
 }
 

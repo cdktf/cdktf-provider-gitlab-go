@@ -2,10 +2,10 @@ package group
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/group/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/group/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,6 +15,13 @@ type Group interface {
 	AutoDevopsEnabled() interface{}
 	SetAutoDevopsEnabled(val interface{})
 	AutoDevopsEnabledInput() interface{}
+	Avatar() *string
+	SetAvatar(val *string)
+	AvatarHash() *string
+	SetAvatarHash(val *string)
+	AvatarHashInput() *string
+	AvatarInput() *string
+	AvatarUrl() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -56,6 +63,9 @@ type Group interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpRestrictionRanges() *[]*string
+	SetIpRestrictionRanges(val *[]*string)
+	IpRestrictionRangesInput() *[]*string
 	LfsEnabled() interface{}
 	SetLfsEnabled(val interface{})
 	LfsEnabledInput() interface{}
@@ -151,11 +161,14 @@ type Group interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutoDevopsEnabled()
+	ResetAvatar()
+	ResetAvatarHash()
 	ResetDefaultBranchProtection()
 	ResetDescription()
 	ResetEmailsDisabled()
 	ResetExtraSharedRunnersMinutesLimit()
 	ResetId()
+	ResetIpRestrictionRanges()
 	ResetLfsEnabled()
 	ResetMembershipLock()
 	ResetMentionsDisabled()
@@ -202,6 +215,56 @@ func (j *jsiiProxy_Group) AutoDevopsEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"autoDevopsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) Avatar() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatar",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AvatarHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarHash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AvatarHashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarHashInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AvatarInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AvatarUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"avatarUrl",
 		&returns,
 	)
 	return returns
@@ -402,6 +465,26 @@ func (j *jsiiProxy_Group) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) IpRestrictionRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipRestrictionRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) IpRestrictionRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipRestrictionRangesInput",
 		&returns,
 	)
 	return returns
@@ -848,6 +931,28 @@ func (j *jsiiProxy_Group)SetAutoDevopsEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetAvatar(val *string) {
+	if err := j.validateSetAvatarParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"avatar",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAvatarHash(val *string) {
+	if err := j.validateSetAvatarHashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"avatarHash",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -934,6 +1039,17 @@ func (j *jsiiProxy_Group)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetIpRestrictionRanges(val *[]*string) {
+	if err := j.validateSetIpRestrictionRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipRestrictionRanges",
 		val,
 	)
 }
@@ -1407,6 +1523,22 @@ func (g *jsiiProxy_Group) ResetAutoDevopsEnabled() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetAvatar() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAvatar",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAvatarHash() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAvatarHash",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetDefaultBranchProtection() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1443,6 +1575,14 @@ func (g *jsiiProxy_Group) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetIpRestrictionRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpRestrictionRanges",
 		nil, // no parameters
 	)
 }

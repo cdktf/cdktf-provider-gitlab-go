@@ -2,12 +2,6 @@ package provider
 
 
 type GitlabProviderConfig struct {
-	// The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab.
-	//
-	// The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/ee/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#token GitlabProvider#token}
-	Token *string `field:"required" json:"token" yaml:"token"`
 	// Alias name.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#alias GitlabProvider#alias}
@@ -36,7 +30,7 @@ type GitlabProviderConfig struct {
 	ClientKey *string `field:"optional" json:"clientKey" yaml:"clientKey"`
 	// (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 	//
-	// Turn it off, to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
+	// Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#early_auth_check GitlabProvider#early_auth_check}
 	EarlyAuthCheck interface{} `field:"optional" json:"earlyAuthCheck" yaml:"earlyAuthCheck"`
@@ -44,5 +38,11 @@ type GitlabProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#insecure GitlabProvider#insecure}
 	Insecure interface{} `field:"optional" json:"insecure" yaml:"insecure"`
+	// The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab.
+	//
+	// The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/ee/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#token GitlabProvider#token}
+	Token *string `field:"optional" json:"token" yaml:"token"`
 }
 

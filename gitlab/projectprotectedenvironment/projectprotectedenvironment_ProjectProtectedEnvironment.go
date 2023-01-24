@@ -2,10 +2,10 @@ package projectprotectedenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v5/projectprotectedenvironment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectprotectedenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -42,8 +42,6 @@ type ProjectProtectedEnvironment interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -98,7 +96,7 @@ type ProjectProtectedEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDeployAccessLevels(value interface{})
-	ResetId()
+	ResetDeployAccessLevels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,16 +241,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectProtectedEnvironment) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -450,17 +438,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment)SetForEach(val cdktf.ITerraformIt
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectProtectedEnvironment)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -794,10 +771,10 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) PutDeployAccessLevels(value inte
 	)
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironment) ResetId() {
+func (p *jsiiProxy_ProjectProtectedEnvironment) ResetDeployAccessLevels() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetId",
+		"resetDeployAccessLevels",
 		nil, // no parameters
 	)
 }

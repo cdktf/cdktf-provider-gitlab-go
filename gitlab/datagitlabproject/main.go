@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpUrlToRepo", GoGetter: "HttpUrlToRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "importUrl", GoGetter: "ImportUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issuesAccessLevel", GoGetter: "IssuesAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "issuesEnabled", GoGetter: "IssuesEnabled"},

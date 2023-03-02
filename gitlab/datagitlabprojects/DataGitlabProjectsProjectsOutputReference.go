@@ -60,6 +60,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	Id() *float64
 	ImportError() *string
 	ImportStatus() *string
+	ImportUrl() *string
 	InternalValue() *DataGitlabProjectsProjects
 	SetInternalValue(val *DataGitlabProjectsProjects)
 	IssuesAccessLevel() *string
@@ -529,6 +530,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ImportStatus() *st
 	_jsii_.Get(
 		j,
 		"importStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ImportUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrl",
 		&returns,
 	)
 	return returns

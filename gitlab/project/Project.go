@@ -130,6 +130,12 @@ type Project interface {
 	ImportUrl() *string
 	SetImportUrl(val *string)
 	ImportUrlInput() *string
+	ImportUrlPassword() *string
+	SetImportUrlPassword(val *string)
+	ImportUrlPasswordInput() *string
+	ImportUrlUsername() *string
+	SetImportUrlUsername(val *string)
+	ImportUrlUsernameInput() *string
 	InitializeWithReadme() interface{}
 	SetInitializeWithReadme(val interface{})
 	InitializeWithReadmeInput() interface{}
@@ -369,6 +375,8 @@ type Project interface {
 	ResetGroupWithProjectTemplatesId()
 	ResetId()
 	ResetImportUrl()
+	ResetImportUrlPassword()
+	ResetImportUrlUsername()
 	ResetInitializeWithReadme()
 	ResetIssuesAccessLevel()
 	ResetIssuesEnabled()
@@ -1153,6 +1161,46 @@ func (j *jsiiProxy_Project) ImportUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"importUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ImportUrlPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrlPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ImportUrlPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrlPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ImportUrlUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrlUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ImportUrlUsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrlUsernameInput",
 		&returns,
 	)
 	return returns
@@ -2713,6 +2761,28 @@ func (j *jsiiProxy_Project)SetImportUrl(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetImportUrlPassword(val *string) {
+	if err := j.validateSetImportUrlPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importUrlPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetImportUrlUsername(val *string) {
+	if err := j.validateSetImportUrlUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importUrlUsername",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetInitializeWithReadme(val interface{}) {
 	if err := j.validateSetInitializeWithReadmeParameters(val); err != nil {
 		panic(err)
@@ -3836,6 +3906,22 @@ func (p *jsiiProxy_Project) ResetImportUrl() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetImportUrl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetImportUrlPassword() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetImportUrlPassword",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetImportUrlUsername() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetImportUrlUsername",
 		nil, // no parameters
 	)
 }

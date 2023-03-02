@@ -57,6 +57,7 @@ type DataGitlabProject interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportUrl() *string
 	IssuesAccessLevel() *string
 	IssuesEnabled() cdktf.IResolvable
 	LfsEnabled() cdktf.IResolvable
@@ -457,6 +458,16 @@ func (j *jsiiProxy_DataGitlabProject) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) ImportUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importUrl",
 		&returns,
 	)
 	return returns

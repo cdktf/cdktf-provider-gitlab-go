@@ -160,10 +160,22 @@ type ProjectConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Git URL to a repository to be imported.
 	//
-	// Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
+	// Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
 	ImportUrl *string `field:"optional" json:"importUrl" yaml:"importUrl"`
+	// The password for the `import_url`.
+	//
+	// The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_password Project#import_url_password}
+	ImportUrlPassword *string `field:"optional" json:"importUrlPassword" yaml:"importUrlPassword"`
+	// The username for the `import_url`.
+	//
+	// The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
+	ImportUrlUsername *string `field:"optional" json:"importUrlUsername" yaml:"importUrlUsername"`
 	// Create main branch with first commit containing a README.md file.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#initialize_with_readme Project#initialize_with_readme}

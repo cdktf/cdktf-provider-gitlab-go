@@ -382,6 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "importError", GoGetter: "ImportError"},
 			_jsii_.MemberProperty{JsiiProperty: "importStatus", GoGetter: "ImportStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "importUrl", GoGetter: "ImportUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},

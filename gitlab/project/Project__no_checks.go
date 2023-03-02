@@ -196,6 +196,14 @@ func (j *jsiiProxy_Project) validateSetImportUrlParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetImportUrlPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetImportUrlUsernameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetInitializeWithReadmeParameters(val interface{}) error {
 	return nil
 }

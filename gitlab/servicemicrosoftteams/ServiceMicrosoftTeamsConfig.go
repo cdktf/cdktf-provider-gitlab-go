@@ -23,7 +23,7 @@ type ServiceMicrosoftTeamsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#project ServiceMicrosoftTeams#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// The Microsoft Teams webhook. For example, https://outlook.office.com/webhook/...
+	// The Microsoft Teams webhook (Example, https://outlook.office.com/webhook/...). This value cannot be imported.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
 	Webhook *string `field:"required" json:"webhook" yaml:"webhook"`

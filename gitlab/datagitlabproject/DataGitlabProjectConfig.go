@@ -23,7 +23,7 @@ type DataGitlabProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
 	CiDefaultGitDepth *float64 `field:"optional" json:"ciDefaultGitDepth" yaml:"ciDefaultGitDepth"`
-	// The integer or path with namespace that uniquely identifies the project within the gitlab install.
+	// The integer that uniquely identifies the project within the gitlab install.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#id DataGitlabProject#id}
 	//

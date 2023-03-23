@@ -172,7 +172,15 @@ func (j *jsiiProxy_Project) validateSetEmailsDisabledParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetEnvironmentsAccessLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetExternalAuthorizationClassificationLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetFeatureFlagsAccessLevelParameters(val *string) error {
 	return nil
 }
 
@@ -201,6 +209,10 @@ func (j *jsiiProxy_Project) validateSetImportUrlPasswordParameters(val *string) 
 }
 
 func (j *jsiiProxy_Project) validateSetImportUrlUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetInfrastructureAccessLevelParameters(val *string) error {
 	return nil
 }
 
@@ -268,6 +280,10 @@ func (j *jsiiProxy_Project) validateSetMirrorTriggerBuildsParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetMonitorAccessLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetMrDefaultTargetSelfParameters(val interface{}) error {
 	return nil
 }
@@ -321,6 +337,10 @@ func (j *jsiiProxy_Project) validateSetProvisionersParameters(val *[]interface{}
 }
 
 func (j *jsiiProxy_Project) validateSetPublicBuildsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetReleasesAccessLevelParameters(val *string) error {
 	return nil
 }
 

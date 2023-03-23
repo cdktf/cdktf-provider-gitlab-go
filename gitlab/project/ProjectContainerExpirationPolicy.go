@@ -16,7 +16,9 @@ type ProjectContainerExpirationPolicy struct {
 	KeepN *float64 `field:"optional" json:"keepN" yaml:"keepN"`
 	// The regular expression to match image names to delete.
 	//
-	// **Note**: the upstream API has some inconsistencies with the `name_regex` field here. It's basically unusable at the moment.
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex Project#name_regex}
+	NameRegex *string `field:"optional" json:"nameRegex" yaml:"nameRegex"`
+	// The regular expression to match image names to delete.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex_delete Project#name_regex_delete}
 	NameRegexDelete *string `field:"optional" json:"nameRegexDelete" yaml:"nameRegexDelete"`

@@ -38,9 +38,12 @@ type ProjectContainerExpirationPolicyOutputReference interface {
 	KeepN() *float64
 	SetKeepN(val *float64)
 	KeepNInput() *float64
+	NameRegex() *string
+	SetNameRegex(val *string)
 	NameRegexDelete() *string
 	SetNameRegexDelete(val *string)
 	NameRegexDeleteInput() *string
+	NameRegexInput() *string
 	NameRegexKeep() *string
 	SetNameRegexKeep(val *string)
 	NameRegexKeepInput() *string
@@ -83,6 +86,7 @@ type ProjectContainerExpirationPolicyOutputReference interface {
 	ResetCadence()
 	ResetEnabled()
 	ResetKeepN()
+	ResetNameRegex()
 	ResetNameRegexDelete()
 	ResetNameRegexKeep()
 	ResetOlderThan()
@@ -211,6 +215,16 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) KeepNInput()
 	return returns
 }
 
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) NameRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegex",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) NameRegexDelete() *string {
 	var returns *string
 	_jsii_.Get(
@@ -226,6 +240,16 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) NameRegexDel
 	_jsii_.Get(
 		j,
 		"nameRegexDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) NameRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegexInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +415,17 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetKeepN(val 
 	_jsii_.Set(
 		j,
 		"keepN",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference)SetNameRegex(val *string) {
+	if err := j.validateSetNameRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameRegex",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) ResetKeepN()
 	_jsii_.InvokeVoid(
 		p,
 		"resetKeepN",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) ResetNameRegex() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNameRegex",
 		nil, // no parameters
 	)
 }

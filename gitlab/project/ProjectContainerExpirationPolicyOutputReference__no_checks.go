@@ -72,6 +72,10 @@ func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateSetK
 	return nil
 }
 
+func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateSetNameRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateSetNameRegexDeleteParameters(val *string) error {
 	return nil
 }

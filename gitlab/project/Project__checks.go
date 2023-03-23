@@ -490,7 +490,23 @@ func (j *jsiiProxy_Project) validateSetEmailsDisabledParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetEnvironmentsAccessLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetExternalAuthorizationClassificationLabelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetFeatureFlagsAccessLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,6 +563,14 @@ func (j *jsiiProxy_Project) validateSetImportUrlPasswordParameters(val *string) 
 }
 
 func (j *jsiiProxy_Project) validateSetImportUrlUsernameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetInfrastructureAccessLevelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -785,6 +809,14 @@ func (j *jsiiProxy_Project) validateSetMirrorTriggerBuildsParameters(val interfa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetMonitorAccessLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -1031,6 +1063,14 @@ func (j *jsiiProxy_Project) validateSetPublicBuildsParameters(val interface{}) e
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetReleasesAccessLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -103,9 +103,15 @@ type Project interface {
 	EmailsDisabled() interface{}
 	SetEmailsDisabled(val interface{})
 	EmailsDisabledInput() interface{}
+	EnvironmentsAccessLevel() *string
+	SetEnvironmentsAccessLevel(val *string)
+	EnvironmentsAccessLevelInput() *string
 	ExternalAuthorizationClassificationLabel() *string
 	SetExternalAuthorizationClassificationLabel(val *string)
 	ExternalAuthorizationClassificationLabelInput() *string
+	FeatureFlagsAccessLevel() *string
+	SetFeatureFlagsAccessLevel(val *string)
+	FeatureFlagsAccessLevelInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -136,6 +142,9 @@ type Project interface {
 	ImportUrlUsername() *string
 	SetImportUrlUsername(val *string)
 	ImportUrlUsernameInput() *string
+	InfrastructureAccessLevel() *string
+	SetInfrastructureAccessLevel(val *string)
+	InfrastructureAccessLevelInput() *string
 	InitializeWithReadme() interface{}
 	SetInitializeWithReadme(val interface{})
 	InitializeWithReadmeInput() interface{}
@@ -185,6 +194,9 @@ type Project interface {
 	MirrorTriggerBuilds() interface{}
 	SetMirrorTriggerBuilds(val interface{})
 	MirrorTriggerBuildsInput() interface{}
+	MonitorAccessLevel() *string
+	SetMonitorAccessLevel(val *string)
+	MonitorAccessLevelInput() *string
 	MrDefaultTargetSelf() interface{}
 	SetMrDefaultTargetSelf(val interface{})
 	MrDefaultTargetSelfInput() interface{}
@@ -239,6 +251,9 @@ type Project interface {
 	PushRulesInput() *ProjectPushRules
 	// Experimental.
 	RawOverrides() interface{}
+	ReleasesAccessLevel() *string
+	SetReleasesAccessLevel(val *string)
+	ReleasesAccessLevelInput() *string
 	RemoveSourceBranchAfterMerge() interface{}
 	SetRemoveSourceBranchAfterMerge(val interface{})
 	RemoveSourceBranchAfterMergeInput() interface{}
@@ -369,7 +384,9 @@ type Project interface {
 	ResetDefaultBranch()
 	ResetDescription()
 	ResetEmailsDisabled()
+	ResetEnvironmentsAccessLevel()
 	ResetExternalAuthorizationClassificationLabel()
+	ResetFeatureFlagsAccessLevel()
 	ResetForkedFromProjectId()
 	ResetForkingAccessLevel()
 	ResetGroupWithProjectTemplatesId()
@@ -377,6 +394,7 @@ type Project interface {
 	ResetImportUrl()
 	ResetImportUrlPassword()
 	ResetImportUrlUsername()
+	ResetInfrastructureAccessLevel()
 	ResetInitializeWithReadme()
 	ResetIssuesAccessLevel()
 	ResetIssuesEnabled()
@@ -392,6 +410,7 @@ type Project interface {
 	ResetMirror()
 	ResetMirrorOverwritesDivergedBranches()
 	ResetMirrorTriggerBuilds()
+	ResetMonitorAccessLevel()
 	ResetMrDefaultTargetSelf()
 	ResetNamespaceId()
 	ResetOnlyAllowMergeIfAllDiscussionsAreResolved()
@@ -408,6 +427,7 @@ type Project interface {
 	ResetPrintingMergeRequestLinkEnabled()
 	ResetPublicBuilds()
 	ResetPushRules()
+	ResetReleasesAccessLevel()
 	ResetRemoveSourceBranchAfterMerge()
 	ResetRepositoryAccessLevel()
 	ResetRepositoryStorage()
@@ -1006,6 +1026,26 @@ func (j *jsiiProxy_Project) EmailsDisabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) EnvironmentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) EnvironmentsAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentsAccessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) ExternalAuthorizationClassificationLabel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1021,6 +1061,26 @@ func (j *jsiiProxy_Project) ExternalAuthorizationClassificationLabelInput() *str
 	_jsii_.Get(
 		j,
 		"externalAuthorizationClassificationLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) FeatureFlagsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureFlagsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) FeatureFlagsAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureFlagsAccessLevelInput",
 		&returns,
 	)
 	return returns
@@ -1201,6 +1261,26 @@ func (j *jsiiProxy_Project) ImportUrlUsernameInput() *string {
 	_jsii_.Get(
 		j,
 		"importUrlUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) InfrastructureAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) InfrastructureAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureAccessLevelInput",
 		&returns,
 	)
 	return returns
@@ -1511,6 +1591,26 @@ func (j *jsiiProxy_Project) MirrorTriggerBuildsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"mirrorTriggerBuildsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) MonitorAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) MonitorAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorAccessLevelInput",
 		&returns,
 	)
 	return returns
@@ -1841,6 +1941,26 @@ func (j *jsiiProxy_Project) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ReleasesAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releasesAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ReleasesAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releasesAccessLevelInput",
 		&returns,
 	)
 	return returns
@@ -2687,6 +2807,17 @@ func (j *jsiiProxy_Project)SetEmailsDisabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetEnvironmentsAccessLevel(val *string) {
+	if err := j.validateSetEnvironmentsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentsAccessLevel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetExternalAuthorizationClassificationLabel(val *string) {
 	if err := j.validateSetExternalAuthorizationClassificationLabelParameters(val); err != nil {
 		panic(err)
@@ -2694,6 +2825,17 @@ func (j *jsiiProxy_Project)SetExternalAuthorizationClassificationLabel(val *stri
 	_jsii_.Set(
 		j,
 		"externalAuthorizationClassificationLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetFeatureFlagsAccessLevel(val *string) {
+	if err := j.validateSetFeatureFlagsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"featureFlagsAccessLevel",
 		val,
 	)
 }
@@ -2779,6 +2921,17 @@ func (j *jsiiProxy_Project)SetImportUrlUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"importUrlUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetInfrastructureAccessLevel(val *string) {
+	if err := j.validateSetInfrastructureAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"infrastructureAccessLevel",
 		val,
 	)
 }
@@ -2959,6 +3112,17 @@ func (j *jsiiProxy_Project)SetMirrorTriggerBuilds(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetMonitorAccessLevel(val *string) {
+	if err := j.validateSetMonitorAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitorAccessLevel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetMrDefaultTargetSelf(val interface{}) {
 	if err := j.validateSetMrDefaultTargetSelfParameters(val); err != nil {
 		panic(err)
@@ -3117,6 +3281,17 @@ func (j *jsiiProxy_Project)SetPublicBuilds(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publicBuilds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetReleasesAccessLevel(val *string) {
+	if err := j.validateSetReleasesAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"releasesAccessLevel",
 		val,
 	)
 }
@@ -3862,10 +4037,26 @@ func (p *jsiiProxy_Project) ResetEmailsDisabled() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetEnvironmentsAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnvironmentsAccessLevel",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetExternalAuthorizationClassificationLabel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExternalAuthorizationClassificationLabel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetFeatureFlagsAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFeatureFlagsAccessLevel",
 		nil, // no parameters
 	)
 }
@@ -3922,6 +4113,14 @@ func (p *jsiiProxy_Project) ResetImportUrlUsername() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetImportUrlUsername",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetInfrastructureAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetInfrastructureAccessLevel",
 		nil, // no parameters
 	)
 }
@@ -4046,6 +4245,14 @@ func (p *jsiiProxy_Project) ResetMirrorTriggerBuilds() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetMonitorAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMonitorAccessLevel",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetMrDefaultTargetSelf() {
 	_jsii_.InvokeVoid(
 		p,
@@ -4154,6 +4361,14 @@ func (p *jsiiProxy_Project) ResetPushRules() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPushRules",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetReleasesAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReleasesAccessLevel",
 		nil, // no parameters
 	)
 }

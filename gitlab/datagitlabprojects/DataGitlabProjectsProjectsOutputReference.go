@@ -50,7 +50,9 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	DefaultBranch() *string
 	Description() *string
 	EmailsDisabled() cdktf.IResolvable
+	EnvironmentsAccessLevel() *string
 	ExternalAuthorizationClassificationLabel() *string
+	FeatureFlagsAccessLevel() *string
 	ForkedFromProject() DataGitlabProjectsProjectsForkedFromProjectList
 	ForkingAccessLevel() *string
 	ForksCount() *float64
@@ -61,6 +63,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	ImportError() *string
 	ImportStatus() *string
 	ImportUrl() *string
+	InfrastructureAccessLevel() *string
 	InternalValue() *DataGitlabProjectsProjects
 	SetInternalValue(val *DataGitlabProjectsProjects)
 	IssuesAccessLevel() *string
@@ -79,6 +82,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	MirrorOverwritesDivergedBranches() cdktf.IResolvable
 	MirrorTriggerBuilds() cdktf.IResolvable
 	MirrorUserId() *float64
+	MonitorAccessLevel() *string
 	Name() *string
 	Namespace() DataGitlabProjectsProjectsNamespaceList
 	NameWithNamespace() *string
@@ -95,6 +99,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	Public() cdktf.IResolvable
 	PublicBuilds() cdktf.IResolvable
 	ReadmeUrl() *string
+	ReleasesAccessLevel() *string
 	RepositoryAccessLevel() *string
 	RepositoryStorage() *string
 	RequestAccessEnabled() cdktf.IResolvable
@@ -445,11 +450,31 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) EmailsDisabled() c
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) EnvironmentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ExternalAuthorizationClassificationLabel() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"externalAuthorizationClassificationLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) FeatureFlagsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureFlagsAccessLevel",
 		&returns,
 	)
 	return returns
@@ -540,6 +565,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ImportUrl() *strin
 	_jsii_.Get(
 		j,
 		"importUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) InfrastructureAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureAccessLevel",
 		&returns,
 	)
 	return returns
@@ -715,6 +750,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) MirrorUserId() *fl
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) MonitorAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -870,6 +915,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ReadmeUrl() *strin
 	_jsii_.Get(
 		j,
 		"readmeUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ReleasesAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releasesAccessLevel",
 		&returns,
 	)
 	return returns

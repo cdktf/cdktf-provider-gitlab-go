@@ -133,10 +133,18 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#emails_disabled Project#emails_disabled}
 	EmailsDisabled interface{} `field:"optional" json:"emailsDisabled" yaml:"emailsDisabled"`
+	// Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#environments_access_level Project#environments_access_level}
+	EnvironmentsAccessLevel *string `field:"optional" json:"environmentsAccessLevel" yaml:"environmentsAccessLevel"`
 	// The classification label for the project.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
 	ExternalAuthorizationClassificationLabel *string `field:"optional" json:"externalAuthorizationClassificationLabel" yaml:"externalAuthorizationClassificationLabel"`
+	// Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#feature_flags_access_level Project#feature_flags_access_level}
+	FeatureFlagsAccessLevel *string `field:"optional" json:"featureFlagsAccessLevel" yaml:"featureFlagsAccessLevel"`
 	// The id of the project to fork.
 	//
 	// During create the project is forked and during an update the fork relation is changed.
@@ -176,6 +184,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
 	ImportUrlUsername *string `field:"optional" json:"importUrlUsername" yaml:"importUrlUsername"`
+	// Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#infrastructure_access_level Project#infrastructure_access_level}
+	InfrastructureAccessLevel *string `field:"optional" json:"infrastructureAccessLevel" yaml:"infrastructureAccessLevel"`
 	// Create main branch with first commit containing a README.md file.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#initialize_with_readme Project#initialize_with_readme}
@@ -236,6 +248,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#mirror_trigger_builds Project#mirror_trigger_builds}
 	MirrorTriggerBuilds interface{} `field:"optional" json:"mirrorTriggerBuilds" yaml:"mirrorTriggerBuilds"`
+	// Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#monitor_access_level Project#monitor_access_level}
+	MonitorAccessLevel *string `field:"optional" json:"monitorAccessLevel" yaml:"monitorAccessLevel"`
 	// For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#mr_default_target_self Project#mr_default_target_self}
@@ -288,6 +304,10 @@ type ProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#push_rules Project#push_rules}
 	PushRules *ProjectPushRules `field:"optional" json:"pushRules" yaml:"pushRules"`
+	// Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#releases_access_level Project#releases_access_level}
+	ReleasesAccessLevel *string `field:"optional" json:"releasesAccessLevel" yaml:"releasesAccessLevel"`
 	// Enable `Delete source branch` option by default for all new merge requests.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#remove_source_branch_after_merge Project#remove_source_branch_after_merge}
@@ -378,6 +398,8 @@ type ProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#topics Project#topics}
 	Topics *[]*string `field:"optional" json:"topics" yaml:"topics"`
 	// Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
+	//
+	// ~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#use_custom_template Project#use_custom_template}
 	UseCustomTemplate interface{} `field:"optional" json:"useCustomTemplate" yaml:"useCustomTemplate"`

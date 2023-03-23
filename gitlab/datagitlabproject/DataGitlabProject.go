@@ -43,7 +43,9 @@ type DataGitlabProject interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	EmailsDisabled() cdktf.IResolvable
+	EnvironmentsAccessLevel() *string
 	ExternalAuthorizationClassificationLabel() *string
+	FeatureFlagsAccessLevel() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,6 +60,7 @@ type DataGitlabProject interface {
 	SetId(val *string)
 	IdInput() *string
 	ImportUrl() *string
+	InfrastructureAccessLevel() *string
 	IssuesAccessLevel() *string
 	IssuesEnabled() cdktf.IResolvable
 	LfsEnabled() cdktf.IResolvable
@@ -70,6 +73,7 @@ type DataGitlabProject interface {
 	MergeRequestsAccessLevel() *string
 	MergeRequestsEnabled() cdktf.IResolvable
 	MergeTrainsEnabled() cdktf.IResolvable
+	MonitorAccessLevel() *string
 	Name() *string
 	NamespaceId() *float64
 	// The tree node.
@@ -91,6 +95,7 @@ type DataGitlabProject interface {
 	PushRules() DataGitlabProjectPushRulesList
 	// Experimental.
 	RawOverrides() interface{}
+	ReleasesAccessLevel() *string
 	RemoveSourceBranchAfterMerge() cdktf.IResolvable
 	RepositoryAccessLevel() *string
 	RepositoryStorage() *string
@@ -383,11 +388,31 @@ func (j *jsiiProxy_DataGitlabProject) EmailsDisabled() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProject) EnvironmentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProject) ExternalAuthorizationClassificationLabel() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"externalAuthorizationClassificationLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) FeatureFlagsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"featureFlagsAccessLevel",
 		&returns,
 	)
 	return returns
@@ -468,6 +493,16 @@ func (j *jsiiProxy_DataGitlabProject) ImportUrl() *string {
 	_jsii_.Get(
 		j,
 		"importUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) InfrastructureAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureAccessLevel",
 		&returns,
 	)
 	return returns
@@ -558,6 +593,16 @@ func (j *jsiiProxy_DataGitlabProject) MergeTrainsEnabled() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"mergeTrainsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) MonitorAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorAccessLevel",
 		&returns,
 	)
 	return returns
@@ -698,6 +743,16 @@ func (j *jsiiProxy_DataGitlabProject) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) ReleasesAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releasesAccessLevel",
 		&returns,
 	)
 	return returns

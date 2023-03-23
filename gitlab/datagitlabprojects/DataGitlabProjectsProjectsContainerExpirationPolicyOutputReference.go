@@ -32,6 +32,7 @@ type DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference interfac
 	InternalValue() *DataGitlabProjectsProjectsContainerExpirationPolicy
 	SetInternalValue(val *DataGitlabProjectsProjectsContainerExpirationPolicy)
 	KeepN() *float64
+	NameRegex() *string
 	NameRegexDelete() *string
 	NameRegexKeep() *string
 	NextRunAt() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"keepN",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference) NameRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameRegex",
 		&returns,
 	)
 	return returns

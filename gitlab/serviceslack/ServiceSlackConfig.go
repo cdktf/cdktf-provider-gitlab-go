@@ -23,7 +23,7 @@ type ServiceSlackConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#project ServiceSlack#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Webhook URL (ex.: https://hooks.slack.com/services/...).
+	// Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#webhook ServiceSlack#webhook}
 	Webhook *string `field:"required" json:"webhook" yaml:"webhook"`

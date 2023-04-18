@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServiceExternalWiki) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ServiceExternalWiki) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceExternalWiki) validateSetExternalWikiUrlParameters(val *string) error {
 	return nil
 }

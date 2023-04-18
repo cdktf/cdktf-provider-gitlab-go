@@ -72,6 +72,10 @@ func (j *jsiiProxy_ProjectShareGroup) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ProjectShareGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectShareGroup) validateSetGroupAccessParameters(val *string) error {
 	return nil
 }

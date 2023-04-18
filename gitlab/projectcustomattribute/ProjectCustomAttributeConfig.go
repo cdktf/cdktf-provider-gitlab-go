@@ -8,7 +8,7 @@ type ProjectCustomAttributeConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,17 +21,17 @@ type ProjectCustomAttributeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Key for the Custom Attribute.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#key ProjectCustomAttribute#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#key ProjectCustomAttribute#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#project ProjectCustomAttribute#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#project ProjectCustomAttribute#project}
 	Project *float64 `field:"required" json:"project" yaml:"project"`
 	// Value for the Custom Attribute.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#value ProjectCustomAttribute#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#value ProjectCustomAttribute#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

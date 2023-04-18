@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataGitlabUsers) validateSetBlockedParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabUsers) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabUsers) validateSetCreatedAfterParameters(val *string) error {
 	return nil
 }

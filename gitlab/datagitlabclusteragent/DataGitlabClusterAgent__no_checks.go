@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGitlabClusterAgent) validateSetAgentIdParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabClusterAgent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabClusterAgent) validateSetIdParameters(val *string) error {
 	return nil
 }

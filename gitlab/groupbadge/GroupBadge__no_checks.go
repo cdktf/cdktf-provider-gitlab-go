@@ -68,6 +68,10 @@ func (j *jsiiProxy_GroupBadge) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_GroupBadge) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupBadge) validateSetGroupParameters(val *string) error {
 	return nil
 }

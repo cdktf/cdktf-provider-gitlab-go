@@ -68,6 +68,10 @@ func (j *jsiiProxy_GroupShareGroup) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GroupShareGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupShareGroup) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

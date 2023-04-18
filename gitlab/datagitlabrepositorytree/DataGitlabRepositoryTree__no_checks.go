@@ -64,6 +64,10 @@ func validateDataGitlabRepositoryTree_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabRepositoryTree) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabRepositoryTree) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DeployKey) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DeployKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeployKey) validateSetIdParameters(val *string) error {
 	return nil
 }

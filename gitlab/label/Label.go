@@ -2,14 +2,14 @@ package label
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/label gitlab_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label gitlab_label}.
 type Label interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Label interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Label) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Label) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Label) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_Label) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label gitlab_label} Resource.
 func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label gitlab_label} Resource.
 func NewLabel_Override(l Label, scope constructs.Construct, id *string, config *LabelConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_Label)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Label)SetCount(val *float64) {
+func (j *jsiiProxy_Label)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

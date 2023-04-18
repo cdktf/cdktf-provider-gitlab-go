@@ -2,14 +2,14 @@ package groupvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/groupvariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable gitlab_group_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable gitlab_group_variable}.
 type GroupVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GroupVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GroupVariable) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GroupVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GroupVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GroupVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVariableConfig) GroupVariable {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVaria
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable_Override(g GroupVariable, scope constructs.Construct, id *string, config *GroupVariableConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func (j *jsiiProxy_GroupVariable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupVariable)SetCount(val *float64) {
+func (j *jsiiProxy_GroupVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

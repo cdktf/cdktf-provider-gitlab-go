@@ -64,6 +64,10 @@ func validateDataGitlabGroupVariable_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroupVariable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupVariable) validateSetEnvironmentScopeParameters(val *string) error {
 	return nil
 }

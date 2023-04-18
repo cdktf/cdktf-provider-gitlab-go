@@ -76,6 +76,10 @@ func (j *jsiiProxy_GroupLdapLink) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GroupLdapLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupLdapLink) validateSetForceParameters(val interface{}) error {
 	return nil
 }

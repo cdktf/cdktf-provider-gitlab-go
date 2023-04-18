@@ -172,6 +172,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetContainerRegistryTokenExpireD
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDeactivateDormantUsersParameters(val interface{}) error {
 	return nil
 }

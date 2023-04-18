@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGitlabProject) validateSetCiDefaultGitDepthParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProject) validateSetIdParameters(val *string) error {
 	return nil
 }

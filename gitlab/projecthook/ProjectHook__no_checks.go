@@ -76,6 +76,10 @@ func (j *jsiiProxy_ProjectHook) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ProjectHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetDeploymentEventsParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package branch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/branch/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/branch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/branch gitlab_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch gitlab_branch}.
 type Branch interface {
 	cdktf.TerraformResource
 	CanPush() cdktf.IResolvable
@@ -23,9 +23,9 @@ type Branch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Default() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Branch) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Branch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Branch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Branch) WebUrl() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Branch {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Bra
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch_Override(b Branch, scope constructs.Construct, id *string, config *BranchConfig) {
 	_init_.Initialize()
 
@@ -483,7 +483,10 @@ func (j *jsiiProxy_Branch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Branch)SetCount(val *float64) {
+func (j *jsiiProxy_Branch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

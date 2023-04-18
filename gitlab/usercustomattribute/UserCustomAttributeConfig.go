@@ -8,7 +8,7 @@ type UserCustomAttributeConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,17 +21,17 @@ type UserCustomAttributeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Key for the Custom Attribute.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#key UserCustomAttribute#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#key UserCustomAttribute#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The id of the user.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#user UserCustomAttribute#user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#user UserCustomAttribute#user}
 	User *float64 `field:"required" json:"user" yaml:"user"`
 	// Value for the Custom Attribute.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#value UserCustomAttribute#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#value UserCustomAttribute#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

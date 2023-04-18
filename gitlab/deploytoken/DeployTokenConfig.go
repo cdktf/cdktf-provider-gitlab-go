@@ -8,7 +8,7 @@ type DeployTokenConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,32 +21,32 @@ type DeployTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A name to describe the deploy token with.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#name DeployToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#name DeployToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Valid values: `read_repository`, `read_registry`, `read_package_registry`, `write_registry`, `write_package_registry`.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#scopes DeployToken#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#scopes DeployToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// Time the token will expire it, RFC3339 format. Will not expire per default.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#expires_at DeployToken#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#expires_at DeployToken#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
 	// The name or id of the group to add the deploy token to.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#group DeployToken#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#group DeployToken#group}
 	Group *string `field:"optional" json:"group" yaml:"group"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#id DeployToken#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#id DeployToken#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name or id of the project to add the deploy token to.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#project DeployToken#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#project DeployToken#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#username DeployToken#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_token#username DeployToken#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

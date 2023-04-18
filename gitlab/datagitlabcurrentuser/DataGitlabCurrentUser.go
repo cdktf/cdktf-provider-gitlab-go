@@ -2,14 +2,14 @@ package datagitlabcurrentuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabcurrentuser/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/current_user gitlab_current_user}.
 type DataGitlabCurrentUser interface {
 	cdktf.TerraformDataSource
 	Bot() cdktf.IResolvable
@@ -18,9 +18,9 @@ type DataGitlabCurrentUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataGitlabCurrentUser) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabCurrentUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabCurrentUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataGitlabCurrentUser) Username() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/current_user gitlab_current_user} Data Source.
 func NewDataGitlabCurrentUser(scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) DataGitlabCurrentUser {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataGitlabCurrentUser(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/current_user gitlab_current_user} Data Source.
 func NewDataGitlabCurrentUser_Override(d DataGitlabCurrentUser, scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) {
 	_init_.Initialize()
 
@@ -362,7 +362,10 @@ func NewDataGitlabCurrentUser_Override(d DataGitlabCurrentUser, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataGitlabCurrentUser)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabCurrentUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ProjectMilestone) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ProjectMilestone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMilestone) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

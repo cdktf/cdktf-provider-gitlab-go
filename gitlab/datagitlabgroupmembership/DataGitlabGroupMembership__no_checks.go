@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGitlabGroupMembership) validateSetAccessLevelParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroupMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupMembership) validateSetFullPathParameters(val *string) error {
 	return nil
 }

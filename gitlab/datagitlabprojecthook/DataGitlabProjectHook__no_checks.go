@@ -64,6 +64,10 @@ func validateDataGitlabProjectHook_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectHook) validateSetHookIdParameters(val *float64) error {
 	return nil
 }

@@ -8,7 +8,7 @@ type DataGitlabUserConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -23,24 +23,24 @@ type DataGitlabUserConfig struct {
 	//
 	// **Note**: before GitLab 14.8 the lookup was based on the users primary email address.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#email DataGitlabUser#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#email DataGitlabUser#email}
 	Email *string `field:"optional" json:"email" yaml:"email"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#id DataGitlabUser#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#id DataGitlabUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The ID of the user's namespace. Requires admin token to access this field. Available since GitLab 14.10.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#namespace_id DataGitlabUser#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
 	NamespaceId *float64 `field:"optional" json:"namespaceId" yaml:"namespaceId"`
 	// The ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#user_id DataGitlabUser#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
 	UserId *float64 `field:"optional" json:"userId" yaml:"userId"`
 	// The username of the user.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#username DataGitlabUser#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#username DataGitlabUser#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

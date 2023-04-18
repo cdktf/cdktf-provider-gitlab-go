@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetIssuesUrlParameters(val *string) error {
 	return nil
 }

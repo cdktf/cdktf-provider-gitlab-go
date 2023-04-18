@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGitlabGroupSubgroups) validateSetAllAvailableParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroupSubgroups) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupSubgroups) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }

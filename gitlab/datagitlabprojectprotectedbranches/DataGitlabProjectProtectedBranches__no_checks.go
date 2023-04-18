@@ -64,6 +64,10 @@ func validateDataGitlabProjectProtectedBranches_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetIdParameters(val *string) error {
 	return nil
 }

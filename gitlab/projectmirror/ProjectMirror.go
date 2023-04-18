@@ -2,14 +2,14 @@ package projectmirror
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectmirror/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectmirror/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror gitlab_project_mirror}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_mirror gitlab_project_mirror}.
 type ProjectMirror interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ProjectMirror interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ProjectMirror) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ProjectMirror) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectMirror) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ProjectMirror) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMirrorConfig) ProjectMirror {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMir
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *string, config *ProjectMirrorConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_ProjectMirror)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMirror)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectMirror)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

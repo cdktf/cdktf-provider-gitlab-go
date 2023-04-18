@@ -2,14 +2,14 @@ package usercustomattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/usercustomattribute/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/usercustomattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute}.
 type UserCustomAttribute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UserCustomAttribute interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_UserCustomAttribute) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_UserCustomAttribute) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserCustomAttribute) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_UserCustomAttribute) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute} Resource.
 func NewUserCustomAttribute(scope constructs.Construct, id *string, config *UserCustomAttributeConfig) UserCustomAttribute {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewUserCustomAttribute(scope constructs.Construct, id *string, config *User
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute} Resource.
 func NewUserCustomAttribute_Override(u UserCustomAttribute, scope constructs.Construct, id *string, config *UserCustomAttributeConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_UserCustomAttribute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserCustomAttribute)SetCount(val *float64) {
+func (j *jsiiProxy_UserCustomAttribute)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

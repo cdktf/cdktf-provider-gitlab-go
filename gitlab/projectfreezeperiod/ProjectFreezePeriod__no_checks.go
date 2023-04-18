@@ -68,6 +68,10 @@ func (j *jsiiProxy_ProjectFreezePeriod) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ProjectFreezePeriod) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectFreezePeriod) validateSetCronTimezoneParameters(val *string) error {
 	return nil
 }

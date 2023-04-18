@@ -2,14 +2,14 @@ package runner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/runner/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/runner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner gitlab_runner}.
 type Runner interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -25,9 +25,9 @@ type Runner interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -198,8 +198,8 @@ func (j *jsiiProxy_Runner) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Runner) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Runner) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_Runner) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner gitlab_runner} Resource.
 func NewRunner(scope constructs.Construct, id *string, config *RunnerConfig) Runner {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewRunner(scope constructs.Construct, id *string, config *RunnerConfig) Run
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner gitlab_runner} Resource.
 func NewRunner_Override(r Runner, scope constructs.Construct, id *string, config *RunnerConfig) {
 	_init_.Initialize()
 
@@ -550,7 +550,10 @@ func (j *jsiiProxy_Runner)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Runner)SetCount(val *float64) {
+func (j *jsiiProxy_Runner)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataGitlabReleaseLinks_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabReleaseLinks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabReleaseLinks) validateSetIdParameters(val *string) error {
 	return nil
 }

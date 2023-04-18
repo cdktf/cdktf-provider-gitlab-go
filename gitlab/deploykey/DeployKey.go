@@ -2,14 +2,14 @@ package deploykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/deploykey/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key gitlab_deploy_key}.
 type DeployKey interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -24,9 +24,9 @@ type DeployKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DeployKey) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeployKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DeployKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DeployKey) TitleInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfig) DeployKey {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey_Override(d DeployKey, scope constructs.Construct, id *string, config *DeployKeyConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_DeployKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeployKey)SetCount(val *float64) {
+func (j *jsiiProxy_DeployKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

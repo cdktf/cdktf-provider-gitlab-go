@@ -2,14 +2,14 @@ package projectsharegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectsharegroup/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectsharegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group gitlab_project_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group}.
 type ProjectShareGroup interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -24,9 +24,9 @@ type ProjectShareGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ProjectShareGroup) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectShareGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectShareGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ProjectShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup(scope constructs.Construct, id *string, config *ProjectShareGroupConfig) ProjectShareGroup {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewProjectShareGroup(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup_Override(p ProjectShareGroup, scope constructs.Construct, id *string, config *ProjectShareGroupConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_ProjectShareGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectShareGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectShareGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

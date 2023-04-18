@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicePipelinesEmail) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ServicePipelinesEmail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePipelinesEmail) validateSetIdParameters(val *string) error {
 	return nil
 }

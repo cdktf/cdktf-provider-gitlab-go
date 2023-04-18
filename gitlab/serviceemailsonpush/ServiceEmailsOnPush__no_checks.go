@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServiceEmailsOnPush) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ServiceEmailsOnPush) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceEmailsOnPush) validateSetDisableDiffsParameters(val interface{}) error {
 	return nil
 }

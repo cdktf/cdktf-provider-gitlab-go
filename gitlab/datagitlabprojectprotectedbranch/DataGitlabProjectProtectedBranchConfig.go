@@ -8,7 +8,7 @@ type DataGitlabProjectProtectedBranchConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,11 +21,11 @@ type DataGitlabProjectProtectedBranchConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the protected branch.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The integer or path with namespace that uniquely identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

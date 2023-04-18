@@ -92,6 +92,10 @@ func (j *jsiiProxy_RepositoryFile) validateSetContentParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetExecuteFilemodeParameters(val interface{}) error {
 	return nil
 }

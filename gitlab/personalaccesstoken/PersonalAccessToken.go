@@ -2,14 +2,14 @@ package personalaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/personalaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token gitlab_personal_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 type PersonalAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -22,9 +22,9 @@ type PersonalAccessToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -162,8 +162,8 @@ func (j *jsiiProxy_PersonalAccessToken) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_PersonalAccessToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PersonalAccessToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -423,7 +423,7 @@ func (j *jsiiProxy_PersonalAccessToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) PersonalAccessToken {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewPersonalAccessToken(scope constructs.Construct, id *string, config *Pers
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken_Override(p PersonalAccessToken, scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -463,7 +463,10 @@ func (j *jsiiProxy_PersonalAccessToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PersonalAccessToken)SetCount(val *float64) {
+func (j *jsiiProxy_PersonalAccessToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

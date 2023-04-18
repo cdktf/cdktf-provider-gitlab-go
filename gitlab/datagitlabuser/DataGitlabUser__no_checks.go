@@ -64,6 +64,10 @@ func validateDataGitlabUser_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabUser) validateSetEmailParameters(val *string) error {
 	return nil
 }

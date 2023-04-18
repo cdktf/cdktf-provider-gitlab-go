@@ -68,6 +68,10 @@ func (j *jsiiProxy_GroupProjectFileTemplate) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GroupProjectFileTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupProjectFileTemplate) validateSetFileTemplateProjectIdParameters(val *float64) error {
 	return nil
 }

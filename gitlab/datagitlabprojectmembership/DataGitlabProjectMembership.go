@@ -2,14 +2,14 @@ package datagitlabprojectmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmembership/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_membership gitlab_project_membership}.
 type DataGitlabProjectMembership interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGitlabProjectMembership interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGitlabProjectMembership) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembership) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabProjectMembership) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataGitlabProjectMembership) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) DataGitlabProjectMembership {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scop
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembership)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectMembership)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

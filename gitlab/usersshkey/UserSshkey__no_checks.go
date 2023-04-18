@@ -68,6 +68,10 @@ func (j *jsiiProxy_UserSshkey) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_UserSshkey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserSshkey) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

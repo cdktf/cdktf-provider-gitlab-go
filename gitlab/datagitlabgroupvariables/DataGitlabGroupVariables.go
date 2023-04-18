@@ -2,14 +2,14 @@ package datagitlabgroupvariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroupvariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_variables gitlab_group_variables}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_variables gitlab_group_variables}.
 type DataGitlabGroupVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGitlabGroupVariables interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataGitlabGroupVariables) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupVariables) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabGroupVariables) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataGitlabGroupVariables) Variables() DataGitlabGroupVariable
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) DataGitlabGroupVariables {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables_Override(d DataGitlabGroupVariables, scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func NewDataGitlabGroupVariables_Override(d DataGitlabGroupVariables, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupVariables)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupVariables)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GroupHook) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GroupHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetDeploymentEventsParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package serviceexternalwiki
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/serviceexternalwiki/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/serviceexternalwiki/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki gitlab_service_external_wiki}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki gitlab_service_external_wiki}.
 type ServiceExternalWiki interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -22,9 +22,9 @@ type ServiceExternalWiki interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ServiceExternalWiki) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ServiceExternalWiki) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceExternalWiki) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_ServiceExternalWiki) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki gitlab_service_external_wiki} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki gitlab_service_external_wiki} Resource.
 func NewServiceExternalWiki(scope constructs.Construct, id *string, config *ServiceExternalWikiConfig) ServiceExternalWiki {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewServiceExternalWiki(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki gitlab_service_external_wiki} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki gitlab_service_external_wiki} Resource.
 func NewServiceExternalWiki_Override(s ServiceExternalWiki, scope constructs.Construct, id *string, config *ServiceExternalWikiConfig) {
 	_init_.Initialize()
 
@@ -427,7 +427,10 @@ func (j *jsiiProxy_ServiceExternalWiki)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceExternalWiki)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceExternalWiki)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

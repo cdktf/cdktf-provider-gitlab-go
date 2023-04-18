@@ -72,6 +72,10 @@ func (j *jsiiProxy_GroupSamlLink) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GroupSamlLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupSamlLink) validateSetGroupParameters(val *string) error {
 	return nil
 }

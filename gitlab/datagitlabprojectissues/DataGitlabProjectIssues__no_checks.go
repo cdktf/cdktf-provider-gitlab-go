@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataGitlabProjectIssues) validateSetConfidentialParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectIssues) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectIssues) validateSetCreatedAfterParameters(val *string) error {
 	return nil
 }

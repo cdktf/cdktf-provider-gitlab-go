@@ -2,14 +2,14 @@ package applicationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/applicationsettings/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/applicationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -99,9 +99,9 @@ type ApplicationSettings interface {
 	SetContainerRegistryTokenExpireDelay(val *float64)
 	ContainerRegistryTokenExpireDelayInput() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeactivateDormantUsers() interface{}
 	SetDeactivateDormantUsers(val interface{})
 	DeactivateDormantUsersInput() interface{}
@@ -1619,8 +1619,8 @@ func (j *jsiiProxy_ApplicationSettings) ContainerRegistryTokenExpireDelayInput()
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApplicationSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -6070,7 +6070,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6088,7 +6088,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -6396,7 +6396,10 @@ func (j *jsiiProxy_ApplicationSettings)SetContainerRegistryTokenExpireDelay(val 
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings)SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datagitlabprojectprotectedbranches
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectprotectedbranches/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranches/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branches gitlab_project_protected_branches}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
 type DataGitlabProjectProtectedBranches interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGitlabProjectProtectedBranches interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabProjectProtectedBranches) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) DataGitlabProjectProtectedBranches {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches_Override(d DataGitlabProjectProtectedBranches, scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataGitlabProjectProtectedBranches_Override(d DataGitlabProjectProtected
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranches)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ProjectMirror) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ProjectMirror) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMirror) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

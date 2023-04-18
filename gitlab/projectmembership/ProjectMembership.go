@@ -2,14 +2,14 @@ package projectmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectmembership/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership gitlab_project_membership}.
 type ProjectMembership interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -24,9 +24,9 @@ type ProjectMembership interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ProjectMembership) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectMembership) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectMembership) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ProjectMembership) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership(scope constructs.Construct, id *string, config *ProjectMembershipConfig) ProjectMembership {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewProjectMembership(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership_Override(p ProjectMembership, scope constructs.Construct, id *string, config *ProjectMembershipConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_ProjectMembership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectMembership)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectMembership)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

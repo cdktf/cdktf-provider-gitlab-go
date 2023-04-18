@@ -72,6 +72,10 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

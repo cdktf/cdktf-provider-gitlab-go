@@ -2,14 +2,14 @@ package groupsharegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/groupsharegroup/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupsharegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group gitlab_group_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_share_group gitlab_group_share_group}.
 type GroupShareGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GroupShareGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GroupShareGroup) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GroupShareGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GroupShareGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_GroupShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupShareGroupConfig) GroupShareGroup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupSha
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup_Override(g GroupShareGroup, scope constructs.Construct, id *string, config *GroupShareGroupConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_GroupShareGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupShareGroup)SetCount(val *float64) {
+func (j *jsiiProxy_GroupShareGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ManagedLicense) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ManagedLicense) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedLicense) validateSetIdParameters(val *string) error {
 	return nil
 }

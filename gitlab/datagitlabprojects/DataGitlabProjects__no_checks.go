@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGitlabProjects) validateSetArchivedParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjects) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjects) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }

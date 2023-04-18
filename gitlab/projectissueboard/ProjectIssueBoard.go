@@ -2,14 +2,14 @@ package projectissueboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectissueboard/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board gitlab_project_issue_board}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board gitlab_project_issue_board}.
 type ProjectIssueBoard interface {
 	cdktf.TerraformResource
 	AssigneeId() *float64
@@ -24,9 +24,9 @@ type ProjectIssueBoard interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ProjectIssueBoard) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIssueBoard) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectIssueBoard) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_ProjectIssueBoard) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board gitlab_project_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
 func NewProjectIssueBoard(scope constructs.Construct, id *string, config *ProjectIssueBoardConfig) ProjectIssueBoard {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewProjectIssueBoard(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board gitlab_project_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
 func NewProjectIssueBoard_Override(p ProjectIssueBoard, scope constructs.Construct, id *string, config *ProjectIssueBoardConfig) {
 	_init_.Initialize()
 
@@ -503,7 +503,10 @@ func (j *jsiiProxy_ProjectIssueBoard)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIssueBoard)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectIssueBoard)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ServiceMicrosoftTeams) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceMicrosoftTeams) validateSetIdParameters(val *string) error {
 	return nil
 }

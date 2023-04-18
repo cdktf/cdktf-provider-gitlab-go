@@ -68,6 +68,10 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetDisableOverridingApproversPerMergeRequestParameters(val interface{}) error {
 	return nil
 }

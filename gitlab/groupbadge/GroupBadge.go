@@ -2,14 +2,14 @@ package groupbadge
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/groupbadge/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_badge gitlab_group_badge}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_badge gitlab_group_badge}.
 type GroupBadge interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GroupBadge interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GroupBadge) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupBadge) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GroupBadge) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GroupBadge) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeConfig) GroupBadge {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge_Override(g GroupBadge, scope constructs.Construct, id *string, config *GroupBadgeConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_GroupBadge)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupBadge)SetCount(val *float64) {
+func (j *jsiiProxy_GroupBadge)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

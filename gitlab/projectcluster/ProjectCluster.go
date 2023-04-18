@@ -2,14 +2,14 @@ package projectcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectcluster/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster gitlab_project_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster gitlab_project_cluster}.
 type ProjectCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type ProjectCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -193,8 +193,8 @@ func (j *jsiiProxy_ProjectCluster) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ProjectCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ProjectCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster gitlab_project_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
 func NewProjectCluster(scope constructs.Construct, id *string, config *ProjectClusterConfig) ProjectCluster {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewProjectCluster(scope constructs.Construct, id *string, config *ProjectCl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster gitlab_project_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
 func NewProjectCluster_Override(p ProjectCluster, scope constructs.Construct, id *string, config *ProjectClusterConfig) {
 	_init_.Initialize()
 
@@ -654,7 +654,10 @@ func (j *jsiiProxy_ProjectCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectCluster)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

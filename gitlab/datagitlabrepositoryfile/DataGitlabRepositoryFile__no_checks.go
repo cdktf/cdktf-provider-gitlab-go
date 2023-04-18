@@ -64,6 +64,10 @@ func validateDataGitlabRepositoryFile_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetFilePathParameters(val *string) error {
 	return nil
 }

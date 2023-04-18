@@ -68,6 +68,10 @@ func (j *jsiiProxy_InstanceCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_InstanceCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceCluster) validateSetDomainParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datagitlabinstancedeploykeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabinstancedeploykeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/instance_deploy_keys gitlab_instance_deploy_keys}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}.
 type DataGitlabInstanceDeployKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGitlabInstanceDeployKeys interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeys) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabInstanceDeployKeys) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) DataGitlabInstanceDeployKeys {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys_Override(d DataGitlabInstanceDeployKeys, scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) {
 	_init_.Initialize()
 
@@ -322,7 +322,10 @@ func NewDataGitlabInstanceDeployKeys_Override(d DataGitlabInstanceDeployKeys, sc
 	)
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeys)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabInstanceDeployKeys)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

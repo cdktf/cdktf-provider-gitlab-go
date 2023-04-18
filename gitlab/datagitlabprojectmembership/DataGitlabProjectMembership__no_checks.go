@@ -64,6 +64,10 @@ func validateDataGitlabProjectMembership_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectMembership) validateSetFullPathParameters(val *string) error {
 	return nil
 }

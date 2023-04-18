@@ -76,6 +76,10 @@ func (j *jsiiProxy_ProjectIssueBoard) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ProjectIssueBoard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectIssueBoard) validateSetIdParameters(val *string) error {
 	return nil
 }

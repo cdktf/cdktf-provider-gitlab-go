@@ -64,6 +64,10 @@ func validateDataGitlabGroupHook_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroupHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabGroupHook) validateSetGroupParameters(val *string) error {
 	return nil
 }

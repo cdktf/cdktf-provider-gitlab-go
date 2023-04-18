@@ -2,14 +2,14 @@ package projectaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token gitlab_project_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token gitlab_project_access_token}.
 type ProjectAccessToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -25,9 +25,9 @@ type ProjectAccessToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ProjectAccessToken) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectAccessToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ProjectAccessToken) UserId() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token gitlab_project_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken(scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) ProjectAccessToken {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewProjectAccessToken(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token gitlab_project_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken_Override(p ProjectAccessToken, scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -509,7 +509,10 @@ func (j *jsiiProxy_ProjectAccessToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessToken)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectAccessToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataGitlabProjectProtectedBranch_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranch) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

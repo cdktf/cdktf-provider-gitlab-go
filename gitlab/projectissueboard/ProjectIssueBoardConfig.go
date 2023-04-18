@@ -8,7 +8,7 @@ type ProjectIssueBoardConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,38 +21,38 @@ type ProjectIssueBoardConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the board.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#name ProjectIssueBoard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#name ProjectIssueBoard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID or full path of the project maintained by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#project ProjectIssueBoard#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#project ProjectIssueBoard#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The assignee the board should be scoped to. Requires a GitLab EE license.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 	AssigneeId *float64 `field:"optional" json:"assigneeId" yaml:"assigneeId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#id ProjectIssueBoard#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The list of label names which the board should be scoped to. Requires a GitLab EE license.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#labels ProjectIssueBoard#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
 	Labels *[]*string `field:"optional" json:"labels" yaml:"labels"`
 	// lists block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#lists ProjectIssueBoard#lists}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
 	Lists interface{} `field:"optional" json:"lists" yaml:"lists"`
 	// The milestone the board should be scoped to. Requires a GitLab EE license.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 	MilestoneId *float64 `field:"optional" json:"milestoneId" yaml:"milestoneId"`
 	// The weight range from 0 to 9, to which the board should be scoped to.
 	//
 	// Requires a GitLab EE license.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#weight ProjectIssueBoard#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

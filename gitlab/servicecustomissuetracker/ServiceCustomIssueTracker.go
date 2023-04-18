@@ -2,14 +2,14 @@ package servicecustomissuetracker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/servicecustomissuetracker/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicecustomissuetracker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_custom_issue_tracker gitlab_service_custom_issue_tracker}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker}.
 type ServiceCustomIssueTracker interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -22,9 +22,9 @@ type ServiceCustomIssueTracker interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceCustomIssueTracker) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,7 +386,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
 func NewServiceCustomIssueTracker(scope constructs.Construct, id *string, config *ServiceCustomIssueTrackerConfig) ServiceCustomIssueTracker {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewServiceCustomIssueTracker(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
 func NewServiceCustomIssueTracker_Override(s ServiceCustomIssueTracker, scope constructs.Construct, id *string, config *ServiceCustomIssueTrackerConfig) {
 	_init_.Initialize()
 
@@ -426,7 +426,10 @@ func (j *jsiiProxy_ServiceCustomIssueTracker)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceCustomIssueTracker)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package pipelinetrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/pipelinetrigger/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/pipelinetrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_trigger gitlab_pipeline_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}.
 type PipelineTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PipelineTrigger interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_PipelineTrigger) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_PipelineTrigger) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PipelineTrigger) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_PipelineTrigger) Token() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_trigger gitlab_pipeline_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
 func NewPipelineTrigger(scope constructs.Construct, id *string, config *PipelineTriggerConfig) PipelineTrigger {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewPipelineTrigger(scope constructs.Construct, id *string, config *Pipeline
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_trigger gitlab_pipeline_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
 func NewPipelineTrigger_Override(p PipelineTrigger, scope constructs.Construct, id *string, config *PipelineTriggerConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_PipelineTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PipelineTrigger)SetCount(val *float64) {
+func (j *jsiiProxy_PipelineTrigger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataGitlabInstanceDeployKeys_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabInstanceDeployKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabInstanceDeployKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

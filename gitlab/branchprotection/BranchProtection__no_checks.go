@@ -92,6 +92,10 @@ func (j *jsiiProxy_BranchProtection) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtection) validateSetIdParameters(val *string) error {
 	return nil
 }

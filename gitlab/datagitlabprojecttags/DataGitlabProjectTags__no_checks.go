@@ -64,6 +64,10 @@ func validateDataGitlabProjectTags_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectTags) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectTags) validateSetIdParameters(val *string) error {
 	return nil
 }

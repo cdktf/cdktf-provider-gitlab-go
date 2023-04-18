@@ -68,6 +68,10 @@ func (j *jsiiProxy_SystemHook) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SystemHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SystemHook) validateSetEnableSslVerificationParameters(val interface{}) error {
 	return nil
 }

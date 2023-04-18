@@ -2,14 +2,14 @@ package application
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/application/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/application/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/application gitlab_application}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application gitlab_application}.
 type Application interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -25,9 +25,9 @@ type Application interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_Application) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Application) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Application) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,7 +388,7 @@ func (j *jsiiProxy_Application) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/application gitlab_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application gitlab_application} Resource.
 func NewApplication(scope constructs.Construct, id *string, config *ApplicationConfig) Application {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewApplication(scope constructs.Construct, id *string, config *ApplicationC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/application gitlab_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application gitlab_application} Resource.
 func NewApplication_Override(a Application, scope constructs.Construct, id *string, config *ApplicationConfig) {
 	_init_.Initialize()
 
@@ -439,7 +439,10 @@ func (j *jsiiProxy_Application)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Application)SetCount(val *float64) {
+func (j *jsiiProxy_Application)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

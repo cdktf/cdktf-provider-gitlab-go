@@ -68,6 +68,10 @@ func (j *jsiiProxy_DeployToken) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DeployToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeployToken) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

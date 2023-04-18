@@ -2,14 +2,14 @@ package systemhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook}.
 type SystemHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SystemHook interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_SystemHook) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SystemHook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SystemHook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -464,7 +464,7 @@ func (j *jsiiProxy_SystemHook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook} Resource.
 func NewSystemHook(scope constructs.Construct, id *string, config *SystemHookConfig) SystemHook {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewSystemHook(scope constructs.Construct, id *string, config *SystemHookCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook} Resource.
 func NewSystemHook_Override(s SystemHook, scope constructs.Construct, id *string, config *SystemHookConfig) {
 	_init_.Initialize()
 
@@ -504,7 +504,10 @@ func (j *jsiiProxy_SystemHook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SystemHook)SetCount(val *float64) {
+func (j *jsiiProxy_SystemHook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

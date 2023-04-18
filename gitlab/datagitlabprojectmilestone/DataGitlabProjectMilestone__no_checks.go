@@ -64,6 +64,10 @@ func validateDataGitlabProjectMilestone_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datagitlabgrouphooks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgrouphooks/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgrouphooks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_hooks gitlab_group_hooks}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks gitlab_group_hooks}.
 type DataGitlabGroupHooks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGitlabGroupHooks interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataGitlabGroupHooks) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupHooks) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGitlabGroupHooks) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGitlabGroupHooks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group_hooks gitlab_group_hooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks gitlab_group_hooks} Data Source.
 func NewDataGitlabGroupHooks(scope constructs.Construct, id *string, config *DataGitlabGroupHooksConfig) DataGitlabGroupHooks {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGitlabGroupHooks(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group_hooks gitlab_group_hooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks gitlab_group_hooks} Data Source.
 func NewDataGitlabGroupHooks_Override(d DataGitlabGroupHooks, scope constructs.Construct, id *string, config *DataGitlabGroupHooksConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataGitlabGroupHooks_Override(d DataGitlabGroupHooks, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupHooks)SetCount(val *float64) {
+func (j *jsiiProxy_DataGitlabGroupHooks)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

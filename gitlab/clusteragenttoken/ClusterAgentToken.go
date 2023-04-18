@@ -2,14 +2,14 @@ package clusteragenttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 type ClusterAgentToken interface {
 	cdktf.TerraformResource
 	AgentId() *float64
@@ -24,9 +24,9 @@ type ClusterAgentToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	CreatedByUserId() *float64
 	// Experimental.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ClusterAgentToken) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ClusterAgentToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ClusterAgentToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -445,7 +445,7 @@ func (j *jsiiProxy_ClusterAgentToken) TokenId() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken(scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) ClusterAgentToken {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewClusterAgentToken(scope constructs.Construct, id *string, config *Cluste
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken_Override(c ClusterAgentToken, scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) {
 	_init_.Initialize()
 
@@ -496,7 +496,10 @@ func (j *jsiiProxy_ClusterAgentToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClusterAgentToken)SetCount(val *float64) {
+func (j *jsiiProxy_ClusterAgentToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

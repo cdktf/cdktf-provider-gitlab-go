@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license gitlab_managed_license}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license}.
 type ManagedLicense interface {
 	cdktf.TerraformResource
 	ApprovalStatus() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_ManagedLicense) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license gitlab_managed_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license} Resource.
 func NewManagedLicense(scope constructs.Construct, id *string, config *ManagedLicenseConfig) ManagedLicense {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewManagedLicense(scope constructs.Construct, id *string, config *ManagedLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license gitlab_managed_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license} Resource.
 func NewManagedLicense_Override(m ManagedLicense, scope constructs.Construct, id *string, config *ManagedLicenseConfig) {
 	_init_.Initialize()
 

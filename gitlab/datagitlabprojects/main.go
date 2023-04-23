@@ -393,6 +393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "issuesAccessLevel", GoGetter: "IssuesAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "issuesEnabled", GoGetter: "IssuesEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "jobsEnabled", GoGetter: "JobsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "keepLatestArtifact", GoGetter: "KeepLatestArtifact"},
 			_jsii_.MemberProperty{JsiiProperty: "lastActivityAt", GoGetter: "LastActivityAt"},
 			_jsii_.MemberProperty{JsiiProperty: "lfsEnabled", GoGetter: "LfsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "links", GoGetter: "Links"},

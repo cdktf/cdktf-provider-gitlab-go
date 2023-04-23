@@ -236,6 +236,10 @@ func (j *jsiiProxy_Project) validateSetIssuesTemplateParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetKeepLatestArtifactParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetLfsEnabledParameters(val interface{}) error {
 	return nil
 }

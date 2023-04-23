@@ -25,17 +25,17 @@ type ManagedLicenseConfig struct {
 	// have been deprecated in favor of "allowed" and "denied"; use "allowed" and "denied" for GitLab versions 15.0 and higher.
 	// Prior to version 15.0 and after 14.6, the values are equivalent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license#approval_status ManagedLicense#approval_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license#approval_status ManagedLicense#approval_status}
 	ApprovalStatus *string `field:"required" json:"approvalStatus" yaml:"approvalStatus"`
 	// The name of the managed license (I.e., 'Apache License 2.0' or 'MIT license').
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license#name ManagedLicense#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license#name ManagedLicense#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID of the project under which the managed license will be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license#project ManagedLicense#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license#project ManagedLicense#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/managed_license#id ManagedLicense#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license#id ManagedLicense#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

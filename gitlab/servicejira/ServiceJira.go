@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_jira gitlab_service_jira}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira gitlab_service_jira}.
 type ServiceJira interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -710,7 +710,7 @@ func (j *jsiiProxy_ServiceJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_jira gitlab_service_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira gitlab_service_jira} Resource.
 func NewServiceJira(scope constructs.Construct, id *string, config *ServiceJiraConfig) ServiceJira {
 	_init_.Initialize()
 
@@ -728,7 +728,7 @@ func NewServiceJira(scope constructs.Construct, id *string, config *ServiceJiraC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_jira gitlab_service_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira gitlab_service_jira} Resource.
 func NewServiceJira_Override(s ServiceJira, scope constructs.Construct, id *string, config *ServiceJiraConfig) {
 	_init_.Initialize()
 

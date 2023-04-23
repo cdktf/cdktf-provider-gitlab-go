@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group gitlab_project_share_group}.
 type ProjectShareGroup interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ProjectShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup(scope constructs.Construct, id *string, config *ProjectShareGroupConfig) ProjectShareGroup {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewProjectShareGroup(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup_Override(p ProjectShareGroup, scope constructs.Construct, id *string, config *ProjectShareGroupConfig) {
 	_init_.Initialize()
 

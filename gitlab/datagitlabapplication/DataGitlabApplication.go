@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application gitlab_application}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/application gitlab_application}.
 type DataGitlabApplication interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -301,7 +301,7 @@ func (j *jsiiProxy_DataGitlabApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application gitlab_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/application gitlab_application} Data Source.
 func NewDataGitlabApplication(scope constructs.Construct, id *string, config *DataGitlabApplicationConfig) DataGitlabApplication {
 	_init_.Initialize()
 
@@ -319,7 +319,7 @@ func NewDataGitlabApplication(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application gitlab_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/application gitlab_application} Data Source.
 func NewDataGitlabApplication_Override(d DataGitlabApplication, scope constructs.Construct, id *string, config *DataGitlabApplicationConfig) {
 	_init_.Initialize()
 

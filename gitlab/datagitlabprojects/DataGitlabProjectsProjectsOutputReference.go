@@ -69,6 +69,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	IssuesAccessLevel() *string
 	IssuesEnabled() cdktf.IResolvable
 	JobsEnabled() cdktf.IResolvable
+	KeepLatestArtifact() cdktf.IResolvable
 	LastActivityAt() *string
 	LfsEnabled() cdktf.IResolvable
 	Links() cdktf.StringMap
@@ -615,6 +616,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) JobsEnabled() cdkt
 	_jsii_.Get(
 		j,
 		"jobsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) KeepLatestArtifact() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"keepLatestArtifact",
 		&returns,
 	)
 	return returns

@@ -136,6 +136,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAutomaticPurchasedStorageAllo
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetCanCreateGroupParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetCheckNamespacePlanParameters(val interface{}) error {
 	return nil
 }

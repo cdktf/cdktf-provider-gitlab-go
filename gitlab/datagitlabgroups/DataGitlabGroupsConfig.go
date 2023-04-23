@@ -19,22 +19,22 @@ type DataGitlabGroupsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#id DataGitlabGroups#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#id DataGitlabGroups#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// Search groups by name or path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#search DataGitlabGroups#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#search DataGitlabGroups#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 	// Sort groups' list in asc or desc order. (Requires administrator privileges).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
 	Sort *string `field:"optional" json:"sort" yaml:"sort"`
 }
 

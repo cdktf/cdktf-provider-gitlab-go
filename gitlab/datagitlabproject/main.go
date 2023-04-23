@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issuesAccessLevel", GoGetter: "IssuesAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "issuesEnabled", GoGetter: "IssuesEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "keepLatestArtifact", GoGetter: "KeepLatestArtifact"},
 			_jsii_.MemberProperty{JsiiProperty: "lfsEnabled", GoGetter: "LfsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeCommitTemplate", GoGetter: "MergeCommitTemplate"},

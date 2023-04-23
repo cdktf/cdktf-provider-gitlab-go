@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -157,6 +157,9 @@ type Project interface {
 	IssuesTemplate() *string
 	SetIssuesTemplate(val *string)
 	IssuesTemplateInput() *string
+	KeepLatestArtifact() interface{}
+	SetKeepLatestArtifact(val interface{})
+	KeepLatestArtifactInput() interface{}
 	LfsEnabled() interface{}
 	SetLfsEnabled(val interface{})
 	LfsEnabledInput() interface{}
@@ -399,6 +402,7 @@ type Project interface {
 	ResetIssuesAccessLevel()
 	ResetIssuesEnabled()
 	ResetIssuesTemplate()
+	ResetKeepLatestArtifact()
 	ResetLfsEnabled()
 	ResetMergeCommitTemplate()
 	ResetMergeMethod()
@@ -1361,6 +1365,26 @@ func (j *jsiiProxy_Project) IssuesTemplateInput() *string {
 	_jsii_.Get(
 		j,
 		"issuesTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) KeepLatestArtifact() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepLatestArtifact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) KeepLatestArtifactInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepLatestArtifactInput",
 		&returns,
 	)
 	return returns
@@ -2487,7 +2511,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2505,7 +2529,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2979,6 +3003,17 @@ func (j *jsiiProxy_Project)SetIssuesTemplate(val *string) {
 	_jsii_.Set(
 		j,
 		"issuesTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetKeepLatestArtifact(val interface{}) {
+	if err := j.validateSetKeepLatestArtifactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keepLatestArtifact",
 		val,
 	)
 }
@@ -4156,6 +4191,14 @@ func (p *jsiiProxy_Project) ResetIssuesTemplate() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIssuesTemplate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetKeepLatestArtifact() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeepLatestArtifact",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}.
 type PipelineTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_PipelineTrigger) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
 func NewPipelineTrigger(scope constructs.Construct, id *string, config *PipelineTriggerConfig) PipelineTrigger {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewPipelineTrigger(scope constructs.Construct, id *string, config *Pipeline
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource.
 func NewPipelineTrigger_Override(p PipelineTrigger, scope constructs.Construct, id *string, config *PipelineTriggerConfig) {
 	_init_.Initialize()
 

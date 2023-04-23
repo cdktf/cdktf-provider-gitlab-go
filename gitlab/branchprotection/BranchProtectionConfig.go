@@ -21,48 +21,48 @@ type BranchProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the branch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#branch BranchProtection#branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#branch BranchProtection#branch}
 	Branch *string `field:"required" json:"branch" yaml:"branch"`
 	// The id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#project BranchProtection#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#project BranchProtection#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// allowed_to_merge block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 	AllowedToMerge interface{} `field:"optional" json:"allowedToMerge" yaml:"allowedToMerge"`
 	// allowed_to_push block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 	AllowedToPush interface{} `field:"optional" json:"allowedToPush" yaml:"allowedToPush"`
 	// allowed_to_unprotect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 	AllowedToUnprotect interface{} `field:"optional" json:"allowedToUnprotect" yaml:"allowedToUnprotect"`
 	// Can be set to true to allow users with push access to force push.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 	AllowForcePush interface{} `field:"optional" json:"allowForcePush" yaml:"allowForcePush"`
 	// Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 	CodeOwnerApprovalRequired interface{} `field:"optional" json:"codeOwnerApprovalRequired" yaml:"codeOwnerApprovalRequired"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#id BranchProtection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#id BranchProtection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 	MergeAccessLevel *string `field:"optional" json:"mergeAccessLevel" yaml:"mergeAccessLevel"`
 	// Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 	PushAccessLevel *string `field:"optional" json:"pushAccessLevel" yaml:"pushAccessLevel"`
 	// Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 	UnprotectAccessLevel *string `field:"optional" json:"unprotectAccessLevel" yaml:"unprotectAccessLevel"`
 }
 

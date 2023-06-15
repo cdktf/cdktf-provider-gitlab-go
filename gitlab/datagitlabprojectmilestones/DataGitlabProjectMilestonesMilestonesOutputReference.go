@@ -2,9 +2,9 @@ package datagitlabprojectmilestones
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectmilestones/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojectmilestones/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

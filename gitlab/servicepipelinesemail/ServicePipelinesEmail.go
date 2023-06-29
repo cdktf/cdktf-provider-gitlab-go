@@ -2,14 +2,14 @@ package servicepipelinesemail
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/servicepipelinesemail/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicepipelinesemail/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email}.
 type ServicePipelinesEmail interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
 func NewServicePipelinesEmail(scope constructs.Construct, id *string, config *ServicePipelinesEmailConfig) ServicePipelinesEmail {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewServicePipelinesEmail(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
 func NewServicePipelinesEmail_Override(s ServicePipelinesEmail, scope constructs.Construct, id *string, config *ServicePipelinesEmailConfig) {
 	_init_.Initialize()
 

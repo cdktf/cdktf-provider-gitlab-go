@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package managedlicense
+package integrationgithub
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (m *jsiiProxy_ManagedLicense) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IntegrationGithub) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (m *jsiiProxy_ManagedLicense) validateAddOverrideParameters(path *string, v
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetAnyMapAttributeParameters(terrafor
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetBooleanAttributeParameters(terrafo
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetBooleanMapAttributeParameters(terr
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetListAttributeParameters(terraformA
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetNumberAttributeParameters(terrafor
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetNumberListAttributeParameters(terr
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetNumberMapAttributeParameters(terra
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetStringAttributeParameters(terrafor
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (m *jsiiProxy_ManagedLicense) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (m *jsiiProxy_ManagedLicense) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
-func (m *jsiiProxy_ManagedLicense) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (i *jsiiProxy_IntegrationGithub) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (m *jsiiProxy_ManagedLicense) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func validateManagedLicense_IsConstructParameters(x interface{}) error {
+func validateIntegrationGithub_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -119,7 +119,7 @@ func validateManagedLicense_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateManagedLicense_IsTerraformElementParameters(x interface{}) error {
+func validateIntegrationGithub_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateManagedLicense_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateManagedLicense_IsTerraformResourceParameters(x interface{}) error {
+func validateIntegrationGithub_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,15 +135,7 @@ func validateManagedLicense_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetApprovalStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ManagedLicense) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -176,7 +168,7 @@ func (j *jsiiProxy_ManagedLicense) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -233,7 +225,7 @@ func (j *jsiiProxy_ManagedLicense) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -241,7 +233,7 @@ func (j *jsiiProxy_ManagedLicense) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -249,7 +241,7 @@ func (j *jsiiProxy_ManagedLicense) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,15 +249,7 @@ func (j *jsiiProxy_ManagedLicense) validateSetNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_ManagedLicense) validateSetProjectParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ManagedLicense) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -311,7 +295,43 @@ func (j *jsiiProxy_ManagedLicense) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func validateNewManagedLicenseParameters(scope constructs.Construct, id *string, config *ManagedLicenseConfig) error {
+func (j *jsiiProxy_IntegrationGithub) validateSetRepositoryUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGithub) validateSetStaticContextParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGithub) validateSetTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewIntegrationGithubParameters(scope constructs.Construct, id *string, config *IntegrationGithubConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

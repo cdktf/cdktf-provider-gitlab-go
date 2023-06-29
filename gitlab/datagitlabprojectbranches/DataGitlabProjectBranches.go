@@ -2,14 +2,14 @@ package datagitlabprojectbranches
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojectbranches/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectbranches/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_branches gitlab_project_branches}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_branches gitlab_project_branches}.
 type DataGitlabProjectBranches interface {
 	cdktf.TerraformDataSource
 	Branches() DataGitlabProjectBranchesBranchesList
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGitlabProjectBranches) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
 func NewDataGitlabProjectBranches(scope constructs.Construct, id *string, config *DataGitlabProjectBranchesConfig) DataGitlabProjectBranches {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGitlabProjectBranches(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
 func NewDataGitlabProjectBranches_Override(d DataGitlabProjectBranches, scope constructs.Construct, id *string, config *DataGitlabProjectBranchesConfig) {
 	_init_.Initialize()
 

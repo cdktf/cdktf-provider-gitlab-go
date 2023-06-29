@@ -2,9 +2,9 @@ package datagitlabprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojects/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -91,7 +91,6 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	OnlyAllowMergeIfPipelineSucceeds() cdktf.IResolvable
 	OnlyMirrorProtectedBranches() cdktf.IResolvable
 	OpenIssuesCount() *float64
-	OperationsAccessLevel() *string
 	Owner() DataGitlabProjectsProjectsOwnerList
 	PackagesEnabled() cdktf.IResolvable
 	Path() *string
@@ -836,16 +835,6 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) OpenIssuesCount() 
 	_jsii_.Get(
 		j,
 		"openIssuesCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) OperationsAccessLevel() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"operationsAccessLevel",
 		&returns,
 	)
 	return returns

@@ -2,14 +2,14 @@ package usergpgkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/usergpgkey/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/usergpgkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/user_gpgkey gitlab_user_gpgkey}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_gpgkey gitlab_user_gpgkey}.
 type UserGpgkey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_UserGpgkey) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/user_gpgkey gitlab_user_gpgkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_gpgkey gitlab_user_gpgkey} Resource.
 func NewUserGpgkey(scope constructs.Construct, id *string, config *UserGpgkeyConfig) UserGpgkey {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewUserGpgkey(scope constructs.Construct, id *string, config *UserGpgkeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/user_gpgkey gitlab_user_gpgkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_gpgkey gitlab_user_gpgkey} Resource.
 func NewUserGpgkey_Override(u UserGpgkey, scope constructs.Construct, id *string, config *UserGpgkeyConfig) {
 	_init_.Initialize()
 

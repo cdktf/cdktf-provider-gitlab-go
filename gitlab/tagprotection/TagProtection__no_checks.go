@@ -52,6 +52,10 @@ func (t *jsiiProxy_TagProtection) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (t *jsiiProxy_TagProtection) validatePutAllowedToCreateParameters(value interface{}) error {
+	return nil
+}
+
 func validateTagProtection_IsConstructParameters(x interface{}) error {
 	return nil
 }

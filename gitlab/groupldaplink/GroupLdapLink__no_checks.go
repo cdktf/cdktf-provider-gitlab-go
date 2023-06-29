@@ -80,15 +80,19 @@ func (j *jsiiProxy_GroupLdapLink) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GroupLdapLink) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupLdapLink) validateSetForceParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupLdapLink) validateSetGroupAccessParameters(val *string) error {
+func (j *jsiiProxy_GroupLdapLink) validateSetGroupParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupLdapLink) validateSetGroupIdParameters(val *string) error {
+func (j *jsiiProxy_GroupLdapLink) validateSetGroupAccessParameters(val *string) error {
 	return nil
 }
 

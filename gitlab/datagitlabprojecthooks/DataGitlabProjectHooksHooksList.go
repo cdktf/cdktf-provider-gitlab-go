@@ -2,9 +2,9 @@ package datagitlabprojecthooks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojecthooks/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojecthooks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

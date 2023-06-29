@@ -104,6 +104,10 @@ func (j *jsiiProxy_GroupVariable) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_GroupVariable) validateSetRawParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupVariable) validateSetValueParameters(val *string) error {
 	return nil
 }

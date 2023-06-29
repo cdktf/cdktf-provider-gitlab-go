@@ -2,14 +2,14 @@ package deploykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/deploykey/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/deploykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_key gitlab_deploy_key}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_key gitlab_deploy_key}.
 type DeployKey interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -31,6 +31,7 @@ type DeployKey interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployKeyId() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DeployKey) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeployKey) DeployKeyId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployKeyId",
 		&returns,
 	)
 	return returns
@@ -379,7 +390,7 @@ func (j *jsiiProxy_DeployKey) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfig) DeployKey {
 	_init_.Initialize()
 
@@ -397,7 +408,7 @@ func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey_Override(d DeployKey, scope constructs.Construct, id *string, config *DeployKeyConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package instancevariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/instancevariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable gitlab_instance_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable gitlab_instance_variable}.
 type InstanceVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type InstanceVariable interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Raw() interface{}
+	SetRaw(val interface{})
+	RawInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -107,6 +110,7 @@ type InstanceVariable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtected()
+	ResetRaw()
 	ResetVariableType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -323,6 +327,26 @@ func (j *jsiiProxy_InstanceVariable) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_InstanceVariable) Raw() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"raw",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceVariable) RawInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_InstanceVariable) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_InstanceVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable(scope constructs.Construct, id *string, config *InstanceVariableConfig) InstanceVariable {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewInstanceVariable(scope constructs.Construct, id *string, config *Instanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable_Override(i InstanceVariable, scope constructs.Construct, id *string, config *InstanceVariableConfig) {
 	_init_.Initialize()
 
@@ -541,6 +565,17 @@ func (j *jsiiProxy_InstanceVariable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceVariable)SetRaw(val interface{}) {
+	if err := j.validateSetRawParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"raw",
 		val,
 	)
 }
@@ -861,6 +896,14 @@ func (i *jsiiProxy_InstanceVariable) ResetProtected() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProtected",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceVariable) ResetRaw() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRaw",
 		nil, // no parameters
 	)
 }

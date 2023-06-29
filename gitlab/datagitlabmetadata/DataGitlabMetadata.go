@@ -2,14 +2,14 @@ package datagitlabmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabmetadata/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabmetadata/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/metadata gitlab_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/metadata gitlab_metadata}.
 type DataGitlabMetadata interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataGitlabMetadata) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/metadata gitlab_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/metadata gitlab_metadata} Data Source.
 func NewDataGitlabMetadata(scope constructs.Construct, id *string, config *DataGitlabMetadataConfig) DataGitlabMetadata {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataGitlabMetadata(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/metadata gitlab_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/metadata gitlab_metadata} Data Source.
 func NewDataGitlabMetadata_Override(d DataGitlabMetadata, scope constructs.Construct, id *string, config *DataGitlabMetadataConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package groupvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupvariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/groupvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable gitlab_group_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable gitlab_group_variable}.
 type GroupVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type GroupVariable interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Raw() interface{}
+	SetRaw(val interface{})
+	RawInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -114,6 +117,7 @@ type GroupVariable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtected()
+	ResetRaw()
 	ResetVariableType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -370,6 +374,26 @@ func (j *jsiiProxy_GroupVariable) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GroupVariable) Raw() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"raw",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupVariable) RawInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupVariable) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_GroupVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVariableConfig) GroupVariable {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVaria
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable_Override(g GroupVariable, scope constructs.Construct, id *string, config *GroupVariableConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_GroupVariable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupVariable)SetRaw(val interface{}) {
+	if err := j.validateSetRawParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"raw",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (g *jsiiProxy_GroupVariable) ResetProtected() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProtected",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupVariable) ResetRaw() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRaw",
 		nil, // no parameters
 	)
 }

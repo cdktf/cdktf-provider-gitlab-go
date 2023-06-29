@@ -2,14 +2,14 @@ package projectlevelmrapprovals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectlevelmrapprovals/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlevelmrapprovals/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
 type ProjectLevelMrApprovals interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,9 +54,9 @@ type ProjectLevelMrApprovals interface {
 	MergeRequestsDisableCommittersApprovalInput() interface{}
 	// The tree node.
 	Node() constructs.Node
-	ProjectId() *float64
-	SetProjectId(val *float64)
-	ProjectIdInput() *float64
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -308,21 +308,21 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectLevelMrApprovals) ProjectId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectLevelMrApprovals) Project() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"projectId",
+		"project",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ProjectLevelMrApprovals) ProjectIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectLevelMrApprovals) ProjectInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"projectIdInput",
+		"projectInput",
 		&returns,
 	)
 	return returns
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) ProjectLevelMrApprovals {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals_Override(p ProjectLevelMrApprovals, scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) {
 	_init_.Initialize()
 
@@ -551,13 +551,13 @@ func (j *jsiiProxy_ProjectLevelMrApprovals)SetMergeRequestsDisableCommittersAppr
 	)
 }
 
-func (j *jsiiProxy_ProjectLevelMrApprovals)SetProjectId(val *float64) {
-	if err := j.validateSetProjectIdParameters(val); err != nil {
+func (j *jsiiProxy_ProjectLevelMrApprovals)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"projectId",
+		"project",
 		val,
 	)
 }

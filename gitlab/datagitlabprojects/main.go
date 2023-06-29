@@ -415,7 +415,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onlyAllowMergeIfPipelineSucceeds", GoGetter: "OnlyAllowMergeIfPipelineSucceeds"},
 			_jsii_.MemberProperty{JsiiProperty: "onlyMirrorProtectedBranches", GoGetter: "OnlyMirrorProtectedBranches"},
 			_jsii_.MemberProperty{JsiiProperty: "openIssuesCount", GoGetter: "OpenIssuesCount"},
-			_jsii_.MemberProperty{JsiiProperty: "operationsAccessLevel", GoGetter: "OperationsAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "owner", GoGetter: "Owner"},
 			_jsii_.MemberProperty{JsiiProperty: "packagesEnabled", GoGetter: "PackagesEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},

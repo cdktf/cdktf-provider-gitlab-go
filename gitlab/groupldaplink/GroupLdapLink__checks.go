@@ -241,6 +241,14 @@ func (j *jsiiProxy_GroupLdapLink) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GroupLdapLink) validateSetFilterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GroupLdapLink) validateSetForceParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -261,7 +269,7 @@ func (j *jsiiProxy_GroupLdapLink) validateSetForceParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_GroupLdapLink) validateSetGroupAccessParameters(val *string) error {
+func (j *jsiiProxy_GroupLdapLink) validateSetGroupParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +277,7 @@ func (j *jsiiProxy_GroupLdapLink) validateSetGroupAccessParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GroupLdapLink) validateSetGroupIdParameters(val *string) error {
+func (j *jsiiProxy_GroupLdapLink) validateSetGroupAccessParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

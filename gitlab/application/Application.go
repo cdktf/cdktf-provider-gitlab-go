@@ -2,14 +2,14 @@ package application
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/application/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/application/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/application gitlab_application}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/application gitlab_application}.
 type Application interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_Application) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/application gitlab_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/application gitlab_application} Resource.
 func NewApplication(scope constructs.Construct, id *string, config *ApplicationConfig) Application {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewApplication(scope constructs.Construct, id *string, config *ApplicationC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/application gitlab_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/application gitlab_application} Resource.
 func NewApplication_Override(a Application, scope constructs.Construct, id *string, config *ApplicationConfig) {
 	_init_.Initialize()
 

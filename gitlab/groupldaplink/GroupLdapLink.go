@@ -2,14 +2,14 @@ package groupldaplink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupldaplink/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/groupldaplink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
 type GroupLdapLink interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -34,6 +34,9 @@ type GroupLdapLink interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	Force() interface{}
 	SetForce(val interface{})
 	ForceInput() interface{}
@@ -45,12 +48,12 @@ type GroupLdapLink interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Group() *string
+	SetGroup(val *string)
 	GroupAccess() *string
 	SetGroupAccess(val *string)
 	GroupAccessInput() *string
-	GroupId() *string
-	SetGroupId(val *string)
-	GroupIdInput() *string
+	GroupInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -105,6 +108,8 @@ type GroupLdapLink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessLevel()
+	ResetCn()
+	ResetFilter()
 	ResetForce()
 	ResetGroupAccess()
 	ResetId()
@@ -216,6 +221,26 @@ func (j *jsiiProxy_GroupLdapLink) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GroupLdapLink) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupLdapLink) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupLdapLink) Force() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -266,6 +291,16 @@ func (j *jsiiProxy_GroupLdapLink) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GroupLdapLink) Group() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"group",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupLdapLink) GroupAccess() *string {
 	var returns *string
 	_jsii_.Get(
@@ -286,21 +321,11 @@ func (j *jsiiProxy_GroupLdapLink) GroupAccessInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupLdapLink) GroupId() *string {
+func (j *jsiiProxy_GroupLdapLink) GroupInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"groupId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupLdapLink) GroupIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"groupIdInput",
+		"groupInput",
 		&returns,
 	)
 	return returns
@@ -427,7 +452,7 @@ func (j *jsiiProxy_GroupLdapLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapLinkConfig) GroupLdapLink {
 	_init_.Initialize()
 
@@ -445,7 +470,7 @@ func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink_Override(g GroupLdapLink, scope constructs.Construct, id *string, config *GroupLdapLinkConfig) {
 	_init_.Initialize()
 
@@ -508,6 +533,17 @@ func (j *jsiiProxy_GroupLdapLink)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_GroupLdapLink)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GroupLdapLink)SetForce(val interface{}) {
 	if err := j.validateSetForceParameters(val); err != nil {
 		panic(err)
@@ -527,6 +563,17 @@ func (j *jsiiProxy_GroupLdapLink)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_GroupLdapLink)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"group",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GroupLdapLink)SetGroupAccess(val *string) {
 	if err := j.validateSetGroupAccessParameters(val); err != nil {
 		panic(err)
@@ -534,17 +581,6 @@ func (j *jsiiProxy_GroupLdapLink)SetGroupAccess(val *string) {
 	_jsii_.Set(
 		j,
 		"groupAccess",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupLdapLink)SetGroupId(val *string) {
-	if err := j.validateSetGroupIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupId",
 		val,
 	)
 }
@@ -871,6 +907,22 @@ func (g *jsiiProxy_GroupLdapLink) ResetAccessLevel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAccessLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupLdapLink) ResetCn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupLdapLink) ResetFilter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

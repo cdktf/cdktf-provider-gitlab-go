@@ -1,0 +1,1068 @@
+package integrationemailsonpush
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/integrationemailsonpush/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push}.
+type IntegrationEmailsOnPush interface {
+	cdktf.TerraformResource
+	Active() cdktf.IResolvable
+	BranchesToBeNotified() *string
+	SetBranchesToBeNotified(val *string)
+	BranchesToBeNotifiedInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CreatedAt() *string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DisableDiffs() interface{}
+	SetDisableDiffs(val interface{})
+	DisableDiffsInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	PushEvents() interface{}
+	SetPushEvents(val interface{})
+	PushEventsInput() interface{}
+	// Experimental.
+	RawOverrides() interface{}
+	Recipients() *string
+	SetRecipients(val *string)
+	RecipientsInput() *string
+	SendFromCommitterEmail() interface{}
+	SetSendFromCommitterEmail(val interface{})
+	SendFromCommitterEmailInput() interface{}
+	Slug() *string
+	TagPushEvents() interface{}
+	SetTagPushEvents(val interface{})
+	TagPushEventsInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Title() *string
+	UpdatedAt() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetBranchesToBeNotified()
+	ResetDisableDiffs()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPushEvents()
+	ResetSendFromCommitterEmail()
+	ResetTagPushEvents()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for IntegrationEmailsOnPush
+type jsiiProxy_IntegrationEmailsOnPush struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Active() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"active",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) BranchesToBeNotified() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchesToBeNotified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) BranchesToBeNotifiedInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchesToBeNotifiedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) DisableDiffs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableDiffs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) DisableDiffsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableDiffsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) PushEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pushEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) PushEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pushEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Recipients() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recipients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) RecipientsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recipientsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) SendFromCommitterEmail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendFromCommitterEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) SendFromCommitterEmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendFromCommitterEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Slug() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"slug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) TagPushEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagPushEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) TagPushEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagPushEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push} Resource.
+func NewIntegrationEmailsOnPush(scope constructs.Construct, id *string, config *IntegrationEmailsOnPushConfig) IntegrationEmailsOnPush {
+	_init_.Initialize()
+
+	if err := validateNewIntegrationEmailsOnPushParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_IntegrationEmailsOnPush{}
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push} Resource.
+func NewIntegrationEmailsOnPush_Override(i IntegrationEmailsOnPush, scope constructs.Construct, id *string, config *IntegrationEmailsOnPushConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		[]interface{}{scope, id, config},
+		i,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetBranchesToBeNotified(val *string) {
+	if err := j.validateSetBranchesToBeNotifiedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"branchesToBeNotified",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetDisableDiffs(val interface{}) {
+	if err := j.validateSetDisableDiffsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableDiffs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetPushEvents(val interface{}) {
+	if err := j.validateSetPushEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pushEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetRecipients(val *string) {
+	if err := j.validateSetRecipientsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recipients",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetSendFromCommitterEmail(val interface{}) {
+	if err := j.validateSetSendFromCommitterEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendFromCommitterEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationEmailsOnPush)SetTagPushEvents(val interface{}) {
+	if err := j.validateSetTagPushEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagPushEvents",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func IntegrationEmailsOnPush_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIntegrationEmailsOnPush_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IntegrationEmailsOnPush_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIntegrationEmailsOnPush_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IntegrationEmailsOnPush_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIntegrationEmailsOnPush_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func IntegrationEmailsOnPush_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-gitlab.integrationEmailsOnPush.IntegrationEmailsOnPush",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		i,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		i,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetBranchesToBeNotified() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBranchesToBeNotified",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetDisableDiffs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetDisableDiffs",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetPushEvents() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPushEvents",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetSendFromCommitterEmail() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSendFromCommitterEmail",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ResetTagPushEvents() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagPushEvents",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationEmailsOnPush) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

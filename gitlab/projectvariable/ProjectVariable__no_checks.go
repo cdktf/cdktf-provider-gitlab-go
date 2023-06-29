@@ -104,6 +104,10 @@ func (j *jsiiProxy_ProjectVariable) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ProjectVariable) validateSetRawParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectVariable) validateSetValueParameters(val *string) error {
 	return nil
 }

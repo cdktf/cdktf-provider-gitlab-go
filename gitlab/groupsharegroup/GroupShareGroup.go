@@ -2,14 +2,14 @@ package groupsharegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupsharegroup/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/groupsharegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_share_group gitlab_group_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_share_group gitlab_group_share_group}.
 type GroupShareGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_GroupShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupShareGroupConfig) GroupShareGroup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupSha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup_Override(g GroupShareGroup, scope constructs.Construct, id *string, config *GroupShareGroupConfig) {
 	_init_.Initialize()
 

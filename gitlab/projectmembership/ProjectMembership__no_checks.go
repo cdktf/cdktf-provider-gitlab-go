@@ -88,7 +88,7 @@ func (j *jsiiProxy_ProjectMembership) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ProjectMembership) validateSetProjectIdParameters(val *string) error {
+func (j *jsiiProxy_ProjectMembership) validateSetProjectParameters(val *string) error {
 	return nil
 }
 

@@ -2,9 +2,9 @@ package datagitlabinstancevariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabinstancevariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,7 @@ type DataGitlabInstanceVariablesVariablesOutputReference interface {
 	Key() *string
 	Masked() cdktf.IResolvable
 	Protected() cdktf.IResolvable
+	Raw() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Protecte
 	_jsii_.Get(
 		j,
 		"protected",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Raw() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"raw",
 		&returns,
 	)
 	return returns

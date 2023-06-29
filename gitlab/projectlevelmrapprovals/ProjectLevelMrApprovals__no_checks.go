@@ -92,7 +92,7 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetMergeRequestsDisableCommi
 	return nil
 }
 
-func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetProjectIdParameters(val *float64) error {
+func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetProjectParameters(val *string) error {
 	return nil
 }
 

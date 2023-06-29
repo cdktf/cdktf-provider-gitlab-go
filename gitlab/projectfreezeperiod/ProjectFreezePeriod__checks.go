@@ -265,7 +265,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) validateSetProjectIdParameters(val *string) error {
+func (j *jsiiProxy_ProjectFreezePeriod) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

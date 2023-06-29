@@ -2,14 +2,14 @@ package deploytoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/deploytoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/deploytoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token gitlab_deploy_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token gitlab_deploy_token}.
 type DeployToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type DeployToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployTokenId() *float64
 	ExpiresAt() *string
 	SetExpiresAt(val *string)
 	ExpiresAtInput() *string
@@ -173,6 +174,16 @@ func (j *jsiiProxy_DeployToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeployToken) DeployTokenId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployTokenId",
 		&returns,
 	)
 	return returns
@@ -439,7 +450,7 @@ func (j *jsiiProxy_DeployToken) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token gitlab_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token gitlab_deploy_token} Resource.
 func NewDeployToken(scope constructs.Construct, id *string, config *DeployTokenConfig) DeployToken {
 	_init_.Initialize()
 
@@ -457,7 +468,7 @@ func NewDeployToken(scope constructs.Construct, id *string, config *DeployTokenC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token gitlab_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token gitlab_deploy_token} Resource.
 func NewDeployToken_Override(d DeployToken, scope constructs.Construct, id *string, config *DeployTokenConfig) {
 	_init_.Initialize()
 

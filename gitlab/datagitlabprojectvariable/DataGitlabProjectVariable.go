@@ -2,14 +2,14 @@ package datagitlabprojectvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojectvariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_variable gitlab_project_variable}.
 type DataGitlabProjectVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,7 @@ type DataGitlabProjectVariable interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Raw() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -311,6 +312,16 @@ func (j *jsiiProxy_DataGitlabProjectVariable) Provider() cdktf.TerraformProvider
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectVariable) Raw() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"raw",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectVariable) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -372,7 +383,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) VariableType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) DataGitlabProjectVariable {
 	_init_.Initialize()
 
@@ -390,7 +401,7 @@ func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable_Override(d DataGitlabProjectVariable, scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) {
 	_init_.Initialize()
 

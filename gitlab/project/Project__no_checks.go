@@ -316,10 +316,6 @@ func (j *jsiiProxy_Project) validateSetOnlyMirrorProtectedBranchesParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_Project) validateSetOperationsAccessLevelParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Project) validateSetPackagesEnabledParameters(val interface{}) error {
 	return nil
 }

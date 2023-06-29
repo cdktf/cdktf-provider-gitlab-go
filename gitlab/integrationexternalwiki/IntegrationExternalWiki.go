@@ -1,20 +1,18 @@
-package managedlicense
+package integrationexternalwiki
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/managedlicense/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/integrationexternalwiki/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license}.
-type ManagedLicense interface {
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki}.
+type IntegrationExternalWiki interface {
 	cdktf.TerraformResource
-	ApprovalStatus() *string
-	SetApprovalStatus(val *string)
-	ApprovalStatusInput() *string
+	Active() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,10 +25,14 @@ type ManagedLicense interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalWikiUrl() *string
+	SetExternalWikiUrl(val *string)
+	ExternalWikiUrlInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,9 +48,6 @@ type ManagedLicense interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -64,12 +63,15 @@ type ManagedLicense interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Slug() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Title() *string
+	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,32 +111,22 @@ type ManagedLicense interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for ManagedLicense
-type jsiiProxy_ManagedLicense struct {
+// The jsii proxy struct for IntegrationExternalWiki
+type jsiiProxy_IntegrationExternalWiki struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ManagedLicense) ApprovalStatus() *string {
-	var returns *string
+func (j *jsiiProxy_IntegrationExternalWiki) Active() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"approvalStatus",
+		"active",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) ApprovalStatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"approvalStatusInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedLicense) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_IntegrationExternalWiki) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -144,7 +136,7 @@ func (j *jsiiProxy_ManagedLicense) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Connection() interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -154,7 +146,7 @@ func (j *jsiiProxy_ManagedLicense) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -164,7 +156,7 @@ func (j *jsiiProxy_ManagedLicense) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Count() interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -174,7 +166,17 @@ func (j *jsiiProxy_ManagedLicense) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) DependsOn() *[]*string {
+func (j *jsiiProxy_IntegrationExternalWiki) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationExternalWiki) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -184,7 +186,27 @@ func (j *jsiiProxy_ManagedLicense) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_IntegrationExternalWiki) ExternalWikiUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalWikiUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationExternalWiki) ExternalWikiUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalWikiUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationExternalWiki) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -194,7 +216,7 @@ func (j *jsiiProxy_ManagedLicense) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Fqn() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -204,7 +226,7 @@ func (j *jsiiProxy_ManagedLicense) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) FriendlyUniqueId() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -214,7 +236,7 @@ func (j *jsiiProxy_ManagedLicense) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Id() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -224,7 +246,7 @@ func (j *jsiiProxy_ManagedLicense) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) IdInput() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -234,7 +256,7 @@ func (j *jsiiProxy_ManagedLicense) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_IntegrationExternalWiki) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -244,27 +266,7 @@ func (j *jsiiProxy_ManagedLicense) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedLicense) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedLicense) Node() constructs.Node {
+func (j *jsiiProxy_IntegrationExternalWiki) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -274,7 +276,7 @@ func (j *jsiiProxy_ManagedLicense) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Project() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) Project() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -284,7 +286,7 @@ func (j *jsiiProxy_ManagedLicense) Project() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) ProjectInput() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) ProjectInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -294,7 +296,7 @@ func (j *jsiiProxy_ManagedLicense) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_IntegrationExternalWiki) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -304,7 +306,7 @@ func (j *jsiiProxy_ManagedLicense) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) Provisioners() *[]interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -314,7 +316,7 @@ func (j *jsiiProxy_ManagedLicense) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) RawOverrides() interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -324,7 +326,17 @@ func (j *jsiiProxy_ManagedLicense) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_IntegrationExternalWiki) Slug() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"slug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationExternalWiki) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -334,7 +346,7 @@ func (j *jsiiProxy_ManagedLicense) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_IntegrationExternalWiki) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -344,7 +356,7 @@ func (j *jsiiProxy_ManagedLicense) TerraformMetaArguments() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ManagedLicense) TerraformResourceType() *string {
+func (j *jsiiProxy_IntegrationExternalWiki) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -354,18 +366,38 @@ func (j *jsiiProxy_ManagedLicense) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationExternalWiki) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license} Resource.
-func NewManagedLicense(scope constructs.Construct, id *string, config *ManagedLicenseConfig) ManagedLicense {
+func (j *jsiiProxy_IntegrationExternalWiki) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki} Resource.
+func NewIntegrationExternalWiki(scope constructs.Construct, id *string, config *IntegrationExternalWikiConfig) IntegrationExternalWiki {
 	_init_.Initialize()
 
-	if err := validateNewManagedLicenseParameters(scope, id, config); err != nil {
+	if err := validateNewIntegrationExternalWikiParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_ManagedLicense{}
+	j := jsiiProxy_IntegrationExternalWiki{}
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,29 +405,18 @@ func NewManagedLicense(scope constructs.Construct, id *string, config *ManagedLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/managed_license gitlab_managed_license} Resource.
-func NewManagedLicense_Override(m ManagedLicense, scope constructs.Construct, id *string, config *ManagedLicenseConfig) {
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki} Resource.
+func NewIntegrationExternalWiki_Override(i IntegrationExternalWiki, scope constructs.Construct, id *string, config *IntegrationExternalWikiConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		[]interface{}{scope, id, config},
-		m,
+		i,
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetApprovalStatus(val *string) {
-	if err := j.validateSetApprovalStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"approvalStatus",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedLicense)SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +427,7 @@ func (j *jsiiProxy_ManagedLicense)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetCount(val interface{}) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +438,7 @@ func (j *jsiiProxy_ManagedLicense)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -425,7 +446,18 @@ func (j *jsiiProxy_ManagedLicense)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetExternalWikiUrl(val *string) {
+	if err := j.validateSetExternalWikiUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalWikiUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationExternalWiki)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -433,7 +465,7 @@ func (j *jsiiProxy_ManagedLicense)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetId(val *string) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +476,7 @@ func (j *jsiiProxy_ManagedLicense)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,18 +487,7 @@ func (j *jsiiProxy_ManagedLicense)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedLicense)SetProject(val *string) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +498,7 @@ func (j *jsiiProxy_ManagedLicense)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +506,7 @@ func (j *jsiiProxy_ManagedLicense)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ManagedLicense)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationExternalWiki)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,16 +534,16 @@ func (j *jsiiProxy_ManagedLicense)SetProvisioners(val *[]interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ManagedLicense_IsConstruct(x interface{}) *bool {
+func IntegrationExternalWiki_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateManagedLicense_IsConstructParameters(x); err != nil {
+	if err := validateIntegrationExternalWiki_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,16 +553,16 @@ func ManagedLicense_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedLicense_IsTerraformElement(x interface{}) *bool {
+func IntegrationExternalWiki_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateManagedLicense_IsTerraformElementParameters(x); err != nil {
+	if err := validateIntegrationExternalWiki_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,16 +572,16 @@ func ManagedLicense_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedLicense_IsTerraformResource(x interface{}) *bool {
+func IntegrationExternalWiki_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateManagedLicense_IsTerraformResourceParameters(x); err != nil {
+	if err := validateIntegrationExternalWiki_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -569,36 +590,36 @@ func ManagedLicense_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func ManagedLicense_TfResourceType() *string {
+func IntegrationExternalWiki_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-gitlab.managedLicense.ManagedLicense",
+		"@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) AddOverride(path *string, value interface{}) {
-	if err := m.validateAddOverrideParameters(path, value); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		m,
+		i,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (m *jsiiProxy_ManagedLicense) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -607,14 +628,14 @@ func (m *jsiiProxy_ManagedLicense) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -623,14 +644,14 @@ func (m *jsiiProxy_ManagedLicense) GetBooleanAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -639,14 +660,14 @@ func (m *jsiiProxy_ManagedLicense) GetBooleanMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -655,14 +676,14 @@ func (m *jsiiProxy_ManagedLicense) GetListAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -671,14 +692,14 @@ func (m *jsiiProxy_ManagedLicense) GetNumberAttribute(terraformAttribute *string
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -687,14 +708,14 @@ func (m *jsiiProxy_ManagedLicense) GetNumberListAttribute(terraformAttribute *st
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -703,14 +724,14 @@ func (m *jsiiProxy_ManagedLicense) GetNumberMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetStringAttribute(terraformAttribute *string) *string {
-	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -719,14 +740,14 @@ func (m *jsiiProxy_ManagedLicense) GetStringAttribute(terraformAttribute *string
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -735,14 +756,14 @@ func (m *jsiiProxy_ManagedLicense) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -751,38 +772,38 @@ func (m *jsiiProxy_ManagedLicense) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) OverrideLogicalId(newLogicalId *string) {
-	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (i *jsiiProxy_IntegrationExternalWiki) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		m,
+		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (m *jsiiProxy_ManagedLicense) ResetId() {
+func (i *jsiiProxy_IntegrationExternalWiki) ResetId() {
 	_jsii_.InvokeVoid(
-		m,
+		i,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_ManagedLicense) ResetOverrideLogicalId() {
+func (i *jsiiProxy_IntegrationExternalWiki) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		m,
+		i,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_ManagedLicense) SynthesizeAttributes() *map[string]interface{} {
+func (i *jsiiProxy_IntegrationExternalWiki) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -791,11 +812,11 @@ func (m *jsiiProxy_ManagedLicense) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) ToMetadata() interface{} {
+func (i *jsiiProxy_IntegrationExternalWiki) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -804,11 +825,11 @@ func (m *jsiiProxy_ManagedLicense) ToMetadata() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) ToString() *string {
+func (i *jsiiProxy_IntegrationExternalWiki) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -817,11 +838,11 @@ func (m *jsiiProxy_ManagedLicense) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedLicense) ToTerraform() interface{} {
+func (i *jsiiProxy_IntegrationExternalWiki) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		m,
+		i,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

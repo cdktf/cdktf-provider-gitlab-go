@@ -2,14 +2,14 @@ package datagitlabprojectprotectedbranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabprojectprotectedbranch/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectprotectedbranch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
 type DataGitlabProjectProtectedBranch interface {
 	cdktf.TerraformDataSource
 	AllowForcePush() cdktf.IResolvable
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranch) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
 func NewDataGitlabProjectProtectedBranch(scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchConfig) DataGitlabProjectProtectedBranch {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataGitlabProjectProtectedBranch(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
 func NewDataGitlabProjectProtectedBranch_Override(d DataGitlabProjectProtectedBranch, scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchConfig) {
 	_init_.Initialize()
 

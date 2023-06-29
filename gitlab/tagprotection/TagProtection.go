@@ -2,16 +2,18 @@ package tagprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/tagprotection/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/tagprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection gitlab_tag_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection gitlab_tag_protection}.
 type TagProtection interface {
 	cdktf.TerraformResource
+	AllowedToCreate() TagProtectionAllowedToCreateList
+	AllowedToCreateInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -95,6 +97,8 @@ type TagProtection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllowedToCreate(value interface{})
+	ResetAllowedToCreate()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -112,6 +116,26 @@ type TagProtection interface {
 // The jsii proxy struct for TagProtection
 type jsiiProxy_TagProtection struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_TagProtection) AllowedToCreate() TagProtectionAllowedToCreateList {
+	var returns TagProtectionAllowedToCreateList
+	_jsii_.Get(
+		j,
+		"allowedToCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagProtection) AllowedToCreateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedToCreateInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TagProtection) CdktfStack() cdktf.TerraformStack {
@@ -355,7 +379,7 @@ func (j *jsiiProxy_TagProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection(scope constructs.Construct, id *string, config *TagProtectionConfig) TagProtection {
 	_init_.Initialize()
 
@@ -373,7 +397,7 @@ func NewTagProtection(scope constructs.Construct, id *string, config *TagProtect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection_Override(t TagProtection, scope constructs.Construct, id *string, config *TagProtectionConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,25 @@ func (t *jsiiProxy_TagProtection) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (t *jsiiProxy_TagProtection) PutAllowedToCreate(value interface{}) {
+	if err := t.validatePutAllowedToCreateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putAllowedToCreate",
+		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TagProtection) ResetAllowedToCreate() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowedToCreate",
+		nil, // no parameters
 	)
 }
 

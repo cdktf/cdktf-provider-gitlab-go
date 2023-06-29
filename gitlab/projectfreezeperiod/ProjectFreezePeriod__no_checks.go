@@ -92,7 +92,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) validateSetProjectIdParameters(val *string) error {
+func (j *jsiiProxy_ProjectFreezePeriod) validateSetProjectParameters(val *string) error {
 	return nil
 }
 

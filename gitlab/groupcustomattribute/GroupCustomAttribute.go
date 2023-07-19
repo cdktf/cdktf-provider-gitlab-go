@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
 type GroupCustomAttribute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_GroupCustomAttribute) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
 func NewGroupCustomAttribute(scope constructs.Construct, id *string, config *GroupCustomAttributeConfig) GroupCustomAttribute {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewGroupCustomAttribute(scope constructs.Construct, id *string, config *Gro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
 func NewGroupCustomAttribute_Override(g GroupCustomAttribute, scope constructs.Construct, id *string, config *GroupCustomAttributeConfig) {
 	_init_.Initialize()
 

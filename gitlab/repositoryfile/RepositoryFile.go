@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/repository_file gitlab_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/repository_file gitlab_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
 	AuthorEmail() *string
@@ -47,6 +47,8 @@ type RepositoryFile interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Encoding() *string
+	SetEncoding(val *string)
+	EncodingInput() *string
 	ExecuteFilemode() interface{}
 	SetExecuteFilemode(val interface{})
 	ExecuteFilemodeInput() interface{}
@@ -129,6 +131,7 @@ type RepositoryFile interface {
 	PutTimeouts(value *RepositoryFileTimeouts)
 	ResetAuthorEmail()
 	ResetAuthorName()
+	ResetEncoding()
 	ResetExecuteFilemode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -337,6 +340,16 @@ func (j *jsiiProxy_RepositoryFile) Encoding() *string {
 	_jsii_.Get(
 		j,
 		"encoding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) EncodingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingInput",
 		&returns,
 	)
 	return returns
@@ -633,7 +646,7 @@ func (j *jsiiProxy_RepositoryFile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/repository_file gitlab_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
 	_init_.Initialize()
 
@@ -651,7 +664,7 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/repository_file gitlab_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
 	_init_.Initialize()
 
@@ -743,6 +756,17 @@ func (j *jsiiProxy_RepositoryFile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetEncoding(val *string) {
+	if err := j.validateSetEncodingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encoding",
 		val,
 	)
 }
@@ -1140,6 +1164,14 @@ func (r *jsiiProxy_RepositoryFile) ResetAuthorName() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAuthorName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetEncoding() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEncoding",
 		nil, // no parameters
 	)
 }

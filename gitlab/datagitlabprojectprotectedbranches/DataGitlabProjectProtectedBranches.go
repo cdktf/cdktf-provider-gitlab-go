@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
 type DataGitlabProjectProtectedBranches interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) DataGitlabProjectProtectedBranches {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches_Override(d DataGitlabProjectProtectedBranches, scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) {
 	_init_.Initialize()
 

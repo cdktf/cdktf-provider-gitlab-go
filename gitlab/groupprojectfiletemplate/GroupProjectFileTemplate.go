@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_project_file_template gitlab_group_project_file_template}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_project_file_template gitlab_group_project_file_template}.
 type GroupProjectFileTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GroupProjectFileTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource.
 func NewGroupProjectFileTemplate(scope constructs.Construct, id *string, config *GroupProjectFileTemplateConfig) GroupProjectFileTemplate {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewGroupProjectFileTemplate(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource.
 func NewGroupProjectFileTemplate_Override(g GroupProjectFileTemplate, scope constructs.Construct, id *string, config *GroupProjectFileTemplateConfig) {
 	_init_.Initialize()
 

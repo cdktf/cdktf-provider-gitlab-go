@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}.
 type DataGitlabInstanceDeployKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) DataGitlabInstanceDeployKeys {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys_Override(d DataGitlabInstanceDeployKeys, scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) {
 	_init_.Initialize()
 

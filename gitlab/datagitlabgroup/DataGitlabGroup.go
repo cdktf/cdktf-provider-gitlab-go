@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group gitlab_group}.
 type DataGitlabGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_DataGitlabGroup) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitlabGroupConfig) DataGitlabGroup {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup_Override(d DataGitlabGroup, scope constructs.Construct, id *string, config *DataGitlabGroupConfig) {
 	_init_.Initialize()
 

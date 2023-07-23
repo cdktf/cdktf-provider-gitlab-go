@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
 type PipelineScheduleVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_PipelineScheduleVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) PipelineScheduleVariable {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable_Override(p PipelineScheduleVariable, scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) {
 	_init_.Initialize()
 

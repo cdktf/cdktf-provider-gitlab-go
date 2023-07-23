@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
 type DeployKeyEnable interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DeployKeyEnable) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
 func NewDeployKeyEnable(scope constructs.Construct, id *string, config *DeployKeyEnableConfig) DeployKeyEnable {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDeployKeyEnable(scope constructs.Construct, id *string, config *DeployKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
 func NewDeployKeyEnable_Override(d DeployKeyEnable, scope constructs.Construct, id *string, config *DeployKeyEnableConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variables gitlab_group_variables}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variables gitlab_group_variables}.
 type DataGitlabGroupVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataGitlabGroupVariables) Variables() DataGitlabGroupVariable
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) DataGitlabGroupVariables {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables_Override(d DataGitlabGroupVariables, scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) {
 	_init_.Initialize()
 

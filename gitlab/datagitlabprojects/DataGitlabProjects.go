@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/projects gitlab_projects}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/projects gitlab_projects}.
 type DataGitlabProjects interface {
 	cdktf.TerraformDataSource
 	Archived() interface{}
@@ -99,6 +99,9 @@ type DataGitlabProjects interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Topic() *[]*string
+	SetTopic(val *[]*string)
+	TopicInput() *[]*string
 	Visibility() *string
 	SetVisibility(val *string)
 	VisibilityInput() *string
@@ -161,6 +164,7 @@ type DataGitlabProjects interface {
 	ResetSort()
 	ResetStarred()
 	ResetStatistics()
+	ResetTopic()
 	ResetVisibility()
 	ResetWithCustomAttributes()
 	ResetWithIssuesEnabled()
@@ -652,6 +656,26 @@ func (j *jsiiProxy_DataGitlabProjects) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjects) Topic() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"topic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjects) TopicInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"topicInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjects) Visibility() *string {
 	var returns *string
 	_jsii_.Get(
@@ -773,7 +797,7 @@ func (j *jsiiProxy_DataGitlabProjects) WithSharedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/projects gitlab_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/projects gitlab_projects} Data Source.
 func NewDataGitlabProjects(scope constructs.Construct, id *string, config *DataGitlabProjectsConfig) DataGitlabProjects {
 	_init_.Initialize()
 
@@ -791,7 +815,7 @@ func NewDataGitlabProjects(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/projects gitlab_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/projects gitlab_projects} Data Source.
 func NewDataGitlabProjects_Override(d DataGitlabProjects, scope constructs.Construct, id *string, config *DataGitlabProjectsConfig) {
 	_init_.Initialize()
 
@@ -1020,6 +1044,17 @@ func (j *jsiiProxy_DataGitlabProjects)SetStatistics(val interface{}) {
 	_jsii_.Set(
 		j,
 		"statistics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjects)SetTopic(val *[]*string) {
+	if err := j.validateSetTopicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"topic",
 		val,
 	)
 }
@@ -1488,6 +1523,14 @@ func (d *jsiiProxy_DataGitlabProjects) ResetStatistics() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatistics",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjects) ResetTopic() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTopic",
 		nil, // no parameters
 	)
 }

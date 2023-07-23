@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_emails_on_push gitlab_service_emails_on_push}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push}.
 type ServiceEmailsOnPush interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -507,7 +507,7 @@ func (j *jsiiProxy_ServiceEmailsOnPush) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
 func NewServiceEmailsOnPush(scope constructs.Construct, id *string, config *ServiceEmailsOnPushConfig) ServiceEmailsOnPush {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewServiceEmailsOnPush(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
 func NewServiceEmailsOnPush_Override(s ServiceEmailsOnPush, scope constructs.Construct, id *string, config *ServiceEmailsOnPushConfig) {
 	_init_.Initialize()
 

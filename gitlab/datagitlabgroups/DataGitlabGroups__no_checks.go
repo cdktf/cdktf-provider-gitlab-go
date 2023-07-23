@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataGitlabGroups) validateSetSortParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabGroups) validateSetTopLevelOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataGitlabGroupsParameters(scope constructs.Construct, id *string, config *DataGitlabGroupsConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/groups gitlab_groups}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/groups gitlab_groups}.
 type DataGitlabGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,9 @@ type DataGitlabGroups interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TopLevelOnly() interface{}
+	SetTopLevelOnly(val interface{})
+	TopLevelOnlyInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,6 +98,7 @@ type DataGitlabGroups interface {
 	ResetOverrideLogicalId()
 	ResetSearch()
 	ResetSort()
+	ResetTopLevelOnly()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -340,8 +344,28 @@ func (j *jsiiProxy_DataGitlabGroups) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabGroups) TopLevelOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"topLevelOnly",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/groups gitlab_groups} Data Source.
+func (j *jsiiProxy_DataGitlabGroups) TopLevelOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"topLevelOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/groups gitlab_groups} Data Source.
 func NewDataGitlabGroups(scope constructs.Construct, id *string, config *DataGitlabGroupsConfig) DataGitlabGroups {
 	_init_.Initialize()
 
@@ -359,7 +383,7 @@ func NewDataGitlabGroups(scope constructs.Construct, id *string, config *DataGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/groups gitlab_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/groups gitlab_groups} Data Source.
 func NewDataGitlabGroups_Override(d DataGitlabGroups, scope constructs.Construct, id *string, config *DataGitlabGroupsConfig) {
 	_init_.Initialize()
 
@@ -456,6 +480,17 @@ func (j *jsiiProxy_DataGitlabGroups)SetSort(val *string) {
 	_jsii_.Set(
 		j,
 		"sort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabGroups)SetTopLevelOnly(val interface{}) {
+	if err := j.validateSetTopLevelOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"topLevelOnly",
 		val,
 	)
 }
@@ -762,6 +797,14 @@ func (d *jsiiProxy_DataGitlabGroups) ResetSort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabGroups) ResetTopLevelOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTopLevelOnly",
 		nil, // no parameters
 	)
 }

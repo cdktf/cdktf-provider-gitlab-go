@@ -276,6 +276,22 @@ func (j *jsiiProxy_RepositoryFile) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryFile) validateSetCreateCommitMessageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetDeleteCommitMessageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetEncodingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -403,6 +419,14 @@ func (j *jsiiProxy_RepositoryFile) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_RepositoryFile) validateSetStartBranchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetUpdateCommitMessageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

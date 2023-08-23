@@ -21,21 +21,21 @@ type TagProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 	CreateAccessLevel *string `field:"required" json:"createAccessLevel" yaml:"createAccessLevel"`
 	// The id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/tag_protection#project TagProtection#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/tag_protection#project TagProtection#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Name of the tag or wildcard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/tag_protection#tag TagProtection#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/tag_protection#tag TagProtection#tag}
 	Tag *string `field:"required" json:"tag" yaml:"tag"`
 	// allowed_to_create block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 	AllowedToCreate interface{} `field:"optional" json:"allowedToCreate" yaml:"allowedToCreate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/tag_protection#id TagProtection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/tag_protection#id TagProtection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

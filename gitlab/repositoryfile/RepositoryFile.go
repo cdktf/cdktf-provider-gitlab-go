@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file gitlab_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file gitlab_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
 	AuthorEmail() *string
@@ -42,6 +42,12 @@ type RepositoryFile interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateCommitMessage() *string
+	SetCreateCommitMessage(val *string)
+	CreateCommitMessageInput() *string
+	DeleteCommitMessage() *string
+	SetDeleteCommitMessage(val *string)
+	DeleteCommitMessageInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -103,6 +109,9 @@ type RepositoryFile interface {
 	TerraformResourceType() *string
 	Timeouts() RepositoryFileTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdateCommitMessage() *string
+	SetUpdateCommitMessage(val *string)
+	UpdateCommitMessageInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -131,6 +140,9 @@ type RepositoryFile interface {
 	PutTimeouts(value *RepositoryFileTimeouts)
 	ResetAuthorEmail()
 	ResetAuthorName()
+	ResetCommitMessage()
+	ResetCreateCommitMessage()
+	ResetDeleteCommitMessage()
 	ResetEncoding()
 	ResetExecuteFilemode()
 	ResetId()
@@ -140,6 +152,7 @@ type RepositoryFile interface {
 	ResetOverwriteOnCreate()
 	ResetStartBranch()
 	ResetTimeouts()
+	ResetUpdateCommitMessage()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -320,6 +333,46 @@ func (j *jsiiProxy_RepositoryFile) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) CreateCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) CreateCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createCommitMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) DeleteCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) DeleteCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteCommitMessageInput",
 		&returns,
 	)
 	return returns
@@ -645,8 +698,28 @@ func (j *jsiiProxy_RepositoryFile) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RepositoryFile) UpdateCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateCommitMessage",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file gitlab_repository_file} Resource.
+func (j *jsiiProxy_RepositoryFile) UpdateCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateCommitMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
 	_init_.Initialize()
 
@@ -664,7 +737,7 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file gitlab_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
 	_init_.Initialize()
 
@@ -748,6 +821,28 @@ func (j *jsiiProxy_RepositoryFile)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetCreateCommitMessage(val *string) {
+	if err := j.validateSetCreateCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createCommitMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetDeleteCommitMessage(val *string) {
+	if err := j.validateSetDeleteCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteCommitMessage",
 		val,
 	)
 }
@@ -871,6 +966,17 @@ func (j *jsiiProxy_RepositoryFile)SetStartBranch(val *string) {
 	_jsii_.Set(
 		j,
 		"startBranch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetUpdateCommitMessage(val *string) {
+	if err := j.validateSetUpdateCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateCommitMessage",
 		val,
 	)
 }
@@ -1168,6 +1274,30 @@ func (r *jsiiProxy_RepositoryFile) ResetAuthorName() {
 	)
 }
 
+func (r *jsiiProxy_RepositoryFile) ResetCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCommitMessage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetCreateCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCreateCommitMessage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetDeleteCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDeleteCommitMessage",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RepositoryFile) ResetEncoding() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1220,6 +1350,14 @@ func (r *jsiiProxy_RepositoryFile) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetUpdateCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUpdateCommitMessage",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_issue gitlab_project_issue}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_issue gitlab_project_issue}.
 type DataGitlabProjectIssue interface {
 	cdktf.TerraformDataSource
 	AssigneeIds() *[]*float64
@@ -711,7 +711,7 @@ func (j *jsiiProxy_DataGitlabProjectIssue) Weight() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_issue gitlab_project_issue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_issue gitlab_project_issue} Data Source.
 func NewDataGitlabProjectIssue(scope constructs.Construct, id *string, config *DataGitlabProjectIssueConfig) DataGitlabProjectIssue {
 	_init_.Initialize()
 
@@ -729,7 +729,7 @@ func NewDataGitlabProjectIssue(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_issue gitlab_project_issue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_issue gitlab_project_issue} Data Source.
 func NewDataGitlabProjectIssue_Override(d DataGitlabProjectIssue, scope constructs.Construct, id *string, config *DataGitlabProjectIssueConfig) {
 	_init_.Initialize()
 

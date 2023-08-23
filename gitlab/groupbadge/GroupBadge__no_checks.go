@@ -92,6 +92,10 @@ func (j *jsiiProxy_GroupBadge) validateSetLinkUrlParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GroupBadge) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupBadge) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

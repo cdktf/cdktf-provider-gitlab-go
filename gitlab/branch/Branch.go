@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/branch gitlab_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/branch gitlab_branch}.
 type Branch interface {
 	cdktf.TerraformResource
 	CanPush() cdktf.IResolvable
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Branch) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Branch {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Bra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch_Override(b Branch, scope constructs.Construct, id *string, config *BranchConfig) {
 	_init_.Initialize()
 

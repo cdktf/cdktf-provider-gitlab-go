@@ -100,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSubgroupCreationLevel", GoMethod: "ResetSubgroupCreationLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTwoFactorGracePeriod", GoMethod: "ResetTwoFactorGracePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVisibilityLevel", GoMethod: "ResetVisibilityLevel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWikiAccessLevel", GoMethod: "ResetWikiAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "runnersToken", GoGetter: "RunnersToken"},
 			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersMinutesLimit", GoGetter: "SharedRunnersMinutesLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersMinutesLimitInput", GoGetter: "SharedRunnersMinutesLimitInput"},
@@ -119,6 +120,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibilityLevel", GoGetter: "VisibilityLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityLevelInput", GoGetter: "VisibilityLevelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webUrl", GoGetter: "WebUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "wikiAccessLevel", GoGetter: "WikiAccessLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "wikiAccessLevelInput", GoGetter: "WikiAccessLevelInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Group{}

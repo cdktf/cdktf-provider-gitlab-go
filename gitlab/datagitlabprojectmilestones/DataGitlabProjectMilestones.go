@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones gitlab_project_milestones}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_milestones gitlab_project_milestones}.
 type DataGitlabProjectMilestones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataGitlabProjectMilestones) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
 func NewDataGitlabProjectMilestones(scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) DataGitlabProjectMilestones {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataGitlabProjectMilestones(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
 func NewDataGitlabProjectMilestones_Override(d DataGitlabProjectMilestones, scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) {
 	_init_.Initialize()
 

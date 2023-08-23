@@ -96,6 +96,14 @@ func (j *jsiiProxy_RepositoryFile) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryFile) validateSetCreateCommitMessageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetDeleteCommitMessageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetEncodingParameters(val *string) error {
 	return nil
 }
@@ -129,6 +137,10 @@ func (j *jsiiProxy_RepositoryFile) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_RepositoryFile) validateSetStartBranchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetUpdateCommitMessageParameters(val *string) error {
 	return nil
 }
 

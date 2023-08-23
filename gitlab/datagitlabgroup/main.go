@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityLevel", GoGetter: "VisibilityLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "webUrl", GoGetter: "WebUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "wikiAccessLevel", GoGetter: "WikiAccessLevel"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGitlabGroup{}

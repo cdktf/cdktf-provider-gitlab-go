@@ -176,6 +176,10 @@ func (j *jsiiProxy_Group) validateSetVisibilityLevelParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetWikiAccessLevelParameters(val *string) error {
+	return nil
+}
+
 func validateNewGroupParameters(scope constructs.Construct, id *string, config *GroupConfig) error {
 	return nil
 }

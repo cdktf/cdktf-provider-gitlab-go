@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_variables gitlab_instance_variables}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variables gitlab_instance_variables}.
 type DataGitlabInstanceVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGitlabInstanceVariables) Variables() DataGitlabInstanceVa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_variables gitlab_instance_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variables gitlab_instance_variables} Data Source.
 func NewDataGitlabInstanceVariables(scope constructs.Construct, id *string, config *DataGitlabInstanceVariablesConfig) DataGitlabInstanceVariables {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGitlabInstanceVariables(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/instance_variables gitlab_instance_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variables gitlab_instance_variables} Data Source.
 func NewDataGitlabInstanceVariables_Override(d DataGitlabInstanceVariables, scope constructs.Construct, id *string, config *DataGitlabInstanceVariablesConfig) {
 	_init_.Initialize()
 

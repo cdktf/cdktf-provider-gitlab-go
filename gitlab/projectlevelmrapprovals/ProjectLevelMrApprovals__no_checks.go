@@ -76,10 +76,6 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetDisableOverridingApprover
 	return nil
 }
 
-func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -105,6 +101,10 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetRequirePasswordToApproveP
 }
 
 func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetResetApprovalsOnPushParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectLevelMrApprovals) validateSetSelectiveCodeOwnerRemovalsParameters(val interface{}) error {
 	return nil
 }
 

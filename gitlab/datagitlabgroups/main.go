@@ -132,6 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityLevel", GoGetter: "VisibilityLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "webUrl", GoGetter: "WebUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "wikiAccessLevel", GoGetter: "WikiAccessLevel"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGitlabGroupsGroupsOutputReference{}

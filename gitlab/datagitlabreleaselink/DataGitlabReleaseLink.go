@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/release_link gitlab_release_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/release_link gitlab_release_link}.
 type DataGitlabReleaseLink interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataGitlabReleaseLink) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/release_link gitlab_release_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/release_link gitlab_release_link} Data Source.
 func NewDataGitlabReleaseLink(scope constructs.Construct, id *string, config *DataGitlabReleaseLinkConfig) DataGitlabReleaseLink {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataGitlabReleaseLink(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/release_link gitlab_release_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/release_link gitlab_release_link} Data Source.
 func NewDataGitlabReleaseLink_Override(d DataGitlabReleaseLink, scope constructs.Construct, id *string, config *DataGitlabReleaseLinkConfig) {
 	_init_.Initialize()
 

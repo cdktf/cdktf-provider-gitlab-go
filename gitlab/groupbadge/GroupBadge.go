@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge gitlab_group_badge}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge gitlab_group_badge}.
 type GroupBadge interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -52,6 +52,9 @@ type GroupBadge interface {
 	LinkUrl() *string
 	SetLinkUrl(val *string)
 	LinkUrlInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -98,6 +101,7 @@ type GroupBadge interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -286,6 +290,26 @@ func (j *jsiiProxy_GroupBadge) LinkUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GroupBadge) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupBadge) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupBadge) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -377,7 +401,7 @@ func (j *jsiiProxy_GroupBadge) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeConfig) GroupBadge {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge_Override(g GroupBadge, scope constructs.Construct, id *string, config *GroupBadgeConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_GroupBadge)SetLinkUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"linkUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupBadge)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -788,6 +823,14 @@ func (g *jsiiProxy_GroupBadge) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupBadge) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

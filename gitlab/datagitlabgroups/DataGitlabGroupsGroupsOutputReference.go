@@ -51,6 +51,7 @@ type DataGitlabGroupsGroupsOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	VisibilityLevel() *string
 	WebUrl() *string
+	WikiAccessLevel() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -295,6 +296,16 @@ func (j *jsiiProxy_DataGitlabGroupsGroupsOutputReference) WebUrl() *string {
 	_jsii_.Get(
 		j,
 		"webUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupsGroupsOutputReference) WikiAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wikiAccessLevel",
 		&returns,
 	)
 	return returns

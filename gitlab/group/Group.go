@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -135,6 +135,9 @@ type Group interface {
 	SetVisibilityLevel(val *string)
 	VisibilityLevelInput() *string
 	WebUrl() *string
+	WikiAccessLevel() *string
+	SetWikiAccessLevel(val *string)
+	WikiAccessLevelInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -185,6 +188,7 @@ type Group interface {
 	ResetSubgroupCreationLevel()
 	ResetTwoFactorGracePeriod()
 	ResetVisibilityLevel()
+	ResetWikiAccessLevel()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -890,8 +894,28 @@ func (j *jsiiProxy_Group) WebUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Group) WikiAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wikiAccessLevel",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group gitlab_group} Resource.
+func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wikiAccessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -909,7 +933,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1248,6 +1272,17 @@ func (j *jsiiProxy_Group)SetVisibilityLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"visibilityLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetWikiAccessLevel(val *string) {
+	if err := j.validateSetWikiAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wikiAccessLevel",
 		val,
 	)
 }
@@ -1698,6 +1733,14 @@ func (g *jsiiProxy_Group) ResetVisibilityLevel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVisibilityLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetWikiAccessLevel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWikiAccessLevel",
 		nil, // no parameters
 	)
 }

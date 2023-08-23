@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token gitlab_group_access_token}.
 type GroupAccessToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -107,7 +107,6 @@ type GroupAccessToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessLevel()
-	ResetExpiresAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -458,7 +457,7 @@ func (j *jsiiProxy_GroupAccessToken) UserId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
 func NewGroupAccessToken(scope constructs.Construct, id *string, config *GroupAccessTokenConfig) GroupAccessToken {
 	_init_.Initialize()
 
@@ -476,7 +475,7 @@ func NewGroupAccessToken(scope constructs.Construct, id *string, config *GroupAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
 func NewGroupAccessToken_Override(g GroupAccessToken, scope constructs.Construct, id *string, config *GroupAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -891,14 +890,6 @@ func (g *jsiiProxy_GroupAccessToken) ResetAccessLevel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAccessLevel",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupAccessToken) ResetExpiresAt() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetExpiresAt",
 		nil, // no parameters
 	)
 }

@@ -160,6 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "twoFactorGracePeriod", GoGetter: "TwoFactorGracePeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 			_jsii_.MemberProperty{JsiiProperty: "webUrl", GoGetter: "WebUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "wikiAccessLevel", GoGetter: "WikiAccessLevel"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference{}

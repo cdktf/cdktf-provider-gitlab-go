@@ -21,13 +21,13 @@ type IntegrationExternalWikiConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The URL of the external wiki.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
 	ExternalWikiUrl *string `field:"required" json:"externalWikiUrl" yaml:"externalWikiUrl"`
 	// ID of the project you want to activate integration on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

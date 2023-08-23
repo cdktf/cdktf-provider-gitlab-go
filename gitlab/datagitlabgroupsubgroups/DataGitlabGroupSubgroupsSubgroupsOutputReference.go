@@ -62,6 +62,7 @@ type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 	TwoFactorGracePeriod() *float64
 	Visibility() *string
 	WebUrl() *string
+	WikiAccessLevel() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -416,6 +417,16 @@ func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) WebUrl() *s
 	_jsii_.Get(
 		j,
 		"webUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) WikiAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wikiAccessLevel",
 		&returns,
 	)
 	return returns

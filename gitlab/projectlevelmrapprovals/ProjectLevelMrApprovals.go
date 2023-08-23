@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
 type ProjectLevelMrApprovals interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type ProjectLevelMrApprovals interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,6 +71,9 @@ type ProjectLevelMrApprovals interface {
 	ResetApprovalsOnPush() interface{}
 	SetResetApprovalsOnPush(val interface{})
 	ResetApprovalsOnPushInput() interface{}
+	SelectiveCodeOwnerRemovals() interface{}
+	SetSelectiveCodeOwnerRemovals(val interface{})
+	SelectiveCodeOwnerRemovalsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -105,7 +106,6 @@ type ProjectLevelMrApprovals interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDisableOverridingApproversPerMergeRequest()
-	ResetId()
 	ResetMergeRequestsAuthorApproval()
 	ResetMergeRequestsDisableCommittersApproval()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -113,6 +113,7 @@ type ProjectLevelMrApprovals interface {
 	ResetOverrideLogicalId()
 	ResetRequirePasswordToApprove()
 	ResetResetApprovalsOnPush()
+	ResetSelectiveCodeOwnerRemovals()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -233,16 +234,6 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectLevelMrApprovals) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +389,26 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) ResetApprovalsOnPushInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_ProjectLevelMrApprovals) SelectiveCodeOwnerRemovals() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selectiveCodeOwnerRemovals",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectLevelMrApprovals) SelectiveCodeOwnerRemovalsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selectiveCodeOwnerRemovalsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectLevelMrApprovals) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -429,7 +440,7 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) ProjectLevelMrApprovals {
 	_init_.Initialize()
 
@@ -447,7 +458,7 @@ func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals_Override(p ProjectLevelMrApprovals, scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) {
 	_init_.Initialize()
 
@@ -503,17 +514,6 @@ func (j *jsiiProxy_ProjectLevelMrApprovals)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectLevelMrApprovals)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -599,6 +599,17 @@ func (j *jsiiProxy_ProjectLevelMrApprovals)SetResetApprovalsOnPush(val interface
 	_jsii_.Set(
 		j,
 		"resetApprovalsOnPush",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectLevelMrApprovals)SetSelectiveCodeOwnerRemovals(val interface{}) {
+	if err := j.validateSetSelectiveCodeOwnerRemovalsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selectiveCodeOwnerRemovals",
 		val,
 	)
 }
@@ -877,14 +888,6 @@ func (p *jsiiProxy_ProjectLevelMrApprovals) ResetDisableOverridingApproversPerMe
 	)
 }
 
-func (p *jsiiProxy_ProjectLevelMrApprovals) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_ProjectLevelMrApprovals) ResetMergeRequestsAuthorApproval() {
 	_jsii_.InvokeVoid(
 		p,
@@ -921,6 +924,14 @@ func (p *jsiiProxy_ProjectLevelMrApprovals) ResetResetApprovalsOnPush() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetResetApprovalsOnPush",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectLevelMrApprovals) ResetSelectiveCodeOwnerRemovals() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSelectiveCodeOwnerRemovals",
 		nil, // no parameters
 	)
 }

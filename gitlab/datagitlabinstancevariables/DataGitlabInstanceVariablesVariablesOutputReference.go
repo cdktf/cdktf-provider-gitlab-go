@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagitlabinstancevariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/datagitlabinstancevariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

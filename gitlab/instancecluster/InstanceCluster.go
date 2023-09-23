@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/instance_cluster gitlab_instance_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/instance_cluster gitlab_instance_cluster}.
 type InstanceCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -594,7 +594,7 @@ func (j *jsiiProxy_InstanceCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/instance_cluster gitlab_instance_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/instance_cluster gitlab_instance_cluster} Resource.
 func NewInstanceCluster(scope constructs.Construct, id *string, config *InstanceClusterConfig) InstanceCluster {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewInstanceCluster(scope constructs.Construct, id *string, config *Instance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/instance_cluster gitlab_instance_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/instance_cluster gitlab_instance_cluster} Resource.
 func NewInstanceCluster_Override(i InstanceCluster, scope constructs.Construct, id *string, config *InstanceClusterConfig) {
 	_init_.Initialize()
 

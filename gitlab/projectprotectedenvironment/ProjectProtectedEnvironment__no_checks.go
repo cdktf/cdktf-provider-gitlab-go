@@ -55,6 +55,10 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutApprovalRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutDeployAccessLevelsParameters(value interface{}) error {
 	return nil
 }

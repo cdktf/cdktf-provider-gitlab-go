@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams}.
 type IntegrationMicrosoftTeams interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -632,7 +632,7 @@ func (j *jsiiProxy_IntegrationMicrosoftTeams) WikiPageEventsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource.
 func NewIntegrationMicrosoftTeams(scope constructs.Construct, id *string, config *IntegrationMicrosoftTeamsConfig) IntegrationMicrosoftTeams {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewIntegrationMicrosoftTeams(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource.
 func NewIntegrationMicrosoftTeams_Override(i IntegrationMicrosoftTeams, scope constructs.Construct, id *string, config *IntegrationMicrosoftTeamsConfig) {
 	_init_.Initialize()
 

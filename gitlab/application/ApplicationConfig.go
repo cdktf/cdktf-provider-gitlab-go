@@ -24,11 +24,11 @@ type ApplicationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#name Application#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#name Application#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The URL gitlab should send the user to after authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#redirect_url Application#redirect_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#redirect_url Application#redirect_url}
 	RedirectUrl *string `field:"required" json:"redirectUrl" yaml:"redirectUrl"`
 	// Scopes of the application.
 	//
@@ -36,13 +36,13 @@ type ApplicationConfig struct {
 	// This is only populated when creating a new application. This attribute is not available for imported resources
 	//
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#scopes Application#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#scopes Application#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The application is used where the client secret can be kept confidential.
 	//
 	// Native mobile apps and Single Page Apps are considered non-confidential. Defaults to true if not supplied
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#confidential Application#confidential}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#confidential Application#confidential}
 	Confidential interface{} `field:"optional" json:"confidential" yaml:"confidential"`
 }
 

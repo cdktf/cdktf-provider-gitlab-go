@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 type ProjectProtectedEnvironment interface {
 	cdktf.TerraformResource
+	ApprovalRules() ProjectProtectedEnvironmentApprovalRulesList
+	ApprovalRulesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -98,7 +100,9 @@ type ProjectProtectedEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutApprovalRules(value interface{})
 	PutDeployAccessLevels(value interface{})
+	ResetApprovalRules()
 	ResetDeployAccessLevels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -117,6 +121,26 @@ type ProjectProtectedEnvironment interface {
 // The jsii proxy struct for ProjectProtectedEnvironment
 type jsiiProxy_ProjectProtectedEnvironment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) ApprovalRules() ProjectProtectedEnvironmentApprovalRulesList {
+	var returns ProjectProtectedEnvironmentApprovalRulesList
+	_jsii_.Get(
+		j,
+		"approvalRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) ApprovalRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"approvalRulesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ProjectProtectedEnvironment) CdktfStack() cdktf.TerraformStack {
@@ -370,7 +394,7 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment_Override(p ProjectProtectedEnvironment, scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -766,6 +790,17 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) PutApprovalRules(value interface{}) {
+	if err := p.validatePutApprovalRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApprovalRules",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) PutDeployAccessLevels(value interface{}) {
 	if err := p.validatePutDeployAccessLevelsParameters(value); err != nil {
 		panic(err)
@@ -774,6 +809,14 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) PutDeployAccessLevels(value inte
 		p,
 		"putDeployAccessLevels",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_ProjectProtectedEnvironment) ResetApprovalRules() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApprovalRules",
+		nil, // no parameters
 	)
 }
 

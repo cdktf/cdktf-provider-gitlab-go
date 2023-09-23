@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label gitlab_project_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_label gitlab_project_label}.
 type ProjectLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ProjectLabel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label gitlab_project_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_label gitlab_project_label} Resource.
 func NewProjectLabel(scope constructs.Construct, id *string, config *ProjectLabelConfig) ProjectLabel {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewProjectLabel(scope constructs.Construct, id *string, config *ProjectLabe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label gitlab_project_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_label gitlab_project_label} Resource.
 func NewProjectLabel_Override(p ProjectLabel, scope constructs.Construct, id *string, config *ProjectLabelConfig) {
 	_init_.Initialize()
 

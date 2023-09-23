@@ -37,6 +37,7 @@ type ProjectProtectedEnvironmentDeployAccessLevelsOutputReference interface {
 	GroupId() *float64
 	SetGroupId(val *float64)
 	GroupIdInput() *float64
+	Id() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsOutputReference)
 	_jsii_.Get(
 		j,
 		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsOutputReference) Id() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

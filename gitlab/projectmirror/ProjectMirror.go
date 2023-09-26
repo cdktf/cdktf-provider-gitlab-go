@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_mirror gitlab_project_mirror}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_mirror gitlab_project_mirror}.
 type ProjectMirror interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_ProjectMirror) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMirrorConfig) ProjectMirror {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *string, config *ProjectMirrorConfig) {
 	_init_.Initialize()
 

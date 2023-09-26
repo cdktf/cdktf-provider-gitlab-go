@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/topic gitlab_topic}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic gitlab_topic}.
 type Topic interface {
 	cdktf.TerraformResource
 	Avatar() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_Topic) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/topic gitlab_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic gitlab_topic} Resource.
 func NewTopic(scope constructs.Construct, id *string, config *TopicConfig) Topic {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewTopic(scope constructs.Construct, id *string, config *TopicConfig) Topic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/topic gitlab_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic gitlab_topic} Resource.
 func NewTopic_Override(t Topic, scope constructs.Construct, id *string, config *TopicConfig) {
 	_init_.Initialize()
 

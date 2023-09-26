@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_hook gitlab_project_hook}.
 type ProjectHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -717,7 +717,7 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
 	_init_.Initialize()
 
@@ -735,7 +735,7 @@ func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *string, config *ProjectHookConfig) {
 	_init_.Initialize()
 

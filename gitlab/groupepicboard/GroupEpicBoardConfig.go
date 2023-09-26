@@ -24,15 +24,15 @@ type GroupEpicBoardConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#group GroupEpicBoard#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The name of the board.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#name GroupEpicBoard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// lists block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
 	Lists interface{} `field:"optional" json:"lists" yaml:"lists"`
 }
 

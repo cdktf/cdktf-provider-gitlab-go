@@ -15,6 +15,10 @@ func (g *jsiiProxy_GitlabProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateGitlabProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateGitlabProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

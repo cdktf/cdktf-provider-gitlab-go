@@ -5,10 +5,10 @@ package projectcustomattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectcustomattribute/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,6 +73,9 @@ type ProjectCustomAttribute interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -94,7 +97,12 @@ type ProjectCustomAttribute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -499,6 +507,25 @@ func (j *jsiiProxy_ProjectCustomAttribute)SetValue(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a ProjectCustomAttribute resource upon running "cdktf plan <stack-name>".
+func ProjectCustomAttribute_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateProjectCustomAttribute_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -581,6 +608,17 @@ func ProjectCustomAttribute_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (p *jsiiProxy_ProjectCustomAttribute) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (p *jsiiProxy_ProjectCustomAttribute) AddOverride(path *string, value interface{}) {
@@ -738,6 +776,17 @@ func (p *jsiiProxy_ProjectCustomAttribute) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (p *jsiiProxy_ProjectCustomAttribute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (p *jsiiProxy_ProjectCustomAttribute) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -752,6 +801,17 @@ func (p *jsiiProxy_ProjectCustomAttribute) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_ProjectCustomAttribute) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (p *jsiiProxy_ProjectCustomAttribute) OverrideLogicalId(newLogicalId *string) {

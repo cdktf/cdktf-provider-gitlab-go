@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-gitlab.projectIssue.ProjectIssue",
 		reflect.TypeOf((*ProjectIssue)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "assigneeIds", GoGetter: "AssigneeIds"},
 			_jsii_.MemberProperty{JsiiProperty: "assigneeIdsInput", GoGetter: "AssigneeIdsInput"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "iid", GoGetter: "Iid"},
 			_jsii_.MemberProperty{JsiiProperty: "iidInput", GoGetter: "IidInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issueId", GoGetter: "IssueId"},
 			_jsii_.MemberProperty{JsiiProperty: "issueLinkId", GoGetter: "IssueLinkId"},
@@ -77,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "milestoneId", GoGetter: "MilestoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "milestoneIdInput", GoGetter: "MilestoneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "movedToId", GoGetter: "MovedToId"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},

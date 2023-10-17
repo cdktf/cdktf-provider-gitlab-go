@@ -5,9 +5,9 @@ package groupissueboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/groupissueboard/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

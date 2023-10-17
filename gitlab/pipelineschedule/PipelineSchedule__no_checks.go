@@ -7,6 +7,10 @@ package pipelineschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PipelineSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PipelineSchedule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PipelineSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PipelineSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineSchedule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePipelineSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

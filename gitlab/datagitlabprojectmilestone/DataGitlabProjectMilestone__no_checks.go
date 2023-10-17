@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabProjectMilestone) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataGitlabProjectMilestone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGitlabProjectMilestone_IsConstructParameters(x interface{}) error {
 	return nil
 }

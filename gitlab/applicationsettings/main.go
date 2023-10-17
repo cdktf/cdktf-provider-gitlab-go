@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abuseNotificationEmail", GoGetter: "AbuseNotificationEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "abuseNotificationEmailInput", GoGetter: "AbuseNotificationEmailInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminMode", GoGetter: "AdminMode"},
 			_jsii_.MemberProperty{JsiiProperty: "adminModeInput", GoGetter: "AdminModeInput"},
@@ -264,6 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "htmlEmailsEnabledInput", GoGetter: "HtmlEmailsEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "importSources", GoGetter: "ImportSources"},
 			_jsii_.MemberProperty{JsiiProperty: "importSourcesInput", GoGetter: "ImportSourcesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "inactiveProjectsDeleteAfterMonths", GoGetter: "InactiveProjectsDeleteAfterMonths"},
@@ -320,6 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mirrorMaxCapacityInput", GoGetter: "MirrorMaxCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mirrorMaxDelay", GoGetter: "MirrorMaxDelay"},
 			_jsii_.MemberProperty{JsiiProperty: "mirrorMaxDelayInput", GoGetter: "MirrorMaxDelayInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "npmPackageRequestsForwarding", GoGetter: "NpmPackageRequestsForwarding"},
 			_jsii_.MemberProperty{JsiiProperty: "npmPackageRequestsForwardingInput", GoGetter: "NpmPackageRequestsForwardingInput"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabReleaseLink) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataGitlabReleaseLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGitlabReleaseLink_IsConstructParameters(x interface{}) error {
 	return nil
 }

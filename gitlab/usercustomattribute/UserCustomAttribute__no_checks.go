@@ -7,6 +7,10 @@ package usercustomattribute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserCustomAttribute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserCustomAttribute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserCustomAttribute) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (u *jsiiProxy_UserCustomAttribute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserCustomAttribute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserCustomAttribute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserCustomAttribute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserCustomAttribute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

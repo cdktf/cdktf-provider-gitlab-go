@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabClusterAgent) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataGitlabClusterAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGitlabClusterAgent_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package datagitlabgroupvariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/datagitlabgroupvariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroupvariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -425,6 +425,25 @@ func (j *jsiiProxy_DataGitlabGroupVariables)SetProvider(val cdktf.TerraformProvi
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataGitlabGroupVariables resource upon running "cdktf plan <stack-name>".
+func DataGitlabGroupVariables_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGitlabGroupVariables_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

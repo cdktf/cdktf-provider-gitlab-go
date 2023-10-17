@@ -7,6 +7,10 @@ package clusteragenttoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClusterAgentToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterAgentToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ClusterAgentToken) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ClusterAgentToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterAgentToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ClusterAgentToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterAgentToken) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateClusterAgentToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

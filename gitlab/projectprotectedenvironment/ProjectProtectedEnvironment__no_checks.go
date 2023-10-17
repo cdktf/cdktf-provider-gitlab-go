@@ -7,6 +7,10 @@ package projectprotectedenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) validateGetStringMapAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectProtectedEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutApprovalRulesParamete
 }
 
 func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutDeployAccessLevelsParameters(value interface{}) error {
+	return nil
+}
+
+func validateProjectProtectedEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

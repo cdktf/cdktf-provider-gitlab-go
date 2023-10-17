@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost",
 		reflect.TypeOf((*IntegrationMattermost)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "branchesToBeNotified", GoGetter: "BranchesToBeNotified"},
 			_jsii_.MemberProperty{JsiiProperty: "branchesToBeNotifiedInput", GoGetter: "BranchesToBeNotifiedInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issueChannel", GoGetter: "IssueChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "issueChannelInput", GoGetter: "IssueChannelInput"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mergeRequestChannelInput", GoGetter: "MergeRequestChannelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeRequestsEvents", GoGetter: "MergeRequestsEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeRequestsEventsInput", GoGetter: "MergeRequestsEventsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "noteChannel", GoGetter: "NoteChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "noteChannelInput", GoGetter: "NoteChannelInput"},

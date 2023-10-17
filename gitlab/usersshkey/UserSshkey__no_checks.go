@@ -7,6 +7,10 @@ package usersshkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserSshkey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSshkey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserSshkey) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (u *jsiiProxy_UserSshkey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSshkey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserSshkey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSshkey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserSshkey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

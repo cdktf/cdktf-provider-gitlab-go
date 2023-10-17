@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-gitlab.project.Project",
 		reflect.TypeOf((*Project)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowMergeOnSkippedPipeline", GoGetter: "AllowMergeOnSkippedPipeline"},
 			_jsii_.MemberProperty{JsiiProperty: "allowMergeOnSkippedPipelineInput", GoGetter: "AllowMergeOnSkippedPipelineInput"},
@@ -98,6 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpUrlToRepo", GoGetter: "HttpUrlToRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "importUrl", GoGetter: "ImportUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "importUrlInput", GoGetter: "ImportUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "importUrlPassword", GoGetter: "ImportUrlPassword"},
@@ -142,6 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mirrorTriggerBuildsInput", GoGetter: "MirrorTriggerBuildsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorAccessLevel", GoGetter: "MonitorAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorAccessLevelInput", GoGetter: "MonitorAccessLevelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mrDefaultTargetSelf", GoGetter: "MrDefaultTargetSelf"},
 			_jsii_.MemberProperty{JsiiProperty: "mrDefaultTargetSelfInput", GoGetter: "MrDefaultTargetSelfInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

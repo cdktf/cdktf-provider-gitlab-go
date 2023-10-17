@@ -5,10 +5,10 @@ package integrationslack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/integrationslack/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationslack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -134,6 +134,9 @@ type IntegrationSlack interface {
 	WikiPageEvents() interface{}
 	SetWikiPageEvents(val interface{})
 	WikiPageEventsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -155,7 +158,12 @@ type IntegrationSlack interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1211,6 +1219,25 @@ func (j *jsiiProxy_IntegrationSlack)SetWikiPageEvents(val interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a IntegrationSlack resource upon running "cdktf plan <stack-name>".
+func IntegrationSlack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIntegrationSlack_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.integrationSlack.IntegrationSlack",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1293,6 +1320,17 @@ func IntegrationSlack_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IntegrationSlack) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IntegrationSlack) AddOverride(path *string, value interface{}) {
@@ -1450,6 +1488,17 @@ func (i *jsiiProxy_IntegrationSlack) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationSlack) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IntegrationSlack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1464,6 +1513,17 @@ func (i *jsiiProxy_IntegrationSlack) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IntegrationSlack) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (i *jsiiProxy_IntegrationSlack) OverrideLogicalId(newLogicalId *string) {

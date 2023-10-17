@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-gitlab.group.Group",
 		reflect.TypeOf((*Group)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDevopsEnabled", GoGetter: "AutoDevopsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDevopsEnabledInput", GoGetter: "AutoDevopsEnabledInput"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipRestrictionRanges", GoGetter: "IpRestrictionRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "ipRestrictionRangesInput", GoGetter: "IpRestrictionRangesInput"},
@@ -61,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "membershipLockInput", GoGetter: "MembershipLockInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mentionsDisabled", GoGetter: "MentionsDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "mentionsDisabledInput", GoGetter: "MentionsDisabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -5,10 +5,10 @@ package usersshkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/usersshkey/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usersshkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,9 @@ type UserSshkey interface {
 	UserId() *float64
 	SetUserId(val *float64)
 	UserIdInput() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,12 @@ type UserSshkey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -556,6 +564,25 @@ func (j *jsiiProxy_UserSshkey)SetUserId(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a UserSshkey resource upon running "cdktf plan <stack-name>".
+func UserSshkey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateUserSshkey_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-gitlab.userSshkey.UserSshkey",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -638,6 +665,17 @@ func UserSshkey_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (u *jsiiProxy_UserSshkey) AddMoveTarget(moveTarget *string) {
+	if err := u.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (u *jsiiProxy_UserSshkey) AddOverride(path *string, value interface{}) {
@@ -795,6 +833,17 @@ func (u *jsiiProxy_UserSshkey) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (u *jsiiProxy_UserSshkey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := u.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (u *jsiiProxy_UserSshkey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -809,6 +858,17 @@ func (u *jsiiProxy_UserSshkey) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (u *jsiiProxy_UserSshkey) MoveTo(moveTarget *string, index interface{}) {
+	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (u *jsiiProxy_UserSshkey) OverrideLogicalId(newLogicalId *string) {

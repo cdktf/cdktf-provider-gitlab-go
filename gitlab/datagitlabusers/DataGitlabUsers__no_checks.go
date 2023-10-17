@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabUsers) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateDataGitlabUsers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGitlabUsers_IsConstructParameters(x interface{}) error {
 	return nil
 }

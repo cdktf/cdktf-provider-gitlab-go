@@ -7,6 +7,10 @@ package label
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Label) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Label) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_Label) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (l *jsiiProxy_Label) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Label) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_Label) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_Label) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLabel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

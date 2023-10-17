@@ -7,6 +7,10 @@ package repositoryfile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryFile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryFile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RepositoryFile) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryFile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryFile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryFile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RepositoryFile) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (r *jsiiProxy_RepositoryFile) validatePutTimeoutsParameters(value *RepositoryFileTimeouts) error {
+	return nil
+}
+
+func validateRepositoryFile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

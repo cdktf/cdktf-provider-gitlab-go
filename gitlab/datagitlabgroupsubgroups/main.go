@@ -154,6 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestAccessEnabled", GoGetter: "RequestAccessEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTwoFactorAuthentication", GoGetter: "RequireTwoFactorAuthentication"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersSetting", GoGetter: "SharedRunnersSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "shareWithGroupLock", GoGetter: "ShareWithGroupLock"},
 			_jsii_.MemberProperty{JsiiProperty: "statistics", GoGetter: "Statistics"},
 			_jsii_.MemberProperty{JsiiProperty: "subgroupCreationLevel", GoGetter: "SubgroupCreationLevel"},

@@ -130,6 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestAccessEnabled", GoGetter: "RequestAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runnersToken", GoGetter: "RunnersToken"},
+			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersSetting", GoGetter: "SharedRunnersSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

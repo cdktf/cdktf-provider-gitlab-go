@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_milestone gitlab_project_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_milestone gitlab_project_milestone}.
 type ProjectMilestone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_ProjectMilestone) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_milestone gitlab_project_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_milestone gitlab_project_milestone} Resource.
 func NewProjectMilestone(scope constructs.Construct, id *string, config *ProjectMilestoneConfig) ProjectMilestone {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewProjectMilestone(scope constructs.Construct, id *string, config *Project
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_milestone gitlab_project_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_milestone gitlab_project_milestone} Resource.
 func NewProjectMilestone_Override(p ProjectMilestone, scope constructs.Construct, id *string, config *ProjectMilestoneConfig) {
 	_init_.Initialize()
 

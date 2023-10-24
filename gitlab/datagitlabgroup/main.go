@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "runnersToken", GoGetter: "RunnersToken"},
 			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersMinutesLimit", GoGetter: "SharedRunnersMinutesLimit"},
+			_jsii_.MemberProperty{JsiiProperty: "sharedRunnersSetting", GoGetter: "SharedRunnersSetting"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},

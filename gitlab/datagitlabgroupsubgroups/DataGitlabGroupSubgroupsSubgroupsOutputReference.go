@@ -51,6 +51,7 @@ type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 	ProjectCreationLevel() *string
 	RequestAccessEnabled() cdktf.IResolvable
 	RequireTwoFactorAuthentication() cdktf.IResolvable
+	SharedRunnersSetting() *string
 	ShareWithGroupLock() cdktf.IResolvable
 	Statistics() cdktf.StringMap
 	SubgroupCreationLevel() *string
@@ -340,6 +341,16 @@ func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) RequireTwoF
 	_jsii_.Get(
 		j,
 		"requireTwoFactorAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) SharedRunnersSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedRunnersSetting",
 		&returns,
 	)
 	return returns

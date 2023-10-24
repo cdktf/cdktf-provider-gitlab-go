@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -106,6 +106,7 @@ type Project interface {
 	EmailsDisabled() interface{}
 	SetEmailsDisabled(val interface{})
 	EmailsDisabledInput() interface{}
+	EmptyRepo() cdktf.IResolvable
 	EnvironmentsAccessLevel() *string
 	SetEnvironmentsAccessLevel(val *string)
 	EnvironmentsAccessLevelInput() *string
@@ -250,6 +251,9 @@ type Project interface {
 	PublicBuilds() interface{}
 	SetPublicBuilds(val interface{})
 	PublicBuildsInput() interface{}
+	PublicJobs() interface{}
+	SetPublicJobs(val interface{})
+	PublicJobsInput() interface{}
 	PushRules() ProjectPushRulesOutputReference
 	PushRulesInput() *ProjectPushRules
 	// Experimental.
@@ -437,6 +441,7 @@ type Project interface {
 	ResetPipelinesEnabled()
 	ResetPrintingMergeRequestLinkEnabled()
 	ResetPublicBuilds()
+	ResetPublicJobs()
 	ResetPushRules()
 	ResetReleasesAccessLevel()
 	ResetRemoveSourceBranchAfterMerge()
@@ -1032,6 +1037,16 @@ func (j *jsiiProxy_Project) EmailsDisabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"emailsDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) EmptyRepo() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"emptyRepo",
 		&returns,
 	)
 	return returns
@@ -1927,6 +1942,26 @@ func (j *jsiiProxy_Project) PublicBuildsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) PublicJobs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicJobs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) PublicJobsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicJobsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) PushRules() ProjectPushRulesOutputReference {
 	var returns ProjectPushRulesOutputReference
 	_jsii_.Get(
@@ -2498,7 +2533,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2516,7 +2551,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3295,6 +3330,17 @@ func (j *jsiiProxy_Project)SetPublicBuilds(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publicBuilds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetPublicJobs(val interface{}) {
+	if err := j.validateSetPublicJobsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicJobs",
 		val,
 	)
 }
@@ -4419,6 +4465,14 @@ func (p *jsiiProxy_Project) ResetPublicBuilds() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPublicBuilds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetPublicJobs() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPublicJobs",
 		nil, // no parameters
 	)
 }

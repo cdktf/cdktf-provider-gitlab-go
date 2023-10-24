@@ -179,6 +179,10 @@ func (j *jsiiProxy_Group) validateSetSharedRunnersMinutesLimitParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetSharedRunnersSettingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetShareWithGroupLockParameters(val interface{}) error {
 	return nil
 }

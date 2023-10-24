@@ -363,6 +363,10 @@ func (j *jsiiProxy_Project) validateSetPublicBuildsParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetPublicJobsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetReleasesAccessLevelParameters(val *string) error {
 	return nil
 }

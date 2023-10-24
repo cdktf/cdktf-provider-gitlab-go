@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -119,6 +119,9 @@ type Group interface {
 	SharedRunnersMinutesLimit() *float64
 	SetSharedRunnersMinutesLimit(val *float64)
 	SharedRunnersMinutesLimitInput() *float64
+	SharedRunnersSetting() *string
+	SetSharedRunnersSetting(val *string)
+	SharedRunnersSettingInput() *string
 	ShareWithGroupLock() interface{}
 	SetShareWithGroupLock(val interface{})
 	ShareWithGroupLockInput() interface{}
@@ -195,6 +198,7 @@ type Group interface {
 	ResetRequestAccessEnabled()
 	ResetRequireTwoFactorAuthentication()
 	ResetSharedRunnersMinutesLimit()
+	ResetSharedRunnersSetting()
 	ResetShareWithGroupLock()
 	ResetSubgroupCreationLevel()
 	ResetTwoFactorGracePeriod()
@@ -785,6 +789,26 @@ func (j *jsiiProxy_Group) SharedRunnersMinutesLimitInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Group) SharedRunnersSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedRunnersSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) SharedRunnersSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedRunnersSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) ShareWithGroupLock() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -926,7 +950,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -944,7 +968,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1239,6 +1263,17 @@ func (j *jsiiProxy_Group)SetSharedRunnersMinutesLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"sharedRunnersMinutesLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetSharedRunnersSetting(val *string) {
+	if err := j.validateSetSharedRunnersSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedRunnersSetting",
 		val,
 	)
 }
@@ -1764,6 +1799,14 @@ func (g *jsiiProxy_Group) ResetSharedRunnersMinutesLimit() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSharedRunnersMinutesLimit",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetSharedRunnersSetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharedRunnersSetting",
 		nil, // no parameters
 	)
 }

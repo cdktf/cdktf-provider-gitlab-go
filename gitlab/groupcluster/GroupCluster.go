@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_cluster gitlab_group_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster gitlab_group_cluster}.
 type GroupCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_GroupCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_cluster gitlab_group_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster gitlab_group_cluster} Resource.
 func NewGroupCluster(scope constructs.Construct, id *string, config *GroupClusterConfig) GroupCluster {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewGroupCluster(scope constructs.Construct, id *string, config *GroupCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_cluster gitlab_group_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster gitlab_group_cluster} Resource.
 func NewGroupCluster_Override(g GroupCluster, scope constructs.Construct, id *string, config *GroupClusterConfig) {
 	_init_.Initialize()
 

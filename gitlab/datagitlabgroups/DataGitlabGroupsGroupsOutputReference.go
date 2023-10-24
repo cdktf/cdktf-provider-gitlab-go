@@ -44,6 +44,7 @@ type DataGitlabGroupsGroupsOutputReference interface {
 	PreventForkingOutsideGroup() cdktf.IResolvable
 	RequestAccessEnabled() cdktf.IResolvable
 	RunnersToken() *string
+	SharedRunnersSetting() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -259,6 +260,16 @@ func (j *jsiiProxy_DataGitlabGroupsGroupsOutputReference) RunnersToken() *string
 	_jsii_.Get(
 		j,
 		"runnersToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupsGroupsOutputReference) SharedRunnersSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedRunnersSetting",
 		&returns,
 	)
 	return returns

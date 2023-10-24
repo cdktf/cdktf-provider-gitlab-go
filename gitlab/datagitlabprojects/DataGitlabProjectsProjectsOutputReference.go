@@ -53,6 +53,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	DefaultBranch() *string
 	Description() *string
 	EmailsDisabled() cdktf.IResolvable
+	EmptyRepo() cdktf.IResolvable
 	EnvironmentsAccessLevel() *string
 	ExternalAuthorizationClassificationLabel() *string
 	FeatureFlagsAccessLevel() *string
@@ -448,6 +449,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) EmailsDisabled() c
 	_jsii_.Get(
 		j,
 		"emailsDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) EmptyRepo() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"emptyRepo",
 		&returns,
 	)
 	return returns

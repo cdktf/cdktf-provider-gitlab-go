@@ -127,6 +127,10 @@ func (j *jsiiProxy_PipelineSchedule) validateSetRefParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_PipelineSchedule) validateSetTakeOwnershipParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewPipelineScheduleParameters(scope constructs.Construct, id *string, config *PipelineScheduleConfig) error {
 	return nil
 }

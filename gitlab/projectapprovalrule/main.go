@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "appliesToAllProtectedBranches", GoGetter: "AppliesToAllProtectedBranches"},
+			_jsii_.MemberProperty{JsiiProperty: "appliesToAllProtectedBranchesInput", GoGetter: "AppliesToAllProtectedBranchesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalsRequired", GoGetter: "ApprovalsRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalsRequiredInput", GoGetter: "ApprovalsRequiredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppliesToAllProtectedBranches", GoMethod: "ResetAppliesToAllProtectedBranches"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableImportingDefaultAnyApproverRuleOnCreate", GoMethod: "ResetDisableImportingDefaultAnyApproverRuleOnCreate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupIds", GoMethod: "ResetGroupIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

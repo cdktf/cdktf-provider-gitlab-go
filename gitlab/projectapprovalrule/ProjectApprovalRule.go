@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
 type ProjectApprovalRule interface {
 	cdktf.TerraformResource
+	AppliesToAllProtectedBranches() interface{}
+	SetAppliesToAllProtectedBranches(val interface{})
+	AppliesToAllProtectedBranchesInput() interface{}
 	ApprovalsRequired() *float64
 	SetApprovalsRequired(val *float64)
 	ApprovalsRequiredInput() *float64
@@ -121,6 +124,7 @@ type ProjectApprovalRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAppliesToAllProtectedBranches()
 	ResetDisableImportingDefaultAnyApproverRuleOnCreate()
 	ResetGroupIds()
 	ResetId()
@@ -143,6 +147,26 @@ type ProjectApprovalRule interface {
 // The jsii proxy struct for ProjectApprovalRule
 type jsiiProxy_ProjectApprovalRule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ProjectApprovalRule) AppliesToAllProtectedBranches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appliesToAllProtectedBranches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectApprovalRule) AppliesToAllProtectedBranchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appliesToAllProtectedBranchesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ProjectApprovalRule) ApprovalsRequired() *float64 {
@@ -486,7 +510,7 @@ func (j *jsiiProxy_ProjectApprovalRule) UserIdsInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule(scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) ProjectApprovalRule {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewProjectApprovalRule(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule_Override(p ProjectApprovalRule, scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) {
 	_init_.Initialize()
 
@@ -512,6 +536,17 @@ func NewProjectApprovalRule_Override(p ProjectApprovalRule, scope constructs.Con
 		"@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectApprovalRule)SetAppliesToAllProtectedBranches(val interface{}) {
+	if err := j.validateSetAppliesToAllProtectedBranchesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appliesToAllProtectedBranches",
+		val,
 	)
 }
 
@@ -997,6 +1032,14 @@ func (p *jsiiProxy_ProjectApprovalRule) OverrideLogicalId(newLogicalId *string) 
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_ProjectApprovalRule) ResetAppliesToAllProtectedBranches() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAppliesToAllProtectedBranches",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
 type GroupProtectedEnvironment interface {
 	cdktf.TerraformResource
 	ApprovalRules() GroupProtectedEnvironmentApprovalRulesList
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GroupProtectedEnvironment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
 func NewGroupProtectedEnvironment(scope constructs.Construct, id *string, config *GroupProtectedEnvironmentConfig) GroupProtectedEnvironment {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGroupProtectedEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
 func NewGroupProtectedEnvironment_Override(g GroupProtectedEnvironment, scope constructs.Construct, id *string, config *GroupProtectedEnvironmentConfig) {
 	_init_.Initialize()
 

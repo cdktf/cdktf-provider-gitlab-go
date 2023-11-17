@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
 type PipelineSchedule interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -60,6 +60,7 @@ type PipelineSchedule interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Owner() *float64
 	PipelineScheduleId() *float64
 	Project() *string
 	SetProject(val *string)
@@ -77,6 +78,9 @@ type PipelineSchedule interface {
 	Ref() *string
 	SetRef(val *string)
 	RefInput() *string
+	TakeOwnership() interface{}
+	SetTakeOwnership(val interface{})
+	TakeOwnershipInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +126,7 @@ type PipelineSchedule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTakeOwnership()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -337,6 +342,16 @@ func (j *jsiiProxy_PipelineSchedule) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PipelineSchedule) Owner() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineSchedule) PipelineScheduleId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -417,6 +432,26 @@ func (j *jsiiProxy_PipelineSchedule) RefInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PipelineSchedule) TakeOwnership() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"takeOwnership",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipelineSchedule) TakeOwnershipInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"takeOwnershipInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipelineSchedule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -448,7 +483,7 @@ func (j *jsiiProxy_PipelineSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule(scope constructs.Construct, id *string, config *PipelineScheduleConfig) PipelineSchedule {
 	_init_.Initialize()
 
@@ -466,7 +501,7 @@ func NewPipelineSchedule(scope constructs.Construct, id *string, config *Pipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule_Override(p PipelineSchedule, scope constructs.Construct, id *string, config *PipelineScheduleConfig) {
 	_init_.Initialize()
 
@@ -618,6 +653,17 @@ func (j *jsiiProxy_PipelineSchedule)SetRef(val *string) {
 	_jsii_.Set(
 		j,
 		"ref",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineSchedule)SetTakeOwnership(val interface{}) {
+	if err := j.validateSetTakeOwnershipParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"takeOwnership",
 		val,
 	)
 }
@@ -968,6 +1014,14 @@ func (p *jsiiProxy_PipelineSchedule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineSchedule) ResetTakeOwnership() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTakeOwnership",
 		nil, // no parameters
 	)
 }

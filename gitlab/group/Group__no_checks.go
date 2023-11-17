@@ -67,6 +67,10 @@ func (g *jsiiProxy_Group) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (g *jsiiProxy_Group) validatePutPushRulesParameters(value *GroupPushRules) error {
+	return nil
+}
+
 func validateGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

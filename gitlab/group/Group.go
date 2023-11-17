@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -107,6 +107,8 @@ type Group interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PushRules() GroupPushRulesOutputReference
+	PushRulesInput() *GroupPushRules
 	// Experimental.
 	RawOverrides() interface{}
 	RequestAccessEnabled() interface{}
@@ -177,6 +179,7 @@ type Group interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPushRules(value *GroupPushRules)
 	ResetAutoDevopsEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
@@ -195,6 +198,7 @@ type Group interface {
 	ResetParentId()
 	ResetPreventForkingOutsideGroup()
 	ResetProjectCreationLevel()
+	ResetPushRules()
 	ResetRequestAccessEnabled()
 	ResetRequireTwoFactorAuthentication()
 	ResetSharedRunnersMinutesLimit()
@@ -709,6 +713,26 @@ func (j *jsiiProxy_Group) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) PushRules() GroupPushRulesOutputReference {
+	var returns GroupPushRulesOutputReference
+	_jsii_.Get(
+		j,
+		"pushRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) PushRulesInput() *GroupPushRules {
+	var returns *GroupPushRules
+	_jsii_.Get(
+		j,
+		"pushRulesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -950,7 +974,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -968,7 +992,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1651,6 +1675,17 @@ func (g *jsiiProxy_Group) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_Group) PutPushRules(value *GroupPushRules) {
+	if err := g.validatePutPushRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPushRules",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_Group) ResetAutoDevopsEnabled() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1775,6 +1810,14 @@ func (g *jsiiProxy_Group) ResetProjectCreationLevel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjectCreationLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetPushRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPushRules",
 		nil, // no parameters
 	)
 }

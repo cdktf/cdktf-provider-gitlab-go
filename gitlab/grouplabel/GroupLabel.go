@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_label gitlab_group_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label gitlab_group_label}.
 type GroupLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GroupLabel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelConfig) GroupLabel {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel_Override(g GroupLabel, scope constructs.Construct, id *string, config *GroupLabelConfig) {
 	_init_.Initialize()
 

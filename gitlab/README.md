@@ -1,6 +1,8 @@
-# Terraform CDK gitlab Provider ~> 16.0
+# Terraform CDK gitlab Provider tracks ~> 16.0
 
 This repo builds and publishes the Terraform gitlab Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on gitlab 16.6.0
 
 ## Available Packages
 
@@ -59,7 +61,7 @@ This project is explicitly not tracking the Terraform gitlab Provider version 1:
 These are the upstream dependencies:
 
 * [Terraform CDK](https://cdk.tf)
-* [Terraform gitlab Provider](https://registry.terraform.io/providers/gitlabhq/gitlab/16.0.0)
+* [Terraform gitlab Provider](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0)
 
   * This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-gitlab/releases)
 * [Terraform Engine](https://terraform.io)

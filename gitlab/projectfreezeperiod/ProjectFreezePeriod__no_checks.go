@@ -59,7 +59,15 @@ func (p *jsiiProxy_ProjectFreezePeriod) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_ProjectFreezePeriod) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectFreezePeriod) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectFreezePeriod) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

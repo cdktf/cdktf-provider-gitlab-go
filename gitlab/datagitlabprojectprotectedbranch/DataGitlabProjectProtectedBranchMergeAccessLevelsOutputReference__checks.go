@@ -166,9 +166,33 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference) validateSetInternalValueParameters(val *DataGitlabProjectProtectedBranchMergeAccessLevels) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference) validateSetGroupIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *DataGitlabProjectProtectedBranchMergeAccessLevels:
+		val := val.(*DataGitlabProjectProtectedBranchMergeAccessLevels)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case DataGitlabProjectProtectedBranchMergeAccessLevels:
+		val_ := val.(DataGitlabProjectProtectedBranchMergeAccessLevels)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataGitlabProjectProtectedBranchMergeAccessLevels; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -183,6 +207,14 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputRefere
 }
 
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference) validateSetUserIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

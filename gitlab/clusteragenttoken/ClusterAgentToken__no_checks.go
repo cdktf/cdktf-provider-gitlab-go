@@ -59,7 +59,15 @@ func (c *jsiiProxy_ClusterAgentToken) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ClusterAgentToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterAgentToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterAgentToken) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

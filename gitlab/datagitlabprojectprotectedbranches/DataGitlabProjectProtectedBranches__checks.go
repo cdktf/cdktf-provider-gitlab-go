@@ -114,6 +114,37 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranches) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataGitlabProjectProtectedBranches) validatePutProtectedBranchesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataGitlabProjectProtectedBranchesProtectedBranches:
+		value := value.(*[]*DataGitlabProjectProtectedBranchesProtectedBranches)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataGitlabProjectProtectedBranchesProtectedBranches:
+		value_ := value.([]*DataGitlabProjectProtectedBranchesProtectedBranches)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataGitlabProjectProtectedBranchesProtectedBranches; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateDataGitlabProjectProtectedBranches_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -206,14 +237,6 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetCountParameter
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

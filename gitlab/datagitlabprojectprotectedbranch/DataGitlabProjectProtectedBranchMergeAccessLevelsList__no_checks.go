@@ -15,6 +15,10 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) valida
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchMergeAccessLevelsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

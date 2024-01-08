@@ -198,6 +198,14 @@ func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetLabelIdParame
 	return nil
 }
 
+func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetPositionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

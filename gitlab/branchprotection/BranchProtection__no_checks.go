@@ -59,7 +59,15 @@ func (b *jsiiProxy_BranchProtection) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (b *jsiiProxy_BranchProtection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchProtection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BranchProtection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -112,10 +120,6 @@ func (j *jsiiProxy_BranchProtection) validateSetConnectionParameters(val interfa
 }
 
 func (j *jsiiProxy_BranchProtection) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_BranchProtection) validateSetIdParameters(val *string) error {
 	return nil
 }
 

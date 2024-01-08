@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
 type GroupCustomAttribute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type GroupCustomAttribute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_GroupCustomAttribute) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
 func NewGroupCustomAttribute(scope constructs.Construct, id *string, config *GroupCustomAttributeConfig) GroupCustomAttribute {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewGroupCustomAttribute(scope constructs.Construct, id *string, config *Gro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource.
 func NewGroupCustomAttribute_Override(g GroupCustomAttribute, scope constructs.Construct, id *string, config *GroupCustomAttributeConfig) {
 	_init_.Initialize()
 
@@ -776,6 +786,19 @@ func (g *jsiiProxy_GroupCustomAttribute) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (g *jsiiProxy_GroupCustomAttribute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GroupCustomAttribute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -803,6 +826,17 @@ func (g *jsiiProxy_GroupCustomAttribute) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (g *jsiiProxy_GroupCustomAttribute) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GroupCustomAttribute) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -811,6 +845,17 @@ func (g *jsiiProxy_GroupCustomAttribute) MoveTo(moveTarget *string, index interf
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GroupCustomAttribute) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

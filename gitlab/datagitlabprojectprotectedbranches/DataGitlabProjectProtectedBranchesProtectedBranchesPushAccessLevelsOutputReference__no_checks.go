@@ -59,7 +59,11 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) validateSetInternalValueParameters(val *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels) error {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) validateSetGroupIdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -68,6 +72,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 }
 
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) validateSetUserIdParameters(val *float64) error {
 	return nil
 }
 

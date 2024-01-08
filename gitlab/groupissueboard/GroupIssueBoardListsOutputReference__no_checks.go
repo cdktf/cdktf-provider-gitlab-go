@@ -67,6 +67,10 @@ func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetLabelIdParame
 	return nil
 }
 
+func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetPositionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupIssueBoardListsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

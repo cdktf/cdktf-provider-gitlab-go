@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
 type PipelineSchedule interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -111,12 +111,22 @@ type PipelineSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -483,7 +493,7 @@ func (j *jsiiProxy_PipelineSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule(scope constructs.Construct, id *string, config *PipelineScheduleConfig) PipelineSchedule {
 	_init_.Initialize()
 
@@ -501,7 +511,7 @@ func NewPipelineSchedule(scope constructs.Construct, id *string, config *Pipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule_Override(p PipelineSchedule, scope constructs.Construct, id *string, config *PipelineScheduleConfig) {
 	_init_.Initialize()
 
@@ -937,6 +947,19 @@ func (p *jsiiProxy_PipelineSchedule) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (p *jsiiProxy_PipelineSchedule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PipelineSchedule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -964,6 +987,17 @@ func (p *jsiiProxy_PipelineSchedule) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (p *jsiiProxy_PipelineSchedule) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PipelineSchedule) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -972,6 +1006,17 @@ func (p *jsiiProxy_PipelineSchedule) MoveTo(moveTarget *string, index interface{
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PipelineSchedule) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

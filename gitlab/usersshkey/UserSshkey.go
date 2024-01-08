@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/user_sshkey gitlab_user_sshkey}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/user_sshkey gitlab_user_sshkey}.
 type UserSshkey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type UserSshkey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_UserSshkey) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
 func NewUserSshkey(scope constructs.Construct, id *string, config *UserSshkeyConfig) UserSshkey {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewUserSshkey(scope constructs.Construct, id *string, config *UserSshkeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
 func NewUserSshkey_Override(u UserSshkey, scope constructs.Construct, id *string, config *UserSshkeyConfig) {
 	_init_.Initialize()
 
@@ -834,6 +844,19 @@ func (u *jsiiProxy_UserSshkey) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (u *jsiiProxy_UserSshkey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UserSshkey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -861,6 +884,17 @@ func (u *jsiiProxy_UserSshkey) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (u *jsiiProxy_UserSshkey) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UserSshkey) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -869,6 +903,17 @@ func (u *jsiiProxy_UserSshkey) MoveTo(moveTarget *string, index interface{}) {
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UserSshkey) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

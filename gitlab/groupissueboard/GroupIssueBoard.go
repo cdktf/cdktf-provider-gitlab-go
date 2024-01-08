@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board}.
 type GroupIssueBoard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,9 @@ type GroupIssueBoard interface {
 	SetGroup(val *string)
 	GroupInput() *string
 	Id() *string
+	Labels() *[]*string
+	SetLabels(val *[]*string)
+	LabelsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -97,16 +100,27 @@ type GroupIssueBoard interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLists(value interface{})
+	ResetLabels()
 	ResetLists()
 	ResetMilestoneId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -232,6 +246,26 @@ func (j *jsiiProxy_GroupIssueBoard) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupIssueBoard) Labels() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupIssueBoard) LabelsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -378,7 +412,7 @@ func (j *jsiiProxy_GroupIssueBoard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
 func NewGroupIssueBoard(scope constructs.Construct, id *string, config *GroupIssueBoardConfig) GroupIssueBoard {
 	_init_.Initialize()
 
@@ -396,7 +430,7 @@ func NewGroupIssueBoard(scope constructs.Construct, id *string, config *GroupIss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
 func NewGroupIssueBoard_Override(g GroupIssueBoard, scope constructs.Construct, id *string, config *GroupIssueBoardConfig) {
 	_init_.Initialize()
 
@@ -452,6 +486,17 @@ func (j *jsiiProxy_GroupIssueBoard)SetGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"group",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupIssueBoard)SetLabels(val *[]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -777,6 +822,19 @@ func (g *jsiiProxy_GroupIssueBoard) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (g *jsiiProxy_GroupIssueBoard) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GroupIssueBoard) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -804,6 +862,17 @@ func (g *jsiiProxy_GroupIssueBoard) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (g *jsiiProxy_GroupIssueBoard) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GroupIssueBoard) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -812,6 +881,17 @@ func (g *jsiiProxy_GroupIssueBoard) MoveTo(moveTarget *string, index interface{}
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GroupIssueBoard) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -834,6 +914,14 @@ func (g *jsiiProxy_GroupIssueBoard) PutLists(value interface{}) {
 		g,
 		"putLists",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GroupIssueBoard) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
 	)
 }
 

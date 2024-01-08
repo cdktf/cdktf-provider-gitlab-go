@@ -33,11 +33,13 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference interfac
 	// Experimental.
 	Fqn() *string
 	Id() *float64
-	InternalValue() *DataGitlabProjectProtectedBranchesProtectedBranches
-	SetInternalValue(val *DataGitlabProjectProtectedBranchesProtectedBranches)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MergeAccessLevels() DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsList
+	MergeAccessLevelsInput() interface{}
 	Name() *string
 	PushAccessLevels() DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList
+	PushAccessLevelsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,10 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMergeAccessLevels(value interface{})
+	PutPushAccessLevels(value interface{})
+	ResetMergeAccessLevels()
+	ResetPushAccessLevels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -155,8 +161,8 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) InternalValue() *DataGitlabProjectProtectedBranchesProtectedBranches {
-	var returns *DataGitlabProjectProtectedBranchesProtectedBranches
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,6 +176,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	_jsii_.Get(
 		j,
 		"mergeAccessLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) MergeAccessLevelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mergeAccessLevelsInput",
 		&returns,
 	)
 	return returns
@@ -190,6 +206,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	_jsii_.Get(
 		j,
 		"pushAccessLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) PushAccessLevelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pushAccessLevelsInput",
 		&returns,
 	)
 	return returns
@@ -265,7 +291,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference)SetInternalValue(val *DataGitlabProjectProtectedBranchesProtectedBranches) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,6 +508,44 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) PutMergeAccessLevels(value interface{}) {
+	if err := d.validatePutMergeAccessLevelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMergeAccessLevels",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) PutPushAccessLevels(value interface{}) {
+	if err := d.validatePutPushAccessLevelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPushAccessLevels",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) ResetMergeAccessLevels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMergeAccessLevels",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) ResetPushAccessLevels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPushAccessLevels",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

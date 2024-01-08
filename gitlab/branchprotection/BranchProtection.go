@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection gitlab_branch_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection gitlab_branch_protection}.
 type BranchProtection interface {
 	cdktf.TerraformResource
 	AllowedToMerge() BranchProtectionAllowedToMergeList
@@ -56,8 +56,6 @@ type BranchProtection interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,12 +114,22 @@ type BranchProtection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -133,7 +141,6 @@ type BranchProtection interface {
 	ResetAllowedToUnprotect()
 	ResetAllowForcePush()
 	ResetCodeOwnerApprovalRequired()
-	ResetId()
 	ResetMergeAccessLevel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -375,16 +382,6 @@ func (j *jsiiProxy_BranchProtection) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BranchProtection) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BranchProtection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -546,7 +543,7 @@ func (j *jsiiProxy_BranchProtection) UnprotectAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
 func NewBranchProtection(scope constructs.Construct, id *string, config *BranchProtectionConfig) BranchProtection {
 	_init_.Initialize()
 
@@ -564,7 +561,7 @@ func NewBranchProtection(scope constructs.Construct, id *string, config *BranchP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
 func NewBranchProtection_Override(b BranchProtection, scope constructs.Construct, id *string, config *BranchProtectionConfig) {
 	_init_.Initialize()
 
@@ -642,17 +639,6 @@ func (j *jsiiProxy_BranchProtection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BranchProtection)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1000,6 +986,19 @@ func (b *jsiiProxy_BranchProtection) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (b *jsiiProxy_BranchProtection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BranchProtection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1027,6 +1026,17 @@ func (b *jsiiProxy_BranchProtection) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (b *jsiiProxy_BranchProtection) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BranchProtection) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1035,6 +1045,17 @@ func (b *jsiiProxy_BranchProtection) MoveTo(moveTarget *string, index interface{
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BranchProtection) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1118,14 +1139,6 @@ func (b *jsiiProxy_BranchProtection) ResetCodeOwnerApprovalRequired() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCodeOwnerApprovalRequired",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BranchProtection) ResetId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetId",
 		nil, // no parameters
 	)
 }

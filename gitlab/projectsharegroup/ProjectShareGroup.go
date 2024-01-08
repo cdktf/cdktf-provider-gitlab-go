@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_share_group gitlab_project_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_share_group gitlab_project_share_group}.
 type ProjectShareGroup interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -100,12 +100,22 @@ type ProjectShareGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -391,7 +401,7 @@ func (j *jsiiProxy_ProjectShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup(scope constructs.Construct, id *string, config *ProjectShareGroupConfig) ProjectShareGroup {
 	_init_.Initialize()
 
@@ -409,7 +419,7 @@ func NewProjectShareGroup(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_share_group gitlab_project_share_group} Resource.
 func NewProjectShareGroup_Override(p ProjectShareGroup, scope constructs.Construct, id *string, config *ProjectShareGroupConfig) {
 	_init_.Initialize()
 
@@ -812,6 +822,19 @@ func (p *jsiiProxy_ProjectShareGroup) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (p *jsiiProxy_ProjectShareGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_ProjectShareGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -839,6 +862,17 @@ func (p *jsiiProxy_ProjectShareGroup) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (p *jsiiProxy_ProjectShareGroup) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_ProjectShareGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -847,6 +881,17 @@ func (p *jsiiProxy_ProjectShareGroup) MoveTo(moveTarget *string, index interface
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_ProjectShareGroup) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

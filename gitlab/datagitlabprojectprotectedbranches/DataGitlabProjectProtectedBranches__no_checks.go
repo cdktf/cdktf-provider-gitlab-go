@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranches) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataGitlabProjectProtectedBranches) validatePutProtectedBranchesParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataGitlabProjectProtectedBranches_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,10 +76,6 @@ func validateDataGitlabProjectProtectedBranches_IsTerraformElementParameters(x i
 }
 
 func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -37,6 +37,8 @@ type GroupIssueBoardListsOutputReference interface {
 	SetLabelId(val *float64)
 	LabelIdInput() *float64
 	Position() *float64
+	SetPosition(val *float64)
+	PositionInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,7 @@ type GroupIssueBoardListsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetLabelId()
+	ResetPosition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +178,16 @@ func (j *jsiiProxy_GroupIssueBoardListsOutputReference) Position() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GroupIssueBoardListsOutputReference) PositionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"positionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupIssueBoardListsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -263,6 +276,17 @@ func (j *jsiiProxy_GroupIssueBoardListsOutputReference)SetLabelId(val *float64) 
 	_jsii_.Set(
 		j,
 		"labelId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupIssueBoardListsOutputReference)SetPosition(val *float64) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"position",
 		val,
 	)
 }
@@ -479,6 +503,14 @@ func (g *jsiiProxy_GroupIssueBoardListsOutputReference) ResetLabelId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabelId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupIssueBoardListsOutputReference) ResetPosition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPosition",
 		nil, // no parameters
 	)
 }

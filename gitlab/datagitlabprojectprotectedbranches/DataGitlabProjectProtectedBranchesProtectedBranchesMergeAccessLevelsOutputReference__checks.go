@@ -166,9 +166,33 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAcces
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference) validateSetInternalValueParameters(val *DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference) validateSetGroupIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels:
+		val := val.(*DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels:
+		val_ := val.(DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -183,6 +207,14 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAcces
 }
 
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference) validateSetUserIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

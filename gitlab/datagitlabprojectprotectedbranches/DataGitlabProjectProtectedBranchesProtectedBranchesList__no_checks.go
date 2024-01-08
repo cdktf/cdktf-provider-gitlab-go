@@ -15,6 +15,10 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) vali
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GroupHook) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GroupHook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupHook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

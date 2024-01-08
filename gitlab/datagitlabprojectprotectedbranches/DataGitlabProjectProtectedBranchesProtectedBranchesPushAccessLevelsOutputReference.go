@@ -33,8 +33,10 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputRe
 	// Experimental.
 	Fqn() *string
 	GroupId() *float64
-	InternalValue() *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels
-	SetInternalValue(val *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels)
+	SetGroupId(val *float64)
+	GroupIdInput() *float64
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,6 +46,8 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputRe
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UserId() *float64
+	SetUserId(val *float64)
+	UserIdInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +72,8 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGroupId()
+	ResetUserId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,8 +159,18 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) InternalValue() *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels {
-	var returns *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) GroupIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -188,6 +204,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	_jsii_.Get(
 		j,
 		"userId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) UserIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"userIdInput",
 		&returns,
 	)
 	return returns
@@ -243,7 +269,18 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference)SetInternalValue(val *DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels) {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference)SetGroupId(val *float64) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -272,6 +309,17 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference)SetUserId(val *float64) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userId",
 		val,
 	)
 }
@@ -460,6 +508,22 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) ResetGroupId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) ResetUserId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

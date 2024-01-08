@@ -59,7 +59,15 @@ func (g *jsiiProxy_GroupIssueBoard) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GroupIssueBoard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupIssueBoard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupIssueBoard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -96,6 +104,10 @@ func (j *jsiiProxy_GroupIssueBoard) validateSetCountParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_GroupIssueBoard) validateSetGroupParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupIssueBoard) validateSetLabelsParameters(val *[]*string) error {
 	return nil
 }
 

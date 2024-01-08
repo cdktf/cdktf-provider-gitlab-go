@@ -47,6 +47,14 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	return nil
 }
 
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) validatePutMergeAccessLevelsParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) validatePutPushAccessLevelsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,7 +67,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) validateSetInternalValueParameters(val *DataGitlabProjectProtectedBranchesProtectedBranches) error {
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

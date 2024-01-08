@@ -24,21 +24,21 @@ type ProjectMembershipConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
 	AccessLevel *string `field:"required" json:"accessLevel" yaml:"accessLevel"`
 	// The ID or URL-encoded path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership#project ProjectMembership#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_membership#project ProjectMembership#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The id of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`
 	// Expiration date for the project membership. Format: `YYYY-MM-DD`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership#id ProjectMembership#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_membership#id ProjectMembership#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

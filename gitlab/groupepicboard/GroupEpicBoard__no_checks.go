@@ -59,7 +59,15 @@ func (g *jsiiProxy_GroupEpicBoard) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GroupEpicBoard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupEpicBoard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupEpicBoard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

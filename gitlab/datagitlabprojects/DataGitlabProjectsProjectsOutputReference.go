@@ -62,6 +62,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	ForksCount() *float64
 	// Experimental.
 	Fqn() *string
+	GroupRunnersEnabled() cdktf.IResolvable
 	HttpUrlToRepo() *string
 	Id() *float64
 	ImportError() *string
@@ -529,6 +530,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) GroupRunnersEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"groupRunnersEnabled",
 		&returns,
 	)
 	return returns

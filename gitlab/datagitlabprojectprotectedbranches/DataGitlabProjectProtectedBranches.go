@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
 type DataGitlabProjectProtectedBranches interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -35,9 +35,7 @@ type DataGitlabProjectProtectedBranches interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -48,6 +46,7 @@ type DataGitlabProjectProtectedBranches interface {
 	SetProjectId(val *string)
 	ProjectIdInput() *string
 	ProtectedBranches() DataGitlabProjectProtectedBranchesProtectedBranchesList
+	ProtectedBranchesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -85,10 +84,11 @@ type DataGitlabProjectProtectedBranches interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutProtectedBranches(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtectedBranches()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -174,21 +174,11 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) FriendlyUniqueId() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataGitlabProjectProtectedBranches) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -239,6 +229,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) ProtectedBranches() DataG
 	_jsii_.Get(
 		j,
 		"protectedBranches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranches) ProtectedBranchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protectedBranchesInput",
 		&returns,
 	)
 	return returns
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) DataGitlabProjectProtectedBranches {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataGitlabProjectProtectedBranches(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source.
 func NewDataGitlabProjectProtectedBranches_Override(d DataGitlabProjectProtectedBranches, scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchesConfig) {
 	_init_.Initialize()
 
@@ -347,17 +347,6 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranches)SetForEach(val cdktf.ITerr
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectProtectedBranches)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -677,11 +666,14 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranches) OverrideLogicalId(newLogi
 	)
 }
 
-func (d *jsiiProxy_DataGitlabProjectProtectedBranches) ResetId() {
+func (d *jsiiProxy_DataGitlabProjectProtectedBranches) PutProtectedBranches(value interface{}) {
+	if err := d.validatePutProtectedBranchesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
-		nil, // no parameters
+		"putProtectedBranches",
+		[]interface{}{value},
 	)
 }
 
@@ -689,6 +681,14 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranches) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranches) ResetProtectedBranches() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProtectedBranches",
 		nil, // no parameters
 	)
 }

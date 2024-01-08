@@ -59,7 +59,15 @@ func (p *jsiiProxy_Project) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (p *jsiiProxy_Project) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_Project) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_Project) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -212,6 +220,10 @@ func (j *jsiiProxy_Project) validateSetForkedFromProjectIdParameters(val *float6
 }
 
 func (j *jsiiProxy_Project) validateSetForkingAccessLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetGroupRunnersEnabledParameters(val interface{}) error {
 	return nil
 }
 

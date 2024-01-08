@@ -59,7 +59,15 @@ func (i *jsiiProxy_IntegrationMicrosoftTeams) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationMicrosoftTeams) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationMicrosoftTeams) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationMicrosoftTeams) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

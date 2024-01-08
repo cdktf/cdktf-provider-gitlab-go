@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email}.
 type ServicePipelinesEmail interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -100,12 +100,22 @@ type ServicePipelinesEmail interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -391,7 +401,7 @@ func (j *jsiiProxy_ServicePipelinesEmail) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
 func NewServicePipelinesEmail(scope constructs.Construct, id *string, config *ServicePipelinesEmailConfig) ServicePipelinesEmail {
 	_init_.Initialize()
 
@@ -409,7 +419,7 @@ func NewServicePipelinesEmail(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource.
 func NewServicePipelinesEmail_Override(s ServicePipelinesEmail, scope constructs.Construct, id *string, config *ServicePipelinesEmailConfig) {
 	_init_.Initialize()
 
@@ -812,6 +822,19 @@ func (s *jsiiProxy_ServicePipelinesEmail) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (s *jsiiProxy_ServicePipelinesEmail) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_ServicePipelinesEmail) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -839,6 +862,17 @@ func (s *jsiiProxy_ServicePipelinesEmail) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (s *jsiiProxy_ServicePipelinesEmail) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_ServicePipelinesEmail) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -847,6 +881,17 @@ func (s *jsiiProxy_ServicePipelinesEmail) MoveTo(moveTarget *string, index inter
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_ServicePipelinesEmail) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

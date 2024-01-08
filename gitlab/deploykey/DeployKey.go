@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/deploy_key gitlab_deploy_key}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/deploy_key gitlab_deploy_key}.
 type DeployKey interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -101,12 +101,22 @@ type DeployKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_DeployKey) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfig) DeployKey {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey_Override(d DeployKey, scope constructs.Construct, id *string, config *DeployKeyConfig) {
 	_init_.Initialize()
 
@@ -822,6 +832,19 @@ func (d *jsiiProxy_DeployKey) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (d *jsiiProxy_DeployKey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DeployKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -849,6 +872,17 @@ func (d *jsiiProxy_DeployKey) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (d *jsiiProxy_DeployKey) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DeployKey) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -857,6 +891,17 @@ func (d *jsiiProxy_DeployKey) MoveTo(moveTarget *string, index interface{}) {
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DeployKey) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

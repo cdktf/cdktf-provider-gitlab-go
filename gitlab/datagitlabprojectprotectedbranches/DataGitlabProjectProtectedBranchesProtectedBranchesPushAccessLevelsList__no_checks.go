@@ -15,6 +15,10 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

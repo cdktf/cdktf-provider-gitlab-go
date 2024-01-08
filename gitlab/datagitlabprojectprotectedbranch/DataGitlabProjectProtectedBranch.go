@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
 type DataGitlabProjectProtectedBranch interface {
 	cdktf.TerraformDataSource
 	AllowForcePush() cdktf.IResolvable
@@ -43,6 +43,7 @@ type DataGitlabProjectProtectedBranch interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MergeAccessLevels() DataGitlabProjectProtectedBranchMergeAccessLevelsList
+	MergeAccessLevelsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,6 +57,7 @@ type DataGitlabProjectProtectedBranch interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	PushAccessLevels() DataGitlabProjectProtectedBranchPushAccessLevelsList
+	PushAccessLevelsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -89,9 +91,13 @@ type DataGitlabProjectProtectedBranch interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMergeAccessLevels(value interface{})
+	PutPushAccessLevels(value interface{})
+	ResetMergeAccessLevels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPushAccessLevels()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -227,6 +233,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranch) MergeAccessLevels() DataGit
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranch) MergeAccessLevelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mergeAccessLevelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranch) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -297,6 +313,16 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranch) PushAccessLevels() DataGitl
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranch) PushAccessLevelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pushAccessLevelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranch) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -338,7 +364,7 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranch) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
 func NewDataGitlabProjectProtectedBranch(scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchConfig) DataGitlabProjectProtectedBranch {
 	_init_.Initialize()
 
@@ -356,7 +382,7 @@ func NewDataGitlabProjectProtectedBranch(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source.
 func NewDataGitlabProjectProtectedBranch_Override(d DataGitlabProjectProtectedBranch, scope constructs.Construct, id *string, config *DataGitlabProjectProtectedBranchConfig) {
 	_init_.Initialize()
 
@@ -720,10 +746,48 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranch) OverrideLogicalId(newLogica
 	)
 }
 
+func (d *jsiiProxy_DataGitlabProjectProtectedBranch) PutMergeAccessLevels(value interface{}) {
+	if err := d.validatePutMergeAccessLevelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMergeAccessLevels",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranch) PutPushAccessLevels(value interface{}) {
+	if err := d.validatePutPushAccessLevelsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPushAccessLevels",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranch) ResetMergeAccessLevels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMergeAccessLevels",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGitlabProjectProtectedBranch) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranch) ResetPushAccessLevels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPushAccessLevels",
 		nil, // no parameters
 	)
 }

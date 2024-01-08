@@ -59,7 +59,15 @@ func (g *jsiiProxy_GroupBadge) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GroupBadge) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupBadge) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupBadge) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package tagprotection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TagProtectionAllowedToCreateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagProtectionAllowedToCreateList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datagitlabreleaselinks
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksList) validateGetParameters(index *float64) error {
 	return nil
 }

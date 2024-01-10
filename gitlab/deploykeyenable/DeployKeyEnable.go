@@ -5,10 +5,10 @@ package deploykeyenable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykeyenable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/deploykeyenable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -130,6 +130,9 @@ type DeployKeyEnable interface {
 	ResetOverrideLogicalId()
 	ResetTitle()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -987,6 +990,32 @@ func (d *jsiiProxy_DeployKeyEnable) SynthesizeAttributes() *map[string]interface
 	_jsii_.Invoke(
 		d,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DeployKeyEnable) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DeployKeyEnable) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

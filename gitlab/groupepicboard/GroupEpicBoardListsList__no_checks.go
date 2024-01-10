@@ -7,6 +7,10 @@ package groupepicboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GroupEpicBoardListsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupEpicBoardListsList) validateGetParameters(index *float64) error {
 	return nil
 }

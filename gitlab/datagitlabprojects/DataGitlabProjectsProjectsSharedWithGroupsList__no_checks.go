@@ -7,6 +7,10 @@ package datagitlabprojects
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGitlabProjectsProjectsSharedWithGroupsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGitlabProjectsProjectsSharedWithGroupsList) validateGetParameters(index *float64) error {
 	return nil
 }

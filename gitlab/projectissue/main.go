@@ -114,6 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "stateInput", GoGetter: "StateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "subscribed", GoGetter: "Subscribed"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "taskCompletionStatus", GoGetter: "TaskCompletionStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -121,6 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeEstimate", GoGetter: "TimeEstimate"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalTimeSpent", GoGetter: "TotalTimeSpent"},
@@ -151,6 +153,7 @@ func init() {
 		"@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatusList",
 		reflect.TypeOf((*ProjectIssueTaskCompletionStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

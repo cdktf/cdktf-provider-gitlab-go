@@ -7,6 +7,10 @@ package groupprotectedenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GroupProtectedEnvironmentApprovalRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupProtectedEnvironmentApprovalRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

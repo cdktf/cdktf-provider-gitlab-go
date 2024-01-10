@@ -7,6 +7,10 @@ package projectprotectedenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) validateGetParameters(index *float64) error {
 	return nil
 }

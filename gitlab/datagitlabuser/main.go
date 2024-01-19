@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isAdmin", GoGetter: "IsAdmin"},
+			_jsii_.MemberProperty{JsiiProperty: "isBot", GoGetter: "IsBot"},
 			_jsii_.MemberProperty{JsiiProperty: "lastSignInAt", GoGetter: "LastSignInAt"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedin", GoGetter: "Linkedin"},

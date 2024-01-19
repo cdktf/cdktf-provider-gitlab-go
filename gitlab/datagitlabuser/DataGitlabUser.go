@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/user gitlab_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/user gitlab_user}.
 type DataGitlabUser interface {
 	cdktf.TerraformDataSource
 	AvatarUrl() *string
@@ -51,6 +51,7 @@ type DataGitlabUser interface {
 	SetId(val *string)
 	IdInput() *string
 	IsAdmin() cdktf.IResolvable
+	IsBot() cdktf.IResolvable
 	LastSignInAt() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -354,6 +355,16 @@ func (j *jsiiProxy_DataGitlabUser) IsAdmin() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabUser) IsBot() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isBot",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabUser) LastSignInAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -625,7 +636,7 @@ func (j *jsiiProxy_DataGitlabUser) WebsiteUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitlabUserConfig) DataGitlabUser {
 	_init_.Initialize()
 
@@ -643,7 +654,7 @@ func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser_Override(d DataGitlabUser, scope constructs.Construct, id *string, config *DataGitlabUserConfig) {
 	_init_.Initialize()
 

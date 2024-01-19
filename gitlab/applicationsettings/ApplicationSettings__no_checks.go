@@ -247,14 +247,6 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDefaultSnippetVisibilityParam
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationSettings) validateSetDelayedGroupDeletionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationSettings) validateSetDelayedProjectDeletionParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationSettings) validateSetDeleteInactiveProjectsParameters(val interface{}) error {
 	return nil
 }
@@ -552,6 +544,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingGcPeriodParameter
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingIncrementalRepackPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingOptimizeRepositoryPeriodParameters(val *float64) error {
 	return nil
 }
 

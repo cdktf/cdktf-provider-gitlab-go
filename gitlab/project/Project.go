@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -326,6 +326,8 @@ type Project interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ProjectTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Topics() *[]*string
 	SetTopics(val *[]*string)
 	TopicsInput() *[]*string
@@ -387,6 +389,7 @@ type Project interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContainerExpirationPolicy(value *ProjectContainerExpirationPolicy)
 	PutPushRules(value *ProjectPushRules)
+	PutTimeouts(value *ProjectTimeouts)
 	ResetAllowMergeOnSkippedPipeline()
 	ResetAnalyticsAccessLevel()
 	ResetApprovalsBeforeMerge()
@@ -476,6 +479,7 @@ type Project interface {
 	ResetTags()
 	ResetTemplateName()
 	ResetTemplateProjectId()
+	ResetTimeouts()
 	ResetTopics()
 	ResetUseCustomTemplate()
 	ResetVisibilityLevel()
@@ -2459,6 +2463,26 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) Timeouts() ProjectTimeoutsOutputReference {
+	var returns ProjectTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Topics() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -2570,7 +2594,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2588,7 +2612,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -4032,6 +4056,17 @@ func (p *jsiiProxy_Project) PutPushRules(value *ProjectPushRules) {
 	)
 }
 
+func (p *jsiiProxy_Project) PutTimeouts(value *ProjectTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Project) ResetAllowMergeOnSkippedPipeline() {
 	_jsii_.InvokeVoid(
 		p,
@@ -4724,6 +4759,14 @@ func (p *jsiiProxy_Project) ResetTemplateProjectId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTemplateProjectId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

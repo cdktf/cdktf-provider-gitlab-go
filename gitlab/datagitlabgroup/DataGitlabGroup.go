@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group gitlab_group}.
 type DataGitlabGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -70,6 +70,7 @@ type DataGitlabGroup interface {
 	RunnersToken() *string
 	SharedRunnersMinutesLimit() *float64
 	SharedRunnersSetting() *string
+	SharedWithGroups() DataGitlabGroupSharedWithGroupsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -439,6 +440,16 @@ func (j *jsiiProxy_DataGitlabGroup) SharedRunnersSetting() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabGroup) SharedWithGroups() DataGitlabGroupSharedWithGroupsList {
+	var returns DataGitlabGroupSharedWithGroupsList
+	_jsii_.Get(
+		j,
+		"sharedWithGroups",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -500,7 +511,7 @@ func (j *jsiiProxy_DataGitlabGroup) WikiAccessLevel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitlabGroupConfig) DataGitlabGroup {
 	_init_.Initialize()
 
@@ -518,7 +529,7 @@ func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup_Override(d DataGitlabGroup, scope constructs.Construct, id *string, config *DataGitlabGroupConfig) {
 	_init_.Initialize()
 

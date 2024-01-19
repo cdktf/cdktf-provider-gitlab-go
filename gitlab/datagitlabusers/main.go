@@ -147,6 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isAdmin", GoGetter: "IsAdmin"},
+			_jsii_.MemberProperty{JsiiProperty: "isBot", GoGetter: "IsBot"},
 			_jsii_.MemberProperty{JsiiProperty: "lastSignInAt", GoGetter: "LastSignInAt"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedin", GoGetter: "Linkedin"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},

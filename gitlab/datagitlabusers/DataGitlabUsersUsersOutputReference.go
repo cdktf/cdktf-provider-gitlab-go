@@ -44,6 +44,7 @@ type DataGitlabUsersUsersOutputReference interface {
 	InternalValue() *DataGitlabUsersUsers
 	SetInternalValue(val *DataGitlabUsersUsers)
 	IsAdmin() cdktf.IResolvable
+	IsBot() cdktf.IResolvable
 	LastSignInAt() *string
 	Linkedin() *string
 	Location() *string
@@ -271,6 +272,16 @@ func (j *jsiiProxy_DataGitlabUsersUsersOutputReference) IsAdmin() cdktf.IResolva
 	_jsii_.Get(
 		j,
 		"isAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsersUsersOutputReference) IsBot() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isBot",
 		&returns,
 	)
 	return returns

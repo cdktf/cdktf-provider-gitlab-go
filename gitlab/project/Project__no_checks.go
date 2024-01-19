@@ -83,6 +83,10 @@ func (p *jsiiProxy_Project) validatePutPushRulesParameters(value *ProjectPushRul
 	return nil
 }
 
+func (p *jsiiProxy_Project) validatePutTimeoutsParameters(value *ProjectTimeouts) error {
+	return nil
+}
+
 func validateProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

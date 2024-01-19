@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -138,12 +138,6 @@ type ApplicationSettings interface {
 	DefaultSnippetVisibility() *string
 	SetDefaultSnippetVisibility(val *string)
 	DefaultSnippetVisibilityInput() *string
-	DelayedGroupDeletion() interface{}
-	SetDelayedGroupDeletion(val interface{})
-	DelayedGroupDeletionInput() interface{}
-	DelayedProjectDeletion() interface{}
-	SetDelayedProjectDeletion(val interface{})
-	DelayedProjectDeletionInput() interface{}
 	DeleteInactiveProjects() interface{}
 	SetDeleteInactiveProjects(val interface{})
 	DeleteInactiveProjectsInput() interface{}
@@ -381,6 +375,9 @@ type ApplicationSettings interface {
 	HousekeepingIncrementalRepackPeriod() *float64
 	SetHousekeepingIncrementalRepackPeriod(val *float64)
 	HousekeepingIncrementalRepackPeriodInput() *float64
+	HousekeepingOptimizeRepositoryPeriod() *float64
+	SetHousekeepingOptimizeRepositoryPeriod(val *float64)
+	HousekeepingOptimizeRepositoryPeriodInput() *float64
 	HtmlEmailsEnabled() interface{}
 	SetHtmlEmailsEnabled(val interface{})
 	HtmlEmailsEnabledInput() interface{}
@@ -870,8 +867,6 @@ type ApplicationSettings interface {
 	ResetDefaultProjectsLimit()
 	ResetDefaultProjectVisibility()
 	ResetDefaultSnippetVisibility()
-	ResetDelayedGroupDeletion()
-	ResetDelayedProjectDeletion()
 	ResetDeleteInactiveProjects()
 	ResetDeletionAdjournedPeriod()
 	ResetDiffMaxFiles()
@@ -947,6 +942,7 @@ type ApplicationSettings interface {
 	ResetHousekeepingFullRepackPeriod()
 	ResetHousekeepingGcPeriod()
 	ResetHousekeepingIncrementalRepackPeriod()
+	ResetHousekeepingOptimizeRepositoryPeriod()
 	ResetHtmlEmailsEnabled()
 	ResetId()
 	ResetImportSources()
@@ -1872,46 +1868,6 @@ func (j *jsiiProxy_ApplicationSettings) DefaultSnippetVisibilityInput() *string 
 	_jsii_.Get(
 		j,
 		"defaultSnippetVisibilityInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) DelayedGroupDeletion() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"delayedGroupDeletion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) DelayedGroupDeletionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"delayedGroupDeletionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) DelayedProjectDeletion() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"delayedProjectDeletion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) DelayedProjectDeletionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"delayedProjectDeletionInput",
 		&returns,
 	)
 	return returns
@@ -3452,6 +3408,26 @@ func (j *jsiiProxy_ApplicationSettings) HousekeepingIncrementalRepackPeriodInput
 	_jsii_.Get(
 		j,
 		"housekeepingIncrementalRepackPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) HousekeepingOptimizeRepositoryPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"housekeepingOptimizeRepositoryPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) HousekeepingOptimizeRepositoryPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"housekeepingOptimizeRepositoryPeriodInput",
 		&returns,
 	)
 	return returns
@@ -6118,7 +6094,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6136,7 +6112,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -6572,28 +6548,6 @@ func (j *jsiiProxy_ApplicationSettings)SetDefaultSnippetVisibility(val *string) 
 	_jsii_.Set(
 		j,
 		"defaultSnippetVisibility",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetDelayedGroupDeletion(val interface{}) {
-	if err := j.validateSetDelayedGroupDeletionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"delayedGroupDeletion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetDelayedProjectDeletion(val interface{}) {
-	if err := j.validateSetDelayedProjectDeletionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"delayedProjectDeletion",
 		val,
 	)
 }
@@ -7435,6 +7389,17 @@ func (j *jsiiProxy_ApplicationSettings)SetHousekeepingIncrementalRepackPeriod(va
 	_jsii_.Set(
 		j,
 		"housekeepingIncrementalRepackPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetHousekeepingOptimizeRepositoryPeriod(val *float64) {
+	if err := j.validateSetHousekeepingOptimizeRepositoryPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"housekeepingOptimizeRepositoryPeriod",
 		val,
 	)
 }
@@ -9537,22 +9502,6 @@ func (a *jsiiProxy_ApplicationSettings) ResetDefaultSnippetVisibility() {
 	)
 }
 
-func (a *jsiiProxy_ApplicationSettings) ResetDelayedGroupDeletion() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDelayedGroupDeletion",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationSettings) ResetDelayedProjectDeletion() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDelayedProjectDeletion",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_ApplicationSettings) ResetDeleteInactiveProjects() {
 	_jsii_.InvokeVoid(
 		a,
@@ -10149,6 +10098,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingIncrementalRepackPeriod
 	_jsii_.InvokeVoid(
 		a,
 		"resetHousekeepingIncrementalRepackPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingOptimizeRepositoryPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHousekeepingOptimizeRepositoryPeriod",
 		nil, // no parameters
 	)
 }

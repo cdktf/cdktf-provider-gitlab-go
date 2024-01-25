@@ -115,10 +115,6 @@ func (j *jsiiProxy_PipelineSchedule) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_PipelineSchedule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PipelineSchedule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

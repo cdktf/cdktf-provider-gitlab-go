@@ -24,11 +24,11 @@ type ProjectJobTokenScopeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or full path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The ID of the project that is in the CI/CD job token inbound allowlist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 	TargetProjectId *float64 `field:"required" json:"targetProjectId" yaml:"targetProjectId"`
 }
 

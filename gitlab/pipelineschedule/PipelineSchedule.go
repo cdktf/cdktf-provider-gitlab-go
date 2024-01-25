@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
 type PipelineSchedule interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -52,8 +52,6 @@ type PipelineSchedule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -132,7 +130,6 @@ type PipelineSchedule interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetActive()
 	ResetCronTimezone()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -325,16 +322,6 @@ func (j *jsiiProxy_PipelineSchedule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PipelineSchedule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PipelineSchedule) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -496,7 +483,7 @@ func (j *jsiiProxy_PipelineSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule(scope constructs.Construct, id *string, config *PipelineScheduleConfig) PipelineSchedule {
 	_init_.Initialize()
 
@@ -514,7 +501,7 @@ func NewPipelineSchedule(scope constructs.Construct, id *string, config *Pipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule_Override(p PipelineSchedule, scope constructs.Construct, id *string, config *PipelineScheduleConfig) {
 	_init_.Initialize()
 
@@ -603,17 +590,6 @@ func (j *jsiiProxy_PipelineSchedule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PipelineSchedule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1046,14 +1022,6 @@ func (p *jsiiProxy_PipelineSchedule) ResetCronTimezone() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCronTimezone",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineSchedule) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

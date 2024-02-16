@@ -28,6 +28,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ciConfigPath", GoGetter: "CiConfigPath"},
 			_jsii_.MemberProperty{JsiiProperty: "ciDefaultGitDepth", GoGetter: "CiDefaultGitDepth"},
 			_jsii_.MemberProperty{JsiiProperty: "ciDefaultGitDepthInput", GoGetter: "CiDefaultGitDepthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ciRestrictPipelineCancellationRole", GoGetter: "CiRestrictPipelineCancellationRole"},
 			_jsii_.MemberProperty{JsiiProperty: "ciSeparatedCaches", GoGetter: "CiSeparatedCaches"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "containerExpirationPolicy", GoGetter: "ContainerExpirationPolicy"},

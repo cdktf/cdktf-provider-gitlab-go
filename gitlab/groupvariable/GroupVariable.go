@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_variable gitlab_group_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_variable gitlab_group_variable}.
 type GroupVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type GroupVariable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EnvironmentScope() *string
 	SetEnvironmentScope(val *string)
 	EnvironmentScopeInput() *string
@@ -131,6 +134,7 @@ type GroupVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetEnvironmentScope()
 	ResetId()
 	ResetMasked()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_GroupVariable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupVariable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupVariable) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -499,7 +523,7 @@ func (j *jsiiProxy_GroupVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVariableConfig) GroupVariable {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVaria
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable_Override(g GroupVariable, scope constructs.Construct, id *string, config *GroupVariableConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_GroupVariable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupVariable)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1045,6 +1080,14 @@ func (g *jsiiProxy_GroupVariable) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GroupVariable) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

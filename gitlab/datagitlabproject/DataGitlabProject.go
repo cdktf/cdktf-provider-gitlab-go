@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project gitlab_project}.
 type DataGitlabProject interface {
 	cdktf.TerraformDataSource
 	AnalyticsAccessLevel() *string
@@ -30,6 +30,7 @@ type DataGitlabProject interface {
 	CiDefaultGitDepth() *float64
 	SetCiDefaultGitDepth(val *float64)
 	CiDefaultGitDepthInput() *float64
+	CiRestrictPipelineCancellationRole() *string
 	CiSeparatedCaches() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -302,6 +303,16 @@ func (j *jsiiProxy_DataGitlabProject) CiDefaultGitDepthInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ciDefaultGitDepthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiRestrictPipelineCancellationRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciRestrictPipelineCancellationRole",
 		&returns,
 	)
 	return returns
@@ -1008,7 +1019,7 @@ func (j *jsiiProxy_DataGitlabProject) WikiEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGitlabProjectConfig) DataGitlabProject {
 	_init_.Initialize()
 
@@ -1026,7 +1037,7 @@ func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Construct, id *string, config *DataGitlabProjectConfig) {
 	_init_.Initialize()
 

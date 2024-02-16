@@ -337,6 +337,14 @@ func (j *jsiiProxy_GroupVariable) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GroupVariable) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GroupVariable) validateSetEnvironmentScopeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

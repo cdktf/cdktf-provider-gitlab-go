@@ -24,23 +24,23 @@ type GroupIssueBoardConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#group GroupIssueBoard#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#group GroupIssueBoard#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The name of the board.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#name GroupIssueBoard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#name GroupIssueBoard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The list of label names which the board should be scoped to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
 	Labels *[]*string `field:"optional" json:"labels" yaml:"labels"`
 	// lists block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
 	Lists interface{} `field:"optional" json:"lists" yaml:"lists"`
 	// The milestone the board should be scoped to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
 	MilestoneId *float64 `field:"optional" json:"milestoneId" yaml:"milestoneId"`
 }
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_ProjectVariable) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_ProjectVariable) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectVariable) validateSetEnvironmentScopeParameters(val *string) error {
 	return nil
 }

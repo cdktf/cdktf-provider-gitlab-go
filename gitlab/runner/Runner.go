@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/runner gitlab_runner}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/runner gitlab_runner}.
 type Runner interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_Runner) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/runner gitlab_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/runner gitlab_runner} Resource.
 func NewRunner(scope constructs.Construct, id *string, config *RunnerConfig) Runner {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewRunner(scope constructs.Construct, id *string, config *RunnerConfig) Run
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/runner gitlab_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/runner gitlab_runner} Resource.
 func NewRunner_Override(r Runner, scope constructs.Construct, id *string, config *RunnerConfig) {
 	_init_.Initialize()
 

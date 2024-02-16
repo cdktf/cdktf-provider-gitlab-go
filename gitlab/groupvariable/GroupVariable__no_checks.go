@@ -99,6 +99,10 @@ func (j *jsiiProxy_GroupVariable) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GroupVariable) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupVariable) validateSetEnvironmentScopeParameters(val *string) error {
 	return nil
 }

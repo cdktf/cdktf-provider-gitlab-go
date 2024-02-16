@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -72,6 +72,9 @@ type Project interface {
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
+	CiRestrictPipelineCancellationRole() *string
+	SetCiRestrictPipelineCancellationRole(val *string)
+	CiRestrictPipelineCancellationRoleInput() *string
 	CiSeparatedCaches() interface{}
 	SetCiSeparatedCaches(val interface{})
 	CiSeparatedCachesInput() interface{}
@@ -408,6 +411,7 @@ type Project interface {
 	ResetCiConfigPath()
 	ResetCiDefaultGitDepth()
 	ResetCiForwardDeploymentEnabled()
+	ResetCiRestrictPipelineCancellationRole()
 	ResetCiSeparatedCaches()
 	ResetContainerExpirationPolicy()
 	ResetContainerRegistryAccessLevel()
@@ -878,6 +882,26 @@ func (j *jsiiProxy_Project) CiForwardDeploymentEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiRestrictPipelineCancellationRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciRestrictPipelineCancellationRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiRestrictPipelineCancellationRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciRestrictPipelineCancellationRoleInput",
 		&returns,
 	)
 	return returns
@@ -2594,7 +2618,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2612,7 +2636,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2817,6 +2841,17 @@ func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiRestrictPipelineCancellationRole(val *string) {
+	if err := j.validateSetCiRestrictPipelineCancellationRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciRestrictPipelineCancellationRole",
 		val,
 	)
 }
@@ -4207,6 +4242,14 @@ func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCiForwardDeploymentEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetCiRestrictPipelineCancellationRole() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiRestrictPipelineCancellationRole",
 		nil, // no parameters
 	)
 }

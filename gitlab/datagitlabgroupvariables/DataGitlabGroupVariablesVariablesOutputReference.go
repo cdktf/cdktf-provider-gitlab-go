@@ -28,6 +28,7 @@ type DataGitlabGroupVariablesVariablesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	EnvironmentScope() *string
 	// Experimental.
 	Fqn() *string
@@ -112,6 +113,16 @@ func (j *jsiiProxy_DataGitlabGroupVariablesVariablesOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupVariablesVariablesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns

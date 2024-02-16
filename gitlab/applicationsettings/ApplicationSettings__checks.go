@@ -1137,7 +1137,7 @@ func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchMaxBulkSizeMbPar
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchNamespaceIdsParameters(val *[]*string) error {
+func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchNamespaceIdsParameters(val *[]*float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1153,7 +1153,7 @@ func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchPasswordParamete
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchProjectIdsParameters(val *[]*string) error {
+func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchProjectIdsParameters(val *[]*float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

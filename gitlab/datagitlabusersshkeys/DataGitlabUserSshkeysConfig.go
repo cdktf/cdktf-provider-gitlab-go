@@ -22,18 +22,18 @@ type DataGitlabUserSshkeysConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// ID of the user to get the SSH keys for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
 	UserId *float64 `field:"optional" json:"userId" yaml:"userId"`
 	// Username of the user to get the SSH keys for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/user_sshkeys#username DataGitlabUserSshkeys#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/user_sshkeys#username DataGitlabUserSshkeys#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

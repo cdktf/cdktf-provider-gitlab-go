@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project_variable gitlab_project_variable}.
 type DataGitlabProjectVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataGitlabProjectVariable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	EnvironmentScope() *string
 	SetEnvironmentScope(val *string)
 	EnvironmentScopeInput() *string
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataGitlabProjectVariable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectVariable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -390,7 +401,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) VariableType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) DataGitlabProjectVariable {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable_Override(d DataGitlabProjectVariable, scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) {
 	_init_.Initialize()
 

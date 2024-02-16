@@ -7,11 +7,11 @@ package groupissueboard
 type GroupIssueBoardLists struct {
 	// The ID of the label the list should be scoped to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
 	LabelId *float64 `field:"optional" json:"labelId" yaml:"labelId"`
 	// The explicit position of the list within the board, zero based.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/group_issue_board#position GroupIssueBoard#position}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/group_issue_board#position GroupIssueBoard#position}
 	Position *float64 `field:"optional" json:"position" yaml:"position"`
 }
 

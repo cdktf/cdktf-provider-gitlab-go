@@ -29,6 +29,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	CiConfigPath() *string
 	CiDefaultGitDepth() *float64
 	CiForwardDeploymentEnabled() cdktf.IResolvable
+	CiRestrictPipelineCancellationRole() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -330,6 +331,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiForwardDeploymen
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiRestrictPipelineCancellationRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciRestrictPipelineCancellationRole",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable}.
 type ProjectVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type ProjectVariable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EnvironmentScope() *string
 	SetEnvironmentScope(val *string)
 	EnvironmentScopeInput() *string
@@ -131,6 +134,7 @@ type ProjectVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetEnvironmentScope()
 	ResetId()
 	ResetMasked()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_ProjectVariable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectVariable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectVariable) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -499,7 +523,7 @@ func (j *jsiiProxy_ProjectVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectVariableConfig) ProjectVariable {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable_Override(p ProjectVariable, scope constructs.Construct, id *string, config *ProjectVariableConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_ProjectVariable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectVariable)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1045,6 +1080,14 @@ func (p *jsiiProxy_ProjectVariable) OverrideLogicalId(newLogicalId *string) {
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_ProjectVariable) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

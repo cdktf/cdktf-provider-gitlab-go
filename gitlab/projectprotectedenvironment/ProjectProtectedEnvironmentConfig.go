@@ -24,23 +24,23 @@ type ProjectProtectedEnvironmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
 	Environment *string `field:"required" json:"environment" yaml:"environment"`
 	// The ID or full path of the project which the protected environment is created against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Array of approval rules to deploy, with each described by a hash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
 	ApprovalRules interface{} `field:"optional" json:"approvalRules" yaml:"approvalRules"`
 	// deploy_access_levels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
 	DeployAccessLevels interface{} `field:"optional" json:"deployAccessLevels" yaml:"deployAccessLevels"`
 	// The number of approvals required to deploy to this environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
 	RequiredApprovalCount *float64 `field:"optional" json:"requiredApprovalCount" yaml:"requiredApprovalCount"`
 }
 

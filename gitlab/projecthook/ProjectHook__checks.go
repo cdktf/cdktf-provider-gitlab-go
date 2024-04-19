@@ -377,6 +377,14 @@ func (j *jsiiProxy_ProjectHook) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ProjectHook) validateSetCustomWebhookTemplateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetDeploymentEventsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

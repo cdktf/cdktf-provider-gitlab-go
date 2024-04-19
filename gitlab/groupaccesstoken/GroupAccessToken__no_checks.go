@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupAccessToken) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (g *jsiiProxy_GroupAccessToken) validatePutRotationConfigurationParameters(value *GroupAccessTokenRotationConfiguration) error {
+	return nil
+}
+
 func validateGroupAccessToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -108,10 +112,6 @@ func (j *jsiiProxy_GroupAccessToken) validateSetExpiresAtParameters(val *string)
 }
 
 func (j *jsiiProxy_GroupAccessToken) validateSetGroupParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_GroupAccessToken) validateSetIdParameters(val *string) error {
 	return nil
 }
 

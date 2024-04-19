@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/service_github gitlab_service_github}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_github gitlab_service_github}.
 type ServiceGithub interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ServiceGithub) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/service_github gitlab_service_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_github gitlab_service_github} Resource.
 func NewServiceGithub(scope constructs.Construct, id *string, config *ServiceGithubConfig) ServiceGithub {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewServiceGithub(scope constructs.Construct, id *string, config *ServiceGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/service_github gitlab_service_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_github gitlab_service_github} Resource.
 func NewServiceGithub_Override(s ServiceGithub, scope constructs.Construct, id *string, config *ServiceGithubConfig) {
 	_init_.Initialize()
 

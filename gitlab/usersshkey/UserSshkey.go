@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/user_sshkey gitlab_user_sshkey}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_sshkey gitlab_user_sshkey}.
 type UserSshkey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_UserSshkey) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
 func NewUserSshkey(scope constructs.Construct, id *string, config *UserSshkeyConfig) UserSshkey {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewUserSshkey(scope constructs.Construct, id *string, config *UserSshkeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource.
 func NewUserSshkey_Override(u UserSshkey, scope constructs.Construct, id *string, config *UserSshkeyConfig) {
 	_init_.Initialize()
 

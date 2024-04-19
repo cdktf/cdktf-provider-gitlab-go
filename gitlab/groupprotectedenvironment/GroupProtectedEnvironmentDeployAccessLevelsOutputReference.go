@@ -37,6 +37,9 @@ type GroupProtectedEnvironmentDeployAccessLevelsOutputReference interface {
 	GroupId() *float64
 	SetGroupId(val *float64)
 	GroupIdInput() *float64
+	GroupInheritanceType() *float64
+	SetGroupInheritanceType(val *float64)
+	GroupInheritanceTypeInput() *float64
 	Id() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
@@ -77,6 +80,7 @@ type GroupProtectedEnvironmentDeployAccessLevelsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessLevel()
 	ResetGroupId()
+	ResetGroupInheritanceType()
 	ResetUserId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) G
 	_jsii_.Get(
 		j,
 		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) GroupInheritanceType() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupInheritanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) GroupInheritanceTypeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupInheritanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -311,6 +335,17 @@ func (j *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference)Se
 	_jsii_.Set(
 		j,
 		"groupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference)SetGroupInheritanceType(val *float64) {
+	if err := j.validateSetGroupInheritanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupInheritanceType",
 		val,
 	)
 }
@@ -557,6 +592,14 @@ func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetGroupId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) ResetGroupInheritanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGroupInheritanceType",
 		nil, // no parameters
 	)
 }

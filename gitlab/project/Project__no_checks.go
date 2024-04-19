@@ -211,6 +211,10 @@ func (j *jsiiProxy_Project) validateSetEmailsDisabledParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetEmailsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetEnvironmentsAccessLevelParameters(val *string) error {
 	return nil
 }

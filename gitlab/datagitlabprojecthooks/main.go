@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "confidentialIssuesEvents", GoGetter: "ConfidentialIssuesEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "confidentialNoteEvents", GoGetter: "ConfidentialNoteEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customWebhookTemplate", GoGetter: "CustomWebhookTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentEvents", GoGetter: "DeploymentEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "enableSslVerification", GoGetter: "EnableSslVerification"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

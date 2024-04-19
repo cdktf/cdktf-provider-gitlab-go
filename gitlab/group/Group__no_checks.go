@@ -127,6 +127,10 @@ func (j *jsiiProxy_Group) validateSetEmailsDisabledParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetEmailsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetExtraSharedRunnersMinutesLimitParameters(val *float64) error {
 	return nil
 }

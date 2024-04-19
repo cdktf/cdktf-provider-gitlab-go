@@ -107,6 +107,10 @@ func (j *jsiiProxy_GroupHook) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_GroupHook) validateSetCustomWebhookTemplateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetDeploymentEventsParameters(val interface{}) error {
 	return nil
 }

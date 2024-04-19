@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "emailsDisabled", GoGetter: "EmailsDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "emailsEnabled", GoGetter: "EmailsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "emptyRepo", GoGetter: "EmptyRepo"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentsAccessLevel", GoGetter: "EnvironmentsAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "externalAuthorizationClassificationLabel", GoGetter: "ExternalAuthorizationClassificationLabel"},

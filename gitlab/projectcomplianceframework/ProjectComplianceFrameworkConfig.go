@@ -24,11 +24,11 @@ type ProjectComplianceFrameworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Globally unique ID of the compliance framework to assign to the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
 	ComplianceFrameworkId *string `field:"required" json:"complianceFrameworkId" yaml:"complianceFrameworkId"`
 	// The ID or full path of the project to change the compliance framework of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

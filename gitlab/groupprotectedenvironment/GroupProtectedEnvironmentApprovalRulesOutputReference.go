@@ -37,6 +37,9 @@ type GroupProtectedEnvironmentApprovalRulesOutputReference interface {
 	GroupId() *float64
 	SetGroupId(val *float64)
 	GroupIdInput() *float64
+	GroupInheritanceType() *float64
+	SetGroupInheritanceType(val *float64)
+	GroupInheritanceTypeInput() *float64
 	Id() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
@@ -80,6 +83,7 @@ type GroupProtectedEnvironmentApprovalRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessLevel()
 	ResetGroupId()
+	ResetGroupInheritanceType()
 	ResetRequiredApprovals()
 	ResetUserId()
 	// Produce the Token's value at resolution time.
@@ -182,6 +186,26 @@ func (j *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference) GroupI
 	_jsii_.Get(
 		j,
 		"groupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference) GroupInheritanceType() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupInheritanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference) GroupInheritanceTypeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"groupInheritanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference)SetGrou
 	_jsii_.Set(
 		j,
 		"groupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference)SetGroupInheritanceType(val *float64) {
+	if err := j.validateSetGroupInheritanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupInheritanceType",
 		val,
 	)
 }
@@ -592,6 +627,14 @@ func (g *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference) ResetG
 	_jsii_.InvokeVoid(
 		g,
 		"resetGroupId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupProtectedEnvironmentApprovalRulesOutputReference) ResetGroupInheritanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGroupInheritanceType",
 		nil, // no parameters
 	)
 }

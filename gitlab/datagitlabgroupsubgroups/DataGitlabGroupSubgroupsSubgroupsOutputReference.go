@@ -34,6 +34,7 @@ type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 	DefaultBranchProtection() *float64
 	Description() *string
 	EmailsDisabled() cdktf.IResolvable
+	EmailsEnabled() cdktf.IResolvable
 	FileTemplateProjectId() *float64
 	// Experimental.
 	Fqn() *string
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) EmailsDisab
 	_jsii_.Get(
 		j,
 		"emailsDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) EmailsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"emailsEnabled",
 		&returns,
 	)
 	return returns

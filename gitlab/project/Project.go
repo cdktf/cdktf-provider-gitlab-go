@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -109,6 +109,9 @@ type Project interface {
 	EmailsDisabled() interface{}
 	SetEmailsDisabled(val interface{})
 	EmailsDisabledInput() interface{}
+	EmailsEnabled() interface{}
+	SetEmailsEnabled(val interface{})
+	EmailsEnabledInput() interface{}
 	EmptyRepo() cdktf.IResolvable
 	EnvironmentsAccessLevel() *string
 	SetEnvironmentsAccessLevel(val *string)
@@ -419,6 +422,7 @@ type Project interface {
 	ResetDefaultBranch()
 	ResetDescription()
 	ResetEmailsDisabled()
+	ResetEmailsEnabled()
 	ResetEnvironmentsAccessLevel()
 	ResetExternalAuthorizationClassificationLabel()
 	ResetFeatureFlagsAccessLevel()
@@ -1082,6 +1086,26 @@ func (j *jsiiProxy_Project) EmailsDisabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"emailsDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) EmailsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) EmailsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -2618,7 +2642,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2636,7 +2660,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2948,6 +2972,17 @@ func (j *jsiiProxy_Project)SetEmailsDisabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"emailsDisabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetEmailsEnabled(val interface{}) {
+	if err := j.validateSetEmailsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailsEnabled",
 		val,
 	)
 }
@@ -4306,6 +4341,14 @@ func (p *jsiiProxy_Project) ResetEmailsDisabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEmailsDisabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetEmailsEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEmailsEnabled",
 		nil, // no parameters
 	)
 }

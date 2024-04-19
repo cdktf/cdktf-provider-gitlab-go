@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_hook gitlab_group_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_hook gitlab_group_hook}.
 type GroupHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type GroupHook interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomWebhookTemplate() *string
+	SetCustomWebhookTemplate(val *string)
+	CustomWebhookTemplateInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,6 +168,7 @@ type GroupHook interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetConfidentialIssuesEvents()
 	ResetConfidentialNoteEvents()
+	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
 	ResetEnableSslVerification()
 	ResetId()
@@ -276,6 +280,26 @@ func (j *jsiiProxy_GroupHook) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) CustomWebhookTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWebhookTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) CustomWebhookTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWebhookTemplateInput",
 		&returns,
 	)
 	return returns
@@ -762,7 +786,7 @@ func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
@@ -780,7 +804,7 @@ func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, config *GroupHookConfig) {
 	_init_.Initialize()
 
@@ -831,6 +855,17 @@ func (j *jsiiProxy_GroupHook)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook)SetCustomWebhookTemplate(val *string) {
+	if err := j.validateSetCustomWebhookTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customWebhookTemplate",
 		val,
 	)
 }
@@ -1433,6 +1468,14 @@ func (g *jsiiProxy_GroupHook) ResetConfidentialNoteEvents() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNoteEvents",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetCustomWebhookTemplate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomWebhookTemplate",
 		nil, // no parameters
 	)
 }

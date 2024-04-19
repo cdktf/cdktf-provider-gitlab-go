@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/data-sources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_hook gitlab_project_hook}.
 type DataGitlabProjectHook interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -25,6 +25,7 @@ type DataGitlabProjectHook interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomWebhookTemplate() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataGitlabProjectHook) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectHook) CustomWebhookTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWebhookTemplate",
 		&returns,
 	)
 	return returns
@@ -498,7 +509,7 @@ func (j *jsiiProxy_DataGitlabProjectHook) WikiPageEvents() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
 func NewDataGitlabProjectHook(scope constructs.Construct, id *string, config *DataGitlabProjectHookConfig) DataGitlabProjectHook {
 	_init_.Initialize()
 
@@ -516,7 +527,7 @@ func NewDataGitlabProjectHook(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
 func NewDataGitlabProjectHook_Override(d DataGitlabProjectHook, scope constructs.Construct, id *string, config *DataGitlabProjectHookConfig) {
 	_init_.Initialize()
 

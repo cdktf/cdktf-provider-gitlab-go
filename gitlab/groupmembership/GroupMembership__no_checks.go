@@ -119,6 +119,10 @@ func (j *jsiiProxy_GroupMembership) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_GroupMembership) validateSetMemberRoleIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupMembership) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

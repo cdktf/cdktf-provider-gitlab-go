@@ -107,6 +107,10 @@ func (j *jsiiProxy_ProjectHook) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ProjectHook) validateSetCustomWebhookTemplateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetDeploymentEventsParameters(val interface{}) error {
 	return nil
 }

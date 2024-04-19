@@ -75,6 +75,10 @@ func (p *jsiiProxy_ProjectAccessToken) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (p *jsiiProxy_ProjectAccessToken) validatePutRotationConfigurationParameters(value *ProjectAccessTokenRotationConfiguration) error {
+	return nil
+}
+
 func validateProjectAccessToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,10 +108,6 @@ func (j *jsiiProxy_ProjectAccessToken) validateSetCountParameters(val interface{
 }
 
 func (j *jsiiProxy_ProjectAccessToken) validateSetExpiresAtParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ProjectAccessToken) validateSetIdParameters(val *string) error {
 	return nil
 }
 

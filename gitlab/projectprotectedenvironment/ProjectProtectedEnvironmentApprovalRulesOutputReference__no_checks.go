@@ -67,6 +67,10 @@ func (j *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesOutputReference) validateSetGroupInheritanceTypeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

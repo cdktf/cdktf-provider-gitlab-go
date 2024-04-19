@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_access_token gitlab_project_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_access_token gitlab_project_access_token}.
 type ProjectAccessToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -48,8 +48,6 @@ type ProjectAccessToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,6 +71,8 @@ type ProjectAccessToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Revoked() cdktf.IResolvable
+	RotationConfiguration() ProjectAccessTokenRotationConfigurationOutputReference
+	RotationConfigurationInput() interface{}
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -127,11 +127,13 @@ type ProjectAccessToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRotationConfiguration(value *ProjectAccessTokenRotationConfiguration)
 	ResetAccessLevel()
-	ResetId()
+	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -300,16 +302,6 @@ func (j *jsiiProxy_ProjectAccessToken) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectAccessToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -410,6 +402,26 @@ func (j *jsiiProxy_ProjectAccessToken) Revoked() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectAccessToken) RotationConfiguration() ProjectAccessTokenRotationConfigurationOutputReference {
+	var returns ProjectAccessTokenRotationConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"rotationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectAccessToken) RotationConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectAccessToken) Scopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -481,7 +493,7 @@ func (j *jsiiProxy_ProjectAccessToken) UserId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken(scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) ProjectAccessToken {
 	_init_.Initialize()
 
@@ -499,7 +511,7 @@ func NewProjectAccessToken(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken_Override(p ProjectAccessToken, scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -566,17 +578,6 @@ func (j *jsiiProxy_ProjectAccessToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectAccessToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -997,6 +998,17 @@ func (p *jsiiProxy_ProjectAccessToken) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProjectAccessToken) PutRotationConfiguration(value *ProjectAccessTokenRotationConfiguration) {
+	if err := p.validatePutRotationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRotationConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_ProjectAccessToken) ResetAccessLevel() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1005,10 +1017,10 @@ func (p *jsiiProxy_ProjectAccessToken) ResetAccessLevel() {
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessToken) ResetId() {
+func (p *jsiiProxy_ProjectAccessToken) ResetExpiresAt() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetId",
+		"resetExpiresAt",
 		nil, // no parameters
 	)
 }
@@ -1017,6 +1029,14 @@ func (p *jsiiProxy_ProjectAccessToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectAccessToken) ResetRotationConfiguration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRotationConfiguration",
 		nil, // no parameters
 	)
 }

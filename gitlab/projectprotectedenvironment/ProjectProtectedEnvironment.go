@@ -5,14 +5,14 @@ package projectprotectedenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectprotectedenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 type ProjectProtectedEnvironment interface {
 	cdktf.TerraformResource
 	ApprovalRules() ProjectProtectedEnvironmentApprovalRulesList
@@ -66,9 +66,6 @@ type ProjectProtectedEnvironment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RequiredApprovalCount() *float64
-	SetRequiredApprovalCount(val *float64)
-	RequiredApprovalCountInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,7 +122,6 @@ type ProjectProtectedEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRequiredApprovalCount()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -364,26 +360,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironment) RequiredApprovalCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"requiredApprovalCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectProtectedEnvironment) RequiredApprovalCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"requiredApprovalCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -415,7 +391,7 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment {
 	_init_.Initialize()
 
@@ -433,7 +409,7 @@ func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment_Override(p ProjectProtectedEnvironment, scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -530,17 +506,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectProtectedEnvironment)SetRequiredApprovalCount(val *float64) {
-	if err := j.validateSetRequiredApprovalCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requiredApprovalCount",
 		val,
 	)
 }
@@ -940,14 +905,6 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectProtectedEnvironment) ResetRequiredApprovalCount() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetRequiredApprovalCount",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package serviceslack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/serviceslack/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/serviceslack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_slack gitlab_service_slack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_slack gitlab_service_slack}.
 type ServiceSlack interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -871,7 +871,7 @@ func (j *jsiiProxy_ServiceSlack) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlackConfig) ServiceSlack {
 	_init_.Initialize()
 
@@ -889,7 +889,7 @@ func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack_Override(s ServiceSlack, scope constructs.Construct, id *string, config *ServiceSlackConfig) {
 	_init_.Initialize()
 

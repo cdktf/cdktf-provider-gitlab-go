@@ -5,9 +5,9 @@ package datagitlabproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabproject/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -16,6 +16,7 @@ type DataGitlabProjectPushRulesOutputReference interface {
 	AuthorEmailRegex() *string
 	BranchNameRegex() *string
 	CommitCommitterCheck() cdktf.IResolvable
+	CommitCommitterNameCheck() cdktf.IResolvable
 	CommitMessageNegativeRegex() *string
 	CommitMessageRegex() *string
 	// the index of the complex object in a list.
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) CommitCommitterChe
 	_jsii_.Get(
 		j,
 		"commitCommitterCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) CommitCommitterNameCheck() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"commitCommitterNameCheck",
 		&returns,
 	)
 	return returns

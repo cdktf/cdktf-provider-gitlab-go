@@ -5,14 +5,14 @@ package globallevelnotifications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
 type GlobalLevelNotifications interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -729,7 +729,7 @@ func (j *jsiiProxy_GlobalLevelNotifications) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource.
 func NewGlobalLevelNotifications(scope constructs.Construct, id *string, config *GlobalLevelNotificationsConfig) GlobalLevelNotifications {
 	_init_.Initialize()
 
@@ -747,7 +747,7 @@ func NewGlobalLevelNotifications(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource.
 func NewGlobalLevelNotifications_Override(g GlobalLevelNotifications, scope constructs.Construct, id *string, config *GlobalLevelNotificationsConfig) {
 	_init_.Initialize()
 

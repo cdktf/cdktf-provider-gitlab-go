@@ -5,9 +5,9 @@ package datagitlabgroupsubgroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabgroupsubgroups/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupsubgroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,7 +33,6 @@ type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 	CreationStack() *[]*string
 	DefaultBranchProtection() *float64
 	Description() *string
-	EmailsDisabled() cdktf.IResolvable
 	EmailsEnabled() cdktf.IResolvable
 	FileTemplateProjectId() *float64
 	// Experimental.
@@ -182,16 +181,6 @@ func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) Description
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) EmailsDisabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"emailsDisabled",
 		&returns,
 	)
 	return returns

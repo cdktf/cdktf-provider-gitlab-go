@@ -5,14 +5,14 @@ package projectlevelnotifications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectlevelnotifications/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectlevelnotifications/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_notifications gitlab_project_level_notifications}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_notifications gitlab_project_level_notifications}.
 type ProjectLevelNotifications interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -752,7 +752,7 @@ func (j *jsiiProxy_ProjectLevelNotifications) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
 func NewProjectLevelNotifications(scope constructs.Construct, id *string, config *ProjectLevelNotificationsConfig) ProjectLevelNotifications {
 	_init_.Initialize()
 
@@ -770,7 +770,7 @@ func NewProjectLevelNotifications(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
 func NewProjectLevelNotifications_Override(p ProjectLevelNotifications, scope constructs.Construct, id *string, config *ProjectLevelNotificationsConfig) {
 	_init_.Initialize()
 

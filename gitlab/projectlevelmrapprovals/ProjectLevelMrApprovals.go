@@ -5,14 +5,14 @@ package projectlevelmrapprovals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectlevelmrapprovals/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectlevelmrapprovals/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
 type ProjectLevelMrApprovals interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) ProjectLevelMrApprovals {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals_Override(p ProjectLevelMrApprovals, scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) {
 	_init_.Initialize()
 

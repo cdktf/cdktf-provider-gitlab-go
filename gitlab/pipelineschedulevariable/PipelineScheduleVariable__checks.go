@@ -431,6 +431,14 @@ func (j *jsiiProxy_PipelineScheduleVariable) validateSetValueParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_PipelineScheduleVariable) validateSetVariableTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPipelineScheduleVariableParameters(scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

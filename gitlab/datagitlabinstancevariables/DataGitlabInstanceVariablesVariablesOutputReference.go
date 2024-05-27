@@ -5,9 +5,9 @@ package datagitlabinstancevariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabinstancevariables/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstancevariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +28,7 @@ type DataGitlabInstanceVariablesVariablesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGitlabInstanceVariablesVariables
@@ -110,6 +111,16 @@ func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabInstanceVariablesVariablesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns

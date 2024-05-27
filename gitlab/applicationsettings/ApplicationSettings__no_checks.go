@@ -655,6 +655,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetMetricsMethodCallThresholdPar
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMinimumPasswordLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMirrorAvailableParameters(val interface{}) error {
 	return nil
 }

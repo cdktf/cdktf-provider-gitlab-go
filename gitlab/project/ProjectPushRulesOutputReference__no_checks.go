@@ -63,6 +63,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetCommitCommitterCh
 	return nil
 }
 
+func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetCommitCommitterNameCheckParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetCommitMessageNegativeRegexParameters(val *string) error {
 	return nil
 }

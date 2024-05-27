@@ -5,14 +5,14 @@ package datagitlabbranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabbranch/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabbranch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/branch gitlab_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/branch gitlab_branch}.
 type DataGitlabBranch interface {
 	cdktf.TerraformDataSource
 	CanPush() cdktf.IResolvable
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataGitlabBranch) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/branch gitlab_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/branch gitlab_branch} Data Source.
 func NewDataGitlabBranch(scope constructs.Construct, id *string, config *DataGitlabBranchConfig) DataGitlabBranch {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataGitlabBranch(scope constructs.Construct, id *string, config *DataGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/branch gitlab_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/branch gitlab_branch} Data Source.
 func NewDataGitlabBranch_Override(d DataGitlabBranch, scope constructs.Construct, id *string, config *DataGitlabBranchConfig) {
 	_init_.Initialize()
 

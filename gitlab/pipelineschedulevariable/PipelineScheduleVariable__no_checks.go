@@ -127,6 +127,10 @@ func (j *jsiiProxy_PipelineScheduleVariable) validateSetValueParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_PipelineScheduleVariable) validateSetVariableTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewPipelineScheduleVariableParameters(scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) error {
 	return nil
 }

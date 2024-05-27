@@ -207,10 +207,6 @@ func (j *jsiiProxy_Project) validateSetDescriptionParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Project) validateSetEmailsDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Project) validateSetEmailsEnabledParameters(val interface{}) error {
 	return nil
 }

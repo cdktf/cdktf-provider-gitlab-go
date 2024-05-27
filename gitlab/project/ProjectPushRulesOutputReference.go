@@ -5,9 +5,9 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/project/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -22,6 +22,9 @@ type ProjectPushRulesOutputReference interface {
 	CommitCommitterCheck() interface{}
 	SetCommitCommitterCheck(val interface{})
 	CommitCommitterCheckInput() interface{}
+	CommitCommitterNameCheck() interface{}
+	SetCommitCommitterNameCheck(val interface{})
+	CommitCommitterNameCheckInput() interface{}
 	CommitMessageNegativeRegex() *string
 	SetCommitMessageNegativeRegex(val *string)
 	CommitMessageNegativeRegexInput() *string
@@ -100,6 +103,7 @@ type ProjectPushRulesOutputReference interface {
 	ResetAuthorEmailRegex()
 	ResetBranchNameRegex()
 	ResetCommitCommitterCheck()
+	ResetCommitCommitterNameCheck()
 	ResetCommitMessageNegativeRegex()
 	ResetCommitMessageRegex()
 	ResetDenyDeleteTag()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) CommitCommitterCheckInput() 
 	_jsii_.Get(
 		j,
 		"commitCommitterCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectPushRulesOutputReference) CommitCommitterNameCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"commitCommitterNameCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectPushRulesOutputReference) CommitCommitterNameCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"commitCommitterNameCheckInput",
 		&returns,
 	)
 	return returns
@@ -470,6 +494,17 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference)SetCommitCommitterCheck(val i
 	_jsii_.Set(
 		j,
 		"commitCommitterCheck",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetCommitCommitterNameCheck(val interface{}) {
+	if err := j.validateSetCommitCommitterNameCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"commitCommitterNameCheck",
 		val,
 	)
 }
@@ -823,6 +858,14 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) ResetCommitCommitterCheck() 
 	_jsii_.InvokeVoid(
 		p,
 		"resetCommitCommitterCheck",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectPushRulesOutputReference) ResetCommitCommitterNameCheck() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCommitCommitterNameCheck",
 		nil, // no parameters
 	)
 }

@@ -123,10 +123,6 @@ func (j *jsiiProxy_GroupProtectedEnvironment) validateSetProvisionersParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GroupProtectedEnvironment) validateSetRequiredApprovalCountParameters(val *float64) error {
-	return nil
-}
-
 func validateNewGroupProtectedEnvironmentParameters(scope constructs.Construct, id *string, config *GroupProtectedEnvironmentConfig) error {
 	return nil
 }

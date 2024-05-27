@@ -123,10 +123,6 @@ func (j *jsiiProxy_Group) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Group) validateSetEmailsDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Group) validateSetEmailsEnabledParameters(val interface{}) error {
 	return nil
 }

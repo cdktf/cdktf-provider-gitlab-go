@@ -129,7 +129,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultBranchProtection", GoGetter: "DefaultBranchProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "emailsDisabled", GoGetter: "EmailsDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "emailsEnabled", GoGetter: "EmailsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "fileTemplateProjectId", GoGetter: "FileTemplateProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

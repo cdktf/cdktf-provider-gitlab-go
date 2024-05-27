@@ -5,14 +5,14 @@ package datagitlabinstancevariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabinstancevariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstancevariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/instance_variable gitlab_instance_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/instance_variable gitlab_instance_variable}.
 type DataGitlabInstanceVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataGitlabInstanceVariable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataGitlabInstanceVariable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabInstanceVariable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -343,7 +354,7 @@ func (j *jsiiProxy_DataGitlabInstanceVariable) VariableType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
 func NewDataGitlabInstanceVariable(scope constructs.Construct, id *string, config *DataGitlabInstanceVariableConfig) DataGitlabInstanceVariable {
 	_init_.Initialize()
 
@@ -361,7 +372,7 @@ func NewDataGitlabInstanceVariable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
 func NewDataGitlabInstanceVariable_Override(d DataGitlabInstanceVariable, scope constructs.Construct, id *string, config *DataGitlabInstanceVariableConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package integrationmattermost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/integrationmattermost/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationmattermost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_mattermost gitlab_integration_mattermost}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_mattermost gitlab_integration_mattermost}.
 type IntegrationMattermost interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -860,7 +860,7 @@ func (j *jsiiProxy_IntegrationMattermost) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource.
 func NewIntegrationMattermost(scope constructs.Construct, id *string, config *IntegrationMattermostConfig) IntegrationMattermost {
 	_init_.Initialize()
 
@@ -878,7 +878,7 @@ func NewIntegrationMattermost(scope constructs.Construct, id *string, config *In
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource.
 func NewIntegrationMattermost_Override(i IntegrationMattermost, scope constructs.Construct, id *string, config *IntegrationMattermostConfig) {
 	_init_.Initialize()
 

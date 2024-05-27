@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGitlabRelease) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGitlabRelease) validatePutAssetsParameters(value *DataGitlabReleaseAssets) error {
+	return nil
+}
+
 func validateDataGitlabRelease_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

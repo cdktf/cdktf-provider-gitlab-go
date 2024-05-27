@@ -5,14 +5,14 @@ package servicecustomissuetracker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/servicecustomissuetracker/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicecustomissuetracker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker}.
 type ServiceCustomIssueTracker interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
 func NewServiceCustomIssueTracker(scope constructs.Construct, id *string, config *ServiceCustomIssueTrackerConfig) ServiceCustomIssueTracker {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewServiceCustomIssueTracker(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource.
 func NewServiceCustomIssueTracker_Override(s ServiceCustomIssueTracker, scope constructs.Construct, id *string, config *ServiceCustomIssueTrackerConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package pipelineschedulevariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedulevariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedulevariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
 type PipelineScheduleVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type PipelineScheduleVariable interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	VariableType() *string
+	SetVariableType(val *string)
+	VariableTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,6 +126,7 @@ type PipelineScheduleVariable interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetVariableType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -401,8 +405,28 @@ func (j *jsiiProxy_PipelineScheduleVariable) ValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PipelineScheduleVariable) VariableType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variableType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+func (j *jsiiProxy_PipelineScheduleVariable) VariableTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variableTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) PipelineScheduleVariable {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable_Override(p PipelineScheduleVariable, scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) {
 	_init_.Initialize()
 
@@ -550,6 +574,17 @@ func (j *jsiiProxy_PipelineScheduleVariable)SetValue(val *string) {
 	_jsii_.Set(
 		j,
 		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipelineScheduleVariable)SetVariableType(val *string) {
+	if err := j.validateSetVariableTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"variableType",
 		val,
 	)
 }
@@ -919,6 +954,14 @@ func (p *jsiiProxy_PipelineScheduleVariable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipelineScheduleVariable) ResetVariableType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVariableType",
 		nil, // no parameters
 	)
 }

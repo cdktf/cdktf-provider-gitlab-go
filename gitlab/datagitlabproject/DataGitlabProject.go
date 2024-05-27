@@ -5,14 +5,14 @@ package datagitlabproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabproject/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project gitlab_project}.
 type DataGitlabProject interface {
 	cdktf.TerraformDataSource
 	AnalyticsAccessLevel() *string
@@ -46,7 +46,6 @@ type DataGitlabProject interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	EmailsDisabled() cdktf.IResolvable
 	EmailsEnabled() cdktf.IResolvable
 	EmptyRepo() cdktf.IResolvable
 	EnvironmentsAccessLevel() *string
@@ -394,16 +393,6 @@ func (j *jsiiProxy_DataGitlabProject) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProject) EmailsDisabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"emailsDisabled",
 		&returns,
 	)
 	return returns
@@ -1030,7 +1019,7 @@ func (j *jsiiProxy_DataGitlabProject) WikiEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGitlabProjectConfig) DataGitlabProject {
 	_init_.Initialize()
 
@@ -1048,7 +1037,7 @@ func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Construct, id *string, config *DataGitlabProjectConfig) {
 	_init_.Initialize()
 

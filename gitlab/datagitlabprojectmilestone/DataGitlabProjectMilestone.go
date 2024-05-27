@@ -5,14 +5,14 @@ package datagitlabprojectmilestone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectmilestone/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectmilestone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_milestone gitlab_project_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_milestone gitlab_project_milestone}.
 type DataGitlabProjectMilestone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -432,7 +432,7 @@ func (j *jsiiProxy_DataGitlabProjectMilestone) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_milestone gitlab_project_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_milestone gitlab_project_milestone} Data Source.
 func NewDataGitlabProjectMilestone(scope constructs.Construct, id *string, config *DataGitlabProjectMilestoneConfig) DataGitlabProjectMilestone {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewDataGitlabProjectMilestone(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/project_milestone gitlab_project_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_milestone gitlab_project_milestone} Data Source.
 func NewDataGitlabProjectMilestone_Override(d DataGitlabProjectMilestone, scope constructs.Construct, id *string, config *DataGitlabProjectMilestoneConfig) {
 	_init_.Initialize()
 

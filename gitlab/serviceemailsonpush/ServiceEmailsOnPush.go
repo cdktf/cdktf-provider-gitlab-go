@@ -5,14 +5,14 @@ package serviceemailsonpush
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/serviceemailsonpush/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/serviceemailsonpush/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push}.
 type ServiceEmailsOnPush interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -531,7 +531,7 @@ func (j *jsiiProxy_ServiceEmailsOnPush) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
 func NewServiceEmailsOnPush(scope constructs.Construct, id *string, config *ServiceEmailsOnPushConfig) ServiceEmailsOnPush {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewServiceEmailsOnPush(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource.
 func NewServiceEmailsOnPush_Override(s ServiceEmailsOnPush, scope constructs.Construct, id *string, config *ServiceEmailsOnPushConfig) {
 	_init_.Initialize()
 

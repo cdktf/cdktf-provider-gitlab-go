@@ -5,9 +5,9 @@ package datagitlabprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojects/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -53,7 +53,6 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	CustomAttributes() cdktf.StringMapList
 	DefaultBranch() *string
 	Description() *string
-	EmailsDisabled() cdktf.IResolvable
 	EmailsEnabled() cdktf.IResolvable
 	EmptyRepo() cdktf.IResolvable
 	EnvironmentsAccessLevel() *string
@@ -103,7 +102,6 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	Path() *string
 	PathWithNamespace() *string
 	Permissions() DataGitlabProjectsProjectsPermissionsList
-	Public() cdktf.IResolvable
 	PublicBuilds() cdktf.IResolvable
 	ReadmeUrl() *string
 	ReleasesAccessLevel() *string
@@ -452,16 +450,6 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Description() *str
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) EmailsDisabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"emailsDisabled",
 		&returns,
 	)
 	return returns
@@ -932,16 +920,6 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Permissions() Data
 	_jsii_.Get(
 		j,
 		"permissions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Public() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"public",
 		&returns,
 	)
 	return returns

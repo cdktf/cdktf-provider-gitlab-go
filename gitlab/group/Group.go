@@ -5,14 +5,14 @@ package group
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/group/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -47,9 +47,6 @@ type Group interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EmailsDisabled() interface{}
-	SetEmailsDisabled(val interface{})
-	EmailsDisabledInput() interface{}
 	EmailsEnabled() interface{}
 	SetEmailsEnabled(val interface{})
 	EmailsEnabledInput() interface{}
@@ -198,7 +195,6 @@ type Group interface {
 	ResetAvatarHash()
 	ResetDefaultBranchProtection()
 	ResetDescription()
-	ResetEmailsDisabled()
 	ResetEmailsEnabled()
 	ResetExtraSharedRunnersMinutesLimit()
 	ResetId()
@@ -395,26 +391,6 @@ func (j *jsiiProxy_Group) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Group) EmailsDisabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"emailsDisabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Group) EmailsDisabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"emailsDisabledInput",
 		&returns,
 	)
 	return returns
@@ -1011,7 +987,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -1029,7 +1005,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1121,17 +1097,6 @@ func (j *jsiiProxy_Group)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Group)SetEmailsDisabled(val interface{}) {
-	if err := j.validateSetEmailsDisabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"emailsDisabled",
 		val,
 	)
 }
@@ -1805,14 +1770,6 @@ func (g *jsiiProxy_Group) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_Group) ResetEmailsDisabled() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetEmailsDisabled",
 		nil, // no parameters
 	)
 }

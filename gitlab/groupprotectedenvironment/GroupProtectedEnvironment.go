@@ -5,14 +5,14 @@ package groupprotectedenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/groupprotectedenvironment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupprotectedenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
 type GroupProtectedEnvironment interface {
 	cdktf.TerraformResource
 	ApprovalRules() GroupProtectedEnvironmentApprovalRulesList
@@ -66,9 +66,6 @@ type GroupProtectedEnvironment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RequiredApprovalCount() *float64
-	SetRequiredApprovalCount(val *float64)
-	RequiredApprovalCountInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,7 +121,6 @@ type GroupProtectedEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRequiredApprovalCount()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -363,26 +359,6 @@ func (j *jsiiProxy_GroupProtectedEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupProtectedEnvironment) RequiredApprovalCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"requiredApprovalCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupProtectedEnvironment) RequiredApprovalCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"requiredApprovalCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GroupProtectedEnvironment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -414,7 +390,7 @@ func (j *jsiiProxy_GroupProtectedEnvironment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
 func NewGroupProtectedEnvironment(scope constructs.Construct, id *string, config *GroupProtectedEnvironmentConfig) GroupProtectedEnvironment {
 	_init_.Initialize()
 
@@ -432,7 +408,7 @@ func NewGroupProtectedEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource.
 func NewGroupProtectedEnvironment_Override(g GroupProtectedEnvironment, scope constructs.Construct, id *string, config *GroupProtectedEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -529,17 +505,6 @@ func (j *jsiiProxy_GroupProtectedEnvironment)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupProtectedEnvironment)SetRequiredApprovalCount(val *float64) {
-	if err := j.validateSetRequiredApprovalCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requiredApprovalCount",
 		val,
 	)
 }
@@ -931,14 +896,6 @@ func (g *jsiiProxy_GroupProtectedEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupProtectedEnvironment) ResetRequiredApprovalCount() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetRequiredApprovalCount",
 		nil, // no parameters
 	)
 }

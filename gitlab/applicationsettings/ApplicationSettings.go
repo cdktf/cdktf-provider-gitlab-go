@@ -5,14 +5,14 @@ package applicationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/applicationsettings/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -457,6 +457,9 @@ type ApplicationSettings interface {
 	MetricsMethodCallThreshold() *float64
 	SetMetricsMethodCallThreshold(val *float64)
 	MetricsMethodCallThresholdInput() *float64
+	MinimumPasswordLength() *float64
+	SetMinimumPasswordLength(val *float64)
+	MinimumPasswordLengthInput() *float64
 	MirrorAvailable() interface{}
 	SetMirrorAvailable(val interface{})
 	MirrorAvailableInput() interface{}
@@ -968,6 +971,7 @@ type ApplicationSettings interface {
 	ResetMaxPersonalAccessTokenLifetime()
 	ResetMaxSshKeyLifetime()
 	ResetMetricsMethodCallThreshold()
+	ResetMinimumPasswordLength()
 	ResetMirrorAvailable()
 	ResetMirrorCapacityThreshold()
 	ResetMirrorMaxCapacity()
@@ -3943,6 +3947,26 @@ func (j *jsiiProxy_ApplicationSettings) MetricsMethodCallThresholdInput() *float
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) MinimumPasswordLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimumPasswordLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MinimumPasswordLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimumPasswordLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) MirrorAvailable() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -6094,7 +6118,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6112,7 +6136,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -7686,6 +7710,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMetricsMethodCallThreshold(val *float6
 	_jsii_.Set(
 		j,
 		"metricsMethodCallThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetMinimumPasswordLength(val *float64) {
+	if err := j.validateSetMinimumPasswordLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minimumPasswordLength",
 		val,
 	)
 }
@@ -10306,6 +10341,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetMetricsMethodCallThreshold() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMetricsMethodCallThreshold",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetMinimumPasswordLength() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMinimumPasswordLength",
 		nil, // no parameters
 	)
 }

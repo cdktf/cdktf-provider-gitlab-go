@@ -5,14 +5,14 @@ package instancevariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/instancevariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/instancevariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/instance_variable gitlab_instance_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/instance_variable gitlab_instance_variable}.
 type InstanceVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type InstanceVariable interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -125,6 +128,7 @@ type InstanceVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetId()
 	ResetMasked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -196,6 +200,26 @@ func (j *jsiiProxy_InstanceVariable) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceVariable) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceVariable) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +476,7 @@ func (j *jsiiProxy_InstanceVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable(scope constructs.Construct, id *string, config *InstanceVariableConfig) InstanceVariable {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewInstanceVariable(scope constructs.Construct, id *string, config *Instanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable_Override(i InstanceVariable, scope constructs.Construct, id *string, config *InstanceVariableConfig) {
 	_init_.Initialize()
 
@@ -507,6 +531,17 @@ func (j *jsiiProxy_InstanceVariable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceVariable)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (i *jsiiProxy_InstanceVariable) OverrideLogicalId(newLogicalId *string) {
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_InstanceVariable) ResetDescription() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

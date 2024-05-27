@@ -5,14 +5,14 @@ package userrunner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/userrunner/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userrunner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_runner gitlab_user_runner}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/user_runner gitlab_user_runner}.
 type UserRunner interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_UserRunner) UntaggedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_runner gitlab_user_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/user_runner gitlab_user_runner} Resource.
 func NewUserRunner(scope constructs.Construct, id *string, config *UserRunnerConfig) UserRunner {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewUserRunner(scope constructs.Construct, id *string, config *UserRunnerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/user_runner gitlab_user_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/user_runner gitlab_user_runner} Resource.
 func NewUserRunner_Override(u UserRunner, scope constructs.Construct, id *string, config *UserRunnerConfig) {
 	_init_.Initialize()
 

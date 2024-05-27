@@ -63,6 +63,10 @@ func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetCommitCommitterChec
 	return nil
 }
 
+func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetCommitCommitterNameCheckParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetCommitMessageNegativeRegexParameters(val *string) error {
 	return nil
 }

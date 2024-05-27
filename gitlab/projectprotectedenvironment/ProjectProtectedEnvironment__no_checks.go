@@ -123,10 +123,6 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_ProjectProtectedEnvironment) validateSetRequiredApprovalCountParameters(val *float64) error {
-	return nil
-}
-
 func validateNewProjectProtectedEnvironmentParameters(scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) error {
 	return nil
 }

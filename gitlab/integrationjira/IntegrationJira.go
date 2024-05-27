@@ -5,14 +5,14 @@ package integrationjira
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/integrationjira/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjira/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_jira gitlab_integration_jira}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jira gitlab_integration_jira}.
 type IntegrationJira interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -734,7 +734,7 @@ func (j *jsiiProxy_IntegrationJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
 func NewIntegrationJira(scope constructs.Construct, id *string, config *IntegrationJiraConfig) IntegrationJira {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewIntegrationJira(scope constructs.Construct, id *string, config *Integrat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
 func NewIntegrationJira_Override(i IntegrationJira, scope constructs.Construct, id *string, config *IntegrationJiraConfig) {
 	_init_.Initialize()
 

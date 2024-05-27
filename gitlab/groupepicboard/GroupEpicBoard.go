@@ -5,14 +5,14 @@ package groupepicboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/groupepicboard/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupepicboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_epic_board gitlab_group_epic_board}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_epic_board gitlab_group_epic_board}.
 type GroupEpicBoard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GroupEpicBoard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_epic_board gitlab_group_epic_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_epic_board gitlab_group_epic_board} Resource.
 func NewGroupEpicBoard(scope constructs.Construct, id *string, config *GroupEpicBoardConfig) GroupEpicBoard {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGroupEpicBoard(scope constructs.Construct, id *string, config *GroupEpic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_epic_board gitlab_group_epic_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_epic_board gitlab_group_epic_board} Resource.
 func NewGroupEpicBoard_Override(g GroupEpicBoard, scope constructs.Construct, id *string, config *GroupEpicBoardConfig) {
 	_init_.Initialize()
 

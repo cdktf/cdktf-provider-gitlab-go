@@ -5,14 +5,14 @@ package projectcustomattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectcustomattribute/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcustomattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute}.
 type ProjectCustomAttribute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ProjectCustomAttribute) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource.
 func NewProjectCustomAttribute(scope constructs.Construct, id *string, config *ProjectCustomAttributeConfig) ProjectCustomAttribute {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewProjectCustomAttribute(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource.
 func NewProjectCustomAttribute_Override(p ProjectCustomAttribute, scope constructs.Construct, id *string, config *ProjectCustomAttributeConfig) {
 	_init_.Initialize()
 

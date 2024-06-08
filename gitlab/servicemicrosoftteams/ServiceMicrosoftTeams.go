@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams}.
 type ServiceMicrosoftTeams interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -653,7 +653,7 @@ func (j *jsiiProxy_ServiceMicrosoftTeams) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams} Resource.
 func NewServiceMicrosoftTeams(scope constructs.Construct, id *string, config *ServiceMicrosoftTeamsConfig) ServiceMicrosoftTeams {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewServiceMicrosoftTeams(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams} Resource.
 func NewServiceMicrosoftTeams_Override(s ServiceMicrosoftTeams, scope constructs.Construct, id *string, config *ServiceMicrosoftTeamsConfig) {
 	_init_.Initialize()
 

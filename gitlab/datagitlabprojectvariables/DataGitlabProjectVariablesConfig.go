@@ -24,13 +24,13 @@ type DataGitlabProjectVariablesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_variables#project DataGitlabProjectVariables#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/project_variables#project DataGitlabProjectVariables#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The environment scope of the variable. Defaults to all environment (`*`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
 	EnvironmentScope *string `field:"optional" json:"environmentScope" yaml:"environmentScope"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/data-sources/project_variables#id DataGitlabProjectVariables#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/project_variables#id DataGitlabProjectVariables#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

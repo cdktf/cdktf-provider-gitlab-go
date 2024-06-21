@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/compliance_framework gitlab_compliance_framework}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/compliance_framework gitlab_compliance_framework}.
 type DataGitlabComplianceFramework interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataGitlabComplianceFramework) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/compliance_framework gitlab_compliance_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/compliance_framework gitlab_compliance_framework} Data Source.
 func NewDataGitlabComplianceFramework(scope constructs.Construct, id *string, config *DataGitlabComplianceFrameworkConfig) DataGitlabComplianceFramework {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataGitlabComplianceFramework(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/compliance_framework gitlab_compliance_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/compliance_framework gitlab_compliance_framework} Data Source.
 func NewDataGitlabComplianceFramework_Override(d DataGitlabComplianceFramework, scope constructs.Construct, id *string, config *DataGitlabComplianceFrameworkConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_environment gitlab_project_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/project_environment gitlab_project_environment}.
 type ProjectEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ProjectEnvironment) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment(scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) ProjectEnvironment {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewProjectEnvironment(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment_Override(p ProjectEnvironment, scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) {
 	_init_.Initialize()
 

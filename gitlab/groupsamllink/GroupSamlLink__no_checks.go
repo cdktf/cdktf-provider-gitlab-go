@@ -115,6 +115,10 @@ func (j *jsiiProxy_GroupSamlLink) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_GroupSamlLink) validateSetMemberRoleIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupSamlLink) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

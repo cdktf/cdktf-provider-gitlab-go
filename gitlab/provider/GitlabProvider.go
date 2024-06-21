@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs gitlab}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs gitlab}.
 type GitlabProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_GitlabProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs gitlab} Resource.
 func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabProviderConfig) GitlabProvider {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs gitlab} Resource.
 func NewGitlabProvider_Override(g GitlabProvider, scope constructs.Construct, id *string, config *GitlabProviderConfig) {
 	_init_.Initialize()
 

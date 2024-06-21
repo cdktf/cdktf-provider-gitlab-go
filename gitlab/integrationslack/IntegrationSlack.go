@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_slack gitlab_integration_slack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/integration_slack gitlab_integration_slack}.
 type IntegrationSlack interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -26,6 +26,9 @@ type IntegrationSlack interface {
 	ConfidentialIssuesEvents() interface{}
 	SetConfidentialIssuesEvents(val interface{})
 	ConfidentialIssuesEventsInput() interface{}
+	ConfidentialNoteChannel() *string
+	SetConfidentialNoteChannel(val *string)
+	ConfidentialNoteChannelInput() *string
 	ConfidentialNoteEvents() interface{}
 	SetConfidentialNoteEvents(val interface{})
 	ConfidentialNoteEventsInput() interface{}
@@ -180,6 +183,7 @@ type IntegrationSlack interface {
 	ResetBranchesToBeNotified()
 	ResetConfidentialIssueChannel()
 	ResetConfidentialIssuesEvents()
+	ResetConfidentialNoteChannel()
 	ResetConfidentialNoteEvents()
 	ResetId()
 	ResetIssueChannel()
@@ -285,6 +289,26 @@ func (j *jsiiProxy_IntegrationSlack) ConfidentialIssuesEventsInput() interface{}
 	_jsii_.Get(
 		j,
 		"confidentialIssuesEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationSlack) ConfidentialNoteChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialNoteChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationSlack) ConfidentialNoteChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialNoteChannelInput",
 		&returns,
 	)
 	return returns
@@ -871,7 +895,7 @@ func (j *jsiiProxy_IntegrationSlack) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_slack gitlab_integration_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
 func NewIntegrationSlack(scope constructs.Construct, id *string, config *IntegrationSlackConfig) IntegrationSlack {
 	_init_.Initialize()
 
@@ -889,7 +913,7 @@ func NewIntegrationSlack(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_slack gitlab_integration_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
 func NewIntegrationSlack_Override(i IntegrationSlack, scope constructs.Construct, id *string, config *IntegrationSlackConfig) {
 	_init_.Initialize()
 
@@ -929,6 +953,17 @@ func (j *jsiiProxy_IntegrationSlack)SetConfidentialIssuesEvents(val interface{})
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationSlack)SetConfidentialNoteChannel(val *string) {
+	if err := j.validateSetConfidentialNoteChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialNoteChannel",
 		val,
 	)
 }
@@ -1605,6 +1640,14 @@ func (i *jsiiProxy_IntegrationSlack) ResetConfidentialIssuesEvents() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetConfidentialIssuesEvents",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationSlack) ResetConfidentialNoteChannel() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetConfidentialNoteChannel",
 		nil, // no parameters
 	)
 }

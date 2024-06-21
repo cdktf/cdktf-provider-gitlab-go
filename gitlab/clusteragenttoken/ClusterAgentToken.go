@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 type ClusterAgentToken interface {
 	cdktf.TerraformResource
 	AgentId() *float64
@@ -469,7 +469,7 @@ func (j *jsiiProxy_ClusterAgentToken) TokenId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken(scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) ClusterAgentToken {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewClusterAgentToken(scope constructs.Construct, id *string, config *Cluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken_Override(c ClusterAgentToken, scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) {
 	_init_.Initialize()
 

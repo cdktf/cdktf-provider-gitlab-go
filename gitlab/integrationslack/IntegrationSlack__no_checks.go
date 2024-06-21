@@ -103,6 +103,10 @@ func (j *jsiiProxy_IntegrationSlack) validateSetConfidentialIssuesEventsParamete
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationSlack) validateSetConfidentialNoteChannelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationSlack) validateSetConfidentialNoteEventsParameters(val interface{}) error {
 	return nil
 }

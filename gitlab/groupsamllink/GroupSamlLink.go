@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link}.
 type GroupSamlLink interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -52,6 +52,9 @@ type GroupSamlLink interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MemberRoleId() *float64
+	SetMemberRoleId(val *float64)
+	MemberRoleIdInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -117,6 +120,7 @@ type GroupSamlLink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -288,6 +292,26 @@ func (j *jsiiProxy_GroupSamlLink) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
+func (j *jsiiProxy_GroupSamlLink) MemberRoleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupSamlLink) MemberRoleIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupSamlLink) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_GroupSamlLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
 func NewGroupSamlLink(scope constructs.Construct, id *string, config *GroupSamlLinkConfig) GroupSamlLink {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewGroupSamlLink(scope constructs.Construct, id *string, config *GroupSamlL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
 func NewGroupSamlLink_Override(g GroupSamlLink, scope constructs.Construct, id *string, config *GroupSamlLinkConfig) {
 	_init_.Initialize()
 
@@ -486,6 +510,17 @@ func (j *jsiiProxy_GroupSamlLink)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupSamlLink)SetMemberRoleId(val *float64) {
+	if err := j.validateSetMemberRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberRoleId",
 		val,
 	)
 }
@@ -877,6 +912,14 @@ func (g *jsiiProxy_GroupSamlLink) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupSamlLink) ResetMemberRoleId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMemberRoleId",
 		nil, // no parameters
 	)
 }

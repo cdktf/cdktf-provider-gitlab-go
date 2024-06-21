@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_slack gitlab_service_slack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_slack gitlab_service_slack}.
 type ServiceSlack interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -26,6 +26,9 @@ type ServiceSlack interface {
 	ConfidentialIssuesEvents() interface{}
 	SetConfidentialIssuesEvents(val interface{})
 	ConfidentialIssuesEventsInput() interface{}
+	ConfidentialNoteChannel() *string
+	SetConfidentialNoteChannel(val *string)
+	ConfidentialNoteChannelInput() *string
 	ConfidentialNoteEvents() interface{}
 	SetConfidentialNoteEvents(val interface{})
 	ConfidentialNoteEventsInput() interface{}
@@ -180,6 +183,7 @@ type ServiceSlack interface {
 	ResetBranchesToBeNotified()
 	ResetConfidentialIssueChannel()
 	ResetConfidentialIssuesEvents()
+	ResetConfidentialNoteChannel()
 	ResetConfidentialNoteEvents()
 	ResetId()
 	ResetIssueChannel()
@@ -285,6 +289,26 @@ func (j *jsiiProxy_ServiceSlack) ConfidentialIssuesEventsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"confidentialIssuesEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceSlack) ConfidentialNoteChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialNoteChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceSlack) ConfidentialNoteChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialNoteChannelInput",
 		&returns,
 	)
 	return returns
@@ -871,7 +895,7 @@ func (j *jsiiProxy_ServiceSlack) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlackConfig) ServiceSlack {
 	_init_.Initialize()
 
@@ -889,7 +913,7 @@ func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack_Override(s ServiceSlack, scope constructs.Construct, id *string, config *ServiceSlackConfig) {
 	_init_.Initialize()
 
@@ -929,6 +953,17 @@ func (j *jsiiProxy_ServiceSlack)SetConfidentialIssuesEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"confidentialIssuesEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceSlack)SetConfidentialNoteChannel(val *string) {
+	if err := j.validateSetConfidentialNoteChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialNoteChannel",
 		val,
 	)
 }
@@ -1605,6 +1640,14 @@ func (s *jsiiProxy_ServiceSlack) ResetConfidentialIssuesEvents() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetConfidentialIssuesEvents",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceSlack) ResetConfidentialNoteChannel() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConfidentialNoteChannel",
 		nil, // no parameters
 	)
 }

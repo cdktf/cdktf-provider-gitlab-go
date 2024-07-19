@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/instance_variable gitlab_instance_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/instance_variable gitlab_instance_variable}.
 type InstanceVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_InstanceVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable(scope constructs.Construct, id *string, config *InstanceVariableConfig) InstanceVariable {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewInstanceVariable(scope constructs.Construct, id *string, config *Instanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/instance_variable gitlab_instance_variable} Resource.
 func NewInstanceVariable_Override(i InstanceVariable, scope constructs.Construct, id *string, config *InstanceVariableConfig) {
 	_init_.Initialize()
 

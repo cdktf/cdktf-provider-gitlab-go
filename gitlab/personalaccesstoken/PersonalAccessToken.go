@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token gitlab_personal_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 type PersonalAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -45,8 +45,6 @@ type PersonalAccessToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -124,7 +122,6 @@ type PersonalAccessToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExpiresAt()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -271,16 +268,6 @@ func (j *jsiiProxy_PersonalAccessToken) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PersonalAccessToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -447,7 +434,7 @@ func (j *jsiiProxy_PersonalAccessToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) PersonalAccessToken {
 	_init_.Initialize()
 
@@ -465,7 +452,7 @@ func NewPersonalAccessToken(scope constructs.Construct, id *string, config *Pers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken_Override(p PersonalAccessToken, scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -521,17 +508,6 @@ func (j *jsiiProxy_PersonalAccessToken)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PersonalAccessToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -956,14 +932,6 @@ func (p *jsiiProxy_PersonalAccessToken) ResetExpiresAt() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExpiresAt",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PersonalAccessToken) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

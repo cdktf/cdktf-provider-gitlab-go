@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/group_hook gitlab_group_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/data-sources/group_hook gitlab_group_hook}.
 type DataGitlabGroupHook interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_DataGitlabGroupHook) WikiPageEvents() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/group_hook gitlab_group_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/data-sources/group_hook gitlab_group_hook} Data Source.
 func NewDataGitlabGroupHook(scope constructs.Construct, id *string, config *DataGitlabGroupHookConfig) DataGitlabGroupHook {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewDataGitlabGroupHook(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/group_hook gitlab_group_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/data-sources/group_hook gitlab_group_hook} Data Source.
 func NewDataGitlabGroupHook_Override(d DataGitlabGroupHook, scope constructs.Construct, id *string, config *DataGitlabGroupHookConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -454,6 +454,9 @@ type ApplicationSettings interface {
 	MaxSshKeyLifetime() *float64
 	SetMaxSshKeyLifetime(val *float64)
 	MaxSshKeyLifetimeInput() *float64
+	MaxTerraformStateSizeBytes() *float64
+	SetMaxTerraformStateSizeBytes(val *float64)
+	MaxTerraformStateSizeBytesInput() *float64
 	MetricsMethodCallThreshold() *float64
 	SetMetricsMethodCallThreshold(val *float64)
 	MetricsMethodCallThresholdInput() *float64
@@ -970,6 +973,7 @@ type ApplicationSettings interface {
 	ResetMaxPagesSize()
 	ResetMaxPersonalAccessTokenLifetime()
 	ResetMaxSshKeyLifetime()
+	ResetMaxTerraformStateSizeBytes()
 	ResetMetricsMethodCallThreshold()
 	ResetMinimumPasswordLength()
 	ResetMirrorAvailable()
@@ -3927,6 +3931,26 @@ func (j *jsiiProxy_ApplicationSettings) MaxSshKeyLifetimeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) MaxTerraformStateSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTerraformStateSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MaxTerraformStateSizeBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTerraformStateSizeBytesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) MetricsMethodCallThreshold() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -6118,7 +6142,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6136,7 +6160,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -7699,6 +7723,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMaxSshKeyLifetime(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxSshKeyLifetime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetMaxTerraformStateSizeBytes(val *float64) {
+	if err := j.validateSetMaxTerraformStateSizeBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTerraformStateSizeBytes",
 		val,
 	)
 }
@@ -10333,6 +10368,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetMaxSshKeyLifetime() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMaxSshKeyLifetime",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetMaxTerraformStateSizeBytes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxTerraformStateSizeBytes",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_level_notifications gitlab_project_level_notifications}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_level_notifications gitlab_project_level_notifications}.
 type ProjectLevelNotifications interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -752,7 +752,7 @@ func (j *jsiiProxy_ProjectLevelNotifications) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
 func NewProjectLevelNotifications(scope constructs.Construct, id *string, config *ProjectLevelNotificationsConfig) ProjectLevelNotifications {
 	_init_.Initialize()
 
@@ -770,7 +770,7 @@ func NewProjectLevelNotifications(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_level_notifications gitlab_project_level_notifications} Resource.
 func NewProjectLevelNotifications_Override(p ProjectLevelNotifications, scope constructs.Construct, id *string, config *ProjectLevelNotificationsConfig) {
 	_init_.Initialize()
 

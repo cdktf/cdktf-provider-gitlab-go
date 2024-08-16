@@ -167,6 +167,10 @@ func (j *jsiiProxy_Group) validateSetPathParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetPermanentlyRemoveOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetPreventForkingOutsideGroupParameters(val interface{}) error {
 	return nil
 }

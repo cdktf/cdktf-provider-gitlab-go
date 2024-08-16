@@ -103,11 +103,19 @@ func (j *jsiiProxy_ProjectJobTokenScopes) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_ProjectJobTokenScopes) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectJobTokenScopes) validateSetProjectIdParameters(val *float64) error {
 	return nil
 }
 
 func (j *jsiiProxy_ProjectJobTokenScopes) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) validateSetTargetGroupIdsParameters(val *[]*float64) error {
 	return nil
 }
 

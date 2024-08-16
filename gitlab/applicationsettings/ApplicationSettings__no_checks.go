@@ -651,6 +651,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetMaxSshKeyLifetimeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMaxTerraformStateSizeBytesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMetricsMethodCallThresholdParameters(val *float64) error {
 	return nil
 }

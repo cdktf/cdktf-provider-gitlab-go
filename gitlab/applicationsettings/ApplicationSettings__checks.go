@@ -1921,6 +1921,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetMaxSshKeyLifetimeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMaxTerraformStateSizeBytesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMetricsMethodCallThresholdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

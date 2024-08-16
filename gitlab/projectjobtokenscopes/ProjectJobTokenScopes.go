@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
 type ProjectJobTokenScopes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,9 +46,12 @@ type ProjectJobTokenScopes interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
 	ProjectId() *float64
 	SetProjectId(val *float64)
 	ProjectIdInput() *float64
+	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -59,6 +62,9 @@ type ProjectJobTokenScopes interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TargetGroupIds() *[]*float64
+	SetTargetGroupIds(val *[]*float64)
+	TargetGroupIdsInput() *[]*float64
 	TargetProjectIds() *[]*float64
 	SetTargetProjectIds(val *[]*float64)
 	TargetProjectIdsInput() *[]*float64
@@ -114,6 +120,10 @@ type ProjectJobTokenScopes interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProject()
+	ResetProjectId()
+	ResetTargetGroupIds()
+	ResetTargetProjectIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -242,6 +252,16 @@ func (j *jsiiProxy_ProjectJobTokenScopes) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectJobTokenScopes) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectJobTokenScopes) ProjectId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -257,6 +277,16 @@ func (j *jsiiProxy_ProjectJobTokenScopes) ProjectIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +317,26 @@ func (j *jsiiProxy_ProjectJobTokenScopes) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) TargetGroupIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"targetGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) TargetGroupIdsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"targetGroupIdsInput",
 		&returns,
 	)
 	return returns
@@ -343,7 +393,7 @@ func (j *jsiiProxy_ProjectJobTokenScopes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
 func NewProjectJobTokenScopes(scope constructs.Construct, id *string, config *ProjectJobTokenScopesConfig) ProjectJobTokenScopes {
 	_init_.Initialize()
 
@@ -361,7 +411,7 @@ func NewProjectJobTokenScopes(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
 func NewProjectJobTokenScopes_Override(p ProjectJobTokenScopes, scope constructs.Construct, id *string, config *ProjectJobTokenScopesConfig) {
 	_init_.Initialize()
 
@@ -421,6 +471,17 @@ func (j *jsiiProxy_ProjectJobTokenScopes)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
+func (j *jsiiProxy_ProjectJobTokenScopes)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ProjectJobTokenScopes)SetProjectId(val *float64) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -447,6 +508,17 @@ func (j *jsiiProxy_ProjectJobTokenScopes)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes)SetTargetGroupIds(val *[]*float64) {
+	if err := j.validateSetTargetGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetGroupIds",
 		val,
 	)
 }
@@ -819,6 +891,38 @@ func (p *jsiiProxy_ProjectJobTokenScopes) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScopes) ResetProject() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScopes) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScopes) ResetTargetGroupIds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScopes) ResetTargetProjectIds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetProjectIds",
 		nil, // no parameters
 	)
 }

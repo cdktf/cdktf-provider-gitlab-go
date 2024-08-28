@@ -24,7 +24,7 @@ type DataGitlabProjectIdsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

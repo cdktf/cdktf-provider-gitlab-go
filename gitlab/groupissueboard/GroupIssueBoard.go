@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_issue_board gitlab_group_issue_board}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_issue_board gitlab_group_issue_board}.
 type GroupIssueBoard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GroupIssueBoard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
 func NewGroupIssueBoard(scope constructs.Construct, id *string, config *GroupIssueBoardConfig) GroupIssueBoard {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGroupIssueBoard(scope constructs.Construct, id *string, config *GroupIss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_issue_board gitlab_group_issue_board} Resource.
 func NewGroupIssueBoard_Override(g GroupIssueBoard, scope constructs.Construct, id *string, config *GroupIssueBoardConfig) {
 	_init_.Initialize()
 

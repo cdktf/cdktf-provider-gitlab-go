@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/repository_file gitlab_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/repository_file gitlab_repository_file}.
 type DataGitlabRepositoryFile interface {
 	cdktf.TerraformDataSource
 	BlobId() *string
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/repository_file gitlab_repository_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/repository_file gitlab_repository_file} Data Source.
 func NewDataGitlabRepositoryFile(scope constructs.Construct, id *string, config *DataGitlabRepositoryFileConfig) DataGitlabRepositoryFile {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDataGitlabRepositoryFile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/repository_file gitlab_repository_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/repository_file gitlab_repository_file} Data Source.
 func NewDataGitlabRepositoryFile_Override(d DataGitlabRepositoryFile, scope constructs.Construct, id *string, config *DataGitlabRepositoryFileConfig) {
 	_init_.Initialize()
 

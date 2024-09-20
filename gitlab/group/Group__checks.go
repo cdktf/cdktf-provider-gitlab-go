@@ -207,6 +207,17 @@ func (g *jsiiProxy_Group) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (g *jsiiProxy_Group) validatePutDefaultBranchProtectionDefaultsParameters(value *GroupDefaultBranchProtectionDefaults) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_Group) validatePutPushRulesParameters(value *GroupPushRules) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -33,6 +33,9 @@ type ApplicationSettings interface {
 	AkismetEnabled() interface{}
 	SetAkismetEnabled(val interface{})
 	AkismetEnabledInput() interface{}
+	AllowAccountDeletion() interface{}
+	SetAllowAccountDeletion(val interface{})
+	AllowAccountDeletionInput() interface{}
 	AllowGroupOwnersToManageLdap() interface{}
 	SetAllowGroupOwnersToManageLdap(val interface{})
 	AllowGroupOwnersToManageLdapInput() interface{}
@@ -42,9 +45,18 @@ type ApplicationSettings interface {
 	AllowLocalRequestsFromWebHooksAndServices() interface{}
 	SetAllowLocalRequestsFromWebHooksAndServices(val interface{})
 	AllowLocalRequestsFromWebHooksAndServicesInput() interface{}
+	AllowProjectCreationForGuestAndBelow() interface{}
+	SetAllowProjectCreationForGuestAndBelow(val interface{})
+	AllowProjectCreationForGuestAndBelowInput() interface{}
+	AllowRunnerRegistrationToken() interface{}
+	SetAllowRunnerRegistrationToken(val interface{})
+	AllowRunnerRegistrationTokenInput() interface{}
 	ArchiveBuildsInHumanReadable() *string
 	SetArchiveBuildsInHumanReadable(val *string)
 	ArchiveBuildsInHumanReadableInput() *string
+	AsciidocMaxIncludes() *float64
+	SetAsciidocMaxIncludes(val *float64)
+	AsciidocMaxIncludesInput() *float64
 	AssetProxyAllowlist() *[]*string
 	SetAssetProxyAllowlist(val *[]*string)
 	AssetProxyAllowlistInput() *[]*string
@@ -60,6 +72,9 @@ type ApplicationSettings interface {
 	AuthorizedKeysEnabled() interface{}
 	SetAuthorizedKeysEnabled(val interface{})
 	AuthorizedKeysEnabledInput() interface{}
+	AutoBanUserOnExcessiveProjectsDownload() interface{}
+	SetAutoBanUserOnExcessiveProjectsDownload(val interface{})
+	AutoBanUserOnExcessiveProjectsDownloadInput() interface{}
 	AutoDevopsDomain() *string
 	SetAutoDevopsDomain(val *string)
 	AutoDevopsDomainInput() *string
@@ -69,6 +84,15 @@ type ApplicationSettings interface {
 	AutomaticPurchasedStorageAllocation() interface{}
 	SetAutomaticPurchasedStorageAllocation(val interface{})
 	AutomaticPurchasedStorageAllocationInput() interface{}
+	BulkImportConcurrentPipelineBatchLimit() *float64
+	SetBulkImportConcurrentPipelineBatchLimit(val *float64)
+	BulkImportConcurrentPipelineBatchLimitInput() *float64
+	BulkImportEnabled() interface{}
+	SetBulkImportEnabled(val interface{})
+	BulkImportEnabledInput() interface{}
+	BulkImportMaxDownloadFileSize() *float64
+	SetBulkImportMaxDownloadFileSize(val *float64)
+	BulkImportMaxDownloadFileSizeInput() *float64
 	CanCreateGroup() interface{}
 	SetCanCreateGroup(val interface{})
 	CanCreateGroupInput() interface{}
@@ -77,9 +101,24 @@ type ApplicationSettings interface {
 	CheckNamespacePlan() interface{}
 	SetCheckNamespacePlan(val interface{})
 	CheckNamespacePlanInput() interface{}
+	CiMaxIncludes() *float64
+	SetCiMaxIncludes(val *float64)
+	CiMaxIncludesInput() *float64
+	CiMaxTotalYamlSizeBytes() *float64
+	SetCiMaxTotalYamlSizeBytes(val *float64)
+	CiMaxTotalYamlSizeBytesInput() *float64
 	CommitEmailHostname() *string
 	SetCommitEmailHostname(val *string)
 	CommitEmailHostnameInput() *string
+	ConcurrentBitbucketImportJobsLimit() *float64
+	SetConcurrentBitbucketImportJobsLimit(val *float64)
+	ConcurrentBitbucketImportJobsLimitInput() *float64
+	ConcurrentBitbucketServerImportJobsLimit() *float64
+	SetConcurrentBitbucketServerImportJobsLimit(val *float64)
+	ConcurrentBitbucketServerImportJobsLimitInput() *float64
+	ConcurrentGithubImportJobsLimit() *float64
+	SetConcurrentGithubImportJobsLimit(val *float64)
+	ConcurrentGithubImportJobsLimitInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -111,6 +150,12 @@ type ApplicationSettings interface {
 	DeactivateDormantUsers() interface{}
 	SetDeactivateDormantUsers(val interface{})
 	DeactivateDormantUsersInput() interface{}
+	DeactivateDormantUsersPeriod() *float64
+	SetDeactivateDormantUsersPeriod(val *float64)
+	DeactivateDormantUsersPeriodInput() *float64
+	DecompressArchiveFileTimeout() *float64
+	SetDecompressArchiveFileTimeout(val *float64)
+	DecompressArchiveFileTimeoutInput() *float64
 	DefaultArtifactsExpireIn() *string
 	SetDefaultArtifactsExpireIn(val *string)
 	DefaultArtifactsExpireInInput() *string
@@ -119,6 +164,8 @@ type ApplicationSettings interface {
 	DefaultBranchNameInput() *string
 	DefaultBranchProtection() *float64
 	SetDefaultBranchProtection(val *float64)
+	DefaultBranchProtectionDefaults() ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference
+	DefaultBranchProtectionDefaultsInput() *ApplicationSettingsDefaultBranchProtectionDefaults
 	DefaultBranchProtectionInput() *float64
 	DefaultCiConfigPath() *string
 	SetDefaultCiConfigPath(val *string)
@@ -126,6 +173,9 @@ type ApplicationSettings interface {
 	DefaultGroupVisibility() *string
 	SetDefaultGroupVisibility(val *string)
 	DefaultGroupVisibilityInput() *string
+	DefaultPreferredLanguage() *string
+	SetDefaultPreferredLanguage(val *string)
+	DefaultPreferredLanguageInput() *string
 	DefaultProjectCreation() *float64
 	SetDefaultProjectCreation(val *float64)
 	DefaultProjectCreationInput() *float64
@@ -138,9 +188,15 @@ type ApplicationSettings interface {
 	DefaultSnippetVisibility() *string
 	SetDefaultSnippetVisibility(val *string)
 	DefaultSnippetVisibilityInput() *string
+	DefaultSyntaxHighlightingTheme() *float64
+	SetDefaultSyntaxHighlightingTheme(val *float64)
+	DefaultSyntaxHighlightingThemeInput() *float64
 	DeleteInactiveProjects() interface{}
 	SetDeleteInactiveProjects(val interface{})
 	DeleteInactiveProjectsInput() interface{}
+	DeleteUnconfirmedUsers() interface{}
+	SetDeleteUnconfirmedUsers(val interface{})
+	DeleteUnconfirmedUsersInput() interface{}
 	DeletionAdjournedPeriod() *float64
 	SetDeletionAdjournedPeriod(val *float64)
 	DeletionAdjournedPeriodInput() *float64
@@ -148,6 +204,12 @@ type ApplicationSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DiagramsnetEnabled() interface{}
+	SetDiagramsnetEnabled(val interface{})
+	DiagramsnetEnabledInput() interface{}
+	DiagramsnetUrl() *string
+	SetDiagramsnetUrl(val *string)
+	DiagramsnetUrlInput() *string
 	DiffMaxFiles() *float64
 	SetDiffMaxFiles(val *float64)
 	DiffMaxFilesInput() *float64
@@ -157,12 +219,18 @@ type ApplicationSettings interface {
 	DiffMaxPatchBytes() *float64
 	SetDiffMaxPatchBytes(val *float64)
 	DiffMaxPatchBytesInput() *float64
+	DisableAdminOauthScopes() interface{}
+	SetDisableAdminOauthScopes(val interface{})
+	DisableAdminOauthScopesInput() interface{}
 	DisabledOauthSignInSources() *[]*string
 	SetDisabledOauthSignInSources(val *[]*string)
 	DisabledOauthSignInSourcesInput() *[]*string
 	DisableFeedToken() interface{}
 	SetDisableFeedToken(val interface{})
 	DisableFeedTokenInput() interface{}
+	DisablePersonalAccessTokens() interface{}
+	SetDisablePersonalAccessTokens(val interface{})
+	DisablePersonalAccessTokensInput() interface{}
 	DnsRebindingProtectionEnabled() interface{}
 	SetDnsRebindingProtectionEnabled(val interface{})
 	DnsRebindingProtectionEnabledInput() interface{}
@@ -175,9 +243,15 @@ type ApplicationSettings interface {
 	SetDomainDenylistEnabled(val interface{})
 	DomainDenylistEnabledInput() interface{}
 	DomainDenylistInput() *[]*string
+	DownstreamPipelineTriggerLimitPerProjectUserSha() *float64
+	SetDownstreamPipelineTriggerLimitPerProjectUserSha(val *float64)
+	DownstreamPipelineTriggerLimitPerProjectUserShaInput() *float64
 	DsaKeyRestriction() *float64
 	SetDsaKeyRestriction(val *float64)
 	DsaKeyRestrictionInput() *float64
+	DuoFeaturesEnabled() interface{}
+	SetDuoFeaturesEnabled(val interface{})
+	DuoFeaturesEnabledInput() interface{}
 	EcdsaKeyRestriction() *float64
 	SetEcdsaKeyRestriction(val *float64)
 	EcdsaKeyRestrictionInput() *float64
@@ -836,27 +910,41 @@ type ApplicationSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultBranchProtectionDefaults(value *ApplicationSettingsDefaultBranchProtectionDefaults)
 	ResetAbuseNotificationEmail()
 	ResetAdminMode()
 	ResetAfterSignOutPath()
 	ResetAfterSignUpText()
 	ResetAkismetApiKey()
 	ResetAkismetEnabled()
+	ResetAllowAccountDeletion()
 	ResetAllowGroupOwnersToManageLdap()
 	ResetAllowLocalRequestsFromSystemHooks()
 	ResetAllowLocalRequestsFromWebHooksAndServices()
+	ResetAllowProjectCreationForGuestAndBelow()
+	ResetAllowRunnerRegistrationToken()
 	ResetArchiveBuildsInHumanReadable()
+	ResetAsciidocMaxIncludes()
 	ResetAssetProxyAllowlist()
 	ResetAssetProxyEnabled()
 	ResetAssetProxySecretKey()
 	ResetAssetProxyUrl()
 	ResetAuthorizedKeysEnabled()
+	ResetAutoBanUserOnExcessiveProjectsDownload()
 	ResetAutoDevopsDomain()
 	ResetAutoDevopsEnabled()
 	ResetAutomaticPurchasedStorageAllocation()
+	ResetBulkImportConcurrentPipelineBatchLimit()
+	ResetBulkImportEnabled()
+	ResetBulkImportMaxDownloadFileSize()
 	ResetCanCreateGroup()
 	ResetCheckNamespacePlan()
+	ResetCiMaxIncludes()
+	ResetCiMaxTotalYamlSizeBytes()
 	ResetCommitEmailHostname()
+	ResetConcurrentBitbucketImportJobsLimit()
+	ResetConcurrentBitbucketServerImportJobsLimit()
+	ResetConcurrentGithubImportJobsLimit()
 	ResetContainerExpirationPoliciesEnableHistoricEntries()
 	ResetContainerRegistryCleanupTagsServiceMaxListSize()
 	ResetContainerRegistryDeleteTagsServiceTimeout()
@@ -864,27 +952,39 @@ type ApplicationSettings interface {
 	ResetContainerRegistryExpirationPoliciesWorkerCapacity()
 	ResetContainerRegistryTokenExpireDelay()
 	ResetDeactivateDormantUsers()
+	ResetDeactivateDormantUsersPeriod()
+	ResetDecompressArchiveFileTimeout()
 	ResetDefaultArtifactsExpireIn()
 	ResetDefaultBranchName()
 	ResetDefaultBranchProtection()
+	ResetDefaultBranchProtectionDefaults()
 	ResetDefaultCiConfigPath()
 	ResetDefaultGroupVisibility()
+	ResetDefaultPreferredLanguage()
 	ResetDefaultProjectCreation()
 	ResetDefaultProjectsLimit()
 	ResetDefaultProjectVisibility()
 	ResetDefaultSnippetVisibility()
+	ResetDefaultSyntaxHighlightingTheme()
 	ResetDeleteInactiveProjects()
+	ResetDeleteUnconfirmedUsers()
 	ResetDeletionAdjournedPeriod()
+	ResetDiagramsnetEnabled()
+	ResetDiagramsnetUrl()
 	ResetDiffMaxFiles()
 	ResetDiffMaxLines()
 	ResetDiffMaxPatchBytes()
+	ResetDisableAdminOauthScopes()
 	ResetDisabledOauthSignInSources()
 	ResetDisableFeedToken()
+	ResetDisablePersonalAccessTokens()
 	ResetDnsRebindingProtectionEnabled()
 	ResetDomainAllowlist()
 	ResetDomainDenylist()
 	ResetDomainDenylistEnabled()
+	ResetDownstreamPipelineTriggerLimitPerProjectUserSha()
 	ResetDsaKeyRestriction()
+	ResetDuoFeaturesEnabled()
 	ResetEcdsaKeyRestriction()
 	ResetEcdsaSkKeyRestriction()
 	ResetEd25519KeyRestriction()
@@ -1221,6 +1321,26 @@ func (j *jsiiProxy_ApplicationSettings) AkismetEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) AllowAccountDeletion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAccountDeletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AllowAccountDeletionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAccountDeletionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) AllowGroupOwnersToManageLdap() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1281,6 +1401,46 @@ func (j *jsiiProxy_ApplicationSettings) AllowLocalRequestsFromWebHooksAndService
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) AllowProjectCreationForGuestAndBelow() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowProjectCreationForGuestAndBelow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AllowProjectCreationForGuestAndBelowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowProjectCreationForGuestAndBelowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AllowRunnerRegistrationToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowRunnerRegistrationToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AllowRunnerRegistrationTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowRunnerRegistrationTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) ArchiveBuildsInHumanReadable() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1296,6 +1456,26 @@ func (j *jsiiProxy_ApplicationSettings) ArchiveBuildsInHumanReadableInput() *str
 	_jsii_.Get(
 		j,
 		"archiveBuildsInHumanReadableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AsciidocMaxIncludes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asciidocMaxIncludes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AsciidocMaxIncludesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asciidocMaxIncludesInput",
 		&returns,
 	)
 	return returns
@@ -1401,6 +1581,26 @@ func (j *jsiiProxy_ApplicationSettings) AuthorizedKeysEnabledInput() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) AutoBanUserOnExcessiveProjectsDownload() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoBanUserOnExcessiveProjectsDownload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) AutoBanUserOnExcessiveProjectsDownloadInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoBanUserOnExcessiveProjectsDownloadInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) AutoDevopsDomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1461,6 +1661,66 @@ func (j *jsiiProxy_ApplicationSettings) AutomaticPurchasedStorageAllocationInput
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) BulkImportConcurrentPipelineBatchLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bulkImportConcurrentPipelineBatchLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) BulkImportConcurrentPipelineBatchLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bulkImportConcurrentPipelineBatchLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) BulkImportEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bulkImportEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) BulkImportEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bulkImportEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) BulkImportMaxDownloadFileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bulkImportMaxDownloadFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) BulkImportMaxDownloadFileSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bulkImportMaxDownloadFileSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) CanCreateGroup() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1511,6 +1771,46 @@ func (j *jsiiProxy_ApplicationSettings) CheckNamespacePlanInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) CiMaxIncludes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciMaxIncludes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) CiMaxIncludesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciMaxIncludesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) CiMaxTotalYamlSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciMaxTotalYamlSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) CiMaxTotalYamlSizeBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciMaxTotalYamlSizeBytesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) CommitEmailHostname() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1526,6 +1826,66 @@ func (j *jsiiProxy_ApplicationSettings) CommitEmailHostnameInput() *string {
 	_jsii_.Get(
 		j,
 		"commitEmailHostnameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentBitbucketImportJobsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentBitbucketImportJobsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentBitbucketImportJobsLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentBitbucketImportJobsLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentBitbucketServerImportJobsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentBitbucketServerImportJobsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentBitbucketServerImportJobsLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentBitbucketServerImportJobsLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentGithubImportJobsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentGithubImportJobsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ConcurrentGithubImportJobsLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentGithubImportJobsLimitInput",
 		&returns,
 	)
 	return returns
@@ -1701,6 +2061,46 @@ func (j *jsiiProxy_ApplicationSettings) DeactivateDormantUsersInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) DeactivateDormantUsersPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deactivateDormantUsersPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DeactivateDormantUsersPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deactivateDormantUsersPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DecompressArchiveFileTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"decompressArchiveFileTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DecompressArchiveFileTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"decompressArchiveFileTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) DefaultArtifactsExpireIn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1751,6 +2151,26 @@ func (j *jsiiProxy_ApplicationSettings) DefaultBranchProtection() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) DefaultBranchProtectionDefaults() ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference {
+	var returns ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"defaultBranchProtectionDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DefaultBranchProtectionDefaultsInput() *ApplicationSettingsDefaultBranchProtectionDefaults {
+	var returns *ApplicationSettingsDefaultBranchProtectionDefaults
+	_jsii_.Get(
+		j,
+		"defaultBranchProtectionDefaultsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) DefaultBranchProtectionInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1796,6 +2216,26 @@ func (j *jsiiProxy_ApplicationSettings) DefaultGroupVisibilityInput() *string {
 	_jsii_.Get(
 		j,
 		"defaultGroupVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DefaultPreferredLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultPreferredLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DefaultPreferredLanguageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultPreferredLanguageInput",
 		&returns,
 	)
 	return returns
@@ -1881,6 +2321,26 @@ func (j *jsiiProxy_ApplicationSettings) DefaultSnippetVisibilityInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) DefaultSyntaxHighlightingTheme() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultSyntaxHighlightingTheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DefaultSyntaxHighlightingThemeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultSyntaxHighlightingThemeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) DeleteInactiveProjects() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1896,6 +2356,26 @@ func (j *jsiiProxy_ApplicationSettings) DeleteInactiveProjectsInput() interface{
 	_jsii_.Get(
 		j,
 		"deleteInactiveProjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DeleteUnconfirmedUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteUnconfirmedUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DeleteUnconfirmedUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteUnconfirmedUsersInput",
 		&returns,
 	)
 	return returns
@@ -1926,6 +2406,46 @@ func (j *jsiiProxy_ApplicationSettings) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DiagramsnetEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diagramsnetEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DiagramsnetEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diagramsnetEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DiagramsnetUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diagramsnetUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DiagramsnetUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diagramsnetUrlInput",
 		&returns,
 	)
 	return returns
@@ -1991,6 +2511,26 @@ func (j *jsiiProxy_ApplicationSettings) DiffMaxPatchBytesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) DisableAdminOauthScopes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAdminOauthScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DisableAdminOauthScopesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAdminOauthScopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) DisabledOauthSignInSources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -2026,6 +2566,26 @@ func (j *jsiiProxy_ApplicationSettings) DisableFeedTokenInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableFeedTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DisablePersonalAccessTokens() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePersonalAccessTokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DisablePersonalAccessTokensInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePersonalAccessTokensInput",
 		&returns,
 	)
 	return returns
@@ -2111,6 +2671,26 @@ func (j *jsiiProxy_ApplicationSettings) DomainDenylistInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) DownstreamPipelineTriggerLimitPerProjectUserSha() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"downstreamPipelineTriggerLimitPerProjectUserSha",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DownstreamPipelineTriggerLimitPerProjectUserShaInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"downstreamPipelineTriggerLimitPerProjectUserShaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) DsaKeyRestriction() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -2126,6 +2706,26 @@ func (j *jsiiProxy_ApplicationSettings) DsaKeyRestrictionInput() *float64 {
 	_jsii_.Get(
 		j,
 		"dsaKeyRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DuoFeaturesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"duoFeaturesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) DuoFeaturesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"duoFeaturesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -6142,7 +6742,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6160,7 +6760,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -6237,6 +6837,17 @@ func (j *jsiiProxy_ApplicationSettings)SetAkismetEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetAllowAccountDeletion(val interface{}) {
+	if err := j.validateSetAllowAccountDeletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAccountDeletion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetAllowGroupOwnersToManageLdap(val interface{}) {
 	if err := j.validateSetAllowGroupOwnersToManageLdapParameters(val); err != nil {
 		panic(err)
@@ -6270,6 +6881,28 @@ func (j *jsiiProxy_ApplicationSettings)SetAllowLocalRequestsFromWebHooksAndServi
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetAllowProjectCreationForGuestAndBelow(val interface{}) {
+	if err := j.validateSetAllowProjectCreationForGuestAndBelowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowProjectCreationForGuestAndBelow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetAllowRunnerRegistrationToken(val interface{}) {
+	if err := j.validateSetAllowRunnerRegistrationTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowRunnerRegistrationToken",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetArchiveBuildsInHumanReadable(val *string) {
 	if err := j.validateSetArchiveBuildsInHumanReadableParameters(val); err != nil {
 		panic(err)
@@ -6277,6 +6910,17 @@ func (j *jsiiProxy_ApplicationSettings)SetArchiveBuildsInHumanReadable(val *stri
 	_jsii_.Set(
 		j,
 		"archiveBuildsInHumanReadable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetAsciidocMaxIncludes(val *float64) {
+	if err := j.validateSetAsciidocMaxIncludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"asciidocMaxIncludes",
 		val,
 	)
 }
@@ -6336,6 +6980,17 @@ func (j *jsiiProxy_ApplicationSettings)SetAuthorizedKeysEnabled(val interface{})
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetAutoBanUserOnExcessiveProjectsDownload(val interface{}) {
+	if err := j.validateSetAutoBanUserOnExcessiveProjectsDownloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoBanUserOnExcessiveProjectsDownload",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetAutoDevopsDomain(val *string) {
 	if err := j.validateSetAutoDevopsDomainParameters(val); err != nil {
 		panic(err)
@@ -6369,6 +7024,39 @@ func (j *jsiiProxy_ApplicationSettings)SetAutomaticPurchasedStorageAllocation(va
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetBulkImportConcurrentPipelineBatchLimit(val *float64) {
+	if err := j.validateSetBulkImportConcurrentPipelineBatchLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bulkImportConcurrentPipelineBatchLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetBulkImportEnabled(val interface{}) {
+	if err := j.validateSetBulkImportEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bulkImportEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetBulkImportMaxDownloadFileSize(val *float64) {
+	if err := j.validateSetBulkImportMaxDownloadFileSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bulkImportMaxDownloadFileSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetCanCreateGroup(val interface{}) {
 	if err := j.validateSetCanCreateGroupParameters(val); err != nil {
 		panic(err)
@@ -6391,6 +7079,28 @@ func (j *jsiiProxy_ApplicationSettings)SetCheckNamespacePlan(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetCiMaxIncludes(val *float64) {
+	if err := j.validateSetCiMaxIncludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciMaxIncludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetCiMaxTotalYamlSizeBytes(val *float64) {
+	if err := j.validateSetCiMaxTotalYamlSizeBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciMaxTotalYamlSizeBytes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetCommitEmailHostname(val *string) {
 	if err := j.validateSetCommitEmailHostnameParameters(val); err != nil {
 		panic(err)
@@ -6398,6 +7108,39 @@ func (j *jsiiProxy_ApplicationSettings)SetCommitEmailHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"commitEmailHostname",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetConcurrentBitbucketImportJobsLimit(val *float64) {
+	if err := j.validateSetConcurrentBitbucketImportJobsLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrentBitbucketImportJobsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetConcurrentBitbucketServerImportJobsLimit(val *float64) {
+	if err := j.validateSetConcurrentBitbucketServerImportJobsLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrentBitbucketServerImportJobsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetConcurrentGithubImportJobsLimit(val *float64) {
+	if err := j.validateSetConcurrentGithubImportJobsLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrentGithubImportJobsLimit",
 		val,
 	)
 }
@@ -6501,6 +7244,28 @@ func (j *jsiiProxy_ApplicationSettings)SetDeactivateDormantUsers(val interface{}
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetDeactivateDormantUsersPeriod(val *float64) {
+	if err := j.validateSetDeactivateDormantUsersPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deactivateDormantUsersPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDecompressArchiveFileTimeout(val *float64) {
+	if err := j.validateSetDecompressArchiveFileTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"decompressArchiveFileTimeout",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetDefaultArtifactsExpireIn(val *string) {
 	if err := j.validateSetDefaultArtifactsExpireInParameters(val); err != nil {
 		panic(err)
@@ -6556,6 +7321,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDefaultGroupVisibility(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetDefaultPreferredLanguage(val *string) {
+	if err := j.validateSetDefaultPreferredLanguageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultPreferredLanguage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetDefaultProjectCreation(val *float64) {
 	if err := j.validateSetDefaultProjectCreationParameters(val); err != nil {
 		panic(err)
@@ -6600,6 +7376,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDefaultSnippetVisibility(val *string) 
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetDefaultSyntaxHighlightingTheme(val *float64) {
+	if err := j.validateSetDefaultSyntaxHighlightingThemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultSyntaxHighlightingTheme",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetDeleteInactiveProjects(val interface{}) {
 	if err := j.validateSetDeleteInactiveProjectsParameters(val); err != nil {
 		panic(err)
@@ -6607,6 +7394,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDeleteInactiveProjects(val interface{}
 	_jsii_.Set(
 		j,
 		"deleteInactiveProjects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDeleteUnconfirmedUsers(val interface{}) {
+	if err := j.validateSetDeleteUnconfirmedUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteUnconfirmedUsers",
 		val,
 	)
 }
@@ -6626,6 +7424,28 @@ func (j *jsiiProxy_ApplicationSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDiagramsnetEnabled(val interface{}) {
+	if err := j.validateSetDiagramsnetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diagramsnetEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDiagramsnetUrl(val *string) {
+	if err := j.validateSetDiagramsnetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diagramsnetUrl",
 		val,
 	)
 }
@@ -6663,6 +7483,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDiffMaxPatchBytes(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetDisableAdminOauthScopes(val interface{}) {
+	if err := j.validateSetDisableAdminOauthScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAdminOauthScopes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetDisabledOauthSignInSources(val *[]*string) {
 	if err := j.validateSetDisabledOauthSignInSourcesParameters(val); err != nil {
 		panic(err)
@@ -6681,6 +7512,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDisableFeedToken(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableFeedToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDisablePersonalAccessTokens(val interface{}) {
+	if err := j.validateSetDisablePersonalAccessTokensParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disablePersonalAccessTokens",
 		val,
 	)
 }
@@ -6729,6 +7571,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDomainDenylistEnabled(val interface{})
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetDownstreamPipelineTriggerLimitPerProjectUserSha(val *float64) {
+	if err := j.validateSetDownstreamPipelineTriggerLimitPerProjectUserShaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"downstreamPipelineTriggerLimitPerProjectUserSha",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetDsaKeyRestriction(val *float64) {
 	if err := j.validateSetDsaKeyRestrictionParameters(val); err != nil {
 		panic(err)
@@ -6736,6 +7589,17 @@ func (j *jsiiProxy_ApplicationSettings)SetDsaKeyRestriction(val *float64) {
 	_jsii_.Set(
 		j,
 		"dsaKeyRestriction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetDuoFeaturesEnabled(val interface{}) {
+	if err := j.validateSetDuoFeaturesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"duoFeaturesEnabled",
 		val,
 	)
 }
@@ -9276,6 +10140,17 @@ func (a *jsiiProxy_ApplicationSettings) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) PutDefaultBranchProtectionDefaults(value *ApplicationSettingsDefaultBranchProtectionDefaults) {
+	if err := a.validatePutDefaultBranchProtectionDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDefaultBranchProtectionDefaults",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetAbuseNotificationEmail() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9324,6 +10199,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetAkismetEnabled() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetAllowAccountDeletion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowAccountDeletion",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetAllowGroupOwnersToManageLdap() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9348,10 +10231,34 @@ func (a *jsiiProxy_ApplicationSettings) ResetAllowLocalRequestsFromWebHooksAndSe
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetAllowProjectCreationForGuestAndBelow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowProjectCreationForGuestAndBelow",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetAllowRunnerRegistrationToken() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowRunnerRegistrationToken",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetArchiveBuildsInHumanReadable() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetArchiveBuildsInHumanReadable",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetAsciidocMaxIncludes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAsciidocMaxIncludes",
 		nil, // no parameters
 	)
 }
@@ -9396,6 +10303,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetAuthorizedKeysEnabled() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetAutoBanUserOnExcessiveProjectsDownload() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoBanUserOnExcessiveProjectsDownload",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetAutoDevopsDomain() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9420,6 +10335,30 @@ func (a *jsiiProxy_ApplicationSettings) ResetAutomaticPurchasedStorageAllocation
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetBulkImportConcurrentPipelineBatchLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBulkImportConcurrentPipelineBatchLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetBulkImportEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBulkImportEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetBulkImportMaxDownloadFileSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBulkImportMaxDownloadFileSize",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetCanCreateGroup() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9436,10 +10375,50 @@ func (a *jsiiProxy_ApplicationSettings) ResetCheckNamespacePlan() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetCiMaxIncludes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCiMaxIncludes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetCiMaxTotalYamlSizeBytes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCiMaxTotalYamlSizeBytes",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetCommitEmailHostname() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCommitEmailHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetConcurrentBitbucketImportJobsLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConcurrentBitbucketImportJobsLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetConcurrentBitbucketServerImportJobsLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConcurrentBitbucketServerImportJobsLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetConcurrentGithubImportJobsLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConcurrentGithubImportJobsLimit",
 		nil, // no parameters
 	)
 }
@@ -9500,6 +10479,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetDeactivateDormantUsers() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDeactivateDormantUsersPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeactivateDormantUsersPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDecompressArchiveFileTimeout() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDecompressArchiveFileTimeout",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDefaultArtifactsExpireIn() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9524,6 +10519,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetDefaultBranchProtection() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDefaultBranchProtectionDefaults() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultBranchProtectionDefaults",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDefaultCiConfigPath() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9536,6 +10539,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetDefaultGroupVisibility() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDefaultGroupVisibility",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDefaultPreferredLanguage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultPreferredLanguage",
 		nil, // no parameters
 	)
 }
@@ -9572,6 +10583,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetDefaultSnippetVisibility() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDefaultSyntaxHighlightingTheme() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultSyntaxHighlightingTheme",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDeleteInactiveProjects() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9580,10 +10599,34 @@ func (a *jsiiProxy_ApplicationSettings) ResetDeleteInactiveProjects() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDeleteUnconfirmedUsers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeleteUnconfirmedUsers",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDeletionAdjournedPeriod() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDeletionAdjournedPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDiagramsnetEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDiagramsnetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDiagramsnetUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDiagramsnetUrl",
 		nil, // no parameters
 	)
 }
@@ -9612,6 +10655,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetDiffMaxPatchBytes() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDisableAdminOauthScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableAdminOauthScopes",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDisabledOauthSignInSources() {
 	_jsii_.InvokeVoid(
 		a,
@@ -9624,6 +10675,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetDisableFeedToken() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDisableFeedToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDisablePersonalAccessTokens() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisablePersonalAccessTokens",
 		nil, // no parameters
 	)
 }
@@ -9660,10 +10719,26 @@ func (a *jsiiProxy_ApplicationSettings) ResetDomainDenylistEnabled() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetDownstreamPipelineTriggerLimitPerProjectUserSha() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDownstreamPipelineTriggerLimitPerProjectUserSha",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetDsaKeyRestriction() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDsaKeyRestriction",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetDuoFeaturesEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDuoFeaturesEnabled",
 		nil, // no parameters
 	)
 }

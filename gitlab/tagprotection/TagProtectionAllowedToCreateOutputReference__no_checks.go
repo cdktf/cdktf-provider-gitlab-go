@@ -51,6 +51,10 @@ func (t *jsiiProxy_TagProtectionAllowedToCreateOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_TagProtectionAllowedToCreateOutputReference) validateSetAccessLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagProtectionAllowedToCreateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

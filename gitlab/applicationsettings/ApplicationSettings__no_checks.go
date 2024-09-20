@@ -75,6 +75,10 @@ func (a *jsiiProxy_ApplicationSettings) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationSettings) validatePutDefaultBranchProtectionDefaultsParameters(value *ApplicationSettingsDefaultBranchProtectionDefaults) error {
+	return nil
+}
+
 func validateApplicationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -115,6 +119,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAkismetEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowAccountDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetAllowGroupOwnersToManageLdapParameters(val interface{}) error {
 	return nil
 }
@@ -127,7 +135,19 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAllowLocalRequestsFromWebHook
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowProjectCreationForGuestAndBelowParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowRunnerRegistrationTokenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetArchiveBuildsInHumanReadableParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetAsciidocMaxIncludesParameters(val *float64) error {
 	return nil
 }
 
@@ -151,6 +171,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAuthorizedKeysEnabledParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAutoBanUserOnExcessiveProjectsDownloadParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetAutoDevopsDomainParameters(val *string) error {
 	return nil
 }
@@ -163,6 +187,18 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAutomaticPurchasedStorageAllo
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportConcurrentPipelineBatchLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportMaxDownloadFileSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetCanCreateGroupParameters(val interface{}) error {
 	return nil
 }
@@ -171,7 +207,27 @@ func (j *jsiiProxy_ApplicationSettings) validateSetCheckNamespacePlanParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetCiMaxIncludesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetCiMaxTotalYamlSizeBytesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetCommitEmailHostnameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentBitbucketImportJobsLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentBitbucketServerImportJobsLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentGithubImportJobsLimitParameters(val *float64) error {
 	return nil
 }
 
@@ -211,6 +267,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDeactivateDormantUsersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDeactivateDormantUsersPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDecompressArchiveFileTimeoutParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDefaultArtifactsExpireInParameters(val *string) error {
 	return nil
 }
@@ -231,6 +295,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDefaultGroupVisibilityParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDefaultPreferredLanguageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDefaultProjectCreationParameters(val *float64) error {
 	return nil
 }
@@ -247,11 +315,27 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDefaultSnippetVisibilityParam
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDefaultSyntaxHighlightingThemeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDeleteInactiveProjectsParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDeleteUnconfirmedUsersParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDeletionAdjournedPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDiagramsnetEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDiagramsnetUrlParameters(val *string) error {
 	return nil
 }
 
@@ -267,11 +351,19 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDiffMaxPatchBytesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDisableAdminOauthScopesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDisabledOauthSignInSourcesParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetDisableFeedTokenParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDisablePersonalAccessTokensParameters(val interface{}) error {
 	return nil
 }
 
@@ -291,7 +383,15 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDomainDenylistEnabledParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDownstreamPipelineTriggerLimitPerProjectUserShaParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDsaKeyRestrictionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDuoFeaturesEnabledParameters(val interface{}) error {
 	return nil
 }
 

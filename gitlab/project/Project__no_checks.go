@@ -371,6 +371,10 @@ func (j *jsiiProxy_Project) validateSetPipelinesEnabledParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetPreReceiveSecretDetectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetPrintingMergeRequestLinkEnabledParameters(val interface{}) error {
 	return nil
 }

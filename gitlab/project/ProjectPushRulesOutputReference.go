@@ -65,6 +65,9 @@ type ProjectPushRulesOutputReference interface {
 	PreventSecrets() interface{}
 	SetPreventSecrets(val interface{})
 	PreventSecretsInput() interface{}
+	RejectNonDcoCommits() interface{}
+	SetRejectNonDcoCommits(val interface{})
+	RejectNonDcoCommitsInput() interface{}
 	RejectUnsignedCommits() interface{}
 	SetRejectUnsignedCommits(val interface{})
 	RejectUnsignedCommitsInput() interface{}
@@ -111,6 +114,7 @@ type ProjectPushRulesOutputReference interface {
 	ResetMaxFileSize()
 	ResetMemberCheck()
 	ResetPreventSecrets()
+	ResetRejectNonDcoCommits()
 	ResetRejectUnsignedCommits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -397,6 +401,26 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) PreventSecretsInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_ProjectPushRulesOutputReference) RejectNonDcoCommits() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectPushRulesOutputReference) RejectNonDcoCommitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectPushRulesOutputReference) RejectUnsignedCommits() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -615,6 +639,17 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference)SetPreventSecrets(val interfa
 	_jsii_.Set(
 		j,
 		"preventSecrets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectPushRulesOutputReference)SetRejectNonDcoCommits(val interface{}) {
+	if err := j.validateSetRejectNonDcoCommitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rejectNonDcoCommits",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) ResetPreventSecrets() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPreventSecrets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectPushRulesOutputReference) ResetRejectNonDcoCommits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRejectNonDcoCommits",
 		nil, // no parameters
 	)
 }

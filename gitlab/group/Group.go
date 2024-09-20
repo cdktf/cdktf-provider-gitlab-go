@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -39,6 +39,8 @@ type Group interface {
 	SetCount(val interface{})
 	DefaultBranchProtection() *float64
 	SetDefaultBranchProtection(val *float64)
+	DefaultBranchProtectionDefaults() GroupDefaultBranchProtectionDefaultsOutputReference
+	DefaultBranchProtectionDefaultsInput() *GroupDefaultBranchProtectionDefaults
 	DefaultBranchProtectionInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -192,11 +194,13 @@ type Group interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultBranchProtectionDefaults(value *GroupDefaultBranchProtectionDefaults)
 	PutPushRules(value *GroupPushRules)
 	ResetAutoDevopsEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
 	ResetDefaultBranchProtection()
+	ResetDefaultBranchProtectionDefaults()
 	ResetDescription()
 	ResetEmailsEnabled()
 	ResetExtraSharedRunnersMinutesLimit()
@@ -355,6 +359,26 @@ func (j *jsiiProxy_Group) DefaultBranchProtection() *float64 {
 	_jsii_.Get(
 		j,
 		"defaultBranchProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) DefaultBranchProtectionDefaults() GroupDefaultBranchProtectionDefaultsOutputReference {
+	var returns GroupDefaultBranchProtectionDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"defaultBranchProtectionDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) DefaultBranchProtectionDefaultsInput() *GroupDefaultBranchProtectionDefaults {
+	var returns *GroupDefaultBranchProtectionDefaults
+	_jsii_.Get(
+		j,
+		"defaultBranchProtectionDefaultsInput",
 		&returns,
 	)
 	return returns
@@ -1011,7 +1035,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -1029,7 +1053,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1758,6 +1782,17 @@ func (g *jsiiProxy_Group) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_Group) PutDefaultBranchProtectionDefaults(value *GroupDefaultBranchProtectionDefaults) {
+	if err := g.validatePutDefaultBranchProtectionDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultBranchProtectionDefaults",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_Group) PutPushRules(value *GroupPushRules) {
 	if err := g.validatePutPushRulesParameters(value); err != nil {
 		panic(err)
@@ -1797,6 +1832,14 @@ func (g *jsiiProxy_Group) ResetDefaultBranchProtection() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDefaultBranchProtection",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetDefaultBranchProtectionDefaults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultBranchProtectionDefaults",
 		nil, // no parameters
 	)
 }

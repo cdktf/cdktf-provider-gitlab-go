@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user gitlab_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user gitlab_user}.
 type User interface {
 	cdktf.TerraformResource
 	CanCreateGroup() interface{}
@@ -37,6 +37,12 @@ type User interface {
 	Email() *string
 	SetEmail(val *string)
 	EmailInput() *string
+	ExternalProvider() *string
+	SetExternalProvider(val *string)
+	ExternalProviderInput() *string
+	ExternUid() *string
+	SetExternUid(val *string)
+	ExternUidInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -147,6 +153,8 @@ type User interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCanCreateGroup()
+	ResetExternalProvider()
+	ResetExternUid()
 	ResetId()
 	ResetIsAdmin()
 	ResetIsExternal()
@@ -263,6 +271,46 @@ func (j *jsiiProxy_User) EmailInput() *string {
 	_jsii_.Get(
 		j,
 		"emailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ExternalProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ExternalProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalProviderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ExternUid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externUid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ExternUidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externUidInput",
 		&returns,
 	)
 	return returns
@@ -619,7 +667,7 @@ func (j *jsiiProxy_User) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user gitlab_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user gitlab_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -637,7 +685,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user gitlab_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user gitlab_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -696,6 +744,28 @@ func (j *jsiiProxy_User)SetEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"email",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetExternalProvider(val *string) {
+	if err := j.validateSetExternalProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalProvider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetExternUid(val *string) {
+	if err := j.validateSetExternUidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externUid",
 		val,
 	)
 }
@@ -1227,6 +1297,22 @@ func (u *jsiiProxy_User) ResetCanCreateGroup() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetCanCreateGroup",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetExternalProvider() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetExternalProvider",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetExternUid() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetExternUid",
 		nil, // no parameters
 	)
 }

@@ -43,6 +43,7 @@ type DataGitlabProjectPushRulesOutputReference interface {
 	MaxFileSize() *float64
 	MemberCheck() cdktf.IResolvable
 	PreventSecrets() cdktf.IResolvable
+	RejectNonDcoCommits() cdktf.IResolvable
 	RejectUnsignedCommits() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -246,6 +247,16 @@ func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) PreventSecrets() c
 	_jsii_.Get(
 		j,
 		"preventSecrets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectPushRulesOutputReference) RejectNonDcoCommits() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommits",
 		&returns,
 	)
 	return returns

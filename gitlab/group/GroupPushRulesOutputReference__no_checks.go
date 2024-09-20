@@ -107,6 +107,10 @@ func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetPreventSecretsParam
 	return nil
 }
 
+func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetRejectNonDcoCommitsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupPushRulesOutputReference) validateSetRejectUnsignedCommitsParameters(val interface{}) error {
 	return nil
 }

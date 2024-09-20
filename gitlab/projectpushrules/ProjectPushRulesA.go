@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules}.
 type ProjectPushRulesA interface {
 	cdktf.TerraformResource
 	AuthorEmailRegex() *string
@@ -92,6 +92,9 @@ type ProjectPushRulesA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RejectNonDcoCommits() interface{}
+	SetRejectNonDcoCommits(val interface{})
+	RejectNonDcoCommitsInput() interface{}
 	RejectUnsignedCommits() interface{}
 	SetRejectUnsignedCommits(val interface{})
 	RejectUnsignedCommitsInput() interface{}
@@ -158,6 +161,7 @@ type ProjectPushRulesA interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreventSecrets()
+	ResetRejectNonDcoCommits()
 	ResetRejectUnsignedCommits()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -557,6 +561,26 @@ func (j *jsiiProxy_ProjectPushRulesA) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectPushRulesA) RejectNonDcoCommits() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectPushRulesA) RejectNonDcoCommitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectPushRulesA) RejectUnsignedCommits() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -608,7 +632,7 @@ func (j *jsiiProxy_ProjectPushRulesA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA(scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) ProjectPushRulesA {
 	_init_.Initialize()
 
@@ -626,7 +650,7 @@ func NewProjectPushRulesA(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA_Override(p ProjectPushRulesA, scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) {
 	_init_.Initialize()
 
@@ -833,6 +857,17 @@ func (j *jsiiProxy_ProjectPushRulesA)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectPushRulesA)SetRejectNonDcoCommits(val interface{}) {
+	if err := j.validateSetRejectNonDcoCommitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rejectNonDcoCommits",
 		val,
 	)
 }
@@ -1293,6 +1328,14 @@ func (p *jsiiProxy_ProjectPushRulesA) ResetPreventSecrets() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPreventSecrets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectPushRulesA) ResetRejectNonDcoCommits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRejectNonDcoCommits",
 		nil, // no parameters
 	)
 }

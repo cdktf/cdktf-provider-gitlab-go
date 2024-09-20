@@ -155,6 +155,10 @@ func (j *jsiiProxy_ProjectPushRulesA) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_ProjectPushRulesA) validateSetRejectNonDcoCommitsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectPushRulesA) validateSetRejectUnsignedCommitsParameters(val interface{}) error {
 	return nil
 }

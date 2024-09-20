@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection}.
 type TagProtection interface {
 	cdktf.TerraformResource
 	AllowedToCreate() TagProtectionAllowedToCreateList
@@ -45,8 +45,6 @@ type TagProtection interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -120,7 +118,7 @@ type TagProtection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAllowedToCreate(value interface{})
 	ResetAllowedToCreate()
-	ResetId()
+	ResetCreateAccessLevel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -272,16 +270,6 @@ func (j *jsiiProxy_TagProtection) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TagProtection) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TagProtection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -403,7 +391,7 @@ func (j *jsiiProxy_TagProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection(scope constructs.Construct, id *string, config *TagProtectionConfig) TagProtection {
 	_init_.Initialize()
 
@@ -421,7 +409,7 @@ func NewTagProtection(scope constructs.Construct, id *string, config *TagProtect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection_Override(t TagProtection, scope constructs.Construct, id *string, config *TagProtectionConfig) {
 	_init_.Initialize()
 
@@ -477,17 +465,6 @@ func (j *jsiiProxy_TagProtection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TagProtection)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -916,10 +893,10 @@ func (t *jsiiProxy_TagProtection) ResetAllowedToCreate() {
 	)
 }
 
-func (t *jsiiProxy_TagProtection) ResetId() {
+func (t *jsiiProxy_TagProtection) ResetCreateAccessLevel() {
 	_jsii_.InvokeVoid(
 		t,
-		"resetId",
+		"resetCreateAccessLevel",
 		nil, // no parameters
 	)
 }

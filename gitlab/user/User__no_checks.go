@@ -107,6 +107,14 @@ func (j *jsiiProxy_User) validateSetEmailParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetExternalProviderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_User) validateSetExternUidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetIdParameters(val *string) error {
 	return nil
 }

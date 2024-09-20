@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs gitlab}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab}.
 type GitlabProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -50,6 +50,9 @@ type GitlabProvider interface {
 	Node() constructs.Node
 	// Experimental.
 	RawOverrides() interface{}
+	Retries() *float64
+	SetRetries(val *float64)
+	RetriesInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -74,6 +77,7 @@ type GitlabProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetries()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -303,6 +307,26 @@ func (j *jsiiProxy_GitlabProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GitlabProvider) Retries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) RetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GitlabProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -354,7 +378,7 @@ func (j *jsiiProxy_GitlabProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab} Resource.
 func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabProviderConfig) GitlabProvider {
 	_init_.Initialize()
 
@@ -372,7 +396,7 @@ func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab} Resource.
 func NewGitlabProvider_Override(g GitlabProvider, scope constructs.Construct, id *string, config *GitlabProviderConfig) {
 	_init_.Initialize()
 
@@ -441,6 +465,14 @@ func (j *jsiiProxy_GitlabProvider)SetInsecure(val interface{}) {
 	_jsii_.Set(
 		j,
 		"insecure",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitlabProvider)SetRetries(val *float64) {
+	_jsii_.Set(
+		j,
+		"retries",
 		val,
 	)
 }
@@ -638,6 +670,14 @@ func (g *jsiiProxy_GitlabProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitlabProvider) ResetRetries() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetries",
 		nil, // no parameters
 	)
 }

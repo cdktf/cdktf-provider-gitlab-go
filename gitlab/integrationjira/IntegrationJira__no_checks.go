@@ -115,15 +115,27 @@ func (j *jsiiProxy_IntegrationJira) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationJira) validateSetIssuesEventsParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationJira) validateSetIssuesEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationJira) validateSetJiraAuthTypeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationJira) validateSetJiraIssuePrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationJira) validateSetJiraIssueRegexParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationJira) validateSetJiraIssueTransitionAutomaticParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_IntegrationJira) validateSetJiraIssueTransitionIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_IntegrationJira) validateSetJobEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -135,15 +147,7 @@ func (j *jsiiProxy_IntegrationJira) validateSetMergeRequestsEventsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationJira) validateSetNoteEventsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationJira) validateSetPasswordParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_IntegrationJira) validateSetPipelineEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -155,19 +159,19 @@ func (j *jsiiProxy_IntegrationJira) validateSetProjectKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationJira) validateSetProjectKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationJira) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationJira) validateSetPushEventsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_IntegrationJira) validateSetTagPushEventsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationJira) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationJira) validateSetUseInheritedSettingsParameters(val interface{}) error {
 	return nil
 }
 

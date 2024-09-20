@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -243,6 +243,9 @@ type Project interface {
 	PipelinesEnabled() interface{}
 	SetPipelinesEnabled(val interface{})
 	PipelinesEnabledInput() interface{}
+	PreReceiveSecretDetectionEnabled() interface{}
+	SetPreReceiveSecretDetectionEnabled(val interface{})
+	PreReceiveSecretDetectionEnabledInput() interface{}
 	PrintingMergeRequestLinkEnabled() interface{}
 	SetPrintingMergeRequestLinkEnabled(val interface{})
 	PrintingMergeRequestLinkEnabledInput() interface{}
@@ -460,6 +463,7 @@ type Project interface {
 	ResetPagesAccessLevel()
 	ResetPath()
 	ResetPipelinesEnabled()
+	ResetPreReceiveSecretDetectionEnabled()
 	ResetPrintingMergeRequestLinkEnabled()
 	ResetPublicBuilds()
 	ResetPublicJobs()
@@ -1947,6 +1951,26 @@ func (j *jsiiProxy_Project) PipelinesEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) PreReceiveSecretDetectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preReceiveSecretDetectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) PreReceiveSecretDetectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preReceiveSecretDetectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) PrintingMergeRequestLinkEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2618,7 +2642,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2636,7 +2660,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3396,6 +3420,17 @@ func (j *jsiiProxy_Project)SetPipelinesEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"pipelinesEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetPreReceiveSecretDetectionEnabled(val interface{}) {
+	if err := j.validateSetPreReceiveSecretDetectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preReceiveSecretDetectionEnabled",
 		val,
 	)
 }
@@ -4618,6 +4653,14 @@ func (p *jsiiProxy_Project) ResetPipelinesEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPipelinesEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetPreReceiveSecretDetectionEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreReceiveSecretDetectionEnabled",
 		nil, // no parameters
 	)
 }

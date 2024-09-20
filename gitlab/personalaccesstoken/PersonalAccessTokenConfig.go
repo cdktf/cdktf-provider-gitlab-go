@@ -24,21 +24,21 @@ type PersonalAccessTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the personal access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/personal_access_token#name PersonalAccessToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The scopes of the personal access token.
 	//
 	// valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_service_ping`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`
 	// When the token will expire, YYYY-MM-DD format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
 }
 

@@ -254,6 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
 			_jsii_.MemberProperty{JsiiProperty: "memberCheck", GoGetter: "MemberCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "preventSecrets", GoGetter: "PreventSecrets"},
+			_jsii_.MemberProperty{JsiiProperty: "rejectNonDcoCommits", GoGetter: "RejectNonDcoCommits"},
 			_jsii_.MemberProperty{JsiiProperty: "rejectUnsignedCommits", GoGetter: "RejectUnsignedCommits"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

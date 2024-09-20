@@ -65,6 +65,9 @@ type GroupPushRulesOutputReference interface {
 	PreventSecrets() interface{}
 	SetPreventSecrets(val interface{})
 	PreventSecretsInput() interface{}
+	RejectNonDcoCommits() interface{}
+	SetRejectNonDcoCommits(val interface{})
+	RejectNonDcoCommitsInput() interface{}
 	RejectUnsignedCommits() interface{}
 	SetRejectUnsignedCommits(val interface{})
 	RejectUnsignedCommitsInput() interface{}
@@ -111,6 +114,7 @@ type GroupPushRulesOutputReference interface {
 	ResetMaxFileSize()
 	ResetMemberCheck()
 	ResetPreventSecrets()
+	ResetRejectNonDcoCommits()
 	ResetRejectUnsignedCommits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -397,6 +401,26 @@ func (j *jsiiProxy_GroupPushRulesOutputReference) PreventSecretsInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_GroupPushRulesOutputReference) RejectNonDcoCommits() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupPushRulesOutputReference) RejectNonDcoCommitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectNonDcoCommitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupPushRulesOutputReference) RejectUnsignedCommits() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -615,6 +639,17 @@ func (j *jsiiProxy_GroupPushRulesOutputReference)SetPreventSecrets(val interface
 	_jsii_.Set(
 		j,
 		"preventSecrets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupPushRulesOutputReference)SetRejectNonDcoCommits(val interface{}) {
+	if err := j.validateSetRejectNonDcoCommitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rejectNonDcoCommits",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (g *jsiiProxy_GroupPushRulesOutputReference) ResetPreventSecrets() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPreventSecrets",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupPushRulesOutputReference) ResetRejectNonDcoCommits() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRejectNonDcoCommits",
 		nil, // no parameters
 	)
 }

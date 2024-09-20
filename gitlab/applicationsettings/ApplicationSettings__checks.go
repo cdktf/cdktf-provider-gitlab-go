@@ -207,6 +207,17 @@ func (a *jsiiProxy_ApplicationSettings) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationSettings) validatePutDefaultBranchProtectionDefaultsParameters(value *ApplicationSettingsDefaultBranchProtectionDefaults) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateApplicationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -319,6 +330,26 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAkismetEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowAccountDeletionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetAllowGroupOwnersToManageLdapParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -379,7 +410,55 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAllowLocalRequestsFromWebHook
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowProjectCreationForGuestAndBelowParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetAllowRunnerRegistrationTokenParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetArchiveBuildsInHumanReadableParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetAsciidocMaxIncludesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,6 +530,26 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAuthorizedKeysEnabledParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetAutoBanUserOnExcessiveProjectsDownloadParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetAutoDevopsDomainParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -499,6 +598,42 @@ func (j *jsiiProxy_ApplicationSettings) validateSetAutomaticPurchasedStorageAllo
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportConcurrentPipelineBatchLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetBulkImportMaxDownloadFileSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetCanCreateGroupParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -539,7 +674,47 @@ func (j *jsiiProxy_ApplicationSettings) validateSetCheckNamespacePlanParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetCiMaxIncludesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetCiMaxTotalYamlSizeBytesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetCommitEmailHostnameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentBitbucketImportJobsLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentBitbucketServerImportJobsLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetConcurrentGithubImportJobsLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -729,6 +904,22 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDeactivateDormantUsersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDeactivateDormantUsersPeriodParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDecompressArchiveFileTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDefaultArtifactsExpireInParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -769,6 +960,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDefaultGroupVisibilityParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDefaultPreferredLanguageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDefaultProjectCreationParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -801,6 +1000,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDefaultSnippetVisibilityParam
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDefaultSyntaxHighlightingThemeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDeleteInactiveProjectsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -821,7 +1028,55 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDeleteInactiveProjectsParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDeleteUnconfirmedUsersParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDeletionAdjournedPeriodParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDiagramsnetEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDiagramsnetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -853,6 +1108,26 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDiffMaxPatchBytesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDisableAdminOauthScopesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDisabledOauthSignInSourcesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -862,6 +1137,26 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDisabledOauthSignInSourcesPar
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetDisableFeedTokenParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDisablePersonalAccessTokensParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -937,9 +1232,37 @@ func (j *jsiiProxy_ApplicationSettings) validateSetDomainDenylistEnabledParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetDownstreamPipelineTriggerLimitPerProjectUserShaParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetDsaKeyRestrictionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetDuoFeaturesEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

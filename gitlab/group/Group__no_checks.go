@@ -75,6 +75,10 @@ func (g *jsiiProxy_Group) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (g *jsiiProxy_Group) validatePutDefaultBranchProtectionDefaultsParameters(value *GroupDefaultBranchProtectionDefaults) error {
+	return nil
+}
+
 func (g *jsiiProxy_Group) validatePutPushRulesParameters(value *GroupPushRules) error {
 	return nil
 }

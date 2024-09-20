@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule gitlab_project_approval_rule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
 type ProjectApprovalRule interface {
 	cdktf.TerraformResource
 	AppliesToAllProtectedBranches() interface{}
@@ -79,6 +79,9 @@ type ProjectApprovalRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReportType() *string
+	SetReportType(val *string)
+	ReportTypeInput() *string
 	RuleType() *string
 	SetRuleType(val *string)
 	RuleTypeInput() *string
@@ -142,6 +145,7 @@ type ProjectApprovalRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtectedBranchIds()
+	ResetReportType()
 	ResetRuleType()
 	ResetUserIds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -452,6 +456,26 @@ func (j *jsiiProxy_ProjectApprovalRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectApprovalRule) ReportType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectApprovalRule) ReportTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reportTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectApprovalRule) RuleType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_ProjectApprovalRule) UserIdsInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule(scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) ProjectApprovalRule {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewProjectApprovalRule(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule_Override(p ProjectApprovalRule, scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_ProjectApprovalRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectApprovalRule)SetReportType(val *string) {
+	if err := j.validateSetReportTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reportType",
 		val,
 	)
 }
@@ -1127,6 +1162,14 @@ func (p *jsiiProxy_ProjectApprovalRule) ResetProtectedBranchIds() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProtectedBranchIds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectApprovalRule) ResetReportType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReportType",
 		nil, // no parameters
 	)
 }

@@ -115,15 +115,27 @@ func (j *jsiiProxy_ServiceJira) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ServiceJira) validateSetIssuesEventsParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceJira) validateSetIssuesEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceJira) validateSetJiraAuthTypeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceJira) validateSetJiraIssuePrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceJira) validateSetJiraIssueRegexParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceJira) validateSetJiraIssueTransitionAutomaticParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ServiceJira) validateSetJiraIssueTransitionIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServiceJira) validateSetJobEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -135,15 +147,7 @@ func (j *jsiiProxy_ServiceJira) validateSetMergeRequestsEventsParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ServiceJira) validateSetNoteEventsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ServiceJira) validateSetPasswordParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServiceJira) validateSetPipelineEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -155,19 +159,19 @@ func (j *jsiiProxy_ServiceJira) validateSetProjectKeyParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ServiceJira) validateSetProjectKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceJira) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ServiceJira) validateSetPushEventsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServiceJira) validateSetTagPushEventsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ServiceJira) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServiceJira) validateSetUseInheritedSettingsParameters(val interface{}) error {
 	return nil
 }
 

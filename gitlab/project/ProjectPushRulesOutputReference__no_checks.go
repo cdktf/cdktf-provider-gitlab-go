@@ -107,6 +107,10 @@ func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetPreventSecretsPar
 	return nil
 }
 
+func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetRejectNonDcoCommitsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectPushRulesOutputReference) validateSetRejectUnsignedCommitsParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira gitlab_service_jira}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira gitlab_service_jira}.
 type ServiceJira interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -53,15 +53,24 @@ type ServiceJira interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IssuesEvents() interface{}
-	SetIssuesEvents(val interface{})
-	IssuesEventsInput() interface{}
+	IssuesEnabled() interface{}
+	SetIssuesEnabled(val interface{})
+	IssuesEnabledInput() interface{}
+	JiraAuthType() *float64
+	SetJiraAuthType(val *float64)
+	JiraAuthTypeInput() *float64
+	JiraIssuePrefix() *string
+	SetJiraIssuePrefix(val *string)
+	JiraIssuePrefixInput() *string
+	JiraIssueRegex() *string
+	SetJiraIssueRegex(val *string)
+	JiraIssueRegexInput() *string
+	JiraIssueTransitionAutomatic() interface{}
+	SetJiraIssueTransitionAutomatic(val interface{})
+	JiraIssueTransitionAutomaticInput() interface{}
 	JiraIssueTransitionId() *string
 	SetJiraIssueTransitionId(val *string)
 	JiraIssueTransitionIdInput() *string
-	JobEvents() interface{}
-	SetJobEvents(val interface{})
-	JobEventsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,21 +80,18 @@ type ServiceJira interface {
 	MergeRequestsEventsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
-	NoteEvents() interface{}
-	SetNoteEvents(val interface{})
-	NoteEventsInput() interface{}
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
-	PipelineEvents() interface{}
-	SetPipelineEvents(val interface{})
-	PipelineEventsInput() interface{}
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
 	ProjectKey() *string
 	SetProjectKey(val *string)
 	ProjectKeyInput() *string
+	ProjectKeys() *[]*string
+	SetProjectKeys(val *[]*string)
+	ProjectKeysInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -94,14 +100,8 @@ type ServiceJira interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	PushEvents() interface{}
-	SetPushEvents(val interface{})
-	PushEventsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
-	TagPushEvents() interface{}
-	SetTagPushEvents(val interface{})
-	TagPushEventsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,6 +113,9 @@ type ServiceJira interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	UseInheritedSettings() interface{}
+	SetUseInheritedSettings(val interface{})
+	UseInheritedSettingsInput() interface{}
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -163,18 +166,20 @@ type ServiceJira interface {
 	ResetCommentOnEventEnabled()
 	ResetCommitEvents()
 	ResetId()
-	ResetIssuesEvents()
+	ResetIssuesEnabled()
+	ResetJiraAuthType()
+	ResetJiraIssuePrefix()
+	ResetJiraIssueRegex()
+	ResetJiraIssueTransitionAutomatic()
 	ResetJiraIssueTransitionId()
-	ResetJobEvents()
 	ResetMergeRequestsEvents()
-	ResetNoteEvents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPipelineEvents()
 	ResetProjectKey()
-	ResetPushEvents()
-	ResetTagPushEvents()
+	ResetProjectKeys()
+	ResetUseInheritedSettings()
+	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -373,21 +378,101 @@ func (j *jsiiProxy_ServiceJira) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceJira) IssuesEvents() interface{} {
+func (j *jsiiProxy_ServiceJira) IssuesEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"issuesEvents",
+		"issuesEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ServiceJira) IssuesEventsInput() interface{} {
+func (j *jsiiProxy_ServiceJira) IssuesEnabledInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"issuesEventsInput",
+		"issuesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraAuthType() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jiraAuthType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraAuthTypeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jiraAuthTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssuePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraIssuePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssuePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraIssuePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssueRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraIssueRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssueRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraIssueRegexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssueTransitionAutomatic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jiraIssueTransitionAutomatic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) JiraIssueTransitionAutomaticInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jiraIssueTransitionAutomaticInput",
 		&returns,
 	)
 	return returns
@@ -408,26 +493,6 @@ func (j *jsiiProxy_ServiceJira) JiraIssueTransitionIdInput() *string {
 	_jsii_.Get(
 		j,
 		"jiraIssueTransitionIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) JobEvents() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"jobEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) JobEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"jobEventsInput",
 		&returns,
 	)
 	return returns
@@ -473,26 +538,6 @@ func (j *jsiiProxy_ServiceJira) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceJira) NoteEvents() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noteEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) NoteEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"noteEventsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ServiceJira) Password() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,26 +553,6 @@ func (j *jsiiProxy_ServiceJira) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) PipelineEvents() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pipelineEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) PipelineEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pipelineEventsInput",
 		&returns,
 	)
 	return returns
@@ -573,6 +598,26 @@ func (j *jsiiProxy_ServiceJira) ProjectKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceJira) ProjectKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) ProjectKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceJira) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -593,51 +638,11 @@ func (j *jsiiProxy_ServiceJira) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceJira) PushEvents() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pushEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) PushEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pushEventsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ServiceJira) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) TagPushEvents() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tagPushEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceJira) TagPushEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tagPushEventsInput",
 		&returns,
 	)
 	return returns
@@ -713,6 +718,26 @@ func (j *jsiiProxy_ServiceJira) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceJira) UseInheritedSettings() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useInheritedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceJira) UseInheritedSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useInheritedSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceJira) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -734,7 +759,7 @@ func (j *jsiiProxy_ServiceJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira gitlab_service_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira gitlab_service_jira} Resource.
 func NewServiceJira(scope constructs.Construct, id *string, config *ServiceJiraConfig) ServiceJira {
 	_init_.Initialize()
 
@@ -752,7 +777,7 @@ func NewServiceJira(scope constructs.Construct, id *string, config *ServiceJiraC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira gitlab_service_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira gitlab_service_jira} Resource.
 func NewServiceJira_Override(s ServiceJira, scope constructs.Construct, id *string, config *ServiceJiraConfig) {
 	_init_.Initialize()
 
@@ -845,13 +870,57 @@ func (j *jsiiProxy_ServiceJira)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira)SetIssuesEvents(val interface{}) {
-	if err := j.validateSetIssuesEventsParameters(val); err != nil {
+func (j *jsiiProxy_ServiceJira)SetIssuesEnabled(val interface{}) {
+	if err := j.validateSetIssuesEnabledParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"issuesEvents",
+		"issuesEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceJira)SetJiraAuthType(val *float64) {
+	if err := j.validateSetJiraAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraAuthType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceJira)SetJiraIssuePrefix(val *string) {
+	if err := j.validateSetJiraIssuePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraIssuePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceJira)SetJiraIssueRegex(val *string) {
+	if err := j.validateSetJiraIssueRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraIssueRegex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceJira)SetJiraIssueTransitionAutomatic(val interface{}) {
+	if err := j.validateSetJiraIssueTransitionAutomaticParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraIssueTransitionAutomatic",
 		val,
 	)
 }
@@ -863,17 +932,6 @@ func (j *jsiiProxy_ServiceJira)SetJiraIssueTransitionId(val *string) {
 	_jsii_.Set(
 		j,
 		"jiraIssueTransitionId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceJira)SetJobEvents(val interface{}) {
-	if err := j.validateSetJobEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jobEvents",
 		val,
 	)
 }
@@ -900,17 +958,6 @@ func (j *jsiiProxy_ServiceJira)SetMergeRequestsEvents(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira)SetNoteEvents(val interface{}) {
-	if err := j.validateSetNoteEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"noteEvents",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ServiceJira)SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
@@ -918,17 +965,6 @@ func (j *jsiiProxy_ServiceJira)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceJira)SetPipelineEvents(val interface{}) {
-	if err := j.validateSetPipelineEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pipelineEvents",
 		val,
 	)
 }
@@ -955,6 +991,17 @@ func (j *jsiiProxy_ServiceJira)SetProjectKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ServiceJira)SetProjectKeys(val *[]*string) {
+	if err := j.validateSetProjectKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServiceJira)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -974,28 +1021,6 @@ func (j *jsiiProxy_ServiceJira)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceJira)SetPushEvents(val interface{}) {
-	if err := j.validateSetPushEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pushEvents",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceJira)SetTagPushEvents(val interface{}) {
-	if err := j.validateSetTagPushEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagPushEvents",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ServiceJira)SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
@@ -1003,6 +1028,17 @@ func (j *jsiiProxy_ServiceJira)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceJira)SetUseInheritedSettings(val interface{}) {
+	if err := j.validateSetUseInheritedSettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useInheritedSettings",
 		val,
 	)
 }
@@ -1403,10 +1439,42 @@ func (s *jsiiProxy_ServiceJira) ResetId() {
 	)
 }
 
-func (s *jsiiProxy_ServiceJira) ResetIssuesEvents() {
+func (s *jsiiProxy_ServiceJira) ResetIssuesEnabled() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetIssuesEvents",
+		"resetIssuesEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceJira) ResetJiraAuthType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJiraAuthType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceJira) ResetJiraIssuePrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJiraIssuePrefix",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceJira) ResetJiraIssueRegex() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJiraIssueRegex",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceJira) ResetJiraIssueTransitionAutomatic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJiraIssueTransitionAutomatic",
 		nil, // no parameters
 	)
 }
@@ -1419,26 +1487,10 @@ func (s *jsiiProxy_ServiceJira) ResetJiraIssueTransitionId() {
 	)
 }
 
-func (s *jsiiProxy_ServiceJira) ResetJobEvents() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetJobEvents",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_ServiceJira) ResetMergeRequestsEvents() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMergeRequestsEvents",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServiceJira) ResetNoteEvents() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetNoteEvents",
 		nil, // no parameters
 	)
 }
@@ -1451,14 +1503,6 @@ func (s *jsiiProxy_ServiceJira) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_ServiceJira) ResetPipelineEvents() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPipelineEvents",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_ServiceJira) ResetProjectKey() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1467,18 +1511,26 @@ func (s *jsiiProxy_ServiceJira) ResetProjectKey() {
 	)
 }
 
-func (s *jsiiProxy_ServiceJira) ResetPushEvents() {
+func (s *jsiiProxy_ServiceJira) ResetProjectKeys() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetPushEvents",
+		"resetProjectKeys",
 		nil, // no parameters
 	)
 }
 
-func (s *jsiiProxy_ServiceJira) ResetTagPushEvents() {
+func (s *jsiiProxy_ServiceJira) ResetUseInheritedSettings() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetTagPushEvents",
+		"resetUseInheritedSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceJira) ResetUsername() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

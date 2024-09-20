@@ -24,62 +24,70 @@ type UserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The e-mail address of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#email User#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#email User#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// The name of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#name User#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#name User#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The username of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#username User#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#username User#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Boolean, defaults to false. Whether to allow the user to create groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#can_create_group User#can_create_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#can_create_group User#can_create_group}
 	CanCreateGroup interface{} `field:"optional" json:"canCreateGroup" yaml:"canCreateGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#id User#id}.
+	// String, the external provider.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#external_provider User#external_provider}
+	ExternalProvider *string `field:"optional" json:"externalProvider" yaml:"externalProvider"`
+	// String, a specific external authentication provider UID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#extern_uid User#extern_uid}
+	ExternUid *string `field:"optional" json:"externUid" yaml:"externUid"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#id User#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Boolean, defaults to false.  Whether to enable administrative privileges.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_admin User#is_admin}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_admin User#is_admin}
 	IsAdmin interface{} `field:"optional" json:"isAdmin" yaml:"isAdmin"`
 	// Boolean, defaults to false.
 	//
 	// Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_external User#is_external}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_external User#is_external}
 	IsExternal interface{} `field:"optional" json:"isExternal" yaml:"isExternal"`
 	// The ID of the user's namespace. Available since GitLab 14.10.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#namespace_id User#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#namespace_id User#namespace_id}
 	NamespaceId *float64 `field:"optional" json:"namespaceId" yaml:"namespaceId"`
 	// The note associated to the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#note User#note}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#note User#note}
 	Note *string `field:"optional" json:"note" yaml:"note"`
 	// The password of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#password User#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#password User#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Integer, defaults to 0.  Number of projects user can create.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#projects_limit User#projects_limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#projects_limit User#projects_limit}
 	ProjectsLimit *float64 `field:"optional" json:"projectsLimit" yaml:"projectsLimit"`
 	// Boolean, defaults to false. Send user password reset link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#reset_password User#reset_password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#reset_password User#reset_password}
 	ResetPassword interface{} `field:"optional" json:"resetPassword" yaml:"resetPassword"`
 	// Boolean, defaults to true. Whether to skip confirmation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#skip_confirmation User#skip_confirmation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#skip_confirmation User#skip_confirmation}
 	SkipConfirmation interface{} `field:"optional" json:"skipConfirmation" yaml:"skipConfirmation"`
 	// String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#state User#state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#state User#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

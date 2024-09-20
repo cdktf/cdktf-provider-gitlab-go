@@ -107,10 +107,6 @@ func (j *jsiiProxy_TagProtection) validateSetCreateAccessLevelParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_TagProtection) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_TagProtection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

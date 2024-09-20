@@ -479,6 +479,14 @@ func (j *jsiiProxy_ProjectApprovalRule) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ProjectApprovalRule) validateSetReportTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProjectApprovalRule) validateSetRuleTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

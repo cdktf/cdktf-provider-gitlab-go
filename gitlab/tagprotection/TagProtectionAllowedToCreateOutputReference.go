@@ -14,7 +14,9 @@ import (
 type TagProtectionAllowedToCreateOutputReference interface {
 	cdktf.ComplexObject
 	AccessLevel() *string
+	SetAccessLevel(val *string)
 	AccessLevelDescription() *string
+	AccessLevelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,6 +74,7 @@ type TagProtectionAllowedToCreateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccessLevel()
 	ResetGroupId()
 	ResetUserId()
 	// Produce the Token's value at resolution time.
@@ -104,6 +107,16 @@ func (j *jsiiProxy_TagProtectionAllowedToCreateOutputReference) AccessLevelDescr
 	_jsii_.Get(
 		j,
 		"accessLevelDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagProtectionAllowedToCreateOutputReference) AccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessLevelInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +257,17 @@ func NewTagProtectionAllowedToCreateOutputReference_Override(t TagProtectionAllo
 		"@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
+	)
+}
+
+func (j *jsiiProxy_TagProtectionAllowedToCreateOutputReference)SetAccessLevel(val *string) {
+	if err := j.validateSetAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessLevel",
+		val,
 	)
 }
 
@@ -508,6 +532,14 @@ func (t *jsiiProxy_TagProtectionAllowedToCreateOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TagProtectionAllowedToCreateOutputReference) ResetAccessLevel() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccessLevel",
+		nil, // no parameters
+	)
 }
 
 func (t *jsiiProxy_TagProtectionAllowedToCreateOutputReference) ResetGroupId() {

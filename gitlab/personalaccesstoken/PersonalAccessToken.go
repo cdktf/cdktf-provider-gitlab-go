@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token gitlab_personal_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 type PersonalAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -65,6 +65,8 @@ type PersonalAccessToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Revoked() cdktf.IResolvable
+	RotationConfiguration() PersonalAccessTokenRotationConfigurationOutputReference
+	RotationConfigurationInput() interface{}
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -121,10 +123,12 @@ type PersonalAccessToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRotationConfiguration(value *PersonalAccessTokenRotationConfiguration)
 	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -353,6 +357,26 @@ func (j *jsiiProxy_PersonalAccessToken) Revoked() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_PersonalAccessToken) RotationConfiguration() PersonalAccessTokenRotationConfigurationOutputReference {
+	var returns PersonalAccessTokenRotationConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"rotationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PersonalAccessToken) RotationConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PersonalAccessToken) Scopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -434,7 +458,7 @@ func (j *jsiiProxy_PersonalAccessToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) PersonalAccessToken {
 	_init_.Initialize()
 
@@ -452,7 +476,7 @@ func NewPersonalAccessToken(scope constructs.Construct, id *string, config *Pers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken_Override(p PersonalAccessToken, scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -928,6 +952,17 @@ func (p *jsiiProxy_PersonalAccessToken) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (p *jsiiProxy_PersonalAccessToken) PutRotationConfiguration(value *PersonalAccessTokenRotationConfiguration) {
+	if err := p.validatePutRotationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRotationConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PersonalAccessToken) ResetExpiresAt() {
 	_jsii_.InvokeVoid(
 		p,
@@ -940,6 +975,14 @@ func (p *jsiiProxy_PersonalAccessToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PersonalAccessToken) ResetRotationConfiguration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRotationConfiguration",
 		nil, // no parameters
 	)
 }

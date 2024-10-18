@@ -425,14 +425,6 @@ func (j *jsiiProxy_ProjectHook) validateSetEnableSslVerificationParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ProjectHook) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ProjectHook) validateSetIssuesEventsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

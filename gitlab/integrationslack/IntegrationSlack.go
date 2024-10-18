@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_slack gitlab_integration_slack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_slack gitlab_integration_slack}.
 type IntegrationSlack interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -895,7 +895,7 @@ func (j *jsiiProxy_IntegrationSlack) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
 func NewIntegrationSlack(scope constructs.Construct, id *string, config *IntegrationSlackConfig) IntegrationSlack {
 	_init_.Initialize()
 
@@ -913,7 +913,7 @@ func NewIntegrationSlack(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_slack gitlab_integration_slack} Resource.
 func NewIntegrationSlack_Override(i IntegrationSlack, scope constructs.Construct, id *string, config *IntegrationSlackConfig) {
 	_init_.Initialize()
 

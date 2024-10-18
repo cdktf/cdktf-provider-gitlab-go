@@ -349,6 +349,7 @@ func init() {
 		reflect.TypeOf((*DataGitlabProjectsProjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowMergeOnSkippedPipeline", GoGetter: "AllowMergeOnSkippedPipeline"},
+			_jsii_.MemberProperty{JsiiProperty: "allowPipelineTriggerApproveDeployment", GoGetter: "AllowPipelineTriggerApproveDeployment"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsAccessLevel", GoGetter: "AnalyticsAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalsBeforeMerge", GoGetter: "ApprovalsBeforeMerge"},
 			_jsii_.MemberProperty{JsiiProperty: "archived", GoGetter: "Archived"},
@@ -422,6 +423,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mirrorOverwritesDivergedBranches", GoGetter: "MirrorOverwritesDivergedBranches"},
 			_jsii_.MemberProperty{JsiiProperty: "mirrorTriggerBuilds", GoGetter: "MirrorTriggerBuilds"},
 			_jsii_.MemberProperty{JsiiProperty: "mirrorUserId", GoGetter: "MirrorUserId"},
+			_jsii_.MemberProperty{JsiiProperty: "modelExperimentsAccessLevel", GoGetter: "ModelExperimentsAccessLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "modelRegistryAccessLevel", GoGetter: "ModelRegistryAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorAccessLevel", GoGetter: "MonitorAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},

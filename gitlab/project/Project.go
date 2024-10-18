@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
 	SetAllowMergeOnSkippedPipeline(val interface{})
 	AllowMergeOnSkippedPipelineInput() interface{}
+	AllowPipelineTriggerApproveDeployment() interface{}
+	SetAllowPipelineTriggerApproveDeployment(val interface{})
+	AllowPipelineTriggerApproveDeploymentInput() interface{}
 	AnalyticsAccessLevel() *string
 	SetAnalyticsAccessLevel(val *string)
 	AnalyticsAccessLevelInput() *string
@@ -207,6 +210,12 @@ type Project interface {
 	MirrorTriggerBuilds() interface{}
 	SetMirrorTriggerBuilds(val interface{})
 	MirrorTriggerBuildsInput() interface{}
+	ModelExperimentsAccessLevel() *string
+	SetModelExperimentsAccessLevel(val *string)
+	ModelExperimentsAccessLevelInput() *string
+	ModelRegistryAccessLevel() *string
+	SetModelRegistryAccessLevel(val *string)
+	ModelRegistryAccessLevelInput() *string
 	MonitorAccessLevel() *string
 	SetMonitorAccessLevel(val *string)
 	MonitorAccessLevelInput() *string
@@ -397,6 +406,7 @@ type Project interface {
 	PutPushRules(value *ProjectPushRules)
 	PutTimeouts(value *ProjectTimeouts)
 	ResetAllowMergeOnSkippedPipeline()
+	ResetAllowPipelineTriggerApproveDeployment()
 	ResetAnalyticsAccessLevel()
 	ResetApprovalsBeforeMerge()
 	ResetArchived()
@@ -450,6 +460,8 @@ type Project interface {
 	ResetMirror()
 	ResetMirrorOverwritesDivergedBranches()
 	ResetMirrorTriggerBuilds()
+	ResetModelExperimentsAccessLevel()
+	ResetModelRegistryAccessLevel()
 	ResetMonitorAccessLevel()
 	ResetMrDefaultTargetSelf()
 	ResetNamespaceId()
@@ -526,6 +538,26 @@ func (j *jsiiProxy_Project) AllowMergeOnSkippedPipelineInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowMergeOnSkippedPipelineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AllowPipelineTriggerApproveDeployment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPipelineTriggerApproveDeployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AllowPipelineTriggerApproveDeploymentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPipelineTriggerApproveDeploymentInput",
 		&returns,
 	)
 	return returns
@@ -1711,6 +1743,46 @@ func (j *jsiiProxy_Project) MirrorTriggerBuildsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) ModelExperimentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelExperimentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ModelExperimentsAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelExperimentsAccessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ModelRegistryAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelRegistryAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ModelRegistryAccessLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelRegistryAccessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) MonitorAccessLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2642,7 +2714,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2660,7 +2732,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2678,6 +2750,17 @@ func (j *jsiiProxy_Project)SetAllowMergeOnSkippedPipeline(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowMergeOnSkippedPipeline",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetAllowPipelineTriggerApproveDeployment(val interface{}) {
+	if err := j.validateSetAllowPipelineTriggerApproveDeploymentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowPipelineTriggerApproveDeployment",
 		val,
 	)
 }
@@ -3299,6 +3382,28 @@ func (j *jsiiProxy_Project)SetMirrorTriggerBuilds(val interface{}) {
 	_jsii_.Set(
 		j,
 		"mirrorTriggerBuilds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetModelExperimentsAccessLevel(val *string) {
+	if err := j.validateSetModelExperimentsAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelExperimentsAccessLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetModelRegistryAccessLevel(val *string) {
+	if err := j.validateSetModelRegistryAccessLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelRegistryAccessLevel",
 		val,
 	)
 }
@@ -4145,6 +4250,14 @@ func (p *jsiiProxy_Project) ResetAllowMergeOnSkippedPipeline() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetAllowPipelineTriggerApproveDeployment() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowPipelineTriggerApproveDeployment",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetAnalyticsAccessLevel() {
 	_jsii_.InvokeVoid(
 		p,
@@ -4565,6 +4678,22 @@ func (p *jsiiProxy_Project) ResetMirrorTriggerBuilds() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMirrorTriggerBuilds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetModelExperimentsAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetModelExperimentsAccessLevel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetModelRegistryAccessLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetModelRegistryAccessLevel",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -306,6 +306,9 @@ type ApplicationSettings interface {
 	ElasticsearchMaxBulkSizeMb() *float64
 	SetElasticsearchMaxBulkSizeMb(val *float64)
 	ElasticsearchMaxBulkSizeMbInput() *float64
+	ElasticsearchMaxCodeIndexingConcurrency() *float64
+	SetElasticsearchMaxCodeIndexingConcurrency(val *float64)
+	ElasticsearchMaxCodeIndexingConcurrencyInput() *float64
 	ElasticsearchNamespaceIds() *[]*float64
 	SetElasticsearchNamespaceIds(val *[]*float64)
 	ElasticsearchNamespaceIdsInput() *[]*float64
@@ -315,6 +318,9 @@ type ApplicationSettings interface {
 	ElasticsearchProjectIds() *[]*float64
 	SetElasticsearchProjectIds(val *[]*float64)
 	ElasticsearchProjectIdsInput() *[]*float64
+	ElasticsearchRequeueWorkers() interface{}
+	SetElasticsearchRequeueWorkers(val interface{})
+	ElasticsearchRequeueWorkersInput() interface{}
 	ElasticsearchSearch() interface{}
 	SetElasticsearchSearch(val interface{})
 	ElasticsearchSearchInput() interface{}
@@ -324,12 +330,21 @@ type ApplicationSettings interface {
 	ElasticsearchUsername() *string
 	SetElasticsearchUsername(val *string)
 	ElasticsearchUsernameInput() *string
+	ElasticsearchWorkerNumberOfShards() *float64
+	SetElasticsearchWorkerNumberOfShards(val *float64)
+	ElasticsearchWorkerNumberOfShardsInput() *float64
 	EmailAdditionalText() *string
 	SetEmailAdditionalText(val *string)
 	EmailAdditionalTextInput() *string
 	EmailAuthorInBody() interface{}
 	SetEmailAuthorInBody(val interface{})
 	EmailAuthorInBodyInput() interface{}
+	EmailConfirmationSetting() *string
+	SetEmailConfirmationSetting(val *string)
+	EmailConfirmationSettingInput() *string
+	EnableArtifactExternalRedirectWarningPage() interface{}
+	SetEnableArtifactExternalRedirectWarningPage(val interface{})
+	EnableArtifactExternalRedirectWarningPageInput() interface{}
 	EnabledGitAccessProtocol() *string
 	SetEnabledGitAccessProtocol(val *string)
 	EnabledGitAccessProtocolInput() *string
@@ -369,6 +384,9 @@ type ApplicationSettings interface {
 	ExternalPipelineValidationServiceUrl() *string
 	SetExternalPipelineValidationServiceUrl(val *string)
 	ExternalPipelineValidationServiceUrlInput() *string
+	FailedLoginAttemptsUnlockPeriodInMinutes() *float64
+	SetFailedLoginAttemptsUnlockPeriodInMinutes(val *float64)
+	FailedLoginAttemptsUnlockPeriodInMinutesInput() *float64
 	FileTemplateProjectId() *float64
 	SetFileTemplateProjectId(val *float64)
 	FileTemplateProjectIdInput() *float64
@@ -398,12 +416,29 @@ type ApplicationSettings interface {
 	GitalyTimeoutMedium() *float64
 	SetGitalyTimeoutMedium(val *float64)
 	GitalyTimeoutMediumInput() *float64
+	GitlabDedicatedInstance() cdktf.IResolvable
+	GitlabEnvironmentToolkitInstance() cdktf.IResolvable
+	GitlabShellOperationLimit() *float64
+	SetGitlabShellOperationLimit(val *float64)
+	GitlabShellOperationLimitInput() *float64
+	GitpodEnabled() interface{}
+	SetGitpodEnabled(val interface{})
+	GitpodEnabledInput() interface{}
+	GitpodUrl() *string
+	SetGitpodUrl(val *string)
+	GitpodUrlInput() *string
+	GitRateLimitUsersAlertlist() *[]*float64
+	SetGitRateLimitUsersAlertlist(val *[]*float64)
+	GitRateLimitUsersAlertlistInput() *[]*float64
 	GitRateLimitUsersAllowlist() *[]*string
 	SetGitRateLimitUsersAllowlist(val *[]*string)
 	GitRateLimitUsersAllowlistInput() *[]*string
 	GitTwoFactorSessionExpiry() *float64
 	SetGitTwoFactorSessionExpiry(val *float64)
 	GitTwoFactorSessionExpiryInput() *float64
+	GloballyAllowedIps() *string
+	SetGloballyAllowedIps(val *string)
+	GloballyAllowedIpsInput() *string
 	GrafanaEnabled() interface{}
 	SetGrafanaEnabled(val interface{})
 	GrafanaEnabledInput() interface{}
@@ -470,6 +505,9 @@ type ApplicationSettings interface {
 	InactiveProjectsSendWarningEmailAfterMonths() *float64
 	SetInactiveProjectsSendWarningEmailAfterMonths(val *float64)
 	InactiveProjectsSendWarningEmailAfterMonthsInput() *float64
+	IncludeOptionalMetricsInServicePing() interface{}
+	SetIncludeOptionalMetricsInServicePing(val interface{})
+	IncludeOptionalMetricsInServicePingInput() interface{}
 	InProductMarketingEmailsEnabled() interface{}
 	SetInProductMarketingEmailsEnabled(val interface{})
 	InProductMarketingEmailsEnabledInput() interface{}
@@ -479,6 +517,15 @@ type ApplicationSettings interface {
 	IssuesCreateLimit() *float64
 	SetIssuesCreateLimit(val *float64)
 	IssuesCreateLimitInput() *float64
+	JiraConnectApplicationKey() *string
+	SetJiraConnectApplicationKey(val *string)
+	JiraConnectApplicationKeyInput() *string
+	JiraConnectProxyUrl() *string
+	SetJiraConnectProxyUrl(val *string)
+	JiraConnectProxyUrlInput() *string
+	JiraConnectPublicKeyStorageEnabled() interface{}
+	SetJiraConnectPublicKeyStorageEnabled(val interface{})
+	JiraConnectPublicKeyStorageEnabledInput() interface{}
 	KeepLatestArtifact() interface{}
 	SetKeepLatestArtifact(val interface{})
 	KeepLatestArtifactInput() interface{}
@@ -489,6 +536,9 @@ type ApplicationSettings interface {
 	LocalMarkdownVersion() *float64
 	SetLocalMarkdownVersion(val *float64)
 	LocalMarkdownVersionInput() *float64
+	LockDuoFeaturesEnabled() interface{}
+	SetLockDuoFeaturesEnabled(val interface{})
+	LockDuoFeaturesEnabledInput() interface{}
 	MailgunEventsEnabled() interface{}
 	SetMailgunEventsEnabled(val interface{})
 	MailgunEventsEnabledInput() interface{}
@@ -501,18 +551,30 @@ type ApplicationSettings interface {
 	MaintenanceModeMessage() *string
 	SetMaintenanceModeMessage(val *string)
 	MaintenanceModeMessageInput() *string
+	MavenPackageRequestsForwarding() interface{}
+	SetMavenPackageRequestsForwarding(val interface{})
+	MavenPackageRequestsForwardingInput() interface{}
 	MaxArtifactsSize() *float64
 	SetMaxArtifactsSize(val *float64)
 	MaxArtifactsSizeInput() *float64
 	MaxAttachmentSize() *float64
 	SetMaxAttachmentSize(val *float64)
 	MaxAttachmentSizeInput() *float64
+	MaxDecompressedArchiveSize() *float64
+	SetMaxDecompressedArchiveSize(val *float64)
+	MaxDecompressedArchiveSizeInput() *float64
 	MaxExportSize() *float64
 	SetMaxExportSize(val *float64)
 	MaxExportSizeInput() *float64
+	MaxImportRemoteFileSize() *float64
+	SetMaxImportRemoteFileSize(val *float64)
+	MaxImportRemoteFileSizeInput() *float64
 	MaxImportSize() *float64
 	SetMaxImportSize(val *float64)
 	MaxImportSizeInput() *float64
+	MaxLoginAttempts() *float64
+	SetMaxLoginAttempts(val *float64)
+	MaxLoginAttemptsInput() *float64
 	MaxNumberOfRepositoryDownloads() *float64
 	SetMaxNumberOfRepositoryDownloads(val *float64)
 	MaxNumberOfRepositoryDownloadsInput() *float64
@@ -554,9 +616,18 @@ type ApplicationSettings interface {
 	NpmPackageRequestsForwarding() interface{}
 	SetNpmPackageRequestsForwarding(val interface{})
 	NpmPackageRequestsForwardingInput() interface{}
+	NugetSkipMetadataUrlValidation() interface{}
+	SetNugetSkipMetadataUrlValidation(val interface{})
+	NugetSkipMetadataUrlValidationInput() interface{}
 	OutboundLocalRequestsWhitelist() *[]*string
 	SetOutboundLocalRequestsWhitelist(val *[]*string)
 	OutboundLocalRequestsWhitelistInput() *[]*string
+	PackageMetadataPurlTypes() *[]*float64
+	SetPackageMetadataPurlTypes(val *[]*float64)
+	PackageMetadataPurlTypesInput() *[]*float64
+	PackageRegistryAllowAnyoneToPullOption() interface{}
+	SetPackageRegistryAllowAnyoneToPullOption(val interface{})
+	PackageRegistryAllowAnyoneToPullOptionInput() interface{}
 	PackageRegistryCleanupPoliciesWorkerCapacity() *float64
 	SetPackageRegistryCleanupPoliciesWorkerCapacity(val *float64)
 	PackageRegistryCleanupPoliciesWorkerCapacityInput() *float64
@@ -602,6 +673,12 @@ type ApplicationSettings interface {
 	ProjectExportEnabled() interface{}
 	SetProjectExportEnabled(val interface{})
 	ProjectExportEnabledInput() interface{}
+	ProjectJobsApiRateLimit() *float64
+	SetProjectJobsApiRateLimit(val *float64)
+	ProjectJobsApiRateLimitInput() *float64
+	ProjectsApiRateLimitUnauthenticated() *float64
+	SetProjectsApiRateLimitUnauthenticated(val *float64)
+	ProjectsApiRateLimitUnauthenticatedInput() *float64
 	PrometheusMetricsEnabled() interface{}
 	SetPrometheusMetricsEnabled(val interface{})
 	PrometheusMetricsEnabledInput() interface{}
@@ -645,6 +722,12 @@ type ApplicationSettings interface {
 	ReceiveMaxInputSize() *float64
 	SetReceiveMaxInputSize(val *float64)
 	ReceiveMaxInputSizeInput() *float64
+	ReceptiveClusterAgentsEnabled() interface{}
+	SetReceptiveClusterAgentsEnabled(val interface{})
+	ReceptiveClusterAgentsEnabledInput() interface{}
+	RememberMeEnabled() interface{}
+	SetRememberMeEnabled(val interface{})
+	RememberMeEnabledInput() interface{}
 	RepositoryChecksEnabled() interface{}
 	SetRepositoryChecksEnabled(val interface{})
 	RepositoryChecksEnabledInput() interface{}
@@ -660,6 +743,12 @@ type ApplicationSettings interface {
 	RequireAdminApprovalAfterUserSignup() interface{}
 	SetRequireAdminApprovalAfterUserSignup(val interface{})
 	RequireAdminApprovalAfterUserSignupInput() interface{}
+	RequireAdminTwoFactorAuthentication() interface{}
+	SetRequireAdminTwoFactorAuthentication(val interface{})
+	RequireAdminTwoFactorAuthenticationInput() interface{}
+	RequirePersonalAccessTokenExpiry() interface{}
+	SetRequirePersonalAccessTokenExpiry(val interface{})
+	RequirePersonalAccessTokenExpiryInput() interface{}
 	RequireTwoFactorAuthentication() interface{}
 	SetRequireTwoFactorAuthentication(val interface{})
 	RequireTwoFactorAuthenticationInput() interface{}
@@ -675,9 +764,21 @@ type ApplicationSettings interface {
 	SearchRateLimitUnauthenticated() *float64
 	SetSearchRateLimitUnauthenticated(val *float64)
 	SearchRateLimitUnauthenticatedInput() *float64
+	SecurityApprovalPoliciesLimit() *float64
+	SetSecurityApprovalPoliciesLimit(val *float64)
+	SecurityApprovalPoliciesLimitInput() *float64
+	SecurityPolicyGlobalGroupApproversEnabled() interface{}
+	SetSecurityPolicyGlobalGroupApproversEnabled(val interface{})
+	SecurityPolicyGlobalGroupApproversEnabledInput() interface{}
+	SecurityTxtContent() *string
+	SetSecurityTxtContent(val *string)
+	SecurityTxtContentInput() *string
 	SendUserConfirmationEmail() interface{}
 	SetSendUserConfirmationEmail(val interface{})
 	SendUserConfirmationEmailInput() interface{}
+	ServiceAccessTokensExpirationEnforced() interface{}
+	SetServiceAccessTokensExpirationEnforced(val interface{})
+	ServiceAccessTokensExpirationEnforcedInput() interface{}
 	SessionExpireDelay() *float64
 	SetSessionExpireDelay(val *float64)
 	SessionExpireDelayInput() *float64
@@ -705,6 +806,12 @@ type ApplicationSettings interface {
 	SignupEnabled() interface{}
 	SetSignupEnabled(val interface{})
 	SignupEnabledInput() interface{}
+	SilentAdminExportsEnabled() interface{}
+	SetSilentAdminExportsEnabled(val interface{})
+	SilentAdminExportsEnabledInput() interface{}
+	SilentModeEnabled() interface{}
+	SetSilentModeEnabled(val interface{})
+	SilentModeEnabledInput() interface{}
 	SlackAppEnabled() interface{}
 	SetSlackAppEnabled(val interface{})
 	SlackAppEnabledInput() interface{}
@@ -732,6 +839,9 @@ type ApplicationSettings interface {
 	SnowplowCookieDomain() *string
 	SetSnowplowCookieDomain(val *string)
 	SnowplowCookieDomainInput() *string
+	SnowplowDatabaseCollectorHostname() *string
+	SetSnowplowDatabaseCollectorHostname(val *string)
+	SnowplowDatabaseCollectorHostnameInput() *string
 	SnowplowEnabled() interface{}
 	SetSnowplowEnabled(val interface{})
 	SnowplowEnabledInput() interface{}
@@ -753,6 +863,12 @@ type ApplicationSettings interface {
 	SpamCheckEndpointUrl() *string
 	SetSpamCheckEndpointUrl(val *string)
 	SpamCheckEndpointUrlInput() *string
+	StaticObjectsExternalStorageAuthToken() *string
+	SetStaticObjectsExternalStorageAuthToken(val *string)
+	StaticObjectsExternalStorageAuthTokenInput() *string
+	StaticObjectsExternalStorageUrl() *string
+	SetStaticObjectsExternalStorageUrl(val *string)
+	StaticObjectsExternalStorageUrlInput() *string
 	SuggestPipelineEnabled() interface{}
 	SetSuggestPipelineEnabled(val interface{})
 	SuggestPipelineEnabledInput() interface{}
@@ -828,6 +944,9 @@ type ApplicationSettings interface {
 	TwoFactorGracePeriod() *float64
 	SetTwoFactorGracePeriod(val *float64)
 	TwoFactorGracePeriodInput() *float64
+	UnconfirmedUsersDeleteAfterDays() *float64
+	SetUnconfirmedUsersDeleteAfterDays(val *float64)
+	UnconfirmedUsersDeleteAfterDaysInput() *float64
 	UniqueIpsLimitEnabled() interface{}
 	SetUniqueIpsLimitEnabled(val interface{})
 	UniqueIpsLimitEnabledInput() interface{}
@@ -837,9 +956,15 @@ type ApplicationSettings interface {
 	UniqueIpsLimitTimeWindow() *float64
 	SetUniqueIpsLimitTimeWindow(val *float64)
 	UniqueIpsLimitTimeWindowInput() *float64
+	UpdateRunnerVersionsEnabled() interface{}
+	SetUpdateRunnerVersionsEnabled(val interface{})
+	UpdateRunnerVersionsEnabledInput() interface{}
 	UsagePingEnabled() interface{}
 	SetUsagePingEnabled(val interface{})
 	UsagePingEnabledInput() interface{}
+	UseClickhouseForAnalytics() interface{}
+	SetUseClickhouseForAnalytics(val interface{})
+	UseClickhouseForAnalyticsInput() interface{}
 	UserDeactivationEmailsEnabled() interface{}
 	SetUserDeactivationEmailsEnabled(val interface{})
 	UserDeactivationEmailsEnabledInput() interface{}
@@ -849,12 +974,18 @@ type ApplicationSettings interface {
 	UserDefaultInternalRegex() *string
 	SetUserDefaultInternalRegex(val *string)
 	UserDefaultInternalRegexInput() *string
+	UserDefaultsToPrivateProfile() interface{}
+	SetUserDefaultsToPrivateProfile(val interface{})
+	UserDefaultsToPrivateProfileInput() interface{}
 	UserOauthApplications() interface{}
 	SetUserOauthApplications(val interface{})
 	UserOauthApplicationsInput() interface{}
 	UserShowAddSshKeyMessage() interface{}
 	SetUserShowAddSshKeyMessage(val interface{})
 	UserShowAddSshKeyMessageInput() interface{}
+	ValidRunnerRegistrars() *[]*string
+	SetValidRunnerRegistrars(val *[]*string)
+	ValidRunnerRegistrarsInput() *[]*string
 	VersionCheckEnabled() interface{}
 	SetVersionCheckEnabled(val interface{})
 	VersionCheckEnabledInput() interface{}
@@ -1003,14 +1134,19 @@ type ApplicationSettings interface {
 	ResetElasticsearchLimitIndexing()
 	ResetElasticsearchMaxBulkConcurrency()
 	ResetElasticsearchMaxBulkSizeMb()
+	ResetElasticsearchMaxCodeIndexingConcurrency()
 	ResetElasticsearchNamespaceIds()
 	ResetElasticsearchPassword()
 	ResetElasticsearchProjectIds()
+	ResetElasticsearchRequeueWorkers()
 	ResetElasticsearchSearch()
 	ResetElasticsearchUrl()
 	ResetElasticsearchUsername()
+	ResetElasticsearchWorkerNumberOfShards()
 	ResetEmailAdditionalText()
 	ResetEmailAuthorInBody()
+	ResetEmailConfirmationSetting()
+	ResetEnableArtifactExternalRedirectWarningPage()
 	ResetEnabledGitAccessProtocol()
 	ResetEnforceNamespaceStorageLimit()
 	ResetEnforceTerms()
@@ -1024,6 +1160,7 @@ type ApplicationSettings interface {
 	ResetExternalPipelineValidationServiceTimeout()
 	ResetExternalPipelineValidationServiceToken()
 	ResetExternalPipelineValidationServiceUrl()
+	ResetFailedLoginAttemptsUnlockPeriodInMinutes()
 	ResetFileTemplateProjectId()
 	ResetFirstDayOfWeek()
 	ResetGeoNodeAllowedIps()
@@ -1031,8 +1168,13 @@ type ApplicationSettings interface {
 	ResetGitalyTimeoutDefault()
 	ResetGitalyTimeoutFast()
 	ResetGitalyTimeoutMedium()
+	ResetGitlabShellOperationLimit()
+	ResetGitpodEnabled()
+	ResetGitpodUrl()
+	ResetGitRateLimitUsersAlertlist()
 	ResetGitRateLimitUsersAllowlist()
 	ResetGitTwoFactorSessionExpiry()
+	ResetGloballyAllowedIps()
 	ResetGrafanaEnabled()
 	ResetGrafanaUrl()
 	ResetGravatarEnabled()
@@ -1055,19 +1197,28 @@ type ApplicationSettings interface {
 	ResetInactiveProjectsDeleteAfterMonths()
 	ResetInactiveProjectsMinSizeMb()
 	ResetInactiveProjectsSendWarningEmailAfterMonths()
+	ResetIncludeOptionalMetricsInServicePing()
 	ResetInProductMarketingEmailsEnabled()
 	ResetInvisibleCaptchaEnabled()
 	ResetIssuesCreateLimit()
+	ResetJiraConnectApplicationKey()
+	ResetJiraConnectProxyUrl()
+	ResetJiraConnectPublicKeyStorageEnabled()
 	ResetKeepLatestArtifact()
 	ResetLocalMarkdownVersion()
+	ResetLockDuoFeaturesEnabled()
 	ResetMailgunEventsEnabled()
 	ResetMailgunSigningKey()
 	ResetMaintenanceMode()
 	ResetMaintenanceModeMessage()
+	ResetMavenPackageRequestsForwarding()
 	ResetMaxArtifactsSize()
 	ResetMaxAttachmentSize()
+	ResetMaxDecompressedArchiveSize()
 	ResetMaxExportSize()
+	ResetMaxImportRemoteFileSize()
 	ResetMaxImportSize()
+	ResetMaxLoginAttempts()
 	ResetMaxNumberOfRepositoryDownloads()
 	ResetMaxNumberOfRepositoryDownloadsWithinTimePeriod()
 	ResetMaxPagesSize()
@@ -1081,10 +1232,13 @@ type ApplicationSettings interface {
 	ResetMirrorMaxCapacity()
 	ResetMirrorMaxDelay()
 	ResetNpmPackageRequestsForwarding()
+	ResetNugetSkipMetadataUrlValidation()
 	ResetOutboundLocalRequestsWhitelist()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPackageMetadataPurlTypes()
+	ResetPackageRegistryAllowAnyoneToPullOption()
 	ResetPackageRegistryCleanupPoliciesWorkerCapacity()
 	ResetPagesDomainVerificationEnabled()
 	ResetPasswordAuthenticationEnabledForGit()
@@ -1100,6 +1254,8 @@ type ApplicationSettings interface {
 	ResetPlantumlUrl()
 	ResetPollingIntervalMultiplier()
 	ResetProjectExportEnabled()
+	ResetProjectJobsApiRateLimit()
+	ResetProjectsApiRateLimitUnauthenticated()
 	ResetPrometheusMetricsEnabled()
 	ResetProtectedCiVariables()
 	ResetPushEventActivitiesLimit()
@@ -1111,17 +1267,25 @@ type ApplicationSettings interface {
 	ResetRecaptchaPrivateKey()
 	ResetRecaptchaSiteKey()
 	ResetReceiveMaxInputSize()
+	ResetReceptiveClusterAgentsEnabled()
+	ResetRememberMeEnabled()
 	ResetRepositoryChecksEnabled()
 	ResetRepositorySizeLimit()
 	ResetRepositoryStorages()
 	ResetRepositoryStoragesWeighted()
 	ResetRequireAdminApprovalAfterUserSignup()
+	ResetRequireAdminTwoFactorAuthentication()
+	ResetRequirePersonalAccessTokenExpiry()
 	ResetRequireTwoFactorAuthentication()
 	ResetRestrictedVisibilityLevels()
 	ResetRsaKeyRestriction()
 	ResetSearchRateLimit()
 	ResetSearchRateLimitUnauthenticated()
+	ResetSecurityApprovalPoliciesLimit()
+	ResetSecurityPolicyGlobalGroupApproversEnabled()
+	ResetSecurityTxtContent()
 	ResetSendUserConfirmationEmail()
+	ResetServiceAccessTokensExpirationEnforced()
 	ResetSessionExpireDelay()
 	ResetSharedRunnersEnabled()
 	ResetSharedRunnersMinutes()
@@ -1131,6 +1295,8 @@ type ApplicationSettings interface {
 	ResetSidekiqJobLimiterMode()
 	ResetSignInText()
 	ResetSignupEnabled()
+	ResetSilentAdminExportsEnabled()
+	ResetSilentModeEnabled()
 	ResetSlackAppEnabled()
 	ResetSlackAppId()
 	ResetSlackAppSecret()
@@ -1140,6 +1306,7 @@ type ApplicationSettings interface {
 	ResetSnowplowAppId()
 	ResetSnowplowCollectorHostname()
 	ResetSnowplowCookieDomain()
+	ResetSnowplowDatabaseCollectorHostname()
 	ResetSnowplowEnabled()
 	ResetSourcegraphEnabled()
 	ResetSourcegraphPublicOnly()
@@ -1147,6 +1314,8 @@ type ApplicationSettings interface {
 	ResetSpamCheckApiKey()
 	ResetSpamCheckEndpointEnabled()
 	ResetSpamCheckEndpointUrl()
+	ResetStaticObjectsExternalStorageAuthToken()
+	ResetStaticObjectsExternalStorageUrl()
 	ResetSuggestPipelineEnabled()
 	ResetTerminalMaxSessionTime()
 	ResetTerms()
@@ -1170,15 +1339,20 @@ type ApplicationSettings interface {
 	ResetThrottleUnauthenticatedWebRequestsPerPeriod()
 	ResetTimeTrackingLimitToHours()
 	ResetTwoFactorGracePeriod()
+	ResetUnconfirmedUsersDeleteAfterDays()
 	ResetUniqueIpsLimitEnabled()
 	ResetUniqueIpsLimitPerUser()
 	ResetUniqueIpsLimitTimeWindow()
+	ResetUpdateRunnerVersionsEnabled()
 	ResetUsagePingEnabled()
+	ResetUseClickhouseForAnalytics()
 	ResetUserDeactivationEmailsEnabled()
 	ResetUserDefaultExternal()
 	ResetUserDefaultInternalRegex()
+	ResetUserDefaultsToPrivateProfile()
 	ResetUserOauthApplications()
 	ResetUserShowAddSshKeyMessage()
+	ResetValidRunnerRegistrars()
 	ResetVersionCheckEnabled()
 	ResetWebIdeClientsidePreviewEnabled()
 	ResetWhatsNewVariant()
@@ -3091,6 +3265,26 @@ func (j *jsiiProxy_ApplicationSettings) ElasticsearchMaxBulkSizeMbInput() *float
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchMaxCodeIndexingConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"elasticsearchMaxCodeIndexingConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchMaxCodeIndexingConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"elasticsearchMaxCodeIndexingConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) ElasticsearchNamespaceIds() *[]*float64 {
 	var returns *[]*float64
 	_jsii_.Get(
@@ -3146,6 +3340,26 @@ func (j *jsiiProxy_ApplicationSettings) ElasticsearchProjectIdsInput() *[]*float
 	_jsii_.Get(
 		j,
 		"elasticsearchProjectIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchRequeueWorkers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"elasticsearchRequeueWorkers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchRequeueWorkersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"elasticsearchRequeueWorkersInput",
 		&returns,
 	)
 	return returns
@@ -3211,6 +3425,26 @@ func (j *jsiiProxy_ApplicationSettings) ElasticsearchUsernameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchWorkerNumberOfShards() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"elasticsearchWorkerNumberOfShards",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ElasticsearchWorkerNumberOfShardsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"elasticsearchWorkerNumberOfShardsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) EmailAdditionalText() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3246,6 +3480,46 @@ func (j *jsiiProxy_ApplicationSettings) EmailAuthorInBodyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"emailAuthorInBodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EmailConfirmationSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailConfirmationSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EmailConfirmationSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailConfirmationSettingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EnableArtifactExternalRedirectWarningPage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableArtifactExternalRedirectWarningPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EnableArtifactExternalRedirectWarningPageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableArtifactExternalRedirectWarningPageInput",
 		&returns,
 	)
 	return returns
@@ -3511,6 +3785,26 @@ func (j *jsiiProxy_ApplicationSettings) ExternalPipelineValidationServiceUrlInpu
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) FailedLoginAttemptsUnlockPeriodInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failedLoginAttemptsUnlockPeriodInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) FailedLoginAttemptsUnlockPeriodInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failedLoginAttemptsUnlockPeriodInMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) FileTemplateProjectId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -3681,6 +3975,106 @@ func (j *jsiiProxy_ApplicationSettings) GitalyTimeoutMediumInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) GitlabDedicatedInstance() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gitlabDedicatedInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitlabEnvironmentToolkitInstance() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gitlabEnvironmentToolkitInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitlabShellOperationLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gitlabShellOperationLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitlabShellOperationLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gitlabShellOperationLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitpodEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitpodEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitpodEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitpodEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitpodUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitpodUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitpodUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitpodUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitRateLimitUsersAlertlist() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"gitRateLimitUsersAlertlist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GitRateLimitUsersAlertlistInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"gitRateLimitUsersAlertlistInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) GitRateLimitUsersAllowlist() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -3716,6 +4110,26 @@ func (j *jsiiProxy_ApplicationSettings) GitTwoFactorSessionExpiryInput() *float6
 	_jsii_.Get(
 		j,
 		"gitTwoFactorSessionExpiryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GloballyAllowedIps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globallyAllowedIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GloballyAllowedIpsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globallyAllowedIpsInput",
 		&returns,
 	)
 	return returns
@@ -4161,6 +4575,26 @@ func (j *jsiiProxy_ApplicationSettings) InactiveProjectsSendWarningEmailAfterMon
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) IncludeOptionalMetricsInServicePing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeOptionalMetricsInServicePing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) IncludeOptionalMetricsInServicePingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeOptionalMetricsInServicePingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) InProductMarketingEmailsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -4221,6 +4655,66 @@ func (j *jsiiProxy_ApplicationSettings) IssuesCreateLimitInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) JiraConnectApplicationKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraConnectApplicationKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) JiraConnectApplicationKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraConnectApplicationKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) JiraConnectProxyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraConnectProxyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) JiraConnectProxyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jiraConnectProxyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) JiraConnectPublicKeyStorageEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jiraConnectPublicKeyStorageEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) JiraConnectPublicKeyStorageEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jiraConnectPublicKeyStorageEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) KeepLatestArtifact() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -4266,6 +4760,26 @@ func (j *jsiiProxy_ApplicationSettings) LocalMarkdownVersionInput() *float64 {
 	_jsii_.Get(
 		j,
 		"localMarkdownVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) LockDuoFeaturesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockDuoFeaturesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) LockDuoFeaturesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockDuoFeaturesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -4351,6 +4865,26 @@ func (j *jsiiProxy_ApplicationSettings) MaintenanceModeMessageInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) MavenPackageRequestsForwarding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mavenPackageRequestsForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MavenPackageRequestsForwardingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mavenPackageRequestsForwardingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) MaxArtifactsSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -4391,6 +4925,26 @@ func (j *jsiiProxy_ApplicationSettings) MaxAttachmentSizeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) MaxDecompressedArchiveSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDecompressedArchiveSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MaxDecompressedArchiveSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDecompressedArchiveSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) MaxExportSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -4411,6 +4965,26 @@ func (j *jsiiProxy_ApplicationSettings) MaxExportSizeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) MaxImportRemoteFileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxImportRemoteFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MaxImportRemoteFileSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxImportRemoteFileSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) MaxImportSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -4426,6 +5000,26 @@ func (j *jsiiProxy_ApplicationSettings) MaxImportSizeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"maxImportSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MaxLoginAttempts() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLoginAttempts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) MaxLoginAttemptsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLoginAttemptsInput",
 		&returns,
 	)
 	return returns
@@ -4701,6 +5295,26 @@ func (j *jsiiProxy_ApplicationSettings) NpmPackageRequestsForwardingInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) NugetSkipMetadataUrlValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nugetSkipMetadataUrlValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) NugetSkipMetadataUrlValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nugetSkipMetadataUrlValidationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) OutboundLocalRequestsWhitelist() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -4716,6 +5330,46 @@ func (j *jsiiProxy_ApplicationSettings) OutboundLocalRequestsWhitelistInput() *[
 	_jsii_.Get(
 		j,
 		"outboundLocalRequestsWhitelistInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) PackageMetadataPurlTypes() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"packageMetadataPurlTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) PackageMetadataPurlTypesInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"packageMetadataPurlTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) PackageRegistryAllowAnyoneToPullOption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"packageRegistryAllowAnyoneToPullOption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) PackageRegistryAllowAnyoneToPullOptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"packageRegistryAllowAnyoneToPullOptionInput",
 		&returns,
 	)
 	return returns
@@ -5021,6 +5675,46 @@ func (j *jsiiProxy_ApplicationSettings) ProjectExportEnabledInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) ProjectJobsApiRateLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectJobsApiRateLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ProjectJobsApiRateLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectJobsApiRateLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ProjectsApiRateLimitUnauthenticated() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectsApiRateLimitUnauthenticated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ProjectsApiRateLimitUnauthenticatedInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectsApiRateLimitUnauthenticatedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) PrometheusMetricsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -5271,6 +5965,46 @@ func (j *jsiiProxy_ApplicationSettings) ReceiveMaxInputSizeInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) ReceptiveClusterAgentsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"receptiveClusterAgentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ReceptiveClusterAgentsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"receptiveClusterAgentsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RememberMeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rememberMeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RememberMeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rememberMeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) RepositoryChecksEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -5366,6 +6100,46 @@ func (j *jsiiProxy_ApplicationSettings) RequireAdminApprovalAfterUserSignupInput
 	_jsii_.Get(
 		j,
 		"requireAdminApprovalAfterUserSignupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RequireAdminTwoFactorAuthentication() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAdminTwoFactorAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RequireAdminTwoFactorAuthenticationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAdminTwoFactorAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RequirePersonalAccessTokenExpiry() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePersonalAccessTokenExpiry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) RequirePersonalAccessTokenExpiryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePersonalAccessTokenExpiryInput",
 		&returns,
 	)
 	return returns
@@ -5471,6 +6245,66 @@ func (j *jsiiProxy_ApplicationSettings) SearchRateLimitUnauthenticatedInput() *f
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) SecurityApprovalPoliciesLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"securityApprovalPoliciesLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SecurityApprovalPoliciesLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"securityApprovalPoliciesLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SecurityPolicyGlobalGroupApproversEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityPolicyGlobalGroupApproversEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SecurityPolicyGlobalGroupApproversEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityPolicyGlobalGroupApproversEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SecurityTxtContent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityTxtContent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SecurityTxtContentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityTxtContentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) SendUserConfirmationEmail() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -5486,6 +6320,26 @@ func (j *jsiiProxy_ApplicationSettings) SendUserConfirmationEmailInput() interfa
 	_jsii_.Get(
 		j,
 		"sendUserConfirmationEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ServiceAccessTokensExpirationEnforced() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceAccessTokensExpirationEnforced",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ServiceAccessTokensExpirationEnforcedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceAccessTokensExpirationEnforcedInput",
 		&returns,
 	)
 	return returns
@@ -5671,6 +6525,46 @@ func (j *jsiiProxy_ApplicationSettings) SignupEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) SilentAdminExportsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silentAdminExportsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SilentAdminExportsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silentAdminExportsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SilentModeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silentModeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SilentModeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silentModeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) SlackAppEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -5851,6 +6745,26 @@ func (j *jsiiProxy_ApplicationSettings) SnowplowCookieDomainInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) SnowplowDatabaseCollectorHostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snowplowDatabaseCollectorHostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) SnowplowDatabaseCollectorHostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snowplowDatabaseCollectorHostnameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) SnowplowEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -5986,6 +6900,46 @@ func (j *jsiiProxy_ApplicationSettings) SpamCheckEndpointUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"spamCheckEndpointUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) StaticObjectsExternalStorageAuthToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticObjectsExternalStorageAuthToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) StaticObjectsExternalStorageAuthTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticObjectsExternalStorageAuthTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) StaticObjectsExternalStorageUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticObjectsExternalStorageUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) StaticObjectsExternalStorageUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticObjectsExternalStorageUrlInput",
 		&returns,
 	)
 	return returns
@@ -6481,6 +7435,26 @@ func (j *jsiiProxy_ApplicationSettings) TwoFactorGracePeriodInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) UnconfirmedUsersDeleteAfterDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unconfirmedUsersDeleteAfterDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UnconfirmedUsersDeleteAfterDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unconfirmedUsersDeleteAfterDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) UniqueIpsLimitEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -6541,6 +7515,26 @@ func (j *jsiiProxy_ApplicationSettings) UniqueIpsLimitTimeWindowInput() *float64
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) UpdateRunnerVersionsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateRunnerVersionsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UpdateRunnerVersionsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateRunnerVersionsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) UsagePingEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -6556,6 +7550,26 @@ func (j *jsiiProxy_ApplicationSettings) UsagePingEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"usagePingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UseClickhouseForAnalytics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useClickhouseForAnalytics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UseClickhouseForAnalyticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useClickhouseForAnalyticsInput",
 		&returns,
 	)
 	return returns
@@ -6621,6 +7635,26 @@ func (j *jsiiProxy_ApplicationSettings) UserDefaultInternalRegexInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) UserDefaultsToPrivateProfile() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userDefaultsToPrivateProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UserDefaultsToPrivateProfileInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userDefaultsToPrivateProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) UserOauthApplications() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -6656,6 +7690,26 @@ func (j *jsiiProxy_ApplicationSettings) UserShowAddSshKeyMessageInput() interfac
 	_jsii_.Get(
 		j,
 		"userShowAddSshKeyMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ValidRunnerRegistrars() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validRunnerRegistrars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ValidRunnerRegistrarsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validRunnerRegistrarsInput",
 		&returns,
 	)
 	return returns
@@ -6742,7 +7796,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -6760,7 +7814,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -7802,6 +8856,17 @@ func (j *jsiiProxy_ApplicationSettings)SetElasticsearchMaxBulkSizeMb(val *float6
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchMaxCodeIndexingConcurrency(val *float64) {
+	if err := j.validateSetElasticsearchMaxCodeIndexingConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchMaxCodeIndexingConcurrency",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetElasticsearchNamespaceIds(val *[]*float64) {
 	if err := j.validateSetElasticsearchNamespaceIdsParameters(val); err != nil {
 		panic(err)
@@ -7831,6 +8896,17 @@ func (j *jsiiProxy_ApplicationSettings)SetElasticsearchProjectIds(val *[]*float6
 	_jsii_.Set(
 		j,
 		"elasticsearchProjectIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchRequeueWorkers(val interface{}) {
+	if err := j.validateSetElasticsearchRequeueWorkersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchRequeueWorkers",
 		val,
 	)
 }
@@ -7868,6 +8944,17 @@ func (j *jsiiProxy_ApplicationSettings)SetElasticsearchUsername(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetElasticsearchWorkerNumberOfShards(val *float64) {
+	if err := j.validateSetElasticsearchWorkerNumberOfShardsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchWorkerNumberOfShards",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetEmailAdditionalText(val *string) {
 	if err := j.validateSetEmailAdditionalTextParameters(val); err != nil {
 		panic(err)
@@ -7886,6 +8973,28 @@ func (j *jsiiProxy_ApplicationSettings)SetEmailAuthorInBody(val interface{}) {
 	_jsii_.Set(
 		j,
 		"emailAuthorInBody",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetEmailConfirmationSetting(val *string) {
+	if err := j.validateSetEmailConfirmationSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailConfirmationSetting",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetEnableArtifactExternalRedirectWarningPage(val interface{}) {
+	if err := j.validateSetEnableArtifactExternalRedirectWarningPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableArtifactExternalRedirectWarningPage",
 		val,
 	)
 }
@@ -8033,6 +9142,17 @@ func (j *jsiiProxy_ApplicationSettings)SetExternalPipelineValidationServiceUrl(v
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetFailedLoginAttemptsUnlockPeriodInMinutes(val *float64) {
+	if err := j.validateSetFailedLoginAttemptsUnlockPeriodInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failedLoginAttemptsUnlockPeriodInMinutes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetFileTemplateProjectId(val *float64) {
 	if err := j.validateSetFileTemplateProjectIdParameters(val); err != nil {
 		panic(err)
@@ -8118,6 +9238,50 @@ func (j *jsiiProxy_ApplicationSettings)SetGitalyTimeoutMedium(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetGitlabShellOperationLimit(val *float64) {
+	if err := j.validateSetGitlabShellOperationLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitlabShellOperationLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetGitpodEnabled(val interface{}) {
+	if err := j.validateSetGitpodEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitpodEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetGitpodUrl(val *string) {
+	if err := j.validateSetGitpodUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitpodUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetGitRateLimitUsersAlertlist(val *[]*float64) {
+	if err := j.validateSetGitRateLimitUsersAlertlistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gitRateLimitUsersAlertlist",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetGitRateLimitUsersAllowlist(val *[]*string) {
 	if err := j.validateSetGitRateLimitUsersAllowlistParameters(val); err != nil {
 		panic(err)
@@ -8136,6 +9300,17 @@ func (j *jsiiProxy_ApplicationSettings)SetGitTwoFactorSessionExpiry(val *float64
 	_jsii_.Set(
 		j,
 		"gitTwoFactorSessionExpiry",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetGloballyAllowedIps(val *string) {
+	if err := j.validateSetGloballyAllowedIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"globallyAllowedIps",
 		val,
 	)
 }
@@ -8382,6 +9557,17 @@ func (j *jsiiProxy_ApplicationSettings)SetInactiveProjectsSendWarningEmailAfterM
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetIncludeOptionalMetricsInServicePing(val interface{}) {
+	if err := j.validateSetIncludeOptionalMetricsInServicePingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeOptionalMetricsInServicePing",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetInProductMarketingEmailsEnabled(val interface{}) {
 	if err := j.validateSetInProductMarketingEmailsEnabledParameters(val); err != nil {
 		panic(err)
@@ -8415,6 +9601,39 @@ func (j *jsiiProxy_ApplicationSettings)SetIssuesCreateLimit(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetJiraConnectApplicationKey(val *string) {
+	if err := j.validateSetJiraConnectApplicationKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraConnectApplicationKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetJiraConnectProxyUrl(val *string) {
+	if err := j.validateSetJiraConnectProxyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraConnectProxyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetJiraConnectPublicKeyStorageEnabled(val interface{}) {
+	if err := j.validateSetJiraConnectPublicKeyStorageEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jiraConnectPublicKeyStorageEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetKeepLatestArtifact(val interface{}) {
 	if err := j.validateSetKeepLatestArtifactParameters(val); err != nil {
 		panic(err)
@@ -8444,6 +9663,17 @@ func (j *jsiiProxy_ApplicationSettings)SetLocalMarkdownVersion(val *float64) {
 	_jsii_.Set(
 		j,
 		"localMarkdownVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetLockDuoFeaturesEnabled(val interface{}) {
+	if err := j.validateSetLockDuoFeaturesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lockDuoFeaturesEnabled",
 		val,
 	)
 }
@@ -8492,6 +9722,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMaintenanceModeMessage(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetMavenPackageRequestsForwarding(val interface{}) {
+	if err := j.validateSetMavenPackageRequestsForwardingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mavenPackageRequestsForwarding",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetMaxArtifactsSize(val *float64) {
 	if err := j.validateSetMaxArtifactsSizeParameters(val); err != nil {
 		panic(err)
@@ -8514,6 +9755,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMaxAttachmentSize(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetMaxDecompressedArchiveSize(val *float64) {
+	if err := j.validateSetMaxDecompressedArchiveSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDecompressedArchiveSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetMaxExportSize(val *float64) {
 	if err := j.validateSetMaxExportSizeParameters(val); err != nil {
 		panic(err)
@@ -8525,6 +9777,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMaxExportSize(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetMaxImportRemoteFileSize(val *float64) {
+	if err := j.validateSetMaxImportRemoteFileSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxImportRemoteFileSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetMaxImportSize(val *float64) {
 	if err := j.validateSetMaxImportSizeParameters(val); err != nil {
 		panic(err)
@@ -8532,6 +9795,17 @@ func (j *jsiiProxy_ApplicationSettings)SetMaxImportSize(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxImportSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetMaxLoginAttempts(val *float64) {
+	if err := j.validateSetMaxLoginAttemptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxLoginAttempts",
 		val,
 	)
 }
@@ -8679,6 +9953,17 @@ func (j *jsiiProxy_ApplicationSettings)SetNpmPackageRequestsForwarding(val inter
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetNugetSkipMetadataUrlValidation(val interface{}) {
+	if err := j.validateSetNugetSkipMetadataUrlValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nugetSkipMetadataUrlValidation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetOutboundLocalRequestsWhitelist(val *[]*string) {
 	if err := j.validateSetOutboundLocalRequestsWhitelistParameters(val); err != nil {
 		panic(err)
@@ -8686,6 +9971,28 @@ func (j *jsiiProxy_ApplicationSettings)SetOutboundLocalRequestsWhitelist(val *[]
 	_jsii_.Set(
 		j,
 		"outboundLocalRequestsWhitelist",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetPackageMetadataPurlTypes(val *[]*float64) {
+	if err := j.validateSetPackageMetadataPurlTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"packageMetadataPurlTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetPackageRegistryAllowAnyoneToPullOption(val interface{}) {
+	if err := j.validateSetPackageRegistryAllowAnyoneToPullOptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"packageRegistryAllowAnyoneToPullOption",
 		val,
 	)
 }
@@ -8855,6 +10162,28 @@ func (j *jsiiProxy_ApplicationSettings)SetProjectExportEnabled(val interface{}) 
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetProjectJobsApiRateLimit(val *float64) {
+	if err := j.validateSetProjectJobsApiRateLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectJobsApiRateLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetProjectsApiRateLimitUnauthenticated(val *float64) {
+	if err := j.validateSetProjectsApiRateLimitUnauthenticatedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectsApiRateLimitUnauthenticated",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetPrometheusMetricsEnabled(val interface{}) {
 	if err := j.validateSetPrometheusMetricsEnabledParameters(val); err != nil {
 		panic(err)
@@ -8995,6 +10324,28 @@ func (j *jsiiProxy_ApplicationSettings)SetReceiveMaxInputSize(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetReceptiveClusterAgentsEnabled(val interface{}) {
+	if err := j.validateSetReceptiveClusterAgentsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"receptiveClusterAgentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetRememberMeEnabled(val interface{}) {
+	if err := j.validateSetRememberMeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rememberMeEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetRepositoryChecksEnabled(val interface{}) {
 	if err := j.validateSetRepositoryChecksEnabledParameters(val); err != nil {
 		panic(err)
@@ -9046,6 +10397,28 @@ func (j *jsiiProxy_ApplicationSettings)SetRequireAdminApprovalAfterUserSignup(va
 	_jsii_.Set(
 		j,
 		"requireAdminApprovalAfterUserSignup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetRequireAdminTwoFactorAuthentication(val interface{}) {
+	if err := j.validateSetRequireAdminTwoFactorAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireAdminTwoFactorAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetRequirePersonalAccessTokenExpiry(val interface{}) {
+	if err := j.validateSetRequirePersonalAccessTokenExpiryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirePersonalAccessTokenExpiry",
 		val,
 	)
 }
@@ -9105,6 +10478,39 @@ func (j *jsiiProxy_ApplicationSettings)SetSearchRateLimitUnauthenticated(val *fl
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetSecurityApprovalPoliciesLimit(val *float64) {
+	if err := j.validateSetSecurityApprovalPoliciesLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityApprovalPoliciesLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetSecurityPolicyGlobalGroupApproversEnabled(val interface{}) {
+	if err := j.validateSetSecurityPolicyGlobalGroupApproversEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicyGlobalGroupApproversEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetSecurityTxtContent(val *string) {
+	if err := j.validateSetSecurityTxtContentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityTxtContent",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetSendUserConfirmationEmail(val interface{}) {
 	if err := j.validateSetSendUserConfirmationEmailParameters(val); err != nil {
 		panic(err)
@@ -9112,6 +10518,17 @@ func (j *jsiiProxy_ApplicationSettings)SetSendUserConfirmationEmail(val interfac
 	_jsii_.Set(
 		j,
 		"sendUserConfirmationEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetServiceAccessTokensExpirationEnforced(val interface{}) {
+	if err := j.validateSetServiceAccessTokensExpirationEnforcedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccessTokensExpirationEnforced",
 		val,
 	)
 }
@@ -9215,6 +10632,28 @@ func (j *jsiiProxy_ApplicationSettings)SetSignupEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetSilentAdminExportsEnabled(val interface{}) {
+	if err := j.validateSetSilentAdminExportsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"silentAdminExportsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetSilentModeEnabled(val interface{}) {
+	if err := j.validateSetSilentModeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"silentModeEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetSlackAppEnabled(val interface{}) {
 	if err := j.validateSetSlackAppEnabledParameters(val); err != nil {
 		panic(err)
@@ -9314,6 +10753,17 @@ func (j *jsiiProxy_ApplicationSettings)SetSnowplowCookieDomain(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetSnowplowDatabaseCollectorHostname(val *string) {
+	if err := j.validateSetSnowplowDatabaseCollectorHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snowplowDatabaseCollectorHostname",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetSnowplowEnabled(val interface{}) {
 	if err := j.validateSetSnowplowEnabledParameters(val); err != nil {
 		panic(err)
@@ -9387,6 +10837,28 @@ func (j *jsiiProxy_ApplicationSettings)SetSpamCheckEndpointUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"spamCheckEndpointUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetStaticObjectsExternalStorageAuthToken(val *string) {
+	if err := j.validateSetStaticObjectsExternalStorageAuthTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staticObjectsExternalStorageAuthToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetStaticObjectsExternalStorageUrl(val *string) {
+	if err := j.validateSetStaticObjectsExternalStorageUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staticObjectsExternalStorageUrl",
 		val,
 	)
 }
@@ -9644,6 +11116,17 @@ func (j *jsiiProxy_ApplicationSettings)SetTwoFactorGracePeriod(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetUnconfirmedUsersDeleteAfterDays(val *float64) {
+	if err := j.validateSetUnconfirmedUsersDeleteAfterDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unconfirmedUsersDeleteAfterDays",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetUniqueIpsLimitEnabled(val interface{}) {
 	if err := j.validateSetUniqueIpsLimitEnabledParameters(val); err != nil {
 		panic(err)
@@ -9677,6 +11160,17 @@ func (j *jsiiProxy_ApplicationSettings)SetUniqueIpsLimitTimeWindow(val *float64)
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetUpdateRunnerVersionsEnabled(val interface{}) {
+	if err := j.validateSetUpdateRunnerVersionsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateRunnerVersionsEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetUsagePingEnabled(val interface{}) {
 	if err := j.validateSetUsagePingEnabledParameters(val); err != nil {
 		panic(err)
@@ -9684,6 +11178,17 @@ func (j *jsiiProxy_ApplicationSettings)SetUsagePingEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"usagePingEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetUseClickhouseForAnalytics(val interface{}) {
+	if err := j.validateSetUseClickhouseForAnalyticsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useClickhouseForAnalytics",
 		val,
 	)
 }
@@ -9721,6 +11226,17 @@ func (j *jsiiProxy_ApplicationSettings)SetUserDefaultInternalRegex(val *string) 
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetUserDefaultsToPrivateProfile(val interface{}) {
+	if err := j.validateSetUserDefaultsToPrivateProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userDefaultsToPrivateProfile",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetUserOauthApplications(val interface{}) {
 	if err := j.validateSetUserOauthApplicationsParameters(val); err != nil {
 		panic(err)
@@ -9739,6 +11255,17 @@ func (j *jsiiProxy_ApplicationSettings)SetUserShowAddSshKeyMessage(val interface
 	_jsii_.Set(
 		j,
 		"userShowAddSshKeyMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetValidRunnerRegistrars(val *[]*string) {
+	if err := j.validateSetValidRunnerRegistrarsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validRunnerRegistrars",
 		val,
 	)
 }
@@ -10887,6 +12414,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchMaxBulkSizeMb() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchMaxCodeIndexingConcurrency() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetElasticsearchMaxCodeIndexingConcurrency",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchNamespaceIds() {
 	_jsii_.InvokeVoid(
 		a,
@@ -10907,6 +12442,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchProjectIds() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetElasticsearchProjectIds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchRequeueWorkers() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetElasticsearchRequeueWorkers",
 		nil, // no parameters
 	)
 }
@@ -10935,6 +12478,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchUsername() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetElasticsearchWorkerNumberOfShards() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetElasticsearchWorkerNumberOfShards",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetEmailAdditionalText() {
 	_jsii_.InvokeVoid(
 		a,
@@ -10947,6 +12498,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetEmailAuthorInBody() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailAuthorInBody",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEmailConfirmationSetting() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmailConfirmationSetting",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEnableArtifactExternalRedirectWarningPage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableArtifactExternalRedirectWarningPage",
 		nil, // no parameters
 	)
 }
@@ -11055,6 +12622,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetExternalPipelineValidationServiceUr
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetFailedLoginAttemptsUnlockPeriodInMinutes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFailedLoginAttemptsUnlockPeriodInMinutes",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetFileTemplateProjectId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11111,6 +12686,38 @@ func (a *jsiiProxy_ApplicationSettings) ResetGitalyTimeoutMedium() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetGitlabShellOperationLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitlabShellOperationLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGitpodEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitpodEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGitpodUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitpodUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGitRateLimitUsersAlertlist() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitRateLimitUsersAlertlist",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetGitRateLimitUsersAllowlist() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11123,6 +12730,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetGitTwoFactorSessionExpiry() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGitTwoFactorSessionExpiry",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGloballyAllowedIps() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGloballyAllowedIps",
 		nil, // no parameters
 	)
 }
@@ -11303,6 +12918,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetInactiveProjectsSendWarningEmailAft
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetIncludeOptionalMetricsInServicePing() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIncludeOptionalMetricsInServicePing",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetInProductMarketingEmailsEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11327,6 +12950,30 @@ func (a *jsiiProxy_ApplicationSettings) ResetIssuesCreateLimit() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetJiraConnectApplicationKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJiraConnectApplicationKey",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetJiraConnectProxyUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJiraConnectProxyUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetJiraConnectPublicKeyStorageEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJiraConnectPublicKeyStorageEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetKeepLatestArtifact() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11339,6 +12986,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetLocalMarkdownVersion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLocalMarkdownVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetLockDuoFeaturesEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLockDuoFeaturesEnabled",
 		nil, // no parameters
 	)
 }
@@ -11375,6 +13030,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetMaintenanceModeMessage() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetMavenPackageRequestsForwarding() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMavenPackageRequestsForwarding",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetMaxArtifactsSize() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11391,6 +13054,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetMaxAttachmentSize() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetMaxDecompressedArchiveSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxDecompressedArchiveSize",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetMaxExportSize() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11399,10 +13070,26 @@ func (a *jsiiProxy_ApplicationSettings) ResetMaxExportSize() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetMaxImportRemoteFileSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxImportRemoteFileSize",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetMaxImportSize() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMaxImportSize",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetMaxLoginAttempts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxLoginAttempts",
 		nil, // no parameters
 	)
 }
@@ -11511,6 +13198,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetNpmPackageRequestsForwarding() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetNugetSkipMetadataUrlValidation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNugetSkipMetadataUrlValidation",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetOutboundLocalRequestsWhitelist() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11523,6 +13218,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetPackageMetadataPurlTypes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPackageMetadataPurlTypes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetPackageRegistryAllowAnyoneToPullOption() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPackageRegistryAllowAnyoneToPullOption",
 		nil, // no parameters
 	)
 }
@@ -11647,6 +13358,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetProjectExportEnabled() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetProjectJobsApiRateLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProjectJobsApiRateLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetProjectsApiRateLimitUnauthenticated() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProjectsApiRateLimitUnauthenticated",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetPrometheusMetricsEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11735,6 +13462,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetReceiveMaxInputSize() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetReceptiveClusterAgentsEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetReceptiveClusterAgentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetRememberMeEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRememberMeEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetRepositoryChecksEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11771,6 +13514,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetRequireAdminApprovalAfterUserSignup
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequireAdminApprovalAfterUserSignup",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetRequireAdminTwoFactorAuthentication() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRequireAdminTwoFactorAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetRequirePersonalAccessTokenExpiry() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRequirePersonalAccessTokenExpiry",
 		nil, // no parameters
 	)
 }
@@ -11815,10 +13574,42 @@ func (a *jsiiProxy_ApplicationSettings) ResetSearchRateLimitUnauthenticated() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetSecurityApprovalPoliciesLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecurityApprovalPoliciesLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetSecurityPolicyGlobalGroupApproversEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecurityPolicyGlobalGroupApproversEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetSecurityTxtContent() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecurityTxtContent",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetSendUserConfirmationEmail() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSendUserConfirmationEmail",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetServiceAccessTokensExpirationEnforced() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceAccessTokensExpirationEnforced",
 		nil, // no parameters
 	)
 }
@@ -11895,6 +13686,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetSignupEnabled() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetSilentAdminExportsEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSilentAdminExportsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetSilentModeEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSilentModeEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetSlackAppEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -11967,6 +13774,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetSnowplowCookieDomain() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetSnowplowDatabaseCollectorHostname() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSnowplowDatabaseCollectorHostname",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetSnowplowEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -12019,6 +13834,22 @@ func (a *jsiiProxy_ApplicationSettings) ResetSpamCheckEndpointUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSpamCheckEndpointUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetStaticObjectsExternalStorageAuthToken() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStaticObjectsExternalStorageAuthToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetStaticObjectsExternalStorageUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStaticObjectsExternalStorageUrl",
 		nil, // no parameters
 	)
 }
@@ -12207,6 +14038,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetTwoFactorGracePeriod() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetUnconfirmedUsersDeleteAfterDays() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUnconfirmedUsersDeleteAfterDays",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetUniqueIpsLimitEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -12231,10 +14070,26 @@ func (a *jsiiProxy_ApplicationSettings) ResetUniqueIpsLimitTimeWindow() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetUpdateRunnerVersionsEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUpdateRunnerVersionsEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetUsagePingEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUsagePingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetUseClickhouseForAnalytics() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseClickhouseForAnalytics",
 		nil, // no parameters
 	)
 }
@@ -12263,6 +14118,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetUserDefaultInternalRegex() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetUserDefaultsToPrivateProfile() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserDefaultsToPrivateProfile",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetUserOauthApplications() {
 	_jsii_.InvokeVoid(
 		a,
@@ -12275,6 +14138,14 @@ func (a *jsiiProxy_ApplicationSettings) ResetUserShowAddSshKeyMessage() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserShowAddSshKeyMessage",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetValidRunnerRegistrars() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetValidRunnerRegistrars",
 		nil, // no parameters
 	)
 }

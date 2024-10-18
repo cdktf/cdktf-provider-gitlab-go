@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group gitlab_group}.
 type DataGitlabGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,7 @@ type DataGitlabGroup interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBranch() *string
 	DefaultBranchProtection() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataGitlabGroup) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroup) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
 		&returns,
 	)
 	return returns
@@ -511,7 +522,7 @@ func (j *jsiiProxy_DataGitlabGroup) WikiAccessLevel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitlabGroupConfig) DataGitlabGroup {
 	_init_.Initialize()
 
@@ -529,7 +540,7 @@ func NewDataGitlabGroup(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group gitlab_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group gitlab_group} Data Source.
 func NewDataGitlabGroup_Override(d DataGitlabGroup, scope constructs.Construct, id *string, config *DataGitlabGroupConfig) {
 	_init_.Initialize()
 

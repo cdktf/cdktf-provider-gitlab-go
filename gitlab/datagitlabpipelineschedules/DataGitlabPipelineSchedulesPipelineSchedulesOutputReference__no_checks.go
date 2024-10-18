@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) validateSetIdParameters(val *float64) error {
 	return nil
 }
 

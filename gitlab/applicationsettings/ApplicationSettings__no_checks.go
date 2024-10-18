@@ -467,6 +467,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchMaxBulkSizeMbPar
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchMaxCodeIndexingConcurrencyParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchNamespaceIdsParameters(val *[]*float64) error {
 	return nil
 }
@@ -476,6 +480,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchPasswordParamete
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchProjectIdsParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchRequeueWorkersParameters(val interface{}) error {
 	return nil
 }
 
@@ -491,11 +499,23 @@ func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchUsernameParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetElasticsearchWorkerNumberOfShardsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetEmailAdditionalTextParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetEmailAuthorInBodyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetEmailConfirmationSettingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetEnableArtifactExternalRedirectWarningPageParameters(val interface{}) error {
 	return nil
 }
 
@@ -551,6 +571,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetExternalPipelineValidationSer
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetFailedLoginAttemptsUnlockPeriodInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetFileTemplateProjectIdParameters(val *float64) error {
 	return nil
 }
@@ -579,11 +603,31 @@ func (j *jsiiProxy_ApplicationSettings) validateSetGitalyTimeoutMediumParameters
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetGitlabShellOperationLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetGitpodEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetGitpodUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetGitRateLimitUsersAlertlistParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetGitRateLimitUsersAllowlistParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetGitTwoFactorSessionExpiryParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetGloballyAllowedIpsParameters(val *string) error {
 	return nil
 }
 
@@ -675,6 +719,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetInactiveProjectsSendWarningEm
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetIncludeOptionalMetricsInServicePingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetInProductMarketingEmailsEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -687,6 +735,18 @@ func (j *jsiiProxy_ApplicationSettings) validateSetIssuesCreateLimitParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetJiraConnectApplicationKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetJiraConnectProxyUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetJiraConnectPublicKeyStorageEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetKeepLatestArtifactParameters(val interface{}) error {
 	return nil
 }
@@ -696,6 +756,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetLocalMarkdownVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetLockDuoFeaturesEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -715,6 +779,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetMaintenanceModeMessageParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMavenPackageRequestsForwardingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMaxArtifactsSizeParameters(val *float64) error {
 	return nil
 }
@@ -723,11 +791,23 @@ func (j *jsiiProxy_ApplicationSettings) validateSetMaxAttachmentSizeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMaxDecompressedArchiveSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMaxExportSizeParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetMaxImportRemoteFileSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMaxImportSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetMaxLoginAttemptsParameters(val *float64) error {
 	return nil
 }
 
@@ -783,7 +863,19 @@ func (j *jsiiProxy_ApplicationSettings) validateSetNpmPackageRequestsForwardingP
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetNugetSkipMetadataUrlValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetOutboundLocalRequestsWhitelistParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetPackageMetadataPurlTypesParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetPackageRegistryAllowAnyoneToPullOptionParameters(val interface{}) error {
 	return nil
 }
 
@@ -847,6 +939,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetProjectExportEnabledParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetProjectJobsApiRateLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetProjectsApiRateLimitUnauthenticatedParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetPrometheusMetricsEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -895,6 +995,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetReceiveMaxInputSizeParameters
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetReceptiveClusterAgentsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetRememberMeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetRepositoryChecksEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -912,6 +1020,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetRepositoryStoragesWeightedPar
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetRequireAdminApprovalAfterUserSignupParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetRequireAdminTwoFactorAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetRequirePersonalAccessTokenExpiryParameters(val interface{}) error {
 	return nil
 }
 
@@ -935,7 +1051,23 @@ func (j *jsiiProxy_ApplicationSettings) validateSetSearchRateLimitUnauthenticate
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetSecurityApprovalPoliciesLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetSecurityPolicyGlobalGroupApproversEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetSecurityTxtContentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetSendUserConfirmationEmailParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetServiceAccessTokensExpirationEnforcedParameters(val interface{}) error {
 	return nil
 }
 
@@ -975,6 +1107,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetSignupEnabledParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetSilentAdminExportsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetSilentModeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetSlackAppEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -1011,6 +1151,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetSnowplowCookieDomainParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetSnowplowDatabaseCollectorHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetSnowplowEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -1036,6 +1180,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetSpamCheckEndpointEnabledParam
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetSpamCheckEndpointUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetStaticObjectsExternalStorageAuthTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetStaticObjectsExternalStorageUrlParameters(val *string) error {
 	return nil
 }
 
@@ -1131,6 +1283,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetTwoFactorGracePeriodParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetUnconfirmedUsersDeleteAfterDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetUniqueIpsLimitEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -1143,7 +1299,15 @@ func (j *jsiiProxy_ApplicationSettings) validateSetUniqueIpsLimitTimeWindowParam
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetUpdateRunnerVersionsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetUsagePingEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetUseClickhouseForAnalyticsParameters(val interface{}) error {
 	return nil
 }
 
@@ -1159,11 +1323,19 @@ func (j *jsiiProxy_ApplicationSettings) validateSetUserDefaultInternalRegexParam
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetUserDefaultsToPrivateProfileParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetUserOauthApplicationsParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetUserShowAddSshKeyMessageParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetValidRunnerRegistrarsParameters(val *[]*string) error {
 	return nil
 }
 

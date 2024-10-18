@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs gitlab}.
 type GitlabProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -41,6 +41,9 @@ type GitlabProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Headers() *map[string]*string
+	SetHeaders(val *map[string]*string)
+	HeadersInput() *map[string]*string
 	Insecure() interface{}
 	SetInsecure(val interface{})
 	InsecureInput() interface{}
@@ -73,6 +76,7 @@ type GitlabProvider interface {
 	ResetClientCert()
 	ResetClientKey()
 	ResetEarlyAuthCheck()
+	ResetHeaders()
 	ResetInsecure()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -257,6 +261,26 @@ func (j *jsiiProxy_GitlabProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GitlabProvider) Headers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) HeadersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GitlabProvider) Insecure() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_GitlabProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs gitlab} Resource.
 func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabProviderConfig) GitlabProvider {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs gitlab} Resource.
 func NewGitlabProvider_Override(g GitlabProvider, scope constructs.Construct, id *string, config *GitlabProviderConfig) {
 	_init_.Initialize()
 
@@ -454,6 +478,14 @@ func (j *jsiiProxy_GitlabProvider)SetEarlyAuthCheck(val interface{}) {
 	_jsii_.Set(
 		j,
 		"earlyAuthCheck",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitlabProvider)SetHeaders(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"headers",
 		val,
 	)
 }
@@ -654,6 +686,14 @@ func (g *jsiiProxy_GitlabProvider) ResetEarlyAuthCheck() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEarlyAuthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitlabProvider) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaders",
 		nil, // no parameters
 	)
 }

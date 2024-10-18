@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataGitlabProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowPipelineTriggerApproveDeployment", GoGetter: "AllowPipelineTriggerApproveDeployment"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsAccessLevel", GoGetter: "AnalyticsAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "archived", GoGetter: "Archived"},
 			_jsii_.MemberProperty{JsiiProperty: "autoCancelPendingPipelines", GoGetter: "AutoCancelPendingPipelines"},
@@ -71,6 +72,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mergeRequestsAccessLevel", GoGetter: "MergeRequestsAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeRequestsEnabled", GoGetter: "MergeRequestsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeTrainsEnabled", GoGetter: "MergeTrainsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "modelExperimentsAccessLevel", GoGetter: "ModelExperimentsAccessLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "modelRegistryAccessLevel", GoGetter: "ModelRegistryAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorAccessLevel", GoGetter: "MonitorAccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceId", GoGetter: "NamespaceId"},

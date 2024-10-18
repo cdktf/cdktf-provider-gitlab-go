@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_cluster gitlab_project_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_cluster gitlab_project_cluster}.
 type ProjectCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -638,7 +638,7 @@ func (j *jsiiProxy_ProjectCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
 func NewProjectCluster(scope constructs.Construct, id *string, config *ProjectClusterConfig) ProjectCluster {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewProjectCluster(scope constructs.Construct, id *string, config *ProjectCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_cluster gitlab_project_cluster} Resource.
 func NewProjectCluster_Override(p ProjectCluster, scope constructs.Construct, id *string, config *ProjectClusterConfig) {
 	_init_.Initialize()
 

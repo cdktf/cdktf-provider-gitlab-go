@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project gitlab_project}.
 type DataGitlabProject interface {
 	cdktf.TerraformDataSource
+	AllowPipelineTriggerApproveDeployment() cdktf.IResolvable
 	AnalyticsAccessLevel() *string
 	Archived() cdktf.IResolvable
 	AutoCancelPendingPipelines() *string
@@ -79,6 +80,8 @@ type DataGitlabProject interface {
 	MergeRequestsAccessLevel() *string
 	MergeRequestsEnabled() cdktf.IResolvable
 	MergeTrainsEnabled() cdktf.IResolvable
+	ModelExperimentsAccessLevel() *string
+	ModelRegistryAccessLevel() *string
 	MonitorAccessLevel() *string
 	Name() *string
 	NamespaceId() *float64
@@ -176,6 +179,16 @@ type DataGitlabProject interface {
 // The jsii proxy struct for DataGitlabProject
 type jsiiProxy_DataGitlabProject struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGitlabProject) AllowPipelineTriggerApproveDeployment() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowPipelineTriggerApproveDeployment",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGitlabProject) AnalyticsAccessLevel() *string {
@@ -638,6 +651,26 @@ func (j *jsiiProxy_DataGitlabProject) MergeTrainsEnabled() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProject) ModelExperimentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelExperimentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) ModelRegistryAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelRegistryAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProject) MonitorAccessLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1019,7 +1052,7 @@ func (j *jsiiProxy_DataGitlabProject) WikiEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGitlabProjectConfig) DataGitlabProject {
 	_init_.Initialize()
 
@@ -1037,7 +1070,7 @@ func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Construct, id *string, config *DataGitlabProjectConfig) {
 	_init_.Initialize()
 

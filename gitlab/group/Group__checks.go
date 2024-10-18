@@ -395,6 +395,14 @@ func (j *jsiiProxy_Group) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetDefaultBranchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetDefaultBranchProtectionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AutoDevopsEnabled() interface{}
@@ -37,6 +37,9 @@ type Group interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBranch() *string
+	SetDefaultBranch(val *string)
+	DefaultBranchInput() *string
 	DefaultBranchProtection() *float64
 	SetDefaultBranchProtection(val *float64)
 	DefaultBranchProtectionDefaults() GroupDefaultBranchProtectionDefaultsOutputReference
@@ -199,6 +202,7 @@ type Group interface {
 	ResetAutoDevopsEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
+	ResetDefaultBranch()
 	ResetDefaultBranchProtection()
 	ResetDefaultBranchProtectionDefaults()
 	ResetDescription()
@@ -349,6 +353,26 @@ func (j *jsiiProxy_Group) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) DefaultBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) DefaultBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultBranchInput",
 		&returns,
 	)
 	return returns
@@ -1035,7 +1059,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -1053,7 +1077,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1115,6 +1139,17 @@ func (j *jsiiProxy_Group)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetDefaultBranch(val *string) {
+	if err := j.validateSetDefaultBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultBranch",
 		val,
 	)
 }
@@ -1824,6 +1859,14 @@ func (g *jsiiProxy_Group) ResetAvatarHash() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAvatarHash",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetDefaultBranch() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultBranch",
 		nil, // no parameters
 	)
 }

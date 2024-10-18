@@ -123,10 +123,6 @@ func (j *jsiiProxy_GroupHook) validateSetGroupParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupHook) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GroupHook) validateSetIssuesEventsParameters(val interface{}) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (p *jsiiProxy_PersonalAccessToken) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (p *jsiiProxy_PersonalAccessToken) validatePutRotationConfigurationParameters(value *PersonalAccessTokenRotationConfiguration) error {
+	return nil
+}
+
 func validatePersonalAccessToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

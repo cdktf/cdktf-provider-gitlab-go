@@ -107,6 +107,10 @@ func (j *jsiiProxy_Project) validateSetAllowMergeOnSkippedPipelineParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetAllowPipelineTriggerApproveDeploymentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetAnalyticsAccessLevelParameters(val *string) error {
 	return nil
 }
@@ -324,6 +328,14 @@ func (j *jsiiProxy_Project) validateSetMirrorOverwritesDivergedBranchesParameter
 }
 
 func (j *jsiiProxy_Project) validateSetMirrorTriggerBuildsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetModelExperimentsAccessLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetModelRegistryAccessLevelParameters(val *string) error {
 	return nil
 }
 

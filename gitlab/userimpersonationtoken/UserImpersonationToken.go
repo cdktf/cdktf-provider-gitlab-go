@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
 type UserImpersonationToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -455,7 +455,7 @@ func (j *jsiiProxy_UserImpersonationToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken(scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) UserImpersonationToken {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewUserImpersonationToken(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken_Override(u UserImpersonationToken, scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) {
 	_init_.Initialize()
 

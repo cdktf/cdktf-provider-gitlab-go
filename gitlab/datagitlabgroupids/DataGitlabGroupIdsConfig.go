@@ -24,7 +24,7 @@ type DataGitlabGroupIdsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 }
 

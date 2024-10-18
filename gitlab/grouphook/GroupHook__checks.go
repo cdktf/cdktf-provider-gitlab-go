@@ -433,14 +433,6 @@ func (j *jsiiProxy_GroupHook) validateSetGroupParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupHook) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_GroupHook) validateSetIssuesEventsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -14,6 +14,7 @@ import (
 type DataGitlabProjectsProjectsOutputReference interface {
 	cdktf.ComplexObject
 	AllowMergeOnSkippedPipeline() cdktf.IResolvable
+	AllowPipelineTriggerApproveDeployment() cdktf.IResolvable
 	AnalyticsAccessLevel() *string
 	ApprovalsBeforeMerge() *float64
 	Archived() cdktf.IResolvable
@@ -89,6 +90,8 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	MirrorOverwritesDivergedBranches() cdktf.IResolvable
 	MirrorTriggerBuilds() cdktf.IResolvable
 	MirrorUserId() *float64
+	ModelExperimentsAccessLevel() *string
+	ModelRegistryAccessLevel() *string
 	MonitorAccessLevel() *string
 	Name() *string
 	Namespace() DataGitlabProjectsProjectsNamespaceList
@@ -180,6 +183,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) AllowMergeOnSkippe
 	_jsii_.Get(
 		j,
 		"allowMergeOnSkippedPipeline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) AllowPipelineTriggerApproveDeployment() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowPipelineTriggerApproveDeployment",
 		&returns,
 	)
 	return returns
@@ -790,6 +803,26 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) MirrorUserId() *fl
 	_jsii_.Get(
 		j,
 		"mirrorUserId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ModelExperimentsAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelExperimentsAccessLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ModelRegistryAccessLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelRegistryAccessLevel",
 		&returns,
 	)
 	return returns

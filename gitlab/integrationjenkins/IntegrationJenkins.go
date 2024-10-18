@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jenkins gitlab_integration_jenkins}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_jenkins gitlab_integration_jenkins}.
 type IntegrationJenkins interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -521,7 +521,7 @@ func (j *jsiiProxy_IntegrationJenkins) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
 func NewIntegrationJenkins(scope constructs.Construct, id *string, config *IntegrationJenkinsConfig) IntegrationJenkins {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewIntegrationJenkins(scope constructs.Construct, id *string, config *Integ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
 func NewIntegrationJenkins_Override(i IntegrationJenkins, scope constructs.Construct, id *string, config *IntegrationJenkinsConfig) {
 	_init_.Initialize()
 

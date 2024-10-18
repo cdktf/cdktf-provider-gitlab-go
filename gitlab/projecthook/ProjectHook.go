@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook gitlab_project_hook}.
 type ProjectHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,8 +56,6 @@ type ProjectHook interface {
 	FriendlyUniqueId() *string
 	HookId() *float64
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IssuesEvents() interface{}
 	SetIssuesEvents(val interface{})
 	IssuesEventsInput() interface{}
@@ -168,7 +166,6 @@ type ProjectHook interface {
 	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
 	ResetEnableSslVerification()
-	ResetId()
 	ResetIssuesEvents()
 	ResetJobEvents()
 	ResetMergeRequestsEvents()
@@ -396,16 +393,6 @@ func (j *jsiiProxy_ProjectHook) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectHook) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -762,7 +749,7 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
 	_init_.Initialize()
 
@@ -780,7 +767,7 @@ func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *string, config *ProjectHookConfig) {
 	_init_.Initialize()
 
@@ -880,17 +867,6 @@ func (j *jsiiProxy_ProjectHook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectHook)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1457,14 +1433,6 @@ func (p *jsiiProxy_ProjectHook) ResetEnableSslVerification() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEnableSslVerification",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectHook) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

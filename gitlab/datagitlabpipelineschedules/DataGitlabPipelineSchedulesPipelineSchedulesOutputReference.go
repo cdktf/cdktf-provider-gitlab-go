@@ -37,9 +37,9 @@ type DataGitlabPipelineSchedulesPipelineSchedulesOutputReference interface {
 	Description() *string
 	// Experimental.
 	Fqn() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
+	SetId(val *float64)
+	IdInput() *float64
 	InternalValue() *DataGitlabPipelineSchedulesPipelineSchedules
 	SetInternalValue(val *DataGitlabPipelineSchedulesPipelineSchedules)
 	NextRunAt() *string
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference) IdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"idInput",
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference)SetId(val *string) {
+func (j *jsiiProxy_DataGitlabPipelineSchedulesPipelineSchedulesOutputReference)SetId(val *float64) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}

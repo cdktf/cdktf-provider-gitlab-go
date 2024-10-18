@@ -119,10 +119,6 @@ func (j *jsiiProxy_ProjectHook) validateSetEnableSslVerificationParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ProjectHook) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectHook) validateSetIssuesEventsParameters(val interface{}) error {
 	return nil
 }

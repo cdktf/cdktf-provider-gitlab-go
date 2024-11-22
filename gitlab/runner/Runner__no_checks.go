@@ -119,6 +119,10 @@ func (j *jsiiProxy_Runner) validateSetLockedParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Runner) validateSetMaintenanceNoteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Runner) validateSetMaximumTimeoutParameters(val *float64) error {
 	return nil
 }

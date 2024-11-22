@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_issue_board gitlab_project_issue_board}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_issue_board gitlab_project_issue_board}.
 type ProjectIssueBoard interface {
 	cdktf.TerraformResource
 	AssigneeId() *float64
@@ -476,7 +476,7 @@ func (j *jsiiProxy_ProjectIssueBoard) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
 func NewProjectIssueBoard(scope constructs.Construct, id *string, config *ProjectIssueBoardConfig) ProjectIssueBoard {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewProjectIssueBoard(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_issue_board gitlab_project_issue_board} Resource.
 func NewProjectIssueBoard_Override(p ProjectIssueBoard, scope constructs.Construct, id *string, config *ProjectIssueBoardConfig) {
 	_init_.Initialize()
 

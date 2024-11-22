@@ -365,6 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ciConfigPath", GoGetter: "CiConfigPath"},
 			_jsii_.MemberProperty{JsiiProperty: "ciDefaultGitDepth", GoGetter: "CiDefaultGitDepth"},
 			_jsii_.MemberProperty{JsiiProperty: "ciForwardDeploymentEnabled", GoGetter: "CiForwardDeploymentEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "ciPipelineVariablesMinimumOverrideRole", GoGetter: "CiPipelineVariablesMinimumOverrideRole"},
 			_jsii_.MemberProperty{JsiiProperty: "ciRestrictPipelineCancellationRole", GoGetter: "CiRestrictPipelineCancellationRole"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

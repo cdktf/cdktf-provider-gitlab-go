@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupHook) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (g *jsiiProxy_GroupHook) validatePutCustomHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func validateGroupHook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

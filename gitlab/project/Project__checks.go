@@ -516,6 +516,14 @@ func (j *jsiiProxy_Project) validateSetCiForwardDeploymentEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetCiPipelineVariablesMinimumOverrideRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetCiRestrictPipelineCancellationRoleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_hook gitlab_group_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_hook gitlab_group_hook}.
 type GroupHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,8 @@ type GroupHook interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomHeaders() GroupHookCustomHeadersList
+	CustomHeadersInput() interface{}
 	CustomWebhookTemplate() *string
 	SetCustomWebhookTemplate(val *string)
 	CustomWebhookTemplateInput() *string
@@ -164,8 +166,10 @@ type GroupHook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomHeaders(value interface{})
 	ResetConfidentialIssuesEvents()
 	ResetConfidentialNoteEvents()
+	ResetCustomHeaders()
 	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
 	ResetEnableSslVerification()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_GroupHook) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) CustomHeaders() GroupHookCustomHeadersList {
+	var returns GroupHookCustomHeadersList
+	_jsii_.Get(
+		j,
+		"customHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) CustomHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customHeadersInput",
 		&returns,
 	)
 	return returns
@@ -773,7 +797,7 @@ func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
@@ -791,7 +815,7 @@ func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, config *GroupHookConfig) {
 	_init_.Initialize()
 
@@ -1432,6 +1456,17 @@ func (g *jsiiProxy_GroupHook) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GroupHook) PutCustomHeaders(value interface{}) {
+	if err := g.validatePutCustomHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GroupHook) ResetConfidentialIssuesEvents() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1444,6 +1479,14 @@ func (g *jsiiProxy_GroupHook) ResetConfidentialNoteEvents() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNoteEvents",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetCustomHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomHeaders",
 		nil, // no parameters
 	)
 }

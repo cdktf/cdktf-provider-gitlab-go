@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedEmailDomainsList", GoGetter: "AllowedEmailDomainsList"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedEmailDomainsListInput", GoGetter: "AllowedEmailDomainsListInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDevopsEnabled", GoGetter: "AutoDevopsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDevopsEnabledInput", GoGetter: "AutoDevopsEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "avatar", GoGetter: "Avatar"},
@@ -96,6 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestAccessEnabledInput", GoGetter: "RequestAccessEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTwoFactorAuthentication", GoGetter: "RequireTwoFactorAuthentication"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTwoFactorAuthenticationInput", GoGetter: "RequireTwoFactorAuthenticationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedEmailDomainsList", GoMethod: "ResetAllowedEmailDomainsList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoDevopsEnabled", GoMethod: "ResetAutoDevopsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvatar", GoMethod: "ResetAvatar"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvatarHash", GoMethod: "ResetAvatarHash"},

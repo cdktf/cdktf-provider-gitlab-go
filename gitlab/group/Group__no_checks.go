@@ -99,6 +99,10 @@ func validateGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAllowedEmailDomainsListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetAutoDevopsEnabledParameters(val interface{}) error {
 	return nil
 }

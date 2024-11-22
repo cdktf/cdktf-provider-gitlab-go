@@ -179,6 +179,10 @@ func (j *jsiiProxy_Project) validateSetCiForwardDeploymentEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetCiPipelineVariablesMinimumOverrideRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetCiRestrictPipelineCancellationRoleParameters(val *string) error {
 	return nil
 }

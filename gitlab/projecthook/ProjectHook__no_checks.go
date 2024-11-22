@@ -75,6 +75,10 @@ func (p *jsiiProxy_ProjectHook) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (p *jsiiProxy_ProjectHook) validatePutCustomHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func validateProjectHook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

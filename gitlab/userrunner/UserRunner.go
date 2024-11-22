@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner gitlab_user_runner}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner gitlab_user_runner}.
 type UserRunner interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -56,6 +56,9 @@ type UserRunner interface {
 	Locked() interface{}
 	SetLocked(val interface{})
 	LockedInput() interface{}
+	MaintenanceNote() *string
+	SetMaintenanceNote(val *string)
+	MaintenanceNoteInput() *string
 	MaximumTimeout() *float64
 	SetMaximumTimeout(val *float64)
 	MaximumTimeoutInput() *float64
@@ -140,6 +143,7 @@ type UserRunner interface {
 	ResetDescription()
 	ResetGroupId()
 	ResetLocked()
+	ResetMaintenanceNote()
 	ResetMaximumTimeout()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_UserRunner) LockedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_UserRunner) MaintenanceNote() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceNote",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserRunner) MaintenanceNoteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceNoteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserRunner) MaximumTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -547,7 +571,7 @@ func (j *jsiiProxy_UserRunner) UntaggedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner gitlab_user_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner gitlab_user_runner} Resource.
 func NewUserRunner(scope constructs.Construct, id *string, config *UserRunnerConfig) UserRunner {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewUserRunner(scope constructs.Construct, id *string, config *UserRunnerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner gitlab_user_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner gitlab_user_runner} Resource.
 func NewUserRunner_Override(u UserRunner, scope constructs.Construct, id *string, config *UserRunnerConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_UserRunner)SetLocked(val interface{}) {
 	_jsii_.Set(
 		j,
 		"locked",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserRunner)SetMaintenanceNote(val *string) {
+	if err := j.validateSetMaintenanceNoteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceNote",
 		val,
 	)
 }
@@ -1135,6 +1170,14 @@ func (u *jsiiProxy_UserRunner) ResetLocked() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetLocked",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserRunner) ResetMaintenanceNote() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetMaintenanceNote",
 		nil, // no parameters
 	)
 }

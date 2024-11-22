@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customHeaders", GoGetter: "CustomHeaders"},
+			_jsii_.MemberProperty{JsiiProperty: "customHeadersInput", GoGetter: "CustomHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "customWebhookTemplate", GoGetter: "CustomWebhookTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "customWebhookTemplateInput", GoGetter: "CustomWebhookTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -73,11 +75,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pushEventsBranchFilter", GoGetter: "PushEventsBranchFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "pushEventsBranchFilterInput", GoGetter: "PushEventsBranchFilterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pushEventsInput", GoGetter: "PushEventsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomHeaders", GoMethod: "PutCustomHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "releasesEvents", GoGetter: "ReleasesEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "releasesEventsInput", GoGetter: "ReleasesEventsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialIssuesEvents", GoMethod: "ResetConfidentialIssuesEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialNoteEvents", GoMethod: "ResetConfidentialNoteEvents"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomHeaders", GoMethod: "ResetCustomHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomWebhookTemplate", GoMethod: "ResetCustomWebhookTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentEvents", GoMethod: "ResetDeploymentEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableSslVerification", GoMethod: "ResetEnableSslVerification"},
@@ -123,5 +127,67 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-gitlab.groupHook.GroupHookConfig",
 		reflect.TypeOf((*GroupHookConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-gitlab.groupHook.GroupHookCustomHeaders",
+		reflect.TypeOf((*GroupHookCustomHeaders)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-gitlab.groupHook.GroupHookCustomHeadersList",
+		reflect.TypeOf((*GroupHookCustomHeadersList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GroupHookCustomHeadersList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-gitlab.groupHook.GroupHookCustomHeadersOutputReference",
+		reflect.TypeOf((*GroupHookCustomHeadersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GroupHookCustomHeadersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 }

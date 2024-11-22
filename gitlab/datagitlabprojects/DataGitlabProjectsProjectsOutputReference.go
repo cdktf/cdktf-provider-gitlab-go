@@ -30,6 +30,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	CiConfigPath() *string
 	CiDefaultGitDepth() *float64
 	CiForwardDeploymentEnabled() cdktf.IResolvable
+	CiPipelineVariablesMinimumOverrideRole() *string
 	CiRestrictPipelineCancellationRole() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -343,6 +344,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiForwardDeploymen
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiPipelineVariablesMinimumOverrideRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciPipelineVariablesMinimumOverrideRole",
 		&returns,
 	)
 	return returns

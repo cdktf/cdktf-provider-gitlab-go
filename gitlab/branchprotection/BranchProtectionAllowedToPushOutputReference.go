@@ -30,6 +30,9 @@ type BranchProtectionAllowedToPushOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployKeyId() *float64
+	SetDeployKeyId(val *float64)
+	DeployKeyIdInput() *float64
 	// Experimental.
 	Fqn() *string
 	GroupId() *float64
@@ -72,6 +75,7 @@ type BranchProtectionAllowedToPushOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeployKeyId()
 	ResetGroupId()
 	ResetUserId()
 	// Produce the Token's value at resolution time.
@@ -134,6 +138,26 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) DeployKeyId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) DeployKeyIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference)SetDeployKeyId(val *float64) {
+	if err := j.validateSetDeployKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deployKeyId",
 		val,
 	)
 }
@@ -508,6 +543,14 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) ResetDeployKeyId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeployKeyId",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BranchProtectionAllowedToPushOutputReference) ResetGroupId() {

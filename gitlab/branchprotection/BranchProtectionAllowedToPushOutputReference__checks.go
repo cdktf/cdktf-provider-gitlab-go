@@ -166,6 +166,14 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetDeployKeyIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetGroupIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

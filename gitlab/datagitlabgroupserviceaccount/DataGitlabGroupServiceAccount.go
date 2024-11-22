@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account gitlab_group_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account gitlab_group_service_account}.
 type DataGitlabGroupServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
 func NewDataGitlabGroupServiceAccount(scope constructs.Construct, id *string, config *DataGitlabGroupServiceAccountConfig) DataGitlabGroupServiceAccount {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataGitlabGroupServiceAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
 func NewDataGitlabGroupServiceAccount_Override(d DataGitlabGroupServiceAccount, scope constructs.Construct, id *string, config *DataGitlabGroupServiceAccountConfig) {
 	_init_.Initialize()
 

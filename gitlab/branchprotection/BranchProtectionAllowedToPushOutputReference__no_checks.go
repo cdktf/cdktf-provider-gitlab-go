@@ -59,6 +59,10 @@ func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetDeployKeyIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionAllowedToPushOutputReference) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }

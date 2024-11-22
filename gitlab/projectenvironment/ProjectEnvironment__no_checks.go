@@ -91,6 +91,10 @@ func validateProjectEnvironment_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ProjectEnvironment) validateSetClusterAgentIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -103,7 +107,15 @@ func (j *jsiiProxy_ProjectEnvironment) validateSetExternalUrlParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ProjectEnvironment) validateSetFluxResourcePathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectEnvironment) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectEnvironment) validateSetKubernetesNamespaceParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +136,10 @@ func (j *jsiiProxy_ProjectEnvironment) validateSetProvisionersParameters(val *[]
 }
 
 func (j *jsiiProxy_ProjectEnvironment) validateSetStopBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectEnvironment) validateSetTierParameters(val *string) error {
 	return nil
 }
 

@@ -29,6 +29,7 @@ type DataGitlabMetadataKasOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Enabled() cdktf.IResolvable
+	ExternalK8SProxyUrl() *string
 	ExternalUrl() *string
 	// Experimental.
 	Fqn() *string
@@ -117,6 +118,16 @@ func (j *jsiiProxy_DataGitlabMetadataKasOutputReference) Enabled() cdktf.IResolv
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabMetadataKasOutputReference) ExternalK8SProxyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalK8SProxyUrl",
 		&returns,
 	)
 	return returns

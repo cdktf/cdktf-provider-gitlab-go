@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group gitlab_group}.
 type Group interface {
 	cdktf.TerraformResource
+	AllowedEmailDomainsList() *[]*string
+	SetAllowedEmailDomainsList(val *[]*string)
+	AllowedEmailDomainsListInput() *[]*string
 	AutoDevopsEnabled() interface{}
 	SetAutoDevopsEnabled(val interface{})
 	AutoDevopsEnabledInput() interface{}
@@ -199,6 +202,7 @@ type Group interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDefaultBranchProtectionDefaults(value *GroupDefaultBranchProtectionDefaults)
 	PutPushRules(value *GroupPushRules)
+	ResetAllowedEmailDomainsList()
 	ResetAutoDevopsEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
@@ -246,6 +250,26 @@ type Group interface {
 // The jsii proxy struct for Group
 type jsiiProxy_Group struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Group) AllowedEmailDomainsList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedEmailDomainsList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AllowedEmailDomainsListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedEmailDomainsListInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Group) AutoDevopsEnabled() interface{} {
@@ -1059,7 +1083,7 @@ func (j *jsiiProxy_Group) WikiAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group gitlab_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -1077,7 +1101,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group gitlab_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group gitlab_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1085,6 +1109,17 @@ func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *
 		"@cdktf/provider-gitlab.group.Group",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAllowedEmailDomainsList(val *[]*string) {
+	if err := j.validateSetAllowedEmailDomainsListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedEmailDomainsList",
+		val,
 	)
 }
 
@@ -1836,6 +1871,14 @@ func (g *jsiiProxy_Group) PutPushRules(value *GroupPushRules) {
 		g,
 		"putPushRules",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAllowedEmailDomainsList() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowedEmailDomainsList",
+		nil, // no parameters
 	)
 }
 

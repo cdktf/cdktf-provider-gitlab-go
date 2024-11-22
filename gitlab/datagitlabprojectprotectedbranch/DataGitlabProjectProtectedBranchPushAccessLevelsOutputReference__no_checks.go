@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference) validateSetDeployKeyIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }

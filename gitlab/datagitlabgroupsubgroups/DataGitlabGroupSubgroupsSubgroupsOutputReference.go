@@ -13,6 +13,7 @@ import (
 
 type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 	cdktf.ComplexObject
+	AllowedEmailDomainsList() *string
 	AutoDevopsEnabled() cdktf.IResolvable
 	AvatarUrl() *string
 	// the index of the complex object in a list.
@@ -104,6 +105,16 @@ type DataGitlabGroupSubgroupsSubgroupsOutputReference interface {
 // The jsii proxy struct for DataGitlabGroupSubgroupsSubgroupsOutputReference
 type jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) AllowedEmailDomainsList() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedEmailDomainsList",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) AutoDevopsEnabled() cdktf.IResolvable {

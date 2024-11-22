@@ -30,6 +30,9 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputRe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployKeyId() *float64
+	SetDeployKeyId(val *float64)
+	DeployKeyIdInput() *float64
 	// Experimental.
 	Fqn() *string
 	GroupId() *float64
@@ -72,6 +75,7 @@ type DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeployKeyId()
 	ResetGroupId()
 	ResetUserId()
 	// Produce the Token's value at resolution time.
@@ -134,6 +138,26 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) DeployKeyId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) DeployKeyIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"deployKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference)SetDeployKeyId(val *float64) {
+	if err := j.validateSetDeployKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deployKeyId",
 		val,
 	)
 }
@@ -508,6 +543,14 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccess
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) ResetDeployKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeployKeyId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference) ResetGroupId() {

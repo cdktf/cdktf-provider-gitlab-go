@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -75,6 +75,9 @@ type Project interface {
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
+	CiPipelineVariablesMinimumOverrideRole() *string
+	SetCiPipelineVariablesMinimumOverrideRole(val *string)
+	CiPipelineVariablesMinimumOverrideRoleInput() *string
 	CiRestrictPipelineCancellationRole() *string
 	SetCiRestrictPipelineCancellationRole(val *string)
 	CiRestrictPipelineCancellationRoleInput() *string
@@ -424,6 +427,7 @@ type Project interface {
 	ResetCiConfigPath()
 	ResetCiDefaultGitDepth()
 	ResetCiForwardDeploymentEnabled()
+	ResetCiPipelineVariablesMinimumOverrideRole()
 	ResetCiRestrictPipelineCancellationRole()
 	ResetCiSeparatedCaches()
 	ResetContainerExpirationPolicy()
@@ -918,6 +922,26 @@ func (j *jsiiProxy_Project) CiForwardDeploymentEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiPipelineVariablesMinimumOverrideRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciPipelineVariablesMinimumOverrideRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiPipelineVariablesMinimumOverrideRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ciPipelineVariablesMinimumOverrideRoleInput",
 		&returns,
 	)
 	return returns
@@ -2714,7 +2738,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2732,7 +2756,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2948,6 +2972,17 @@ func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiPipelineVariablesMinimumOverrideRole(val *string) {
+	if err := j.validateSetCiPipelineVariablesMinimumOverrideRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciPipelineVariablesMinimumOverrideRole",
 		val,
 	)
 }
@@ -4390,6 +4425,14 @@ func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCiForwardDeploymentEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetCiPipelineVariablesMinimumOverrideRole() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiPipelineVariablesMinimumOverrideRole",
 		nil, // no parameters
 	)
 }

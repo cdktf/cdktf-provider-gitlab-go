@@ -24,11 +24,11 @@ type GroupSecurityPolicyAttachmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or Full Path of the group which will have the security policy project assigned to it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The ID or Full Path of the security policy project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
 	PolicyProject *string `field:"required" json:"policyProject" yaml:"policyProject"`
 }
 

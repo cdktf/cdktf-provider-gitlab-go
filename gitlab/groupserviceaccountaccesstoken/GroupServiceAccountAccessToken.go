@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
 type GroupServiceAccountAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -68,6 +68,8 @@ type GroupServiceAccountAccessToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Revoked() cdktf.IResolvable
+	RotationConfiguration() GroupServiceAccountAccessTokenRotationConfigurationOutputReference
+	RotationConfigurationInput() interface{}
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -124,10 +126,12 @@ type GroupServiceAccountAccessToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRotationConfiguration(value *GroupServiceAccountAccessTokenRotationConfiguration)
 	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -376,6 +380,26 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken) Revoked() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_GroupServiceAccountAccessToken) RotationConfiguration() GroupServiceAccountAccessTokenRotationConfigurationOutputReference {
+	var returns GroupServiceAccountAccessTokenRotationConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"rotationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccountAccessToken) RotationConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupServiceAccountAccessToken) Scopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -457,7 +481,7 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) GroupServiceAccountAccessToken {
 	_init_.Initialize()
 
@@ -475,7 +499,7 @@ func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken_Override(g GroupServiceAccountAccessToken, scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -962,6 +986,17 @@ func (g *jsiiProxy_GroupServiceAccountAccessToken) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GroupServiceAccountAccessToken) PutRotationConfiguration(value *GroupServiceAccountAccessTokenRotationConfiguration) {
+	if err := g.validatePutRotationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRotationConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GroupServiceAccountAccessToken) ResetExpiresAt() {
 	_jsii_.InvokeVoid(
 		g,
@@ -974,6 +1009,14 @@ func (g *jsiiProxy_GroupServiceAccountAccessToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupServiceAccountAccessToken) ResetRotationConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRotationConfiguration",
 		nil, // no parameters
 	)
 }

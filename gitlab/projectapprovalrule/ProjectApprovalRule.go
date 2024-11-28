@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_approval_rule gitlab_project_approval_rule}.
 type ProjectApprovalRule interface {
 	cdktf.TerraformResource
 	AppliesToAllProtectedBranches() interface{}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_ProjectApprovalRule) UserIdsInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule(scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) ProjectApprovalRule {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewProjectApprovalRule(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource.
 func NewProjectApprovalRule_Override(p ProjectApprovalRule, scope constructs.Construct, id *string, config *ProjectApprovalRuleConfig) {
 	_init_.Initialize()
 

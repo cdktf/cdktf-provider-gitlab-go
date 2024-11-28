@@ -24,11 +24,11 @@ type DataGitlabProjectMergeRequestConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique project level ID of the merge request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
 	Iid *float64 `field:"required" json:"iid" yaml:"iid"`
 	// The ID or path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupServiceAccountAccessToken) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GroupServiceAccountAccessToken) validatePutRotationConfigurationParameters(value *GroupServiceAccountAccessTokenRotationConfiguration) error {
+	return nil
+}
+
 func validateGroupServiceAccountAccessToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

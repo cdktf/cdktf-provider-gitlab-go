@@ -106,6 +106,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	Path() *string
 	PathWithNamespace() *string
 	Permissions() DataGitlabProjectsProjectsPermissionsList
+	PreventMergeWithoutJiraIssue() cdktf.IResolvable
 	PublicBuilds() cdktf.IResolvable
 	ReadmeUrl() *string
 	ReleasesAccessLevel() *string
@@ -964,6 +965,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) Permissions() Data
 	_jsii_.Get(
 		j,
 		"permissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) PreventMergeWithoutJiraIssue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"preventMergeWithoutJiraIssue",
 		&returns,
 	)
 	return returns

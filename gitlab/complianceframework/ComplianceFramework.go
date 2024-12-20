@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/compliance_framework gitlab_compliance_framework}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/compliance_framework gitlab_compliance_framework}.
 type ComplianceFramework interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ComplianceFramework) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/compliance_framework gitlab_compliance_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/compliance_framework gitlab_compliance_framework} Resource.
 func NewComplianceFramework(scope constructs.Construct, id *string, config *ComplianceFrameworkConfig) ComplianceFramework {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewComplianceFramework(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/compliance_framework gitlab_compliance_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/compliance_framework gitlab_compliance_framework} Resource.
 func NewComplianceFramework_Override(c ComplianceFramework, scope constructs.Construct, id *string, config *ComplianceFrameworkConfig) {
 	_init_.Initialize()
 

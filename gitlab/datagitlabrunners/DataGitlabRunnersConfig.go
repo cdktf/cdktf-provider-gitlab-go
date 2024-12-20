@@ -24,19 +24,19 @@ type DataGitlabRunnersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Filters for runners with the given paused value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/runners#paused DataGitlabRunners#paused}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 	// Filters for runners with the given status. Valid Values are `online`, `offline`, `stale`, and `never_contacted`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/runners#status DataGitlabRunners#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/runners#status DataGitlabRunners#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// Filters for runners with all of the given tags.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
 	TagList *[]*string `field:"optional" json:"tagList" yaml:"tagList"`
 	// The type of runner to return. Valid values are `instance_type`, `group_type` and `project_type`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/runners#type DataGitlabRunners#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/runners#type DataGitlabRunners#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

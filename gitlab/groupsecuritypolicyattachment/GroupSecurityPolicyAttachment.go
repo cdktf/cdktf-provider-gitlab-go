@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
 type GroupSecurityPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_GroupSecurityPolicyAttachment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
 func NewGroupSecurityPolicyAttachment(scope constructs.Construct, id *string, config *GroupSecurityPolicyAttachmentConfig) GroupSecurityPolicyAttachment {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewGroupSecurityPolicyAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
 func NewGroupSecurityPolicyAttachment_Override(g GroupSecurityPolicyAttachment, scope constructs.Construct, id *string, config *GroupSecurityPolicyAttachmentConfig) {
 	_init_.Initialize()
 

@@ -391,6 +391,10 @@ func (j *jsiiProxy_Project) validateSetPreReceiveSecretDetectionEnabledParameter
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetPreventMergeWithoutJiraIssueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetPrintingMergeRequestLinkEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pathWithNamespace", GoGetter: "PathWithNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "pathWithNamespaceInput", GoGetter: "PathWithNamespaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelinesEnabled", GoGetter: "PipelinesEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "preventMergeWithoutJiraIssue", GoGetter: "PreventMergeWithoutJiraIssue"},
 			_jsii_.MemberProperty{JsiiProperty: "printingMergeRequestLinkEnabled", GoGetter: "PrintingMergeRequestLinkEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "publicBuilds", GoGetter: "PublicBuilds"},

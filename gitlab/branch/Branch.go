@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch gitlab_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch gitlab_branch}.
 type Branch interface {
 	cdktf.TerraformResource
 	CanPush() cdktf.IResolvable
@@ -47,6 +47,9 @@ type Branch interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeepOnDestroy() interface{}
+	SetKeepOnDestroy(val interface{})
+	KeepOnDestroyInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,6 +128,7 @@ type Branch interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetKeepOnDestroy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -291,6 +295,26 @@ func (j *jsiiProxy_Branch) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Branch) KeepOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Branch) KeepOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -467,7 +491,7 @@ func (j *jsiiProxy_Branch) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Branch {
 	_init_.Initialize()
 
@@ -485,7 +509,7 @@ func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Bra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch_Override(b Branch, scope constructs.Construct, id *string, config *BranchConfig) {
 	_init_.Initialize()
 
@@ -541,6 +565,17 @@ func (j *jsiiProxy_Branch)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Branch)SetKeepOnDestroy(val interface{}) {
+	if err := j.validateSetKeepOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keepOnDestroy",
 		val,
 	)
 }
@@ -965,6 +1000,14 @@ func (b *jsiiProxy_Branch) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_Branch) ResetKeepOnDestroy() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetKeepOnDestroy",
 		nil, // no parameters
 	)
 }

@@ -439,6 +439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathWithNamespace", GoGetter: "PathWithNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "permissions", GoGetter: "Permissions"},
+			_jsii_.MemberProperty{JsiiProperty: "preventMergeWithoutJiraIssue", GoGetter: "PreventMergeWithoutJiraIssue"},
 			_jsii_.MemberProperty{JsiiProperty: "publicBuilds", GoGetter: "PublicBuilds"},
 			_jsii_.MemberProperty{JsiiProperty: "readmeUrl", GoGetter: "ReadmeUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "releasesAccessLevel", GoGetter: "ReleasesAccessLevel"},

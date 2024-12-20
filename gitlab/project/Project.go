@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -258,6 +258,9 @@ type Project interface {
 	PreReceiveSecretDetectionEnabled() interface{}
 	SetPreReceiveSecretDetectionEnabled(val interface{})
 	PreReceiveSecretDetectionEnabledInput() interface{}
+	PreventMergeWithoutJiraIssue() interface{}
+	SetPreventMergeWithoutJiraIssue(val interface{})
+	PreventMergeWithoutJiraIssueInput() interface{}
 	PrintingMergeRequestLinkEnabled() interface{}
 	SetPrintingMergeRequestLinkEnabled(val interface{})
 	PrintingMergeRequestLinkEnabledInput() interface{}
@@ -480,6 +483,7 @@ type Project interface {
 	ResetPath()
 	ResetPipelinesEnabled()
 	ResetPreReceiveSecretDetectionEnabled()
+	ResetPreventMergeWithoutJiraIssue()
 	ResetPrintingMergeRequestLinkEnabled()
 	ResetPublicBuilds()
 	ResetPublicJobs()
@@ -2067,6 +2071,26 @@ func (j *jsiiProxy_Project) PreReceiveSecretDetectionEnabledInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_Project) PreventMergeWithoutJiraIssue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventMergeWithoutJiraIssue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) PreventMergeWithoutJiraIssueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventMergeWithoutJiraIssueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) PrintingMergeRequestLinkEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2738,7 +2762,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2756,7 +2780,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3571,6 +3595,17 @@ func (j *jsiiProxy_Project)SetPreReceiveSecretDetectionEnabled(val interface{}) 
 	_jsii_.Set(
 		j,
 		"preReceiveSecretDetectionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetPreventMergeWithoutJiraIssue(val interface{}) {
+	if err := j.validateSetPreventMergeWithoutJiraIssueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preventMergeWithoutJiraIssue",
 		val,
 	)
 }
@@ -4833,6 +4868,14 @@ func (p *jsiiProxy_Project) ResetPreReceiveSecretDetectionEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPreReceiveSecretDetectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetPreventMergeWithoutJiraIssue() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreventMergeWithoutJiraIssue",
 		nil, // no parameters
 	)
 }

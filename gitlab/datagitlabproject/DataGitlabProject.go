@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project gitlab_project}.
 type DataGitlabProject interface {
 	cdktf.TerraformDataSource
 	AllowPipelineTriggerApproveDeployment() cdktf.IResolvable
@@ -93,6 +93,7 @@ type DataGitlabProject interface {
 	SetPathWithNamespace(val *string)
 	PathWithNamespaceInput() *string
 	PipelinesEnabled() cdktf.IResolvable
+	PreventMergeWithoutJiraIssue() cdktf.IResolvable
 	PrintingMergeRequestLinkEnabled() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -762,6 +763,16 @@ func (j *jsiiProxy_DataGitlabProject) PipelinesEnabled() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProject) PreventMergeWithoutJiraIssue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"preventMergeWithoutJiraIssue",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProject) PrintingMergeRequestLinkEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -1063,7 +1074,7 @@ func (j *jsiiProxy_DataGitlabProject) WikiEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGitlabProjectConfig) DataGitlabProject {
 	_init_.Initialize()
 
@@ -1081,7 +1092,7 @@ func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Construct, id *string, config *DataGitlabProjectConfig) {
 	_init_.Initialize()
 

@@ -103,6 +103,10 @@ func (j *jsiiProxy_Branch) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Branch) validateSetKeepOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Branch) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

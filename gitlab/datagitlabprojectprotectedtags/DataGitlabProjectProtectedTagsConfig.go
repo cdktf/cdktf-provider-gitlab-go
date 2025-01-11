@@ -24,7 +24,7 @@ type DataGitlabProjectProtectedTagsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The integer or path with namespace that uniquely identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_protected_tags#project DataGitlabProjectProtectedTags#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_protected_tags#project DataGitlabProjectProtectedTags#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

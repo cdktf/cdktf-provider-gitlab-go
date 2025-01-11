@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_saml_link gitlab_group_saml_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_saml_link gitlab_group_saml_link}.
 type GroupSamlLink interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GroupSamlLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
 func NewGroupSamlLink(scope constructs.Construct, id *string, config *GroupSamlLinkConfig) GroupSamlLink {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGroupSamlLink(scope constructs.Construct, id *string, config *GroupSamlL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource.
 func NewGroupSamlLink_Override(g GroupSamlLink, scope constructs.Construct, id *string, config *GroupSamlLinkConfig) {
 	_init_.Initialize()
 

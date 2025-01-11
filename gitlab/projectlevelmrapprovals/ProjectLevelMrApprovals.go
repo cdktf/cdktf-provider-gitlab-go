@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
 type ProjectLevelMrApprovals interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_ProjectLevelMrApprovals) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) ProjectLevelMrApprovals {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewProjectLevelMrApprovals(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource.
 func NewProjectLevelMrApprovals_Override(p ProjectLevelMrApprovals, scope constructs.Construct, id *string, config *ProjectLevelMrApprovalsConfig) {
 	_init_.Initialize()
 

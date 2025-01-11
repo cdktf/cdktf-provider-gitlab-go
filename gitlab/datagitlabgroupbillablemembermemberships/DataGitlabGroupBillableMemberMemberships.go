@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships}.
 type DataGitlabGroupBillableMemberMemberships interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataGitlabGroupBillableMemberMemberships) UserIdInput() *floa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships} Data Source.
 func NewDataGitlabGroupBillableMemberMemberships(scope constructs.Construct, id *string, config *DataGitlabGroupBillableMemberMembershipsConfig) DataGitlabGroupBillableMemberMemberships {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataGitlabGroupBillableMemberMemberships(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_billable_member_memberships gitlab_group_billable_member_memberships} Data Source.
 func NewDataGitlabGroupBillableMemberMemberships_Override(d DataGitlabGroupBillableMemberMemberships, scope constructs.Construct, id *string, config *DataGitlabGroupBillableMemberMembershipsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/service_slack gitlab_service_slack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_slack gitlab_service_slack}.
 type ServiceSlack interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -895,7 +895,7 @@ func (j *jsiiProxy_ServiceSlack) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlackConfig) ServiceSlack {
 	_init_.Initialize()
 
@@ -913,7 +913,7 @@ func NewServiceSlack(scope constructs.Construct, id *string, config *ServiceSlac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/service_slack gitlab_service_slack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_slack gitlab_service_slack} Resource.
 func NewServiceSlack_Override(s ServiceSlack, scope constructs.Construct, id *string, config *ServiceSlackConfig) {
 	_init_.Initialize()
 

@@ -24,21 +24,21 @@ type TagProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#project TagProtection#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#project TagProtection#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Name of the tag or wildcard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#tag TagProtection#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#tag TagProtection#tag}
 	Tag *string `field:"required" json:"tag" yaml:"tag"`
 	// allowed_to_create block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 	AllowedToCreate interface{} `field:"optional" json:"allowedToCreate" yaml:"allowedToCreate"`
 	// Access levels allowed to create.
 	//
 	// Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 	CreateAccessLevel *string `field:"optional" json:"createAccessLevel" yaml:"createAccessLevel"`
 }
 

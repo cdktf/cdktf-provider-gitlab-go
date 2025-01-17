@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/pages_domain gitlab_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/pages_domain gitlab_pages_domain}.
 type PagesDomain interface {
 	cdktf.TerraformResource
 	AutoSslEnabled() interface{}
@@ -472,7 +472,7 @@ func (j *jsiiProxy_PagesDomain) Verified() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/pages_domain gitlab_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/pages_domain gitlab_pages_domain} Resource.
 func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainConfig) PagesDomain {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/pages_domain gitlab_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/pages_domain gitlab_pages_domain} Resource.
 func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *string, config *PagesDomainConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook}.
 type ProjectHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type ProjectHook interface {
 	DeploymentEvents() interface{}
 	SetDeploymentEvents(val interface{})
 	DeploymentEventsInput() interface{}
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EnableSslVerification() interface{}
 	SetEnableSslVerification(val interface{})
 	EnableSslVerificationInput() interface{}
@@ -71,6 +74,9 @@ type ProjectHook interface {
 	MergeRequestsEvents() interface{}
 	SetMergeRequestsEvents(val interface{})
 	MergeRequestsEventsInput() interface{}
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NoteEvents() interface{}
@@ -169,10 +175,12 @@ type ProjectHook interface {
 	ResetCustomHeaders()
 	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
+	ResetDescription()
 	ResetEnableSslVerification()
 	ResetIssuesEvents()
 	ResetJobEvents()
 	ResetMergeRequestsEvents()
+	ResetName()
 	ResetNoteEvents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -352,6 +360,26 @@ func (j *jsiiProxy_ProjectHook) DeploymentEventsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectHook) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectHook) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectHook) EnableSslVerification() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -487,6 +515,26 @@ func (j *jsiiProxy_ProjectHook) MergeRequestsEventsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"mergeRequestsEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectHook) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectHook) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -773,7 +821,7 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
 	_init_.Initialize()
 
@@ -791,7 +839,7 @@ func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *string, config *ProjectHookConfig) {
 	_init_.Initialize()
 
@@ -876,6 +924,17 @@ func (j *jsiiProxy_ProjectHook)SetDeploymentEvents(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ProjectHook)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ProjectHook)SetEnableSslVerification(val interface{}) {
 	if err := j.validateSetEnableSslVerificationParameters(val); err != nil {
 		panic(err)
@@ -935,6 +994,17 @@ func (j *jsiiProxy_ProjectHook)SetMergeRequestsEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectHook)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -1472,6 +1542,14 @@ func (p *jsiiProxy_ProjectHook) ResetDeploymentEvents() {
 	)
 }
 
+func (p *jsiiProxy_ProjectHook) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectHook) ResetEnableSslVerification() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1500,6 +1578,14 @@ func (p *jsiiProxy_ProjectHook) ResetMergeRequestsEvents() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMergeRequestsEvents",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectHook) ResetName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetName",
 		nil, // no parameters
 	)
 }

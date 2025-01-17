@@ -9,7 +9,7 @@ type GroupServiceAccountAccessTokenRotationConfiguration struct {
 	//
 	// As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
 	RotateBeforeDays *float64 `field:"required" json:"rotateBeforeDays" yaml:"rotateBeforeDays"`
 }
 

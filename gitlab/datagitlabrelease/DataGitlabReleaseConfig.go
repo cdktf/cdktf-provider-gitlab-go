@@ -24,15 +24,15 @@ type DataGitlabReleaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/release#project_id DataGitlabRelease#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/release#project_id DataGitlabRelease#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The Git tag the release is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
 	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
 	// assets block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/release#assets DataGitlabRelease#assets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/release#assets DataGitlabRelease#assets}
 	Assets *DataGitlabReleaseAssets `field:"optional" json:"assets" yaml:"assets"`
 }
 

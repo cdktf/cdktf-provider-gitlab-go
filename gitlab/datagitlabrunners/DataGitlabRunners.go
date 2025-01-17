@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/runners gitlab_runners}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/runners gitlab_runners}.
 type DataGitlabRunners interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataGitlabRunners) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/runners gitlab_runners} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/runners gitlab_runners} Data Source.
 func NewDataGitlabRunners(scope constructs.Construct, id *string, config *DataGitlabRunnersConfig) DataGitlabRunners {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataGitlabRunners(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/runners gitlab_runners} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/runners gitlab_runners} Data Source.
 func NewDataGitlabRunners_Override(d DataGitlabRunners, scope constructs.Construct, id *string, config *DataGitlabRunnersConfig) {
 	_init_.Initialize()
 

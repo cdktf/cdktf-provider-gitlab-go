@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_membership gitlab_project_membership}.
 type DataGitlabProjectMembership interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,9 @@ type DataGitlabProjectMembership interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserIds() *[]*float64
+	SetUserIds(val *[]*float64)
+	UserIdsInput() *[]*float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,6 +105,7 @@ type DataGitlabProjectMembership interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetQuery()
+	ResetUserIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -371,8 +375,28 @@ func (j *jsiiProxy_DataGitlabProjectMembership) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectMembership) UserIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"userIds",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+func (j *jsiiProxy_DataGitlabProjectMembership) UserIdsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"userIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) DataGitlabProjectMembership {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) {
 	_init_.Initialize()
 
@@ -498,6 +522,17 @@ func (j *jsiiProxy_DataGitlabProjectMembership)SetQuery(val *string) {
 	_jsii_.Set(
 		j,
 		"query",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership)SetUserIds(val *[]*float64) {
+	if err := j.validateSetUserIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userIds",
 		val,
 	)
 }
@@ -831,6 +866,14 @@ func (d *jsiiProxy_DataGitlabProjectMembership) ResetQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetUserIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserIds",
 		nil, // no parameters
 	)
 }

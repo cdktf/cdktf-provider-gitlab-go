@@ -271,6 +271,14 @@ func (j *jsiiProxy_DataGitlabProjectMembership) validateSetQueryParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectMembership) validateSetUserIdsParameters(val *[]*float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataGitlabProjectMembershipParameters(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

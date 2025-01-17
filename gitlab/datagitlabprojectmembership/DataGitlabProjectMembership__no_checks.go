@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataGitlabProjectMembership) validateSetQueryParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabProjectMembership) validateSetUserIdsParameters(val *[]*float64) error {
+	return nil
+}
+
 func validateNewDataGitlabProjectMembershipParameters(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) error {
 	return nil
 }

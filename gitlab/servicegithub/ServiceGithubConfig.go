@@ -24,17 +24,17 @@ type ServiceGithubConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the project you want to activate integration on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_github#project ServiceGithub#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/service_github#project ServiceGithub#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The URL of the GitHub repo to integrate with, e,g, https://github.com/gitlabhq/terraform-provider-gitlab.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_github#repository_url ServiceGithub#repository_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/service_github#repository_url ServiceGithub#repository_url}
 	RepositoryUrl *string `field:"required" json:"repositoryUrl" yaml:"repositoryUrl"`
 	// A GitHub personal access token with at least `repo:status` scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_github#token ServiceGithub#token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/service_github#token ServiceGithub#token}
 	Token *string `field:"required" json:"token" yaml:"token"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_github#id ServiceGithub#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/service_github#id ServiceGithub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,7 +43,7 @@ type ServiceGithubConfig struct {
 	//
 	// Must enable to set a GitLab status check as _required_ in GitHub. See [Static / dynamic status check names] to learn more.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/service_github#static_context ServiceGithub#static_context}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/service_github#static_context ServiceGithub#static_context}
 	StaticContext interface{} `field:"optional" json:"staticContext" yaml:"staticContext"`
 }
 

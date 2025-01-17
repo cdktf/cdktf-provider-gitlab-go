@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_tag gitlab_project_tag}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_tag gitlab_project_tag}.
 type DataGitlabProjectTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DataGitlabProjectTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_tag gitlab_project_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_tag gitlab_project_tag} Data Source.
 func NewDataGitlabProjectTag(scope constructs.Construct, id *string, config *DataGitlabProjectTagConfig) DataGitlabProjectTag {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDataGitlabProjectTag(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_tag gitlab_project_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/project_tag gitlab_project_tag} Data Source.
 func NewDataGitlabProjectTag_Override(d DataGitlabProjectTag, scope constructs.Construct, id *string, config *DataGitlabProjectTagConfig) {
 	_init_.Initialize()
 

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ProjectHook) validateSetDeploymentEventsParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ProjectHook) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetEnableSslVerificationParameters(val interface{}) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_ProjectHook) validateSetLifecycleParameters(val *cdktf.Terraf
 }
 
 func (j *jsiiProxy_ProjectHook) validateSetMergeRequestsEventsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectHook) validateSetNameParameters(val *string) error {
 	return nil
 }
 

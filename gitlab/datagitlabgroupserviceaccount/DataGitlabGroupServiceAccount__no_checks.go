@@ -83,15 +83,7 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabGroupServiceAccount) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabGroupServiceAccount) validateSetServiceAccountIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataGitlabGroupServiceAccount) validateSetUsernameParameters(val *string) error {
 	return nil
 }
 

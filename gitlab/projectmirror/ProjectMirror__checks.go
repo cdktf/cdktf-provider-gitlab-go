@@ -357,14 +357,6 @@ func (j *jsiiProxy_ProjectMirror) validateSetEnabledParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ProjectMirror) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ProjectMirror) validateSetKeepDivergentRefsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

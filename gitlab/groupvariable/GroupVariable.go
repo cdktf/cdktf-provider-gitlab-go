@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_variable gitlab_group_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_variable gitlab_group_variable}.
 type GroupVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,9 +48,10 @@ type GroupVariable interface {
 	Group() *string
 	SetGroup(val *string)
 	GroupInput() *string
+	Hidden() interface{}
+	SetHidden(val interface{})
+	HiddenInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -136,7 +137,7 @@ type GroupVariable interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetEnvironmentScope()
-	ResetId()
+	ResetHidden()
 	ResetMasked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -302,21 +303,31 @@ func (j *jsiiProxy_GroupVariable) GroupInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupVariable) Id() *string {
-	var returns *string
+func (j *jsiiProxy_GroupVariable) Hidden() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"id",
+		"hidden",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GroupVariable) IdInput() *string {
+func (j *jsiiProxy_GroupVariable) HiddenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hiddenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupVariable) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"id",
 		&returns,
 	)
 	return returns
@@ -523,7 +534,7 @@ func (j *jsiiProxy_GroupVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVariableConfig) GroupVariable {
 	_init_.Initialize()
 
@@ -541,7 +552,7 @@ func NewGroupVariable(scope constructs.Construct, id *string, config *GroupVaria
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_variable gitlab_group_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_variable gitlab_group_variable} Resource.
 func NewGroupVariable_Override(g GroupVariable, scope constructs.Construct, id *string, config *GroupVariableConfig) {
 	_init_.Initialize()
 
@@ -623,13 +634,13 @@ func (j *jsiiProxy_GroupVariable)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_GroupVariable)SetHidden(val interface{}) {
+	if err := j.validateSetHiddenParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"hidden",
 		val,
 	)
 }
@@ -1099,10 +1110,10 @@ func (g *jsiiProxy_GroupVariable) ResetEnvironmentScope() {
 	)
 }
 
-func (g *jsiiProxy_GroupVariable) ResetId() {
+func (g *jsiiProxy_GroupVariable) ResetHidden() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetId",
+		"resetHidden",
 		nil, // no parameters
 	)
 }

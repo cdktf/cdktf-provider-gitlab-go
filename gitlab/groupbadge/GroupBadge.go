@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge gitlab_group_badge}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge gitlab_group_badge}.
 type GroupBadge interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,8 +43,6 @@ type GroupBadge interface {
 	SetGroup(val *string)
 	GroupInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	ImageUrl() *string
 	SetImageUrl(val *string)
 	ImageUrlInput() *string
@@ -121,7 +119,6 @@ type GroupBadge interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -249,16 +246,6 @@ func (j *jsiiProxy_GroupBadge) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupBadge) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -425,7 +412,7 @@ func (j *jsiiProxy_GroupBadge) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeConfig) GroupBadge {
 	_init_.Initialize()
 
@@ -443,7 +430,7 @@ func NewGroupBadge(scope constructs.Construct, id *string, config *GroupBadgeCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge gitlab_group_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge gitlab_group_badge} Resource.
 func NewGroupBadge_Override(g GroupBadge, scope constructs.Construct, id *string, config *GroupBadgeConfig) {
 	_init_.Initialize()
 
@@ -499,17 +486,6 @@ func (j *jsiiProxy_GroupBadge)SetGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"group",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupBadge)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -927,14 +903,6 @@ func (g *jsiiProxy_GroupBadge) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (g *jsiiProxy_GroupBadge) ResetId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

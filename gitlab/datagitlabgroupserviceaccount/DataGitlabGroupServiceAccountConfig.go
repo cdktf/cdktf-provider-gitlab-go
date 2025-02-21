@@ -24,19 +24,11 @@ type DataGitlabGroupServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the target group. Must be a top-level group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The service account id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
 	ServiceAccountId *string `field:"required" json:"serviceAccountId" yaml:"serviceAccountId"`
-	// The name of the user. If not specified, the default Service account user name is used.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#name DataGitlabGroupServiceAccount#name}
-	Name *string `field:"optional" json:"name" yaml:"name"`
-	// The username of the user. If not specified, it's automatically generated.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#username DataGitlabGroupServiceAccount#username}
-	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

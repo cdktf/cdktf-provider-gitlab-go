@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label gitlab_group_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label}.
 type GroupLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,8 +49,6 @@ type GroupLabel interface {
 	SetGroup(val *string)
 	GroupInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LabelId() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -121,7 +119,6 @@ type GroupLabel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -293,16 +290,6 @@ func (j *jsiiProxy_GroupLabel) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupLabel) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GroupLabel) LabelId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -414,7 +401,7 @@ func (j *jsiiProxy_GroupLabel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelConfig) GroupLabel {
 	_init_.Initialize()
 
@@ -432,7 +419,7 @@ func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel_Override(g GroupLabel, scope constructs.Construct, id *string, config *GroupLabelConfig) {
 	_init_.Initialize()
 
@@ -510,17 +497,6 @@ func (j *jsiiProxy_GroupLabel)SetGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"group",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupLabel)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -923,14 +899,6 @@ func (g *jsiiProxy_GroupLabel) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupLabel) ResetId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetId",
 		nil, // no parameters
 	)
 }

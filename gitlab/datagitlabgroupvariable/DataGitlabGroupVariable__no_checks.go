@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataGitlabGroupVariable) validateSetGroupParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabGroupVariable) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabGroupVariable) validateSetKeyParameters(val *string) error {
 	return nil
 }

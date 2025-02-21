@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership gitlab_project_membership}.
 type ProjectMembership interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -52,6 +52,9 @@ type ProjectMembership interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MemberRoleId() *float64
+	SetMemberRoleId(val *float64)
+	MemberRoleIdInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -121,6 +124,7 @@ type ProjectMembership interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetExpiresAt()
 	ResetId()
+	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_ProjectMembership) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_ProjectMembership) MemberRoleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMembership) MemberRoleIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectMembership) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_ProjectMembership) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership(scope constructs.Construct, id *string, config *ProjectMembershipConfig) ProjectMembership {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewProjectMembership(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership_Override(p ProjectMembership, scope constructs.Construct, id *string, config *ProjectMembershipConfig) {
 	_init_.Initialize()
 
@@ -510,6 +534,17 @@ func (j *jsiiProxy_ProjectMembership)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMembership)SetMemberRoleId(val *float64) {
+	if err := j.validateSetMemberRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberRoleId",
 		val,
 	)
 }
@@ -920,6 +955,14 @@ func (p *jsiiProxy_ProjectMembership) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMembership) ResetMemberRoleId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMemberRoleId",
 		nil, // no parameters
 	)
 }

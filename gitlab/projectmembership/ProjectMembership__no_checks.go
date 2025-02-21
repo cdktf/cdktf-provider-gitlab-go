@@ -115,6 +115,10 @@ func (j *jsiiProxy_ProjectMembership) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_ProjectMembership) validateSetMemberRoleIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMembership) validateSetProjectParameters(val *string) error {
 	return nil
 }

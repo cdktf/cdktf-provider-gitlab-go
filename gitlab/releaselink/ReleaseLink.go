@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link gitlab_release_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release_link gitlab_release_link}.
 type ReleaseLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -483,7 +483,7 @@ func (j *jsiiProxy_ReleaseLink) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link gitlab_release_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release_link gitlab_release_link} Resource.
 func NewReleaseLink(scope constructs.Construct, id *string, config *ReleaseLinkConfig) ReleaseLink {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewReleaseLink(scope constructs.Construct, id *string, config *ReleaseLinkC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link gitlab_release_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release_link gitlab_release_link} Resource.
 func NewReleaseLink_Override(r ReleaseLink, scope constructs.Construct, id *string, config *ReleaseLinkConfig) {
 	_init_.Initialize()
 

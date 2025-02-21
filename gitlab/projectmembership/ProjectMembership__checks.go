@@ -369,6 +369,14 @@ func (j *jsiiProxy_ProjectMembership) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_ProjectMembership) validateSetMemberRoleIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProjectMembership) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

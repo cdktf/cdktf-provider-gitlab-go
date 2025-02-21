@@ -111,10 +111,6 @@ func (j *jsiiProxy_GroupLabel) validateSetGroupParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupLabel) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GroupLabel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

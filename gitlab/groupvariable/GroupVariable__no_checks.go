@@ -111,7 +111,7 @@ func (j *jsiiProxy_GroupVariable) validateSetGroupParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_GroupVariable) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GroupVariable) validateSetHiddenParameters(val interface{}) error {
 	return nil
 }
 

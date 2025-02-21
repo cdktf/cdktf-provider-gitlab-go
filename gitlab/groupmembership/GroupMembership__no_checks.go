@@ -107,11 +107,7 @@ func (j *jsiiProxy_GroupMembership) validateSetExpiresAtParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GroupMembership) validateSetGroupIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_GroupMembership) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GroupMembership) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }
 

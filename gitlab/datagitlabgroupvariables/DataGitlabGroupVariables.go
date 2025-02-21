@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_variables gitlab_group_variables}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variables gitlab_group_variables}.
 type DataGitlabGroupVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -42,8 +42,6 @@ type DataGitlabGroupVariables interface {
 	SetGroup(val *string)
 	GroupInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -89,7 +87,6 @@ type DataGitlabGroupVariables interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEnvironmentScope()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -232,16 +229,6 @@ func (j *jsiiProxy_DataGitlabGroupVariables) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupVariables) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabGroupVariables) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -323,7 +310,7 @@ func (j *jsiiProxy_DataGitlabGroupVariables) Variables() DataGitlabGroupVariable
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) DataGitlabGroupVariables {
 	_init_.Initialize()
 
@@ -341,7 +328,7 @@ func NewDataGitlabGroupVariables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variables gitlab_group_variables} Data Source.
 func NewDataGitlabGroupVariables_Override(d DataGitlabGroupVariables, scope constructs.Construct, id *string, config *DataGitlabGroupVariablesConfig) {
 	_init_.Initialize()
 
@@ -397,17 +384,6 @@ func (j *jsiiProxy_DataGitlabGroupVariables)SetGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"group",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabGroupVariables)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -720,14 +696,6 @@ func (d *jsiiProxy_DataGitlabGroupVariables) ResetEnvironmentScope() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnvironmentScope",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGitlabGroupVariables) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

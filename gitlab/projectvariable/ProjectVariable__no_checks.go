@@ -107,10 +107,6 @@ func (j *jsiiProxy_ProjectVariable) validateSetEnvironmentScopeParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ProjectVariable) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectVariable) validateSetKeyParameters(val *string) error {
 	return nil
 }

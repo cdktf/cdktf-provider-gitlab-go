@@ -399,6 +399,14 @@ func (j *jsiiProxy_ProjectJobTokenScope) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ProjectJobTokenScope) validateSetTargetGroupIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProjectJobTokenScope) validateSetTargetProjectIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

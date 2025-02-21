@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account gitlab_group_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_service_account gitlab_group_service_account}.
 type DataGitlabGroupServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,8 +44,6 @@ type DataGitlabGroupServiceAccount interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -64,8 +62,6 @@ type DataGitlabGroupServiceAccount interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Username() *string
-	SetUsername(val *string)
-	UsernameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,11 +87,9 @@ type DataGitlabGroupServiceAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -235,16 +229,6 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupServiceAccount) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabGroupServiceAccount) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -335,18 +319,8 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount) Username() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupServiceAccount) UsernameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"usernameInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
 func NewDataGitlabGroupServiceAccount(scope constructs.Construct, id *string, config *DataGitlabGroupServiceAccountConfig) DataGitlabGroupServiceAccount {
 	_init_.Initialize()
 
@@ -364,7 +338,7 @@ func NewDataGitlabGroupServiceAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source.
 func NewDataGitlabGroupServiceAccount_Override(d DataGitlabGroupServiceAccount, scope constructs.Construct, id *string, config *DataGitlabGroupServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -424,17 +398,6 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGitlabGroupServiceAccount)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataGitlabGroupServiceAccount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -450,17 +413,6 @@ func (j *jsiiProxy_DataGitlabGroupServiceAccount)SetServiceAccountId(val *string
 	_jsii_.Set(
 		j,
 		"serviceAccountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabGroupServiceAccount)SetUsername(val *string) {
-	if err := j.validateSetUsernameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"username",
 		val,
 	)
 }
@@ -750,26 +702,10 @@ func (d *jsiiProxy_DataGitlabGroupServiceAccount) OverrideLogicalId(newLogicalId
 	)
 }
 
-func (d *jsiiProxy_DataGitlabGroupServiceAccount) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataGitlabGroupServiceAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGitlabGroupServiceAccount) ResetUsername() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUsername",
 		nil, // no parameters
 	)
 }

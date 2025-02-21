@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership gitlab_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership gitlab_group_membership}.
 type DataGitlabGroupMembership interface {
 	cdktf.TerraformDataSource
 	AccessLevel() *string
@@ -45,8 +45,6 @@ type DataGitlabGroupMembership interface {
 	SetGroupId(val *float64)
 	GroupIdInput() *float64
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Inherited() interface{}
 	SetInherited(val interface{})
 	InheritedInput() interface{}
@@ -97,7 +95,6 @@ type DataGitlabGroupMembership interface {
 	ResetAccessLevel()
 	ResetFullPath()
 	ResetGroupId()
-	ResetId()
 	ResetInherited()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -261,16 +258,6 @@ func (j *jsiiProxy_DataGitlabGroupMembership) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabGroupMembership) Inherited() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -372,7 +359,7 @@ func (j *jsiiProxy_DataGitlabGroupMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership gitlab_group_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership gitlab_group_membership} Data Source.
 func NewDataGitlabGroupMembership(scope constructs.Construct, id *string, config *DataGitlabGroupMembershipConfig) DataGitlabGroupMembership {
 	_init_.Initialize()
 
@@ -390,7 +377,7 @@ func NewDataGitlabGroupMembership(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership gitlab_group_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership gitlab_group_membership} Data Source.
 func NewDataGitlabGroupMembership_Override(d DataGitlabGroupMembership, scope constructs.Construct, id *string, config *DataGitlabGroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -457,17 +444,6 @@ func (j *jsiiProxy_DataGitlabGroupMembership)SetGroupId(val *float64) {
 	_jsii_.Set(
 		j,
 		"groupId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabGroupMembership)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -807,14 +783,6 @@ func (d *jsiiProxy_DataGitlabGroupMembership) ResetGroupId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGroupId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGitlabGroupMembership) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

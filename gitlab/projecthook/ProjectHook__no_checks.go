@@ -175,6 +175,10 @@ func (j *jsiiProxy_ProjectHook) validateSetReleasesEventsParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ProjectHook) validateSetResourceAccessTokenEventsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectHook) validateSetTagPushEventsParameters(val interface{}) error {
 	return nil
 }

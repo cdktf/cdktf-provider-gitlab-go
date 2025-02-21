@@ -87,10 +87,6 @@ func (j *jsiiProxy_DataGitlabGroupMembership) validateSetGroupIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabGroupMembership) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabGroupMembership) validateSetInheritedParameters(val interface{}) error {
 	return nil
 }

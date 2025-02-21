@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror gitlab_project_mirror}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror}.
 type ProjectMirror interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,8 +43,6 @@ type ProjectMirror interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	KeepDivergentRefs() interface{}
 	SetKeepDivergentRefs(val interface{})
 	KeepDivergentRefsInput() interface{}
@@ -124,7 +122,6 @@ type ProjectMirror interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEnabled()
-	ResetId()
 	ResetKeepDivergentRefs()
 	ResetOnlyProtectedBranches()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -253,16 +250,6 @@ func (j *jsiiProxy_ProjectMirror) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectMirror) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -439,7 +426,7 @@ func (j *jsiiProxy_ProjectMirror) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMirrorConfig) ProjectMirror {
 	_init_.Initialize()
 
@@ -457,7 +444,7 @@ func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *string, config *ProjectMirrorConfig) {
 	_init_.Initialize()
 
@@ -513,17 +500,6 @@ func (j *jsiiProxy_ProjectMirror)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectMirror)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -959,14 +935,6 @@ func (p *jsiiProxy_ProjectMirror) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectMirror) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -353,15 +353,7 @@ func (j *jsiiProxy_GroupMembership) validateSetExpiresAtParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GroupMembership) validateSetGroupIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_GroupMembership) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GroupMembership) validateSetGroupIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -103,10 +103,6 @@ func (j *jsiiProxy_ProjectMirror) validateSetEnabledParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ProjectMirror) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectMirror) validateSetKeepDivergentRefsParameters(val interface{}) error {
 	return nil
 }

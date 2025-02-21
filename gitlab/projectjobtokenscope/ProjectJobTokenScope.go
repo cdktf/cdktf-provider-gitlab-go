@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
 type ProjectJobTokenScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type ProjectJobTokenScope interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TargetGroupId() *float64
+	SetTargetGroupId(val *float64)
+	TargetGroupIdInput() *float64
 	TargetProjectId() *float64
 	SetTargetProjectId(val *float64)
 	TargetProjectIdInput() *float64
@@ -114,6 +117,8 @@ type ProjectJobTokenScope interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTargetGroupId()
+	ResetTargetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -292,6 +297,26 @@ func (j *jsiiProxy_ProjectJobTokenScope) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectJobTokenScope) TargetGroupId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScope) TargetGroupIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectJobTokenScope) TargetProjectId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -343,7 +368,7 @@ func (j *jsiiProxy_ProjectJobTokenScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource.
 func NewProjectJobTokenScope(scope constructs.Construct, id *string, config *ProjectJobTokenScopeConfig) ProjectJobTokenScope {
 	_init_.Initialize()
 
@@ -361,7 +386,7 @@ func NewProjectJobTokenScope(scope constructs.Construct, id *string, config *Pro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource.
 func NewProjectJobTokenScope_Override(p ProjectJobTokenScope, scope constructs.Construct, id *string, config *ProjectJobTokenScopeConfig) {
 	_init_.Initialize()
 
@@ -447,6 +472,17 @@ func (j *jsiiProxy_ProjectJobTokenScope)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectJobTokenScope)SetTargetGroupId(val *float64) {
+	if err := j.validateSetTargetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetGroupId",
 		val,
 	)
 }
@@ -819,6 +855,22 @@ func (p *jsiiProxy_ProjectJobTokenScope) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScope) ResetTargetGroupId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetGroupId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScope) ResetTargetProjectId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetProjectId",
 		nil, // no parameters
 	)
 }

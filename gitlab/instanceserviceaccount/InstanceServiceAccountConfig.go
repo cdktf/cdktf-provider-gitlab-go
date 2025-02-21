@@ -24,13 +24,13 @@ type InstanceServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the user. If not specified, the default Service account user name is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
 	Timeouts *InstanceServiceAccountTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The username of the user. If not specified, it’s automatically generated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

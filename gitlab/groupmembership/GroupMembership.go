@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership gitlab_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership}.
 type GroupMembership interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -45,12 +45,10 @@ type GroupMembership interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GroupId() *string
-	SetGroupId(val *string)
-	GroupIdInput() *string
+	GroupId() *float64
+	SetGroupId(val *float64)
+	GroupIdInput() *float64
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -129,7 +127,6 @@ type GroupMembership interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExpiresAt()
-	ResetId()
 	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -274,8 +271,8 @@ func (j *jsiiProxy_GroupMembership) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) GroupId() *string {
-	var returns *string
+func (j *jsiiProxy_GroupMembership) GroupId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"groupId",
@@ -284,8 +281,8 @@ func (j *jsiiProxy_GroupMembership) GroupId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) GroupIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_GroupMembership) GroupIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"groupIdInput",
@@ -299,16 +296,6 @@ func (j *jsiiProxy_GroupMembership) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupMembership) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +462,7 @@ func (j *jsiiProxy_GroupMembership) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership gitlab_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership} Resource.
 func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMembershipConfig) GroupMembership {
 	_init_.Initialize()
 
@@ -493,7 +480,7 @@ func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership gitlab_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership} Resource.
 func NewGroupMembership_Override(g GroupMembership, scope constructs.Construct, id *string, config *GroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -564,24 +551,13 @@ func (j *jsiiProxy_GroupMembership)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership)SetGroupId(val *string) {
+func (j *jsiiProxy_GroupMembership)SetGroupId(val *float64) {
 	if err := j.validateSetGroupIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"groupId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GroupMembership)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1017,14 +993,6 @@ func (g *jsiiProxy_GroupMembership) ResetExpiresAt() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExpiresAt",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupMembership) ResetId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable}.
 type ProjectVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,8 +46,6 @@ type ProjectVariable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -136,7 +134,6 @@ type ProjectVariable interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetEnvironmentScope()
-	ResetId()
 	ResetMasked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -287,16 +284,6 @@ func (j *jsiiProxy_ProjectVariable) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectVariable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -523,7 +510,7 @@ func (j *jsiiProxy_ProjectVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectVariableConfig) ProjectVariable {
 	_init_.Initialize()
 
@@ -541,7 +528,7 @@ func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable_Override(p ProjectVariable, scope constructs.Construct, id *string, config *ProjectVariableConfig) {
 	_init_.Initialize()
 
@@ -608,17 +595,6 @@ func (j *jsiiProxy_ProjectVariable)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1095,14 +1071,6 @@ func (p *jsiiProxy_ProjectVariable) ResetEnvironmentScope() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEnvironmentScope",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectVariable) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

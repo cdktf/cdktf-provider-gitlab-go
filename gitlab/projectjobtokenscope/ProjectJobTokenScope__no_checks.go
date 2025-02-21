@@ -111,6 +111,10 @@ func (j *jsiiProxy_ProjectJobTokenScope) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ProjectJobTokenScope) validateSetTargetGroupIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectJobTokenScope) validateSetTargetProjectIdParameters(val *float64) error {
 	return nil
 }

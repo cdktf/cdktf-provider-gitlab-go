@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook gitlab_project_hook}.
 type ProjectHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,6 +108,9 @@ type ProjectHook interface {
 	ReleasesEvents() interface{}
 	SetReleasesEvents(val interface{})
 	ReleasesEventsInput() interface{}
+	ResourceAccessTokenEvents() interface{}
+	SetResourceAccessTokenEvents(val interface{})
+	ResourceAccessTokenEventsInput() interface{}
 	TagPushEvents() interface{}
 	SetTagPushEvents(val interface{})
 	TagPushEventsInput() interface{}
@@ -189,6 +192,7 @@ type ProjectHook interface {
 	ResetPushEvents()
 	ResetPushEventsBranchFilter()
 	ResetReleasesEvents()
+	ResetResourceAccessTokenEvents()
 	ResetTagPushEvents()
 	ResetToken()
 	ResetWikiPageEvents()
@@ -710,6 +714,26 @@ func (j *jsiiProxy_ProjectHook) ReleasesEventsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectHook) ResourceAccessTokenEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceAccessTokenEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectHook) ResourceAccessTokenEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceAccessTokenEventsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectHook) TagPushEvents() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -821,7 +845,7 @@ func (j *jsiiProxy_ProjectHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookConfig) ProjectHook {
 	_init_.Initialize()
 
@@ -839,7 +863,7 @@ func NewProjectHook(scope constructs.Construct, id *string, config *ProjectHookC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook gitlab_project_hook} Resource.
 func NewProjectHook_Override(p ProjectHook, scope constructs.Construct, id *string, config *ProjectHookConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1114,17 @@ func (j *jsiiProxy_ProjectHook)SetReleasesEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"releasesEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectHook)SetResourceAccessTokenEvents(val interface{}) {
+	if err := j.validateSetResourceAccessTokenEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceAccessTokenEvents",
 		val,
 	)
 }
@@ -1634,6 +1669,14 @@ func (p *jsiiProxy_ProjectHook) ResetReleasesEvents() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetReleasesEvents",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectHook) ResetResourceAccessTokenEvents() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetResourceAccessTokenEvents",
 		nil, // no parameters
 	)
 }

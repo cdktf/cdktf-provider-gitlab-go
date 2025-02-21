@@ -103,10 +103,6 @@ func (j *jsiiProxy_GroupBadge) validateSetGroupParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupBadge) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GroupBadge) validateSetImageUrlParameters(val *string) error {
 	return nil
 }

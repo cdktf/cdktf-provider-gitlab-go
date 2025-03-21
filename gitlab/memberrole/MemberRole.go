@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/member_role gitlab_member_role}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/member_role gitlab_member_role}.
 type MemberRole interface {
 	cdktf.TerraformResource
 	BaseAccessLevel() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_MemberRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/member_role gitlab_member_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/member_role gitlab_member_role} Resource.
 func NewMemberRole(scope constructs.Construct, id *string, config *MemberRoleConfig) MemberRole {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewMemberRole(scope constructs.Construct, id *string, config *MemberRoleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/member_role gitlab_member_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/member_role gitlab_member_role} Resource.
 func NewMemberRole_Override(m MemberRole, scope constructs.Construct, id *string, config *MemberRoleConfig) {
 	_init_.Initialize()
 

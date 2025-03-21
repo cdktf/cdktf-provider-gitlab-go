@@ -26,21 +26,21 @@ type GroupProtectedEnvironmentConfig struct {
 	//
 	// Elements in the `deploy_access_levels` should be one of `user_id`, `group_id` or `access_level`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 	DeployAccessLevels interface{} `field:"required" json:"deployAccessLevels" yaml:"deployAccessLevels"`
 	// The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 	Environment *string `field:"required" json:"environment" yaml:"environment"`
 	// The ID or full path of the group which the protected environment is created against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// Array of approval rules to deploy, with each described by a hash.
 	//
 	// Elements in the `approval_rules` should be one of `user_id`, `group_id` or `access_level`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 	ApprovalRules interface{} `field:"optional" json:"approvalRules" yaml:"approvalRules"`
 }
 

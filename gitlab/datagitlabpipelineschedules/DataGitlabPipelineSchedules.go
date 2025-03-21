@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules}.
 type DataGitlabPipelineSchedules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataGitlabPipelineSchedules) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source.
 func NewDataGitlabPipelineSchedules(scope constructs.Construct, id *string, config *DataGitlabPipelineSchedulesConfig) DataGitlabPipelineSchedules {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataGitlabPipelineSchedules(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source.
 func NewDataGitlabPipelineSchedules_Override(d DataGitlabPipelineSchedules, scope constructs.Construct, id *string, config *DataGitlabPipelineSchedulesConfig) {
 	_init_.Initialize()
 

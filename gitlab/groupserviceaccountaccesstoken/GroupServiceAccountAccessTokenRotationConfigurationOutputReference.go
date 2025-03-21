@@ -28,6 +28,9 @@ type GroupServiceAccountAccessTokenRotationConfigurationOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpirationDays() *float64
+	SetExpirationDays(val *float64)
+	ExpirationDaysInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type GroupServiceAccountAccessTokenRotationConfigurationOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExpirationDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) ExpirationDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) ExpirationDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationDaysInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference)SetExpirationDays(val *float64) {
+	if err := j.validateSetExpirationDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationDays",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) ResetExpirationDays() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExpirationDays",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

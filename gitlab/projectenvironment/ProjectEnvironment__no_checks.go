@@ -91,6 +91,10 @@ func validateProjectEnvironment_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ProjectEnvironment) validateSetAutoStopSettingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectEnvironment) validateSetClusterAgentIdParameters(val *float64) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_ProjectEnvironment) validateSetConnectionParameters(val inter
 }
 
 func (j *jsiiProxy_ProjectEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProjectEnvironment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

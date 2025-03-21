@@ -100,6 +100,8 @@ func init() {
 		"@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference",
 		reflect.TypeOf((*DataGitlabProjectEnvironmentsEnvironmentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoStopAt", GoGetter: "AutoStopAt"},
+			_jsii_.MemberProperty{JsiiProperty: "autoStopSetting", GoGetter: "AutoStopSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterAgentId", GoGetter: "ClusterAgentId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

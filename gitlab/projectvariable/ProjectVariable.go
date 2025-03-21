@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable gitlab_project_variable}.
 type ProjectVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type ProjectVariable interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hidden() interface{}
+	SetHidden(val interface{})
+	HiddenInput() interface{}
 	Id() *string
 	Key() *string
 	SetKey(val *string)
@@ -134,6 +137,7 @@ type ProjectVariable interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetEnvironmentScope()
+	ResetHidden()
 	ResetMasked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -274,6 +278,26 @@ func (j *jsiiProxy_ProjectVariable) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectVariable) Hidden() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hidden",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectVariable) HiddenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hiddenInput",
 		&returns,
 	)
 	return returns
@@ -510,7 +534,7 @@ func (j *jsiiProxy_ProjectVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectVariableConfig) ProjectVariable {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable_Override(p ProjectVariable, scope constructs.Construct, id *string, config *ProjectVariableConfig) {
 	_init_.Initialize()
 
@@ -595,6 +619,17 @@ func (j *jsiiProxy_ProjectVariable)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectVariable)SetHidden(val interface{}) {
+	if err := j.validateSetHiddenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hidden",
 		val,
 	)
 }
@@ -1071,6 +1106,14 @@ func (p *jsiiProxy_ProjectVariable) ResetEnvironmentScope() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEnvironmentScope",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectVariable) ResetHidden() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHidden",
 		nil, // no parameters
 	)
 }

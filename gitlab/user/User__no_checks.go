@@ -115,6 +115,10 @@ func (j *jsiiProxy_User) validateSetExternUidParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetForceRandomPasswordParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -383,6 +383,10 @@ func (j *jsiiProxy_Project) validateSetPathParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetPermanentlyDeleteOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetPipelinesEnabledParameters(val interface{}) error {
 	return nil
 }

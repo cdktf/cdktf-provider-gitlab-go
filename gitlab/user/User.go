@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/user gitlab_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user gitlab_user}.
 type User interface {
 	cdktf.TerraformResource
 	CanCreateGroup() interface{}
@@ -43,6 +43,9 @@ type User interface {
 	ExternUid() *string
 	SetExternUid(val *string)
 	ExternUidInput() *string
+	ForceRandomPassword() interface{}
+	SetForceRandomPassword(val interface{})
+	ForceRandomPasswordInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -155,6 +158,7 @@ type User interface {
 	ResetCanCreateGroup()
 	ResetExternalProvider()
 	ResetExternUid()
+	ResetForceRandomPassword()
 	ResetId()
 	ResetIsAdmin()
 	ResetIsExternal()
@@ -311,6 +315,26 @@ func (j *jsiiProxy_User) ExternUidInput() *string {
 	_jsii_.Get(
 		j,
 		"externUidInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ForceRandomPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceRandomPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) ForceRandomPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceRandomPasswordInput",
 		&returns,
 	)
 	return returns
@@ -667,7 +691,7 @@ func (j *jsiiProxy_User) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/user gitlab_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user gitlab_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/user gitlab_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user gitlab_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -766,6 +790,17 @@ func (j *jsiiProxy_User)SetExternUid(val *string) {
 	_jsii_.Set(
 		j,
 		"externUid",
+		val,
+	)
+}
+
+func (j *jsiiProxy_User)SetForceRandomPassword(val interface{}) {
+	if err := j.validateSetForceRandomPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceRandomPassword",
 		val,
 	)
 }
@@ -1313,6 +1348,14 @@ func (u *jsiiProxy_User) ResetExternUid() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetExternUid",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetForceRandomPassword() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetForceRandomPassword",
 		nil, // no parameters
 	)
 }

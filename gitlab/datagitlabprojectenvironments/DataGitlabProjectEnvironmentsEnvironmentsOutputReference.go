@@ -13,6 +13,8 @@ import (
 
 type DataGitlabProjectEnvironmentsEnvironmentsOutputReference interface {
 	cdktf.ComplexObject
+	AutoStopAt() *string
+	AutoStopSetting() *string
 	ClusterAgentId() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -89,6 +91,26 @@ type DataGitlabProjectEnvironmentsEnvironmentsOutputReference interface {
 // The jsii proxy struct for DataGitlabProjectEnvironmentsEnvironmentsOutputReference
 type jsiiProxy_DataGitlabProjectEnvironmentsEnvironmentsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGitlabProjectEnvironmentsEnvironmentsOutputReference) AutoStopAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectEnvironmentsEnvironmentsOutputReference) AutoStopSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopSetting",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGitlabProjectEnvironmentsEnvironmentsOutputReference) ClusterAgentId() *float64 {

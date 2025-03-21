@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror gitlab_project_mirror}.
 type ProjectMirror interface {
 	cdktf.TerraformResource
+	AuthMethod() *string
+	SetAuthMethod(val *string)
+	AuthMethodInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -50,6 +53,9 @@ type ProjectMirror interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MirrorBranchRegex() *string
+	SetMirrorBranchRegex(val *string)
+	MirrorBranchRegexInput() *string
 	MirrorId() *float64
 	// The tree node.
 	Node() constructs.Node
@@ -121,8 +127,10 @@ type ProjectMirror interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAuthMethod()
 	ResetEnabled()
 	ResetKeepDivergentRefs()
+	ResetMirrorBranchRegex()
 	ResetOnlyProtectedBranches()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -143,6 +151,26 @@ type ProjectMirror interface {
 // The jsii proxy struct for ProjectMirror
 type jsiiProxy_ProjectMirror struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ProjectMirror) AuthMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMirror) AuthMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethodInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ProjectMirror) CdktfStack() cdktf.TerraformStack {
@@ -280,6 +308,26 @@ func (j *jsiiProxy_ProjectMirror) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMirror) MirrorBranchRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mirrorBranchRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectMirror) MirrorBranchRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mirrorBranchRegexInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +474,7 @@ func (j *jsiiProxy_ProjectMirror) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMirrorConfig) ProjectMirror {
 	_init_.Initialize()
 
@@ -444,7 +492,7 @@ func NewProjectMirror(scope constructs.Construct, id *string, config *ProjectMir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror gitlab_project_mirror} Resource.
 func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *string, config *ProjectMirrorConfig) {
 	_init_.Initialize()
 
@@ -452,6 +500,17 @@ func NewProjectMirror_Override(p ProjectMirror, scope constructs.Construct, id *
 		"@cdktf/provider-gitlab.projectMirror.ProjectMirror",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectMirror)SetAuthMethod(val *string) {
+	if err := j.validateSetAuthMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authMethod",
+		val,
 	)
 }
 
@@ -522,6 +581,17 @@ func (j *jsiiProxy_ProjectMirror)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectMirror)SetMirrorBranchRegex(val *string) {
+	if err := j.validateSetMirrorBranchRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mirrorBranchRegex",
 		val,
 	)
 }
@@ -931,6 +1001,14 @@ func (p *jsiiProxy_ProjectMirror) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProjectMirror) ResetAuthMethod() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAuthMethod",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectMirror) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		p,
@@ -943,6 +1021,14 @@ func (p *jsiiProxy_ProjectMirror) ResetKeepDivergentRefs() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetKeepDivergentRefs",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectMirror) ResetMirrorBranchRegex() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMirrorBranchRegex",
 		nil, // no parameters
 	)
 }

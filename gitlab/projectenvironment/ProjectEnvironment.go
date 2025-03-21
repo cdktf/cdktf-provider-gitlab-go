@@ -12,9 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_environment gitlab_project_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_environment gitlab_project_environment}.
 type ProjectEnvironment interface {
 	cdktf.TerraformResource
+	AutoStopAt() *string
+	AutoStopSetting() *string
+	SetAutoStopSetting(val *string)
+	AutoStopSettingInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterAgentId() *float64
@@ -35,6 +39,9 @@ type ProjectEnvironment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	ExternalUrl() *string
 	SetExternalUrl(val *string)
 	ExternalUrlInput() *string
@@ -135,7 +142,9 @@ type ProjectEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoStopSetting()
 	ResetClusterAgentId()
+	ResetDescription()
 	ResetExternalUrl()
 	ResetFluxResourcePath()
 	ResetId()
@@ -161,6 +170,36 @@ type ProjectEnvironment interface {
 // The jsii proxy struct for ProjectEnvironment
 type jsiiProxy_ProjectEnvironment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ProjectEnvironment) AutoStopAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironment) AutoStopSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironment) AutoStopSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoStopSettingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ProjectEnvironment) CdktfStack() cdktf.TerraformStack {
@@ -238,6 +277,26 @@ func (j *jsiiProxy_ProjectEnvironment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironment) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironment) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -544,7 +603,7 @@ func (j *jsiiProxy_ProjectEnvironment) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment(scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) ProjectEnvironment {
 	_init_.Initialize()
 
@@ -562,7 +621,7 @@ func NewProjectEnvironment(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment_Override(p ProjectEnvironment, scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -570,6 +629,17 @@ func NewProjectEnvironment_Override(p ProjectEnvironment, scope constructs.Const
 		"@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectEnvironment)SetAutoStopSetting(val *string) {
+	if err := j.validateSetAutoStopSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoStopSetting",
+		val,
 	)
 }
 
@@ -610,6 +680,17 @@ func (j *jsiiProxy_ProjectEnvironment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectEnvironment)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1093,10 +1174,26 @@ func (p *jsiiProxy_ProjectEnvironment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProjectEnvironment) ResetAutoStopSetting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoStopSetting",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_ProjectEnvironment) ResetClusterAgentId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetClusterAgentId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectEnvironment) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

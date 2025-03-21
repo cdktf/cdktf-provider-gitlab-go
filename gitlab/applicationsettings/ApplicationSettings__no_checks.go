@@ -763,6 +763,10 @@ func (j *jsiiProxy_ApplicationSettings) validateSetLockDuoFeaturesEnabledParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetLockMembershipsToLdapParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetMailgunEventsEnabledParameters(val interface{}) error {
 	return nil
 }

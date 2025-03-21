@@ -91,6 +91,18 @@ func (j *jsiiProxy_DataGitlabUsers) validateSetCreatedBeforeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabUsers) validateSetExcludeExternalParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabUsers) validateSetExcludeInternalParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabUsers) validateSetExternalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabUsers) validateSetExternProviderParameters(val *string) error {
 	return nil
 }
@@ -116,6 +128,14 @@ func (j *jsiiProxy_DataGitlabUsers) validateSetSearchParameters(val *string) err
 }
 
 func (j *jsiiProxy_DataGitlabUsers) validateSetSortParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabUsers) validateSetUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabUsers) validateSetWithoutProjectBotsParameters(val interface{}) error {
 	return nil
 }
 

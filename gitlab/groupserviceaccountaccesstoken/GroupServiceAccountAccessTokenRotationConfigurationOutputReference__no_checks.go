@@ -59,6 +59,10 @@ func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateSetExpirationDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

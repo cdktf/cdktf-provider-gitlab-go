@@ -111,11 +111,11 @@ func (j *jsiiProxy_GroupShareGroup) validateSetGroupIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_GroupShareGroup) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_GroupShareGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_GroupShareGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GroupShareGroup) validateSetMemberRoleIdParameters(val *float64) error {
 	return nil
 }
 

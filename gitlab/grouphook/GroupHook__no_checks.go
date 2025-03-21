@@ -95,6 +95,10 @@ func validateGroupHook_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_GroupHook) validateSetBranchFilterStrategyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetConfidentialIssuesEventsParameters(val interface{}) error {
 	return nil
 }
@@ -119,7 +123,15 @@ func (j *jsiiProxy_GroupHook) validateSetDeploymentEventsParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GroupHook) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetEnableSslVerificationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupHook) validateSetFeatureFlagEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -140,6 +152,10 @@ func (j *jsiiProxy_GroupHook) validateSetLifecycleParameters(val *cdktf.Terrafor
 }
 
 func (j *jsiiProxy_GroupHook) validateSetMergeRequestsEventsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GroupHook) validateSetNameParameters(val *string) error {
 	return nil
 }
 

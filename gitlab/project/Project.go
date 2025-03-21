@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -252,6 +252,9 @@ type Project interface {
 	SetPath(val *string)
 	PathInput() *string
 	PathWithNamespace() *string
+	PermanentlyDeleteOnDestroy() interface{}
+	SetPermanentlyDeleteOnDestroy(val interface{})
+	PermanentlyDeleteOnDestroyInput() interface{}
 	PipelinesEnabled() interface{}
 	SetPipelinesEnabled(val interface{})
 	PipelinesEnabledInput() interface{}
@@ -481,6 +484,7 @@ type Project interface {
 	ResetPackagesEnabled()
 	ResetPagesAccessLevel()
 	ResetPath()
+	ResetPermanentlyDeleteOnDestroy()
 	ResetPipelinesEnabled()
 	ResetPreReceiveSecretDetectionEnabled()
 	ResetPreventMergeWithoutJiraIssue()
@@ -2031,6 +2035,26 @@ func (j *jsiiProxy_Project) PathWithNamespace() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) PermanentlyDeleteOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentlyDeleteOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) PermanentlyDeleteOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentlyDeleteOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) PipelinesEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2762,7 +2786,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2780,7 +2804,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3573,6 +3597,17 @@ func (j *jsiiProxy_Project)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetPermanentlyDeleteOnDestroy(val interface{}) {
+	if err := j.validateSetPermanentlyDeleteOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permanentlyDeleteOnDestroy",
 		val,
 	)
 }
@@ -4852,6 +4887,14 @@ func (p *jsiiProxy_Project) ResetPath() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetPermanentlyDeleteOnDestroy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPermanentlyDeleteOnDestroy",
 		nil, // no parameters
 	)
 }

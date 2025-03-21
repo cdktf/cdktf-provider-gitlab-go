@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/users gitlab_users}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users}.
 type DataGitlabUsers interface {
 	cdktf.TerraformDataSource
 	Active() interface{}
@@ -39,6 +39,15 @@ type DataGitlabUsers interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExcludeExternal() interface{}
+	SetExcludeExternal(val interface{})
+	ExcludeExternalInput() interface{}
+	ExcludeInternal() interface{}
+	SetExcludeInternal(val interface{})
+	ExcludeInternalInput() interface{}
+	External() interface{}
+	SetExternal(val interface{})
+	ExternalInput() interface{}
 	ExternProvider() *string
 	SetExternProvider(val *string)
 	ExternProviderInput() *string
@@ -83,7 +92,13 @@ type DataGitlabUsers interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Username() *string
+	SetUsername(val *string)
+	UsernameInput() *string
 	Users() DataGitlabUsersUsersList
+	WithoutProjectBots() interface{}
+	SetWithoutProjectBots(val interface{})
+	WithoutProjectBotsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,6 +128,9 @@ type DataGitlabUsers interface {
 	ResetBlocked()
 	ResetCreatedAfter()
 	ResetCreatedBefore()
+	ResetExcludeExternal()
+	ResetExcludeInternal()
+	ResetExternal()
 	ResetExternProvider()
 	ResetExternUid()
 	ResetId()
@@ -122,6 +140,8 @@ type DataGitlabUsers interface {
 	ResetOverrideLogicalId()
 	ResetSearch()
 	ResetSort()
+	ResetUsername()
+	ResetWithoutProjectBots()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -256,6 +276,66 @@ func (j *jsiiProxy_DataGitlabUsers) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) ExcludeExternal() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeExternal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) ExcludeExternalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeExternalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) ExcludeInternal() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeInternal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) ExcludeInternalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeInternalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) External() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"external",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) ExternalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +561,26 @@ func (j *jsiiProxy_DataGitlabUsers) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabUsers) Username() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"username",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) UsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabUsers) Users() DataGitlabUsersUsersList {
 	var returns DataGitlabUsersUsersList
 	_jsii_.Get(
@@ -491,8 +591,28 @@ func (j *jsiiProxy_DataGitlabUsers) Users() DataGitlabUsersUsersList {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabUsers) WithoutProjectBots() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withoutProjectBots",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/users gitlab_users} Data Source.
+func (j *jsiiProxy_DataGitlabUsers) WithoutProjectBotsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withoutProjectBotsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitlabUsersConfig) DataGitlabUsers {
 	_init_.Initialize()
 
@@ -510,7 +630,7 @@ func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/users gitlab_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers_Override(d DataGitlabUsers, scope constructs.Construct, id *string, config *DataGitlabUsersConfig) {
 	_init_.Initialize()
 
@@ -580,6 +700,39 @@ func (j *jsiiProxy_DataGitlabUsers)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUsers)SetExcludeExternal(val interface{}) {
+	if err := j.validateSetExcludeExternalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeExternal",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUsers)SetExcludeInternal(val interface{}) {
+	if err := j.validateSetExcludeInternalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeInternal",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUsers)SetExternal(val interface{}) {
+	if err := j.validateSetExternalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"external",
 		val,
 	)
 }
@@ -673,6 +826,28 @@ func (j *jsiiProxy_DataGitlabUsers)SetSort(val *string) {
 	_jsii_.Set(
 		j,
 		"sort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUsers)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUsers)SetWithoutProjectBots(val interface{}) {
+	if err := j.validateSetWithoutProjectBotsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"withoutProjectBots",
 		val,
 	)
 }
@@ -994,6 +1169,30 @@ func (d *jsiiProxy_DataGitlabUsers) ResetCreatedBefore() {
 	)
 }
 
+func (d *jsiiProxy_DataGitlabUsers) ResetExcludeExternal() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeExternal",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabUsers) ResetExcludeInternal() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeInternal",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabUsers) ResetExternal() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExternal",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGitlabUsers) ResetExternProvider() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1046,6 +1245,22 @@ func (d *jsiiProxy_DataGitlabUsers) ResetSort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabUsers) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabUsers) ResetWithoutProjectBots() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWithoutProjectBots",
 		nil, // no parameters
 	)
 }

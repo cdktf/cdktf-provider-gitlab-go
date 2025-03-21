@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group}.
 type GroupShareGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,12 +49,13 @@ type GroupShareGroup interface {
 	SetGroupId(val *string)
 	GroupIdInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MemberRoleId() *float64
+	SetMemberRoleId(val *float64)
+	MemberRoleIdInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -120,7 +121,7 @@ type GroupShareGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExpiresAt()
-	ResetId()
+	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,21 +293,31 @@ func (j *jsiiProxy_GroupShareGroup) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GroupShareGroup) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GroupShareGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupShareGroup) MemberRoleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupShareGroup) MemberRoleIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleIdInput",
 		&returns,
 	)
 	return returns
@@ -403,7 +414,7 @@ func (j *jsiiProxy_GroupShareGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupShareGroupConfig) GroupShareGroup {
 	_init_.Initialize()
 
@@ -421,7 +432,7 @@ func NewGroupShareGroup(scope constructs.Construct, id *string, config *GroupSha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group} Resource.
 func NewGroupShareGroup_Override(g GroupShareGroup, scope constructs.Construct, id *string, config *GroupShareGroupConfig) {
 	_init_.Initialize()
 
@@ -503,17 +514,6 @@ func (j *jsiiProxy_GroupShareGroup)SetGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupShareGroup)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GroupShareGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -521,6 +521,17 @@ func (j *jsiiProxy_GroupShareGroup)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupShareGroup)SetMemberRoleId(val *float64) {
+	if err := j.validateSetMemberRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberRoleId",
 		val,
 	)
 }
@@ -916,10 +927,10 @@ func (g *jsiiProxy_GroupShareGroup) ResetExpiresAt() {
 	)
 }
 
-func (g *jsiiProxy_GroupShareGroup) ResetId() {
+func (g *jsiiProxy_GroupShareGroup) ResetMemberRoleId() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetId",
+		"resetMemberRoleId",
 		nil, // no parameters
 	)
 }

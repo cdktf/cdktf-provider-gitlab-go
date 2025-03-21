@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook gitlab_group_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook gitlab_group_hook}.
 type GroupHook interface {
 	cdktf.TerraformResource
+	BranchFilterStrategy() *string
+	SetBranchFilterStrategy(val *string)
+	BranchFilterStrategyInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfidentialIssuesEvents() interface{}
@@ -45,9 +48,15 @@ type GroupHook interface {
 	DeploymentEvents() interface{}
 	SetDeploymentEvents(val interface{})
 	DeploymentEventsInput() interface{}
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EnableSslVerification() interface{}
 	SetEnableSslVerification(val interface{})
 	EnableSslVerificationInput() interface{}
+	FeatureFlagEvents() interface{}
+	SetFeatureFlagEvents(val interface{})
+	FeatureFlagEventsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +84,9 @@ type GroupHook interface {
 	MergeRequestsEvents() interface{}
 	SetMergeRequestsEvents(val interface{})
 	MergeRequestsEventsInput() interface{}
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NoteEvents() interface{}
@@ -167,15 +179,19 @@ type GroupHook interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomHeaders(value interface{})
+	ResetBranchFilterStrategy()
 	ResetConfidentialIssuesEvents()
 	ResetConfidentialNoteEvents()
 	ResetCustomHeaders()
 	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
+	ResetDescription()
 	ResetEnableSslVerification()
+	ResetFeatureFlagEvents()
 	ResetIssuesEvents()
 	ResetJobEvents()
 	ResetMergeRequestsEvents()
+	ResetName()
 	ResetNoteEvents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -204,6 +220,26 @@ type GroupHook interface {
 // The jsii proxy struct for GroupHook
 type jsiiProxy_GroupHook struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GroupHook) BranchFilterStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchFilterStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) BranchFilterStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchFilterStrategyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GroupHook) CdktfStack() cdktf.TerraformStack {
@@ -356,6 +392,26 @@ func (j *jsiiProxy_GroupHook) DeploymentEventsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GroupHook) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupHook) EnableSslVerification() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -371,6 +427,26 @@ func (j *jsiiProxy_GroupHook) EnableSslVerificationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableSslVerificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) FeatureFlagEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"featureFlagEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) FeatureFlagEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"featureFlagEventsInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +597,26 @@ func (j *jsiiProxy_GroupHook) MergeRequestsEventsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"mergeRequestsEventsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -797,7 +893,7 @@ func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
@@ -815,7 +911,7 @@ func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, config *GroupHookConfig) {
 	_init_.Initialize()
 
@@ -823,6 +919,17 @@ func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, 
 		"@cdktf/provider-gitlab.groupHook.GroupHook",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GroupHook)SetBranchFilterStrategy(val *string) {
+	if err := j.validateSetBranchFilterStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"branchFilterStrategy",
+		val,
 	)
 }
 
@@ -900,6 +1007,17 @@ func (j *jsiiProxy_GroupHook)SetDeploymentEvents(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GroupHook)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GroupHook)SetEnableSslVerification(val interface{}) {
 	if err := j.validateSetEnableSslVerificationParameters(val); err != nil {
 		panic(err)
@@ -907,6 +1025,17 @@ func (j *jsiiProxy_GroupHook)SetEnableSslVerification(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableSslVerification",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook)SetFeatureFlagEvents(val interface{}) {
+	if err := j.validateSetFeatureFlagEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"featureFlagEvents",
 		val,
 	)
 }
@@ -970,6 +1099,17 @@ func (j *jsiiProxy_GroupHook)SetMergeRequestsEvents(val interface{}) {
 	_jsii_.Set(
 		j,
 		"mergeRequestsEvents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -1467,6 +1607,14 @@ func (g *jsiiProxy_GroupHook) PutCustomHeaders(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GroupHook) ResetBranchFilterStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBranchFilterStrategy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GroupHook) ResetConfidentialIssuesEvents() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1507,10 +1655,26 @@ func (g *jsiiProxy_GroupHook) ResetDeploymentEvents() {
 	)
 }
 
+func (g *jsiiProxy_GroupHook) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GroupHook) ResetEnableSslVerification() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableSslVerification",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetFeatureFlagEvents() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFeatureFlagEvents",
 		nil, // no parameters
 	)
 }
@@ -1535,6 +1699,14 @@ func (g *jsiiProxy_GroupHook) ResetMergeRequestsEvents() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMergeRequestsEvents",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

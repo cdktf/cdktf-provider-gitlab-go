@@ -166,6 +166,14 @@ func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateSetExpirationDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

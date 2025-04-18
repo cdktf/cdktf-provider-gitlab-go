@@ -348,6 +348,14 @@ func (j *jsiiProxy_PersonalAccessToken) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_PersonalAccessToken) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PersonalAccessToken) validateSetExpiresAtParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

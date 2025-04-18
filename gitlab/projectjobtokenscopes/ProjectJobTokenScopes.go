@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
 type ProjectJobTokenScopes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type ProjectJobTokenScopes interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +120,7 @@ type ProjectJobTokenScopes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -187,6 +191,26 @@ func (j *jsiiProxy_ProjectJobTokenScopes) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -393,7 +417,7 @@ func (j *jsiiProxy_ProjectJobTokenScopes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
 func NewProjectJobTokenScopes(scope constructs.Construct, id *string, config *ProjectJobTokenScopesConfig) ProjectJobTokenScopes {
 	_init_.Initialize()
 
@@ -411,7 +435,7 @@ func NewProjectJobTokenScopes(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource.
 func NewProjectJobTokenScopes_Override(p ProjectJobTokenScopes, scope constructs.Construct, id *string, config *ProjectJobTokenScopesConfig) {
 	_init_.Initialize()
 
@@ -448,6 +472,17 @@ func (j *jsiiProxy_ProjectJobTokenScopes)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectJobTokenScopes)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -884,6 +919,14 @@ func (p *jsiiProxy_ProjectJobTokenScopes) OverrideLogicalId(newLogicalId *string
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_ProjectJobTokenScopes) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 

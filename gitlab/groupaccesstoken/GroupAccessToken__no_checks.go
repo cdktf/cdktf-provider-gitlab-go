@@ -107,6 +107,10 @@ func (j *jsiiProxy_GroupAccessToken) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GroupAccessToken) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupAccessToken) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

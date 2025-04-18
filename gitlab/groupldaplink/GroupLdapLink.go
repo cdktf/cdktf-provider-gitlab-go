@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
 type GroupLdapLink interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -67,6 +67,9 @@ type GroupLdapLink interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MemberRoleId() *float64
+	SetMemberRoleId(val *float64)
+	MemberRoleIdInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -134,6 +137,7 @@ type GroupLdapLink interface {
 	ResetForce()
 	ResetGroupAccess()
 	ResetId()
+	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -405,6 +409,26 @@ func (j *jsiiProxy_GroupLdapLink) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
+func (j *jsiiProxy_GroupLdapLink) MemberRoleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupLdapLink) MemberRoleIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memberRoleIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupLdapLink) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -476,7 +500,7 @@ func (j *jsiiProxy_GroupLdapLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapLinkConfig) GroupLdapLink {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink_Override(g GroupLdapLink, scope constructs.Construct, id *string, config *GroupLdapLinkConfig) {
 	_init_.Initialize()
 
@@ -638,6 +662,17 @@ func (j *jsiiProxy_GroupLdapLink)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupLdapLink)SetMemberRoleId(val *float64) {
+	if err := j.validateSetMemberRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberRoleId",
 		val,
 	)
 }
@@ -1058,6 +1093,14 @@ func (g *jsiiProxy_GroupLdapLink) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupLdapLink) ResetMemberRoleId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMemberRoleId",
 		nil, // no parameters
 	)
 }

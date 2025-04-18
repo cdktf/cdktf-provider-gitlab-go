@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project gitlab_project}.
 type DataGitlabProject interface {
 	cdktf.TerraformDataSource
 	AllowPipelineTriggerApproveDeployment() cdktf.IResolvable
@@ -31,6 +31,10 @@ type DataGitlabProject interface {
 	CiDefaultGitDepth() *float64
 	SetCiDefaultGitDepth(val *float64)
 	CiDefaultGitDepthInput() *float64
+	CiDeletePipelinesInSeconds() *float64
+	CiIdTokenSubClaimComponents() *[]*string
+	SetCiIdTokenSubClaimComponents(val *[]*string)
+	CiIdTokenSubClaimComponentsInput() *[]*string
 	CiPipelineVariablesMinimumOverrideRole() *string
 	CiRestrictPipelineCancellationRole() *string
 	CiSeparatedCaches() cdktf.IResolvable
@@ -158,6 +162,7 @@ type DataGitlabProject interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCiDefaultGitDepth()
+	ResetCiIdTokenSubClaimComponents()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -318,6 +323,36 @@ func (j *jsiiProxy_DataGitlabProject) CiDefaultGitDepthInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ciDefaultGitDepthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiDeletePipelinesInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDeletePipelinesInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiIdTokenSubClaimComponents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciIdTokenSubClaimComponents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProject) CiIdTokenSubClaimComponentsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciIdTokenSubClaimComponentsInput",
 		&returns,
 	)
 	return returns
@@ -1074,7 +1109,7 @@ func (j *jsiiProxy_DataGitlabProject) WikiEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGitlabProjectConfig) DataGitlabProject {
 	_init_.Initialize()
 
@@ -1092,7 +1127,7 @@ func NewDataGitlabProject(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project gitlab_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project gitlab_project} Data Source.
 func NewDataGitlabProject_Override(d DataGitlabProject, scope constructs.Construct, id *string, config *DataGitlabProjectConfig) {
 	_init_.Initialize()
 
@@ -1110,6 +1145,17 @@ func (j *jsiiProxy_DataGitlabProject)SetCiDefaultGitDepth(val *float64) {
 	_jsii_.Set(
 		j,
 		"ciDefaultGitDepth",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProject)SetCiIdTokenSubClaimComponents(val *[]*string) {
+	if err := j.validateSetCiIdTokenSubClaimComponentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciIdTokenSubClaimComponents",
 		val,
 	)
 }
@@ -1482,6 +1528,14 @@ func (d *jsiiProxy_DataGitlabProject) ResetCiDefaultGitDepth() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCiDefaultGitDepth",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProject) ResetCiIdTokenSubClaimComponents() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCiIdTokenSubClaimComponents",
 		nil, // no parameters
 	)
 }

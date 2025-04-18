@@ -135,6 +135,10 @@ func (j *jsiiProxy_GroupLdapLink) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_GroupLdapLink) validateSetMemberRoleIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupLdapLink) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

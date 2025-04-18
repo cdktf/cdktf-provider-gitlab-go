@@ -99,6 +99,10 @@ func (j *jsiiProxy_ProjectJobTokenScopes) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ProjectJobTokenScopes) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectJobTokenScopes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_access_token gitlab_group_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token gitlab_group_access_token}.
 type GroupAccessToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -36,6 +36,9 @@ type GroupAccessToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	ExpiresAt() *string
 	SetExpiresAt(val *string)
 	ExpiresAtInput() *string
@@ -129,6 +132,7 @@ type GroupAccessToken interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutRotationConfiguration(value *GroupAccessTokenRotationConfiguration)
 	ResetAccessLevel()
+	ResetDescription()
 	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -237,6 +241,26 @@ func (j *jsiiProxy_GroupAccessToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupAccessToken) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupAccessToken) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -493,7 +517,7 @@ func (j *jsiiProxy_GroupAccessToken) UserId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
 func NewGroupAccessToken(scope constructs.Construct, id *string, config *GroupAccessTokenConfig) GroupAccessToken {
 	_init_.Initialize()
 
@@ -511,7 +535,7 @@ func NewGroupAccessToken(scope constructs.Construct, id *string, config *GroupAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token gitlab_group_access_token} Resource.
 func NewGroupAccessToken_Override(g GroupAccessToken, scope constructs.Construct, id *string, config *GroupAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -559,6 +583,17 @@ func (j *jsiiProxy_GroupAccessToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupAccessToken)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1013,6 +1048,14 @@ func (g *jsiiProxy_GroupAccessToken) ResetAccessLevel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAccessLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupAccessToken) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

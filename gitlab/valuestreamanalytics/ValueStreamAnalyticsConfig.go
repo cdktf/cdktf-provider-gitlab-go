@@ -24,19 +24,19 @@ type ValueStreamAnalyticsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the value stream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Stages of the value stream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
 	Stages interface{} `field:"required" json:"stages" yaml:"stages"`
 	// Full path of the group the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
 	GroupFullPath *string `field:"optional" json:"groupFullPath" yaml:"groupFullPath"`
 	// Full path of the project the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
 	ProjectFullPath *string `field:"optional" json:"projectFullPath" yaml:"projectFullPath"`
 }
 

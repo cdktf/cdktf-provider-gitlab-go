@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/users gitlab_users}.
 type DataGitlabUsers interface {
 	cdktf.TerraformDataSource
 	Active() interface{}
@@ -612,7 +612,7 @@ func (j *jsiiProxy_DataGitlabUsers) WithoutProjectBotsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitlabUsersConfig) DataGitlabUsers {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/users gitlab_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers_Override(d DataGitlabUsers, scope constructs.Construct, id *string, config *DataGitlabUsersConfig) {
 	_init_.Initialize()
 

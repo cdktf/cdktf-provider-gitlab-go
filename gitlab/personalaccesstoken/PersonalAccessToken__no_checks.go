@@ -103,6 +103,10 @@ func (j *jsiiProxy_PersonalAccessToken) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_PersonalAccessToken) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PersonalAccessToken) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

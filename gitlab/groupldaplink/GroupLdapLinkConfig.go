@@ -24,44 +24,50 @@ type GroupLdapLinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The name of the LDAP provider as stored in the GitLab database.
 	//
 	// Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/administration/raketasks/ldap/#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
 	LdapProvider *string `field:"required" json:"ldapProvider" yaml:"ldapProvider"`
 	// Minimum access level for members of the LDAP group.
 	//
-	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`
+	// Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
 	// The CN of the LDAP group to link with. Required if `filter` is not provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
 	Cn *string `field:"optional" json:"cn" yaml:"cn"`
 	// The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// If true, then delete and replace an existing LDAP link if one exists.
 	//
 	// Will also remove an LDAP link if the parent group is not found.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
 	Force interface{} `field:"optional" json:"force" yaml:"force"`
 	// Minimum access level for members of the LDAP group.
 	//
-	// Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`
+	// Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
 	GroupAccess *string `field:"optional" json:"groupAccess" yaml:"groupAccess"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The ID of a custom member role.
+	//
+	// Only available for Ultimate instances. When using a custom role, the `group_access` must match the base role used to create the custom role.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link#member_role_id GroupLdapLink#member_role_id}
+	MemberRoleId *float64 `field:"optional" json:"memberRoleId" yaml:"memberRoleId"`
 }
 

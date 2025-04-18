@@ -24,24 +24,24 @@ type DataGitlabRepositoryTreeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or full path of the project owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The name of a repository branch or tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
 	Ref *string `field:"required" json:"ref" yaml:"ref"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/repository_tree#id DataGitlabRepositoryTree#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree#id DataGitlabRepositoryTree#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The path inside repository. Used to get content of subdirectories.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 	// Boolean value used to get a recursive tree (false by default).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
 	Recursive interface{} `field:"optional" json:"recursive" yaml:"recursive"`
 }
 

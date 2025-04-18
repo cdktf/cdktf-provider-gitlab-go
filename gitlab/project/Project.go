@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -72,9 +72,15 @@ type Project interface {
 	CiDefaultGitDepth() *float64
 	SetCiDefaultGitDepth(val *float64)
 	CiDefaultGitDepthInput() *float64
+	CiDeletePipelinesInSeconds() *float64
+	SetCiDeletePipelinesInSeconds(val *float64)
+	CiDeletePipelinesInSecondsInput() *float64
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
+	CiIdTokenSubClaimComponents() *[]*string
+	SetCiIdTokenSubClaimComponents(val *[]*string)
+	CiIdTokenSubClaimComponentsInput() *[]*string
 	CiPipelineVariablesMinimumOverrideRole() *string
 	SetCiPipelineVariablesMinimumOverrideRole(val *string)
 	CiPipelineVariablesMinimumOverrideRoleInput() *string
@@ -432,7 +438,9 @@ type Project interface {
 	ResetBuildTimeout()
 	ResetCiConfigPath()
 	ResetCiDefaultGitDepth()
+	ResetCiDeletePipelinesInSeconds()
 	ResetCiForwardDeploymentEnabled()
+	ResetCiIdTokenSubClaimComponents()
 	ResetCiPipelineVariablesMinimumOverrideRole()
 	ResetCiRestrictPipelineCancellationRole()
 	ResetCiSeparatedCaches()
@@ -915,6 +923,26 @@ func (j *jsiiProxy_Project) CiDefaultGitDepthInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Project) CiDeletePipelinesInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDeletePipelinesInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiDeletePipelinesInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDeletePipelinesInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) CiForwardDeploymentEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -930,6 +958,26 @@ func (j *jsiiProxy_Project) CiForwardDeploymentEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiIdTokenSubClaimComponents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciIdTokenSubClaimComponents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiIdTokenSubClaimComponentsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciIdTokenSubClaimComponentsInput",
 		&returns,
 	)
 	return returns
@@ -2786,7 +2834,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2804,7 +2852,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3013,6 +3061,17 @@ func (j *jsiiProxy_Project)SetCiDefaultGitDepth(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetCiDeletePipelinesInSeconds(val *float64) {
+	if err := j.validateSetCiDeletePipelinesInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciDeletePipelinesInSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	if err := j.validateSetCiForwardDeploymentEnabledParameters(val); err != nil {
 		panic(err)
@@ -3020,6 +3079,17 @@ func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiIdTokenSubClaimComponents(val *[]*string) {
+	if err := j.validateSetCiIdTokenSubClaimComponentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciIdTokenSubClaimComponents",
 		val,
 	)
 }
@@ -4491,10 +4561,26 @@ func (p *jsiiProxy_Project) ResetCiDefaultGitDepth() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetCiDeletePipelinesInSeconds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiDeletePipelinesInSeconds",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCiForwardDeploymentEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetCiIdTokenSubClaimComponents() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiIdTokenSubClaimComponents",
 		nil, // no parameters
 	)
 }

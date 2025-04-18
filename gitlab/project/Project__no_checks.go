@@ -175,7 +175,15 @@ func (j *jsiiProxy_Project) validateSetCiDefaultGitDepthParameters(val *float64)
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetCiDeletePipelinesInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetCiForwardDeploymentEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetCiIdTokenSubClaimComponentsParameters(val *[]*string) error {
 	return nil
 }
 

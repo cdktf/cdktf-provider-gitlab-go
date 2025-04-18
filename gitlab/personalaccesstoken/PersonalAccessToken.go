@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/personal_access_token gitlab_personal_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 type PersonalAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -33,6 +33,9 @@ type PersonalAccessToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	ExpiresAt() *string
 	SetExpiresAt(val *string)
 	ExpiresAtInput() *string
@@ -124,6 +127,7 @@ type PersonalAccessToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRotationConfiguration(value *PersonalAccessTokenRotationConfiguration)
+	ResetDescription()
 	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -212,6 +216,26 @@ func (j *jsiiProxy_PersonalAccessToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PersonalAccessToken) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PersonalAccessToken) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +482,7 @@ func (j *jsiiProxy_PersonalAccessToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) PersonalAccessToken {
 	_init_.Initialize()
 
@@ -476,7 +500,7 @@ func NewPersonalAccessToken(scope constructs.Construct, id *string, config *Pers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken_Override(p PersonalAccessToken, scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -513,6 +537,17 @@ func (j *jsiiProxy_PersonalAccessToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PersonalAccessToken)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -960,6 +995,14 @@ func (p *jsiiProxy_PersonalAccessToken) PutRotationConfiguration(value *Personal
 		p,
 		"putRotationConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PersonalAccessToken) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

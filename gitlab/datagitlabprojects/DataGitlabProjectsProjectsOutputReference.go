@@ -29,7 +29,9 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	BuildTimeout() *float64
 	CiConfigPath() *string
 	CiDefaultGitDepth() *float64
+	CiDeletePipelinesInSeconds() *float64
 	CiForwardDeploymentEnabled() cdktf.IResolvable
+	CiIdTokenSubClaimComponents() *[]*string
 	CiPipelineVariablesMinimumOverrideRole() *string
 	CiRestrictPipelineCancellationRole() *string
 	// the index of the complex object in a list.
@@ -340,11 +342,31 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiDefaultGitDepth(
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiDeletePipelinesInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ciDeletePipelinesInSeconds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiForwardDeploymentEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiIdTokenSubClaimComponents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciIdTokenSubClaimComponents",
 		&returns,
 	)
 	return returns

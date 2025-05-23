@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13
+module github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14
 
 go 1.18
 

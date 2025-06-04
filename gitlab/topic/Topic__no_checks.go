@@ -127,10 +127,6 @@ func (j *jsiiProxy_Topic) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Topic) validateSetSoftDestroyParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Topic) validateSetTitleParameters(val *string) error {
 	return nil
 }

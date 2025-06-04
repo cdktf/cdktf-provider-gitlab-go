@@ -5,14 +5,14 @@ package topic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/topic/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/topic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic}.
 type Topic interface {
 	cdktf.TerraformResource
 	Avatar() *string
@@ -71,9 +71,6 @@ type Topic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SoftDestroy() interface{}
-	SetSoftDestroy(val interface{})
-	SoftDestroyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -133,8 +130,6 @@ type Topic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSoftDestroy()
-	ResetTitle()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -393,26 +388,6 @@ func (j *jsiiProxy_Topic) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Topic) SoftDestroy() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"softDestroy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Topic) SoftDestroyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"softDestroyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Topic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -464,7 +439,7 @@ func (j *jsiiProxy_Topic) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic} Resource.
 func NewTopic(scope constructs.Construct, id *string, config *TopicConfig) Topic {
 	_init_.Initialize()
 
@@ -482,7 +457,7 @@ func NewTopic(scope constructs.Construct, id *string, config *TopicConfig) Topic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic} Resource.
 func NewTopic_Override(t Topic, scope constructs.Construct, id *string, config *TopicConfig) {
 	_init_.Initialize()
 
@@ -612,17 +587,6 @@ func (j *jsiiProxy_Topic)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Topic)SetSoftDestroy(val interface{}) {
-	if err := j.validateSetSoftDestroyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"softDestroy",
 		val,
 	)
 }
@@ -1027,22 +991,6 @@ func (t *jsiiProxy_Topic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_Topic) ResetSoftDestroy() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetSoftDestroy",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_Topic) ResetTitle() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetTitle",
 		nil, // no parameters
 	)
 }

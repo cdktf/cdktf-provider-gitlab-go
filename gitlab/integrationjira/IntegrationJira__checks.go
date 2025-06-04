@@ -509,14 +509,6 @@ func (j *jsiiProxy_IntegrationJira) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationJira) validateSetProjectKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationJira) validateSetProjectKeysParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package integrationjira
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/integrationjira/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationjira/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jira gitlab_integration_jira}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jira gitlab_integration_jira}.
 type IntegrationJira interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -86,9 +86,6 @@ type IntegrationJira interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
-	ProjectKey() *string
-	SetProjectKey(val *string)
-	ProjectKeyInput() *string
 	ProjectKeys() *[]*string
 	SetProjectKeys(val *[]*string)
 	ProjectKeysInput() *[]*string
@@ -176,7 +173,6 @@ type IntegrationJira interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProjectKey()
 	ResetProjectKeys()
 	ResetUseInheritedSettings()
 	ResetUsername()
@@ -578,26 +574,6 @@ func (j *jsiiProxy_IntegrationJira) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationJira) ProjectKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IntegrationJira) ProjectKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IntegrationJira) ProjectKeys() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -759,7 +735,7 @@ func (j *jsiiProxy_IntegrationJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
 func NewIntegrationJira(scope constructs.Construct, id *string, config *IntegrationJiraConfig) IntegrationJira {
 	_init_.Initialize()
 
@@ -777,7 +753,7 @@ func NewIntegrationJira(scope constructs.Construct, id *string, config *Integrat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jira gitlab_integration_jira} Resource.
 func NewIntegrationJira_Override(i IntegrationJira, scope constructs.Construct, id *string, config *IntegrationJiraConfig) {
 	_init_.Initialize()
 
@@ -976,17 +952,6 @@ func (j *jsiiProxy_IntegrationJira)SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IntegrationJira)SetProjectKey(val *string) {
-	if err := j.validateSetProjectKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"projectKey",
 		val,
 	)
 }
@@ -1499,14 +1464,6 @@ func (i *jsiiProxy_IntegrationJira) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IntegrationJira) ResetProjectKey() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetProjectKey",
 		nil, // no parameters
 	)
 }

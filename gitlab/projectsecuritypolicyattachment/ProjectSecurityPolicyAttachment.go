@@ -5,14 +5,14 @@ package projectsecuritypolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectsecuritypolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectsecuritypolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
 type ProjectSecurityPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_ProjectSecurityPolicyAttachment) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment} Resource.
 func NewProjectSecurityPolicyAttachment(scope constructs.Construct, id *string, config *ProjectSecurityPolicyAttachmentConfig) ProjectSecurityPolicyAttachment {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewProjectSecurityPolicyAttachment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment} Resource.
 func NewProjectSecurityPolicyAttachment_Override(p ProjectSecurityPolicyAttachment, scope constructs.Construct, id *string, config *ProjectSecurityPolicyAttachmentConfig) {
 	_init_.Initialize()
 

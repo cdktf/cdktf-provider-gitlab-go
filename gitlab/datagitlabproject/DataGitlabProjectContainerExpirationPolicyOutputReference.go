@@ -5,9 +5,9 @@ package datagitlabproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabproject/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,7 +35,6 @@ type DataGitlabProjectContainerExpirationPolicyOutputReference interface {
 	InternalValue() *DataGitlabProjectContainerExpirationPolicy
 	SetInternalValue(val *DataGitlabProjectContainerExpirationPolicy)
 	KeepN() *float64
-	NameRegex() *string
 	NameRegexDelete() *string
 	NameRegexKeep() *string
 	NextRunAt() *string
@@ -162,16 +161,6 @@ func (j *jsiiProxy_DataGitlabProjectContainerExpirationPolicyOutputReference) Ke
 	_jsii_.Get(
 		j,
 		"keepN",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectContainerExpirationPolicyOutputReference) NameRegex() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameRegex",
 		&returns,
 	)
 	return returns

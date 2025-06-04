@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package servicecustomissuetracker
+package integrationredmine
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateAddMoveTargetParameters(moveTarget *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateAddMoveTargetParameters(moveTarget *string) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -22,7 +22,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IntegrationRedmine) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateAddOverrideParameters(path
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetAnyMapAttributeParamete
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetBooleanAttributeParamet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetBooleanMapAttributePara
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetListAttributeParameters
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberAttributeParamete
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberListAttributePara
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetNumberMapAttributeParam
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetStringAttributeParamete
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateImportFromParameters(id *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateImportFromParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -114,7 +114,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateImportFromParameters(id *s
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -122,7 +122,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateInterpolationForAttributeP
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveFromIdParameters(id *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -130,7 +130,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IntegrationRedmine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveToParameters(moveTarge
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveToIdParameters(id *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateMoveToIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateMoveToIdParameters(id *str
 	return nil
 }
 
-func (s *jsiiProxy_ServiceCustomIssueTracker) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (i *jsiiProxy_IntegrationRedmine) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (s *jsiiProxy_ServiceCustomIssueTracker) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func validateServiceCustomIssueTracker_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+func validateIntegrationRedmine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func validateServiceCustomIssueTracker_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateServiceCustomIssueTracker_IsConstructParameters(x interface{}) error {
+func validateIntegrationRedmine_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServiceCustomIssueTracker_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateServiceCustomIssueTracker_IsTerraformElementParameters(x interface{}) error {
+func validateIntegrationRedmine_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServiceCustomIssueTracker_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateServiceCustomIssueTracker_IsTerraformResourceParameters(x interface{}) error {
+func validateIntegrationRedmine_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServiceCustomIssueTracker_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -337,7 +337,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetIssuesUrlParameters(val *string) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetIssuesUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetIssuesUrlParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProjectParameters(val *string) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetNewIssueUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProjectUrlParameters(val *string) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -369,7 +369,15 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProjectUrlParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetProjectUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationRedmine) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -415,7 +423,27 @@ func (j *jsiiProxy_ServiceCustomIssueTracker) validateSetProvisionersParameters(
 	return nil
 }
 
-func validateNewServiceCustomIssueTrackerParameters(scope constructs.Construct, id *string, config *ServiceCustomIssueTrackerConfig) error {
+func (j *jsiiProxy_IntegrationRedmine) validateSetUseInheritedSettingsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func validateNewIntegrationRedmineParameters(scope constructs.Construct, id *string, config *IntegrationRedmineConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

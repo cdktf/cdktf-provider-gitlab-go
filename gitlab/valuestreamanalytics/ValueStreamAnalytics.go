@@ -5,14 +5,14 @@ package valuestreamanalytics
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/valuestreamanalytics/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/valuestreamanalytics/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics}.
 type ValueStreamAnalytics interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ValueStreamAnalytics) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource.
 func NewValueStreamAnalytics(scope constructs.Construct, id *string, config *ValueStreamAnalyticsConfig) ValueStreamAnalytics {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewValueStreamAnalytics(scope constructs.Construct, id *string, config *Val
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource.
 func NewValueStreamAnalytics_Override(v ValueStreamAnalytics, scope constructs.Construct, id *string, config *ValueStreamAnalyticsConfig) {
 	_init_.Initialize()
 

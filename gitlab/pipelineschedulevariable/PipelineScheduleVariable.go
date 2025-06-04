@@ -5,14 +5,14 @@ package pipelineschedulevariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/pipelineschedulevariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/pipelineschedulevariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
 type PipelineScheduleVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_PipelineScheduleVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) PipelineScheduleVariable {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewPipelineScheduleVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource.
 func NewPipelineScheduleVariable_Override(p PipelineScheduleVariable, scope constructs.Construct, id *string, config *PipelineScheduleVariableConfig) {
 	_init_.Initialize()
 

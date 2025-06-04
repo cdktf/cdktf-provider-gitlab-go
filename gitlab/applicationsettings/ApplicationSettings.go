@@ -5,14 +5,14 @@ package applicationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/applicationsettings/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/application_settings gitlab_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/application_settings gitlab_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AbuseNotificationEmail() *string
@@ -451,9 +451,6 @@ type ApplicationSettings interface {
 	GroupOwnersCanManageDefaultBranchProtection() interface{}
 	SetGroupOwnersCanManageDefaultBranchProtection(val interface{})
 	GroupOwnersCanManageDefaultBranchProtectionInput() interface{}
-	HashedStorageEnabled() interface{}
-	SetHashedStorageEnabled(val interface{})
-	HashedStorageEnabledInput() interface{}
 	HelpPageHideCommercialContent() interface{}
 	SetHelpPageHideCommercialContent(val interface{})
 	HelpPageHideCommercialContentInput() interface{}
@@ -475,15 +472,6 @@ type ApplicationSettings interface {
 	HousekeepingEnabled() interface{}
 	SetHousekeepingEnabled(val interface{})
 	HousekeepingEnabledInput() interface{}
-	HousekeepingFullRepackPeriod() *float64
-	SetHousekeepingFullRepackPeriod(val *float64)
-	HousekeepingFullRepackPeriodInput() *float64
-	HousekeepingGcPeriod() *float64
-	SetHousekeepingGcPeriod(val *float64)
-	HousekeepingGcPeriodInput() *float64
-	HousekeepingIncrementalRepackPeriod() *float64
-	SetHousekeepingIncrementalRepackPeriod(val *float64)
-	HousekeepingIncrementalRepackPeriodInput() *float64
 	HousekeepingOptimizeRepositoryPeriod() *float64
 	SetHousekeepingOptimizeRepositoryPeriod(val *float64)
 	HousekeepingOptimizeRepositoryPeriodInput() *float64
@@ -737,9 +725,6 @@ type ApplicationSettings interface {
 	RepositorySizeLimit() *float64
 	SetRepositorySizeLimit(val *float64)
 	RepositorySizeLimitInput() *float64
-	RepositoryStorages() *[]*string
-	SetRepositoryStorages(val *[]*string)
-	RepositoryStoragesInput() *[]*string
 	RepositoryStoragesWeighted() *map[string]*float64
 	SetRepositoryStoragesWeighted(val *map[string]*float64)
 	RepositoryStoragesWeightedInput() *map[string]*float64
@@ -1182,7 +1167,6 @@ type ApplicationSettings interface {
 	ResetGrafanaUrl()
 	ResetGravatarEnabled()
 	ResetGroupOwnersCanManageDefaultBranchProtection()
-	ResetHashedStorageEnabled()
 	ResetHelpPageHideCommercialContent()
 	ResetHelpPageSupportUrl()
 	ResetHelpPageText()
@@ -1190,9 +1174,6 @@ type ApplicationSettings interface {
 	ResetHideThirdPartyOffers()
 	ResetHomePageUrl()
 	ResetHousekeepingEnabled()
-	ResetHousekeepingFullRepackPeriod()
-	ResetHousekeepingGcPeriod()
-	ResetHousekeepingIncrementalRepackPeriod()
 	ResetHousekeepingOptimizeRepositoryPeriod()
 	ResetHtmlEmailsEnabled()
 	ResetId()
@@ -1275,7 +1256,6 @@ type ApplicationSettings interface {
 	ResetRememberMeEnabled()
 	ResetRepositoryChecksEnabled()
 	ResetRepositorySizeLimit()
-	ResetRepositoryStorages()
 	ResetRepositoryStoragesWeighted()
 	ResetRequireAdminApprovalAfterUserSignup()
 	ResetRequireAdminTwoFactorAuthentication()
@@ -4219,26 +4199,6 @@ func (j *jsiiProxy_ApplicationSettings) GroupOwnersCanManageDefaultBranchProtect
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationSettings) HashedStorageEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"hashedStorageEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HashedStorageEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"hashedStorageEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApplicationSettings) HelpPageHideCommercialContent() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -4374,66 +4334,6 @@ func (j *jsiiProxy_ApplicationSettings) HousekeepingEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"housekeepingEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingFullRepackPeriod() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingFullRepackPeriod",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingFullRepackPeriodInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingFullRepackPeriodInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingGcPeriod() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingGcPeriod",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingGcPeriodInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingGcPeriodInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingIncrementalRepackPeriod() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingIncrementalRepackPeriod",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) HousekeepingIncrementalRepackPeriodInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"housekeepingIncrementalRepackPeriodInput",
 		&returns,
 	)
 	return returns
@@ -6064,26 +5964,6 @@ func (j *jsiiProxy_ApplicationSettings) RepositorySizeLimitInput() *float64 {
 	_jsii_.Get(
 		j,
 		"repositorySizeLimitInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) RepositoryStorages() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"repositoryStorages",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApplicationSettings) RepositoryStoragesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"repositoryStoragesInput",
 		&returns,
 	)
 	return returns
@@ -7820,7 +7700,7 @@ func (j *jsiiProxy_ApplicationSettings) WikiPageMaxContentBytesInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -7838,7 +7718,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/application_settings gitlab_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/application_settings gitlab_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -9383,17 +9263,6 @@ func (j *jsiiProxy_ApplicationSettings)SetGroupOwnersCanManageDefaultBranchProte
 	)
 }
 
-func (j *jsiiProxy_ApplicationSettings)SetHashedStorageEnabled(val interface{}) {
-	if err := j.validateSetHashedStorageEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hashedStorageEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ApplicationSettings)SetHelpPageHideCommercialContent(val interface{}) {
 	if err := j.validateSetHelpPageHideCommercialContentParameters(val); err != nil {
 		panic(err)
@@ -9467,39 +9336,6 @@ func (j *jsiiProxy_ApplicationSettings)SetHousekeepingEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"housekeepingEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetHousekeepingFullRepackPeriod(val *float64) {
-	if err := j.validateSetHousekeepingFullRepackPeriodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"housekeepingFullRepackPeriod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetHousekeepingGcPeriod(val *float64) {
-	if err := j.validateSetHousekeepingGcPeriodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"housekeepingGcPeriod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetHousekeepingIncrementalRepackPeriod(val *float64) {
-	if err := j.validateSetHousekeepingIncrementalRepackPeriodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"housekeepingIncrementalRepackPeriod",
 		val,
 	)
 }
@@ -10399,17 +10235,6 @@ func (j *jsiiProxy_ApplicationSettings)SetRepositorySizeLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"repositorySizeLimit",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApplicationSettings)SetRepositoryStorages(val *[]*string) {
-	if err := j.validateSetRepositoryStoragesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"repositoryStorages",
 		val,
 	)
 }
@@ -12809,14 +12634,6 @@ func (a *jsiiProxy_ApplicationSettings) ResetGroupOwnersCanManageDefaultBranchPr
 	)
 }
 
-func (a *jsiiProxy_ApplicationSettings) ResetHashedStorageEnabled() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHashedStorageEnabled",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_ApplicationSettings) ResetHelpPageHideCommercialContent() {
 	_jsii_.InvokeVoid(
 		a,
@@ -12869,30 +12686,6 @@ func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetHousekeepingEnabled",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingFullRepackPeriod() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHousekeepingFullRepackPeriod",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingGcPeriod() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHousekeepingGcPeriod",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationSettings) ResetHousekeepingIncrementalRepackPeriod() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetHousekeepingIncrementalRepackPeriod",
 		nil, // no parameters
 	)
 }
@@ -13533,14 +13326,6 @@ func (a *jsiiProxy_ApplicationSettings) ResetRepositorySizeLimit() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRepositorySizeLimit",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApplicationSettings) ResetRepositoryStorages() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetRepositoryStorages",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package tagprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/tagprotection/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/tagprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/tag_protection gitlab_tag_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/tag_protection gitlab_tag_protection}.
 type TagProtection interface {
 	cdktf.TerraformResource
 	AllowedToCreate() TagProtectionAllowedToCreateList
@@ -391,7 +391,7 @@ func (j *jsiiProxy_TagProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection(scope constructs.Construct, id *string, config *TagProtectionConfig) TagProtection {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewTagProtection(scope constructs.Construct, id *string, config *TagProtect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/tag_protection gitlab_tag_protection} Resource.
 func NewTagProtection_Override(t TagProtection, scope constructs.Construct, id *string, config *TagProtectionConfig) {
 	_init_.Initialize()
 

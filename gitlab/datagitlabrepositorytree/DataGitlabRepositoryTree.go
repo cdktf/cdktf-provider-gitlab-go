@@ -5,14 +5,14 @@ package datagitlabrepositorytree
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabrepositorytree/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree gitlab_repository_tree}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/repository_tree gitlab_repository_tree}.
 type DataGitlabRepositoryTree interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataGitlabRepositoryTree) Tree() DataGitlabRepositoryTreeTree
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source.
 func NewDataGitlabRepositoryTree(scope constructs.Construct, id *string, config *DataGitlabRepositoryTreeConfig) DataGitlabRepositoryTree {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataGitlabRepositoryTree(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source.
 func NewDataGitlabRepositoryTree_Override(d DataGitlabRepositoryTree, scope constructs.Construct, id *string, config *DataGitlabRepositoryTreeConfig) {
 	_init_.Initialize()
 

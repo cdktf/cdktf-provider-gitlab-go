@@ -5,14 +5,14 @@ package projectpushrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectpushrules/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpushrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_push_rules gitlab_project_push_rules}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_push_rules gitlab_project_push_rules}.
 type ProjectPushRulesA interface {
 	cdktf.TerraformResource
 	AuthorEmailRegex() *string
@@ -632,7 +632,7 @@ func (j *jsiiProxy_ProjectPushRulesA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA(scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) ProjectPushRulesA {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewProjectPushRulesA(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA_Override(p ProjectPushRulesA, scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) {
 	_init_.Initialize()
 

@@ -131,11 +131,11 @@ func (j *jsiiProxy_DataGitlabProjectIssues) validateSetMyReactionEmojiParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotAssigneeIdParameters(val *[]*float64) error {
+func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotAssigneeIdParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotAuthorIdParameters(val *[]*float64) error {
+func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotAuthorIdParameters(val *float64) error {
 	return nil
 }
 
@@ -147,7 +147,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotMilestoneParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotMyReactionEmojiParameters(val *[]*string) error {
+func (j *jsiiProxy_DataGitlabProjectIssues) validateSetNotMyReactionEmojiParameters(val *string) error {
 	return nil
 }
 

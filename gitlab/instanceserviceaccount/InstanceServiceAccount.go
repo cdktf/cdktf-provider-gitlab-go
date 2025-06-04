@@ -5,14 +5,14 @@ package instanceserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/instanceserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/instanceserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account gitlab_instance_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account gitlab_instance_service_account}.
 type InstanceServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type InstanceServiceAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -115,6 +118,7 @@ type InstanceServiceAccount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *InstanceServiceAccountTimeouts)
+	ResetEmail()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -184,6 +188,26 @@ func (j *jsiiProxy_InstanceServiceAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceServiceAccount) Email() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceServiceAccount) EmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailInput",
 		&returns,
 	)
 	return returns
@@ -380,7 +404,7 @@ func (j *jsiiProxy_InstanceServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
 func NewInstanceServiceAccount(scope constructs.Construct, id *string, config *InstanceServiceAccountConfig) InstanceServiceAccount {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewInstanceServiceAccount(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
 func NewInstanceServiceAccount_Override(i InstanceServiceAccount, scope constructs.Construct, id *string, config *InstanceServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -435,6 +459,17 @@ func (j *jsiiProxy_InstanceServiceAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceServiceAccount)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"email",
 		val,
 	)
 }
@@ -860,6 +895,14 @@ func (i *jsiiProxy_InstanceServiceAccount) PutTimeouts(value *InstanceServiceAcc
 		i,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_InstanceServiceAccount) ResetEmail() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEmail",
+		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package integrationtelegram
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/integrationtelegram/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationtelegram/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_telegram gitlab_integration_telegram}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_telegram gitlab_integration_telegram}.
 type IntegrationTelegram interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_IntegrationTelegram) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_telegram gitlab_integration_telegram} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_telegram gitlab_integration_telegram} Resource.
 func NewIntegrationTelegram(scope constructs.Construct, id *string, config *IntegrationTelegramConfig) IntegrationTelegram {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewIntegrationTelegram(scope constructs.Construct, id *string, config *Inte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_telegram gitlab_integration_telegram} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_telegram gitlab_integration_telegram} Resource.
 func NewIntegrationTelegram_Override(i IntegrationTelegram, scope constructs.Construct, id *string, config *IntegrationTelegramConfig) {
 	_init_.Initialize()
 

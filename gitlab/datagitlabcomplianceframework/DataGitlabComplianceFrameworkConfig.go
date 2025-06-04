@@ -24,11 +24,11 @@ type DataGitlabComplianceFrameworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name for the compliance framework.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Full path of the namespace to where the compliance framework is.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
 	NamespacePath *string `field:"required" json:"namespacePath" yaml:"namespacePath"`
 }
 

@@ -5,14 +5,14 @@ package userimpersonationtoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/userimpersonationtoken/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/userimpersonationtoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
 type UserImpersonationToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -455,7 +455,7 @@ func (j *jsiiProxy_UserImpersonationToken) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken(scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) UserImpersonationToken {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewUserImpersonationToken(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken_Override(u UserImpersonationToken, scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) {
 	_init_.Initialize()
 

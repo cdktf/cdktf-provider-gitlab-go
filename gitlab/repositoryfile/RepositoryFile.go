@@ -5,14 +5,14 @@ package repositoryfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/repositoryfile/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/repositoryfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/repository_file gitlab_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/repository_file gitlab_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
 	AuthorEmail() *string
@@ -164,7 +164,6 @@ type RepositoryFile interface {
 	ResetCommitMessage()
 	ResetCreateCommitMessage()
 	ResetDeleteCommitMessage()
-	ResetEncoding()
 	ResetExecuteFilemode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -743,7 +742,7 @@ func (j *jsiiProxy_RepositoryFile) UpdateCommitMessageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/repository_file gitlab_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
 	_init_.Initialize()
 
@@ -761,7 +760,7 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/repository_file gitlab_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/repository_file gitlab_repository_file} Resource.
 func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
 	_init_.Initialize()
 
@@ -1405,14 +1404,6 @@ func (r *jsiiProxy_RepositoryFile) ResetDeleteCommitMessage() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDeleteCommitMessage",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RepositoryFile) ResetEncoding() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetEncoding",
 		nil, // no parameters
 	)
 }

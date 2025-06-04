@@ -155,10 +155,6 @@ func (j *jsiiProxy_IntegrationJira) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationJira) validateSetProjectKeyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IntegrationJira) validateSetProjectKeysParameters(val *[]*string) error {
 	return nil
 }

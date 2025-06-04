@@ -5,14 +5,14 @@ package datagitlabgroupaccesstokens
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabgroupaccesstokens/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabgroupaccesstokens/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens}.
 type DataGitlabGroupAccessTokens interface {
 	cdktf.TerraformDataSource
 	AccessTokens() DataGitlabGroupAccessTokensAccessTokensList
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataGitlabGroupAccessTokens) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source.
 func NewDataGitlabGroupAccessTokens(scope constructs.Construct, id *string, config *DataGitlabGroupAccessTokensConfig) DataGitlabGroupAccessTokens {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataGitlabGroupAccessTokens(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source.
 func NewDataGitlabGroupAccessTokens_Override(d DataGitlabGroupAccessTokens, scope constructs.Construct, id *string, config *DataGitlabGroupAccessTokensConfig) {
 	_init_.Initialize()
 

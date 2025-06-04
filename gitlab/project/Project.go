@@ -5,14 +5,14 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/project/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -52,9 +52,6 @@ type Project interface {
 	AvatarHashInput() *string
 	AvatarInput() *string
 	AvatarUrl() *string
-	BuildCoverageRegex() *string
-	SetBuildCoverageRegex(val *string)
-	BuildCoverageRegexInput() *string
 	BuildGitStrategy() *string
 	SetBuildGitStrategy(val *string)
 	BuildGitStrategyInput() *string
@@ -432,7 +429,6 @@ type Project interface {
 	ResetAutoDevopsEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
-	ResetBuildCoverageRegex()
 	ResetBuildGitStrategy()
 	ResetBuildsAccessLevel()
 	ResetBuildTimeout()
@@ -788,26 +784,6 @@ func (j *jsiiProxy_Project) AvatarUrl() *string {
 	_jsii_.Get(
 		j,
 		"avatarUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) BuildCoverageRegex() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"buildCoverageRegex",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) BuildCoverageRegexInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"buildCoverageRegexInput",
 		&returns,
 	)
 	return returns
@@ -2834,7 +2810,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2852,7 +2828,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2991,17 +2967,6 @@ func (j *jsiiProxy_Project)SetAvatarHash(val *string) {
 	_jsii_.Set(
 		j,
 		"avatarHash",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Project)SetBuildCoverageRegex(val *string) {
-	if err := j.validateSetBuildCoverageRegexParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"buildCoverageRegex",
 		val,
 	)
 }
@@ -4509,14 +4474,6 @@ func (p *jsiiProxy_Project) ResetAvatarHash() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAvatarHash",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Project) ResetBuildCoverageRegex() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetBuildCoverageRegex",
 		nil, // no parameters
 	)
 }

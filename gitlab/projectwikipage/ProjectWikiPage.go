@@ -5,14 +5,14 @@ package projectwikipage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectwikipage/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectwikipage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_wiki_page gitlab_project_wiki_page}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page}.
 type ProjectWikiPage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ProjectWikiPage) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
 func NewProjectWikiPage(scope constructs.Construct, id *string, config *ProjectWikiPageConfig) ProjectWikiPage {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewProjectWikiPage(scope constructs.Construct, id *string, config *ProjectW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
 func NewProjectWikiPage_Override(p ProjectWikiPage, scope constructs.Construct, id *string, config *ProjectWikiPageConfig) {
 	_init_.Initialize()
 

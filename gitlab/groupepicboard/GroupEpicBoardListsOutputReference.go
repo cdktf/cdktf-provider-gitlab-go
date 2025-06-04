@@ -5,9 +5,9 @@ package groupepicboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupepicboard/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupepicboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

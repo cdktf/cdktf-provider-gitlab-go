@@ -1,21 +1,20 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package servicegithub
+package integrationredmine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/servicegithub/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/service_github gitlab_service_github}.
-type ServiceGithub interface {
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_redmine gitlab_integration_redmine}.
+type IntegrationRedmine interface {
 	cdktf.TerraformResource
-	Active() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -28,7 +27,6 @@ type ServiceGithub interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,17 +40,24 @@ type ServiceGithub interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	IssuesUrl() *string
+	SetIssuesUrl(val *string)
+	IssuesUrlInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NewIssueUrl() *string
+	SetNewIssueUrl(val *string)
+	NewIssueUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	ProjectUrl() *string
+	SetProjectUrl(val *string)
+	ProjectUrlInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -63,23 +68,15 @@ type ServiceGithub interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RepositoryUrl() *string
-	SetRepositoryUrl(val *string)
-	RepositoryUrlInput() *string
-	StaticContext() interface{}
-	SetStaticContext(val interface{})
-	StaticContextInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Title() *string
-	Token() *string
-	SetToken(val *string)
-	TokenInput() *string
-	UpdatedAt() *string
+	UseInheritedSettings() interface{}
+	SetUseInheritedSettings(val interface{})
+	UseInheritedSettingsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,11 +120,10 @@ type ServiceGithub interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStaticContext()
+	ResetUseInheritedSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -141,22 +137,12 @@ type ServiceGithub interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for ServiceGithub
-type jsiiProxy_ServiceGithub struct {
+// The jsii proxy struct for IntegrationRedmine
+type jsiiProxy_IntegrationRedmine struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ServiceGithub) Active() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_IntegrationRedmine) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -166,7 +152,7 @@ func (j *jsiiProxy_ServiceGithub) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Connection() interface{} {
+func (j *jsiiProxy_IntegrationRedmine) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -176,7 +162,7 @@ func (j *jsiiProxy_ServiceGithub) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_IntegrationRedmine) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -186,7 +172,7 @@ func (j *jsiiProxy_ServiceGithub) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Count() interface{} {
+func (j *jsiiProxy_IntegrationRedmine) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -196,17 +182,7 @@ func (j *jsiiProxy_ServiceGithub) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) DependsOn() *[]*string {
+func (j *jsiiProxy_IntegrationRedmine) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -216,7 +192,7 @@ func (j *jsiiProxy_ServiceGithub) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_IntegrationRedmine) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -226,7 +202,7 @@ func (j *jsiiProxy_ServiceGithub) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Fqn() *string {
+func (j *jsiiProxy_IntegrationRedmine) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -236,7 +212,7 @@ func (j *jsiiProxy_ServiceGithub) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) FriendlyUniqueId() *string {
+func (j *jsiiProxy_IntegrationRedmine) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -246,7 +222,7 @@ func (j *jsiiProxy_ServiceGithub) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Id() *string {
+func (j *jsiiProxy_IntegrationRedmine) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -256,17 +232,27 @@ func (j *jsiiProxy_ServiceGithub) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) IdInput() *string {
+func (j *jsiiProxy_IntegrationRedmine) IssuesUrl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"issuesUrl",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_IntegrationRedmine) IssuesUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuesUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationRedmine) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -276,7 +262,27 @@ func (j *jsiiProxy_ServiceGithub) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Node() constructs.Node {
+func (j *jsiiProxy_IntegrationRedmine) NewIssueUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newIssueUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationRedmine) NewIssueUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newIssueUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationRedmine) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -286,7 +292,7 @@ func (j *jsiiProxy_ServiceGithub) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Project() *string {
+func (j *jsiiProxy_IntegrationRedmine) Project() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -296,7 +302,7 @@ func (j *jsiiProxy_ServiceGithub) Project() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) ProjectInput() *string {
+func (j *jsiiProxy_IntegrationRedmine) ProjectInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -306,7 +312,27 @@ func (j *jsiiProxy_ServiceGithub) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_IntegrationRedmine) ProjectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationRedmine) ProjectUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationRedmine) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -316,7 +342,7 @@ func (j *jsiiProxy_ServiceGithub) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Provisioners() *[]interface{} {
+func (j *jsiiProxy_IntegrationRedmine) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -326,7 +352,7 @@ func (j *jsiiProxy_ServiceGithub) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) RawOverrides() interface{} {
+func (j *jsiiProxy_IntegrationRedmine) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -336,47 +362,7 @@ func (j *jsiiProxy_ServiceGithub) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) RepositoryUrl() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"repositoryUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) RepositoryUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"repositoryUrlInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) StaticContext() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"staticContext",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) StaticContextInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"staticContextInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_IntegrationRedmine) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -386,7 +372,7 @@ func (j *jsiiProxy_ServiceGithub) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_IntegrationRedmine) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -396,7 +382,7 @@ func (j *jsiiProxy_ServiceGithub) TerraformMetaArguments() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) TerraformResourceType() *string {
+func (j *jsiiProxy_IntegrationRedmine) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -406,58 +392,38 @@ func (j *jsiiProxy_ServiceGithub) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Title() *string {
-	var returns *string
+func (j *jsiiProxy_IntegrationRedmine) UseInheritedSettings() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"title",
+		"useInheritedSettings",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ServiceGithub) Token() *string {
-	var returns *string
+func (j *jsiiProxy_IntegrationRedmine) UseInheritedSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"token",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) TokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tokenInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceGithub) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
+		"useInheritedSettingsInput",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/service_github gitlab_service_github} Resource.
-func NewServiceGithub(scope constructs.Construct, id *string, config *ServiceGithubConfig) ServiceGithub {
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_redmine gitlab_integration_redmine} Resource.
+func NewIntegrationRedmine(scope constructs.Construct, id *string, config *IntegrationRedmineConfig) IntegrationRedmine {
 	_init_.Initialize()
 
-	if err := validateNewServiceGithubParameters(scope, id, config); err != nil {
+	if err := validateNewIntegrationRedmineParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_ServiceGithub{}
+	j := jsiiProxy_IntegrationRedmine{}
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -465,18 +431,18 @@ func NewServiceGithub(scope constructs.Construct, id *string, config *ServiceGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/service_github gitlab_service_github} Resource.
-func NewServiceGithub_Override(s ServiceGithub, scope constructs.Construct, id *string, config *ServiceGithubConfig) {
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_redmine gitlab_integration_redmine} Resource.
+func NewIntegrationRedmine_Override(i IntegrationRedmine, scope constructs.Construct, id *string, config *IntegrationRedmineConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		[]interface{}{scope, id, config},
-		s,
+		i,
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationRedmine)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +453,7 @@ func (j *jsiiProxy_ServiceGithub)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetCount(val interface{}) {
+func (j *jsiiProxy_IntegrationRedmine)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +464,7 @@ func (j *jsiiProxy_ServiceGithub)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationRedmine)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +472,7 @@ func (j *jsiiProxy_ServiceGithub)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationRedmine)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -514,18 +480,18 @@ func (j *jsiiProxy_ServiceGithub)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_IntegrationRedmine)SetIssuesUrl(val *string) {
+	if err := j.validateSetIssuesUrlParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"issuesUrl",
 		val,
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationRedmine)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +502,18 @@ func (j *jsiiProxy_ServiceGithub)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetProject(val *string) {
+func (j *jsiiProxy_IntegrationRedmine)SetNewIssueUrl(val *string) {
+	if err := j.validateSetNewIssueUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newIssueUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationRedmine)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +524,18 @@ func (j *jsiiProxy_ServiceGithub)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationRedmine)SetProjectUrl(val *string) {
+	if err := j.validateSetProjectUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationRedmine)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +543,7 @@ func (j *jsiiProxy_ServiceGithub)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationRedmine)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,50 +554,28 @@ func (j *jsiiProxy_ServiceGithub)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetRepositoryUrl(val *string) {
-	if err := j.validateSetRepositoryUrlParameters(val); err != nil {
+func (j *jsiiProxy_IntegrationRedmine)SetUseInheritedSettings(val interface{}) {
+	if err := j.validateSetUseInheritedSettingsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"repositoryUrl",
+		"useInheritedSettings",
 		val,
 	)
 }
 
-func (j *jsiiProxy_ServiceGithub)SetStaticContext(val interface{}) {
-	if err := j.validateSetStaticContextParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"staticContext",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServiceGithub)SetToken(val *string) {
-	if err := j.validateSetTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"token",
-		val,
-	)
-}
-
-// Generates CDKTF code for importing a ServiceGithub resource upon running "cdktf plan <stack-name>".
-func ServiceGithub_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTF code for importing a IntegrationRedmine resource upon running "cdktf plan <stack-name>".
+func IntegrationRedmine_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
 	_init_.Initialize()
 
-	if err := validateServiceGithub_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+	if err := validateIntegrationRedmine_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -635,16 +601,16 @@ func ServiceGithub_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceGithub_IsConstruct(x interface{}) *bool {
+func IntegrationRedmine_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateServiceGithub_IsConstructParameters(x); err != nil {
+	if err := validateIntegrationRedmine_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,16 +620,16 @@ func ServiceGithub_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceGithub_IsTerraformElement(x interface{}) *bool {
+func IntegrationRedmine_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateServiceGithub_IsTerraformElementParameters(x); err != nil {
+	if err := validateIntegrationRedmine_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,16 +639,16 @@ func ServiceGithub_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceGithub_IsTerraformResource(x interface{}) *bool {
+func IntegrationRedmine_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateServiceGithub_IsTerraformResourceParameters(x); err != nil {
+	if err := validateIntegrationRedmine_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,47 +657,47 @@ func ServiceGithub_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func ServiceGithub_TfResourceType() *string {
+func IntegrationRedmine_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-gitlab.serviceGithub.ServiceGithub",
+		"@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) AddMoveTarget(moveTarget *string) {
-	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"addMoveTarget",
 		[]interface{}{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) AddOverride(path *string, value interface{}) {
-	if err := s.validateAddOverrideParameters(path, value); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -740,14 +706,14 @@ func (s *jsiiProxy_ServiceGithub) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -756,14 +722,14 @@ func (s *jsiiProxy_ServiceGithub) GetBooleanAttribute(terraformAttribute *string
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -772,14 +738,14 @@ func (s *jsiiProxy_ServiceGithub) GetBooleanMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -788,14 +754,14 @@ func (s *jsiiProxy_ServiceGithub) GetListAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -804,14 +770,14 @@ func (s *jsiiProxy_ServiceGithub) GetNumberAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -820,14 +786,14 @@ func (s *jsiiProxy_ServiceGithub) GetNumberListAttribute(terraformAttribute *str
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -836,14 +802,14 @@ func (s *jsiiProxy_ServiceGithub) GetNumberMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetStringAttribute(terraformAttribute *string) *string {
-	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -852,14 +818,14 @@ func (s *jsiiProxy_ServiceGithub) GetStringAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -868,11 +834,11 @@ func (s *jsiiProxy_ServiceGithub) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) HasResourceMove() interface{} {
+func (i *jsiiProxy_IntegrationRedmine) HasResourceMove() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"hasResourceMove",
 		nil, // no parameters
 		&returns,
@@ -881,25 +847,25 @@ func (s *jsiiProxy_ServiceGithub) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) ImportFrom(id *string, provider cdktf.TerraformProvider) {
-	if err := s.validateImportFromParameters(id); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"importFrom",
 		[]interface{}{id, provider},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -908,79 +874,71 @@ func (s *jsiiProxy_ServiceGithub) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) MoveFromId(id *string) {
-	if err := s.validateMoveFromIdParameters(id); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"moveFromId",
 		[]interface{}{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) MoveTo(moveTarget *string, index interface{}) {
-	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) MoveToId(id *string) {
-	if err := s.validateMoveToIdParameters(id); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"moveToId",
 		[]interface{}{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) OverrideLogicalId(newLogicalId *string) {
-	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (i *jsiiProxy_IntegrationRedmine) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		s,
+		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) ResetId() {
+func (i *jsiiProxy_IntegrationRedmine) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		s,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServiceGithub) ResetOverrideLogicalId() {
-	_jsii_.InvokeVoid(
-		s,
+		i,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) ResetStaticContext() {
+func (i *jsiiProxy_IntegrationRedmine) ResetUseInheritedSettings() {
 	_jsii_.InvokeVoid(
-		s,
-		"resetStaticContext",
+		i,
+		"resetUseInheritedSettings",
 		nil, // no parameters
 	)
 }
 
-func (s *jsiiProxy_ServiceGithub) SynthesizeAttributes() *map[string]interface{} {
+func (i *jsiiProxy_IntegrationRedmine) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -989,11 +947,11 @@ func (s *jsiiProxy_ServiceGithub) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) SynthesizeHclAttributes() *map[string]interface{} {
+func (i *jsiiProxy_IntegrationRedmine) SynthesizeHclAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"synthesizeHclAttributes",
 		nil, // no parameters
 		&returns,
@@ -1002,11 +960,11 @@ func (s *jsiiProxy_ServiceGithub) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) ToHclTerraform() interface{} {
+func (i *jsiiProxy_IntegrationRedmine) ToHclTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"toHclTerraform",
 		nil, // no parameters
 		&returns,
@@ -1015,11 +973,11 @@ func (s *jsiiProxy_ServiceGithub) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) ToMetadata() interface{} {
+func (i *jsiiProxy_IntegrationRedmine) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -1028,11 +986,11 @@ func (s *jsiiProxy_ServiceGithub) ToMetadata() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) ToString() *string {
+func (i *jsiiProxy_IntegrationRedmine) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -1041,11 +999,11 @@ func (s *jsiiProxy_ServiceGithub) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceGithub) ToTerraform() interface{} {
+func (i *jsiiProxy_IntegrationRedmine) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		s,
+		i,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

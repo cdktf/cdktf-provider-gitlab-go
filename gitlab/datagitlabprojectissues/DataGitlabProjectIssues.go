@@ -5,14 +5,14 @@ package datagitlabprojectissues
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectissues/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectissues/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_issues gitlab_project_issues}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_issues gitlab_project_issues}.
 type DataGitlabProjectIssues interface {
 	cdktf.TerraformDataSource
 	AssigneeId() *float64
@@ -81,21 +81,21 @@ type DataGitlabProjectIssues interface {
 	MyReactionEmojiInput() *string
 	// The tree node.
 	Node() constructs.Node
-	NotAssigneeId() *[]*float64
-	SetNotAssigneeId(val *[]*float64)
-	NotAssigneeIdInput() *[]*float64
-	NotAuthorId() *[]*float64
-	SetNotAuthorId(val *[]*float64)
-	NotAuthorIdInput() *[]*float64
+	NotAssigneeId() *float64
+	SetNotAssigneeId(val *float64)
+	NotAssigneeIdInput() *float64
+	NotAuthorId() *float64
+	SetNotAuthorId(val *float64)
+	NotAuthorIdInput() *float64
 	NotLabels() *[]*string
 	SetNotLabels(val *[]*string)
 	NotLabelsInput() *[]*string
 	NotMilestone() *string
 	SetNotMilestone(val *string)
 	NotMilestoneInput() *string
-	NotMyReactionEmoji() *[]*string
-	SetNotMyReactionEmoji(val *[]*string)
-	NotMyReactionEmojiInput() *[]*string
+	NotMyReactionEmoji() *string
+	SetNotMyReactionEmoji(val *string)
+	NotMyReactionEmojiInput() *string
 	OrderBy() *string
 	SetOrderBy(val *string)
 	OrderByInput() *string
@@ -568,8 +568,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeId() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"notAssigneeId",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeId() *[]*float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeIdInput() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"notAssigneeIdInput",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotAssigneeIdInput() *[]*float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotAuthorId() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_DataGitlabProjectIssues) NotAuthorId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"notAuthorId",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotAuthorId() *[]*float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotAuthorIdInput() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_DataGitlabProjectIssues) NotAuthorIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"notAuthorIdInput",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotMilestoneInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotMyReactionEmoji() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataGitlabProjectIssues) NotMyReactionEmoji() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"notMyReactionEmoji",
@@ -658,8 +658,8 @@ func (j *jsiiProxy_DataGitlabProjectIssues) NotMyReactionEmoji() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues) NotMyReactionEmojiInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataGitlabProjectIssues) NotMyReactionEmojiInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"notMyReactionEmojiInput",
@@ -899,7 +899,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues) WithLabelsDetailsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_issues gitlab_project_issues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_issues gitlab_project_issues} Data Source.
 func NewDataGitlabProjectIssues(scope constructs.Construct, id *string, config *DataGitlabProjectIssuesConfig) DataGitlabProjectIssues {
 	_init_.Initialize()
 
@@ -917,7 +917,7 @@ func NewDataGitlabProjectIssues(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_issues gitlab_project_issues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_issues gitlab_project_issues} Data Source.
 func NewDataGitlabProjectIssues_Override(d DataGitlabProjectIssues, scope constructs.Construct, id *string, config *DataGitlabProjectIssuesConfig) {
 	_init_.Initialize()
 
@@ -1109,7 +1109,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues)SetMyReactionEmoji(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAssigneeId(val *[]*float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAssigneeId(val *float64) {
 	if err := j.validateSetNotAssigneeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1120,7 +1120,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAssigneeId(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAuthorId(val *[]*float64) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotAuthorId(val *float64) {
 	if err := j.validateSetNotAuthorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1153,7 +1153,7 @@ func (j *jsiiProxy_DataGitlabProjectIssues)SetNotMilestone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectIssues)SetNotMyReactionEmoji(val *[]*string) {
+func (j *jsiiProxy_DataGitlabProjectIssues)SetNotMyReactionEmoji(val *string) {
 	if err := j.validateSetNotMyReactionEmojiParameters(val); err != nil {
 		panic(err)
 	}

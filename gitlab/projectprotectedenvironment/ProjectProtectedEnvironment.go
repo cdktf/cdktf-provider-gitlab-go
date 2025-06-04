@@ -5,14 +5,14 @@ package projectprotectedenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectprotectedenvironment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectprotectedenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 type ProjectProtectedEnvironment interface {
 	cdktf.TerraformResource
 	ApprovalRules() ProjectProtectedEnvironmentApprovalRulesList
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment_Override(p ProjectProtectedEnvironment, scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) {
 	_init_.Initialize()
 

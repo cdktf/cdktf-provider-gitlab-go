@@ -5,14 +5,14 @@ package datagitlabprojectenvironments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectenvironments/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectenvironments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_environments gitlab_project_environments}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments}.
 type DataGitlabProjectEnvironments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGitlabProjectEnvironments) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
 func NewDataGitlabProjectEnvironments(scope constructs.Construct, id *string, config *DataGitlabProjectEnvironmentsConfig) DataGitlabProjectEnvironments {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGitlabProjectEnvironments(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
 func NewDataGitlabProjectEnvironments_Override(d DataGitlabProjectEnvironments, scope constructs.Construct, id *string, config *DataGitlabProjectEnvironmentsConfig) {
 	_init_.Initialize()
 

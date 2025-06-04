@@ -5,14 +5,14 @@ package projectmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectmembership/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_membership gitlab_project_membership}.
 type ProjectMembership interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ProjectMembership) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership(scope constructs.Construct, id *string, config *ProjectMembershipConfig) ProjectMembership {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewProjectMembership(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_membership gitlab_project_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_membership gitlab_project_membership} Resource.
 func NewProjectMembership_Override(p ProjectMembership, scope constructs.Construct, id *string, config *ProjectMembershipConfig) {
 	_init_.Initialize()
 

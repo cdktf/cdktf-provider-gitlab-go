@@ -5,14 +5,14 @@ package projectrunnerenablement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectrunnerenablement/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectrunnerenablement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement}.
 type ProjectRunnerEnablement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ProjectRunnerEnablement) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement} Resource.
 func NewProjectRunnerEnablement(scope constructs.Construct, id *string, config *ProjectRunnerEnablementConfig) ProjectRunnerEnablement {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewProjectRunnerEnablement(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement} Resource.
 func NewProjectRunnerEnablement_Override(p ProjectRunnerEnablement, scope constructs.Construct, id *string, config *ProjectRunnerEnablementConfig) {
 	_init_.Initialize()
 

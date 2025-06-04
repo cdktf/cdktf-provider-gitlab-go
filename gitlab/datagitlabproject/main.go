@@ -190,7 +190,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keepN", GoGetter: "KeepN"},
-			_jsii_.MemberProperty{JsiiProperty: "nameRegex", GoGetter: "NameRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "nameRegexDelete", GoGetter: "NameRegexDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "nameRegexKeep", GoGetter: "NameRegexKeep"},
 			_jsii_.MemberProperty{JsiiProperty: "nextRunAt", GoGetter: "NextRunAt"},

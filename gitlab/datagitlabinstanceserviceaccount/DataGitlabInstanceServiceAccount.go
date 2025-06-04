@@ -5,14 +5,14 @@ package datagitlabinstanceserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabinstanceserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabinstanceserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
 type DataGitlabInstanceServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataGitlabInstanceServiceAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Email() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -141,6 +142,16 @@ func (j *jsiiProxy_DataGitlabInstanceServiceAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabInstanceServiceAccount) Email() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"email",
 		&returns,
 	)
 	return returns
@@ -297,7 +308,7 @@ func (j *jsiiProxy_DataGitlabInstanceServiceAccount) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
 func NewDataGitlabInstanceServiceAccount(scope constructs.Construct, id *string, config *DataGitlabInstanceServiceAccountConfig) DataGitlabInstanceServiceAccount {
 	_init_.Initialize()
 
@@ -315,7 +326,7 @@ func NewDataGitlabInstanceServiceAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
 func NewDataGitlabInstanceServiceAccount_Override(d DataGitlabInstanceServiceAccount, scope constructs.Construct, id *string, config *DataGitlabInstanceServiceAccountConfig) {
 	_init_.Initialize()
 

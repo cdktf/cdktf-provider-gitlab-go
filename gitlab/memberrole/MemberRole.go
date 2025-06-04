@@ -5,14 +5,14 @@ package memberrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/memberrole/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/memberrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/member_role gitlab_member_role}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/member_role gitlab_member_role}.
 type MemberRole interface {
 	cdktf.TerraformResource
 	BaseAccessLevel() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_MemberRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/member_role gitlab_member_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/member_role gitlab_member_role} Resource.
 func NewMemberRole(scope constructs.Construct, id *string, config *MemberRoleConfig) MemberRole {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewMemberRole(scope constructs.Construct, id *string, config *MemberRoleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/member_role gitlab_member_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/member_role gitlab_member_role} Resource.
 func NewMemberRole_Override(m MemberRole, scope constructs.Construct, id *string, config *MemberRoleConfig) {
 	_init_.Initialize()
 

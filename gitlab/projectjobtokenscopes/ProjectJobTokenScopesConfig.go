@@ -26,23 +26,23 @@ type ProjectJobTokenScopesConfig struct {
 	//
 	// If false, will allow any project or group regardless of the values in `target_project_ids` or `target_group_ids`. Deleting the associated `gitlab_project_job_token_scopes` resource will reset `Enabled` on the group to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#enabled ProjectJobTokenScopes#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_job_token_scopes#enabled ProjectJobTokenScopes#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// The ID or full path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The ID of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
 	ProjectId *float64 `field:"optional" json:"projectId" yaml:"projectId"`
 	// A set of group IDs that are in the CI/CD job token inbound allowlist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
 	TargetGroupIds *[]*float64 `field:"optional" json:"targetGroupIds" yaml:"targetGroupIds"`
 	// A set of project IDs that are in the CI/CD job token inbound allowlist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
 	TargetProjectIds *[]*float64 `field:"optional" json:"targetProjectIds" yaml:"targetProjectIds"`
 }
 

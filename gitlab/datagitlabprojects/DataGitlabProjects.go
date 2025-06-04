@@ -5,14 +5,14 @@ package datagitlabprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojects/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/projects gitlab_projects}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/projects gitlab_projects}.
 type DataGitlabProjects interface {
 	cdktf.TerraformDataSource
 	Archived() interface{}
@@ -804,7 +804,7 @@ func (j *jsiiProxy_DataGitlabProjects) WithSharedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/projects gitlab_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/projects gitlab_projects} Data Source.
 func NewDataGitlabProjects(scope constructs.Construct, id *string, config *DataGitlabProjectsConfig) DataGitlabProjects {
 	_init_.Initialize()
 
@@ -822,7 +822,7 @@ func NewDataGitlabProjects(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/projects gitlab_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/projects gitlab_projects} Data Source.
 func NewDataGitlabProjects_Override(d DataGitlabProjects, scope constructs.Construct, id *string, config *DataGitlabProjectsConfig) {
 	_init_.Initialize()
 

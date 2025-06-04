@@ -5,14 +5,14 @@ package pipelineschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/pipelineschedule/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/pipelineschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
 type PipelineSchedule interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_PipelineSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule(scope constructs.Construct, id *string, config *PipelineScheduleConfig) PipelineSchedule {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewPipelineSchedule(scope constructs.Construct, id *string, config *Pipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource.
 func NewPipelineSchedule_Override(p PipelineSchedule, scope constructs.Construct, id *string, config *PipelineScheduleConfig) {
 	_init_.Initialize()
 

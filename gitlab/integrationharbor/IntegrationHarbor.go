@@ -5,14 +5,14 @@ package integrationharbor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/integrationharbor/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationharbor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor gitlab_integration_harbor}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_harbor gitlab_integration_harbor}.
 type IntegrationHarbor interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -447,7 +447,7 @@ func (j *jsiiProxy_IntegrationHarbor) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource.
 func NewIntegrationHarbor(scope constructs.Construct, id *string, config *IntegrationHarborConfig) IntegrationHarbor {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewIntegrationHarbor(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource.
 func NewIntegrationHarbor_Override(i IntegrationHarbor, scope constructs.Construct, id *string, config *IntegrationHarborConfig) {
 	_init_.Initialize()
 

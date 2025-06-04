@@ -5,19 +5,16 @@ package groupldaplink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupldaplink/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupldaplink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
 type GroupLdapLink interface {
 	cdktf.TerraformResource
-	AccessLevel() *string
-	SetAccessLevel(val *string)
-	AccessLevelInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cn() *string
@@ -131,11 +128,9 @@ type GroupLdapLink interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccessLevel()
 	ResetCn()
 	ResetFilter()
 	ResetForce()
-	ResetGroupAccess()
 	ResetId()
 	ResetMemberRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -157,26 +152,6 @@ type GroupLdapLink interface {
 // The jsii proxy struct for GroupLdapLink
 type jsiiProxy_GroupLdapLink struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_GroupLdapLink) AccessLevel() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessLevel",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GroupLdapLink) AccessLevelInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessLevelInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_GroupLdapLink) CdktfStack() cdktf.TerraformStack {
@@ -500,7 +475,7 @@ func (j *jsiiProxy_GroupLdapLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapLinkConfig) GroupLdapLink {
 	_init_.Initialize()
 
@@ -518,7 +493,7 @@ func NewGroupLdapLink(scope constructs.Construct, id *string, config *GroupLdapL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource.
 func NewGroupLdapLink_Override(g GroupLdapLink, scope constructs.Construct, id *string, config *GroupLdapLinkConfig) {
 	_init_.Initialize()
 
@@ -526,17 +501,6 @@ func NewGroupLdapLink_Override(g GroupLdapLink, scope constructs.Construct, id *
 		"@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink",
 		[]interface{}{scope, id, config},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GroupLdapLink)SetAccessLevel(val *string) {
-	if err := j.validateSetAccessLevelParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accessLevel",
-		val,
 	)
 }
 
@@ -1049,14 +1013,6 @@ func (g *jsiiProxy_GroupLdapLink) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (g *jsiiProxy_GroupLdapLink) ResetAccessLevel() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetAccessLevel",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GroupLdapLink) ResetCn() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1077,14 +1033,6 @@ func (g *jsiiProxy_GroupLdapLink) ResetForce() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetForce",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GroupLdapLink) ResetGroupAccess() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGroupAccess",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package projectvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projectvariable/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_variable gitlab_project_variable}.
 type ProjectVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -534,7 +534,7 @@ func (j *jsiiProxy_ProjectVariable) VariableTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectVariableConfig) ProjectVariable {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewProjectVariable(scope constructs.Construct, id *string, config *ProjectV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_variable gitlab_project_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_variable gitlab_project_variable} Resource.
 func NewProjectVariable_Override(p ProjectVariable, scope constructs.Construct, id *string, config *ProjectVariableConfig) {
 	_init_.Initialize()
 

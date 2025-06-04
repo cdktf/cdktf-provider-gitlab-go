@@ -647,10 +647,6 @@ func (j *jsiiProxy_ApplicationSettings) validateSetGroupOwnersCanManageDefaultBr
 	return nil
 }
 
-func (j *jsiiProxy_ApplicationSettings) validateSetHashedStorageEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApplicationSettings) validateSetHelpPageHideCommercialContentParameters(val interface{}) error {
 	return nil
 }
@@ -676,18 +672,6 @@ func (j *jsiiProxy_ApplicationSettings) validateSetHomePageUrlParameters(val *st
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingFullRepackPeriodParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingGcPeriodParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationSettings) validateSetHousekeepingIncrementalRepackPeriodParameters(val *float64) error {
 	return nil
 }
 
@@ -1012,10 +996,6 @@ func (j *jsiiProxy_ApplicationSettings) validateSetRepositoryChecksEnabledParame
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetRepositorySizeLimitParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_ApplicationSettings) validateSetRepositoryStoragesParameters(val *[]*string) error {
 	return nil
 }
 

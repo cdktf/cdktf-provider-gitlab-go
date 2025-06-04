@@ -5,14 +5,14 @@ package groupsecuritypolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupsecuritypolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupsecuritypolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
 type GroupSecurityPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_GroupSecurityPolicyAttachment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
 func NewGroupSecurityPolicyAttachment(scope constructs.Construct, id *string, config *GroupSecurityPolicyAttachmentConfig) GroupSecurityPolicyAttachment {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewGroupSecurityPolicyAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource.
 func NewGroupSecurityPolicyAttachment_Override(g GroupSecurityPolicyAttachment, scope constructs.Construct, id *string, config *GroupSecurityPolicyAttachmentConfig) {
 	_init_.Initialize()
 

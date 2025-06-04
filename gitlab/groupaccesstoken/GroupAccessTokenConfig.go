@@ -24,35 +24,35 @@ type GroupAccessTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or full path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#group GroupAccessToken#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#group GroupAccessToken#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The name of the group access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#name GroupAccessToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#name GroupAccessToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The scopes of the group access token.
 	//
-	// Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
+	// Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`, `self_rotate`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The access level for the group access token.
 	//
 	// Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
 	// The description of the group access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#description GroupAccessToken#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#description GroupAccessToken#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// When the token will expire, YYYY-MM-DD format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
 	// The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_access_token#rotation_configuration GroupAccessToken#rotation_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_access_token#rotation_configuration GroupAccessToken#rotation_configuration}
 	RotationConfiguration *GroupAccessTokenRotationConfiguration `field:"optional" json:"rotationConfiguration" yaml:"rotationConfiguration"`
 }
 

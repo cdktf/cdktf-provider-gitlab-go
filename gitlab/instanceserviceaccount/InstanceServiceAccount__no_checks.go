@@ -103,6 +103,10 @@ func (j *jsiiProxy_InstanceServiceAccount) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_InstanceServiceAccount) validateSetEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceServiceAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -83,7 +83,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCommitMessage", GoMethod: "ResetCommitMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateCommitMessage", GoMethod: "ResetCreateCommitMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteCommitMessage", GoMethod: "ResetDeleteCommitMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExecuteFilemode", GoMethod: "ResetExecuteFilemode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

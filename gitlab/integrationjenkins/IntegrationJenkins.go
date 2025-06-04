@@ -5,14 +5,14 @@ package integrationjenkins
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/integrationjenkins/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationjenkins/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jenkins gitlab_integration_jenkins}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jenkins gitlab_integration_jenkins}.
 type IntegrationJenkins interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -521,7 +521,7 @@ func (j *jsiiProxy_IntegrationJenkins) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
 func NewIntegrationJenkins(scope constructs.Construct, id *string, config *IntegrationJenkinsConfig) IntegrationJenkins {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewIntegrationJenkins(scope constructs.Construct, id *string, config *Integ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource.
 func NewIntegrationJenkins_Override(i IntegrationJenkins, scope constructs.Construct, id *string, config *IntegrationJenkinsConfig) {
 	_init_.Initialize()
 

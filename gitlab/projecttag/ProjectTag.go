@@ -5,14 +5,14 @@ package projecttag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/projecttag/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projecttag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_tag gitlab_project_tag}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_tag gitlab_project_tag}.
 type ProjectTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ProjectTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_tag gitlab_project_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_tag gitlab_project_tag} Resource.
 func NewProjectTag(scope constructs.Construct, id *string, config *ProjectTagConfig) ProjectTag {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewProjectTag(scope constructs.Construct, id *string, config *ProjectTagCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_tag gitlab_project_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_tag gitlab_project_tag} Resource.
 func NewProjectTag_Override(p ProjectTag, scope constructs.Construct, id *string, config *ProjectTagConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datagitlabpipelineschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabpipelineschedule/internal"
+	"github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabpipelineschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule}.
 type DataGitlabPipelineSchedule interface {
 	cdktf.TerraformDataSource
 	Active() cdktf.IResolvable
@@ -432,7 +432,7 @@ func (j *jsiiProxy_DataGitlabPipelineSchedule) Variables() DataGitlabPipelineSch
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule} Data Source.
 func NewDataGitlabPipelineSchedule(scope constructs.Construct, id *string, config *DataGitlabPipelineScheduleConfig) DataGitlabPipelineSchedule {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewDataGitlabPipelineSchedule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule} Data Source.
 func NewDataGitlabPipelineSchedule_Override(d DataGitlabPipelineSchedule, scope constructs.Construct, id *string, config *DataGitlabPipelineScheduleConfig) {
 	_init_.Initialize()
 

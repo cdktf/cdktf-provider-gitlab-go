@@ -365,6 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ciDefaultGitDepth", GoGetter: "CiDefaultGitDepth"},
 			_jsii_.MemberProperty{JsiiProperty: "ciDeletePipelinesInSeconds", GoGetter: "CiDeletePipelinesInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "ciForwardDeploymentEnabled", GoGetter: "CiForwardDeploymentEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "ciForwardDeploymentRollbackAllowed", GoGetter: "CiForwardDeploymentRollbackAllowed"},
 			_jsii_.MemberProperty{JsiiProperty: "ciIdTokenSubClaimComponents", GoGetter: "CiIdTokenSubClaimComponents"},
 			_jsii_.MemberProperty{JsiiProperty: "ciPipelineVariablesMinimumOverrideRole", GoGetter: "CiPipelineVariablesMinimumOverrideRole"},
 			_jsii_.MemberProperty{JsiiProperty: "ciRestrictPipelineCancellationRole", GoGetter: "CiRestrictPipelineCancellationRole"},

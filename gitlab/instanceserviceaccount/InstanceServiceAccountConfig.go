@@ -24,17 +24,17 @@ type InstanceServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The email of the user account. If not set, generates a no-reply email address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#email InstanceServiceAccount#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/instance_service_account#email InstanceServiceAccount#email}
 	Email *string `field:"optional" json:"email" yaml:"email"`
 	// The name of the user. If not set, uses Service account user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
 	Timeouts *InstanceServiceAccountTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The username of the user account. If not set, generates a name prepended with service_account_.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

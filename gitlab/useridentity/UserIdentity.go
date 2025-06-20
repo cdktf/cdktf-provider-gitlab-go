@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_identity gitlab_user_identity}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/user_identity gitlab_user_identity}.
 type UserIdentity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_UserIdentity) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_identity gitlab_user_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/user_identity gitlab_user_identity} Resource.
 func NewUserIdentity(scope constructs.Construct, id *string, config *UserIdentityConfig) UserIdentity {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewUserIdentity(scope constructs.Construct, id *string, config *UserIdentit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_identity gitlab_user_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/user_identity gitlab_user_identity} Resource.
 func NewUserIdentity_Override(u UserIdentity, scope constructs.Construct, id *string, config *UserIdentityConfig) {
 	_init_.Initialize()
 

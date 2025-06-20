@@ -31,6 +31,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	CiDefaultGitDepth() *float64
 	CiDeletePipelinesInSeconds() *float64
 	CiForwardDeploymentEnabled() cdktf.IResolvable
+	CiForwardDeploymentRollbackAllowed() cdktf.IResolvable
 	CiIdTokenSubClaimComponents() *[]*string
 	CiPipelineVariablesMinimumOverrideRole() *string
 	CiRestrictPipelineCancellationRole() *string
@@ -357,6 +358,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiForwardDeploymen
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) CiForwardDeploymentRollbackAllowed() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ciForwardDeploymentRollbackAllowed",
 		&returns,
 	)
 	return returns

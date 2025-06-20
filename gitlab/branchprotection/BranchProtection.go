@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/branch_protection gitlab_branch_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/branch_protection gitlab_branch_protection}.
 type BranchProtection interface {
 	cdktf.TerraformResource
 	AllowedToMerge() BranchProtectionAllowedToMergeList
@@ -546,7 +546,7 @@ func (j *jsiiProxy_BranchProtection) UnprotectAccessLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
 func NewBranchProtection(scope constructs.Construct, id *string, config *BranchProtectionConfig) BranchProtection {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewBranchProtection(scope constructs.Construct, id *string, config *BranchP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/branch_protection gitlab_branch_protection} Resource.
 func NewBranchProtection_Override(b BranchProtection, scope constructs.Construct, id *string, config *BranchProtectionConfig) {
 	_init_.Initialize()
 

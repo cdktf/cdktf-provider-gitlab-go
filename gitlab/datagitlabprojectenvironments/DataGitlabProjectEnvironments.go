@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_environments gitlab_project_environments}.
 type DataGitlabProjectEnvironments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGitlabProjectEnvironments) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
 func NewDataGitlabProjectEnvironments(scope constructs.Construct, id *string, config *DataGitlabProjectEnvironmentsConfig) DataGitlabProjectEnvironments {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGitlabProjectEnvironments(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_environments gitlab_project_environments} Data Source.
 func NewDataGitlabProjectEnvironments_Override(d DataGitlabProjectEnvironments, scope constructs.Construct, id *string, config *DataGitlabProjectEnvironmentsConfig) {
 	_init_.Initialize()
 

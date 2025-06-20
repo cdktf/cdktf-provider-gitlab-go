@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/label gitlab_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/label gitlab_label}.
 type Label interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Color() *string
 	SetColor(val *string)
+	ColorHex() *string
 	ColorInput() *string
 	// Experimental.
 	Connection() interface{}
@@ -46,8 +47,6 @@ type Label interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LabelId() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -121,7 +120,6 @@ type Label interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -158,6 +156,16 @@ func (j *jsiiProxy_Label) Color() *string {
 	_jsii_.Get(
 		j,
 		"color",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Label) ColorHex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colorHex",
 		&returns,
 	)
 	return returns
@@ -268,16 +276,6 @@ func (j *jsiiProxy_Label) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Label) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +412,7 @@ func (j *jsiiProxy_Label) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/label gitlab_label} Resource.
 func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label {
 	_init_.Initialize()
 
@@ -432,7 +430,7 @@ func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/label gitlab_label} Resource.
 func NewLabel_Override(l Label, scope constructs.Construct, id *string, config *LabelConfig) {
 	_init_.Initialize()
 
@@ -499,17 +497,6 @@ func (j *jsiiProxy_Label)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Label)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -923,14 +910,6 @@ func (l *jsiiProxy_Label) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_Label) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/release gitlab_release}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/release gitlab_release}.
 type Release interface {
 	cdktf.TerraformResource
 	Assets() ReleaseAssetsOutputReference
@@ -599,7 +599,7 @@ func (j *jsiiProxy_Release) UpcomingRelease() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/release gitlab_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/release gitlab_release} Resource.
 func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) Release {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/release gitlab_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/release gitlab_release} Resource.
 func NewRelease_Override(r Release, scope constructs.Construct, id *string, config *ReleaseConfig) {
 	_init_.Initialize()
 

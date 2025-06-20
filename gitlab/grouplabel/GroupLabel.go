@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_label gitlab_group_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_label gitlab_group_label}.
 type GroupLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Color() *string
 	SetColor(val *string)
+	ColorHex() *string
 	ColorInput() *string
 	// Experimental.
 	Connection() interface{}
@@ -155,6 +156,16 @@ func (j *jsiiProxy_GroupLabel) Color() *string {
 	_jsii_.Get(
 		j,
 		"color",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupLabel) ColorHex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colorHex",
 		&returns,
 	)
 	return returns
@@ -401,7 +412,7 @@ func (j *jsiiProxy_GroupLabel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelConfig) GroupLabel {
 	_init_.Initialize()
 
@@ -419,7 +430,7 @@ func NewGroupLabel(scope constructs.Construct, id *string, config *GroupLabelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_label gitlab_group_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_label gitlab_group_label} Resource.
 func NewGroupLabel_Override(g GroupLabel, scope constructs.Construct, id *string, config *GroupLabelConfig) {
 	_init_.Initialize()
 

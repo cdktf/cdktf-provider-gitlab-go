@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/user gitlab_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user gitlab_user}.
 type DataGitlabUser interface {
 	cdktf.TerraformDataSource
 	AvatarUrl() *string
@@ -36,6 +36,9 @@ type DataGitlabUser interface {
 	SetDependsOn(val *[]*string)
 	Email() *string
 	SetEmail(val *string)
+	EmailExactMatch() interface{}
+	SetEmailExactMatch(val interface{})
+	EmailExactMatchInput() interface{}
 	EmailInput() *string
 	External() cdktf.IResolvable
 	ExternUid() *string
@@ -119,6 +122,7 @@ type DataGitlabUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEmail()
+	ResetEmailExactMatch()
 	ResetId()
 	ResetNamespaceId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -260,6 +264,26 @@ func (j *jsiiProxy_DataGitlabUser) Email() *string {
 	_jsii_.Get(
 		j,
 		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUser) EmailExactMatch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailExactMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUser) EmailExactMatchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailExactMatchInput",
 		&returns,
 	)
 	return returns
@@ -636,7 +660,7 @@ func (j *jsiiProxy_DataGitlabUser) WebsiteUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitlabUserConfig) DataGitlabUser {
 	_init_.Initialize()
 
@@ -654,7 +678,7 @@ func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser_Override(d DataGitlabUser, scope constructs.Construct, id *string, config *DataGitlabUserConfig) {
 	_init_.Initialize()
 
@@ -691,6 +715,17 @@ func (j *jsiiProxy_DataGitlabUser)SetEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"email",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabUser)SetEmailExactMatch(val interface{}) {
+	if err := j.validateSetEmailExactMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailExactMatch",
 		val,
 	)
 }
@@ -1055,6 +1090,14 @@ func (d *jsiiProxy_DataGitlabUser) ResetEmail() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEmail",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabUser) ResetEmailExactMatch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEmailExactMatch",
 		nil, // no parameters
 	)
 }

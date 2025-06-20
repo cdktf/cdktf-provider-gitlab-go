@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataGitlabUser) validateSetEmailParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataGitlabUser) validateSetEmailExactMatchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGitlabUser) validateSetIdParameters(val *string) error {
 	return nil
 }

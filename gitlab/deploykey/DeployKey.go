@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key gitlab_deploy_key}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key gitlab_deploy_key}.
 type DeployKey interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -35,6 +35,9 @@ type DeployKey interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeployKeyId() *float64
+	ExpiresAt() *string
+	SetExpiresAt(val *string)
+	ExpiresAtInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -121,6 +124,7 @@ type DeployKey interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCanPush()
+	ResetExpiresAt()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_DeployKey) DeployKeyId() *float64 {
 	_jsii_.Get(
 		j,
 		"deployKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeployKey) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeployKey) ExpiresAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAtInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +438,7 @@ func (j *jsiiProxy_DeployKey) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfig) DeployKey {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewDeployKey(scope constructs.Construct, id *string, config *DeployKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key gitlab_deploy_key} Resource.
 func NewDeployKey_Override(d DeployKey, scope constructs.Construct, id *string, config *DeployKeyConfig) {
 	_init_.Initialize()
 
@@ -480,6 +504,17 @@ func (j *jsiiProxy_DeployKey)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DeployKey)SetExpiresAt(val *string) {
+	if err := j.validateSetExpiresAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresAt",
 		val,
 	)
 }
@@ -923,6 +958,14 @@ func (d *jsiiProxy_DeployKey) ResetCanPush() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCanPush",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeployKey) ResetExpiresAt() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpiresAt",
 		nil, // no parameters
 	)
 }

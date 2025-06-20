@@ -143,11 +143,19 @@ func (j *jsiiProxy_Project) validateSetAutoDevopsEnabledParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetAutoDuoCodeReviewEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetAvatarParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_Project) validateSetAvatarHashParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetBranchesParameters(val *string) error {
 	return nil
 }
 
@@ -176,6 +184,10 @@ func (j *jsiiProxy_Project) validateSetCiDeletePipelinesInSecondsParameters(val 
 }
 
 func (j *jsiiProxy_Project) validateSetCiForwardDeploymentEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetCiForwardDeploymentRollbackAllowedParameters(val interface{}) error {
 	return nil
 }
 

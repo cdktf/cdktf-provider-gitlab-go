@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_wiki_page gitlab_project_wiki_page}.
 type ProjectWikiPage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ProjectWikiPage) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
 func NewProjectWikiPage(scope constructs.Construct, id *string, config *ProjectWikiPageConfig) ProjectWikiPage {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewProjectWikiPage(scope constructs.Construct, id *string, config *ProjectW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource.
 func NewProjectWikiPage_Override(p ProjectWikiPage, scope constructs.Construct, id *string, config *ProjectWikiPageConfig) {
 	_init_.Initialize()
 

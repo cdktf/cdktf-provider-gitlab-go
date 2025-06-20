@@ -18,6 +18,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
+			_jsii_.MemberProperty{JsiiProperty: "colorHex", GoGetter: "ColorHex"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

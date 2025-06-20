@@ -24,19 +24,19 @@ type GroupBadgeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group to add the badge to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_badge#group GroupBadge#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_badge#group GroupBadge#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The image url which will be presented on group overview.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_badge#image_url GroupBadge#image_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_badge#image_url GroupBadge#image_url}
 	ImageUrl *string `field:"required" json:"imageUrl" yaml:"imageUrl"`
 	// The url linked with the badge.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_badge#link_url GroupBadge#link_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_badge#link_url GroupBadge#link_url}
 	LinkUrl *string `field:"required" json:"linkUrl" yaml:"linkUrl"`
 	// The name of the badge.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/group_badge#name GroupBadge#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_badge#name GroupBadge#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

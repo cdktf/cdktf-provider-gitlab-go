@@ -103,6 +103,10 @@ func (j *jsiiProxy_DeployKey) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DeployKey) validateSetExpiresAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeployKey) validateSetIdParameters(val *string) error {
 	return nil
 }

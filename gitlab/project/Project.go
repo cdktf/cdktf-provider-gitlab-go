@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -45,6 +45,9 @@ type Project interface {
 	AutoDevopsEnabled() interface{}
 	SetAutoDevopsEnabled(val interface{})
 	AutoDevopsEnabledInput() interface{}
+	AutoDuoCodeReviewEnabled() interface{}
+	SetAutoDuoCodeReviewEnabled(val interface{})
+	AutoDuoCodeReviewEnabledInput() interface{}
 	Avatar() *string
 	SetAvatar(val *string)
 	AvatarHash() *string
@@ -52,6 +55,9 @@ type Project interface {
 	AvatarHashInput() *string
 	AvatarInput() *string
 	AvatarUrl() *string
+	Branches() *string
+	SetBranches(val *string)
+	BranchesInput() *string
 	BuildGitStrategy() *string
 	SetBuildGitStrategy(val *string)
 	BuildGitStrategyInput() *string
@@ -75,6 +81,9 @@ type Project interface {
 	CiForwardDeploymentEnabled() interface{}
 	SetCiForwardDeploymentEnabled(val interface{})
 	CiForwardDeploymentEnabledInput() interface{}
+	CiForwardDeploymentRollbackAllowed() interface{}
+	SetCiForwardDeploymentRollbackAllowed(val interface{})
+	CiForwardDeploymentRollbackAllowedInput() interface{}
 	CiIdTokenSubClaimComponents() *[]*string
 	SetCiIdTokenSubClaimComponents(val *[]*string)
 	CiIdTokenSubClaimComponentsInput() *[]*string
@@ -427,8 +436,10 @@ type Project interface {
 	ResetAutocloseReferencedIssues()
 	ResetAutoDevopsDeployStrategy()
 	ResetAutoDevopsEnabled()
+	ResetAutoDuoCodeReviewEnabled()
 	ResetAvatar()
 	ResetAvatarHash()
+	ResetBranches()
 	ResetBuildGitStrategy()
 	ResetBuildsAccessLevel()
 	ResetBuildTimeout()
@@ -436,6 +447,7 @@ type Project interface {
 	ResetCiDefaultGitDepth()
 	ResetCiDeletePipelinesInSeconds()
 	ResetCiForwardDeploymentEnabled()
+	ResetCiForwardDeploymentRollbackAllowed()
 	ResetCiIdTokenSubClaimComponents()
 	ResetCiPipelineVariablesMinimumOverrideRole()
 	ResetCiRestrictPipelineCancellationRole()
@@ -739,6 +751,26 @@ func (j *jsiiProxy_Project) AutoDevopsEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) AutoDuoCodeReviewEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoDuoCodeReviewEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) AutoDuoCodeReviewEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoDuoCodeReviewEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Avatar() *string {
 	var returns *string
 	_jsii_.Get(
@@ -784,6 +816,26 @@ func (j *jsiiProxy_Project) AvatarUrl() *string {
 	_jsii_.Get(
 		j,
 		"avatarUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) Branches() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) BranchesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchesInput",
 		&returns,
 	)
 	return returns
@@ -934,6 +986,26 @@ func (j *jsiiProxy_Project) CiForwardDeploymentEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ciForwardDeploymentEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiForwardDeploymentRollbackAllowed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciForwardDeploymentRollbackAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiForwardDeploymentRollbackAllowedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciForwardDeploymentRollbackAllowedInput",
 		&returns,
 	)
 	return returns
@@ -2810,7 +2882,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2828,7 +2900,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -2949,6 +3021,17 @@ func (j *jsiiProxy_Project)SetAutoDevopsEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetAutoDuoCodeReviewEnabled(val interface{}) {
+	if err := j.validateSetAutoDuoCodeReviewEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoDuoCodeReviewEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetAvatar(val *string) {
 	if err := j.validateSetAvatarParameters(val); err != nil {
 		panic(err)
@@ -2967,6 +3050,17 @@ func (j *jsiiProxy_Project)SetAvatarHash(val *string) {
 	_jsii_.Set(
 		j,
 		"avatarHash",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetBranches(val *string) {
+	if err := j.validateSetBranchesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"branches",
 		val,
 	)
 }
@@ -3044,6 +3138,17 @@ func (j *jsiiProxy_Project)SetCiForwardDeploymentEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ciForwardDeploymentEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiForwardDeploymentRollbackAllowed(val interface{}) {
+	if err := j.validateSetCiForwardDeploymentRollbackAllowedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciForwardDeploymentRollbackAllowed",
 		val,
 	)
 }
@@ -4462,6 +4567,14 @@ func (p *jsiiProxy_Project) ResetAutoDevopsEnabled() {
 	)
 }
 
+func (p *jsiiProxy_Project) ResetAutoDuoCodeReviewEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoDuoCodeReviewEnabled",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetAvatar() {
 	_jsii_.InvokeVoid(
 		p,
@@ -4474,6 +4587,14 @@ func (p *jsiiProxy_Project) ResetAvatarHash() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAvatarHash",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetBranches() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBranches",
 		nil, // no parameters
 	)
 }
@@ -4530,6 +4651,14 @@ func (p *jsiiProxy_Project) ResetCiForwardDeploymentEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCiForwardDeploymentEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetCiForwardDeploymentRollbackAllowed() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiForwardDeploymentRollbackAllowed",
 		nil, // no parameters
 	)
 }

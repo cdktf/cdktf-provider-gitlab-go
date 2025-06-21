@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/instance_service_account gitlab_instance_service_account}.
 type DataGitlabInstanceServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataGitlabInstanceServiceAccount) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
 func NewDataGitlabInstanceServiceAccount(scope constructs.Construct, id *string, config *DataGitlabInstanceServiceAccountConfig) DataGitlabInstanceServiceAccount {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataGitlabInstanceServiceAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/instance_service_account gitlab_instance_service_account} Data Source.
 func NewDataGitlabInstanceServiceAccount_Override(d DataGitlabInstanceServiceAccount, scope constructs.Construct, id *string, config *DataGitlabInstanceServiceAccountConfig) {
 	_init_.Initialize()
 

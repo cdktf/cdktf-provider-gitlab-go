@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_merge_requests gitlab_project_merge_requests}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_merge_requests gitlab_project_merge_requests}.
 type DataGitlabProjectMergeRequests interface {
 	cdktf.TerraformDataSource
 	AuthorId() *float64
@@ -707,7 +707,7 @@ func (j *jsiiProxy_DataGitlabProjectMergeRequests) WipInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_merge_requests gitlab_project_merge_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_merge_requests gitlab_project_merge_requests} Data Source.
 func NewDataGitlabProjectMergeRequests(scope constructs.Construct, id *string, config *DataGitlabProjectMergeRequestsConfig) DataGitlabProjectMergeRequests {
 	_init_.Initialize()
 
@@ -725,7 +725,7 @@ func NewDataGitlabProjectMergeRequests(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_merge_requests gitlab_project_merge_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_merge_requests gitlab_project_merge_requests} Data Source.
 func NewDataGitlabProjectMergeRequests_Override(d DataGitlabProjectMergeRequests, scope constructs.Construct, id *string, config *DataGitlabProjectMergeRequestsConfig) {
 	_init_.Initialize()
 

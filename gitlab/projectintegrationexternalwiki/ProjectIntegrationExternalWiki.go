@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki}.
 type ProjectIntegrationExternalWiki interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -411,7 +411,7 @@ func (j *jsiiProxy_ProjectIntegrationExternalWiki) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki} Resource.
 func NewProjectIntegrationExternalWiki(scope constructs.Construct, id *string, config *ProjectIntegrationExternalWikiConfig) ProjectIntegrationExternalWiki {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewProjectIntegrationExternalWiki(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_external_wiki gitlab_project_integration_external_wiki} Resource.
 func NewProjectIntegrationExternalWiki_Override(p ProjectIntegrationExternalWiki, scope constructs.Construct, id *string, config *ProjectIntegrationExternalWikiConfig) {
 	_init_.Initialize()
 

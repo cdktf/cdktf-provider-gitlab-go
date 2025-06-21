@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_badge gitlab_project_badge}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_badge gitlab_project_badge}.
 type ProjectBadge interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ProjectBadge) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_badge gitlab_project_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_badge gitlab_project_badge} Resource.
 func NewProjectBadge(scope constructs.Construct, id *string, config *ProjectBadgeConfig) ProjectBadge {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewProjectBadge(scope constructs.Construct, id *string, config *ProjectBadg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_badge gitlab_project_badge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_badge gitlab_project_badge} Resource.
 func NewProjectBadge_Override(p ProjectBadge, scope constructs.Construct, id *string, config *ProjectBadgeConfig) {
 	_init_.Initialize()
 

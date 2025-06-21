@@ -24,21 +24,21 @@ type ProjectPagesSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The project ID or path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Boolean indicating if the project is set to force https.
 	//
 	// Requires `external_https` to be configured in the GitLab instance: https://docs.gitlab.com/administration/pages/#custom-domains-with-tls-support.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
 	ForceHttps interface{} `field:"optional" json:"forceHttps" yaml:"forceHttps"`
 	// Boolean indicating if a unique domain is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
 	IsUniqueDomainEnabled interface{} `field:"optional" json:"isUniqueDomainEnabled" yaml:"isUniqueDomainEnabled"`
 	// Set to true if the pages settings should not be reset to their pre-terraform defaults on destroy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
 	KeepSettingsOnDestroy interface{} `field:"optional" json:"keepSettingsOnDestroy" yaml:"keepSettingsOnDestroy"`
 }
 

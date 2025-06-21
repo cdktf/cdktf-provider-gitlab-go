@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jira gitlab_project_integration_jira}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jira gitlab_project_integration_jira}.
 type ProjectIntegrationJira interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -735,7 +735,7 @@ func (j *jsiiProxy_ProjectIntegrationJira) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jira gitlab_project_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jira gitlab_project_integration_jira} Resource.
 func NewProjectIntegrationJira(scope constructs.Construct, id *string, config *ProjectIntegrationJiraConfig) ProjectIntegrationJira {
 	_init_.Initialize()
 
@@ -753,7 +753,7 @@ func NewProjectIntegrationJira(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jira gitlab_project_integration_jira} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jira gitlab_project_integration_jira} Resource.
 func NewProjectIntegrationJira_Override(p ProjectIntegrationJira, scope constructs.Construct, id *string, config *ProjectIntegrationJiraConfig) {
 	_init_.Initialize()
 

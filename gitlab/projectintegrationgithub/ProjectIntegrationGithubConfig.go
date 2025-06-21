@@ -24,17 +24,17 @@ type ProjectIntegrationGithubConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the project you want to activate the integration on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
 	RepositoryUrl *string `field:"required" json:"repositoryUrl" yaml:"repositoryUrl"`
 	// A GitHub personal access token with at least the `repo:status` scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
 	Token *string `field:"required" json:"token" yaml:"token"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,7 +43,7 @@ type ProjectIntegrationGithubConfig struct {
 	//
 	// Must enable to set a GitLab status check as _required_ in GitHub. See [Static / dynamic status check names] to learn more.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
 	StaticContext interface{} `field:"optional" json:"staticContext" yaml:"staticContext"`
 }
 

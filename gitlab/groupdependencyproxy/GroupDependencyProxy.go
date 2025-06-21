@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}.
 type GroupDependencyProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GroupDependencyProxy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource.
 func NewGroupDependencyProxy(scope constructs.Construct, id *string, config *GroupDependencyProxyConfig) GroupDependencyProxy {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewGroupDependencyProxy(scope constructs.Construct, id *string, config *Gro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource.
 func NewGroupDependencyProxy_Override(g GroupDependencyProxy, scope constructs.Construct, id *string, config *GroupDependencyProxyConfig) {
 	_init_.Initialize()
 

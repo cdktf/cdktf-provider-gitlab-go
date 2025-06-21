@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/system_hook gitlab_system_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/system_hook gitlab_system_hook}.
 type SystemHook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_SystemHook) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/system_hook gitlab_system_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/system_hook gitlab_system_hook} Resource.
 func NewSystemHook(scope constructs.Construct, id *string, config *SystemHookConfig) SystemHook {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewSystemHook(scope constructs.Construct, id *string, config *SystemHookCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/system_hook gitlab_system_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/system_hook gitlab_system_hook} Resource.
 func NewSystemHook_Override(s SystemHook, scope constructs.Construct, id *string, config *SystemHookConfig) {
 	_init_.Initialize()
 

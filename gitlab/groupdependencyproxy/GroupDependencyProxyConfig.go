@@ -24,23 +24,23 @@ type GroupDependencyProxyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// Indicates whether the proxy is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// Identity credential used to authenticate with Docker Hub when pulling images.
 	//
 	// Can be a username (for password or personal access token (PAT)) or organization name (for organization access token (OAT)).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
 	Identity *string `field:"optional" json:"identity" yaml:"identity"`
 	// Secret credential used to authenticate with Docker Hub when pulling images.
 	//
 	// Can be a password, personal access token (PAT), or organization access token (OAT). Cannot be imported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
 	Secret *string `field:"optional" json:"secret" yaml:"secret"`
 }
 

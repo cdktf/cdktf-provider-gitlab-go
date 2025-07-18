@@ -24,33 +24,33 @@ type PipelineScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The cron (e.g. `0 1 * * *`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
 	Cron *string `field:"required" json:"cron" yaml:"cron"`
 	// The description of the pipeline schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#description PipelineSchedule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// The name or id of the project to add the schedule to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#project PipelineSchedule#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The branch/tag name to be triggered. This must be the full branch reference, for example: `refs/heads/main`, not `main`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
 	Ref *string `field:"required" json:"ref" yaml:"ref"`
 	// The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#active PipelineSchedule#active}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
 	Active interface{} `field:"optional" json:"active" yaml:"active"`
 	// The timezone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
 	CronTimezone *string `field:"optional" json:"cronTimezone" yaml:"cronTimezone"`
 	// When set to `true`, the user represented by the token running Terraform will take ownership of the scheduled pipeline prior to editing it.
 	//
 	// This can help when managing scheduled pipeline drift when other users are making changes outside Terraform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule#take_ownership PipelineSchedule#take_ownership}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/pipeline_schedule#take_ownership PipelineSchedule#take_ownership}
 	TakeOwnership interface{} `field:"optional" json:"takeOwnership" yaml:"takeOwnership"`
 }
 

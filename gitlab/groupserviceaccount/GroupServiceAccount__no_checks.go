@@ -99,6 +99,10 @@ func (j *jsiiProxy_GroupServiceAccount) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_GroupServiceAccount) validateSetEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupServiceAccount) validateSetGroupParameters(val *string) error {
 	return nil
 }

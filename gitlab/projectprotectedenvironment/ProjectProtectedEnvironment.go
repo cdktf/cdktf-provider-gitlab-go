@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 type ProjectProtectedEnvironment interface {
 	cdktf.TerraformResource
 	ApprovalRules() ProjectProtectedEnvironmentApprovalRulesList
@@ -34,6 +34,8 @@ type ProjectProtectedEnvironment interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeployAccessLevels() ProjectProtectedEnvironmentDeployAccessLevelsList
+	DeployAccessLevelsAttribute() ProjectProtectedEnvironmentDeployAccessLevelsAttributeList
+	DeployAccessLevelsAttributeInput() interface{}
 	DeployAccessLevelsInput() interface{}
 	Environment() *string
 	SetEnvironment(val *string)
@@ -117,8 +119,10 @@ type ProjectProtectedEnvironment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalRules(value interface{})
 	PutDeployAccessLevels(value interface{})
+	PutDeployAccessLevelsAttribute(value interface{})
 	ResetApprovalRules()
 	ResetDeployAccessLevels()
+	ResetDeployAccessLevelsAttribute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -215,6 +219,26 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) DeployAccessLevels() ProjectProt
 	_jsii_.Get(
 		j,
 		"deployAccessLevels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) DeployAccessLevelsAttribute() ProjectProtectedEnvironmentDeployAccessLevelsAttributeList {
+	var returns ProjectProtectedEnvironmentDeployAccessLevelsAttributeList
+	_jsii_.Get(
+		j,
+		"deployAccessLevelsAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectProtectedEnvironment) DeployAccessLevelsAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deployAccessLevelsAttributeInput",
 		&returns,
 	)
 	return returns
@@ -391,7 +415,7 @@ func (j *jsiiProxy_ProjectProtectedEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewProjectProtectedEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource.
 func NewProjectProtectedEnvironment_Override(p ProjectProtectedEnvironment, scope constructs.Construct, id *string, config *ProjectProtectedEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -885,6 +909,17 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) PutDeployAccessLevels(value inte
 	)
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) PutDeployAccessLevelsAttribute(value interface{}) {
+	if err := p.validatePutDeployAccessLevelsAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDeployAccessLevelsAttribute",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_ProjectProtectedEnvironment) ResetApprovalRules() {
 	_jsii_.InvokeVoid(
 		p,
@@ -897,6 +932,14 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) ResetDeployAccessLevels() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDeployAccessLevels",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectProtectedEnvironment) ResetDeployAccessLevelsAttribute() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeployAccessLevelsAttribute",
 		nil, // no parameters
 	)
 }

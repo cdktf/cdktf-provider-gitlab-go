@@ -24,15 +24,15 @@ type IntegrationCustomIssueTrackerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The URL to view an issue in the external issue tracker. Must contain :id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
 	IssuesUrl *string `field:"required" json:"issuesUrl" yaml:"issuesUrl"`
 	// The ID or full path of the project for the custom issue tracker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The URL to the project in the external issue tracker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
 	ProjectUrl *string `field:"required" json:"projectUrl" yaml:"projectUrl"`
 }
 

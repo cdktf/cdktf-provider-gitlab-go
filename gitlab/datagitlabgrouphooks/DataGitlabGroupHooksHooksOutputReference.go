@@ -32,6 +32,7 @@ type DataGitlabGroupHooksHooksOutputReference interface {
 	CreationStack() *[]*string
 	CustomWebhookTemplate() *string
 	DeploymentEvents() cdktf.IResolvable
+	EmojiEvents() cdktf.IResolvable
 	EnableSslVerification() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataGitlabGroupHooksHooksOutputReference) DeploymentEvents() 
 	_jsii_.Get(
 		j,
 		"deploymentEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabGroupHooksHooksOutputReference) EmojiEvents() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"emojiEvents",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -90,6 +90,9 @@ type Project interface {
 	CiPipelineVariablesMinimumOverrideRole() *string
 	SetCiPipelineVariablesMinimumOverrideRole(val *string)
 	CiPipelineVariablesMinimumOverrideRoleInput() *string
+	CiPushRepositoryForJobTokenAllowed() interface{}
+	SetCiPushRepositoryForJobTokenAllowed(val interface{})
+	CiPushRepositoryForJobTokenAllowedInput() interface{}
 	CiRestrictPipelineCancellationRole() *string
 	SetCiRestrictPipelineCancellationRole(val *string)
 	CiRestrictPipelineCancellationRoleInput() *string
@@ -450,6 +453,7 @@ type Project interface {
 	ResetCiForwardDeploymentRollbackAllowed()
 	ResetCiIdTokenSubClaimComponents()
 	ResetCiPipelineVariablesMinimumOverrideRole()
+	ResetCiPushRepositoryForJobTokenAllowed()
 	ResetCiRestrictPipelineCancellationRole()
 	ResetCiSeparatedCaches()
 	ResetContainerExpirationPolicy()
@@ -1046,6 +1050,26 @@ func (j *jsiiProxy_Project) CiPipelineVariablesMinimumOverrideRoleInput() *strin
 	_jsii_.Get(
 		j,
 		"ciPipelineVariablesMinimumOverrideRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiPushRepositoryForJobTokenAllowed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciPushRepositoryForJobTokenAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) CiPushRepositoryForJobTokenAllowedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ciPushRepositoryForJobTokenAllowedInput",
 		&returns,
 	)
 	return returns
@@ -2882,7 +2906,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2900,7 +2924,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3171,6 +3195,17 @@ func (j *jsiiProxy_Project)SetCiPipelineVariablesMinimumOverrideRole(val *string
 	_jsii_.Set(
 		j,
 		"ciPipelineVariablesMinimumOverrideRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetCiPushRepositoryForJobTokenAllowed(val interface{}) {
+	if err := j.validateSetCiPushRepositoryForJobTokenAllowedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciPushRepositoryForJobTokenAllowed",
 		val,
 	)
 }
@@ -4675,6 +4710,14 @@ func (p *jsiiProxy_Project) ResetCiPipelineVariablesMinimumOverrideRole() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCiPipelineVariablesMinimumOverrideRole",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetCiPushRepositoryForJobTokenAllowed() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCiPushRepositoryForJobTokenAllowed",
 		nil, // no parameters
 	)
 }

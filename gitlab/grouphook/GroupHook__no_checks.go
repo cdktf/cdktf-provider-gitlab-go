@@ -127,6 +127,10 @@ func (j *jsiiProxy_GroupHook) validateSetDescriptionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_GroupHook) validateSetEmojiEventsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupHook) validateSetEnableSslVerificationParameters(val interface{}) error {
 	return nil
 }

@@ -199,6 +199,10 @@ func (j *jsiiProxy_Project) validateSetCiPipelineVariablesMinimumOverrideRolePar
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetCiPushRepositoryForJobTokenAllowedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetCiRestrictPipelineCancellationRoleParameters(val *string) error {
 	return nil
 }

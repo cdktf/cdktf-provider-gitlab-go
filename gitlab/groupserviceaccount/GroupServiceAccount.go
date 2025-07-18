@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account gitlab_group_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account gitlab_group_service_account}.
 type GroupServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type GroupServiceAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -115,6 +118,7 @@ type GroupServiceAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEmail()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -183,6 +187,26 @@ func (j *jsiiProxy_GroupServiceAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccount) Email() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccount) EmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +403,7 @@ func (j *jsiiProxy_GroupServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount(scope constructs.Construct, id *string, config *GroupServiceAccountConfig) GroupServiceAccount {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewGroupServiceAccount(scope constructs.Construct, id *string, config *Grou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount_Override(g GroupServiceAccount, scope constructs.Construct, id *string, config *GroupServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -434,6 +458,17 @@ func (j *jsiiProxy_GroupServiceAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupServiceAccount)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"email",
 		val,
 	)
 }
@@ -859,6 +894,14 @@ func (g *jsiiProxy_GroupServiceAccount) OverrideLogicalId(newLogicalId *string) 
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GroupServiceAccount) ResetEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEmail",
+		nil, // no parameters
 	)
 }
 

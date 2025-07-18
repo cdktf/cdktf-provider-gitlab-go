@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email}.
 type ProjectIntegrationPipelinesEmail interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ProjectIntegrationPipelinesEmail) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email} Resource.
 func NewProjectIntegrationPipelinesEmail(scope constructs.Construct, id *string, config *ProjectIntegrationPipelinesEmailConfig) ProjectIntegrationPipelinesEmail {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewProjectIntegrationPipelinesEmail(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_pipelines_email gitlab_project_integration_pipelines_email} Resource.
 func NewProjectIntegrationPipelinesEmail_Override(p ProjectIntegrationPipelinesEmail, scope constructs.Construct, id *string, config *ProjectIntegrationPipelinesEmailConfig) {
 	_init_.Initialize()
 

@@ -83,6 +83,10 @@ func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutDeployAccessLevelsPar
 	return nil
 }
 
+func (p *jsiiProxy_ProjectProtectedEnvironment) validatePutDeployAccessLevelsAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func validateProjectProtectedEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

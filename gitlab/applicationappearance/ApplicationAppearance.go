@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance gitlab_application_appearance}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_appearance gitlab_application_appearance}.
 type ApplicationAppearance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -633,7 +633,7 @@ func (j *jsiiProxy_ApplicationAppearance) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance gitlab_application_appearance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_appearance gitlab_application_appearance} Resource.
 func NewApplicationAppearance(scope constructs.Construct, id *string, config *ApplicationAppearanceConfig) ApplicationAppearance {
 	_init_.Initialize()
 
@@ -651,7 +651,7 @@ func NewApplicationAppearance(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance gitlab_application_appearance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_appearance gitlab_application_appearance} Resource.
 func NewApplicationAppearance_Override(a ApplicationAppearance, scope constructs.Construct, id *string, config *ApplicationAppearanceConfig) {
 	_init_.Initialize()
 

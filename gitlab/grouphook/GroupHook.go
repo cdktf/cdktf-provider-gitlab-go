@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook gitlab_group_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook gitlab_group_hook}.
 type GroupHook interface {
 	cdktf.TerraformResource
 	BranchFilterStrategy() *string
@@ -51,6 +51,9 @@ type GroupHook interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EmojiEvents() interface{}
+	SetEmojiEvents(val interface{})
+	EmojiEventsInput() interface{}
 	EnableSslVerification() interface{}
 	SetEnableSslVerification(val interface{})
 	EnableSslVerificationInput() interface{}
@@ -186,6 +189,7 @@ type GroupHook interface {
 	ResetCustomWebhookTemplate()
 	ResetDeploymentEvents()
 	ResetDescription()
+	ResetEmojiEvents()
 	ResetEnableSslVerification()
 	ResetFeatureFlagEvents()
 	ResetIssuesEvents()
@@ -407,6 +411,26 @@ func (j *jsiiProxy_GroupHook) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) EmojiEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emojiEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupHook) EmojiEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emojiEventsInput",
 		&returns,
 	)
 	return returns
@@ -893,7 +917,7 @@ func (j *jsiiProxy_GroupHook) WikiPageEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfig) GroupHook {
 	_init_.Initialize()
 
@@ -911,7 +935,7 @@ func NewGroupHook(scope constructs.Construct, id *string, config *GroupHookConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook gitlab_group_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook gitlab_group_hook} Resource.
 func NewGroupHook_Override(g GroupHook, scope constructs.Construct, id *string, config *GroupHookConfig) {
 	_init_.Initialize()
 
@@ -1014,6 +1038,17 @@ func (j *jsiiProxy_GroupHook)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupHook)SetEmojiEvents(val interface{}) {
+	if err := j.validateSetEmojiEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emojiEvents",
 		val,
 	)
 }
@@ -1659,6 +1694,14 @@ func (g *jsiiProxy_GroupHook) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupHook) ResetEmojiEvents() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEmojiEvents",
 		nil, // no parameters
 	)
 }

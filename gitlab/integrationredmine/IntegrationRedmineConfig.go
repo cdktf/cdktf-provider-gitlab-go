@@ -24,23 +24,23 @@ type IntegrationRedmineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The URL to the Redmine project issue to link to this GitLab project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
 	IssuesUrl *string `field:"required" json:"issuesUrl" yaml:"issuesUrl"`
 	// The URL to use to create a new issue in the Redmine project linked to this GitLab project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
 	NewIssueUrl *string `field:"required" json:"newIssueUrl" yaml:"newIssueUrl"`
 	// ID of the project you want to activate integration on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The URL to the Redmine project to link to this GitLab project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
 	ProjectUrl *string `field:"required" json:"projectUrl" yaml:"projectUrl"`
 	// Indicates whether or not to inherit default settings. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
 	UseInheritedSettings interface{} `field:"optional" json:"useInheritedSettings" yaml:"useInheritedSettings"`
 }
 

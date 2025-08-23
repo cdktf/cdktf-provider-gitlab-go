@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/instance_service_account gitlab_instance_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/instance_service_account gitlab_instance_service_account}.
 type InstanceServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_InstanceServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
 func NewInstanceServiceAccount(scope constructs.Construct, id *string, config *InstanceServiceAccountConfig) InstanceServiceAccount {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewInstanceServiceAccount(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource.
 func NewInstanceServiceAccount_Override(i InstanceServiceAccount, scope constructs.Construct, id *string, config *InstanceServiceAccountConfig) {
 	_init_.Initialize()
 

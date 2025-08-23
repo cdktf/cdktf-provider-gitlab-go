@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine}.
 type ProjectIntegrationRedmine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_ProjectIntegrationRedmine) UseInheritedSettingsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine} Resource.
 func NewProjectIntegrationRedmine(scope constructs.Construct, id *string, config *ProjectIntegrationRedmineConfig) ProjectIntegrationRedmine {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewProjectIntegrationRedmine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_redmine gitlab_project_integration_redmine} Resource.
 func NewProjectIntegrationRedmine_Override(p ProjectIntegrationRedmine, scope constructs.Construct, id *string, config *ProjectIntegrationRedmineConfig) {
 	_init_.Initialize()
 

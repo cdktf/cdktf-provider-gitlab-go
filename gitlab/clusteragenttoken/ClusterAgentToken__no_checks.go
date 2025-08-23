@@ -107,10 +107,6 @@ func (j *jsiiProxy_ClusterAgentToken) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ClusterAgentToken) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ClusterAgentToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

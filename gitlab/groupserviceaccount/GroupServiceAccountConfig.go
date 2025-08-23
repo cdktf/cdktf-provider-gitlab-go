@@ -26,21 +26,21 @@ type GroupServiceAccountConfig struct {
 	//
 	// Must be a top level group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#group GroupServiceAccount#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account#group GroupServiceAccount#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// User account email.
 	//
 	// If not specified, generates an email prepended with `service_account_group_`. Custom email addresses require confirmation before the account is active, unless the group has a matching verified domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#email GroupServiceAccount#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account#email GroupServiceAccount#email}
 	Email *string `field:"optional" json:"email" yaml:"email"`
 	// The name of the user. If not specified, the default Service account user name is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#name GroupServiceAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account#name GroupServiceAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The username of the user. If not specified, it’s automatically generated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#username GroupServiceAccount#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account#username GroupServiceAccount#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

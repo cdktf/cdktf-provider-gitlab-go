@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable gitlab_instance_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable}.
 type DataGitlabInstanceVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,8 +37,6 @@ type DataGitlabInstanceVariable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -90,7 +88,6 @@ type DataGitlabInstanceVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,16 +195,6 @@ func (j *jsiiProxy_DataGitlabInstanceVariable) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabInstanceVariable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -354,7 +341,7 @@ func (j *jsiiProxy_DataGitlabInstanceVariable) VariableType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
 func NewDataGitlabInstanceVariable(scope constructs.Construct, id *string, config *DataGitlabInstanceVariableConfig) DataGitlabInstanceVariable {
 	_init_.Initialize()
 
@@ -372,7 +359,7 @@ func NewDataGitlabInstanceVariable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source.
 func NewDataGitlabInstanceVariable_Override(d DataGitlabInstanceVariable, scope constructs.Construct, id *string, config *DataGitlabInstanceVariableConfig) {
 	_init_.Initialize()
 
@@ -406,17 +393,6 @@ func (j *jsiiProxy_DataGitlabInstanceVariable)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabInstanceVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -733,14 +709,6 @@ func (d *jsiiProxy_DataGitlabInstanceVariable) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabInstanceVariable) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

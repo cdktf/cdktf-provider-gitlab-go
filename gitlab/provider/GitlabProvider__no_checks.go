@@ -35,6 +35,10 @@ func (j *jsiiProxy_GitlabProvider) validateSetEarlyAuthCheckParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GitlabProvider) validateSetEnableAutoCiSupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GitlabProvider) validateSetInsecureParameters(val interface{}) error {
 	return nil
 }

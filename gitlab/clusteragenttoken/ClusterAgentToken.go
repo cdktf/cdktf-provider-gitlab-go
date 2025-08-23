@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 type ClusterAgentToken interface {
 	cdktf.TerraformResource
 	AgentId() *float64
@@ -48,8 +48,6 @@ type ClusterAgentToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LastUsedAt() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -126,7 +124,6 @@ type ClusterAgentToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -298,16 +295,6 @@ func (j *jsiiProxy_ClusterAgentToken) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterAgentToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ClusterAgentToken) LastUsedAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -469,7 +456,7 @@ func (j *jsiiProxy_ClusterAgentToken) TokenId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken(scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) ClusterAgentToken {
 	_init_.Initialize()
 
@@ -487,7 +474,7 @@ func NewClusterAgentToken(scope constructs.Construct, id *string, config *Cluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource.
 func NewClusterAgentToken_Override(c ClusterAgentToken, scope constructs.Construct, id *string, config *ClusterAgentTokenConfig) {
 	_init_.Initialize()
 
@@ -554,17 +541,6 @@ func (j *jsiiProxy_ClusterAgentToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ClusterAgentToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -978,14 +954,6 @@ func (c *jsiiProxy_ClusterAgentToken) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ClusterAgentToken) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
 		nil, // no parameters
 	)
 }

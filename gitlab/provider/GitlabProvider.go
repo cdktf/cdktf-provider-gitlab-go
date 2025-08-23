@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs gitlab}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab}.
 type GitlabProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -32,11 +32,20 @@ type GitlabProvider interface {
 	ClientKey() *string
 	SetClientKey(val *string)
 	ClientKeyInput() *string
+	ConfigFile() *string
+	SetConfigFile(val *string)
+	ConfigFileInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Context() *string
+	SetContext(val *string)
+	ContextInput() *string
 	EarlyAuthCheck() interface{}
 	SetEarlyAuthCheck(val interface{})
 	EarlyAuthCheckInput() interface{}
+	EnableAutoCiSupport() interface{}
+	SetEnableAutoCiSupport(val interface{})
+	EnableAutoCiSupportInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -75,7 +84,10 @@ type GitlabProvider interface {
 	ResetCacertFile()
 	ResetClientCert()
 	ResetClientKey()
+	ResetConfigFile()
+	ResetContext()
 	ResetEarlyAuthCheck()
+	ResetEnableAutoCiSupport()
 	ResetHeaders()
 	ResetInsecure()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -211,11 +223,51 @@ func (j *jsiiProxy_GitlabProvider) ClientKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GitlabProvider) ConfigFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) ConfigFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configFileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GitlabProvider) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) Context() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"context",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) ContextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contextInput",
 		&returns,
 	)
 	return returns
@@ -236,6 +288,26 @@ func (j *jsiiProxy_GitlabProvider) EarlyAuthCheckInput() interface{} {
 	_jsii_.Get(
 		j,
 		"earlyAuthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) EnableAutoCiSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoCiSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GitlabProvider) EnableAutoCiSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoCiSupportInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +474,7 @@ func (j *jsiiProxy_GitlabProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab} Resource.
 func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabProviderConfig) GitlabProvider {
 	_init_.Initialize()
 
@@ -420,7 +492,7 @@ func NewGitlabProvider(scope constructs.Construct, id *string, config *GitlabPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs gitlab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab} Resource.
 func NewGitlabProvider_Override(g GitlabProvider, scope constructs.Construct, id *string, config *GitlabProviderConfig) {
 	_init_.Initialize()
 
@@ -471,6 +543,22 @@ func (j *jsiiProxy_GitlabProvider)SetClientKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GitlabProvider)SetConfigFile(val *string) {
+	_jsii_.Set(
+		j,
+		"configFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitlabProvider)SetContext(val *string) {
+	_jsii_.Set(
+		j,
+		"context",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GitlabProvider)SetEarlyAuthCheck(val interface{}) {
 	if err := j.validateSetEarlyAuthCheckParameters(val); err != nil {
 		panic(err)
@@ -478,6 +566,17 @@ func (j *jsiiProxy_GitlabProvider)SetEarlyAuthCheck(val interface{}) {
 	_jsii_.Set(
 		j,
 		"earlyAuthCheck",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GitlabProvider)SetEnableAutoCiSupport(val interface{}) {
+	if err := j.validateSetEnableAutoCiSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAutoCiSupport",
 		val,
 	)
 }
@@ -682,10 +781,34 @@ func (g *jsiiProxy_GitlabProvider) ResetClientKey() {
 	)
 }
 
+func (g *jsiiProxy_GitlabProvider) ResetConfigFile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfigFile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitlabProvider) ResetContext() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContext",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GitlabProvider) ResetEarlyAuthCheck() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEarlyAuthCheck",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GitlabProvider) ResetEnableAutoCiSupport() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAutoCiSupport",
 		nil, // no parameters
 	)
 }

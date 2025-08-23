@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram}.
 type ProjectIntegrationTelegram interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_ProjectIntegrationTelegram) WikiPageEventsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource.
 func NewProjectIntegrationTelegram(scope constructs.Construct, id *string, config *ProjectIntegrationTelegramConfig) ProjectIntegrationTelegram {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewProjectIntegrationTelegram(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource.
 func NewProjectIntegrationTelegram_Override(p ProjectIntegrationTelegram, scope constructs.Construct, id *string, config *ProjectIntegrationTelegramConfig) {
 	_init_.Initialize()
 

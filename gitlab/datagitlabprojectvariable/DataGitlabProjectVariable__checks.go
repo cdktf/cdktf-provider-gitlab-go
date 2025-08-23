@@ -219,14 +219,6 @@ func (j *jsiiProxy_DataGitlabProjectVariable) validateSetEnvironmentScopeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariable) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectVariable) validateSetKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

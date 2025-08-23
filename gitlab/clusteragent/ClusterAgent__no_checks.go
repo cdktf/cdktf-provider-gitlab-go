@@ -99,10 +99,6 @@ func (j *jsiiProxy_ClusterAgent) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_ClusterAgent) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ClusterAgent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

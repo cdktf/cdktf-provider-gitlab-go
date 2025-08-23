@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/label gitlab_label}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/label gitlab_label}.
 type Label interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_Label) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/label gitlab_label} Resource.
 func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewLabel(scope constructs.Construct, id *string, config *LabelConfig) Label
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/label gitlab_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/label gitlab_label} Resource.
 func NewLabel_Override(l Label, scope constructs.Construct, id *string, config *LabelConfig) {
 	_init_.Initialize()
 

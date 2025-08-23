@@ -24,25 +24,25 @@ type DeployKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The public ssh key body.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#key DeployKey#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#key DeployKey#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The name or id of the project to add the deploy key to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#project DeployKey#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#project DeployKey#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// A title to describe the deploy key with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#title DeployKey#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#title DeployKey#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 	CanPush interface{} `field:"optional" json:"canPush" yaml:"canPush"`
 	// Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/deploy_key#id DeployKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#id DeployKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

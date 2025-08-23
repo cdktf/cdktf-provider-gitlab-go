@@ -7,11 +7,11 @@ package datagitlabrelease
 type DataGitlabReleaseAssets struct {
 	// links block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/release#links DataGitlabRelease#links}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release#links DataGitlabRelease#links}
 	Links interface{} `field:"optional" json:"links" yaml:"links"`
 	// sources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/release#sources DataGitlabRelease#sources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release#sources DataGitlabRelease#sources}
 	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
 }
 

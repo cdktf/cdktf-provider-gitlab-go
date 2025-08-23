@@ -24,19 +24,19 @@ type ProjectWikiPageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Content of the wiki page. Must be at least 1 character long.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
 	Content *string `field:"required" json:"content" yaml:"content"`
 	// The ID or URL-encoded path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Title of the wiki page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// Format of the wiki page (auto-generated if not provided). Valid values are: `markdown`, `rdoc`, `asciidoc`, `org`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
 	Format *string `field:"optional" json:"format" yaml:"format"`
 }
 

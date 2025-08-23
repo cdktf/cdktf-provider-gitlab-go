@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/current_user gitlab_current_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/current_user gitlab_current_user}.
 type DataGitlabCurrentUser interface {
 	cdktf.TerraformDataSource
 	Bot() cdktf.IResolvable
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataGitlabCurrentUser) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/current_user gitlab_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/current_user gitlab_current_user} Data Source.
 func NewDataGitlabCurrentUser(scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) DataGitlabCurrentUser {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataGitlabCurrentUser(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/current_user gitlab_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/current_user gitlab_current_user} Data Source.
 func NewDataGitlabCurrentUser_Override(d DataGitlabCurrentUser, scope constructs.Construct, id *string, config *DataGitlabCurrentUserConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership}.
 type DataGitlabProjectMembership interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataGitlabProjectMembership) UserIdsInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) DataGitlabProjectMembership {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) {
 	_init_.Initialize()
 

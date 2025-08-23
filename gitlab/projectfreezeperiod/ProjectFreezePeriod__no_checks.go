@@ -111,10 +111,6 @@ func (j *jsiiProxy_ProjectFreezePeriod) validateSetFreezeStartParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectFreezePeriod) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

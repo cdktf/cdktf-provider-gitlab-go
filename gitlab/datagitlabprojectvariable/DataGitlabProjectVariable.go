@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_variable gitlab_project_variable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_variable gitlab_project_variable}.
 type DataGitlabProjectVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,8 +40,6 @@ type DataGitlabProjectVariable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -97,7 +95,6 @@ type DataGitlabProjectVariable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEnvironmentScope()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -225,16 +222,6 @@ func (j *jsiiProxy_DataGitlabProjectVariable) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectVariable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -401,7 +388,7 @@ func (j *jsiiProxy_DataGitlabProjectVariable) VariableType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) DataGitlabProjectVariable {
 	_init_.Initialize()
 
@@ -419,7 +406,7 @@ func NewDataGitlabProjectVariable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_variable gitlab_project_variable} Data Source.
 func NewDataGitlabProjectVariable_Override(d DataGitlabProjectVariable, scope constructs.Construct, id *string, config *DataGitlabProjectVariableConfig) {
 	_init_.Initialize()
 
@@ -464,17 +451,6 @@ func (j *jsiiProxy_DataGitlabProjectVariable)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectVariable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -809,14 +785,6 @@ func (d *jsiiProxy_DataGitlabProjectVariable) ResetEnvironmentScope() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnvironmentScope",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGitlabProjectVariable) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

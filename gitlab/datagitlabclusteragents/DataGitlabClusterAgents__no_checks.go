@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabClusterAgents) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabClusterAgents) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabClusterAgents) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

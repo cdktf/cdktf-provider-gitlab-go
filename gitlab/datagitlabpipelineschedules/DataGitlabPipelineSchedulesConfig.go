@@ -24,7 +24,7 @@ type DataGitlabPipelineSchedulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the project to add the schedule to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/pipeline_schedules#project DataGitlabPipelineSchedules#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules#project DataGitlabPipelineSchedules#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

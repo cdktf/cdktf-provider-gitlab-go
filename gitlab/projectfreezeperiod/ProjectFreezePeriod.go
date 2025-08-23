@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
 type ProjectFreezePeriod interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,8 +49,6 @@ type ProjectFreezePeriod interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -120,7 +118,6 @@ type ProjectFreezePeriod interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCronTimezone()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,16 +289,6 @@ func (j *jsiiProxy_ProjectFreezePeriod) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectFreezePeriod) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectFreezePeriod) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -403,7 +390,7 @@ func (j *jsiiProxy_ProjectFreezePeriod) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource.
 func NewProjectFreezePeriod(scope constructs.Construct, id *string, config *ProjectFreezePeriodConfig) ProjectFreezePeriod {
 	_init_.Initialize()
 
@@ -421,7 +408,7 @@ func NewProjectFreezePeriod(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource.
 func NewProjectFreezePeriod_Override(p ProjectFreezePeriod, scope constructs.Construct, id *string, config *ProjectFreezePeriodConfig) {
 	_init_.Initialize()
 
@@ -499,17 +486,6 @@ func (j *jsiiProxy_ProjectFreezePeriod)SetFreezeStart(val *string) {
 	_jsii_.Set(
 		j,
 		"freezeStart",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectFreezePeriod)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -912,14 +888,6 @@ func (p *jsiiProxy_ProjectFreezePeriod) ResetCronTimezone() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCronTimezone",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectFreezePeriod) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

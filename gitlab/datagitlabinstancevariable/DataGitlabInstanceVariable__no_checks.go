@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabInstanceVariable) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabInstanceVariable) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabInstanceVariable) validateSetKeyParameters(val *string) error {
 	return nil
 }

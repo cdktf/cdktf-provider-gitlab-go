@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection}.
 type ProjectContainerRepositoryProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ProjectContainerRepositoryProtection) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection} Resource.
 func NewProjectContainerRepositoryProtection(scope constructs.Construct, id *string, config *ProjectContainerRepositoryProtectionConfig) ProjectContainerRepositoryProtection {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewProjectContainerRepositoryProtection(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection} Resource.
 func NewProjectContainerRepositoryProtection_Override(p ProjectContainerRepositoryProtection, scope constructs.Construct, id *string, config *ProjectContainerRepositoryProtectionConfig) {
 	_init_.Initialize()
 

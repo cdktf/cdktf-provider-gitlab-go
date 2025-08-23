@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_membership gitlab_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_membership gitlab_group_membership}.
 type GroupMembership interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GroupMembership) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_membership gitlab_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_membership gitlab_group_membership} Resource.
 func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMembershipConfig) GroupMembership {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_membership gitlab_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_membership gitlab_group_membership} Resource.
 func NewGroupMembership_Override(g GroupMembership, scope constructs.Construct, id *string, config *GroupMembershipConfig) {
 	_init_.Initialize()
 

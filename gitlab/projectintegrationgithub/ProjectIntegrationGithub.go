@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_github gitlab_project_integration_github}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github gitlab_project_integration_github}.
 type ProjectIntegrationGithub interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ProjectIntegrationGithub) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_github gitlab_project_integration_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github gitlab_project_integration_github} Resource.
 func NewProjectIntegrationGithub(scope constructs.Construct, id *string, config *ProjectIntegrationGithubConfig) ProjectIntegrationGithub {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewProjectIntegrationGithub(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_github gitlab_project_integration_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github gitlab_project_integration_github} Resource.
 func NewProjectIntegrationGithub_Override(p ProjectIntegrationGithub, scope constructs.Construct, id *string, config *ProjectIntegrationGithubConfig) {
 	_init_.Initialize()
 

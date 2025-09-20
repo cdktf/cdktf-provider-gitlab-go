@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabRepositoryTree) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryTree) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabRepositoryTree) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

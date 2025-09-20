@@ -24,7 +24,7 @@ type DataGitlabGroupSamlLinksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 }
 

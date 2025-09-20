@@ -24,35 +24,35 @@ type ProjectAccessTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the project access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#name ProjectAccessToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#name ProjectAccessToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID or full path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#project ProjectAccessToken#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#project ProjectAccessToken#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The scopes of the project access token.
 	//
 	// valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`, `self_rotate`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The access level for the project access token.
 	//
 	// Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
 	// The description of the project access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#description ProjectAccessToken#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#description ProjectAccessToken#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
 	ExpiresAt *string `field:"optional" json:"expiresAt" yaml:"expiresAt"`
 	// The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
 	RotationConfiguration *ProjectAccessTokenRotationConfiguration `field:"optional" json:"rotationConfiguration" yaml:"rotationConfiguration"`
 }
 

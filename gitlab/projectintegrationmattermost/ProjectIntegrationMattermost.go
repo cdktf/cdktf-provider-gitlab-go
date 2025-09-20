@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost}.
 type ProjectIntegrationMattermost interface {
 	cdktf.TerraformResource
 	BranchesToBeNotified() *string
@@ -860,7 +860,7 @@ func (j *jsiiProxy_ProjectIntegrationMattermost) WikiPageEventsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost} Resource.
 func NewProjectIntegrationMattermost(scope constructs.Construct, id *string, config *ProjectIntegrationMattermostConfig) ProjectIntegrationMattermost {
 	_init_.Initialize()
 
@@ -878,7 +878,7 @@ func NewProjectIntegrationMattermost(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_mattermost gitlab_project_integration_mattermost} Resource.
 func NewProjectIntegrationMattermost_Override(p ProjectIntegrationMattermost, scope constructs.Construct, id *string, config *ProjectIntegrationMattermostConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_saml_links gitlab_group_saml_links}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_saml_links gitlab_group_saml_links}.
 type DataGitlabGroupSamlLinks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataGitlabGroupSamlLinks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_saml_links gitlab_group_saml_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_saml_links gitlab_group_saml_links} Data Source.
 func NewDataGitlabGroupSamlLinks(scope constructs.Construct, id *string, config *DataGitlabGroupSamlLinksConfig) DataGitlabGroupSamlLinks {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataGitlabGroupSamlLinks(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_saml_links gitlab_group_saml_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_saml_links gitlab_group_saml_links} Data Source.
 func NewDataGitlabGroupSamlLinks_Override(d DataGitlabGroupSamlLinks, scope constructs.Construct, id *string, config *DataGitlabGroupSamlLinksConfig) {
 	_init_.Initialize()
 

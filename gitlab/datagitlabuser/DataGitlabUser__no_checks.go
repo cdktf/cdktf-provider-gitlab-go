@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataGitlabUser) validateSetEmailExactMatchParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabUser) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

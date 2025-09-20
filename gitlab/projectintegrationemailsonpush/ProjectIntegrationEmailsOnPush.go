@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push}.
 type ProjectIntegrationEmailsOnPush interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -531,7 +531,7 @@ func (j *jsiiProxy_ProjectIntegrationEmailsOnPush) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push} Resource.
 func NewProjectIntegrationEmailsOnPush(scope constructs.Construct, id *string, config *ProjectIntegrationEmailsOnPushConfig) ProjectIntegrationEmailsOnPush {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewProjectIntegrationEmailsOnPush(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_emails_on_push gitlab_project_integration_emails_on_push} Resource.
 func NewProjectIntegrationEmailsOnPush_Override(p ProjectIntegrationEmailsOnPush, scope constructs.Construct, id *string, config *ProjectIntegrationEmailsOnPushConfig) {
 	_init_.Initialize()
 

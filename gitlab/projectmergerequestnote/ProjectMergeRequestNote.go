@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note}.
 type ProjectMergeRequestNote interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -482,7 +482,7 @@ func (j *jsiiProxy_ProjectMergeRequestNote) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource.
 func NewProjectMergeRequestNote(scope constructs.Construct, id *string, config *ProjectMergeRequestNoteConfig) ProjectMergeRequestNote {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewProjectMergeRequestNote(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource.
 func NewProjectMergeRequestNote_Override(p ProjectMergeRequestNote, scope constructs.Construct, id *string, config *ProjectMergeRequestNoteConfig) {
 	_init_.Initialize()
 

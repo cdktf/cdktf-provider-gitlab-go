@@ -35,6 +35,7 @@ type DataGitlabRepositoryTreeTreeOutputReference interface {
 	SetInternalValue(val *DataGitlabRepositoryTreeTree)
 	Mode() *string
 	Name() *string
+	NodeId() *string
 	Path() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataGitlabRepositoryTreeTreeOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabRepositoryTreeTreeOutputReference) NodeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeId",
 		&returns,
 	)
 	return returns

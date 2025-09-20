@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectMilestone) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

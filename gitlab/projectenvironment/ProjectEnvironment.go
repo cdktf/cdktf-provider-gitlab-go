@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_environment gitlab_project_environment}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_environment gitlab_project_environment}.
 type ProjectEnvironment interface {
 	cdktf.TerraformResource
 	AutoStopAt() *string
@@ -57,8 +57,6 @@ type ProjectEnvironment interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	KubernetesNamespace() *string
 	SetKubernetesNamespace(val *string)
 	KubernetesNamespaceInput() *string
@@ -147,7 +145,6 @@ type ProjectEnvironment interface {
 	ResetDescription()
 	ResetExternalUrl()
 	ResetFluxResourcePath()
-	ResetId()
 	ResetKubernetesNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -382,16 +379,6 @@ func (j *jsiiProxy_ProjectEnvironment) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectEnvironment) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectEnvironment) KubernetesNamespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -603,7 +590,7 @@ func (j *jsiiProxy_ProjectEnvironment) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment(scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) ProjectEnvironment {
 	_init_.Initialize()
 
@@ -621,7 +608,7 @@ func NewProjectEnvironment(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_environment gitlab_project_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_environment gitlab_project_environment} Resource.
 func NewProjectEnvironment_Override(p ProjectEnvironment, scope constructs.Construct, id *string, config *ProjectEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -721,17 +708,6 @@ func (j *jsiiProxy_ProjectEnvironment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectEnvironment)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1210,14 +1186,6 @@ func (p *jsiiProxy_ProjectEnvironment) ResetFluxResourcePath() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetFluxResourcePath",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectEnvironment) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

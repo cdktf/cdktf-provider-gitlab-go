@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
 type ProjectIntegrationYoutrack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ProjectIntegrationYoutrack) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource.
 func NewProjectIntegrationYoutrack(scope constructs.Construct, id *string, config *ProjectIntegrationYoutrackConfig) ProjectIntegrationYoutrack {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewProjectIntegrationYoutrack(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource.
 func NewProjectIntegrationYoutrack_Override(p ProjectIntegrationYoutrack, scope constructs.Construct, id *string, config *ProjectIntegrationYoutrackConfig) {
 	_init_.Initialize()
 

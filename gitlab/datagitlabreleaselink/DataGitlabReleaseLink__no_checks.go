@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabReleaseLink) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabReleaseLink) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabReleaseLink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

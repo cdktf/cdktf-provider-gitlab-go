@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_branches gitlab_project_branches}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_branches gitlab_project_branches}.
 type DataGitlabProjectBranches interface {
 	cdktf.TerraformDataSource
 	Branches() DataGitlabProjectBranchesBranchesList
@@ -37,8 +37,6 @@ type DataGitlabProjectBranches interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataGitlabProjectBranches interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,16 +195,6 @@ func (j *jsiiProxy_DataGitlabProjectBranches) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectBranches) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabProjectBranches) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataGitlabProjectBranches) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
 func NewDataGitlabProjectBranches(scope constructs.Construct, id *string, config *DataGitlabProjectBranchesConfig) DataGitlabProjectBranches {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataGitlabProjectBranches(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_branches gitlab_project_branches} Data Source.
 func NewDataGitlabProjectBranches_Override(d DataGitlabProjectBranches, scope constructs.Construct, id *string, config *DataGitlabProjectBranchesConfig) {
 	_init_.Initialize()
 
@@ -351,17 +338,6 @@ func (j *jsiiProxy_DataGitlabProjectBranches)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectBranches)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -678,14 +654,6 @@ func (d *jsiiProxy_DataGitlabProjectBranches) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabProjectBranches) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

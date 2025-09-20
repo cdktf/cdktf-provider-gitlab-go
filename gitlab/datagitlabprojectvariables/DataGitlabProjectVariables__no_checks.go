@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataGitlabProjectVariables) validateSetEnvironmentScopeParame
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectVariables) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectVariables) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

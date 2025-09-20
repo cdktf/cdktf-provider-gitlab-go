@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}.
 type DataGitlabInstanceDeployKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,8 +37,6 @@ type DataGitlabInstanceDeployKeys interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,6 @@ type DataGitlabInstanceDeployKeys interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -199,16 +196,6 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabInstanceDeployKeys) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabInstanceDeployKeys) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -300,7 +287,7 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) DataGitlabInstanceDeployKeys {
 	_init_.Initialize()
 
@@ -318,7 +305,7 @@ func NewDataGitlabInstanceDeployKeys(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source.
 func NewDataGitlabInstanceDeployKeys_Override(d DataGitlabInstanceDeployKeys, scope constructs.Construct, id *string, config *DataGitlabInstanceDeployKeysConfig) {
 	_init_.Initialize()
 
@@ -352,17 +339,6 @@ func (j *jsiiProxy_DataGitlabInstanceDeployKeys)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabInstanceDeployKeys)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -679,14 +655,6 @@ func (d *jsiiProxy_DataGitlabInstanceDeployKeys) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabInstanceDeployKeys) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -24,7 +24,7 @@ type DataGitlabClusterAgentsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID or full path of the project maintained by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

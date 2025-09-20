@@ -24,11 +24,11 @@ type DataGitlabGroupVariablesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// The environment scope of the variable. Defaults to all environment (`*`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
 	EnvironmentScope *string `field:"optional" json:"environmentScope" yaml:"environmentScope"`
 }
 

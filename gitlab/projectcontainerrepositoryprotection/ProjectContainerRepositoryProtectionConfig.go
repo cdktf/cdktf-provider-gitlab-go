@@ -24,25 +24,25 @@ type ProjectContainerRepositoryProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID or URL-encoded path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection#project ProjectContainerRepositoryProtection#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_container_repository_protection#project ProjectContainerRepositoryProtection#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Container repository path pattern protected by the protection rule.
 	//
 	// Wildcard character * allowed. Repository path pattern should start with the project's full path
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection#repository_path_pattern ProjectContainerRepositoryProtection#repository_path_pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_container_repository_protection#repository_path_pattern ProjectContainerRepositoryProtection#repository_path_pattern}
 	RepositoryPathPattern *string `field:"required" json:"repositoryPathPattern" yaml:"repositoryPathPattern"`
 	// Minimum GitLab access level required to delete container images in the container registry.
 	//
 	// For example maintainer, owner, admin. Must be provided when `minimum_access_level_for_push` is not set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection#minimum_access_level_for_delete ProjectContainerRepositoryProtection#minimum_access_level_for_delete}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_container_repository_protection#minimum_access_level_for_delete ProjectContainerRepositoryProtection#minimum_access_level_for_delete}
 	MinimumAccessLevelForDelete *string `field:"optional" json:"minimumAccessLevelForDelete" yaml:"minimumAccessLevelForDelete"`
 	// Minimum GitLab access level required to push container images to the container registry.
 	//
 	// For example maintainer, owner or admin. Must be provided when `minimum_access_level_for_delete` is not set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_container_repository_protection#minimum_access_level_for_push ProjectContainerRepositoryProtection#minimum_access_level_for_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_container_repository_protection#minimum_access_level_for_push ProjectContainerRepositoryProtection#minimum_access_level_for_push}
 	MinimumAccessLevelForPush *string `field:"optional" json:"minimumAccessLevelForPush" yaml:"minimumAccessLevelForPush"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_push_rules gitlab_project_push_rules}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_push_rules gitlab_project_push_rules}.
 type ProjectPushRulesA interface {
 	cdktf.TerraformResource
 	AuthorEmailRegex() *string
@@ -632,7 +632,7 @@ func (j *jsiiProxy_ProjectPushRulesA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA(scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) ProjectPushRulesA {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewProjectPushRulesA(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource.
 func NewProjectPushRulesA_Override(p ProjectPushRulesA, scope constructs.Construct, id *string, config *ProjectPushRulesAConfig) {
 	_init_.Initialize()
 

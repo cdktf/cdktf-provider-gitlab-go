@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership gitlab_project_membership}.
 type DataGitlabProjectMembership interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,8 +39,6 @@ type DataGitlabProjectMembership interface {
 	SetFullPath(val *string)
 	FullPathInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Inherited() interface{}
 	SetInherited(val interface{})
 	InheritedInput() interface{}
@@ -51,9 +49,12 @@ type DataGitlabProjectMembership interface {
 	Members() DataGitlabProjectMembershipMembersList
 	// The tree node.
 	Node() constructs.Node
+	Project() *string
+	SetProject(val *string)
 	ProjectId() *float64
 	SetProjectId(val *float64)
 	ProjectIdInput() *float64
+	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -98,11 +99,11 @@ type DataGitlabProjectMembership interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetFullPath()
-	ResetId()
 	ResetInherited()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProject()
 	ResetProjectId()
 	ResetQuery()
 	ResetUserIds()
@@ -225,16 +226,6 @@ func (j *jsiiProxy_DataGitlabProjectMembership) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembership) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGitlabProjectMembership) Inherited() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -285,6 +276,16 @@ func (j *jsiiProxy_DataGitlabProjectMembership) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGitlabProjectMembership) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGitlabProjectMembership) ProjectId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -300,6 +301,16 @@ func (j *jsiiProxy_DataGitlabProjectMembership) ProjectIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
 		&returns,
 	)
 	return returns
@@ -396,7 +407,7 @@ func (j *jsiiProxy_DataGitlabProjectMembership) UserIdsInput() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) DataGitlabProjectMembership {
 	_init_.Initialize()
 
@@ -414,7 +425,7 @@ func NewDataGitlabProjectMembership(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership gitlab_project_membership} Data Source.
 func NewDataGitlabProjectMembership_Override(d DataGitlabProjectMembership, scope constructs.Construct, id *string, config *DataGitlabProjectMembershipConfig) {
 	_init_.Initialize()
 
@@ -463,17 +474,6 @@ func (j *jsiiProxy_DataGitlabProjectMembership)SetFullPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembership)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataGitlabProjectMembership)SetInherited(val interface{}) {
 	if err := j.validateSetInheritedParameters(val); err != nil {
 		panic(err)
@@ -492,6 +492,17 @@ func (j *jsiiProxy_DataGitlabProjectMembership)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
 		val,
 	)
 }
@@ -830,14 +841,6 @@ func (d *jsiiProxy_DataGitlabProjectMembership) ResetFullPath() {
 	)
 }
 
-func (d *jsiiProxy_DataGitlabProjectMembership) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataGitlabProjectMembership) ResetInherited() {
 	_jsii_.InvokeVoid(
 		d,
@@ -850,6 +853,14 @@ func (d *jsiiProxy_DataGitlabProjectMembership) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGitlabProjectMembership) ResetProject() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProject",
 		nil, // no parameters
 	)
 }

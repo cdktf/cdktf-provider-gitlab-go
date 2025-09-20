@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones gitlab_project_milestones}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones gitlab_project_milestones}.
 type DataGitlabProjectMilestones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataGitlabProjectMilestones interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Iids() *[]*float64
 	SetIids(val *[]*float64)
 	IidsInput() *[]*float64
@@ -100,7 +98,6 @@ type DataGitlabProjectMilestones interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetIids()
 	ResetIncludeParentMilestones()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -203,16 +200,6 @@ func (j *jsiiProxy_DataGitlabProjectMilestones) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectMilestones) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -419,7 +406,7 @@ func (j *jsiiProxy_DataGitlabProjectMilestones) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
 func NewDataGitlabProjectMilestones(scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) DataGitlabProjectMilestones {
 	_init_.Initialize()
 
@@ -437,7 +424,7 @@ func NewDataGitlabProjectMilestones(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones gitlab_project_milestones} Data Source.
 func NewDataGitlabProjectMilestones_Override(d DataGitlabProjectMilestones, scope constructs.Construct, id *string, config *DataGitlabProjectMilestonesConfig) {
 	_init_.Initialize()
 
@@ -471,17 +458,6 @@ func (j *jsiiProxy_DataGitlabProjectMilestones)SetForEach(val cdktf.ITerraformIt
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectMilestones)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -853,14 +829,6 @@ func (d *jsiiProxy_DataGitlabProjectMilestones) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabProjectMilestones) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

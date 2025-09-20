@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataGitlabGroupHook) validateSetHookIdParameters(val *float64
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabGroupHook) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabGroupHook) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

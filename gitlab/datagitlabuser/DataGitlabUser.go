@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user gitlab_user}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user gitlab_user}.
 type DataGitlabUser interface {
 	cdktf.TerraformDataSource
 	AvatarUrl() *string
@@ -51,8 +51,6 @@ type DataGitlabUser interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsAdmin() cdktf.IResolvable
 	IsBot() cdktf.IResolvable
 	LastSignInAt() *string
@@ -123,7 +121,6 @@ type DataGitlabUser interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetEmail()
 	ResetEmailExactMatch()
-	ResetId()
 	ResetNamespaceId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -354,16 +351,6 @@ func (j *jsiiProxy_DataGitlabUser) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabUser) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -660,7 +647,7 @@ func (j *jsiiProxy_DataGitlabUser) WebsiteUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitlabUserConfig) DataGitlabUser {
 	_init_.Initialize()
 
@@ -678,7 +665,7 @@ func NewDataGitlabUser(scope constructs.Construct, id *string, config *DataGitla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user gitlab_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user gitlab_user} Data Source.
 func NewDataGitlabUser_Override(d DataGitlabUser, scope constructs.Construct, id *string, config *DataGitlabUserConfig) {
 	_init_.Initialize()
 
@@ -734,17 +721,6 @@ func (j *jsiiProxy_DataGitlabUser)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabUser)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1098,14 +1074,6 @@ func (d *jsiiProxy_DataGitlabUser) ResetEmailExactMatch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEmailExactMatch",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGitlabUser) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

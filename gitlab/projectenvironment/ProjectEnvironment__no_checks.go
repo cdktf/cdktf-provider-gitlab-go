@@ -119,10 +119,6 @@ func (j *jsiiProxy_ProjectEnvironment) validateSetFluxResourcePathParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ProjectEnvironment) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectEnvironment) validateSetKubernetesNamespaceParameters(val *string) error {
 	return nil
 }

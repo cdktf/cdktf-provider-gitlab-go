@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users gitlab_users}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users gitlab_users}.
 type DataGitlabUsers interface {
 	cdktf.TerraformDataSource
 	Active() interface{}
@@ -62,9 +62,10 @@ type DataGitlabUsers interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Humans() interface{}
+	SetHumans(val interface{})
+	HumansInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -133,7 +134,7 @@ type DataGitlabUsers interface {
 	ResetExternal()
 	ResetExternProvider()
 	ResetExternUid()
-	ResetId()
+	ResetHumans()
 	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -411,21 +412,31 @@ func (j *jsiiProxy_DataGitlabUsers) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabUsers) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataGitlabUsers) Humans() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"id",
+		"humans",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataGitlabUsers) IdInput() *string {
+func (j *jsiiProxy_DataGitlabUsers) HumansInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"humansInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabUsers) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"id",
 		&returns,
 	)
 	return returns
@@ -612,7 +623,7 @@ func (j *jsiiProxy_DataGitlabUsers) WithoutProjectBotsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users gitlab_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitlabUsersConfig) DataGitlabUsers {
 	_init_.Initialize()
 
@@ -630,7 +641,7 @@ func NewDataGitlabUsers(scope constructs.Construct, id *string, config *DataGitl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users gitlab_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users gitlab_users} Data Source.
 func NewDataGitlabUsers_Override(d DataGitlabUsers, scope constructs.Construct, id *string, config *DataGitlabUsersConfig) {
 	_init_.Initialize()
 
@@ -767,13 +778,13 @@ func (j *jsiiProxy_DataGitlabUsers)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataGitlabUsers)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_DataGitlabUsers)SetHumans(val interface{}) {
+	if err := j.validateSetHumansParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"humans",
 		val,
 	)
 }
@@ -1209,10 +1220,10 @@ func (d *jsiiProxy_DataGitlabUsers) ResetExternUid() {
 	)
 }
 
-func (d *jsiiProxy_DataGitlabUsers) ResetId() {
+func (d *jsiiProxy_DataGitlabUsers) ResetHumans() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetHumans",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook gitlab_project_hook}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook gitlab_project_hook}.
 type DataGitlabProjectHook interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,8 +44,6 @@ type DataGitlabProjectHook interface {
 	SetHookId(val *float64)
 	HookIdInput() *float64
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IssuesEvents() cdktf.IResolvable
 	JobEvents() cdktf.IResolvable
 	// Experimental.
@@ -105,7 +103,6 @@ type DataGitlabProjectHook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -273,16 +270,6 @@ func (j *jsiiProxy_DataGitlabProjectHook) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectHook) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +496,7 @@ func (j *jsiiProxy_DataGitlabProjectHook) WikiPageEvents() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
 func NewDataGitlabProjectHook(scope constructs.Construct, id *string, config *DataGitlabProjectHookConfig) DataGitlabProjectHook {
 	_init_.Initialize()
 
@@ -527,7 +514,7 @@ func NewDataGitlabProjectHook(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook gitlab_project_hook} Data Source.
 func NewDataGitlabProjectHook_Override(d DataGitlabProjectHook, scope constructs.Construct, id *string, config *DataGitlabProjectHookConfig) {
 	_init_.Initialize()
 
@@ -572,17 +559,6 @@ func (j *jsiiProxy_DataGitlabProjectHook)SetHookId(val *float64) {
 	_jsii_.Set(
 		j,
 		"hookId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectHook)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -899,14 +875,6 @@ func (d *jsiiProxy_DataGitlabProjectHook) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabProjectHook) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

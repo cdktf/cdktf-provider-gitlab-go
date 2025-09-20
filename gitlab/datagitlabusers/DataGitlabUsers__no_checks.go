@@ -111,7 +111,7 @@ func (j *jsiiProxy_DataGitlabUsers) validateSetExternUidParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabUsers) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataGitlabUsers) validateSetHumansParameters(val interface{}) error {
 	return nil
 }
 

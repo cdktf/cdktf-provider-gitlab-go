@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabProjectMilestones) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectMilestones) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectMilestones) validateSetIidsParameters(val *[]*float64) error {
 	return nil
 }

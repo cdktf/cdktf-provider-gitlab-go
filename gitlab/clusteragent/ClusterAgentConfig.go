@@ -24,11 +24,11 @@ type ClusterAgentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Name of the agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent#name ClusterAgent#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent#name ClusterAgent#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// ID or full path of the project maintained by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent#project ClusterAgent#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent#project ClusterAgent#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

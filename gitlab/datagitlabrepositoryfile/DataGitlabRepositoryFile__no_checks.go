@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetFilePathParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabRepositoryFile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

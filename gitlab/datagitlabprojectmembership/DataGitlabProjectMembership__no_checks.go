@@ -79,15 +79,15 @@ func (j *jsiiProxy_DataGitlabProjectMembership) validateSetFullPathParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectMembership) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectMembership) validateSetInheritedParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataGitlabProjectMembership) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectMembership) validateSetProjectParameters(val *string) error {
 	return nil
 }
 

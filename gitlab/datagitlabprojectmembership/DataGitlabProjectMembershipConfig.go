@@ -24,27 +24,27 @@ type DataGitlabProjectMembershipConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The full path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
 	FullPath *string `field:"optional" json:"fullPath" yaml:"fullPath"`
 	// Return all project members including members through ancestor groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
 	Inherited interface{} `field:"optional" json:"inherited" yaml:"inherited"`
 	// The ID or full path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#project DataGitlabProjectMembership#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#project DataGitlabProjectMembership#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The ID of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
 	ProjectId *float64 `field:"optional" json:"projectId" yaml:"projectId"`
 	// A query string to search for members.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
 	Query *string `field:"optional" json:"query" yaml:"query"`
 	// List of user ids to filter members by.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#user_ids DataGitlabProjectMembership#user_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_membership#user_ids DataGitlabProjectMembership#user_ids}
 	UserIds *[]*float64 `field:"optional" json:"userIds" yaml:"userIds"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_deploy_token gitlab_group_deploy_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token gitlab_group_deploy_token}.
 type GroupDeployToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GroupDeployToken) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_deploy_token gitlab_group_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token gitlab_group_deploy_token} Resource.
 func NewGroupDeployToken(scope constructs.Construct, id *string, config *GroupDeployTokenConfig) GroupDeployToken {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewGroupDeployToken(scope constructs.Construct, id *string, config *GroupDe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_deploy_token gitlab_group_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token gitlab_group_deploy_token} Resource.
 func NewGroupDeployToken_Override(g GroupDeployToken, scope constructs.Construct, id *string, config *GroupDeployTokenConfig) {
 	_init_.Initialize()
 

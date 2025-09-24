@@ -24,27 +24,27 @@ type ProjectIntegrationHarborConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Password for authentication with the Harbor server, if authentication is required by the server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// ID of the GitLab project you want to activate integration on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The URL-friendly Harbor project name. This project needs to already exist in Harbor. Example: `my_project_name`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
 	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 	// Harbor URL. Example: `http://harbor.example.com`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// Username for authentication with the Harbor server, if authentication is required by the server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Indicates whether or not to inherit default settings. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
 	UseInheritedSettings interface{} `field:"optional" json:"useInheritedSettings" yaml:"useInheritedSettings"`
 }
 

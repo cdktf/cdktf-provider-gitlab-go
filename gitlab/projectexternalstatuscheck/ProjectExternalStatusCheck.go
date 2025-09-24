@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check gitlab_project_external_status_check}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check}.
 type ProjectExternalStatusCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ProjectExternalStatusCheck) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource.
 func NewProjectExternalStatusCheck(scope constructs.Construct, id *string, config *ProjectExternalStatusCheckConfig) ProjectExternalStatusCheck {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewProjectExternalStatusCheck(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource.
 func NewProjectExternalStatusCheck_Override(p ProjectExternalStatusCheck, scope constructs.Construct, id *string, config *ProjectExternalStatusCheckConfig) {
 	_init_.Initialize()
 

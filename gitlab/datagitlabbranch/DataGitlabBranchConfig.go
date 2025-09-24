@@ -24,11 +24,11 @@ type DataGitlabBranchConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the branch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch#name DataGitlabBranch#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/branch#name DataGitlabBranch#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The full path or id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch#project DataGitlabBranch#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/branch#project DataGitlabBranch#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

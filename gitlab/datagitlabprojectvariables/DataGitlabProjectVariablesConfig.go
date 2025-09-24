@@ -24,11 +24,11 @@ type DataGitlabProjectVariablesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or path of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_variables#project DataGitlabProjectVariables#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_variables#project DataGitlabProjectVariables#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The environment scope of the variable. Defaults to all environment (`*`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
 	EnvironmentScope *string `field:"optional" json:"environmentScope" yaml:"environmentScope"`
 }
 

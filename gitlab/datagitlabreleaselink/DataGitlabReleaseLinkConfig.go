@@ -24,15 +24,15 @@ type DataGitlabReleaseLinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
 	LinkId *float64 `field:"required" json:"linkId" yaml:"linkId"`
 	// The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The tag associated with the Release.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
 	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
 }
 

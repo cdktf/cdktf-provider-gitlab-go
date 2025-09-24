@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token gitlab_project_deploy_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token gitlab_project_deploy_token}.
 type ProjectDeployToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ProjectDeployToken) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource.
 func NewProjectDeployToken(scope constructs.Construct, id *string, config *ProjectDeployTokenConfig) ProjectDeployToken {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewProjectDeployToken(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource.
 func NewProjectDeployToken_Override(p ProjectDeployToken, scope constructs.Construct, id *string, config *ProjectDeployTokenConfig) {
 	_init_.Initialize()
 

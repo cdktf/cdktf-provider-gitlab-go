@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account gitlab_group_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account}.
 type GroupServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GroupServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount(scope constructs.Construct, id *string, config *GroupServiceAccountConfig) GroupServiceAccount {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGroupServiceAccount(scope constructs.Construct, id *string, config *Grou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount_Override(g GroupServiceAccount, scope constructs.Construct, id *string, config *GroupServiceAccountConfig) {
 	_init_.Initialize()
 

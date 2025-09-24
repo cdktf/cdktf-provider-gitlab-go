@@ -7,11 +7,11 @@ package datagitlabprojectprotectedtags
 type DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevels struct {
 	// The ID of a GitLab group allowed to perform the relevant action.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_protected_tags#group_id DataGitlabProjectProtectedTags#group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_protected_tags#group_id DataGitlabProjectProtectedTags#group_id}
 	GroupId *float64 `field:"optional" json:"groupId" yaml:"groupId"`
 	// The ID of a GitLab user allowed to perform the relevant action.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_protected_tags#user_id DataGitlabProjectProtectedTags#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_protected_tags#user_id DataGitlabProjectProtectedTags#user_id}
 	UserId *float64 `field:"optional" json:"userId" yaml:"userId"`
 }
 

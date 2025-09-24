@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker}.
 type ProjectIntegrationCustomIssueTracker interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ProjectIntegrationCustomIssueTracker) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker} Resource.
 func NewProjectIntegrationCustomIssueTracker(scope constructs.Construct, id *string, config *ProjectIntegrationCustomIssueTrackerConfig) ProjectIntegrationCustomIssueTracker {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewProjectIntegrationCustomIssueTracker(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_custom_issue_tracker gitlab_project_integration_custom_issue_tracker} Resource.
 func NewProjectIntegrationCustomIssueTracker_Override(p ProjectIntegrationCustomIssueTracker, scope constructs.Construct, id *string, config *ProjectIntegrationCustomIssueTrackerConfig) {
 	_init_.Initialize()
 

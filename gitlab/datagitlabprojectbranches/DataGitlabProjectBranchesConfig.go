@@ -24,7 +24,7 @@ type DataGitlabProjectBranchesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID or URL-encoded path of the project owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_branches#project DataGitlabProjectBranches#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_branches#project DataGitlabProjectBranches#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

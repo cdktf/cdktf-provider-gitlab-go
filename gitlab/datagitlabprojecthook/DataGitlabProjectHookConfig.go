@@ -24,11 +24,11 @@ type DataGitlabProjectHookConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The id of the project hook.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
 	HookId *float64 `field:"required" json:"hookId" yaml:"hookId"`
 	// The name or id of the project to add the hook to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

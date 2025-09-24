@@ -24,13 +24,13 @@ type DataGitlabProjectAccessTokensConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// List all project access token that match the specified state.
 	//
 	// Valid values are `active`, `inactive`. Returns all project access token if not set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

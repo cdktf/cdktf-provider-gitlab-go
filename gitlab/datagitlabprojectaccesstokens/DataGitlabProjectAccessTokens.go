@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_access_tokens gitlab_project_access_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_access_tokens gitlab_project_access_tokens}.
 type DataGitlabProjectAccessTokens interface {
 	cdktf.TerraformDataSource
 	AccessTokens() DataGitlabProjectAccessTokensAccessTokensList
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGitlabProjectAccessTokens) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_access_tokens gitlab_project_access_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_access_tokens gitlab_project_access_tokens} Data Source.
 func NewDataGitlabProjectAccessTokens(scope constructs.Construct, id *string, config *DataGitlabProjectAccessTokensConfig) DataGitlabProjectAccessTokens {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGitlabProjectAccessTokens(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_access_tokens gitlab_project_access_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_access_tokens gitlab_project_access_tokens} Data Source.
 func NewDataGitlabProjectAccessTokens_Override(d DataGitlabProjectAccessTokens, scope constructs.Construct, id *string, config *DataGitlabProjectAccessTokensConfig) {
 	_init_.Initialize()
 

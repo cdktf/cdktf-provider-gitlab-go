@@ -24,15 +24,15 @@ type UserIdentityConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The external provider name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/user_identity#external_provider UserIdentity#external_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_identity#external_provider UserIdentity#external_provider}
 	ExternalProvider *string `field:"required" json:"externalProvider" yaml:"externalProvider"`
 	// A specific external authentication provider UID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/user_identity#external_uid UserIdentity#external_uid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_identity#external_uid UserIdentity#external_uid}
 	ExternalUid *string `field:"required" json:"externalUid" yaml:"externalUid"`
 	// The GitLab ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/user_identity#user_id UserIdentity#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_identity#user_id UserIdentity#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`
 }
 

@@ -24,11 +24,11 @@ type DataGitlabClusterAgentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
 	AgentId *float64 `field:"required" json:"agentId" yaml:"agentId"`
 	// ID or full path of the project maintained by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent#project DataGitlabClusterAgent#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/cluster_agent#project DataGitlabClusterAgent#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

@@ -26,15 +26,15 @@ type DataGitlabRepositoryFileConfig struct {
 	//
 	// It must be relative to the root of the project without a leading slash `/` or `./`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#file_path DataGitlabRepositoryFile#file_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/repository_file#file_path DataGitlabRepositoryFile#file_path}
 	FilePath *string `field:"required" json:"filePath" yaml:"filePath"`
 	// The name or ID of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#project DataGitlabRepositoryFile#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/repository_file#project DataGitlabRepositoryFile#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The name of branch, tag or commit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#ref DataGitlabRepositoryFile#ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/repository_file#ref DataGitlabRepositoryFile#ref}
 	Ref *string `field:"required" json:"ref" yaml:"ref"`
 }
 

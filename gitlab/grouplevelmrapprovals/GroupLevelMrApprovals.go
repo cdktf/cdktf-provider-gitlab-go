@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals}.
 type GroupLevelMrApprovals interface {
 	cdktf.TerraformResource
 	AllowAuthorApproval() interface{}
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GroupLevelMrApprovals) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource.
 func NewGroupLevelMrApprovals(scope constructs.Construct, id *string, config *GroupLevelMrApprovalsConfig) GroupLevelMrApprovals {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewGroupLevelMrApprovals(scope constructs.Construct, id *string, config *Gr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource.
 func NewGroupLevelMrApprovals_Override(g GroupLevelMrApprovals, scope constructs.Construct, id *string, config *GroupLevelMrApprovalsConfig) {
 	_init_.Initialize()
 

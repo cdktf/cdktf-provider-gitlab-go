@@ -24,7 +24,7 @@ type DataGitlabProjectHooksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or id of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hooks#project DataGitlabProjectHooks#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_hooks#project DataGitlabProjectHooks#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

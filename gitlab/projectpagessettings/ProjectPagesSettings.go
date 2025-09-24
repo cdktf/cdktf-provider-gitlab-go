@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_pages_settings gitlab_project_pages_settings}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_pages_settings gitlab_project_pages_settings}.
 type ProjectPagesSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ProjectPagesSettings) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource.
 func NewProjectPagesSettings(scope constructs.Construct, id *string, config *ProjectPagesSettingsConfig) ProjectPagesSettings {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewProjectPagesSettings(scope constructs.Construct, id *string, config *Pro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource.
 func NewProjectPagesSettings_Override(p ProjectPagesSettings, scope constructs.Construct, id *string, config *ProjectPagesSettingsConfig) {
 	_init_.Initialize()
 

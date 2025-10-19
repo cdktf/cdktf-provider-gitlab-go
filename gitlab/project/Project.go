@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project gitlab_project}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project gitlab_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AllowMergeOnSkippedPipeline() interface{}
@@ -321,6 +321,9 @@ type Project interface {
 	ResolveOutdatedDiffDiscussions() interface{}
 	SetResolveOutdatedDiffDiscussions(val interface{})
 	ResolveOutdatedDiffDiscussionsInput() interface{}
+	ResourceGroupDefaultProcessMode() *string
+	SetResourceGroupDefaultProcessMode(val *string)
+	ResourceGroupDefaultProcessModeInput() *string
 	RestrictUserDefinedVariables() interface{}
 	SetRestrictUserDefinedVariables(val interface{})
 	RestrictUserDefinedVariablesInput() interface{}
@@ -519,6 +522,7 @@ type Project interface {
 	ResetRequestAccessEnabled()
 	ResetRequirementsAccessLevel()
 	ResetResolveOutdatedDiffDiscussions()
+	ResetResourceGroupDefaultProcessMode()
 	ResetRestrictUserDefinedVariables()
 	ResetSecurityAndComplianceAccessLevel()
 	ResetSharedRunnersEnabled()
@@ -2485,6 +2489,26 @@ func (j *jsiiProxy_Project) ResolveOutdatedDiffDiscussionsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) ResourceGroupDefaultProcessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupDefaultProcessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ResourceGroupDefaultProcessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupDefaultProcessModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) RestrictUserDefinedVariables() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2906,7 +2930,7 @@ func (j *jsiiProxy_Project) WikiEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -2924,7 +2948,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project gitlab_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project gitlab_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -3945,6 +3969,17 @@ func (j *jsiiProxy_Project)SetResolveOutdatedDiffDiscussions(val interface{}) {
 	_jsii_.Set(
 		j,
 		"resolveOutdatedDiffDiscussions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetResourceGroupDefaultProcessMode(val *string) {
+	if err := j.validateSetResourceGroupDefaultProcessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceGroupDefaultProcessMode",
 		val,
 	)
 }
@@ -5222,6 +5257,14 @@ func (p *jsiiProxy_Project) ResetResolveOutdatedDiffDiscussions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetResolveOutdatedDiffDiscussions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetResourceGroupDefaultProcessMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetResourceGroupDefaultProcessMode",
 		nil, // no parameters
 	)
 }

@@ -451,6 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requirementsAccessLevel", GoGetter: "RequirementsAccessLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resolveOutdatedDiffDiscussions", GoGetter: "ResolveOutdatedDiffDiscussions"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupDefaultProcessMode", GoGetter: "ResourceGroupDefaultProcessMode"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictUserDefinedVariables", GoGetter: "RestrictUserDefinedVariables"},
 			_jsii_.MemberProperty{JsiiProperty: "runnersToken", GoGetter: "RunnersToken"},
 			_jsii_.MemberProperty{JsiiProperty: "securityAndComplianceAccessLevel", GoGetter: "SecurityAndComplianceAccessLevel"},

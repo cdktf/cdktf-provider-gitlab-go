@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiresAt", GoMethod: "ResetExpiresAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidatePastExpirationDate", GoMethod: "ResetValidatePastExpirationDate"},
 			_jsii_.MemberProperty{JsiiProperty: "revoked", GoGetter: "Revoked"},
 			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopesInput", GoGetter: "ScopesInput"},
@@ -71,6 +72,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validatePastExpirationDate", GoGetter: "ValidatePastExpirationDate"},
+			_jsii_.MemberProperty{JsiiProperty: "validatePastExpirationDateInput", GoGetter: "ValidatePastExpirationDateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ProjectDeployToken{}

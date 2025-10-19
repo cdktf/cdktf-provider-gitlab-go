@@ -123,6 +123,10 @@ func (j *jsiiProxy_UserImpersonationToken) validateSetUserIdParameters(val *floa
 	return nil
 }
 
+func (j *jsiiProxy_UserImpersonationToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewUserImpersonationTokenParameters(scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) error {
 	return nil
 }

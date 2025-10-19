@@ -463,6 +463,10 @@ func (j *jsiiProxy_Project) validateSetResolveOutdatedDiffDiscussionsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetResourceGroupDefaultProcessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetRestrictUserDefinedVariablesParameters(val interface{}) error {
 	return nil
 }

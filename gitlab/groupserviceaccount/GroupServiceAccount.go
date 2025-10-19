@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account gitlab_group_service_account}.
 type GroupServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,8 @@ type GroupServiceAccount interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() GroupServiceAccountTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -118,11 +120,13 @@ type GroupServiceAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *GroupServiceAccountTimeouts)
 	ResetEmail()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -382,6 +386,26 @@ func (j *jsiiProxy_GroupServiceAccount) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GroupServiceAccount) Timeouts() GroupServiceAccountTimeoutsOutputReference {
+	var returns GroupServiceAccountTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupServiceAccount) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupServiceAccount) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_GroupServiceAccount) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount(scope constructs.Construct, id *string, config *GroupServiceAccountConfig) GroupServiceAccount {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewGroupServiceAccount(scope constructs.Construct, id *string, config *Grou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account gitlab_group_service_account} Resource.
 func NewGroupServiceAccount_Override(g GroupServiceAccount, scope constructs.Construct, id *string, config *GroupServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -897,6 +921,17 @@ func (g *jsiiProxy_GroupServiceAccount) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GroupServiceAccount) PutTimeouts(value *GroupServiceAccountTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GroupServiceAccount) ResetEmail() {
 	_jsii_.InvokeVoid(
 		g,
@@ -917,6 +952,14 @@ func (g *jsiiProxy_GroupServiceAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupServiceAccount) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

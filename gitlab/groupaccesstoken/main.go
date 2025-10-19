@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiresAt", GoMethod: "ResetExpiresAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationConfiguration", GoMethod: "ResetRotationConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidatePastExpirationDate", GoMethod: "ResetValidatePastExpirationDate"},
 			_jsii_.MemberProperty{JsiiProperty: "revoked", GoGetter: "Revoked"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationConfiguration", GoGetter: "RotationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationConfigurationInput", GoGetter: "RotationConfigurationInput"},
@@ -80,6 +81,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
+			_jsii_.MemberProperty{JsiiProperty: "validatePastExpirationDate", GoGetter: "ValidatePastExpirationDate"},
+			_jsii_.MemberProperty{JsiiProperty: "validatePastExpirationDateInput", GoGetter: "ValidatePastExpirationDateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupAccessToken{}

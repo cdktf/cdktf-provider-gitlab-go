@@ -135,6 +135,10 @@ func (j *jsiiProxy_GroupAccessToken) validateSetScopesParameters(val *[]*string)
 	return nil
 }
 
+func (j *jsiiProxy_GroupAccessToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGroupAccessTokenParameters(scope constructs.Construct, id *string, config *GroupAccessTokenConfig) error {
 	return nil
 }

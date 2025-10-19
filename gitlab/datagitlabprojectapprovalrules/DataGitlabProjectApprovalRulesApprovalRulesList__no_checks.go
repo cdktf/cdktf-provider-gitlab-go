@@ -1,0 +1,41 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datagitlabprojectapprovalrules
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataGitlabProjectApprovalRulesApprovalRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

@@ -131,6 +131,10 @@ func (j *jsiiProxy_PersonalAccessToken) validateSetUserIdParameters(val *float64
 	return nil
 }
 
+func (j *jsiiProxy_PersonalAccessToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewPersonalAccessTokenParameters(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_ProjectDeployToken) validateSetUsernameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ProjectDeployToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewProjectDeployTokenParameters(scope constructs.Construct, id *string, config *ProjectDeployTokenConfig) error {
 	return nil
 }

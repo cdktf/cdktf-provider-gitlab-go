@@ -131,6 +131,10 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken) validateSetUserIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GroupServiceAccountAccessToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGroupServiceAccountAccessTokenParameters(scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) error {
 	return nil
 }

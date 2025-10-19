@@ -135,6 +135,10 @@ func (j *jsiiProxy_ProjectAccessToken) validateSetScopesParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_ProjectAccessToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewProjectAccessTokenParameters(scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) error {
 	return nil
 }

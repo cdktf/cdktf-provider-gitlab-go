@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token gitlab_personal_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 type PersonalAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -83,6 +83,9 @@ type PersonalAccessToken interface {
 	UserId() *float64
 	SetUserId(val *float64)
 	UserIdInput() *float64
+	ValidatePastExpirationDate() interface{}
+	SetValidatePastExpirationDate(val interface{})
+	ValidatePastExpirationDateInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,6 +136,7 @@ type PersonalAccessToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRotationConfiguration()
+	ResetValidatePastExpirationDate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -481,8 +485,28 @@ func (j *jsiiProxy_PersonalAccessToken) UserIdInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_PersonalAccessToken) ValidatePastExpirationDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+func (j *jsiiProxy_PersonalAccessToken) ValidatePastExpirationDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken(scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) PersonalAccessToken {
 	_init_.Initialize()
 
@@ -500,7 +524,7 @@ func NewPersonalAccessToken(scope constructs.Construct, id *string, config *Pers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource.
 func NewPersonalAccessToken_Override(p PersonalAccessToken, scope constructs.Construct, id *string, config *PersonalAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -630,6 +654,17 @@ func (j *jsiiProxy_PersonalAccessToken)SetUserId(val *float64) {
 	_jsii_.Set(
 		j,
 		"userId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PersonalAccessToken)SetValidatePastExpirationDate(val interface{}) {
+	if err := j.validateSetValidatePastExpirationDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validatePastExpirationDate",
 		val,
 	)
 }
@@ -1026,6 +1061,14 @@ func (p *jsiiProxy_PersonalAccessToken) ResetRotationConfiguration() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRotationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PersonalAccessToken) ResetValidatePastExpirationDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetValidatePastExpirationDate",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_GroupDeployToken) validateSetUsernameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_GroupDeployToken) validateSetValidatePastExpirationDateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGroupDeployTokenParameters(scope constructs.Construct, id *string, config *GroupDeployTokenConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
 type GroupServiceAccountAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -83,6 +83,9 @@ type GroupServiceAccountAccessToken interface {
 	UserId() *float64
 	SetUserId(val *float64)
 	UserIdInput() *float64
+	ValidatePastExpirationDate() interface{}
+	SetValidatePastExpirationDate(val interface{})
+	ValidatePastExpirationDateInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,6 +135,7 @@ type GroupServiceAccountAccessToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRotationConfiguration()
+	ResetValidatePastExpirationDate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -480,8 +484,28 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken) UserIdInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GroupServiceAccountAccessToken) ValidatePastExpirationDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+func (j *jsiiProxy_GroupServiceAccountAccessToken) ValidatePastExpirationDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) GroupServiceAccountAccessToken {
 	_init_.Initialize()
 
@@ -499,7 +523,7 @@ func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken_Override(g GroupServiceAccountAccessToken, scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -629,6 +653,17 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken)SetUserId(val *float64) {
 	_jsii_.Set(
 		j,
 		"userId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupServiceAccountAccessToken)SetValidatePastExpirationDate(val interface{}) {
+	if err := j.validateSetValidatePastExpirationDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validatePastExpirationDate",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (g *jsiiProxy_GroupServiceAccountAccessToken) ResetRotationConfiguration() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetRotationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupServiceAccountAccessToken) ResetValidatePastExpirationDate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetValidatePastExpirationDate",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
 type UserImpersonationToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -80,6 +80,9 @@ type UserImpersonationToken interface {
 	UserId() *float64
 	SetUserId(val *float64)
 	UserIdInput() *float64
+	ValidatePastExpirationDate() interface{}
+	SetValidatePastExpirationDate(val interface{})
+	ValidatePastExpirationDateInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -126,6 +129,7 @@ type UserImpersonationToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetValidatePastExpirationDate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -454,8 +458,28 @@ func (j *jsiiProxy_UserImpersonationToken) UserIdInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_UserImpersonationToken) ValidatePastExpirationDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+func (j *jsiiProxy_UserImpersonationToken) ValidatePastExpirationDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken(scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) UserImpersonationToken {
 	_init_.Initialize()
 
@@ -473,7 +497,7 @@ func NewUserImpersonationToken(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource.
 func NewUserImpersonationToken_Override(u UserImpersonationToken, scope constructs.Construct, id *string, config *UserImpersonationTokenConfig) {
 	_init_.Initialize()
 
@@ -592,6 +616,17 @@ func (j *jsiiProxy_UserImpersonationToken)SetUserId(val *float64) {
 	_jsii_.Set(
 		j,
 		"userId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserImpersonationToken)SetValidatePastExpirationDate(val interface{}) {
+	if err := j.validateSetValidatePastExpirationDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validatePastExpirationDate",
 		val,
 	)
 }
@@ -953,6 +988,14 @@ func (u *jsiiProxy_UserImpersonationToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserImpersonationToken) ResetValidatePastExpirationDate() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetValidatePastExpirationDate",
 		nil, // no parameters
 	)
 }

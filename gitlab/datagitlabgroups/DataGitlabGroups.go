@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups gitlab_groups}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups gitlab_groups}.
 type DataGitlabGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,8 +37,6 @@ type DataGitlabGroups interface {
 	FriendlyUniqueId() *string
 	Groups() DataGitlabGroupsGroupsList
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -94,7 +92,6 @@ type DataGitlabGroups interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -206,16 +203,6 @@ func (j *jsiiProxy_DataGitlabGroups) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabGroups) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -372,7 +359,7 @@ func (j *jsiiProxy_DataGitlabGroups) TopLevelOnlyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups gitlab_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups gitlab_groups} Data Source.
 func NewDataGitlabGroups(scope constructs.Construct, id *string, config *DataGitlabGroupsConfig) DataGitlabGroups {
 	_init_.Initialize()
 
@@ -390,7 +377,7 @@ func NewDataGitlabGroups(scope constructs.Construct, id *string, config *DataGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups gitlab_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups gitlab_groups} Data Source.
 func NewDataGitlabGroups_Override(d DataGitlabGroups, scope constructs.Construct, id *string, config *DataGitlabGroupsConfig) {
 	_init_.Initialize()
 
@@ -424,17 +411,6 @@ func (j *jsiiProxy_DataGitlabGroups)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabGroups)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -784,14 +760,6 @@ func (d *jsiiProxy_DataGitlabGroups) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabGroups) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

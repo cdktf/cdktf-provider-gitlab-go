@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_access_token gitlab_project_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_access_token gitlab_project_access_token}.
 type ProjectAccessToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -87,6 +87,9 @@ type ProjectAccessToken interface {
 	TerraformResourceType() *string
 	Token() *string
 	UserId() *float64
+	ValidatePastExpirationDate() interface{}
+	SetValidatePastExpirationDate(val interface{})
+	ValidatePastExpirationDateInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,6 +141,7 @@ type ProjectAccessToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRotationConfiguration()
+	ResetValidatePastExpirationDate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -516,8 +520,28 @@ func (j *jsiiProxy_ProjectAccessToken) UserId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectAccessToken) ValidatePastExpirationDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_access_token gitlab_project_access_token} Resource.
+func (j *jsiiProxy_ProjectAccessToken) ValidatePastExpirationDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validatePastExpirationDateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken(scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) ProjectAccessToken {
 	_init_.Initialize()
 
@@ -535,7 +559,7 @@ func NewProjectAccessToken(scope constructs.Construct, id *string, config *Proje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_access_token gitlab_project_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_access_token gitlab_project_access_token} Resource.
 func NewProjectAccessToken_Override(p ProjectAccessToken, scope constructs.Construct, id *string, config *ProjectAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_ProjectAccessToken)SetScopes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"scopes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectAccessToken)SetValidatePastExpirationDate(val interface{}) {
+	if err := j.validateSetValidatePastExpirationDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validatePastExpirationDate",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (p *jsiiProxy_ProjectAccessToken) ResetRotationConfiguration() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRotationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectAccessToken) ResetValidatePastExpirationDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetValidatePastExpirationDate",
 		nil, // no parameters
 	)
 }

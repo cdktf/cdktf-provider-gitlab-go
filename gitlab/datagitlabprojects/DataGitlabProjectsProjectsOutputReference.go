@@ -118,6 +118,7 @@ type DataGitlabProjectsProjectsOutputReference interface {
 	RequestAccessEnabled() cdktf.IResolvable
 	RequirementsAccessLevel() *string
 	ResolveOutdatedDiffDiscussions() cdktf.IResolvable
+	ResourceGroupDefaultProcessMode() *string
 	RestrictUserDefinedVariables() cdktf.IResolvable
 	RunnersToken() *string
 	SecurityAndComplianceAccessLevel() *string
@@ -1088,6 +1089,16 @@ func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ResolveOutdatedDif
 	_jsii_.Get(
 		j,
 		"resolveOutdatedDiffDiscussions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGitlabProjectsProjectsOutputReference) ResourceGroupDefaultProcessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupDefaultProcessMode",
 		&returns,
 	)
 	return returns

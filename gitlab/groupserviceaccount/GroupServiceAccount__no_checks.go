@@ -75,6 +75,10 @@ func (g *jsiiProxy_GroupServiceAccount) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GroupServiceAccount) validatePutTimeoutsParameters(value *GroupServiceAccountTimeouts) error {
+	return nil
+}
+
 func validateGroupServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

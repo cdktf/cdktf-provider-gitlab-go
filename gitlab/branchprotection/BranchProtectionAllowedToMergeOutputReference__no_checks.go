@@ -43,11 +43,11 @@ func (b *jsiiProxy_BranchProtectionAllowedToMergeOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionAllowedToMergeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BranchProtectionAllowedToMergeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionAllowedToMergeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionAllowedToMergeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

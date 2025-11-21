@@ -29,9 +29,9 @@ func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

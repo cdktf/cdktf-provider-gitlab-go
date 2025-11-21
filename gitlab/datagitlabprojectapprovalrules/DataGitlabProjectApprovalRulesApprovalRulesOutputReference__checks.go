@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

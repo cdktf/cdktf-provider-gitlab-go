@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabReleaseLinksReleaseLinksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

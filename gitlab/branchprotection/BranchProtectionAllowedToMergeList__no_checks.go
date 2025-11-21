@@ -15,7 +15,7 @@ func (b *jsiiProxy_BranchProtectionAllowedToMergeList) validateGetParameters(ind
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionAllowedToMergeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionAllowedToMergeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

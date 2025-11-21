@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

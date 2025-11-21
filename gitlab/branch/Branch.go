@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch gitlab_branch}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch}.
 type Branch interface {
 	cdktf.TerraformResource
 	CanPush() cdktf.IResolvable
@@ -45,8 +45,6 @@ type Branch interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	KeepOnDestroy() interface{}
 	SetKeepOnDestroy(val interface{})
 	KeepOnDestroyInput() interface{}
@@ -127,7 +125,6 @@ type Branch interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetKeepOnDestroy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -285,16 +282,6 @@ func (j *jsiiProxy_Branch) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Branch) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -491,7 +478,7 @@ func (j *jsiiProxy_Branch) WebUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Branch {
 	_init_.Initialize()
 
@@ -509,7 +496,7 @@ func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Bra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch gitlab_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch} Resource.
 func NewBranch_Override(b Branch, scope constructs.Construct, id *string, config *BranchConfig) {
 	_init_.Initialize()
 
@@ -554,17 +541,6 @@ func (j *jsiiProxy_Branch)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Branch)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -993,14 +969,6 @@ func (b *jsiiProxy_Branch) OverrideLogicalId(newLogicalId *string) {
 		b,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (b *jsiiProxy_Branch) ResetId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

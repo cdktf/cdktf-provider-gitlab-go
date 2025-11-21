@@ -24,11 +24,11 @@ type DataGitlabProjectApprovalRulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or path with namespace that identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// approval_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
 	ApprovalRules interface{} `field:"optional" json:"approvalRules" yaml:"approvalRules"`
 }
 

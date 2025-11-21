@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectSharedWithGroupsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectSharedWithGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectSharedWithGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

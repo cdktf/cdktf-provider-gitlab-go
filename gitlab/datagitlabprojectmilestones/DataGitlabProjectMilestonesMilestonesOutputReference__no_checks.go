@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectMilestonesMilestonesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

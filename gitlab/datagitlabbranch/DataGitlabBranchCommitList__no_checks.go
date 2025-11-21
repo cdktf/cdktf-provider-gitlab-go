@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabBranchCommitList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabBranchCommitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabBranchCommitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

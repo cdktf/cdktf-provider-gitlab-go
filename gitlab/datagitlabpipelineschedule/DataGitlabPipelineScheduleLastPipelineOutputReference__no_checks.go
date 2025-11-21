@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabPipelineScheduleLastPipelineOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabPipelineScheduleLastPipelineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabPipelineScheduleLastPipelineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabPipelineScheduleLastPipelineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabPipelineScheduleLastPipelineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

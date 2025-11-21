@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectIssuesIssuesTaskCompletionStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

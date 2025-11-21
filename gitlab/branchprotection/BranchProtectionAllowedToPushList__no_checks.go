@@ -15,7 +15,7 @@ func (b *jsiiProxy_BranchProtectionAllowedToPushList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionAllowedToPushList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionAllowedToPushList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

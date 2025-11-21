@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupIssueBoardListsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (g *jsiiProxy_GroupIssueBoardListsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupIssueBoardListsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

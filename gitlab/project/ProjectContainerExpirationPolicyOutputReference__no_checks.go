@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectContainerExpirationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

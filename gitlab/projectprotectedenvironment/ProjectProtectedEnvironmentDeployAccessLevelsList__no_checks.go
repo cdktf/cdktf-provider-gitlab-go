@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

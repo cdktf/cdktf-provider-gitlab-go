@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupHookCustomHeadersList) validateGetParameters(index *floa
 	return nil
 }
 
-func (g *jsiiProxy_GroupHookCustomHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupHookCustomHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

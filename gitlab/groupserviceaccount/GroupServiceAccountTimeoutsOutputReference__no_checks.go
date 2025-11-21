@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupServiceAccountTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (g *jsiiProxy_GroupServiceAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupServiceAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupServiceAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupServiceAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

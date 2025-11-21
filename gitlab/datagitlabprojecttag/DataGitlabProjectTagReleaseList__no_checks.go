@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectTagReleaseList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectTagReleaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectTagReleaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

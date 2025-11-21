@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupServiceAccountAccessTokenRotationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectTagCommitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

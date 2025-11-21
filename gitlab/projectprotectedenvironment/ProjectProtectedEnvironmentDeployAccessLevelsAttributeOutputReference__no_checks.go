@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeOutputR
 	return nil
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

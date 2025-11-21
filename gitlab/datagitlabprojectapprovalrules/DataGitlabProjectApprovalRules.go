@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules}.
 type DataGitlabProjectApprovalRules interface {
 	cdktf.TerraformDataSource
 	ApprovalRules() DataGitlabProjectApprovalRulesApprovalRulesList
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGitlabProjectApprovalRules) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source.
 func NewDataGitlabProjectApprovalRules(scope constructs.Construct, id *string, config *DataGitlabProjectApprovalRulesConfig) DataGitlabProjectApprovalRules {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGitlabProjectApprovalRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source.
 func NewDataGitlabProjectApprovalRules_Override(d DataGitlabProjectApprovalRules, scope constructs.Construct, id *string, config *DataGitlabProjectApprovalRulesConfig) {
 	_init_.Initialize()
 

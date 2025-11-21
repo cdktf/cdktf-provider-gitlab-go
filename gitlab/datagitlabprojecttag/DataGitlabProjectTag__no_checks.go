@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataGitlabProjectTag) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataGitlabProjectTag) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGitlabProjectTag) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

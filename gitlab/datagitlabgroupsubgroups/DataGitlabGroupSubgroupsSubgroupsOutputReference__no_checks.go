@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabGroupSubgroupsSubgroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

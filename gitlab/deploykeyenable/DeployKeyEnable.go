@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
 type DeployKeyEnable interface {
 	cdktf.TerraformResource
 	CanPush() interface{}
@@ -43,14 +43,10 @@ type DeployKeyEnable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
-	SetKey(val *string)
 	KeyId() *string
 	SetKeyId(val *string)
 	KeyIdInput() *string
-	KeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -77,8 +73,6 @@ type DeployKeyEnable interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
-	SetTitle(val *string)
-	TitleInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,12 +117,9 @@ type DeployKeyEnable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCanPush()
-	ResetId()
-	ResetKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTitle()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -257,16 +248,6 @@ func (j *jsiiProxy_DeployKeyEnable) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeployKeyEnable) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DeployKeyEnable) Key() *string {
 	var returns *string
 	_jsii_.Get(
@@ -292,16 +273,6 @@ func (j *jsiiProxy_DeployKeyEnable) KeyIdInput() *string {
 	_jsii_.Get(
 		j,
 		"keyIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DeployKeyEnable) KeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyInput",
 		&returns,
 	)
 	return returns
@@ -417,18 +388,8 @@ func (j *jsiiProxy_DeployKeyEnable) Title() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeployKeyEnable) TitleInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"titleInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
 func NewDeployKeyEnable(scope constructs.Construct, id *string, config *DeployKeyEnableConfig) DeployKeyEnable {
 	_init_.Initialize()
 
@@ -446,7 +407,7 @@ func NewDeployKeyEnable(scope constructs.Construct, id *string, config *DeployKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource.
 func NewDeployKeyEnable_Override(d DeployKeyEnable, scope constructs.Construct, id *string, config *DeployKeyEnableConfig) {
 	_init_.Initialize()
 
@@ -506,28 +467,6 @@ func (j *jsiiProxy_DeployKeyEnable)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DeployKeyEnable)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DeployKeyEnable)SetKey(val *string) {
-	if err := j.validateSetKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"key",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DeployKeyEnable)SetKeyId(val *string) {
 	if err := j.validateSetKeyIdParameters(val); err != nil {
 		panic(err)
@@ -576,17 +515,6 @@ func (j *jsiiProxy_DeployKeyEnable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DeployKeyEnable)SetTitle(val *string) {
-	if err := j.validateSetTitleParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"title",
 		val,
 	)
 }
@@ -952,34 +880,10 @@ func (d *jsiiProxy_DeployKeyEnable) ResetCanPush() {
 	)
 }
 
-func (d *jsiiProxy_DeployKeyEnable) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DeployKeyEnable) ResetKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKey",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DeployKeyEnable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DeployKeyEnable) ResetTitle() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTitle",
 		nil, // no parameters
 	)
 }

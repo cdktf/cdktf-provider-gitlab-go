@@ -43,11 +43,11 @@ func (v *jsiiProxy_ValueStreamAnalyticsStagesOutputReference) validateGetStringM
 	return nil
 }
 
-func (v *jsiiProxy_ValueStreamAnalyticsStagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_ValueStreamAnalyticsStagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_ValueStreamAnalyticsStagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValueStreamAnalyticsStagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

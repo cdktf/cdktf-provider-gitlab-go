@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabProjectProtectedTagCreateAccessLevelsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

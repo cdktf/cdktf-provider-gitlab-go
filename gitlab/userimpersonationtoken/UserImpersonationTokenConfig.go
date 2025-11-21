@@ -24,25 +24,25 @@ type UserImpersonationTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Expiration date of the impersonation token in ISO format (YYYY-MM-DD).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
 	ExpiresAt *string `field:"required" json:"expiresAt" yaml:"expiresAt"`
 	// The name of the impersonation token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Array of scopes of the impersonation token.
 	//
 	// valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
 	// The ID of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
 	UserId *float64 `field:"required" json:"userId" yaml:"userId"`
 	// Wether to validate if the expiration date is in the future.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#validate_past_expiration_date UserImpersonationToken#validate_past_expiration_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_impersonation_token#validate_past_expiration_date UserImpersonationToken#validate_past_expiration_date}
 	ValidatePastExpirationDate interface{} `field:"optional" json:"validatePastExpirationDate" yaml:"validatePastExpirationDate"`
 }
 

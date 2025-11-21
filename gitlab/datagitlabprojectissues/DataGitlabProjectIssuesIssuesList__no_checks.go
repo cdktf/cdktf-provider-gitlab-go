@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectIssuesIssuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

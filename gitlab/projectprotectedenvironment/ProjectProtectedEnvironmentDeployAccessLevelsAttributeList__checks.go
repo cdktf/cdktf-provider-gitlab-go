@@ -29,9 +29,9 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeList) v
 	return nil
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_ProjectProtectedEnvironmentDeployAccessLevelsAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

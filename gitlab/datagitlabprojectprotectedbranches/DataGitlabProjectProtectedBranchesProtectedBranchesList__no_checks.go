@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchesProtectedBranchesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

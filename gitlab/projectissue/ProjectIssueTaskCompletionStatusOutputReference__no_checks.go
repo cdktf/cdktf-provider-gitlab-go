@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectIssueTaskCompletionStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectPushRulesOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (p *jsiiProxy_ProjectPushRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectPushRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectPushRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectPushRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

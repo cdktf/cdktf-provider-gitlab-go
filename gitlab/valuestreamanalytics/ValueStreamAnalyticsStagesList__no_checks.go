@@ -15,7 +15,7 @@ func (v *jsiiProxy_ValueStreamAnalyticsStagesList) validateGetParameters(index *
 	return nil
 }
 
-func (v *jsiiProxy_ValueStreamAnalyticsStagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValueStreamAnalyticsStagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

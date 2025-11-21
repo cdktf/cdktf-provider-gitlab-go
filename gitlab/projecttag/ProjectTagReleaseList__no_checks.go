@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectTagReleaseList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (p *jsiiProxy_ProjectTagReleaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectTagReleaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

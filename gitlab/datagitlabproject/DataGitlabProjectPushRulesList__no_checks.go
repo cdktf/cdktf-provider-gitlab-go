@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectPushRulesList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectPushRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectPushRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

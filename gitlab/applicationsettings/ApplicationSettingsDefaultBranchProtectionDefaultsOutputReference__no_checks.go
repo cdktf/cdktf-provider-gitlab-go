@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationSettingsDefaultBranchProtectionDefaultsOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

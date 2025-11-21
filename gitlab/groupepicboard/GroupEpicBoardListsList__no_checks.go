@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupEpicBoardListsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (g *jsiiProxy_GroupEpicBoardListsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupEpicBoardListsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

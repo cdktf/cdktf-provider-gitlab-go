@@ -15,7 +15,7 @@ func (b *jsiiProxy_BranchCommitList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (b *jsiiProxy_BranchCommitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchCommitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

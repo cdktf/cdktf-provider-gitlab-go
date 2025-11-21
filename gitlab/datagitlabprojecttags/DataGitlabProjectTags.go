@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags gitlab_project_tags}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags}.
 type DataGitlabProjectTags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataGitlabProjectTags interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -94,7 +92,6 @@ type DataGitlabProjectTags interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -195,16 +192,6 @@ func (j *jsiiProxy_DataGitlabProjectTags) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGitlabProjectTags) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -371,7 +358,7 @@ func (j *jsiiProxy_DataGitlabProjectTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags gitlab_project_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags} Data Source.
 func NewDataGitlabProjectTags(scope constructs.Construct, id *string, config *DataGitlabProjectTagsConfig) DataGitlabProjectTags {
 	_init_.Initialize()
 
@@ -389,7 +376,7 @@ func NewDataGitlabProjectTags(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags gitlab_project_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags} Data Source.
 func NewDataGitlabProjectTags_Override(d DataGitlabProjectTags, scope constructs.Construct, id *string, config *DataGitlabProjectTagsConfig) {
 	_init_.Initialize()
 
@@ -423,17 +410,6 @@ func (j *jsiiProxy_DataGitlabProjectTags)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGitlabProjectTags)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -783,14 +759,6 @@ func (d *jsiiProxy_DataGitlabProjectTags) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGitlabProjectTags) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

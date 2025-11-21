@@ -27,9 +27,9 @@ func (p *jsiiProxy_ProjectTagReleaseList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (p *jsiiProxy_ProjectTagReleaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_ProjectTagReleaseList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

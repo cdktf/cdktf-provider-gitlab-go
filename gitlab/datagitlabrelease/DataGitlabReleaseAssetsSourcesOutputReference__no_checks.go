@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

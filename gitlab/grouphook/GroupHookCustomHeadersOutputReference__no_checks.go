@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupHookCustomHeadersOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (g *jsiiProxy_GroupHookCustomHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupHookCustomHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupHookCustomHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupHookCustomHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

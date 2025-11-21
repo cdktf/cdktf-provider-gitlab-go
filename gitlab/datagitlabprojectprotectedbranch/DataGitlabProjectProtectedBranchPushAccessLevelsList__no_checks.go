@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectProtectedBranchPushAccessLevelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

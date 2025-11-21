@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectMergeRequestsMergeRequestsAssigneesList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectMergeRequestsMergeRequestsAssigneesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectMergeRequestsMergeRequestsAssigneesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

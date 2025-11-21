@@ -103,10 +103,6 @@ func (j *jsiiProxy_ReleaseLink) validateSetFilepathParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_ReleaseLink) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ReleaseLink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

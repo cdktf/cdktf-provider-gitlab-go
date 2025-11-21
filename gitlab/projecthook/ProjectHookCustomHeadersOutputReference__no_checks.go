@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectHookCustomHeadersOutputReference) validateGetStringMap
 	return nil
 }
 
-func (p *jsiiProxy_ProjectHookCustomHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectHookCustomHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectHookCustomHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectHookCustomHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

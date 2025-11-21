@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesList) validateGetPara
 	return nil
 }
 
-func (p *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectProtectedEnvironmentApprovalRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

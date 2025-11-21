@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabPipelineScheduleOwnerOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabPipelineScheduleOwnerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabPipelineScheduleOwnerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabPipelineScheduleOwnerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabPipelineScheduleOwnerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

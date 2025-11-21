@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabUserSshkeysKeysOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabUserSshkeysKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabUserSshkeysKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabUserSshkeysKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabUserSshkeysKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

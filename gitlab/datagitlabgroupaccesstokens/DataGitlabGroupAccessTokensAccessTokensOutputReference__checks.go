@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGitlabGroupAccessTokensAccessTokensOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

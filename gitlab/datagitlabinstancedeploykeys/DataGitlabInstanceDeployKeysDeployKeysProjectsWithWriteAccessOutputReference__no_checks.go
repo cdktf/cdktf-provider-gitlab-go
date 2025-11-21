@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

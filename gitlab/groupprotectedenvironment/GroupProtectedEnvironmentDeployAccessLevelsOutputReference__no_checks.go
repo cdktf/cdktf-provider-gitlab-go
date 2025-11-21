@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupProtectedEnvironmentDeployAccessLevelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

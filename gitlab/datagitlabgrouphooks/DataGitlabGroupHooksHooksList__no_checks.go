@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabGroupHooksHooksList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupHooksHooksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabGroupHooksHooksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabGroupMembershipMembersList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabGroupMembershipMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabGroupMembershipMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

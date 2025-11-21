@@ -41,7 +41,7 @@ type ValueStreamAnalyticsStagesList interface {
 	Get(index *float64) ValueStreamAnalyticsStagesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (v *jsiiProxy_ValueStreamAnalyticsStagesList) Get(index *float64) ValueStre
 	return returns
 }
 
-func (v *jsiiProxy_ValueStreamAnalyticsStagesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_ValueStreamAnalyticsStagesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (v *jsiiProxy_ValueStreamAnalyticsStagesList) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

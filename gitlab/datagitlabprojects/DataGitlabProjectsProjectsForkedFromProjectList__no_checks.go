@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabProjectsProjectsForkedFromProjectList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectsProjectsForkedFromProjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectsProjectsForkedFromProjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type DataGitlabReleaseAssetsSourcesList interface {
 	Get(index *float64) DataGitlabReleaseAssetsSourcesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) Get(index *float64) DataG
 	return returns
 }
 
-func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

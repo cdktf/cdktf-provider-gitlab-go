@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link gitlab_release_link}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link gitlab_release_link}.
 type ReleaseLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,8 +45,6 @@ type ReleaseLink interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -129,7 +127,6 @@ type ReleaseLink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetFilepath()
-	ResetId()
 	ResetLinkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -277,16 +274,6 @@ func (j *jsiiProxy_ReleaseLink) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ReleaseLink) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -483,7 +470,7 @@ func (j *jsiiProxy_ReleaseLink) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link gitlab_release_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link gitlab_release_link} Resource.
 func NewReleaseLink(scope constructs.Construct, id *string, config *ReleaseLinkConfig) ReleaseLink {
 	_init_.Initialize()
 
@@ -501,7 +488,7 @@ func NewReleaseLink(scope constructs.Construct, id *string, config *ReleaseLinkC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link gitlab_release_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link gitlab_release_link} Resource.
 func NewReleaseLink_Override(r ReleaseLink, scope constructs.Construct, id *string, config *ReleaseLinkConfig) {
 	_init_.Initialize()
 
@@ -557,17 +544,6 @@ func (j *jsiiProxy_ReleaseLink)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ReleaseLink)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1014,14 +990,6 @@ func (r *jsiiProxy_ReleaseLink) ResetFilepath() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetFilepath",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_ReleaseLink) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
 		nil, // no parameters
 	)
 }

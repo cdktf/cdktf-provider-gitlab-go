@@ -15,7 +15,7 @@ func (t *jsiiProxy_TagProtectionAllowedToCreateList) validateGetParameters(index
 	return nil
 }
 
-func (t *jsiiProxy_TagProtectionAllowedToCreateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagProtectionAllowedToCreateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

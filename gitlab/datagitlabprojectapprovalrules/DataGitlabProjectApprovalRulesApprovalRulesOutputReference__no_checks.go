@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabProjectApprovalRulesApprovalRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGitlabReleaseAssetsSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

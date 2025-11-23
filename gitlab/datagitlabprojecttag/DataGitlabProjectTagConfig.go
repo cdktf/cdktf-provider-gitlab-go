@@ -24,11 +24,11 @@ type DataGitlabProjectTagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of a tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tag#name DataGitlabProjectTag#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tag#name DataGitlabProjectTag#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID or URL-encoded path of the project owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tag#project DataGitlabProjectTag#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tag#project DataGitlabProjectTag#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

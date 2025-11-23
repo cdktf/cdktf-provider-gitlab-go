@@ -24,19 +24,19 @@ type BranchConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name for this branch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#name Branch#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#name Branch#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID or full path of the project which the branch is created against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#project Branch#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#project Branch#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The ref which the branch is created from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#ref Branch#ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#ref Branch#ref}
 	Ref *string `field:"required" json:"ref" yaml:"ref"`
 	// Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
 	KeepOnDestroy interface{} `field:"optional" json:"keepOnDestroy" yaml:"keepOnDestroy"`
 }
 

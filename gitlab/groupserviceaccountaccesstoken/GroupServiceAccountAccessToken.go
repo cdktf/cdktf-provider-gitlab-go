@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
 type GroupServiceAccountAccessToken interface {
 	cdktf.TerraformResource
 	Active() cdktf.IResolvable
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GroupServiceAccountAccessToken) ValidatePastExpirationDateInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) GroupServiceAccountAccessToken {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGroupServiceAccountAccessToken(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource.
 func NewGroupServiceAccountAccessToken_Override(g GroupServiceAccountAccessToken, scope constructs.Construct, id *string, config *GroupServiceAccountAccessTokenConfig) {
 	_init_.Initialize()
 

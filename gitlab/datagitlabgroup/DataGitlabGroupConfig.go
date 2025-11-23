@@ -24,11 +24,11 @@ type DataGitlabGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The full path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group#full_path DataGitlabGroup#full_path}
 	FullPath *string `field:"optional" json:"fullPath" yaml:"fullPath"`
 	// The ID of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group#group_id DataGitlabGroup#group_id}
 	GroupId *float64 `field:"optional" json:"groupId" yaml:"groupId"`
 }
 

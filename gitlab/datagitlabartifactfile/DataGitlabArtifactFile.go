@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file gitlab_artifact_file}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file gitlab_artifact_file}.
 type DataGitlabArtifactFile interface {
 	cdktf.TerraformDataSource
 	ArtifactPath() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataGitlabArtifactFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file gitlab_artifact_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file gitlab_artifact_file} Data Source.
 func NewDataGitlabArtifactFile(scope constructs.Construct, id *string, config *DataGitlabArtifactFileConfig) DataGitlabArtifactFile {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataGitlabArtifactFile(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file gitlab_artifact_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file gitlab_artifact_file} Data Source.
 func NewDataGitlabArtifactFile_Override(d DataGitlabArtifactFile, scope constructs.Construct, id *string, config *DataGitlabArtifactFileConfig) {
 	_init_.Initialize()
 

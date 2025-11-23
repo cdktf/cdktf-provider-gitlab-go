@@ -24,7 +24,7 @@ type DataGitlabGroupHooksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or full path of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_hooks#group DataGitlabGroupHooks#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_hooks#group DataGitlabGroupHooks#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/member_role gitlab_member_role}.
+// Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/member_role gitlab_member_role}.
 type DataGitlabMemberRole interface {
 	cdktf.TerraformDataSource
 	BaseAccessLevel() *string
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataGitlabMemberRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/member_role gitlab_member_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/member_role gitlab_member_role} Data Source.
 func NewDataGitlabMemberRole(scope constructs.Construct, id *string, config *DataGitlabMemberRoleConfig) DataGitlabMemberRole {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataGitlabMemberRole(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/member_role gitlab_member_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/member_role gitlab_member_role} Data Source.
 func NewDataGitlabMemberRole_Override(d DataGitlabMemberRole, scope constructs.Construct, id *string, config *DataGitlabMemberRoleConfig) {
 	_init_.Initialize()
 

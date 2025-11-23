@@ -24,21 +24,21 @@ type DataGitlabProjectTagsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID or URL-encoded path of the project owned by the authenticated user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Return tags ordered by `name` or `updated` fields. Default is `updated`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// Return list of tags matching the search criteria.
 	//
 	// You can use `^term` and `term$` to find tags that begin and end with `term` respectively. No other regular expressions are supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 	// Return tags sorted in `asc` or `desc` order. Default is `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
 	Sort *string `field:"optional" json:"sort" yaml:"sort"`
 }
 

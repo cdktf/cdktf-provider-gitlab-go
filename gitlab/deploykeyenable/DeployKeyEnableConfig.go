@@ -24,15 +24,15 @@ type DeployKeyEnableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Gitlab key id for the pre-existing deploy key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
 	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
 	// The name or id of the project to add the deploy key to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Can deploy key push to the project's repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
 	CanPush interface{} `field:"optional" json:"canPush" yaml:"canPush"`
 }
 
